@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.0.0...v1.1.0) (2026-06-08)
+
+
+### Features
+
+* add image concepts ([7ef089d](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/commit/7ef089dea542f19ef893b38e8f71d105d3b67878))
+
 # 1.0.0 (2026-06-08)
 
 
