@@ -5,8 +5,17 @@
     overflow: hidden;
     pointer-events: none;
     background:
-        radial-gradient(circle at 50% 0%, rgba(0, 221, 255, 0.08), transparent 32rem),
-        radial-gradient(circle at 85% 15%, rgba(255, 210, 31, 0.06), transparent 28rem), #070b12;
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(0, 221, 255, 0.08),
+            transparent 32rem
+        ),
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(255, 210, 31, 0.06),
+            transparent 28rem
+        ),
+        #070b12;
 }
 
 .bg-shimmer {

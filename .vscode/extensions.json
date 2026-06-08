@@ -7,7 +7,6 @@
     "christian-kohler.npm-intellisense",
     "redhat.vscode-yaml",
     "timonwong.shellcheck",
-    "EditorConfig.EditorConfig",
-    "orta.vscode-jest"
+    "editorconfig.editorconfig"
   ]
 }

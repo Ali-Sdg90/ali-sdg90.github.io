@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# Logs and local files
+*.log
+*.DS_Store
+*.env
+*.local
+
+# Coverage and test output
+coverage/
+test-results/
+
+# Alternate package manager lock files
+yarn.lock
+pnpm-lock.yaml
+
+# Generated release output
+CHANGELOG.md
+
+# Legal files
+LICENSE

@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
+
 npm run format:check
 npm run lint
-npm test
