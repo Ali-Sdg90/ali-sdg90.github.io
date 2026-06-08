@@ -1,0 +1,28 @@
+@use "variables" as *;
+
+html {
+    min-width: 320px;
+    color: $color-text;
+    background: $color-background;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: $font-family-base;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+#root {
+    min-height: 100vh;
+}

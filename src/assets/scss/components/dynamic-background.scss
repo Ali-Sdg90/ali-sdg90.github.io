@@ -1,0 +1,260 @@
+.bg-effect {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(0, 221, 255, 0.08), transparent 32rem),
+        radial-gradient(circle at 85% 15%, rgba(255, 210, 31, 0.06), transparent 28rem), #070b12;
+}
+
+.bg-shimmer {
+    position: absolute;
+    inset: -20%;
+    background: linear-gradient(
+        115deg,
+        transparent 35%,
+        rgba(255, 255, 255, 0.035),
+        transparent 65%
+    );
+    animation: shimmer 14s ease-in-out infinite alternate;
+}
+
+.bg-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.5;
+    mix-blend-mode: screen;
+    transform: translate3d(-50%, -50%, 0);
+    will-change: transform, opacity;
+}
+
+.orb-cyan {
+    width: 38rem;
+    height: 38rem;
+    left: 8%;
+    top: 12%;
+    background: rgba(0, 221, 255, 0.32);
+}
+
+.orb-yellow {
+    width: 30rem;
+    height: 30rem;
+    left: 70%;
+    top: 4%;
+    background: rgba(255, 210, 31, 0.24);
+}
+
+.orb-blue {
+    width: 26rem;
+    height: 26rem;
+    left: 55%;
+    top: 60%;
+    background: rgba(0, 160, 255, 0.22);
+}
+
+.orb-gold {
+    width: 22rem;
+    height: 22rem;
+    left: 12%;
+    top: 72%;
+    background: rgba(255, 174, 0, 0.18);
+}
+
+.orb-one {
+    animation: orb-one 24s ease-in-out infinite alternate;
+}
+
+.orb-two {
+    animation: orb-two 28s ease-in-out infinite alternate;
+    animation-delay: -6s;
+}
+
+.orb-three {
+    animation: orb-three 32s ease-in-out infinite alternate;
+    animation-delay: -12s;
+}
+
+.orb-four {
+    animation: orb-four 30s ease-in-out infinite alternate;
+    animation-delay: -9s;
+}
+
+.bg-line {
+    position: absolute;
+    width: 42rem;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 221, 255, 0.35),
+        rgba(255, 210, 31, 0.18),
+        transparent
+    );
+    filter: blur(0.5px);
+    opacity: 0.3;
+    transform: rotate(-18deg);
+    animation: line-pulse 9s ease-in-out infinite alternate;
+}
+
+.line-one {
+    top: 26%;
+    left: -8rem;
+}
+
+.line-two {
+    right: -12rem;
+    bottom: 22%;
+    animation-delay: -4s;
+}
+
+@keyframes orb-one {
+    0% {
+        transform: translate3d(-50%, -50%, 0) scale(1);
+        opacity: 0.35;
+    }
+
+    50% {
+        transform: translate3d(-36%, -62%, 0) scale(1.12);
+        opacity: 0.55;
+    }
+
+    100% {
+        transform: translate3d(-58%, -42%, 0) scale(0.96);
+        opacity: 0.4;
+    }
+}
+
+@keyframes orb-two {
+    0% {
+        transform: translate3d(-50%, -50%, 0) scale(0.95);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translate3d(-64%, -35%, 0) scale(1.15);
+        opacity: 0.46;
+    }
+
+    100% {
+        transform: translate3d(-42%, -58%, 0) scale(1);
+        opacity: 0.36;
+    }
+}
+
+@keyframes orb-three {
+    0% {
+        transform: translate3d(-50%, -50%, 0) scale(1);
+        opacity: 0.25;
+    }
+
+    50% {
+        transform: translate3d(-60%, -40%, 0) scale(1.18);
+        opacity: 0.42;
+    }
+
+    100% {
+        transform: translate3d(-38%, -56%, 0) scale(0.92);
+        opacity: 0.32;
+    }
+}
+
+@keyframes orb-four {
+    0% {
+        transform: translate3d(-50%, -50%, 0) scale(0.9);
+        opacity: 0.22;
+    }
+
+    50% {
+        transform: translate3d(-35%, -48%, 0) scale(1.1);
+        opacity: 0.38;
+    }
+
+    100% {
+        transform: translate3d(-62%, -60%, 0) scale(1);
+        opacity: 0.28;
+    }
+}
+
+@keyframes shimmer {
+    from {
+        transform: translateX(-8%) translateY(-4%);
+        opacity: 0.25;
+    }
+
+    to {
+        transform: translateX(8%) translateY(4%);
+        opacity: 0.5;
+    }
+}
+
+@keyframes line-pulse {
+    from {
+        opacity: 0.1;
+        transform: rotate(-18deg) translateX(-2rem);
+    }
+
+    to {
+        opacity: 0.35;
+        transform: rotate(-18deg) translateX(3rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-orb {
+        filter: blur(64px);
+        opacity: 0.4;
+    }
+
+    .orb-cyan {
+        width: 26rem;
+        height: 26rem;
+    }
+
+    .orb-yellow {
+        width: 22rem;
+        height: 22rem;
+        left: 88%;
+        top: 18%;
+    }
+
+    .orb-blue {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .orb-gold {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .bg-line {
+        width: 28rem;
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-shimmer,
+    .bg-line {
+        display: none;
+    }
+
+    .bg-orb {
+        filter: blur(52px);
+    }
+
+    .orb-yellow {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bg-orb,
+    .bg-shimmer,
+    .bg-line {
+        animation: none;
+    }
+}

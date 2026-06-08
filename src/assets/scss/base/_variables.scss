@@ -1,0 +1,34 @@
+$color-background: #0a0a0a;
+$color-surface: #101720;
+$color-surface-raised: #151f2a;
+$color-text: #f4fbff;
+$color-text-muted: #9fb3c1;
+$color-accent: #00ddff;
+$color-accent-soft: rgba(0, 221, 255, 0.18);
+$color-character: #ffd21f;
+$color-shelf-dark: #5b321c;
+$color-shelf: #9a5a2f;
+$color-shelf-light: #d08a4a;
+
+$font-family-base: "Vazirmatn", "Inter", "Segoe UI", Arial, sans-serif;
+
+$radius-sm: 6px;
+$radius-md: 8px;
+$radius-lg: 16px;
+
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 0.75rem;
+$space-4: 1rem;
+$space-5: 1.5rem;
+$space-6: 2rem;
+$space-7: 3rem;
+$space-8: 4rem;
+
+$shadow-glow: 0 0 28px rgba(0, 221, 255, 0.32);
+$shadow-panel: 0 22px 80px rgba(0, 0, 0, 0.38);
+
+$motion-fast: 160ms;
+$motion-medium: 260ms;
+$motion-slow: 480ms;
+$ease-out: cubic-bezier(0.22, 1, 0.36, 1);
