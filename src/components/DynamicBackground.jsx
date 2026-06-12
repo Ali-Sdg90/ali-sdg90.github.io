@@ -10,6 +10,8 @@ const DynamicBackground = () => {
 
             <span className="bg-line line-one" />
             <span className="bg-line line-two" />
+
+            <span className="bg-ground" />
         </div>
     );
 };

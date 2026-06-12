@@ -12,7 +12,7 @@
         ),
         radial-gradient(
             circle at 85% 15%,
-            rgba(255, 210, 31, 0.06),
+            rgba(24, 113, 190, 0.1),
             transparent 28rem
         ),
         #070b12;
@@ -51,7 +51,7 @@
             height: 30rem;
             left: 70%;
             top: 4%;
-            background: rgba(255, 210, 31, 0.24);
+            background: rgba(36, 108, 190, 0.2);
         }
 
         &.orb-blue {
@@ -67,7 +67,7 @@
             height: 22rem;
             left: 12%;
             top: 72%;
-            background: rgba(255, 174, 0, 0.18);
+            background: rgba(0, 84, 172, 0.18);
         }
 
         &.orb-one {
@@ -98,7 +98,7 @@
             90deg,
             transparent,
             rgba(0, 221, 255, 0.35),
-            rgba(255, 210, 31, 0.18),
+            rgba(56, 132, 255, 0.22),
             transparent
         );
         filter: blur(0.5px);
@@ -115,6 +115,35 @@
             right: -12rem;
             bottom: 22%;
             animation-delay: -4s;
+        }
+    }
+
+    .bg-ground {
+        position: absolute;
+        width: 100%;
+        // height: 270px;
+        height: clamp(12rem, 18vw, 18rem);
+        bottom: 0;
+        z-index: 10;
+        background: #01050f;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 38px;
+            pointer-events: none;
+
+            background: linear-gradient(
+                to right,
+                rgba(7, 14, 25, 0.95),
+                rgba(7, 11, 18, 0.95)
+            );
+
+            filter: blur(10px);
+            transform: translateY(-18px);
         }
     }
 }
