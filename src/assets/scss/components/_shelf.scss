@@ -6,12 +6,14 @@
     width: 100%;
     max-width: 96rem;
     margin-inline: auto;
+    pointer-events: none;
 
     .shelf-container {
         position: relative;
         width: 100%;
         aspect-ratio: 1535 / 1024;
         isolation: isolate;
+        pointer-events: none;
         background-image: url("../../../assets/images/shelf.png");
         background-size: 100% 100%;
         background-position: center;
@@ -30,6 +32,12 @@
             align-items: end;
             gap: clamp(0.5rem, 0.9vw, 0.85rem);
             z-index: 2;
+            pointer-events: none;
+
+            &:hover,
+            &:focus-within {
+                z-index: 20;
+            }
 
             .shelf-section-name {
                 min-height: clamp(3.1rem, 5.1vw, 4.35rem);
@@ -59,6 +67,9 @@
                 grid-template-columns: repeat(4, minmax(0, 1fr));
                 gap: clamp(0.45rem, 0.8vw, 0.75rem);
                 align-items: end;
+                position: relative;
+                z-index: 1;
+                pointer-events: none;
 
                 perspective: 800px;
                 perspective-origin: -10% 120%;
@@ -66,13 +77,19 @@
                 .shelf-card {
                     position: relative;
                     min-width: 0;
-                    min-height: 6.5rem;
-                    z-index: 10; // this does not work
+                    min-height: 8rem;
+                    z-index: 1;
+                    pointer-events: auto;
+                    cursor: pointer;
 
                     padding: clamp(0.45rem, 0.7vw, 0.72rem);
 
                     transform-style: preserve-3d;
-                    transform: rotateX(0deg) rotateY(10deg) rotateZ(-1deg);
+                    transform: rotateX(0deg) rotateY(10deg) rotateZ(-0.5deg);
+                    transition:
+                        transform $motion-fast $ease-out,
+                        box-shadow $motion-fast $ease-out,
+                        border-color $motion-fast $ease-out;
 
                     box-shadow: -3px 0px 0px 2px #1c2c45;
 
@@ -96,8 +113,13 @@
                         ),
                         rgba(4, 10, 22, 0.88);
 
-                    &:hover {
+                    &:hover,
+                    &:focus-visible {
+                        z-index: 30;
+                        transform: rotateX(0deg) rotateY(10deg) rotateZ(-0.5deg)
+                            translate(-2px, 0px);
                         box-shadow: -3px 0px 0px 1px #1c2c45;
+                        border-color: rgba(72, 143, 255, 0.72);
                     }
 
                     strong {
