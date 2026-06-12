@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.0...v1.2.1) (2026-06-12)
+
+
+### Bug Fixes
+
+* fix shelf position and tried to add shelf's items, add Intro component, start tp add ground to dynamic bg ([2cb9d6c](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/commit/2cb9d6c9ea4cfd52d7e2d6c7d061ec9b5fa89434))
+
 # [1.2.0](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.1.0...v1.2.0) (2026-06-12)
 
 
