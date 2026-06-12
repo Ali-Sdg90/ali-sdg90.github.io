@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.1...v1.2.2) (2026-06-12)
+
+
+### Bug Fixes
+
+* ground section is working, start on books style ([910f6fb](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/commit/910f6fbb6954868747c66096aec8373e61648e49))
+
 ## [1.2.1](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.0...v1.2.1) (2026-06-12)
 
 
