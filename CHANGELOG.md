@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.2...v1.2.3) (2026-06-12)
+
+
+### Bug Fixes
+
+* try to fix card perspective... ([106a128](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/commit/106a12840928ed6b7dbd3a05e4142b9783d07364))
+
 ## [1.2.2](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.1...v1.2.2) (2026-06-12)
 
 
