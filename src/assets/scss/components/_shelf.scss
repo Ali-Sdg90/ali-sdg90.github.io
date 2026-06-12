@@ -1,0 +1,30 @@
+// .shelf-container {
+//     position: absolute;
+//     border: 1px solid red;
+//     width: 90%;
+//     height: 100%;
+
+//     bottom: 0;
+//     left: 50%;
+//     transform: translate3d(-50%, 0, 0);
+//     background-image: url("../../../assets/images/shelf.png");
+//     background-size: contain;
+//     background-position: bottom;
+//     background-repeat: no-repeat;
+// }
+
+.shelf-container {
+    position: absolute;
+    border: 1px solid red;
+    width: 90%;
+    height: 100%;
+
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+
+    background-image: url("../../../assets/images/shelf.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
