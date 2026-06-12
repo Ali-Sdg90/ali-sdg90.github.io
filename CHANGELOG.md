@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.3...v1.2.4) (2026-06-12)
+
+
+### Bug Fixes
+
+* update z-index and pointer-events for shelf components ([8374a11](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/commit/8374a11769aa22a1597404dd4af271ca9b7fec42))
+
 ## [1.2.3](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.2...v1.2.3) (2026-06-12)
 
 
