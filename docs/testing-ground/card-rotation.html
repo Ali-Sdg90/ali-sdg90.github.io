@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Translate Z Test</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                display: grid;
+                place-items: center;
+                background: #020611;
+                font-family: Arial, sans-serif;
+                color: white;
+            }
+
+            .scene {
+                position: relative;
+                width: 700px;
+                height: 420px;
+
+                border: 1px solid rgba(255, 255, 255, 0.15);
+
+                perspective: 700px;
+                perspective-origin: center center;
+                transform-style: preserve-3d;
+            }
+
+            .card {
+                position: absolute;
+                width: 130px;
+                height: 130px;
+                border-radius: 18px;
+
+                background: #071426;
+                border: 1px solid #1688ff;
+
+                display: grid;
+                place-items: center;
+
+                font-size: 20px;
+                font-weight: 800;
+
+                transform-style: preserve-3d;
+            }
+
+            .card-1 {
+                left: 80px;
+                top: 240px;
+                transform: translateZ(0px);
+            }
+
+            .card-2 {
+                left: 230px;
+                top: 205px;
+                transform: translateZ(-160px);
+            }
+
+            .card-3 {
+                left: 380px;
+                top: 170px;
+                transform: translateZ(-320px);
+            }
+
+            .card-4 {
+                left: 530px;
+                top: 135px;
+                transform: translateZ(-480px);
+            }
+
+            .floor-line {
+                position: absolute;
+                left: 60px;
+                right: 60px;
+                bottom: 80px;
+                height: 2px;
+                background: #1688ff;
+                opacity: 0.4;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="scene">
+            <div class="floor-line"></div>
+
+            <div class="card card-1">Z 0</div>
+            <div class="card card-2">Z -160</div>
+            <div class="card card-3">Z -320</div>
+            <div class="card card-4">Z -480</div>
+        </div>
+    </body>
+</html>

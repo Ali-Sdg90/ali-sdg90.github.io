@@ -24,7 +24,6 @@ const shelfSections = [
             { title: "React", meta: "UI systems" },
             { title: "JavaScript", meta: "App logic" },
             { title: "TypeScript", meta: "Typed flows" },
-            { title: "Tailwind", meta: "Utility CSS" },
             { title: "SCSS", meta: "Design styles" },
         ],
     },
