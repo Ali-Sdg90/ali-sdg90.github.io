@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.1.0...v1.2.0) (2026-06-12)
+
+
+### Features
+
+* test setting the shelf background ([380c23b](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/commit/380c23b3af8156bd3f3b132834210821cd338a72))
+
 # [1.1.0](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.0.0...v1.1.0) (2026-06-08)
 
 
