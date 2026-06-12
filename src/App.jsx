@@ -1,17 +1,21 @@
 import DynamicBackground from "./components/DynamicBackground";
+import Intro from "./components/Intro";
 import Shelf from "./components/Shelf";
-import HomePage from "./pages/HomePage";
 
 const App = () => {
     return (
         <div className="page-style">
-            <h1>App</h1>
-
             <DynamicBackground />
 
-            <Shelf />
+            <main className="portfolio-hero" aria-labelledby="hero-title">
+                <section className="hero-intro">
+                    <Intro />
+                </section>
 
-            <HomePage />
+                <section className="hero-shelf">
+                    <Shelf />
+                </section>
+            </main>
         </div>
     );
 };

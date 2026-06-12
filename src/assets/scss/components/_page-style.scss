@@ -1,0 +1,96 @@
+@use "../base/variables" as *;
+
+.page-style {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.portfolio-hero {
+    width: 100%;
+    max-width: 1700px;
+    min-height: 100vh;
+    margin-inline: auto;
+    padding: 18vh 2.25rem 3rem;
+
+    .hero-intro {
+        position: relative;
+        z-index: 2;
+        max-width: 21rem;
+
+        .hero-greeting {
+            color: $color-text-muted;
+            font-size: clamp(1rem, 1.4vw, 1.25rem);
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            color: $color-text;
+            font-size: clamp(2.8rem, 4vw, 4.7rem);
+            line-height: 0.98;
+            font-weight: 800;
+            margin-bottom: 1.1rem;
+
+            span {
+                color: #1688ff;
+            }
+        }
+
+        .hero-role {
+            color: #1688ff;
+            font-size: clamp(1.1rem, 1.45vw, 1.45rem);
+            font-weight: 700;
+            margin-bottom: 1.1rem;
+        }
+
+        .hero-copy {
+            color: $color-text-muted;
+            font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+            max-width: 18rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+
+            .hero-button {
+                min-height: 2.75rem;
+                padding: 0.75rem 1rem;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: $radius-sm;
+                color: $color-text;
+                border: 1px solid rgba(67, 150, 255, 0.34);
+                background: rgba(6, 18, 34, 0.74);
+                box-shadow: 0 0 22px rgba(0, 132, 255, 0.16);
+                transition:
+                    border-color $motion-fast $ease-out,
+                    background $motion-fast $ease-out;
+
+                &:hover,
+                &:focus-visible {
+                    border-color: rgba(67, 150, 255, 0.78);
+                }
+
+                &.primary {
+                    background: linear-gradient(135deg, #0068ff, #1688ff);
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+
+    .hero-shelf {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: -1rem;
+        z-index: 1;
+        width: 100%;
+        padding-inline: 2.25rem;
+        pointer-events: none;
+    }
+}
