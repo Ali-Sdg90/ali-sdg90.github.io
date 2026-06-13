@@ -38,18 +38,28 @@ const shelfSections = [
     },
 ];
 
+// const rotationXValues = [13, 0, -10, 15];
+
 const Shelf = () => {
     return (
         <section className="shelf-wrapper" aria-label="Portfolio shelf">
-            <div className="shelf-container">
+            <div
+                className="shelf-container"
+                style={{ perspective: "900px", perspectiveOrigin: "0% 55%" }}
+            >
                 {shelfSections.map((section, index) => (
                     <div
                         className="shelf-section"
                         id={section.id}
                         key={section.label}
-                        style={{ "--section-index": index }}
+                        style={{
+                            "--section-index": index,
+                            transform: `rotateX(0deg) rotateY(10deg) rotateZ(-0.5deg)`,
+                        }}
                     >
-                        <h2 className="shelf-section-name">{section.label}</h2>
+                        <div className="shelf-section-name">
+                            {section.label}
+                        </div>
 
                         <div className="shelf-section-content">
                             {section.items.map((item) => (
