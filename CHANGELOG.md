@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.4...v1.2.5) (2026-06-13)
+
+
+### Bug Fixes
+
+* adjust shelf section styles and perspective settings ([c0f5e49](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/commit/c0f5e499acac8155ee8bb60e2dc90d02062f48a5))
+
 ## [1.2.4](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.3...v1.2.4) (2026-06-12)
 
 
