@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.6...v1.2.7) (2026-06-16)
+
+
+### Bug Fixes
+
+* shelf sections now can be dragged and auto move, separated the shelfSection obj, start of breaking down the big Shelf.jsx component ([cb3016f](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/commit/cb3016f8711e85827d07e203b444ab69274e7b89))
+
 ## [1.2.6](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.5...v1.2.6) (2026-06-16)
 
 
