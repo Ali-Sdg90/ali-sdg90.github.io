@@ -20,12 +20,9 @@
         background-repeat: no-repeat;
 
         .shelf-section {
-            --row-top: calc(21.4% + (var(--section-index) * 17.8%));
-
             position: absolute;
             left: 17.2%;
             right: 23.2%;
-            top: var(--row-top);
             min-height: 12.5%;
             display: grid;
             grid-template-columns: minmax(5.7rem, 0.84fr) minmax(0, 4.7fr);
@@ -33,10 +30,7 @@
             gap: clamp(0.5rem, 0.9vw, 0.85rem);
             z-index: 2;
             pointer-events: none;
-
-            // Perspective based on the shelf
-            // perspective: 900px;
-            // perspective-origin: -10% 120%;
+            border: 1px solid red;
 
             &:hover,
             &:focus-within {
@@ -67,8 +61,13 @@
 
             .shelf-section-content {
                 min-width: 0;
-                display: grid;
-                grid-template-columns: repeat(4, minmax(0, 1fr));
+                // display: grid;
+                // grid-template-columns: repeat(4, minmax(0, 1fr));
+                display: flex;
+                flex-wrap: no-wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                // overflow-x: auto;
                 gap: clamp(0.45rem, 0.8vw, 0.75rem);
                 align-items: end;
                 position: relative;
@@ -78,7 +77,8 @@
                 .shelf-card {
                     position: relative;
                     min-width: 0;
-                    min-height: 8rem;
+                    min-height: clamp(4.75rem, 8vw, 8rem);
+                    min-width: clamp(8rem, 12vw, 12rem);
                     z-index: 1;
                     pointer-events: auto;
                     cursor: pointer;

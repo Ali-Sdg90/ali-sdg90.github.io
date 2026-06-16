@@ -38,7 +38,13 @@ const shelfSections = [
     },
 ];
 
-// const rotationXValues = [13, 0, -10, 15];
+const shelfRotationValues = [
+    { y: 10, z: -1 },
+    { y: 10, z: -0.5 },
+    { y: 10, z: 0.0 },
+    { y: 8.5, z: 0.0 },
+];
+const shelfRowTopValues = ["21.6%", "40.2%", "57.5%", "74.4%"];
 
 const Shelf = () => {
     return (
@@ -53,8 +59,8 @@ const Shelf = () => {
                         id={section.id}
                         key={section.label}
                         style={{
-                            "--section-index": index,
-                            transform: `rotateX(0deg) rotateY(10deg) rotateZ(-0.5deg)`,
+                            top: `${shelfRowTopValues[index]}`,
+                            transform: `rotateX(0deg) rotateY(${shelfRotationValues[index].y}deg) rotateZ(${shelfRotationValues[index].z}deg)`,
                         }}
                     >
                         <div className="shelf-section-name">
