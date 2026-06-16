@@ -1,6 +1,6 @@
 import DynamicBackground from "./components/DynamicBackground";
 import Intro from "./components/Intro";
-import Shelf from "./components/Shelf";
+import Shelf from "./components/Shelf/Shelf";
 
 const App = () => {
     return (

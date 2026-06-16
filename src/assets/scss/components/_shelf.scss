@@ -30,7 +30,7 @@
             gap: clamp(0.5rem, 0.9vw, 0.85rem);
             z-index: 2;
             pointer-events: none;
-            border: 1px solid red;
+            // border: 1px solid red; // debug
 
             &:hover,
             &:focus-within {
@@ -61,27 +61,89 @@
 
             .shelf-section-content {
                 min-width: 0;
-                // display: grid;
-                // grid-template-columns: repeat(4, minmax(0, 1fr));
-                display: flex;
-                flex-wrap: no-wrap;
-                justify-content: space-evenly;
-                align-items: center;
-                // overflow-x: auto;
-                gap: clamp(0.45rem, 0.8vw, 0.75rem);
-                align-items: end;
                 position: relative;
                 z-index: 1;
-                pointer-events: none;
+                overflow: hidden;
+                padding-block: clamp(0.38rem, 0.9vw, 0.8rem);
+                pointer-events: auto;
+
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 5;
+                    width: clamp(1.4rem, 3vw, 3rem);
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity $motion-fast $ease-out;
+                }
+
+                &::before {
+                    left: 0;
+                    background: linear-gradient(
+                        90deg,
+                        rgba(4, 10, 22, 0.88),
+                        rgba(4, 10, 22, 0)
+                    );
+                    z-index: 40;
+                }
+
+                &::after {
+                    right: 0;
+                    background: linear-gradient(
+                        270deg,
+                        rgba(4, 10, 22, 0.88),
+                        rgba(4, 10, 22, 0)
+                    );
+                    z-index: 40;
+                }
+
+                &.has-left-fade::before,
+                &.has-right-fade::after {
+                    opacity: 1;
+                }
+
+                &.is-dragging {
+                    .shelf-card-track {
+                        cursor: grabbing;
+                    }
+                }
+
+                .shelf-card-track {
+                    display: flex;
+                    align-items: center;
+                    gap: clamp(0.45rem, 0.8vw, 0.75rem);
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    padding: clamp(0.15rem, 0.35vw, 0.35rem)
+                        clamp(0.4rem, 0.75vw, 0.7rem);
+                    cursor: grab;
+                    scrollbar-width: none;
+                    touch-action: pan-y;
+                    user-select: none;
+                    -webkit-overflow-scrolling: touch;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+
+                .shelf-card-set {
+                    display: flex;
+                    flex: 0 0 auto;
+                    align-items: center;
+                    gap: inherit;
+                }
 
                 .shelf-card {
                     position: relative;
-                    min-width: 0;
+                    flex: 0 0 clamp(8rem, 12vw, 12rem);
                     min-height: clamp(4.75rem, 8vw, 8rem);
-                    min-width: clamp(8rem, 12vw, 12rem);
                     z-index: 1;
                     pointer-events: auto;
-                    cursor: pointer;
+                    cursor: inherit;
                     padding: clamp(0.45rem, 0.7vw, 0.72rem);
 
                     box-shadow: -3px 0px 0px 2px #1c2c45;
