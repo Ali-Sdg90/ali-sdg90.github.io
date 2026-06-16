@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.5...v1.2.6) (2026-06-16)
+
+
+### Bug Fixes
+
+* refactor shelf section styles and update rotation values ([9e418d6](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/commit/9e418d6ac3778fe5881413aeff1fea5d10a94877))
+
 ## [1.2.5](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.4...v1.2.5) (2026-06-13)
 
 
