@@ -33,7 +33,9 @@ const ShelfCardTrack = ({
                         <ShelfCard
                             item={item}
                             cardHeight={section.cardHeight}
+                            cardWidth={section.cardWidth}
                             key={`${copyIndex}-${item.title}-${item.meta}`}
+                            sectionId={section.id}
                         />
                     ))}
                 </div>

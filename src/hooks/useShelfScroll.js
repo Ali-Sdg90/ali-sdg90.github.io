@@ -7,6 +7,7 @@ const useShelfScroll = (shelfSections) => {
     const autoScrollFrame = useRef(null);
     const autoScrollPositions = useRef([]);
     const activeDragIndexRef = useRef(null);
+    const hoveredSectionIndexRef = useRef(null);
     const scrollStateRef = useRef({});
     const [activeDragIndex, setActiveDragIndex] = useState(null);
     const [scrollState, setScrollState] = useState({});
@@ -112,6 +113,7 @@ const useShelfScroll = (shelfSections) => {
             shelfSections.forEach((section, index) => {
                 if (
                     activeDragIndexRef.current === index ||
+                    hoveredSectionIndexRef.current === index ||
                     section.autoScrollSpeed <= 0
                 ) {
                     return;
@@ -194,6 +196,22 @@ const useShelfScroll = (shelfSections) => {
         event.preventDefault();
     }, []);
 
+    const handleSectionPointerEnter = useCallback((index) => {
+        hoveredSectionIndexRef.current = index;
+    }, []);
+
+    const handleSectionPointerLeave = useCallback((index) => {
+        if (hoveredSectionIndexRef.current === index) {
+            hoveredSectionIndexRef.current = null;
+        }
+
+        const scroller = scrollerRefs.current[index];
+
+        if (scroller) {
+            autoScrollPositions.current[index] = scroller.scrollLeft;
+        }
+    }, []);
+
     const stopDragging = useCallback(
         (event) => {
             const currentDragState = dragState.current;
@@ -225,6 +243,8 @@ const useShelfScroll = (shelfSections) => {
         setScrollerRef,
         handlePointerDown,
         handlePointerMove,
+        handleSectionPointerEnter,
+        handleSectionPointerLeave,
         stopDragging,
         scheduleScrollStateUpdate,
     };

@@ -8,6 +8,8 @@ const ShelfSection = ({
     setScrollerRef,
     handlePointerDown,
     handlePointerMove,
+    handleSectionPointerEnter,
+    handleSectionPointerLeave,
     stopDragging,
     scheduleScrollStateUpdate,
 }) => {
@@ -35,6 +37,8 @@ const ShelfSection = ({
                 ]
                     .filter(Boolean)
                     .join(" ")}
+                onPointerEnter={() => handleSectionPointerEnter(sectionIndex)}
+                onPointerLeave={() => handleSectionPointerLeave(sectionIndex)}
             >
                 <ShelfCardTrack
                     section={section}

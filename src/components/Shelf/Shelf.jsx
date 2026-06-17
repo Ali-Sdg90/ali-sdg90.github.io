@@ -9,6 +9,8 @@ const Shelf = () => {
         setScrollerRef,
         handlePointerDown,
         handlePointerMove,
+        handleSectionPointerEnter,
+        handleSectionPointerLeave,
         stopDragging,
         scheduleScrollStateUpdate,
     } = useShelfScroll(shelfSections);
@@ -24,6 +26,8 @@ const Shelf = () => {
                         activeDragIndex={activeDragIndex}
                         handlePointerDown={handlePointerDown}
                         handlePointerMove={handlePointerMove}
+                        handleSectionPointerEnter={handleSectionPointerEnter}
+                        handleSectionPointerLeave={handleSectionPointerLeave}
                         key={section.label}
                         scheduleScrollStateUpdate={scheduleScrollStateUpdate}
                         scrollState={scrollState}
