@@ -1,0 +1,68 @@
+@use "../../base/variables" as *;
+
+.shelf-card-image-wrap,
+.shelf-card-image-fallback {
+    position: relative;
+    width: clamp(2.6rem, 3.85vw, 4rem);
+    aspect-ratio: 1;
+    align-self: center;
+    flex: 0 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(72, 143, 255, 0.35);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        0 0.45rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.shelf-card-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 180ms $ease-out;
+
+    &.loaded {
+        opacity: 1;
+    }
+}
+
+.shelf-card-image-loading,
+.shelf-card-image-fallback {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.12),
+            rgba(255, 255, 255, 0.03)
+        ),
+        rgba(8, 22, 39, 0.86);
+}
+
+.shelf-card-image-loading {
+    position: absolute;
+    inset: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.12),
+            transparent
+        );
+        transform: translateX(-100%);
+        animation: shelf-card-image-loading 1.35s infinite;
+    }
+}
+
+.shelf-card-image-fallback {
+    display: grid;
+    place-items: center;
+    color: rgba(244, 251, 255, 0.62);
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 800;
+}

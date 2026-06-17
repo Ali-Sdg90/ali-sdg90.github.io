@@ -1,0 +1,94 @@
+@use "../../base/variables" as *;
+
+.shelf-card-projects {
+    justify-content: center;
+    text-align: center;
+}
+
+.shelf-card-achievements {
+    justify-content: space-between;
+    padding: clamp(0.62rem, 0.82vw, 0.85rem);
+
+    .shelf-card-copy {
+        gap: 0.35rem;
+    }
+
+    strong {
+        color: #1688ff;
+        font-size: clamp(1.45rem, 2.1vw, 2rem);
+        line-height: 0.95;
+        letter-spacing: 0;
+    }
+
+    span {
+        max-width: 5.2rem;
+        color: $color-text;
+        font-size: clamp(0.58rem, 0.7vw, 0.76rem);
+        line-height: 1.22;
+    }
+
+    &::after {
+        content: "";
+        width: clamp(1rem, 1.25vw, 1.25rem);
+        aspect-ratio: 1;
+        align-self: flex-end;
+        border-radius: 4px;
+        border: 1px solid rgba(22, 136, 255, 0.54);
+        background: linear-gradient(
+            135deg,
+            rgba(22, 136, 255, 0.86),
+            rgba(0, 221, 255, 0.24)
+        );
+        box-shadow: 0 0 14px rgba(22, 136, 255, 0.2);
+    }
+}
+
+.shelf-card-tech-stack {
+    justify-content: center;
+    text-align: center;
+
+    .shelf-card-image-wrap,
+    .shelf-card-image-fallback {
+        width: clamp(2.4rem, 3.25vw, 3.35rem);
+        border-radius: 8px;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+.shelf-card-career-journey {
+    justify-content: flex-start;
+    align-items: center;
+    padding: clamp(0.48rem, 0.66vw, 0.68rem);
+    text-align: center;
+
+    .shelf-card-image-wrap,
+    .shelf-card-image-fallback {
+        width: clamp(2.2rem, 3vw, 3.1rem);
+        aspect-ratio: 1.1;
+        align-self: center;
+        border-radius: 6px;
+    }
+
+    .shelf-card-copy {
+        flex: 1 1 auto;
+        align-items: center;
+        gap: 0.28rem;
+    }
+
+    strong {
+        max-width: 100%;
+        color: $color-text;
+        font-size: clamp(0.56rem, 0.66vw, 0.72rem);
+        line-height: 1.18;
+    }
+
+    span {
+        margin-top: auto;
+        color: $color-text;
+        font-size: clamp(0.5rem, 0.58vw, 0.64rem);
+        line-height: 1.3;
+    }
+}

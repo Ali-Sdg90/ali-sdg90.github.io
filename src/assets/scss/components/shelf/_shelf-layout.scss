@@ -1,0 +1,42 @@
+.shelf-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 96rem;
+    margin-inline: auto;
+    pointer-events: none;
+}
+
+.shelf-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1535 / 1024;
+    isolation: isolate;
+    pointer-events: none;
+    background-image: url("../../../../assets/images/page/shelf.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shelf-section {
+    position: absolute;
+    left: 17.8%;
+    right: 24%;
+    min-height: 12.5%;
+    display: grid;
+    grid-template-columns: minmax(5.7rem, 0.84fr) minmax(0, 4.7fr);
+    align-items: center;
+    gap: clamp(0.5rem, 0.9vw, 0.85rem);
+    z-index: 2;
+    pointer-events: none;
+
+    &:hover,
+    &:focus-within {
+        z-index: 20;
+    }
+
+    &:last-child {
+        margin: 0 20px 0 6px;
+    }
+}
