@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.7...v1.2.8) (2026-06-17)
+
+
+### Bug Fixes
+
+* update shelf component styles and add cardHeight prop to ShelfCard ([d6b0351](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d6b035198e774621231c59f2d71fd2f78de28de9))
+
 ## [1.2.7](https://github.com/Ali-Sdg90/Ali-Sdg90-Resume/compare/v1.2.6...v1.2.7) (2026-06-16)
 
 
