@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.11...v1.2.12) (2026-06-17)
+
+
+### Bug Fixes
+
+* break down shelf component into smaller and better mini-components ([23f9984](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/23f99845057ef8ea17a843c34903df058883a06b))
+
 ## [1.2.11](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.10...v1.2.11) (2026-06-17)
 
 
