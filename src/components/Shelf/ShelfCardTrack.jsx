@@ -32,6 +32,7 @@ const ShelfCardTrack = ({
                     {section.items.map((item) => (
                         <ShelfCard
                             item={item}
+                            cardHeight={section.cardHeight}
                             key={`${copyIndex}-${item.title}-${item.meta}`}
                         />
                     ))}

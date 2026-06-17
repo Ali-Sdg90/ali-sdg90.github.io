@@ -21,42 +21,62 @@
 
         .shelf-section {
             position: absolute;
-            left: 17.2%;
-            right: 23.2%;
+            left: 17.8%;
+            right: 24%;
             min-height: 12.5%;
             display: grid;
             grid-template-columns: minmax(5.7rem, 0.84fr) minmax(0, 4.7fr);
-            align-items: end;
+            align-items: center;
             gap: clamp(0.5rem, 0.9vw, 0.85rem);
             z-index: 2;
             pointer-events: none;
             // border: 1px solid red; // debug
+            // margin-left: 10px;
 
             &:hover,
             &:focus-within {
                 z-index: 20;
             }
 
+            &:last-child {
+                margin: 0 20px 0 6px;
+            }
+
             .shelf-section-name {
-                min-height: clamp(3.1rem, 5.1vw, 4.35rem);
-                padding: clamp(0.5rem, 0.75vw, 0.75rem);
+                position: relative;
+                min-height: clamp(3.2rem, 7.4vw, 7.35rem);
+                padding: clamp(0.45rem, 0.72vw, 0.7rem);
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 color: #1688ff;
-                font-size: clamp(0.62rem, 0.88vw, 0.86rem);
-                line-height: 1.25;
+                font-size: 16px;
+                line-height: 1.18;
                 font-weight: 800;
+                text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 0;
-                border: 1px solid rgba(54, 137, 255, 0.48);
-                border-radius: $radius-md;
+                border: 1px solid rgba(80, 146, 221, 0.42);
+                border-left-color: rgba(138, 189, 255, 0.5);
+                border-radius: $radius-sm $radius-md $radius-md $radius-sm;
                 background:
                     linear-gradient(
+                        90deg,
+                        rgba(255, 255, 255, 0.1),
+                        rgba(255, 255, 255, 0) 24%
+                    ),
+                    linear-gradient(
                         180deg,
-                        rgba(8, 28, 55, 0.78),
-                        rgba(4, 10, 22, 0.86)
+                        rgba(12, 34, 62, 0.94),
+                        rgba(3, 9, 19, 0.96)
                     ),
                     rgba(4, 10, 22, 0.9);
+                box-shadow:
+                    -4px 0 0 0 #18283e,
+                    -7px 0 0 -1px rgba(5, 10, 18, 0.86),
+                    0 0.45rem 0.35rem -0.35rem rgba(0, 0, 0, 0.86);
+                transform: translateZ(10px);
+                transform-style: preserve-3d;
             }
 
             .shelf-section-content {
@@ -64,7 +84,7 @@
                 position: relative;
                 z-index: 1;
                 overflow: hidden;
-                padding-block: clamp(0.38rem, 0.9vw, 0.8rem);
+                padding-block: 3px;
                 pointer-events: auto;
 
                 &::before,
@@ -140,7 +160,6 @@
                 .shelf-card {
                     position: relative;
                     flex: 0 0 clamp(8rem, 12vw, 12rem);
-                    min-height: clamp(4.75rem, 8vw, 8rem);
                     z-index: 1;
                     pointer-events: auto;
                     cursor: inherit;

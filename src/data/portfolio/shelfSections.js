@@ -1,9 +1,10 @@
 export const shelfSections = [
     {
-        label: "Featured Projects",
         id: "projects",
-        rowTop: "19.6%",
-        rotation: { y: 10, z: -1 },
+        label: "Featured Projects",
+        rowTop: "20%",
+        cardHeight: "8rem",
+        rotation: { y: 10, z: -0.75 },
         autoScrollSpeed: 0,
         items: [
             { title: "Path Finder", meta: "Interactive grids" },
@@ -16,8 +17,10 @@ export const shelfSections = [
         ],
     },
     {
+        id: "achievements",
         label: "Things I've Built",
-        rowTop: "38.2%",
+        rowTop: "38.8%",
+        cardHeight: "8rem",
         rotation: { y: 10, z: -0.5 },
         autoScrollSpeed: 6,
         items: [
@@ -30,8 +33,10 @@ export const shelfSections = [
         ],
     },
     {
+        id: "tech-stack",
         label: "Tech Stack",
-        rowTop: "55.5%",
+        rowTop: "56.5%",
+        cardHeight: "7.5rem",
         rotation: { y: 10, z: 0.0 },
         autoScrollSpeed: 8,
         items: [
@@ -45,8 +50,10 @@ export const shelfSections = [
         ],
     },
     {
+        id: "career-journey",
         label: "Career Journey",
-        rowTop: "72.4%",
+        rowTop: "74%",
+        cardHeight: "7rem",
         rotation: { y: 8.5, z: 0.0 },
         autoScrollSpeed: 75,
         items: [
