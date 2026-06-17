@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.8...v1.2.9) (2026-06-17)
+
+
+### Bug Fixes
+
+* add Geist and Vazirmatn font files with licenses and CSS integration ([ce31591](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/ce315915f96b79f2e8b2a6a41aa7c659759598bf))
+
 ## [1.2.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.7...v1.2.8) (2026-06-17)
 
 
