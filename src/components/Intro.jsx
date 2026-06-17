@@ -11,7 +11,7 @@ const Intro = () => {
 
             <p className="hero-role">Software Engineer</p>
 
-            <p className="hero-copy">Aloha, for test.</p>
+            <p className="hero-copy">Aloha, this is for test.</p>
 
             <div className="hero-actions">
                 <a href="#projects" className="hero-button primary">

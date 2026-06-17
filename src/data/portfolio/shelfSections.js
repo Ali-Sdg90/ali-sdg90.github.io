@@ -1,3 +1,8 @@
+import csiLogo from "../../assets/images/thumbnails/career/csi_logo.jpg";
+import melkRadarLogo from "../../assets/images/thumbnails/career/melkradar_logo.jpg";
+import dpaLogo from "../../assets/images/thumbnails/career/dpa_logo.jpg";
+import settleitLogo from "../../assets/images/thumbnails/career/settleitgpt_logo.jpg";
+
 export const shelfSections = [
     {
         id: "projects",
@@ -102,10 +107,26 @@ export const shelfSections = [
         rotation: { y: 8.5, z: 0.0 },
         autoScrollSpeed: 0,
         items: [
-            { title: "CS Internship", meta: "2023 — 2026" },
-            { title: "MelkRadar", meta: "2023 — 2026" },
-            { title: "Dadeh Pardazi", meta: "2024 — 2025" },
-            { title: "SettleitGPT", meta: "2025" },
+            {
+                title: "CS Internship",
+                meta: "2023 — 2026",
+                image: csiLogo,
+            },
+            {
+                title: "MelkRadar",
+                meta: "2023 — 2026",
+                image: melkRadarLogo,
+            },
+            {
+                title: "Dadeh Pardazi",
+                meta: "2024 — 2025",
+                image: dpaLogo,
+            },
+            {
+                title: "SettleitGPT",
+                meta: "2025 — 2026",
+                image: settleitLogo,
+            },
         ],
     },
 ];
