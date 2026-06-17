@@ -10,7 +10,9 @@ $color-shelf-dark: #5b321c;
 $color-shelf: #9a5a2f;
 $color-shelf-light: #d08a4a;
 
-$font-family-base: "Vazirmatn", "Inter", "Segoe UI", Arial, sans-serif;
+// $font-family-base: "Vazirmatn", "Inter", "Segoe UI", Arial, sans-serif; // Persian Version
+$font-family-base:
+    "Geist", "Inter", "Segoe UI", Arial, sans-serif; // English Version
 
 $radius-sm: 6px;
 $radius-md: 8px;

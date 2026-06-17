@@ -12,7 +12,7 @@
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "release": "semantic-release",
-    "check": "npm run format:check && npm run lint && npm run build"
+    "check": "npm run format:check && npm run lint && npm run build && echo ✅ Everything is OK"
   },
   "dependencies": {
     "framer-motion": "^12.40.0",
