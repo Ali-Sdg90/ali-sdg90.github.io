@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.10...v1.2.11) (2026-06-17)
+
+
+### Bug Fixes
+
+* add new logos and implement loading state for shelf card images ([eb07c88](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/eb07c887e3f7b3ac9bfa83bc780dd08ce780f8a6))
+
 ## [1.2.10](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.9...v1.2.10) (2026-06-17)
 
 
