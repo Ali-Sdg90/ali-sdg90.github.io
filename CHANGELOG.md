@@ -1,3 +1,10 @@
+## [1.2.10](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.9...v1.2.10) (2026-06-17)
+
+
+### Bug Fixes
+
+* enhance shelf component with new card styles and interactivity ([2232ec0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/2232ec099e9659421713e6f13ec82fe2dd383326))
+
 ## [1.2.9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.8...v1.2.9) (2026-06-17)
 
 
