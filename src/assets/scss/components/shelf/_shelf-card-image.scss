@@ -9,6 +9,8 @@
     flex: 0 0 auto;
     border-radius: 6px;
     overflow: hidden;
+    user-select: none;
+    -webkit-user-drag: none;
     border: 1px solid rgba(72, 143, 255, 0.35);
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.12),
@@ -21,6 +23,9 @@
     display: block;
     object-fit: cover;
     opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
     transition: opacity 180ms $ease-out;
 
     &.loaded {

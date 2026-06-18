@@ -16,7 +16,7 @@ import chartJsLogo from "../../assets/images/thumbnails/tech-stack/chart.js_logo
 import firebaseLogo from "../../assets/images/thumbnails/tech-stack/firebase_logo.jpg";
 import gitLogo from "../../assets/images/thumbnails/tech-stack/git_logo.jpg";
 import githubActionsLogo from "../../assets/images/thumbnails/tech-stack/github-actions_logo.jpg";
-import nodejsLogo from "../../assets/images/thumbnails/tech-stack/node.js_logo.jpg";
+import nodejsLogo from "../../assets/images/thumbnails/tech-stack/nodejs_logo.jpg";
 import reactNativeLogo from "../../assets/images/thumbnails/tech-stack/react-native_logo.jpg";
 import expoLogo from "../../assets/images/thumbnails/tech-stack/expo_logo.jpg";
 import viteLogo from "../../assets/images/thumbnails/tech-stack/vite_logo.jpg";

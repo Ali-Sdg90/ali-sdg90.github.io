@@ -22,6 +22,8 @@ const ShelfCardImage = ({ item }) => {
                 alt={`${item.title} preview`}
                 loading="lazy"
                 decoding="async"
+                draggable="false"
+                onDragStart={(event) => event.preventDefault()}
                 onLoad={() => setIsLoaded(true)}
                 onError={() => setHasError(true)}
                 className={`shelf-card-image ${isLoaded ? "loaded" : ""}`}
