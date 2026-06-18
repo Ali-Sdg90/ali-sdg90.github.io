@@ -44,13 +44,16 @@
 }
 
 .shelf-card-tech-stack {
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
     text-align: center;
 
     .shelf-card-image-wrap,
     .shelf-card-image-fallback {
-        width: clamp(2.4rem, 3.25vw, 3.35rem);
+        width: 60px;
         border-radius: 8px;
+        aspect-ratio: 1.1;
+        margin-top: 4px;
     }
 
     span {
@@ -59,23 +62,22 @@
 }
 
 .shelf-card-career-journey {
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: clamp(0.48rem, 0.66vw, 0.68rem);
-    text-align: center;
+    gap: 8px;
 
     .shelf-card-image-wrap,
     .shelf-card-image-fallback {
-        width: clamp(2.2rem, 3vw, 3.1rem);
+        width: 56px;
         aspect-ratio: 1.1;
         align-self: center;
         border-radius: 6px;
+        margin-top: 6px;
     }
 
     .shelf-card-copy {
-        flex: 1 1 auto;
         align-items: center;
-        gap: 0.28rem;
     }
 
     strong {
@@ -86,7 +88,6 @@
     }
 
     span {
-        margin-top: auto;
         color: $color-text;
         font-size: clamp(0.5rem, 0.58vw, 0.64rem);
         line-height: 1.3;

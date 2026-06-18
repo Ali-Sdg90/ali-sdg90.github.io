@@ -38,7 +38,7 @@
     &:hover,
     &:focus-visible {
         z-index: 30;
-        transform: translate(-2px, 0px);
+        transform: translate(-1px, 0px);
         box-shadow: -3px 0px 0px 1px #1c2c45;
         border-color: rgba(72, 143, 255, 0.72);
         transition:
@@ -48,7 +48,7 @@
     }
 
     &:active {
-        transform: translate(-3px, 0.5px);
+        transform: translate(-2px, 0.5px);
         border-color: rgba(163, 199, 255, 0.72);
     }
 

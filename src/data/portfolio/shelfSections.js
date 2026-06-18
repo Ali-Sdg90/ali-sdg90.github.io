@@ -1,7 +1,29 @@
+// Career Journey images
+
 import csiLogo from "../../assets/images/thumbnails/career/csi_logo.jpg";
 import melkRadarLogo from "../../assets/images/thumbnails/career/melkradar_logo.jpg";
 import dpaLogo from "../../assets/images/thumbnails/career/dpa_logo.jpg";
 import settleitLogo from "../../assets/images/thumbnails/career/settleitgpt_logo.jpg";
+
+// Tech Stack & Tools images
+import reactLogo from "../../assets/images/thumbnails/tech-stack/react_logo.png";
+import javascriptLogo from "../../assets/images/thumbnails/tech-stack/javascript_logo.png";
+import scssLogo from "../../assets/images/thumbnails/tech-stack/scss_logo.png";
+import antDesignLogo from "../../assets/images/thumbnails/tech-stack/ant-design_logo.png";
+import tanStackQueryLogo from "../../assets/images/thumbnails/tech-stack/tanstack-query_logo.png";
+import restApiLogo from "../../assets/images/thumbnails/tech-stack/rest-api_logo.png";
+import chartJsLogo from "../../assets/images/thumbnails/tech-stack/chart.js_logo.png";
+import firebaseLogo from "../../assets/images/thumbnails/tech-stack/firebase_logo.png";
+import gitLogo from "../../assets/images/thumbnails/tech-stack/git_logo.png";
+import githubActionsLogo from "../../assets/images/thumbnails/tech-stack/github-actions_logo.png";
+import nodejsLogo from "../../assets/images/thumbnails/tech-stack/node.js_logo.png";
+import reactNativeLogo from "../../assets/images/thumbnails/tech-stack/react-native_logo.png";
+import expoLogo from "../../assets/images/thumbnails/tech-stack/expo_logo.png";
+import viteLogo from "../../assets/images/thumbnails/tech-stack/vite_logo.png";
+import eslintLogo from "../../assets/images/thumbnails/tech-stack/eslint_logo.png";
+import prettierLogo from "../../assets/images/thumbnails/tech-stack/prettier_logo.png";
+import huskyLogo from "../../assets/images/thumbnails/tech-stack/husky_logo.png";
+import semanticReleaseLogo from "../../assets/images/thumbnails/tech-stack/semantic-release_logo.png";
 
 export const shelfSections = [
     {
@@ -82,20 +104,31 @@ export const shelfSections = [
     },
     {
         id: "tech-stack",
-        label: "Tech Stack",
+        label: "Tech Stack & Tools",
         rowTop: "56.9%",
         cardHeight: "7.5rem",
         cardWidth: "clamp(5.4rem, 6.1vw, 6.75rem)",
         rotation: { y: 10, z: 0.0 },
-        autoScrollSpeed: 8,
+        autoScrollSpeed: 20,
         items: [
-            { title: "React", meta: "UI systems" },
-            { title: "JavaScript", meta: "App logic" },
-            { title: "TypeScript", meta: "Typed flows" },
-            { title: "SCSS", meta: "Design styles" },
-            { title: "Node.js", meta: "Backend tooling" },
-            { title: "REST APIs", meta: "Service contracts" },
-            { title: "Vite", meta: "Fast builds" },
+            { title: "React", image: reactLogo },
+            { title: "JavaScript", image: javascriptLogo },
+            { title: "SCSS", image: scssLogo },
+            { title: "Ant Design", image: antDesignLogo },
+            { title: "TanStack Query", image: tanStackQueryLogo },
+            { title: "REST APIs", image: restApiLogo },
+            { title: "semantic release", image: semanticReleaseLogo },
+            { title: "Husky", image: huskyLogo },
+            { title: "Prettier", image: prettierLogo },
+            { title: "ESLint", image: eslintLogo },
+            { title: "Vite", image: viteLogo },
+            { title: "Expo", image: expoLogo },
+            { title: "React Native", image: reactNativeLogo },
+            { title: "Node.js", image: nodejsLogo },
+            { title: "GitHub Actions", image: githubActionsLogo },
+            { title: "Git/GitHub", image: gitLogo },
+            { title: "Firebase", image: firebaseLogo },
+            { title: "Chart.js", image: chartJsLogo },
         ],
     },
     {
