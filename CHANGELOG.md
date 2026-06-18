@@ -1,3 +1,10 @@
+## [1.2.13](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.12...v1.2.13) (2026-06-18)
+
+
+### Bug Fixes
+
+* add tech stack images and improve card styles ([c08c666](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/c08c6669bbf819542a08242f2aa0dd3afd3e0b13))
+
 ## [1.2.12](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.11...v1.2.12) (2026-06-17)
 
 
