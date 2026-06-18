@@ -12,6 +12,55 @@ const useShelfScroll = (shelfSections) => {
     const [activeDragIndex, setActiveDragIndex] = useState(null);
     const [scrollState, setScrollState] = useState({});
 
+    const getLoopWidth = useCallback((scroller) => {
+        const firstSet = scroller?.querySelector(".shelf-card-set");
+
+        if (!scroller || !firstSet) {
+            return 0;
+        }
+
+        const setGap = parseFloat(getComputedStyle(scroller).columnGap) || 0;
+
+        return firstSet.offsetWidth + setGap;
+    }, []);
+
+    const normalizeScrollPosition = useCallback(
+        (scroller, scrollLeft = scroller.scrollLeft, doRepeat = true) => {
+            if (!doRepeat) {
+                if (scrollLeft !== scroller.scrollLeft) {
+                    scroller.scrollLeft = scrollLeft;
+                }
+
+                return scroller.scrollLeft;
+            }
+
+            const loopWidth = getLoopWidth(scroller);
+
+            if (loopWidth <= 0) {
+                return scrollLeft;
+            }
+
+            const minScrollLeft = loopWidth;
+            const maxScrollLeft = loopWidth * 3;
+            let nextScrollLeft = scrollLeft;
+
+            while (nextScrollLeft < minScrollLeft) {
+                nextScrollLeft += loopWidth;
+            }
+
+            while (nextScrollLeft >= maxScrollLeft) {
+                nextScrollLeft -= loopWidth;
+            }
+
+            if (nextScrollLeft !== scroller.scrollLeft) {
+                scroller.scrollLeft = nextScrollLeft;
+            }
+
+            return nextScrollLeft;
+        },
+        [getLoopWidth],
+    );
+
     const setScrollerRef = useCallback((index, element) => {
         scrollerRefs.current[index] = element;
     }, []);
@@ -84,23 +133,17 @@ const useShelfScroll = (shelfSections) => {
     useEffect(() => {
         shelfSections.forEach((section, index) => {
             const scroller = scrollerRefs.current[index];
-            const firstSet = scroller?.querySelector(".shelf-card-set");
+            const loopWidth = getLoopWidth(scroller);
 
-            if (section.autoScrollSpeed <= 0) {
+            if (!scroller || !section.doRepeat || loopWidth <= 0) {
                 autoScrollPositions.current[index] = scroller?.scrollLeft ?? 0;
                 updateScrollState(index);
                 return;
             }
 
-            if (scroller && firstSet) {
-                const setGap =
-                    parseFloat(getComputedStyle(scroller).columnGap) || 0;
-
-                autoScrollPositions.current[index] =
-                    firstSet.offsetWidth + setGap;
-                scroller.scrollLeft = autoScrollPositions.current[index];
-                updateScrollState(index);
-            }
+            autoScrollPositions.current[index] = loopWidth * 2;
+            scroller.scrollLeft = autoScrollPositions.current[index];
+            updateScrollState(index);
         });
 
         let previousTime = performance.now();
@@ -114,23 +157,20 @@ const useShelfScroll = (shelfSections) => {
                 if (
                     activeDragIndexRef.current === index ||
                     hoveredSectionIndexRef.current === index ||
+                    !section.doRepeat ||
                     section.autoScrollSpeed <= 0
                 ) {
                     return;
                 }
 
                 const scroller = scrollerRefs.current[index];
-                const firstSet = scroller?.querySelector(".shelf-card-set");
-
-                if (!scroller || !firstSet) {
+                if (!scroller) {
                     return;
                 }
 
-                const setGap =
-                    parseFloat(getComputedStyle(scroller).columnGap) || 0;
-                const loopWidth = firstSet.offsetWidth + setGap;
+                const loopWidth = getLoopWidth(scroller);
 
-                if (loopWidth <= scroller.clientWidth) {
+                if (loopWidth <= 0) {
                     return;
                 }
 
@@ -139,11 +179,11 @@ const useShelfScroll = (shelfSections) => {
                         scroller.scrollLeft) -
                     section.autoScrollSpeed * deltaSeconds;
 
-                if (autoScrollPositions.current[index] <= 0) {
-                    autoScrollPositions.current[index] += loopWidth;
-                }
-
-                scroller.scrollLeft = autoScrollPositions.current[index];
+                autoScrollPositions.current[index] = normalizeScrollPosition(
+                    scroller,
+                    autoScrollPositions.current[index],
+                    section.doRepeat,
+                );
             });
 
             autoScrollFrame.current = requestAnimationFrame(autoScroll);
@@ -156,61 +196,90 @@ const useShelfScroll = (shelfSections) => {
                 cancelAnimationFrame(autoScrollFrame.current);
             }
         };
-    }, [shelfSections, updateScrollState]);
+    }, [
+        getLoopWidth,
+        normalizeScrollPosition,
+        shelfSections,
+        updateScrollState,
+    ]);
 
-    const handlePointerDown = useCallback((event, index) => {
-        if (event.button !== 0) {
-            return;
-        }
+    const handlePointerDown = useCallback(
+        (event, index) => {
+            if (event.button !== 0) {
+                return;
+            }
 
-        const scroller = event.currentTarget;
+            const scroller = event.currentTarget;
 
-        dragState.current = {
-            index,
-            pointerId: event.pointerId,
-            scrollLeft: scroller.scrollLeft,
-            startX: event.clientX,
-        };
+            dragState.current = {
+                doRepeat: shelfSections[index]?.doRepeat ?? false,
+                index,
+                pointerId: event.pointerId,
+                scrollLeft: normalizeScrollPosition(
+                    scroller,
+                    scroller.scrollLeft,
+                    shelfSections[index]?.doRepeat ?? false,
+                ),
+                startX: event.clientX,
+            };
 
-        activeDragIndexRef.current = index;
-        setActiveDragIndex(index);
-        scroller.setPointerCapture(event.pointerId);
-    }, []);
+            activeDragIndexRef.current = index;
+            setActiveDragIndex(index);
+            scroller.setPointerCapture(event.pointerId);
+        },
+        [normalizeScrollPosition, shelfSections],
+    );
 
-    const handlePointerMove = useCallback((event) => {
-        const currentDragState = dragState.current;
+    const handlePointerMove = useCallback(
+        (event) => {
+            const currentDragState = dragState.current;
 
-        if (
-            !currentDragState ||
-            currentDragState.pointerId !== event.pointerId
-        ) {
-            return;
-        }
+            if (
+                !currentDragState ||
+                currentDragState.pointerId !== event.pointerId
+            ) {
+                return;
+            }
 
-        const scroller = event.currentTarget;
-        const dragDistance = event.clientX - currentDragState.startX;
+            const scroller = event.currentTarget;
+            const dragDistance = event.clientX - currentDragState.startX;
+            const nextScrollLeft = normalizeScrollPosition(
+                scroller,
+                currentDragState.scrollLeft - dragDistance,
+                currentDragState.doRepeat,
+            );
 
-        scroller.scrollLeft = currentDragState.scrollLeft - dragDistance;
-        autoScrollPositions.current[currentDragState.index] =
-            scroller.scrollLeft;
-        event.preventDefault();
-    }, []);
+            currentDragState.scrollLeft = nextScrollLeft;
+            currentDragState.startX = event.clientX;
+            autoScrollPositions.current[currentDragState.index] =
+                nextScrollLeft;
+            event.preventDefault();
+        },
+        [normalizeScrollPosition],
+    );
 
     const handleSectionPointerEnter = useCallback((index) => {
         hoveredSectionIndexRef.current = index;
     }, []);
 
-    const handleSectionPointerLeave = useCallback((index) => {
-        if (hoveredSectionIndexRef.current === index) {
-            hoveredSectionIndexRef.current = null;
-        }
+    const handleSectionPointerLeave = useCallback(
+        (index) => {
+            if (hoveredSectionIndexRef.current === index) {
+                hoveredSectionIndexRef.current = null;
+            }
 
-        const scroller = scrollerRefs.current[index];
+            const scroller = scrollerRefs.current[index];
 
-        if (scroller) {
-            autoScrollPositions.current[index] = scroller.scrollLeft;
-        }
-    }, []);
+            if (scroller) {
+                autoScrollPositions.current[index] = normalizeScrollPosition(
+                    scroller,
+                    scroller.scrollLeft,
+                    shelfSections[index]?.doRepeat ?? false,
+                );
+            }
+        },
+        [normalizeScrollPosition, shelfSections],
+    );
 
     const stopDragging = useCallback(
         (event) => {
@@ -229,12 +298,16 @@ const useShelfScroll = (shelfSections) => {
 
             updateScrollState(currentDragState.index);
             autoScrollPositions.current[currentDragState.index] =
-                event.currentTarget.scrollLeft;
+                normalizeScrollPosition(
+                    event.currentTarget,
+                    event.currentTarget.scrollLeft,
+                    currentDragState.doRepeat,
+                );
             dragState.current = null;
             activeDragIndexRef.current = null;
             setActiveDragIndex(null);
         },
-        [updateScrollState],
+        [normalizeScrollPosition, updateScrollState],
     );
 
     return {

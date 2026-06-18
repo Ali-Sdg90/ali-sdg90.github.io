@@ -9,7 +9,8 @@ const ShelfCardTrack = ({
     stopDragging,
     scheduleScrollStateUpdate,
 }) => {
-    const setCount = section.autoScrollSpeed > 0 ? 2 : 1;
+    const setCount = section.doRepeat ? 5 : 1;
+    const centerSetIndex = Math.floor(setCount / 2);
 
     return (
         <div
@@ -25,7 +26,7 @@ const ShelfCardTrack = ({
         >
             {Array.from({ length: setCount }).map((_, copyIndex) => (
                 <div
-                    aria-hidden={copyIndex === 1}
+                    aria-hidden={copyIndex !== centerSetIndex}
                     className="shelf-card-set"
                     key={`${section.label}-${copyIndex}`}
                 >

@@ -6,24 +6,24 @@ import dpaLogo from "../../assets/images/thumbnails/career/dpa_logo.jpg";
 import settleitLogo from "../../assets/images/thumbnails/career/settleitgpt_logo.jpg";
 
 // Tech Stack & Tools images
-import reactLogo from "../../assets/images/thumbnails/tech-stack/react_logo.png";
-import javascriptLogo from "../../assets/images/thumbnails/tech-stack/javascript_logo.png";
-import scssLogo from "../../assets/images/thumbnails/tech-stack/scss_logo.png";
-import antDesignLogo from "../../assets/images/thumbnails/tech-stack/ant-design_logo.png";
-import tanStackQueryLogo from "../../assets/images/thumbnails/tech-stack/tanstack-query_logo.png";
-import restApiLogo from "../../assets/images/thumbnails/tech-stack/rest-api_logo.png";
-import chartJsLogo from "../../assets/images/thumbnails/tech-stack/chart.js_logo.png";
-import firebaseLogo from "../../assets/images/thumbnails/tech-stack/firebase_logo.png";
-import gitLogo from "../../assets/images/thumbnails/tech-stack/git_logo.png";
-import githubActionsLogo from "../../assets/images/thumbnails/tech-stack/github-actions_logo.png";
-import nodejsLogo from "../../assets/images/thumbnails/tech-stack/node.js_logo.png";
-import reactNativeLogo from "../../assets/images/thumbnails/tech-stack/react-native_logo.png";
-import expoLogo from "../../assets/images/thumbnails/tech-stack/expo_logo.png";
-import viteLogo from "../../assets/images/thumbnails/tech-stack/vite_logo.png";
-import eslintLogo from "../../assets/images/thumbnails/tech-stack/eslint_logo.png";
-import prettierLogo from "../../assets/images/thumbnails/tech-stack/prettier_logo.png";
-import huskyLogo from "../../assets/images/thumbnails/tech-stack/husky_logo.png";
-import semanticReleaseLogo from "../../assets/images/thumbnails/tech-stack/semantic-release_logo.png";
+import reactLogo from "../../assets/images/thumbnails/tech-stack/react_logo.jpg";
+import javascriptLogo from "../../assets/images/thumbnails/tech-stack/javascript_logo.jpg";
+import scssLogo from "../../assets/images/thumbnails/tech-stack/scss_logo.jpg";
+import antDesignLogo from "../../assets/images/thumbnails/tech-stack/ant-design_logo.jpg";
+import tanStackQueryLogo from "../../assets/images/thumbnails/tech-stack/tanstack-query_logo.jpg";
+import restApiLogo from "../../assets/images/thumbnails/tech-stack/rest-api_logo.jpg";
+import chartJsLogo from "../../assets/images/thumbnails/tech-stack/chart.js_logo.jpg";
+import firebaseLogo from "../../assets/images/thumbnails/tech-stack/firebase_logo.jpg";
+import gitLogo from "../../assets/images/thumbnails/tech-stack/git_logo.jpg";
+import githubActionsLogo from "../../assets/images/thumbnails/tech-stack/github-actions_logo.jpg";
+import nodejsLogo from "../../assets/images/thumbnails/tech-stack/node.js_logo.jpg";
+import reactNativeLogo from "../../assets/images/thumbnails/tech-stack/react-native_logo.jpg";
+import expoLogo from "../../assets/images/thumbnails/tech-stack/expo_logo.jpg";
+import viteLogo from "../../assets/images/thumbnails/tech-stack/vite_logo.jpg";
+import eslintLogo from "../../assets/images/thumbnails/tech-stack/eslint_logo.jpg";
+import prettierLogo from "../../assets/images/thumbnails/tech-stack/prettier_logo.jpg";
+import huskyLogo from "../../assets/images/thumbnails/tech-stack/husky_logo.jpg";
+import semanticReleaseLogo from "../../assets/images/thumbnails/tech-stack/semantic-release_logo.jpg";
 
 export const shelfSections = [
     {
@@ -33,7 +33,14 @@ export const shelfSections = [
         cardHeight: "9rem",
         cardWidth: "clamp(7.875rem, 9.03vw, 9.71rem)",
         rotation: { y: 10, z: -0.75 },
+
+        // autoScrollSpeed: 6,
+        // doRepeat: true,
+
+        // For test
         autoScrollSpeed: 0,
+        doRepeat: false,
+
         items: [
             {
                 title: "Ali’s Portfolio",
@@ -48,40 +55,44 @@ export const shelfSections = [
                 meta: "Production admin panel for platform management",
             },
             {
+                title: "SettleitGPT",
+                meta: "iOS app with AI personas and voice generation",
+            },
+            {
                 title: "Path Finder",
                 meta: "Customizable animated pathfinding sandbox",
             },
             {
-                title: "CS Queue Calendar",
-                meta: "Live calendar for CS Internship session planning",
-            },
-            {
-                title: "CS Club Bot",
-                meta: "Live Telegram bot for AI-assisted workflows",
-            },
-            {
-                title: "CS Queue Bot",
-                meta: "Live Telegram bot for queue management",
-            },
-            {
-                title: "Dice Distribution",
-                meta: "Configurable dice probability simulator",
-            },
-            {
-                title: "RPS Battle Royale",
-                meta: "Rock-paper-scissors battle royale simulator",
-            },
-            {
-                title: "Gradient Paint",
-                meta: "Customizable interactive gradient painting canvas",
+                title: "Tic Tac Toe",
+                meta: "Customizable game with multiple play modes",
             },
             {
                 title: "Quick Math",
                 meta: "Timed math game with a rotating cube interface",
             },
             {
-                title: "Tic Tac Toe",
-                meta: "Customizable game with multiple play modes",
+                title: "Gradient Paint",
+                meta: "Customizable interactive gradient painting canvas",
+            },
+            {
+                title: "RPS Battle Royale",
+                meta: "Rock-paper-scissors battle royale simulator",
+            },
+            {
+                title: "Dice Distribution",
+                meta: "Configurable dice probability simulator",
+            },
+            {
+                title: "CS Queue Bot",
+                meta: "Live Telegram bot for queue management",
+            },
+            {
+                title: "CS Club Bot",
+                meta: "Live Telegram bot for AI-assisted workflows",
+            },
+            {
+                title: "CS Queue Calendar",
+                meta: "Live calendar for CS Internship session planning",
             },
         ],
     },
@@ -92,7 +103,8 @@ export const shelfSections = [
         cardHeight: "8.4rem",
         cardWidth: "clamp(7.5rem, 8.6vw, 9.25rem)",
         rotation: { y: 10, z: -0.5 },
-        autoScrollSpeed: 6,
+        autoScrollSpeed: 15,
+        doRepeat: true,
         items: [
             { title: "50+", meta: "Charts delivered" },
             { title: "60+", meta: "APIs integrated" },
@@ -110,6 +122,7 @@ export const shelfSections = [
         cardWidth: "clamp(5.4rem, 6.1vw, 6.75rem)",
         rotation: { y: 10, z: 0.0 },
         autoScrollSpeed: 20,
+        doRepeat: true,
         items: [
             { title: "React", image: reactLogo },
             { title: "JavaScript", image: javascriptLogo },
@@ -139,6 +152,7 @@ export const shelfSections = [
         cardWidth: "clamp(7.5rem, 8.6vw, 9.25rem)",
         rotation: { y: 8.5, z: 0.0 },
         autoScrollSpeed: 0,
+        doRepeat: false,
         items: [
             {
                 title: "CS Internship",
