@@ -1,3 +1,5 @@
+import HeroContactInfo from "./HeroContactInfo";
+
 const Intro = () => {
     return (
         <>
@@ -15,13 +17,15 @@ const Intro = () => {
 
             <div className="hero-actions">
                 <a href="#projects" className="hero-button primary">
-                    Explore My Work
+                    Explore My Work <span aria-hidden="true">-&gt;</span>
                 </a>
 
                 <a href="#about" className="hero-button secondary">
                     About Me
                 </a>
             </div>
+
+            <HeroContactInfo />
         </>
     );
 };
