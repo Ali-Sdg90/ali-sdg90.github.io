@@ -2,13 +2,13 @@
 
 .shelf-section-name {
     position: relative;
-    min-height: clamp(3.2rem, 7.4vw, 7.35rem);
-    padding: clamp(0.45rem, 0.72vw, 0.7rem);
+    min-height: clamp(3.2rem, 6.6vw, 11vw);
+    padding: clamp(0.45rem, 0.58vw, 1.05vw);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #1688ff;
-    font-size: 16px;
+    font-size: clamp(1rem, 0.84vw, 1.45vw);
     line-height: 1.18;
     font-weight: 800;
     text-align: center;
@@ -89,10 +89,10 @@
 .shelf-card-track {
     display: flex;
     align-items: center;
-    gap: clamp(0.45rem, 0.8vw, 0.75rem);
+    gap: clamp(0.45rem, 0.62vw, 1.15vw);
     overflow-x: auto;
     overflow-y: hidden;
-    padding: clamp(0.15rem, 0.35vw, 0.35rem) clamp(0.4rem, 0.75vw, 0.7rem);
+    padding: clamp(0.15rem, 0.28vw, 0.55vw) clamp(0.4rem, 0.58vw, 1.05vw);
     cursor: grab;
     scrollbar-width: none;
     touch-action: pan-y;

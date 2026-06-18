@@ -2,16 +2,16 @@
 
 .shelf-card {
     position: relative;
-    flex: 0 0 clamp(7.5rem, 8.6vw, 9.25rem);
+    flex: 0 0 clamp(7.5rem, 8.1vw, 13vw);
     z-index: 1;
     pointer-events: auto;
     cursor: inherit;
     overflow: hidden;
-    padding: clamp(0.55rem, 0.65vw, 0.72rem);
+    padding: clamp(0.55rem, 0.54vw, 0.95vw);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: clamp(0.45rem, 0.62vw, 0.62rem);
+    gap: clamp(0.45rem, 0.5vw, 0.9vw);
     color: $color-text;
     border: 1px solid rgba(72, 143, 255, 0.44);
     border-radius: 7px;
@@ -54,14 +54,14 @@
 
     strong {
         color: $color-text;
-        font-size: clamp(0.58rem, 0.68vw, 0.78rem);
+        font-size: clamp(0.58rem, 0.56vw, 1vw);
         line-height: 1.15;
         font-weight: 800;
     }
 
     span {
         color: $color-text-muted;
-        font-size: 10px;
+        font-size: clamp(0.625rem, 0.46vw, 0.82vw);
         line-height: 1.35;
     }
 }

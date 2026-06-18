@@ -3,7 +3,7 @@
 .shelf-card-image-wrap,
 .shelf-card-image-fallback {
     position: relative;
-    width: clamp(2.6rem, 3.85vw, 4rem);
+    width: clamp(2.6rem, 3.55vw, 5.4vw);
     aspect-ratio: 1;
     align-self: center;
     flex: 0 0 auto;
@@ -67,7 +67,7 @@
     display: grid;
     place-items: center;
     color: rgba(244, 251, 255, 0.62);
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.9vw, 1.35vw);
     line-height: 1;
     font-weight: 800;
 }

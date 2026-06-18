@@ -7,7 +7,7 @@
 
 .shelf-card-achievements {
     justify-content: space-between;
-    padding: clamp(0.62rem, 0.82vw, 0.85rem);
+    padding: clamp(0.62rem, 0.66vw, 1.15vw);
 
     .shelf-card-copy {
         gap: 0.35rem;
@@ -15,7 +15,7 @@
 
     strong {
         color: #1688ff;
-        font-size: clamp(1.45rem, 2.1vw, 2rem);
+        font-size: clamp(1.45rem, 1.45vw, 2.8vw);
         line-height: 0.95;
         letter-spacing: 0;
     }
@@ -23,13 +23,13 @@
     span {
         max-width: 5.2rem;
         color: $color-text;
-        font-size: clamp(0.58rem, 0.7vw, 0.76rem);
+        font-size: clamp(0.58rem, 0.54vw, 0.95vw);
         line-height: 1.22;
     }
 
     &::after {
         content: "";
-        width: clamp(1rem, 1.25vw, 1.25rem);
+        width: clamp(1rem, 0.9vw, 1.7vw);
         aspect-ratio: 1;
         align-self: flex-end;
         border-radius: 4px;
@@ -50,7 +50,7 @@
 
     .shelf-card-image-wrap,
     .shelf-card-image-fallback {
-        width: 60px;
+        width: clamp(3.75rem, 3.1vw, 5.4vw);
         border-radius: 8px;
         aspect-ratio: 1.1;
         margin-top: 4px;
@@ -69,7 +69,7 @@
 
     .shelf-card-image-wrap,
     .shelf-card-image-fallback {
-        width: 56px;
+        width: clamp(3.5rem, 2.9vw, 5vw);
         aspect-ratio: 1.1;
         align-self: center;
         border-radius: 6px;
@@ -83,13 +83,13 @@
     strong {
         max-width: 100%;
         color: $color-text;
-        font-size: clamp(0.56rem, 0.66vw, 0.72rem);
+        font-size: clamp(0.56rem, 0.54vw, 0.95vw);
         line-height: 1.18;
     }
 
     span {
         color: $color-text;
-        font-size: clamp(0.5rem, 0.58vw, 0.64rem);
+        font-size: clamp(0.5rem, 0.48vw, 0.82vw);
         line-height: 1.3;
     }
 }
