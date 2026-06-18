@@ -1,3 +1,11 @@
+## [1.2.14](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.13...v1.2.14) (2026-06-18)
+
+
+### Bug Fixes
+
+* optimize tech stack images from 1.3Mg to 100 kb!, add doRepeat func and config for rows ([566161d](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/566161d22b38ff2c0e279e527bfc6f3ee04632e4))
+* remove draggable images and fix wrong uppercase image name ([9d6fbe0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/9d6fbe0587a04c653d12724180f191ef24818c93))
+
 ## [1.2.13](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.12...v1.2.13) (2026-06-18)
 
 
