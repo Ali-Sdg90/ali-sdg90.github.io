@@ -1,3 +1,10 @@
+## [1.2.15](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.14...v1.2.15) (2026-06-18)
+
+
+### Bug Fixes
+
+* refactor portfolio layout and add contact information component ([4e99555](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/4e995550f86efab24ff9df532a1e51a62810379c))
+
 ## [1.2.14](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.13...v1.2.14) (2026-06-18)
 
 
