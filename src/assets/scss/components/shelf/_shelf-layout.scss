@@ -19,7 +19,7 @@
     background-position: center;
     background-repeat: no-repeat;
     perspective: 81.4cqw;
-    perspective-origin: left 55%;
+    perspective-origin: calc(0px - var(--shelf-left)) 55%;
 }
 
 .shelf-section {
