@@ -1,4 +1,5 @@
 @use "../../base/variables" as *;
+@use "shelf-units" as *;
 
 .shelf-card-projects {
     justify-content: center;
@@ -7,39 +8,39 @@
 
 .shelf-card-achievements {
     justify-content: space-between;
-    padding: clamp(0.62rem, 0.82vw, 0.85rem);
+    padding: shelf-cqw(13.6);
 
     .shelf-card-copy {
-        gap: 0.35rem;
+        gap: shelf-cqw(5.6);
     }
 
     strong {
         color: #1688ff;
-        font-size: clamp(1.45rem, 2.1vw, 2rem);
+        font-size: shelf-cqw(32);
         line-height: 0.95;
         letter-spacing: 0;
     }
 
     span {
-        max-width: 5.2rem;
+        max-width: shelf-cqw(83.2);
         color: $color-text;
-        font-size: clamp(0.58rem, 0.7vw, 0.76rem);
+        font-size: shelf-cqw(12.16);
         line-height: 1.22;
     }
 
     &::after {
         content: "";
-        width: clamp(1rem, 1.25vw, 1.25rem);
+        width: shelf-cqw(20);
         aspect-ratio: 1;
         align-self: flex-end;
-        border-radius: 4px;
-        border: 1px solid rgba(22, 136, 255, 0.54);
+        border-radius: shelf-cqw(4);
+        border: shelf-cqw(1) solid rgba(22, 136, 255, 0.54);
         background: linear-gradient(
             135deg,
             rgba(22, 136, 255, 0.86),
             rgba(0, 221, 255, 0.24)
         );
-        box-shadow: 0 0 14px rgba(22, 136, 255, 0.2);
+        box-shadow: 0 0 shelf-cqw(14) rgba(22, 136, 255, 0.2);
     }
 }
 
@@ -50,10 +51,10 @@
 
     .shelf-card-image-wrap,
     .shelf-card-image-fallback {
-        width: clamp(3rem, 2.81vw, 4.5rem);
-        border-radius: 8px;
+        width: shelf-cqw(60);
+        border-radius: shelf-cqw(8);
         aspect-ratio: 1.1;
-        margin-top: 4px;
+        margin-top: shelf-cqw(4);
     }
 
     span {
@@ -65,15 +66,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: shelf-cqw(8);
 
     .shelf-card-image-wrap,
     .shelf-card-image-fallback {
-        width: clamp(3rem, 2.63vw, 4rem);
+        width: shelf-cqw(56);
         aspect-ratio: 1.1;
         align-self: center;
-        border-radius: 6px;
-        margin-top: 6px;
+        border-radius: shelf-cqw(6);
+        margin-top: shelf-cqw(6);
     }
 
     .shelf-card-copy {
@@ -83,13 +84,13 @@
     strong {
         max-width: 100%;
         color: $color-text;
-        font-size: clamp(0.56rem, 0.66vw, 0.72rem);
+        font-size: shelf-cqw(11.52);
         line-height: 1.18;
     }
 
     span {
         color: $color-text;
-        font-size: clamp(0.5rem, 0.58vw, 0.64rem);
+        font-size: shelf-cqw(10.24);
         line-height: 1.3;
     }
 }

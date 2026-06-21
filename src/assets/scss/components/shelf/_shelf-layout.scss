@@ -1,10 +1,15 @@
+@use "shelf-units" as *;
+
 .shelf-wrapper {
     position: relative;
     z-index: 1;
-    width: 100%;
-    max-width: 96rem;
-    // max-width: none;
+
+    // Change size of the Shelf
+    width: min(75.64vw, calc(105vh * 1.5));
+
+    max-width: none;
     margin-inline: auto;
+    container-type: inline-size;
     pointer-events: none;
 }
 
@@ -18,6 +23,7 @@
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
+    transform: translateY(shelf-cqw(16));
 }
 
 .shelf-section {
@@ -26,9 +32,9 @@
     right: 24%;
     min-height: 12.5%;
     display: grid;
-    grid-template-columns: minmax(5.7rem, 0.84fr) minmax(0, 4.7fr);
+    grid-template-columns: minmax(shelf-cqw(91.2), 0.84fr) minmax(0, 4.7fr);
     align-items: center;
-    gap: clamp(0.5rem, 0.9vw, 0.85rem);
+    gap: shelf-cqw(13.6);
     z-index: 2;
     pointer-events: none;
 
@@ -38,6 +44,6 @@
     }
 
     &:last-child {
-        margin: 0 20px 0 6px;
+        margin: 0 shelf-cqw(20) 0 shelf-cqw(6);
     }
 }

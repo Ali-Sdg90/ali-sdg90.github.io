@@ -1,0 +1,8 @@
+@use "sass:math";
+
+// The shelf resolves to 96rem (1536px) in the 2132px reference layout.
+$shelf-reference-width: 1536;
+
+@function shelf-cqw($pixels) {
+    @return math.div($pixels, $shelf-reference-width) * 100cqw;
+}

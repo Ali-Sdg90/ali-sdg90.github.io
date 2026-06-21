@@ -1,20 +1,21 @@
 @use "../../base/variables" as *;
+@use "shelf-units" as *;
 
 .shelf-card-image-wrap,
 .shelf-card-image-fallback {
     position: relative;
-    width: clamp(2.6rem, 3.85vw, 4rem);
+    width: shelf-cqw(64);
     aspect-ratio: 1;
     align-self: center;
     flex: 0 0 auto;
-    border-radius: 6px;
+    border-radius: shelf-cqw(6);
     overflow: hidden;
     user-select: none;
     -webkit-user-drag: none;
-    border: 1px solid rgba(72, 143, 255, 0.35);
+    border: shelf-cqw(1) solid rgba(72, 143, 255, 0.35);
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.12),
-        0 0.45rem 1rem rgba(0, 0, 0, 0.2);
+        inset 0 shelf-cqw(1) 0 rgba(255, 255, 255, 0.12),
+        0 shelf-cqw(7.2) shelf-cqw(16) rgba(0, 0, 0, 0.2);
 }
 
 .shelf-card-image {
@@ -67,7 +68,7 @@
     display: grid;
     place-items: center;
     color: rgba(244, 251, 255, 0.62);
-    font-size: clamp(1rem, 0.7vw, 1.35vw);
+    font-size: shelf-cqw(16);
     line-height: 1;
     font-weight: 800;
 }

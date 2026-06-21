@@ -1,22 +1,23 @@
 @use "../../base/variables" as *;
+@use "shelf-units" as *;
 
 .shelf-section-name {
     position: relative;
-    min-height: clamp(3.2rem, 7.4vw, 7.35rem);
-    padding: clamp(0.45rem, 0.72vw, 0.7rem);
+    min-height: shelf-cqw(117.6);
+    padding: shelf-cqw(11.2);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #1688ff;
-    font-size: clamp(0.875rem, 0.75vw, 1.125rem);
+    font-size: shelf-cqw(15.99);
     line-height: 1.18;
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0;
-    border: 1px solid rgba(80, 146, 221, 0.42);
+    border: shelf-cqw(1) solid rgba(80, 146, 221, 0.42);
     border-left-color: rgba(138, 189, 255, 0.5);
-    border-radius: $radius-sm $radius-md $radius-md $radius-sm;
+    border-radius: shelf-cqw(6) shelf-cqw(8) shelf-cqw(8) shelf-cqw(6);
     background:
         linear-gradient(
             90deg,
@@ -26,10 +27,10 @@
         linear-gradient(180deg, rgba(12, 34, 62, 0.94), rgba(3, 9, 19, 0.96)),
         rgba(4, 10, 22, 0.9);
     box-shadow:
-        -4px 0 0 0 #18283e,
-        -7px 0 0 -1px rgba(5, 10, 18, 0.86),
-        0 0.45rem 0.35rem -0.35rem rgba(0, 0, 0, 0.86);
-    transform: translateZ(10px);
+        shelf-cqw(-4) 0 0 0 #18283e,
+        shelf-cqw(-7) 0 0 shelf-cqw(-1) rgba(5, 10, 18, 0.86),
+        0 shelf-cqw(7.2) shelf-cqw(5.6) shelf-cqw(-5.6) rgba(0, 0, 0, 0.86);
+    transform: translateZ(shelf-cqw(10));
     transform-style: preserve-3d;
 }
 
@@ -38,7 +39,7 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    padding-block: 3px;
+    padding-block: shelf-cqw(3);
     pointer-events: auto;
 
     &::before,
@@ -48,7 +49,7 @@
         top: 0;
         bottom: 0;
         z-index: 5;
-        width: clamp(1.4rem, 3vw, 3rem);
+        width: shelf-cqw(48);
         opacity: 0;
         pointer-events: none;
         transition: opacity $motion-fast $ease-out;
@@ -89,10 +90,10 @@
 .shelf-card-track {
     display: flex;
     align-items: center;
-    gap: clamp(0.45rem, 0.8vw, 0.75rem);
+    gap: shelf-cqw(12);
     overflow-x: auto;
     overflow-y: hidden;
-    padding: clamp(0.15rem, 0.35vw, 0.35rem) clamp(0.4rem, 0.75vw, 0.7rem);
+    padding: shelf-cqw(5.6) shelf-cqw(11.2);
     cursor: grab;
     scrollbar-width: none;
     touch-action: pan-y;

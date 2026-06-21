@@ -19,7 +19,10 @@ const Shelf = () => {
         <section className="shelf-wrapper" aria-label="Portfolio shelf">
             <div
                 className="shelf-container"
-                style={{ perspective: "900px", perspectiveOrigin: "0% 55%" }}
+                style={{
+                    perspective: "58.59cqw",
+                    perspectiveOrigin: "0% 55%",
+                }}
             >
                 {shelfSections.map((section, index) => (
                     <ShelfSection
