@@ -4,6 +4,7 @@
     width: 100%;
     max-width: none;
     margin-inline: auto;
+    container-type: inline-size;
     pointer-events: none;
 }
 
@@ -17,6 +18,8 @@
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
+    perspective: 81.4cqw;
+    perspective-origin: left 55%;
 }
 
 .shelf-section {

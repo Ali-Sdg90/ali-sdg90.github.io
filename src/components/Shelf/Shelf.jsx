@@ -17,10 +17,7 @@ const Shelf = () => {
 
     return (
         <section className="shelf-wrapper" aria-label="Portfolio shelf">
-            <div
-                className="shelf-container"
-                style={{ perspective: "900px", perspectiveOrigin: "0% 55%" }}
-            >
+            <div className="shelf-container">
                 {shelfSections.map((section, index) => (
                     <ShelfSection
                         activeDragIndex={activeDragIndex}
