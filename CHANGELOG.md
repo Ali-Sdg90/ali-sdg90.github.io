@@ -1,3 +1,10 @@
+## [1.2.16](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.15...v1.2.16) (2026-06-21)
+
+
+### Bug Fixes
+
+* add pr preview to repo, start cherry pick [#1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/issues/1)'s clamps to main branch ([7bf391b](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/7bf391b6789f946db481ecdd7687253247f8c33b))
+
 ## [1.2.15](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.14...v1.2.15) (2026-06-18)
 
 
