@@ -50,7 +50,7 @@
 
     .shelf-card-image-wrap,
     .shelf-card-image-fallback {
-        width: 60px;
+        width: clamp(3rem, 2.81vw, 4.5rem);
         border-radius: 8px;
         aspect-ratio: 1.1;
         margin-top: 4px;
@@ -69,7 +69,7 @@
 
     .shelf-card-image-wrap,
     .shelf-card-image-fallback {
-        width: 56px;
+        width: clamp(3rem, 2.63vw, 4rem);
         aspect-ratio: 1.1;
         align-self: center;
         border-radius: 6px;

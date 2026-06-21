@@ -61,7 +61,7 @@
 
     span {
         color: $color-text-muted;
-        font-size: 10px;
+        font-size: clamp(0.5rem, 0.47vw, 0.75rem);
         line-height: 1.35;
     }
 }

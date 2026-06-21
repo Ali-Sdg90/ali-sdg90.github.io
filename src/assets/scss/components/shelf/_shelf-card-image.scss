@@ -67,7 +67,7 @@
     display: grid;
     place-items: center;
     color: rgba(244, 251, 255, 0.62);
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.7vw, 1.35vw);
     line-height: 1;
     font-weight: 800;
 }
