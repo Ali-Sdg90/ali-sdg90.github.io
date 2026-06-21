@@ -1,3 +1,10 @@
+## [1.2.17](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.16...v1.2.17) (2026-06-21)
+
+
+### Bug Fixes
+
+* convert some px and rem values to clamp, before make shelf sized page system ([bc2afb5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/bc2afb5706ecc7179fc65857c520d2fca6c17416))
+
 ## [1.2.16](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.15...v1.2.16) (2026-06-21)
 
 
