@@ -1,3 +1,10 @@
+## [1.2.18](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.17...v1.2.18) (2026-06-21)
+
+
+### Bug Fixes
+
+* use shelf-cqw for shelf sizes, now it works flawlessly in every display size and monitor sizes (desktop at the moment) ([bd86604](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/bd86604a531691856fcd3aa70ecf2f639c1af012))
+
 ## [1.2.17](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.16...v1.2.17) (2026-06-21)
 
 
