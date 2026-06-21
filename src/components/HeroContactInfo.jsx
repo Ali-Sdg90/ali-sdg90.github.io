@@ -5,7 +5,7 @@ const HeroContactInfo = () => {
         <>
             <address className="hero-contact" aria-label="Ali contact details">
                 {contactItems.map(({ icon: Icon, label, href }) => (
-                    <a href={href} key={label}>
+                    <a href={href} key={label} target="_blank">
                         <Icon aria-hidden="true" size={20} />
                         <span>{label}</span>
                     </a>
@@ -14,7 +14,12 @@ const HeroContactInfo = () => {
 
             <div className="hero-socials" aria-label="Ali social links">
                 {socialItems.map(({ icon: Icon, label, href }) => (
-                    <a href={href} key={label} aria-label={label}>
+                    <a
+                        href={href}
+                        key={label}
+                        aria-label={label}
+                        target="_blank"
+                    >
                         <Icon aria-hidden="true" size={21} />
                     </a>
                 ))}

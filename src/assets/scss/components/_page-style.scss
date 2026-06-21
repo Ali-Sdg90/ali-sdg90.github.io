@@ -10,7 +10,7 @@
     width: 100%;
     min-height: 100vh;
     margin-inline: auto;
-    padding: 18vh clamp(1.45rem, 2.45vw, 2.75rem) 3rem;
+    padding: 12vh 4vw 3rem;
 
     .hero-intro {
         position: relative;
@@ -44,7 +44,7 @@
 
         .hero-copy {
             color: $color-text-muted;
-            font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+            font-size: 16px; // fix later
             max-width: 18rem;
             margin-bottom: 1.5rem;
         }

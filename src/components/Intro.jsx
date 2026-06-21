@@ -13,16 +13,21 @@ const Intro = () => {
 
             <p className="hero-role">Software Engineer</p>
 
-            <p className="hero-copy">Aloha, this is for test.</p>
+            {/* https://youtu.be/8TycTsfTcY8 */}
+
+            <p className="hero-copy">
+                I love building complex systems, polished sites, bots,
+                mini-games, and LLM characters.
+                <br />
+                Little worlds made with care, curiosity, and a splash of love :)
+            </p>
 
             <div className="hero-actions">
-                <a href="#projects" className="hero-button primary">
-                    Explore My Work <span aria-hidden="true">-&gt;</span>
+                <a className="hero-button primary">
+                    View Resume <span aria-hidden="true">-&gt;</span>
                 </a>
 
-                <a href="#about" className="hero-button secondary">
-                    About Me
-                </a>
+                <a className="hero-button secondary">About Ali</a>
             </div>
 
             <HeroContactInfo />

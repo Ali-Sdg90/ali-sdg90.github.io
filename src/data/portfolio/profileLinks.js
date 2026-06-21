@@ -57,6 +57,6 @@ export const socialItems = [
     {
         icon: FaInstagram,
         label: "Instagram",
-        href: "https://www.instagram.com/ali_sdg90?igsh=MWNwaDJreTdhYWUzeA==",
+        href: "https://www.instagram.com/ali_sdg90",
     },
 ];

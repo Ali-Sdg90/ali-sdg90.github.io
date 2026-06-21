@@ -34,12 +34,12 @@ export const shelfSections = [
         cardWidth: "10.11cqw",
         rotation: { y: 10, z: -0.75 },
 
-        // autoScrollSpeed: 6,
-        // doRepeat: true,
+        autoScrollSpeed: 10,
+        doRepeat: true,
 
         // For test
-        autoScrollSpeed: 0,
-        doRepeat: false,
+        // autoScrollSpeed: 0,
+        // doRepeat: false,
 
         items: [
             {
@@ -103,7 +103,7 @@ export const shelfSections = [
         cardHeight: "8.75cqw",
         cardWidth: "9.64cqw",
         rotation: { y: 10, z: -0.5 },
-        autoScrollSpeed: 15,
+        autoScrollSpeed: 16,
         doRepeat: true,
         items: [
             { title: "50+", meta: "Charts delivered" },
@@ -121,7 +121,7 @@ export const shelfSections = [
         cardHeight: "7.81cqw",
         cardWidth: "7.03cqw",
         rotation: { y: 10, z: 0.0 },
-        autoScrollSpeed: 20,
+        autoScrollSpeed: 24,
         doRepeat: true,
         items: [
             { title: "React", image: reactLogo },
