@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.19...v1.3.0) (2026-06-23)
+
+
+### Features
+
+* add temporary mobile WIP notice component and styles, add first ali image concept. start working on placing him in the page ([09a7b45](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/09a7b45dfd1f0f87df0edaf97555c28773f00738))
+
 ## [1.2.19](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.18...v1.2.19) (2026-06-23)
 
 
