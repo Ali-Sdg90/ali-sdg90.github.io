@@ -1,0 +1,99 @@
+@use "../base/variables" as *;
+
+// TEMPORARY MOBILE WIP GATE
+
+.mobile-wip {
+    display: none;
+}
+
+@media (max-width: 899px) {
+    .desktop-experience {
+        display: none;
+    }
+
+    .mobile-wip {
+        position: relative;
+        isolation: isolate;
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: clamp(1.5rem, 6vw, 3rem);
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        background:
+            radial-gradient(
+                circle at 50% 35%,
+                rgba(22, 136, 255, 0.14),
+                transparent 38%
+            ),
+            $color-background;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: min(72vw, 28rem);
+            aspect-ratio: 1;
+            border: 1px solid rgba(67, 150, 255, 0.12);
+            border-radius: 50%;
+            box-shadow:
+                0 0 80px rgba(0, 104, 255, 0.12),
+                inset 0 0 60px rgba(0, 104, 255, 0.06);
+        }
+
+        &__card {
+            width: min(100%, 31rem);
+            padding: clamp(1.75rem, 7vw, 2.75rem);
+            text-align: center;
+            border: 1px solid rgba(67, 150, 255, 0.2);
+            border-radius: $radius-sm;
+            background: rgba(6, 18, 34, 0.72);
+            box-shadow: 0 24px 80px rgba(0, 82, 190, 0.16);
+            backdrop-filter: blur(12px);
+
+            h1 {
+                margin-bottom: 1rem;
+                color: $color-text;
+                font-size: clamp(1.8rem, 7vw, 2.5rem);
+                line-height: 1.08;
+            }
+
+            p:not(.mobile-wip__eyebrow) {
+                color: $color-text-muted;
+                line-height: 1.65;
+
+                & + p {
+                    margin-top: 0.75rem;
+                }
+            }
+        }
+
+        &__mark {
+            width: 3.25rem;
+            aspect-ratio: 1;
+            margin: 0 auto 1.25rem;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(67, 150, 255, 0.4);
+            border-radius: 50%;
+            box-shadow: 0 0 24px rgba(30, 155, 255, 0.2);
+
+            span {
+                width: 0.65rem;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                background: #1688ff;
+                box-shadow: 0 0 16px rgba(30, 155, 255, 0.85);
+            }
+        }
+
+        &__eyebrow {
+            margin-bottom: 0.65rem;
+            color: #1688ff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+    }
+}
