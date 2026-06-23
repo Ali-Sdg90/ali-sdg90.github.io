@@ -1,5 +1,16 @@
 @use "shelf-units" as *;
 
+.hero-shelf {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    padding-inline: 2.25rem;
+    pointer-events: none;
+}
+
 .shelf-wrapper {
     position: relative;
     z-index: 1;

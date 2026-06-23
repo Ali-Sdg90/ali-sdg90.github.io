@@ -121,8 +121,8 @@
     .bg-ground {
         position: absolute;
         width: 100%;
-        // height: 270px;
-        height: clamp(12rem, 18vw, 18rem);
+        // height: clamp(12rem, 18vw, 18rem);
+        height: 30vh; // maybe change later
         bottom: 0;
         z-index: 10;
         background: #01050f;
