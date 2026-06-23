@@ -1,3 +1,10 @@
+## [1.2.19](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.18...v1.2.19) (2026-06-23)
+
+
+### Bug Fixes
+
+* add new hero copy text and restructure Intro component ([9f97737](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/9f977379752e06150a025b368169d21b33fa8b88))
+
 ## [1.2.18](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.17...v1.2.18) (2026-06-21)
 
 
