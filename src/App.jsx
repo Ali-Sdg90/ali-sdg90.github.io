@@ -1,4 +1,5 @@
 import DynamicBackground from "./components/DynamicBackground";
+import AboutPanel from "./components/AboutPanel";
 import Intro from "./components/Intro";
 import MobileWipNotice from "./components/MobileWipNotice";
 import Shelf from "./components/Shelf/Shelf";
@@ -18,6 +19,8 @@ const App = () => {
                     <section className="hero-shelf">
                         <Shelf />
                     </section>
+
+                    <AboutPanel />
                 </main>
             </div>
 
