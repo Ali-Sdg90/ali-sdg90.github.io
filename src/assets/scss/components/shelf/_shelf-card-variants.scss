@@ -65,9 +65,9 @@
 .shelf-card-career-journey {
     display: flex;
     justify-content: flex-start;
-    gap: shelf-cqw(6.6);
+    gap: shelf-cqw(0);
     overflow: visible;
-    padding: shelf-cqw(8) shelf-cqw(9.6);
+    padding: shelf-cqw(8) shelf-cqw(10);
     text-align: left;
 
     .shelf-card-image-wrap,
@@ -100,18 +100,14 @@
 .shelf-card-career-year {
     width: max-content;
     max-width: 100%;
-    padding: shelf-cqw(3.2) shelf-cqw(8);
+    padding: shelf-cqw(10) 0;
     color: #1688ff;
     font-size: shelf-cqw(11);
     font-weight: 800;
-    border: shelf-cqw(1) solid rgba(22, 136, 255, 0.4);
-    border-radius: shelf-cqw(6);
-    background: rgba(22, 136, 255, 0.08);
-    box-shadow: inset 0 shelf-cqw(1) 0 rgba(171, 211, 255, 0.12);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: shelf-cqw(22);
+    height: shelf-cqw(12);
 }
 
 .shelf-card-career-details {

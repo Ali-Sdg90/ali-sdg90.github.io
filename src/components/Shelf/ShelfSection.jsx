@@ -22,7 +22,16 @@ const ShelfSection = ({
                 transform: `rotateX(0deg) rotateY(${section.rotation.y}deg) rotateZ(${section.rotation.z}deg)`,
             }}
         >
-            <div className="shelf-section-name">{section.label}</div>
+            <div
+                className="shelf-section-name"
+                style={
+                    section.titleCardHeight
+                        ? { minHeight: section.titleCardHeight }
+                        : undefined
+                }
+            >
+                {section.label}
+            </div>
 
             <div
                 className={[
