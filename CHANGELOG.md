@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.3.0...v1.3.1) (2026-06-25)
+
+
+### Bug Fixes
+
+* add Manrope font styles to the project for testing it, fix career cards styles, improve style of contacts text and blue variable in project to look more like the design ([2649608](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/26496089326c86f23b7779c4e99c4f1ccbc123bd))
+
 # [1.3.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.2.19...v1.3.0) (2026-06-23)
 
 
