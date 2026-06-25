@@ -34,17 +34,21 @@ export const shelfSections = [
         cardWidth: "10.11cqw",
         rotation: { y: 10, z: -0.75 },
 
-        autoScrollSpeed: 10,
-        doRepeat: true,
+        // autoScrollSpeed: 10,
+        // doRepeat: true,
 
         // For test
-        // autoScrollSpeed: 0,
-        // doRepeat: false,
+        autoScrollSpeed: 0,
+        doRepeat: false,
 
         items: [
             {
                 title: "Ali’s Portfolio",
                 meta: "Interactive portfolio with a 3D shelf experience",
+            },
+            {
+                title: "Spot Taste Tracker",
+                meta: "Dashboard for analyzing Spotify taste over time",
             },
             {
                 title: "Fabrexa AI Ollama",
@@ -149,29 +153,37 @@ export const shelfSections = [
         label: "Career Journey",
         rowTop: "74%",
         cardHeight: "7.29cqw",
-        cardWidth: "9.64cqw",
+        cardWidth: "9.9cqw",
         rotation: { y: 8.5, z: 0.0 },
         autoScrollSpeed: 0,
         doRepeat: false,
         items: [
             {
                 title: "CS Internship",
-                meta: "2023 — 2026",
+                company: "CS Internship",
+                meta: "Technical Mentor & System Designer",
+                year: "2023 - 2026",
                 image: csiLogo,
             },
             {
                 title: "MelkRadar",
-                meta: "2023 — 2026",
+                company: "MelkRadar",
+                meta: "Front-End Developer & Reviewer",
+                year: "2023 - 2026",
                 image: melkRadarLogo,
             },
             {
-                title: "Dadeh Pardazi",
-                meta: "2024 — 2025",
+                title: "Dadeh Pardazi Azmoudeh Karan",
+                company: "Dadeh Pardazi Azmoudeh Karan",
+                meta: "React Developer",
+                year: "2024 - 2025",
                 image: dpaLogo,
             },
             {
                 title: "SettleitGPT",
-                meta: "2025 — 2026",
+                company: "SettleitGPT",
+                meta: "React Native Developer",
+                year: "2025 - 2026",
                 image: settleitLogo,
             },
         ],

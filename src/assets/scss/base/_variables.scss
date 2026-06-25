@@ -1,8 +1,8 @@
 $color-background: #0a0a0a;
 $color-surface: #101720;
 $color-surface-raised: #151f2a;
-$color-text: #f4fbff;
-$color-text-muted: #9fb3c1;
+$color-text: #f7fbff;
+$color-text-muted: #b7c4d6;
 $color-accent: #00ddff;
 $color-accent-soft: rgba(0, 221, 255, 0.18);
 $color-character: #ffd21f;
@@ -10,9 +10,16 @@ $color-shelf-dark: #5b321c;
 $color-shelf: #9a5a2f;
 $color-shelf-light: #d08a4a;
 
-// $font-family-base: "Vazirmatn", "Inter", "Segoe UI", Arial, sans-serif; // Persian Version
-$font-family-base:
-    "Geist", "Inter", "Segoe UI", Arial, sans-serif; // English Version
+// Todo: later add a switch between two font when adding switch language feature
+
+// Persian Version
+// $font-family-base: "Vazirmatn", "Inter", "Segoe UI", Arial, sans-serif;
+
+// English Version
+$font-family-base: "Geist", "Inter", "Segoe UI", Arial, sans-serif;
+
+// Testing single font-family
+// $font-family-base: "Geist";
 
 $radius-sm: 6px;
 $radius-md: 8px;

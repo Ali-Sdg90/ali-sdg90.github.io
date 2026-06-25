@@ -4,7 +4,7 @@ const Intro = () => {
     return (
         <>
             <div className="intro-top-section">
-                <p className="hero-greeting">Hi there!</p>
+                <p className="hero-greeting">Hi there! 👋</p>
 
                 <h1 id="hero-title">
                     I&apos;m <span>Ali</span>

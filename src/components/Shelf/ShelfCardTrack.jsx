@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 import ShelfCard from "./ShelfCard";
 
 const ShelfCardTrack = ({
@@ -30,14 +32,25 @@ const ShelfCardTrack = ({
                     className="shelf-card-set"
                     key={`${section.label}-${copyIndex}`}
                 >
-                    {section.items.map((item) => (
-                        <ShelfCard
-                            item={item}
-                            cardHeight={section.cardHeight}
-                            cardWidth={section.cardWidth}
+                    {section.items.map((item, itemIndex) => (
+                        <Fragment
                             key={`${copyIndex}-${item.title}-${item.meta}`}
-                            sectionId={section.id}
-                        />
+                        >
+                            <ShelfCard
+                                item={item}
+                                cardHeight={section.cardHeight}
+                                cardWidth={section.cardWidth}
+                                sectionId={section.id}
+                            />
+
+                            {section.id === "career-journey" &&
+                                itemIndex < section.items.length - 1 && (
+                                    <span
+                                        className="shelf-card-connector"
+                                        aria-hidden="true"
+                                    />
+                                )}
+                        </Fragment>
                     ))}
                 </div>
             ))}

@@ -15,7 +15,7 @@ const ShelfSection = ({
 }) => {
     return (
         <div
-            className="shelf-section"
+            className={`shelf-section shelf-section-${section.id}`}
             id={section.id}
             style={{
                 top: `${section.rowTop}`,

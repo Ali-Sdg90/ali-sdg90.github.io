@@ -111,3 +111,29 @@
     align-items: center;
     gap: inherit;
 }
+
+.shelf-section-career-journey {
+    .shelf-card-track,
+    .shelf-card-set {
+        gap: shelf-cqw(6.4);
+    }
+
+    .shelf-card-set {
+        padding-inline-end: shelf-cqw(4);
+    }
+}
+
+.shelf-card-connector {
+    flex: 0 0 shelf-cqw(12.8);
+    height: shelf-cqw(2);
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        rgba(22, 136, 255, 0.28),
+        rgba(22, 136, 255, 0.95),
+        rgba(0, 221, 255, 0.34)
+    );
+    box-shadow: 0 0 shelf-cqw(8) rgba(22, 136, 255, 0.52);
+    pointer-events: none;
+    margin-right: 4px;
+}
