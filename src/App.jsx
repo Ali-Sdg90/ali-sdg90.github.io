@@ -3,6 +3,9 @@ import AboutPanel from "./components/AboutPanel";
 import Intro from "./components/Intro";
 import MobileWipNotice from "./components/MobileWipNotice";
 import Shelf from "./components/Shelf/Shelf";
+import { setDocumentTitle } from "./utils/setDocumentTitle";
+
+setDocumentTitle();
 
 const App = () => {
     return (
