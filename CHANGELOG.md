@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.4.0...v1.4.1) (2026-06-26)
+
+
+### Bug Fixes
+
+* add dynamic for each row shadow properties to shelf sections ([f1abcbe](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/f1abcbe13dabe7af1e98cd734d131c9c6dd5c6d3))
+
 # [1.4.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.3.1...v1.4.0) (2026-06-25)
 
 
