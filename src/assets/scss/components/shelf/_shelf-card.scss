@@ -1,6 +1,9 @@
 @use "../../base/variables" as *;
 @use "shelf-units" as *;
 
+$shelf-card-row-shadow-fallback: shelf-cqw(-3) shelf-cqw(0) 0 shelf-cqw(1)
+    #1c2c45;
+
 .shelf-card {
     position: relative;
     flex: 0 0 shelf-cqw(148);
@@ -28,7 +31,7 @@
     box-shadow:
         inset 0 shelf-cqw(1) 0 rgba(171, 211, 255, 0.16),
         inset shelf-cqw(-10) 0 shelf-cqw(18) rgba(3, 9, 20, 0.42),
-        shelf-cqw(-3) 0 0 shelf-cqw(1) #1c2c45,
+        var(--shelf-card-row-shadow, #{$shelf-card-row-shadow-fallback}),
         0 shelf-cqw(12) shelf-cqw(19.2) rgba(0, 0, 0, 0.26);
     transform-style: preserve-3d;
     transition:
@@ -40,7 +43,11 @@
     &:focus-visible {
         z-index: 30;
         transform: translate(shelf-cqw(-1), 0);
-        box-shadow: shelf-cqw(-3) 0 0 shelf-cqw(1) #1c2c45;
+        box-shadow:
+            inset 0 shelf-cqw(1) 0 rgba(171, 211, 255, 0.18),
+            inset shelf-cqw(-10) 0 shelf-cqw(18) rgba(3, 9, 20, 0.38),
+            var(--shelf-card-row-shadow, #{$shelf-card-row-shadow-fallback}),
+            0 shelf-cqw(14) shelf-cqw(22) rgba(0, 0, 0, 0.28);
         border-color: rgba(72, 143, 255, 0.72);
         transition:
             transform 0.2s $ease-out,
