@@ -1,6 +1,9 @@
 @use "../../base/variables" as *;
 @use "shelf-units" as *;
 
+$shelf-card-row-shadow-fallback: shelf-cqw(-3) shelf-cqw(0) 0 shelf-cqw(1)
+    #1c2c45;
+
 .shelf-section-name {
     position: relative;
     min-height: shelf-cqw(117.6);
@@ -27,7 +30,7 @@
         linear-gradient(180deg, rgba(12, 34, 62, 0.94), rgba(3, 9, 19, 0.96)),
         rgba(4, 10, 22, 0.9);
     box-shadow:
-        shelf-cqw(-4) 0 0 0 #18283e,
+        var(--shelf-card-row-shadow, #{$shelf-card-row-shadow-fallback}),
         shelf-cqw(-7) 0 0 shelf-cqw(-1) rgba(5, 10, 18, 0.86),
         0 shelf-cqw(7.2) shelf-cqw(5.6) shelf-cqw(-5.6) rgba(0, 0, 0, 0.86);
     transform: translateZ(shelf-cqw(10));

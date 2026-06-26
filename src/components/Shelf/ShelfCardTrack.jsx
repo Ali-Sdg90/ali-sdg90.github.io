@@ -2,18 +2,6 @@ import { Fragment } from "react";
 
 import ShelfCard from "./ShelfCard";
 
-const SHELF_REFERENCE_WIDTH = 1536;
-
-const resolveShelfShadowValue = (shadowValue) => {
-    if (!shadowValue) return undefined;
-
-    return shadowValue.replace(/shelf-cqw\((-?\d*\.?\d+)\)/g, (_, pixels) => {
-        const cqwValue = (Number(pixels) / SHELF_REFERENCE_WIDTH) * 100;
-
-        return `${cqwValue}cqw`;
-    });
-};
-
 const ShelfCardTrack = ({
     section,
     sectionIndex,
@@ -25,18 +13,10 @@ const ShelfCardTrack = ({
 }) => {
     const setCount = section.doRepeat ? 5 : 1;
     const centerSetIndex = Math.floor(setCount / 2);
-    const cardShadow = resolveShelfShadowValue(section.cardShadow);
 
     return (
         <div
             className="shelf-card-track"
-            style={
-                cardShadow
-                    ? {
-                          "--shelf-card-row-shadow": cardShadow,
-                      }
-                    : undefined
-            }
             ref={(element) => {
                 setScrollerRef(sectionIndex, element);
             }}

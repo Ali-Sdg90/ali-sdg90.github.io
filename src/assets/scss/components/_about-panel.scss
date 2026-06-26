@@ -8,10 +8,10 @@
     height: clamp(45rem, 82.5vh, 60rem);
     width: 500px;
     pointer-events: auto;
+    transform-style: preserve-3d;
 
-    // perspective: 100rem;
+    perspective: 1300px;
     // perspective-origin: 100% 50%;
-    // transform-style: preserve-3d;
     // transform: rotateY(-9deg) rotateX(1deg) rotateZ(-0.18deg);
     // transform-origin: right center;
 }

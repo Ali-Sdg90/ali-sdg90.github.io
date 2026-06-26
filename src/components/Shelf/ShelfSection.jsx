@@ -1,5 +1,17 @@
 import ShelfCardTrack from "./ShelfCardTrack";
 
+const SHELF_REFERENCE_WIDTH = 1536;
+
+const resolveShelfShadowValue = (shadowValue) => {
+    if (!shadowValue) return undefined;
+
+    return shadowValue.replace(/shelf-cqw\((-?\d*\.?\d+)\)/g, (_, pixels) => {
+        const cqwValue = (Number(pixels) / SHELF_REFERENCE_WIDTH) * 100;
+
+        return `${cqwValue}cqw`;
+    });
+};
+
 const ShelfSection = ({
     section,
     sectionIndex,
@@ -13,11 +25,16 @@ const ShelfSection = ({
     stopDragging,
     scheduleScrollStateUpdate,
 }) => {
+    const cardShadow = resolveShelfShadowValue(section.cardShadow);
+
     return (
         <div
             className={`shelf-section shelf-section-${section.id}`}
             id={section.id}
             style={{
+                ...(cardShadow
+                    ? { "--shelf-card-row-shadow": cardShadow }
+                    : {}),
                 top: `${section.rowTop}`,
                 transform: `rotateX(0deg) rotateY(${section.rotation.y}deg) rotateZ(${section.rotation.z}deg)`,
             }}
