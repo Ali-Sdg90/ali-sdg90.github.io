@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.4.1...v1.4.2) (2026-06-26)
+
+
+### Bug Fixes
+
+* implement about section like design, removed unnessery code for scrolling in this section and convert every unit to px temporary ([f977f50](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/f977f50bd132a48c0ebfb3eb892cfa82944c56b8))
+
 ## [1.4.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.4.0...v1.4.1) (2026-06-26)
 
 
