@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.3.1...v1.4.0) (2026-06-25)
+
+
+### Features
+
+* add about me section and start working on it, this part still needs a loooot of attention... tomorrow :P ([7901f5e](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/7901f5e9d15d1eee89ffd89d215380112e565fec))
+
 ## [1.3.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.3.0...v1.3.1) (2026-06-25)
 
 
