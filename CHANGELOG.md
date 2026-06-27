@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.4.2...v1.5.0) (2026-06-27)
+
+
+### Features
+
+* add dynamic cqw sizing to intro section and about section, finally desktop size problem is fixed, start to fine tune the core text and data in page ([9d39b4a](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/9d39b4acff259b8e9d19f35935067a42d1e32017))
+
 ## [1.4.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.4.1...v1.4.2) (2026-06-26)
 
 
