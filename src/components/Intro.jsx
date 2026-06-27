@@ -30,7 +30,7 @@ const Intro = () => {
                         View Resume <span aria-hidden="true">-&gt;</span>
                     </a>
 
-                    <a className="hero-button secondary">About Ali</a>
+                    <a className="hero-button secondary">About Me</a>
                 </div>
             </div>
 

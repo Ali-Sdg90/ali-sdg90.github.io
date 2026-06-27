@@ -1,5 +1,8 @@
+@use "hero-stage" as *;
+
 .page-style {
     position: relative;
+    --hero-stage-width: min(75.64vw, calc(105dvh * 1.5));
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -8,5 +11,6 @@
     width: 100%;
     min-height: 100vh;
     margin-inline: auto;
-    padding: 12vh 4vw 3rem;
+    padding-block: hero-stage-size(122) hero-stage-size(48);
+    padding-inline: max(1rem, hero-stage-size(85));
 }

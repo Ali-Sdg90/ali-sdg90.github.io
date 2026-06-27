@@ -1,15 +1,18 @@
-@use "../base/variables" as *;
+@use "../../base/variables" as *;
+@use "../hero-stage" as *;
+@use "about-panel-units" as *;
 
 .about-panel {
     position: fixed;
-    right: 153px;
-    bottom: 96px;
+    right: max(1rem, hero-stage-size(153));
+    bottom: hero-stage-size(96);
     z-index: 4;
-    width: 357px;
-    height: 726px;
+    width: hero-stage-size(357);
+    height: hero-stage-size(760);
     pointer-events: auto;
+    container-type: inline-size;
     transform-style: preserve-3d;
-    perspective: 580px;
+    perspective: hero-stage-size(580);
     perspective-origin: 0% 52%;
 }
 
@@ -23,13 +26,13 @@
     height: 100%;
     backface-visibility: hidden;
     border: 1px solid rgba(87, 170, 255, 0.9);
-    border-radius: 20px;
+    border-radius: about-panel-cqw(20);
     overflow: hidden;
     background:
         radial-gradient(
             circle at 54% 6%,
             rgba(37, 122, 218, 0.14),
-            transparent 216px
+            transparent about-panel-cqw(216)
         ),
         linear-gradient(
             160deg,
@@ -40,11 +43,11 @@
     box-shadow:
         0 0 0 1px rgba(35, 123, 255, 0.18),
         inset 0 1px 0 rgba(222, 241, 255, 0.16),
-        inset 0 0 18px rgba(30, 155, 255, 0.08),
-        0 0 14px rgba(32, 147, 255, 0.62),
-        0 0 38px rgba(0, 103, 255, 0.28),
-        0 22px 54px rgba(0, 0, 0, 0.42);
-    backdrop-filter: blur(12px);
+        inset 0 0 about-panel-cqw(18) rgba(30, 155, 255, 0.08),
+        0 0 about-panel-cqw(14) rgba(32, 147, 255, 0.62),
+        0 0 about-panel-cqw(38) rgba(0, 103, 255, 0.28),
+        0 about-panel-cqw(22) about-panel-cqw(54) rgba(0, 0, 0, 0.42);
+    backdrop-filter: blur(about-panel-cqw(12));
 
     &::before {
         content: "";
@@ -75,28 +78,28 @@
     display: grid;
     grid-template-rows: auto auto minmax(0, 1fr) auto;
     overflow: hidden;
-    padding: 23px 30px 23px;
-    padding-right: 21px;
+    padding: about-panel-cqw(23) about-panel-cqw(30) about-panel-cqw(23);
+    padding-right: about-panel-cqw(21);
 }
 
 .about-panel-avatar-wrap {
     position: relative;
-    width: 200px;
+    width: about-panel-cqw(200);
     aspect-ratio: 1;
-    margin: 0 auto 19px;
+    margin: 0 auto about-panel-cqw(19);
     border-radius: 50%;
-    padding: 2px;
+    padding: about-panel-cqw(2);
     background: linear-gradient(135deg, #33a8ff, #045be7 52%, #1aa2ff);
     box-shadow:
         0 0 0 1px rgba(0, 8, 18, 0.82),
-        0 0 20px rgba(22, 136, 255, 0.36);
+        0 0 about-panel-cqw(20) rgba(22, 136, 255, 0.36);
 }
 
 .about-panel-avatar-frame {
     width: 100%;
     height: 100%;
     border-radius: inherit;
-    border: 3px solid rgba(2, 9, 19, 0.94);
+    border: about-panel-cqw(3) solid rgba(2, 9, 19, 0.94);
     overflow: hidden;
 }
 
@@ -115,22 +118,22 @@
 
 .about-panel-status {
     position: absolute;
-    right: 26px;
-    bottom: 12px;
-    width: 23px;
+    right: about-panel-cqw(26);
+    bottom: about-panel-cqw(12);
+    width: about-panel-cqw(23);
     aspect-ratio: 1;
     border-radius: 50%;
-    border: 2px solid rgba(2, 10, 22, 0.98);
+    border: about-panel-cqw(2) solid rgba(2, 10, 22, 0.98);
     background: #0678ff;
     box-shadow:
-        0 0 3px rgba(88, 182, 255, 0.9),
-        0 0 18px rgba(0, 118, 255, 0.95);
+        0 0 about-panel-cqw(3) rgba(88, 182, 255, 0.9),
+        0 0 about-panel-cqw(18) rgba(0, 118, 255, 0.95);
 }
 
 .about-panel-title {
-    margin: 0px 12px 12px 0;
+    margin: 0 about-panel-cqw(12) about-panel-cqw(12) 0;
     color: $color-text;
-    font-size: 26px;
+    font-size: about-panel-cqw(26);
     line-height: 1.05;
     font-weight: 800;
 }
@@ -138,17 +141,17 @@
 .about-panel-copy-shell {
     position: relative;
     min-height: 0;
-    margin-right: 10px;
+    margin-right: about-panel-cqw(10);
     display: block;
 }
 
 .about-panel-copy {
     min-height: 0;
     height: 100%;
-    padding: 6px 0;
+    padding: about-panel-cqw(6) 0;
     display: grid;
     align-content: start;
-    gap: 14px;
+    gap: about-panel-cqw(14);
     overflow-y: auto;
     overscroll-behavior: contain;
     scroll-behavior: smooth;
@@ -163,13 +166,13 @@
 
 .about-panel-text {
     display: grid;
-    gap: 13px;
-    padding-right: 8px;
+    gap: about-panel-cqw(13);
+    padding-right: about-panel-cqw(8);
 
     p {
         margin: 0;
         color: rgba(218, 231, 247, 0.86);
-        font-size: 15px;
+        font-size: about-panel-cqw(15);
         line-height: 1.43;
         font-weight: 350;
     }
@@ -178,25 +181,25 @@
 .about-panel-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px 8px;
-    margin-top: 16px;
+    gap: about-panel-cqw(8) about-panel-cqw(8);
+    margin-top: about-panel-cqw(16);
     padding: 0;
     list-style: none;
 
     li {
-        min-height: 28px;
+        min-height: about-panel-cqw(28);
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 4px 9px;
+        padding: about-panel-cqw(4) about-panel-cqw(9);
         border: 1px solid rgba(22, 136, 255, 0.84);
-        border-radius: 6px;
+        border-radius: about-panel-cqw(6);
         color: #1688ff;
         background: rgba(4, 19, 39, 0.62);
         box-shadow:
             inset 0 1px 0 rgba(155, 210, 255, 0.1),
-            0 0 14px rgba(22, 136, 255, 0.1);
-        font-size: 14px;
+            0 0 about-panel-cqw(14) rgba(22, 136, 255, 0.1);
+        font-size: about-panel-cqw(14);
         line-height: 1.1;
         white-space: nowrap;
     }

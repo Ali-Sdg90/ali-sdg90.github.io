@@ -1,0 +1,7 @@
+@use "sass:math";
+
+$intro-reference-width: 336;
+
+@function intro-cqw($pixels) {
+    @return math.div($pixels, $intro-reference-width) * 100cqw;
+}

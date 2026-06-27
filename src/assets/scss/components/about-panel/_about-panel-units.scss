@@ -1,0 +1,7 @@
+@use "sass:math";
+
+$about-panel-reference-width: 357;
+
+@function about-panel-cqw($pixels) {
+    @return math.div($pixels, $about-panel-reference-width) * 100cqw;
+}

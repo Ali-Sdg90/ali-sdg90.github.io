@@ -1,0 +1,11 @@
+@use "sass:math";
+
+$hero-stage-reference-width: 1536;
+
+@function hero-stage-ratio($pixels) {
+    @return math.div($pixels, $hero-stage-reference-width);
+}
+
+@function hero-stage-size($pixels) {
+    @return calc(var(--hero-stage-width) * #{hero-stage-ratio($pixels)});
+}

@@ -7,7 +7,6 @@
     bottom: 0;
     z-index: 3;
     width: 100%;
-    padding-inline: 2.25rem;
     pointer-events: none;
 }
 
@@ -16,7 +15,7 @@
     z-index: 1;
 
     // Change size of the Shelf
-    width: min(75.64vw, calc(105vh * 1.5));
+    width: var(--hero-stage-width);
 
     max-width: none;
     margin-inline: auto;
