@@ -4,6 +4,21 @@ import csiLogo from "../../assets/images/thumbnails/career/csi_logo.jpg";
 import melkRadarLogo from "../../assets/images/thumbnails/career/melkradar_logo.jpg";
 import dpaLogo from "../../assets/images/thumbnails/career/dpa_logo.jpg";
 import settleitLogo from "../../assets/images/thumbnails/career/settleitgpt_logo.jpg";
+import {
+    FaCalendarCheck,
+    FaChalkboardUser,
+    FaCodeCommit,
+    FaCodePullRequest,
+    FaFileLines,
+    FaFilePen,
+    FaMagnifyingGlass,
+    FaPeopleGroup,
+    FaRegHandshake,
+    FaRobot,
+    FaToolbox,
+    FaUserGraduate,
+    FaUsers,
+} from "react-icons/fa6";
 
 // Tech Stack & Tools images
 import reactLogo from "../../assets/images/thumbnails/tech-stack/react_logo.jpg";
@@ -114,24 +129,68 @@ export const shelfSections = [
         autoScrollSpeed: 16,
         doRepeat: true,
         items: [
-            { title: "25+", meta: "Interns mentored in web development" },
-            { title: "11", meta: "developers onboarded across projects" },
-            { title: "25+", meta: "Technical sessions led" },
+            {
+                title: "25+",
+                meta: "Interns mentored in web development",
+                icon: FaUserGraduate,
+            },
+            {
+                title: "11",
+                meta: "developers onboarded across projects",
+                icon: FaUsers,
+            },
+            {
+                title: "25+",
+                meta: "Technical sessions led",
+                icon: FaChalkboardUser,
+            },
 
-            { title: "79+", meta: "Governance meetings attended" },
-            { title: "117+", meta: "Operational meetings attended" },
+            {
+                title: "79+",
+                meta: "Governance meetings attended",
+                icon: FaRegHandshake,
+            },
+            {
+                title: "117+",
+                meta: "Operational meetings attended",
+                icon: FaCalendarCheck,
+            },
 
-            { title: "4", meta: "Telegram bots built" },
-            { title: "9", meta: "Internal tools shipped" },
-            { title: "1.5+ yrs", meta: "Governance team contribution" },
+            { title: "4", meta: "Telegram bots built", icon: FaRobot },
+            { title: "9", meta: "Internal tools shipped", icon: FaToolbox },
+            {
+                title: "1.5+ yrs",
+                meta: "Governance team contribution",
+                icon: FaPeopleGroup,
+            },
 
-            { title: "376+", meta: "Internal pull requests reviewed" },
-            { title: "14 mo", meta: "Pull request reviewer role" },
+            {
+                title: "376+",
+                meta: "Internal pull requests reviewed",
+                icon: FaCodePullRequest,
+            },
+            {
+                title: "14 mo",
+                meta: "Pull request reviewer role",
+                icon: FaMagnifyingGlass,
+            },
 
-            { title: "39", meta: "Internal technical documents reviewed" },
-            { title: "15", meta: "Internal documents updated" },
+            {
+                title: "39",
+                meta: "Internal technical documents reviewed",
+                icon: FaFileLines,
+            },
+            {
+                title: "15",
+                meta: "Internal documents updated",
+                icon: FaFilePen,
+            },
 
-            { title: "603+", meta: "Commits to open-source repositories" },
+            {
+                title: "603+",
+                meta: "Commits to open-source repositories",
+                icon: FaCodeCommit,
+            },
         ],
     },
     {

@@ -24,6 +24,7 @@ const ShelfCard = ({ item, cardHeight, cardWidth, sectionId }) => {
     const hasMediaSlot = sectionId === "projects" || sectionId === "tech-stack";
     const shouldShowImage = hasMediaSlot || item.image;
     const cardClassName = `shelf-card shelf-card-${sectionId}`;
+    const Icon = item.icon;
 
     return (
         <article
@@ -31,6 +32,12 @@ const ShelfCard = ({ item, cardHeight, cardWidth, sectionId }) => {
             style={{ flexBasis: cardWidth, height: cardHeight }}
         >
             {shouldShowImage && <ShelfCardImage item={item} />}
+            {sectionId === "achievements" && Icon && (
+                <Icon
+                    className="shelf-card-achievement-icon"
+                    aria-hidden="true"
+                />
+            )}
             <div className="shelf-card-copy">
                 <strong>{item.title}</strong>
                 <span>{item.meta}</span>

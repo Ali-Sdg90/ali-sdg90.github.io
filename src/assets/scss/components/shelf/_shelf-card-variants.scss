@@ -37,6 +37,19 @@
     }
 }
 
+.shelf-card-achievement-icon {
+    position: absolute;
+    right: shelf-cqw(12);
+    bottom: shelf-cqw(10);
+    z-index: 1;
+    width: shelf-cqw(20);
+    height: shelf-cqw(20);
+    color: #1688ff;
+    opacity: 0.7;
+    filter: drop-shadow(0 0 shelf-cqw(9) rgba(22, 136, 255, 0.3));
+    pointer-events: none;
+}
+
 .shelf-card-tech-stack {
     display: flex;
     justify-content: flex-start;
