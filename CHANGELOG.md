@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.5.0...v1.5.1) (2026-06-28)
+
+
+### Bug Fixes
+
+* update achievements section with new metrics, Finally!! ([11c9b76](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/11c9b76b2d398845d24583555a543357a82d1c91))
+
 # [1.5.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.4.2...v1.5.0) (2026-06-27)
 
 
