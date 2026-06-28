@@ -104,7 +104,7 @@ export const shelfSections = [
     },
     {
         id: "achievements",
-        label: "Things I've Built",
+        label: "Impact in Numbers",
         rowTop: "38.8%",
         titleCardHeight: "8.6cqw",
         cardHeight: "8.75cqw",
@@ -114,12 +114,25 @@ export const shelfSections = [
         autoScrollSpeed: 16,
         doRepeat: true,
         items: [
-            { title: "50+", meta: "Charts delivered" },
-            { title: "60+", meta: "APIs integrated" },
-            { title: "6", meta: "Internal products" },
-            { title: "5", meta: "Automation tools" },
-            { title: "12", meta: "Dashboards shipped" },
-            { title: "30+", meta: "UI components" },
+            { title: "25+", meta: "Interns mentored in web development" },
+            { title: "11", meta: "developers onboarded across projects" },
+            { title: "55+", meta: "Technical sessions led" },
+
+            { title: "79+", meta: "Governance meetings attended" },
+            { title: "117+", meta: "Operational meetings attended" },
+
+            { title: "4", meta: "Telegram bots built" },
+            { title: "9", meta: "Internal tools shipped" },
+            { title: "1.5+ yrs", meta: "Governance team contribution" },
+
+            { title: "376+", meta: "Internal pull requests reviewed" },
+            { title: "14 mo", meta: "Pull request reviewer role" },
+
+            { title: "39", meta: "Internal technical documents reviewed" },
+            { title: "15", meta: "Internal documents updated" },
+
+            { title: "2", meta: "AI products built" },
+            { title: "603+", meta: "Commits to open-source repositories" },
         ],
     },
     {
