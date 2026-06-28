@@ -1,3 +1,5 @@
+@use "dynamic-background-units" as *;
+
 .bg-effect {
     position: fixed;
     inset: 0;
@@ -8,12 +10,12 @@
         radial-gradient(
             circle at 50% 0%,
             rgba(0, 221, 255, 0.08),
-            transparent 32rem
+            transparent bg-vw(512)
         ),
         radial-gradient(
             circle at 85% 15%,
             rgba(24, 113, 190, 0.1),
-            transparent 28rem
+            transparent bg-vw(448)
         ),
         #070b12;
 
@@ -32,39 +34,39 @@
     .bg-orb {
         position: absolute;
         border-radius: 50%;
-        filter: blur(120px);
+        filter: blur(bg-vw(120));
         opacity: 0.5;
         mix-blend-mode: screen;
         transform: translate3d(-50%, -50%, 0);
         will-change: transform, opacity;
 
         &.orb-cyan {
-            width: 38rem;
-            height: 38rem;
+            width: bg-vw(608);
+            height: bg-vw(608);
             left: 8%;
             top: 12%;
             background: rgba(0, 221, 255, 0.32);
         }
 
         &.orb-yellow {
-            width: 30rem;
-            height: 30rem;
+            width: bg-vw(480);
+            height: bg-vw(480);
             left: 70%;
             top: 4%;
             background: rgba(36, 108, 190, 0.2);
         }
 
         &.orb-blue {
-            width: 26rem;
-            height: 26rem;
+            width: bg-vw(416);
+            height: bg-vw(416);
             left: 55%;
             top: 60%;
             background: rgba(0, 160, 255, 0.22);
         }
 
         &.orb-gold {
-            width: 22rem;
-            height: 22rem;
+            width: bg-vw(352);
+            height: bg-vw(352);
             left: 12%;
             top: 72%;
             background: rgba(0, 84, 172, 0.18);
@@ -92,8 +94,8 @@
 
     .bg-line {
         position: absolute;
-        width: 42rem;
-        height: 1px;
+        width: bg-vw(672);
+        height: max(1px, bg-vw(1));
         background: linear-gradient(
             90deg,
             transparent,
@@ -101,18 +103,18 @@
             rgba(56, 132, 255, 0.22),
             transparent
         );
-        filter: blur(0.5px);
+        filter: blur(bg-vw(0.5));
         opacity: 0.3;
         transform: rotate(-18deg);
         animation: line-pulse 9s ease-in-out infinite alternate;
 
         &.line-one {
             top: 26%;
-            left: -8rem;
+            left: bg-vw(-128);
         }
 
         &.line-two {
-            right: -12rem;
+            right: bg-vw(-192);
             bottom: 22%;
             animation-delay: -4s;
         }
@@ -121,8 +123,7 @@
     .bg-ground {
         position: absolute;
         width: 100%;
-        // height: clamp(12rem, 18vw, 18rem);
-        height: 30vh; // maybe change later
+        height: 30vh;
         bottom: 0;
         z-index: 10;
         background: #01050f;
@@ -133,7 +134,7 @@
             left: 0;
             right: 0;
             top: 0;
-            height: 38px;
+            height: bg-vw(38);
             pointer-events: none;
 
             background: linear-gradient(
@@ -142,8 +143,8 @@
                 rgba(7, 11, 18, 0.95)
             );
 
-            filter: blur(10px);
-            transform: translateY(-18px);
+            filter: blur(bg-vw(10));
+            transform: translateY(bg-vw(-18));
         }
     }
 }
@@ -231,46 +232,46 @@
 @keyframes line-pulse {
     from {
         opacity: 0.1;
-        transform: rotate(-18deg) translateX(-2rem);
+        transform: rotate(-18deg) translateX(bg-vw(-32));
     }
 
     to {
         opacity: 0.35;
-        transform: rotate(-18deg) translateX(3rem);
+        transform: rotate(-18deg) translateX(bg-vw(48));
     }
 }
 
 @media (max-width: 768px) {
     .bg-effect {
         .bg-orb {
-            filter: blur(64px);
+            filter: blur(bg-vw(64));
             opacity: 0.4;
 
             &.orb-cyan {
-                width: 26rem;
-                height: 26rem;
+                width: bg-vw(416);
+                height: bg-vw(416);
             }
 
             &.orb-yellow {
-                width: 22rem;
-                height: 22rem;
+                width: bg-vw(352);
+                height: bg-vw(352);
                 left: 88%;
                 top: 18%;
             }
 
             &.orb-blue {
-                width: 24rem;
-                height: 24rem;
+                width: bg-vw(384);
+                height: bg-vw(384);
             }
 
             &.orb-gold {
-                width: 18rem;
-                height: 18rem;
+                width: bg-vw(288);
+                height: bg-vw(288);
             }
         }
 
         .bg-line {
-            width: 28rem;
+            width: bg-vw(448);
             opacity: 0.2;
         }
     }
@@ -284,7 +285,7 @@
         }
 
         .bg-orb {
-            filter: blur(52px);
+            filter: blur(bg-vw(52));
 
             &.orb-yellow {
                 display: none;

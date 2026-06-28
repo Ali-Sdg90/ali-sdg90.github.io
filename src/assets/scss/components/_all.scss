@@ -1,7 +1,6 @@
-@use "dynamic-background";
-@use "page-style";
-@use "keyframes";
-@use "shelf";
-@use "intro";
-@use "about-panel";
-@use "mobile-wip";
+@use "dynamic-background/index" as dynamic-background;
+@use "layout/index" as layout;
+@use "shelf/index" as shelf;
+@use "intro/index" as intro;
+@use "about-panel/index" as about-panel;
+@use "mobile-wip/index" as mobile-wip;

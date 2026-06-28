@@ -1,0 +1,7 @@
+@use "sass:math";
+
+$dynamic-background-reference-width: 1536;
+
+@function bg-vw($pixels) {
+    @return math.div($pixels, $dynamic-background-reference-width) * 100vw;
+}
