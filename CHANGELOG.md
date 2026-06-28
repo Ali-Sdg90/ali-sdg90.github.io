@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.5.2...v1.6.0) (2026-06-28)
+
+
+### Features
+
+* enhance achievements section with icons and styles ([7291df8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/7291df8661262dd6b95b23361402e36e5092a086))
+
 ## [1.5.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.5.1...v1.5.2) (2026-06-28)
 
 
