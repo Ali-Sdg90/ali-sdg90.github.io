@@ -116,7 +116,7 @@ export const shelfSections = [
         items: [
             { title: "25+", meta: "Interns mentored in web development" },
             { title: "11", meta: "developers onboarded across projects" },
-            { title: "55+", meta: "Technical sessions led" },
+            { title: "25+", meta: "Technical sessions led" },
 
             { title: "79+", meta: "Governance meetings attended" },
             { title: "117+", meta: "Operational meetings attended" },
@@ -131,7 +131,6 @@ export const shelfSections = [
             { title: "39", meta: "Internal technical documents reviewed" },
             { title: "15", meta: "Internal documents updated" },
 
-            { title: "2", meta: "AI products built" },
             { title: "603+", meta: "Commits to open-source repositories" },
         ],
     },

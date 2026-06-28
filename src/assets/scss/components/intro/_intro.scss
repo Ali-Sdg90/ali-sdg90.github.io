@@ -23,9 +23,46 @@
     }
 
     .hero-greeting {
+        display: inline-grid;
+        width: max-content;
         color: $color-text-muted;
         font-size: intro-cqw(20);
         margin-bottom: intro-cqw(8);
+        cursor: default;
+        outline: none;
+
+        &:hover,
+        &:focus-visible {
+            .hero-greeting-default {
+                opacity: 0;
+                transform: translateY(intro-cqw(-4));
+            }
+
+            .hero-greeting-hover {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    .hero-greeting-label {
+        grid-area: 1 / 1;
+        display: inline-flex;
+        align-items: center;
+        gap: intro-cqw(5);
+        transition:
+            opacity $motion-medium $ease-out 0.25s,
+            transform $motion-medium $ease-out 0.25s;
+    }
+
+    .hero-greeting-hover {
+        opacity: 0;
+        transform: translateY(intro-cqw(4));
+    }
+
+    .hero-greeting-text {
+        display: inline-block;
+        user-select: none;
     }
 
     h1 {

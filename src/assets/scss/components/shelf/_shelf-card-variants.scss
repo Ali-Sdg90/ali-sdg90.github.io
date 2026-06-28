@@ -7,39 +7,33 @@
 }
 
 .shelf-card-achievements {
-    justify-content: space-between;
-    padding: shelf-cqw(13.6);
+    justify-content: flex-start;
+    padding: shelf-cqw(26) shelf-cqw(12.8) shelf-cqw(8);
+    text-align: left;
 
     .shelf-card-copy {
-        gap: shelf-cqw(5.6);
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-rows: shelf-cqw(28) minmax(shelf-cqw(28), auto);
+        align-content: start;
+        gap: shelf-cqw(2.2);
     }
 
     strong {
+        align-self: start;
         color: #1688ff;
-        font-size: shelf-cqw(30);
-        line-height: 0.95;
+        font-size: shelf-cqw(28);
+        line-height: 0.9;
         letter-spacing: 0;
     }
 
     span {
-        color: $color-text;
+        align-self: start;
+        max-width: shelf-cqw(108);
+        color: rgba(231, 241, 255, 0.88);
         font-size: shelf-cqw(12);
-        line-height: 1.22;
-    }
-
-    &::after {
-        content: "";
-        width: shelf-cqw(20);
-        aspect-ratio: 1;
-        align-self: flex-end;
-        border-radius: shelf-cqw(4);
-        border: shelf-cqw(1) solid rgba(22, 136, 255, 0.54);
-        background: linear-gradient(
-            135deg,
-            rgba(22, 136, 255, 0.86),
-            rgba(0, 221, 255, 0.24)
-        );
-        box-shadow: 0 0 shelf-cqw(14) rgba(22, 136, 255, 0.2);
+        line-height: 1.28;
     }
 }
 

@@ -4,7 +4,16 @@ const Intro = () => {
     return (
         <>
             <div className="intro-top-section">
-                <p className="hero-greeting">Hi there! 👋</p>
+                <p className="hero-greeting" aria-label="Hey there!">
+                    <span className="hero-greeting-label hero-greeting-default">
+                        <span className="hero-greeting-text">Hey there!</span>
+                        <span aria-hidden="true">{"\u{1F44B}"}</span>
+                    </span>
+                    <span className="hero-greeting-label hero-greeting-hover">
+                        <span className="hero-greeting-text">Aloha!</span>
+                        <span aria-hidden="true">{"\u{1F44B}"}</span>
+                    </span>
+                </p>
 
                 <h1 id="hero-title">
                     I&apos;m <span>Ali</span>
