@@ -123,9 +123,11 @@ $shelf-card-row-shadow-fallback: shelf-cqw(-3) shelf-cqw(0) 0 shelf-cqw(1)
         pointer-events: none;
     }
 
+    // Selected state
     &.is-selected {
         z-index: 35;
         border-color: rgba(91, 186, 255, 0.76);
+        outline: shelf-cqw(2.5) solid rgba(60, 142, 202, 0.76);
         background:
             radial-gradient(
                 circle at 50% 0%,
