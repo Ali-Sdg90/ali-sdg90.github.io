@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.6.0...v1.7.0) (2026-07-01)
+
+
+### Features
+
+* implement career journey selection and detail display in AboutPanel ([455c23e](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/455c23ef19dbca53b8788d72e8878cbc94dd33c0))
+
 # [1.6.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.5.2...v1.6.0) (2026-06-28)
 
 
