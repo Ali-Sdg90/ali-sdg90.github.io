@@ -1,5 +1,6 @@
 export const DRAG = {
     minDeltaSeconds: 0.001,
+    startDistance: 5,
 };
 
 export const VELOCITY_SMOOTHING = {

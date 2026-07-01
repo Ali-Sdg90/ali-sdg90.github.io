@@ -10,6 +10,8 @@ const ShelfCardTrack = ({
     handlePointerMove,
     stopDragging,
     scheduleScrollStateUpdate,
+    selectedCareerId,
+    onCareerSelect,
 }) => {
     const setCount = section.doRepeat ? 5 : 1;
     const centerSetIndex = Math.floor(setCount / 2);
@@ -41,6 +43,15 @@ const ShelfCardTrack = ({
                                 cardHeight={section.cardHeight}
                                 cardWidth={section.cardWidth}
                                 sectionId={section.id}
+                                isSelected={
+                                    section.id === "career-journey" &&
+                                    item.id === selectedCareerId
+                                }
+                                onSelect={
+                                    section.id === "career-journey"
+                                        ? onCareerSelect
+                                        : undefined
+                                }
                             />
 
                             {section.id === "career-journey" &&

@@ -238,6 +238,7 @@ export const shelfSections = [
         doRepeat: false,
         items: [
             {
+                id: "cs-internship",
                 title: "CS Internship",
                 company: "CS Internship",
                 meta: "Technical Mentor & System Designer",
@@ -245,6 +246,7 @@ export const shelfSections = [
                 image: csiLogo,
             },
             {
+                id: "melkradar",
                 title: "MelkRadar",
                 company: "MelkRadar",
                 meta: "Front-End Developer & Reviewer",
@@ -252,6 +254,7 @@ export const shelfSections = [
                 image: melkRadarLogo,
             },
             {
+                id: "dadeh-pardazi-azmoudeh-karan",
                 title: "Dadeh Pardazi Azmoudeh Karan",
                 company: "Dadeh Pardazi Azmoudeh Karan",
                 meta: "React Developer",
@@ -259,6 +262,7 @@ export const shelfSections = [
                 image: dpaLogo,
             },
             {
+                id: "settleitgpt",
                 title: "SettleitGPT",
                 company: "SettleitGPT",
                 meta: "React Native Developer",

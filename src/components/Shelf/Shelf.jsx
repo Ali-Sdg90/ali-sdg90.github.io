@@ -2,7 +2,7 @@ import { shelfSections } from "../../data/portfolio/shelfSections";
 import useShelfScroll from "../../hooks/useShelfScroll";
 import ShelfSection from "./ShelfSection";
 
-const Shelf = () => {
+const Shelf = ({ selectedCareerId, onCareerSelect }) => {
     const {
         scrollState,
         activeDragIndex,
@@ -36,8 +36,10 @@ const Shelf = () => {
                         scrollState={scrollState}
                         section={section}
                         sectionIndex={index}
+                        selectedCareerId={selectedCareerId}
                         setScrollerRef={setScrollerRef}
                         stopDragging={stopDragging}
+                        onCareerSelect={onCareerSelect}
                     />
                 ))}
             </div>

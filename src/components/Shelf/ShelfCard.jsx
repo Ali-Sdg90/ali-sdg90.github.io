@@ -1,11 +1,36 @@
 import ShelfCardImage from "./ShelfCardImage";
 
-const ShelfCard = ({ item, cardHeight, cardWidth, sectionId }) => {
+const ShelfCard = ({
+    item,
+    cardHeight,
+    cardWidth,
+    sectionId,
+    isSelected = false,
+    onSelect,
+}) => {
     if (sectionId === "career-journey") {
+        const handleKeyDown = (event) => {
+            if (event.key !== "Enter" && event.key !== " ") return;
+
+            event.preventDefault();
+            onSelect?.(item.id);
+        };
+
         return (
             <article
-                className="shelf-card shelf-card-career-journey"
+                aria-pressed={isSelected}
+                className={[
+                    "shelf-card",
+                    "shelf-card-career-journey",
+                    isSelected ? "is-selected" : "",
+                ]
+                    .filter(Boolean)
+                    .join(" ")}
+                onClick={() => onSelect?.(item.id)}
+                onKeyDown={handleKeyDown}
+                role="button"
                 style={{ flexBasis: cardWidth, height: cardHeight }}
+                tabIndex={0}
             >
                 <div className="shelf-card-career-year">{item.year}</div>
 

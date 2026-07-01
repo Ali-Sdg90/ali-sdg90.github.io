@@ -123,7 +123,9 @@ const useShelfScroll = (shelfSections) => {
                         ? -section.autoScrollSpeed
                         : 0,
                 doRepeat: section?.doRepeat ?? false,
+                hasDragged: false,
                 index,
+                initialX: event.clientX,
                 lastX: event.clientX,
                 lastTime: now,
                 pointerId: event.pointerId,
@@ -135,10 +137,6 @@ const useShelfScroll = (shelfSections) => {
                 startX: event.clientX,
                 velocity: 0,
             };
-
-            activeDragIndexRef.current = index;
-            setActiveDragIndex(index);
-            scroller.setPointerCapture(event.pointerId);
         },
         [shelfSections, stopMomentum],
     );
@@ -155,6 +153,25 @@ const useShelfScroll = (shelfSections) => {
 
         const scroller = event.currentTarget;
         const now = performance.now();
+        const totalDragDistance = event.clientX - currentDragState.initialX;
+
+        if (
+            !currentDragState.hasDragged &&
+            Math.abs(totalDragDistance) < DRAG.startDistance
+        ) {
+            return;
+        }
+
+        if (!currentDragState.hasDragged) {
+            currentDragState.hasDragged = true;
+            activeDragIndexRef.current = currentDragState.index;
+            setActiveDragIndex(currentDragState.index);
+
+            if (!scroller.hasPointerCapture(event.pointerId)) {
+                scroller.setPointerCapture(event.pointerId);
+            }
+        }
+
         const dragDistance = event.clientX - currentDragState.startX;
         const frameDistance = event.clientX - currentDragState.lastX;
         const deltaSeconds = Math.max(
@@ -224,7 +241,11 @@ const useShelfScroll = (shelfSections) => {
                     event.currentTarget.scrollLeft,
                     currentDragState.doRepeat,
                 );
-            startMomentum(event.currentTarget, currentDragState);
+
+            if (currentDragState.hasDragged) {
+                startMomentum(event.currentTarget, currentDragState);
+            }
+
             dragState.current = null;
             activeDragIndexRef.current = null;
             setActiveDragIndex(null);

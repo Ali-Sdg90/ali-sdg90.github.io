@@ -3,5 +3,8 @@
 $about-panel-reference-width: 357;
 
 @function about-panel-cqw($pixels) {
-    @return math.div($pixels, $about-panel-reference-width) * 100cqw;
+    @return calc(
+        var(--about-panel-reference-size, 100cqw) *
+            #{math.div($pixels, $about-panel-reference-width)}
+    );
 }

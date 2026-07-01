@@ -7,13 +7,19 @@
     right: max(1rem, hero-stage-size(153));
     bottom: hero-stage-size(96);
     z-index: 4;
+    --about-panel-reference-size: #{hero-stage-size(357)};
     width: hero-stage-size(357);
     height: hero-stage-size(760);
     pointer-events: auto;
     container-type: inline-size;
     transform-style: preserve-3d;
-    perspective: hero-stage-size(580);
-    perspective-origin: 0% 52%;
+    perspective: hero-stage-size(680);
+    perspective-origin: 0% 50%;
+    transition: width $motion-slow $ease-out;
+
+    &.is-showing-career-module {
+        width: calc(#{hero-stage-size(357)} * 1.25);
+    }
 }
 
 .about-panel-card {
@@ -70,6 +76,32 @@
             );
         opacity: 0.26;
     }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        border-radius: inherit;
+        pointer-events: none;
+        background:
+            linear-gradient(
+                115deg,
+                transparent 0 28%,
+                rgba(108, 204, 255, 0.04) 34%,
+                rgba(255, 255, 255, 0.34) 43%,
+                rgba(22, 136, 255, 0.12) 50%,
+                transparent 58% 100%
+            ),
+            radial-gradient(
+                circle at 28% 18%,
+                rgba(0, 221, 255, 0.22),
+                transparent about-panel-cqw(126)
+            );
+        mix-blend-mode: screen;
+        opacity: 0;
+        transform: translateX(-62%) skewX(-8deg);
+        animation: about-panel-data-sweep 720ms $ease-out both;
+    }
 }
 
 .about-panel-scroll {
@@ -93,6 +125,10 @@
     box-shadow:
         0 0 0 1px rgba(0, 8, 18, 0.82),
         0 0 about-panel-cqw(20) rgba(22, 136, 255, 0.36);
+    transition:
+        border-radius $motion-slow $ease-out,
+        box-shadow $motion-slow $ease-out;
+    animation: about-panel-avatar-enter 1s 0.15s $ease-out both;
 }
 
 .about-panel-avatar-frame {
@@ -101,6 +137,7 @@
     border-radius: inherit;
     border: about-panel-cqw(3) solid rgba(2, 9, 19, 0.94);
     overflow: hidden;
+    transition: border-radius $motion-slow $ease-out;
 }
 
 .about-panel-avatar {
@@ -114,6 +151,27 @@
     transform-origin: center;
     backface-visibility: hidden;
     image-rendering: auto;
+    transition:
+        border-radius $motion-slow $ease-out,
+        object-position $motion-slow $ease-out;
+}
+
+.about-panel-heading,
+.about-panel-copy,
+.about-panel-tags {
+    animation: about-panel-content-enter 560ms $ease-out both;
+}
+
+.about-panel-heading {
+    animation-delay: 40ms;
+}
+
+.about-panel-copy {
+    animation-delay: 90ms;
+}
+
+.about-panel-tags {
+    animation-delay: 140ms;
 }
 
 .about-panel-status {
@@ -128,14 +186,101 @@
     box-shadow:
         0 0 about-panel-cqw(3) rgba(88, 182, 255, 0.9),
         0 0 about-panel-cqw(18) rgba(0, 118, 255, 0.95);
+    transform: scale(1);
+    transform-origin: center;
+    opacity: 1;
+    transition:
+        opacity $motion-medium $ease-out,
+        transform $motion-medium $ease-out,
+        visibility 0s linear 0s;
+    visibility: visible;
+}
+
+.about-panel.is-showing-career-module {
+    .about-panel-avatar-wrap {
+        border-radius: about-panel-cqw(18);
+        box-shadow:
+            0 0 0 1px rgba(0, 8, 18, 0.82),
+            0 0 about-panel-cqw(18) rgba(22, 136, 255, 0.28);
+    }
+
+    .about-panel-avatar {
+        object-position: center;
+    }
+
+    .about-panel-status {
+        opacity: 0;
+        transform: scale(0.55);
+        transition:
+            opacity $motion-medium $ease-out,
+            transform $motion-medium $ease-out,
+            visibility 0s linear $motion-medium;
+        visibility: hidden;
+    }
+}
+
+@keyframes about-panel-avatar-enter {
+    from {
+        opacity: 0;
+        transform: scale(calc(var(--about-panel-avatar-zoom, 1) * 0.96));
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(var(--about-panel-avatar-zoom, 1));
+    }
+}
+
+@keyframes about-panel-data-sweep {
+    0% {
+        opacity: 0;
+        transform: translateX(-70%) skewX(-8deg);
+    }
+
+    18% {
+        opacity: 0.88;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(70%) skewX(-8deg);
+    }
+}
+
+@keyframes about-panel-content-enter {
+    from {
+        opacity: 0;
+        transform: translateY(about-panel-cqw(10));
+        filter: blur(about-panel-cqw(4));
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+.about-panel-heading {
+    display: grid;
+    gap: about-panel-cqw(6);
+    margin: 0 about-panel-cqw(12) about-panel-cqw(12) 0;
 }
 
 .about-panel-title {
-    margin: 0 about-panel-cqw(12) about-panel-cqw(12) 0;
+    margin: 0;
     color: $color-text;
     font-size: about-panel-cqw(26);
     line-height: 1.05;
     font-weight: 800;
+}
+
+.about-panel-subtitle {
+    margin: 0;
+    color: #1688ff;
+    font-size: about-panel-cqw(13);
+    line-height: 1.25;
+    font-weight: 650;
 }
 
 .about-panel-copy-shell {
@@ -175,6 +320,60 @@
         font-size: about-panel-cqw(15);
         line-height: 1.43;
         font-weight: 350;
+    }
+}
+
+.about-panel-detail {
+    display: grid;
+    gap: about-panel-cqw(16);
+    padding-right: about-panel-cqw(8);
+
+    p {
+        margin: 0;
+        color: rgba(237, 246, 255, 0.92);
+        font-size: about-panel-cqw(15);
+        line-height: 1.45;
+        font-weight: 400;
+    }
+}
+
+.about-panel-detail-stats {
+    display: grid;
+    gap: about-panel-cqw(10);
+    margin: 0;
+
+    div {
+        min-height: about-panel-cqw(58);
+        padding: about-panel-cqw(10) about-panel-cqw(12);
+        border: 1px solid rgba(22, 136, 255, 0.46);
+        border-radius: about-panel-cqw(8);
+        background:
+            linear-gradient(
+                135deg,
+                rgba(22, 136, 255, 0.13),
+                rgba(0, 221, 255, 0.04)
+            ),
+            rgba(5, 17, 34, 0.62);
+        box-shadow:
+            inset 0 1px 0 rgba(178, 219, 255, 0.09),
+            0 0 about-panel-cqw(18) rgba(22, 136, 255, 0.09);
+    }
+
+    dt {
+        margin: 0 0 about-panel-cqw(4);
+        color: rgba(183, 196, 214, 0.8);
+        font-size: about-panel-cqw(11);
+        line-height: 1.1;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    dd {
+        margin: 0;
+        color: $color-text;
+        font-size: about-panel-cqw(15);
+        line-height: 1.2;
+        font-weight: 750;
     }
 }
 
