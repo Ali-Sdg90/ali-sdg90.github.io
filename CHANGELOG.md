@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.7.0...v1.7.1) (2026-07-01)
+
+
+### Bug Fixes
+
+* add fancy language toggle functionality to AboutPanel ([6907220](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/690722044e8602b01dc4e12c536151d882109b15))
+
 # [1.7.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.6.0...v1.7.0) (2026-07-01)
 
 
