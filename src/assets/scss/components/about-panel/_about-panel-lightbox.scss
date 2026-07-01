@@ -1,0 +1,143 @@
+@use "../../base/variables" as *;
+@use "../layout/hero-stage" as *;
+
+.about-panel-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    display: grid;
+    place-items: center;
+    padding: hero-stage-size(48);
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(22, 136, 255, 0.16),
+            transparent 38%
+        ),
+        rgba(1, 5, 12, 0.78);
+    backdrop-filter: blur(hero-stage-size(14));
+    animation: about-panel-lightbox-fade 300ms $ease-out both;
+
+    &.is-closing {
+        animation: about-panel-lightbox-fade-out 600ms $ease-out both;
+
+        .about-panel-lightbox-frame {
+            animation: about-panel-lightbox-image-exit 600ms $ease-out both;
+        }
+    }
+}
+
+.about-panel-lightbox-frame {
+    position: relative;
+    width: min(68vw, hero-stage-size(680));
+    height: min(76vh, hero-stage-size(680));
+    padding: hero-stage-size(10);
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(87, 170, 255, 0.82);
+    border-radius: hero-stage-size(18);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.12),
+            rgba(255, 255, 255, 0.02)
+        ),
+        rgba(3, 12, 28, 0.92);
+    box-shadow:
+        0 0 0 1px rgba(35, 123, 255, 0.2),
+        0 0 hero-stage-size(34) rgba(22, 136, 255, 0.38),
+        0 hero-stage-size(28) hero-stage-size(80) rgba(0, 0, 0, 0.58);
+    animation: about-panel-lightbox-image-enter 360ms $ease-out both;
+}
+
+.about-panel-lightbox-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: hero-stage-size(12);
+    object-fit: contain;
+}
+
+.about-panel-lightbox-close {
+    position: fixed;
+    top: hero-stage-size(34);
+    right: hero-stage-size(38);
+    z-index: 81;
+    width: hero-stage-size(38);
+    aspect-ratio: 1;
+    display: inline-grid;
+    place-items: center;
+    padding: 0;
+    border: 1px solid rgba(87, 170, 255, 0.62);
+    border-radius: 50%;
+    color: $color-text;
+    background: rgba(3, 12, 28, 0.82);
+    box-shadow:
+        inset 0 1px 0 rgba(222, 241, 255, 0.13),
+        0 0 hero-stage-size(18) rgba(22, 136, 255, 0.2);
+    font-size: hero-stage-size(20);
+    line-height: 1;
+    cursor: pointer;
+    transition:
+        border-color $motion-fast $ease-out,
+        box-shadow $motion-fast $ease-out,
+        transform $motion-fast $ease-out;
+
+    &:hover,
+    &:focus-visible {
+        border-color: rgba(117, 202, 255, 0.96);
+        box-shadow:
+            inset 0 1px 0 rgba(222, 241, 255, 0.18),
+            0 0 hero-stage-size(24) rgba(22, 136, 255, 0.34);
+        transform: translateY(hero-stage-size(-1));
+        outline: none;
+    }
+}
+
+@keyframes about-panel-lightbox-fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes about-panel-lightbox-fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes about-panel-lightbox-image-enter {
+    from {
+        opacity: 0;
+        transform: translateY(hero-stage-size(14)) scale(0.96);
+        filter: blur(hero-stage-size(5));
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes about-panel-lightbox-image-exit {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(hero-stage-size(10)) scale(0.97);
+        filter: blur(hero-stage-size(4));
+    }
+}

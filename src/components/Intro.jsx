@@ -28,7 +28,6 @@ const Intro = () => {
                     systems.
                     <br />
                     Crafted with care, curiosity, and{" "}
-                    {/* Temporary external link. in future make it a in-site source */}
                     <a href="https://youtu.be/8TycTsfTcY8" target="_blank">
                         a splash of love.
                     </a>
