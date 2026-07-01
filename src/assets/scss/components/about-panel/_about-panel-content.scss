@@ -114,7 +114,7 @@
     overscroll-behavior: contain;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    animation-delay: 170ms;
+    animation-delay: 130ms;
 
     &::-webkit-scrollbar {
         display: none;
@@ -130,7 +130,7 @@
     margin-top: about-panel-cqw(16);
     padding: 0;
     list-style: none;
-    animation-delay: 250ms;
+    animation-delay: 200ms;
 
     li {
         min-height: about-panel-cqw(28);

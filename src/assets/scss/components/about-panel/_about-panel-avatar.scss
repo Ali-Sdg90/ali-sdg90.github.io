@@ -15,7 +15,8 @@
     transition:
         border-radius $motion-slow $ease-out,
         box-shadow $motion-slow $ease-out;
-    animation: about-panel-avatar-enter 1s 0.15s $ease-out both;
+    animation: about-panel-content-enter 760ms $ease-out both;
+    animation-delay: 70ms;
 }
 
 .about-panel-avatar-frame {
@@ -103,17 +104,5 @@
             transform $motion-medium $ease-out,
             visibility 0s linear $motion-medium;
         visibility: hidden;
-    }
-}
-
-@keyframes about-panel-avatar-enter {
-    from {
-        opacity: 0;
-        transform: scale(calc(var(--about-panel-avatar-zoom, 1) * 0.96));
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(var(--about-panel-avatar-zoom, 1));
     }
 }
