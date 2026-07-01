@@ -106,48 +106,28 @@ $shelf-card-row-shadow-fallback: shelf-cqw(-3) shelf-cqw(0) 0 shelf-cqw(1)
         line-height: 1.32;
     }
 
-    &::after {
-        content: "";
-        position: absolute;
-        inset: shelf-cqw(-1);
-        z-index: -1;
-        border-radius: inherit;
-        opacity: 0;
-        background: radial-gradient(
-            circle at 50% 50%,
-            rgba(22, 136, 255, 0.26),
-            transparent 68%
-        );
-        filter: blur(shelf-cqw(8));
-        transition: opacity $motion-medium $ease-out;
-        pointer-events: none;
-    }
-
     // Selected state
     &.is-selected {
         z-index: 35;
-        border-color: rgba(91, 186, 255, 0.76);
-        outline: shelf-cqw(2.5) solid rgba(60, 142, 202, 0.76);
+        border-color: rgba(103, 203, 255, 0.94);
         background:
             radial-gradient(
                 circle at 50% 0%,
-                rgba(22, 135, 255, 0.22),
+                rgba(22, 136, 255, 0.32),
                 transparent 42%
             ),
-            linear-gradient(125deg, rgba(255, 255, 255, 0.11), transparent 31%),
+            linear-gradient(125deg, rgba(255, 255, 255, 0.15), transparent 31%),
             linear-gradient(
                 180deg,
-                rgba(13, 35, 62, 0.94),
-                rgba(3, 12, 28, 0.98)
+                rgba(15, 46, 82, 0.96),
+                rgba(3, 13, 31, 0.98)
             ),
             rgba(4, 10, 22, 0.9);
-        box-shadow:
-            inset 0 shelf-cqw(1) 0 rgba(204, 231, 255, 0.18),
-            inset shelf-cqw(-10) 0 shelf-cqw(18) rgba(3, 9, 20, 0.28),
-            var(--shelf-card-row-shadow, #{$shelf-card-row-shadow-fallback}),
-            0 0 shelf-cqw(9) rgba(22, 136, 255, 0.46),
-            0 0 shelf-cqw(22) rgba(0, 118, 255, 0.25),
-            0 shelf-cqw(16) shelf-cqw(24) rgba(0, 0, 0, 0.3);
+        // box-shadow:
+        //     inset 0 shelf-cqw(1) 0 rgba(225, 242, 255, 0.26),
+        //     inset shelf-cqw(-10) 0 shelf-cqw(18) rgba(3, 9, 20, 0.22),
+        //     var(--shelf-card-row-shadow, #{$shelf-card-row-shadow-fallback}),
+        //     0 0 shelf-cqw(5) rgba(88, 182, 255, 0.68);
         transform: translate(shelf-cqw(-1), shelf-cqw(-1));
 
         transition:
@@ -155,10 +135,6 @@ $shelf-card-row-shadow-fallback: shelf-cqw(-3) shelf-cqw(0) 0 shelf-cqw(1)
             transform 0.4s $ease-out,
             box-shadow 0.4s $ease-out,
             background 0.4s $ease-out !important;
-
-        &::after {
-            opacity: 1;
-        }
 
         &:active {
             transform: translate(shelf-cqw(-2), shelf-cqw(0)) !important;

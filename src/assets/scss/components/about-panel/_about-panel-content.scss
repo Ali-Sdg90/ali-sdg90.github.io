@@ -1,6 +1,95 @@
 @use "../../base/variables" as *;
 @use "about-panel-units" as *;
 
+.about-panel-topbar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 about-panel-cqw(12) about-panel-cqw(10) 0;
+    animation: about-panel-content-enter 760ms $ease-out both;
+    animation-delay: 50ms;
+}
+
+.about-panel-language-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: about-panel-cqw(2);
+    padding: about-panel-cqw(3);
+    border: 1px solid rgba(22, 136, 255, 0.42);
+    border-radius: about-panel-cqw(8);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(22, 136, 255, 0.1),
+            rgba(0, 221, 255, 0.03)
+        ),
+        rgba(3, 13, 30, 0.74);
+    box-shadow:
+        inset 0 1px 0 rgba(222, 241, 255, 0.08),
+        0 0 about-panel-cqw(14) rgba(22, 136, 255, 0.08);
+
+    &.is-fa-active {
+        .about-panel-language-thumb {
+            transform: translateX(calc(100% + #{about-panel-cqw(2)}));
+        }
+    }
+}
+
+.about-panel-language-thumb {
+    position: absolute;
+    top: about-panel-cqw(3);
+    left: about-panel-cqw(3);
+    width: about-panel-cqw(34);
+    height: about-panel-cqw(24);
+    border-radius: about-panel-cqw(5);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(90, 194, 255, 0.96),
+            rgba(22, 136, 255, 0.82)
+        ),
+        rgba(22, 136, 255, 0.86);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.24),
+        0 0 about-panel-cqw(14) rgba(22, 136, 255, 0.34);
+    transition: transform $motion-medium $ease-out;
+    pointer-events: none;
+}
+
+.about-panel-language-option {
+    position: relative;
+    z-index: 1;
+    min-width: about-panel-cqw(34);
+    height: about-panel-cqw(24);
+    padding: 0 about-panel-cqw(8);
+    border: 0;
+    border-radius: about-panel-cqw(5);
+    color: rgba(183, 196, 214, 0.82);
+    background: transparent;
+    font: inherit;
+    font-size: about-panel-cqw(11);
+    line-height: 1;
+    font-weight: 650;
+    cursor: pointer;
+    transition:
+        color $motion-fast $ease-out,
+        background $motion-fast $ease-out,
+        box-shadow $motion-fast $ease-out;
+
+    &:focus-visible {
+        outline: about-panel-cqw(2) solid rgba(88, 182, 255, 0.8);
+        outline-offset: about-panel-cqw(1);
+    }
+
+    &.is-active {
+        color: $color-text;
+        background: rgba(22, 136, 255, 0.86);
+        box-shadow:
+            inset 0 1px 0 rgba(222, 241, 255, 0.22),
+            0 0 about-panel-cqw(14) rgba(22, 136, 255, 0.34);
+    }
+}
+
 .about-panel-heading,
 .about-panel-copy,
 .about-panel-tags {

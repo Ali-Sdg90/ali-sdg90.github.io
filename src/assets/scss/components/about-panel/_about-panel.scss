@@ -8,27 +8,25 @@
     bottom: hero-stage-size(96);
     z-index: 4;
     --about-panel-reference-size: #{hero-stage-size(357)};
-    --about-panel-content-width: #{hero-stage-size(357)};
-    width: hero-stage-size(357);
-    height: hero-stage-size(760);
+    --about-panel-size-width: #{hero-stage-size(375)};
+    --about-panel-content-width: var(--about-panel-size-width);
+    width: var(--about-panel-size-width);
+    height: hero-stage-size(798);
     pointer-events: auto;
     container-type: inline-size;
-    transform-style: preserve-3d;
-    perspective: hero-stage-size(680);
-    perspective-origin: 0% 50%;
     transition: width $motion-slow $ease-out;
 
     &.is-showing-career-module {
-        --about-panel-content-width: calc(#{hero-stage-size(357)} * 1.25);
-        width: calc(#{hero-stage-size(357)} * 1.25);
+        --about-panel-content-width: calc(var(--about-panel-size-width) * 1.16);
+        width: calc(var(--about-panel-size-width) * 1.16);
+
+        .about-panel-scroll {
+            grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+        }
     }
 }
 
 .about-panel-card {
-    transform-style: preserve-3d;
-    transform: rotateY(-6.5deg) rotateX(0deg) rotateZ(0deg);
-    transform-origin: left center;
-
     position: relative;
     z-index: 5;
     height: 100%;
