@@ -2,20 +2,25 @@ import ShelfCardImage from "./ShelfCardImage";
 
 const ShelfCard = ({
     item,
+    itemId,
     cardHeight,
     cardWidth,
     sectionId,
     isSelected = false,
     onSelect,
 }) => {
+    const handleSelect = () => {
+        onSelect?.({ sectionId, itemId });
+    };
+
+    const handleKeyDown = (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+
+        event.preventDefault();
+        handleSelect();
+    };
+
     if (sectionId === "career-journey") {
-        const handleKeyDown = (event) => {
-            if (event.key !== "Enter" && event.key !== " ") return;
-
-            event.preventDefault();
-            onSelect?.(item.id);
-        };
-
         return (
             <article
                 aria-pressed={isSelected}
@@ -26,7 +31,7 @@ const ShelfCard = ({
                 ]
                     .filter(Boolean)
                     .join(" ")}
-                onClick={() => onSelect?.(item.id)}
+                onClick={handleSelect}
                 onKeyDown={handleKeyDown}
                 role="button"
                 style={{ flexBasis: cardWidth, height: cardHeight }}
@@ -48,13 +53,24 @@ const ShelfCard = ({
 
     const hasMediaSlot = sectionId === "projects" || sectionId === "tech-stack";
     const shouldShowImage = hasMediaSlot || item.image;
-    const cardClassName = `shelf-card shelf-card-${sectionId}`;
+    const cardClassName = [
+        "shelf-card",
+        `shelf-card-${sectionId}`,
+        isSelected ? "is-selected" : "",
+    ]
+        .filter(Boolean)
+        .join(" ");
     const Icon = item.icon;
 
     return (
         <article
+            aria-pressed={isSelected}
             className={cardClassName}
+            onClick={handleSelect}
+            onKeyDown={handleKeyDown}
+            role="button"
             style={{ flexBasis: cardWidth, height: cardHeight }}
+            tabIndex={0}
         >
             {shouldShowImage && <ShelfCardImage item={item} />}
             {sectionId === "achievements" && Icon && (

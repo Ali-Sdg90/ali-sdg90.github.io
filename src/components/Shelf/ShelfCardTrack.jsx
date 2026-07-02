@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 
+import { getShelfItemId } from "../../utils/getShelfItemId";
 import ShelfCard from "./ShelfCard";
 
 const ShelfCardTrack = ({
@@ -10,8 +11,8 @@ const ShelfCardTrack = ({
     handlePointerMove,
     stopDragging,
     scheduleScrollStateUpdate,
-    selectedCareerId,
-    onCareerSelect,
+    selectedShelfItem,
+    onShelfItemSelect,
 }) => {
     const setCount = section.doRepeat ? 5 : 1;
     const centerSetIndex = Math.floor(setCount / 2);
@@ -34,35 +35,37 @@ const ShelfCardTrack = ({
                     className="shelf-card-set"
                     key={`${section.label}-${copyIndex}`}
                 >
-                    {section.items.map((item, itemIndex) => (
-                        <Fragment
-                            key={`${copyIndex}-${item.title}-${item.meta}`}
-                        >
-                            <ShelfCard
-                                item={item}
-                                cardHeight={section.cardHeight}
-                                cardWidth={section.cardWidth}
-                                sectionId={section.id}
-                                isSelected={
-                                    section.id === "career-journey" &&
-                                    item.id === selectedCareerId
-                                }
-                                onSelect={
-                                    section.id === "career-journey"
-                                        ? onCareerSelect
-                                        : undefined
-                                }
-                            />
+                    {section.items.map((item, itemIndex) => {
+                        const itemId = getShelfItemId(item);
 
-                            {section.id === "career-journey" &&
-                                itemIndex < section.items.length - 1 && (
-                                    <span
-                                        className="shelf-card-connector"
-                                        aria-hidden="true"
-                                    />
-                                )}
-                        </Fragment>
-                    ))}
+                        return (
+                            <Fragment
+                                key={`${copyIndex}-${itemId}-${item.meta ?? ""}`}
+                            >
+                                <ShelfCard
+                                    item={item}
+                                    itemId={itemId}
+                                    cardHeight={section.cardHeight}
+                                    cardWidth={section.cardWidth}
+                                    sectionId={section.id}
+                                    isSelected={
+                                        selectedShelfItem?.sectionId ===
+                                            section.id &&
+                                        selectedShelfItem?.itemId === itemId
+                                    }
+                                    onSelect={onShelfItemSelect}
+                                />
+
+                                {section.id === "career-journey" &&
+                                    itemIndex < section.items.length - 1 && (
+                                        <span
+                                            className="shelf-card-connector"
+                                            aria-hidden="true"
+                                        />
+                                    )}
+                            </Fragment>
+                        );
+                    })}
                 </div>
             ))}
         </div>

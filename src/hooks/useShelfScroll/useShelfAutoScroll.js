@@ -8,6 +8,7 @@ const useShelfAutoScroll = ({
     autoScrollPositions: autoScrollPositionsRef,
     activeDragIndexRef,
     hoveredSectionIndexRef,
+    selectedSectionIdRef,
     momentumFrames: momentumFramesRef,
     normalizeScrollPosition,
     updateScrollState,
@@ -40,6 +41,7 @@ const useShelfAutoScroll = ({
                 if (
                     activeDragIndexRef.current === index ||
                     hoveredSectionIndexRef.current === index ||
+                    selectedSectionIdRef.current === section.id ||
                     momentumFramesRef.current[index] ||
                     !section.doRepeat ||
                     section.autoScrollSpeed <= 0
@@ -88,6 +90,7 @@ const useShelfAutoScroll = ({
         momentumFramesRef,
         normalizeScrollPosition,
         scrollerRefsRef,
+        selectedSectionIdRef,
         shelfSections,
         updateScrollState,
     ]);

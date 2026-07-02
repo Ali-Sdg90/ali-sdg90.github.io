@@ -2,7 +2,7 @@ import { shelfSections } from "../../data/portfolio/shelfSections";
 import useShelfScroll from "../../hooks/useShelfScroll";
 import ShelfSection from "./ShelfSection";
 
-const Shelf = ({ selectedCareerId, onCareerSelect }) => {
+const Shelf = ({ selectedShelfItem, onShelfItemSelect }) => {
     const {
         scrollState,
         activeDragIndex,
@@ -13,7 +13,7 @@ const Shelf = ({ selectedCareerId, onCareerSelect }) => {
         handleSectionPointerLeave,
         stopDragging,
         scheduleScrollStateUpdate,
-    } = useShelfScroll(shelfSections);
+    } = useShelfScroll(shelfSections, selectedShelfItem?.sectionId);
 
     return (
         <section className="shelf-wrapper" aria-label="Portfolio shelf">
@@ -36,10 +36,10 @@ const Shelf = ({ selectedCareerId, onCareerSelect }) => {
                         scrollState={scrollState}
                         section={section}
                         sectionIndex={index}
-                        selectedCareerId={selectedCareerId}
+                        selectedShelfItem={selectedShelfItem}
                         setScrollerRef={setScrollerRef}
                         stopDragging={stopDragging}
-                        onCareerSelect={onCareerSelect}
+                        onShelfItemSelect={onShelfItemSelect}
                     />
                 ))}
             </div>

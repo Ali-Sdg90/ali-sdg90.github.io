@@ -24,8 +24,8 @@ const ShelfSection = ({
     handleSectionPointerLeave,
     stopDragging,
     scheduleScrollStateUpdate,
-    selectedCareerId,
-    onCareerSelect,
+    selectedShelfItem,
+    onShelfItemSelect,
 }) => {
     const cardShadow = resolveShelfShadowValue(section.cardShadow);
 
@@ -76,8 +76,8 @@ const ShelfSection = ({
                     handlePointerMove={handlePointerMove}
                     stopDragging={stopDragging}
                     scheduleScrollStateUpdate={scheduleScrollStateUpdate}
-                    selectedCareerId={selectedCareerId}
-                    onCareerSelect={onCareerSelect}
+                    selectedShelfItem={selectedShelfItem}
+                    onShelfItemSelect={onShelfItemSelect}
                 />
             </div>
         </div>

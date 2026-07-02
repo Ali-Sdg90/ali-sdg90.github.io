@@ -61,7 +61,7 @@ export const shelfSections = [
         items: [
             {
                 title: "Ali’s Portfolio",
-                meta: "Interactive portfolio with a 3D shelf experience",
+                meta: "Interactive portfolio with a shelf-based experience",
             },
             {
                 title: "Spot Taste Tracker",

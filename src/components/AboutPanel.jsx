@@ -1,27 +1,29 @@
 import { useState } from "react";
 
 import AboutMeContent from "./AboutPanel/AboutMeContent";
-import { careerDetailModules } from "./AboutPanel/CareerDetails";
 import ImagePreview from "./AboutPanel/ImagePreview";
+import { getShelfItemDetailModule } from "./AboutPanel/ShelfItemDetails";
 import { aboutData } from "../data/portfolio/aboutData";
 
-const AboutPanel = ({ selectedCareerItem }) => {
+const AboutPanel = ({ selectedShelfItem }) => {
     const [isImagePreviewOpen, setIsImagePreviewOpen] = useState(false);
     const [activeLanguage, setActiveLanguage] = useState("EN");
-    const selectedModule = selectedCareerItem
-        ? careerDetailModules[selectedCareerItem.id]
+    const selectedModule = selectedShelfItem
+        ? getShelfItemDetailModule(selectedShelfItem)
         : null;
-    const isShowingCareerModule = Boolean(selectedModule);
+    const isShowingDetailModule = Boolean(selectedModule);
     const { title, image, tags } = selectedModule ?? aboutData;
     const DetailComponent = selectedModule?.Component;
-    const contentKey = selectedCareerItem?.id ?? "about-me";
+    const contentKey = selectedShelfItem
+        ? `${selectedShelfItem.section.id}-${selectedShelfItem.item.title}`
+        : "about-me";
 
     return (
         <>
             <aside
                 className={[
                     "about-panel",
-                    isShowingCareerModule ? "is-showing-career-module" : "",
+                    isShowingDetailModule ? "is-showing-detail-module" : "",
                 ]
                     .filter(Boolean)
                     .join(" ")}
@@ -29,7 +31,7 @@ const AboutPanel = ({ selectedCareerItem }) => {
             >
                 <div className="about-panel-card" key={contentKey}>
                     <div className="about-panel-scroll">
-                        {isShowingCareerModule && (
+                        {isShowingDetailModule && (
                             <div
                                 className="about-panel-topbar"
                                 key={`${contentKey}-language`}
@@ -85,9 +87,7 @@ const AboutPanel = ({ selectedCareerItem }) => {
                                     onClick={() => setIsImagePreviewOpen(true)}
                                 >
                                     <img
-                                        key={
-                                            selectedCareerItem?.id ?? "about-me"
-                                        }
+                                        key={contentKey}
                                         className="about-panel-avatar"
                                         src={image.src}
                                         alt={image.alt}
@@ -104,7 +104,7 @@ const AboutPanel = ({ selectedCareerItem }) => {
                             </div>
                             <span
                                 className="about-panel-status"
-                                aria-hidden={isShowingCareerModule}
+                                aria-hidden={isShowingDetailModule}
                                 aria-label="Available"
                             />
                         </div>
@@ -127,7 +127,8 @@ const AboutPanel = ({ selectedCareerItem }) => {
                             <div className="about-panel-copy" key={contentKey}>
                                 {DetailComponent ? (
                                     <DetailComponent
-                                        careerItem={selectedCareerItem}
+                                        item={selectedShelfItem.item}
+                                        section={selectedShelfItem.section}
                                     />
                                 ) : (
                                     <AboutMeContent

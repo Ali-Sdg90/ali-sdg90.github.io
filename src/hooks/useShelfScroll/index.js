@@ -4,7 +4,7 @@ import { normalizeScrollPosition } from "./scrollUtils";
 import useShelfAutoScroll from "./useShelfAutoScroll";
 import useShelfMomentum from "./useShelfMomentum";
 
-const useShelfScroll = (shelfSections) => {
+const useShelfScroll = (shelfSections, selectedSectionId) => {
     const scrollerRefs = useRef([]);
     const dragState = useRef(null);
     const scrollFrame = useRef(null);
@@ -13,6 +13,7 @@ const useShelfScroll = (shelfSections) => {
     const autoScrollPositions = useRef([]);
     const activeDragIndexRef = useRef(null);
     const hoveredSectionIndexRef = useRef(null);
+    const selectedSectionIdRef = useRef(selectedSectionId);
     const scrollStateRef = useRef({});
     const [activeDragIndex, setActiveDragIndex] = useState(null);
     const [scrollState, setScrollState] = useState({});
@@ -77,6 +78,10 @@ const useShelfScroll = (shelfSections) => {
     });
 
     useEffect(() => {
+        selectedSectionIdRef.current = selectedSectionId;
+    }, [selectedSectionId]);
+
+    useEffect(() => {
         const updateAllScrollStates = () => {
             shelfSections.forEach((_, index) => updateScrollState(index));
         };
@@ -100,6 +105,7 @@ const useShelfScroll = (shelfSections) => {
         autoScrollPositions,
         activeDragIndexRef,
         hoveredSectionIndexRef,
+        selectedSectionIdRef,
         momentumFrames,
         normalizeScrollPosition,
         updateScrollState,

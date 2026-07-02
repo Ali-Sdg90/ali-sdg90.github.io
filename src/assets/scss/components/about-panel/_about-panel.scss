@@ -16,7 +16,7 @@
     container-type: inline-size;
     transition: width $motion-slow $ease-out;
 
-    &.is-showing-career-module {
+    &.is-showing-detail-module {
         --about-panel-content-width: calc(var(--about-panel-size-width) * 1.16);
         width: calc(var(--about-panel-size-width) * 1.16);
 
