@@ -1,5 +1,7 @@
-import shelfImage from "../../../assets/images/page/shelf.png";
+import placeholderImage from "../../../assets/images/global/placeholder.jpg";
+import { getAboutProjectById } from "../../../data/aboutSection/aboutProjectData";
 import { careerDetailModules } from "../CareerDetails";
+import FeaturedProjectAbout from "../FeaturedProjectAbout";
 import GenericShelfItemDetail from "./GenericShelfItemDetail";
 
 const sectionTags = {
@@ -26,9 +28,9 @@ const getGenericImage = (item, section) => {
     }
 
     return {
-        src: shelfImage,
+        src: placeholderImage,
         alt: `${section.label} placeholder`,
-        width: 1535,
+        width: 1024,
         height: 1024,
         zoom: 1,
     };
@@ -36,6 +38,27 @@ const getGenericImage = (item, section) => {
 
 export const getShelfItemDetailModule = ({ item, section }) => {
     if (!item || !section) return null;
+
+    if (section.id === "projects") {
+        const projectDetail = getAboutProjectById(item.id);
+
+        return {
+            title: projectDetail?.title ?? item.title,
+            subtitle: projectDetail
+                ? `${projectDetail.subtitle} · ${projectDetail.year}`
+                : "Project details coming soon",
+            image: {
+                src: projectDetail?.image ?? item.image ?? placeholderImage,
+                alt: `${projectDetail?.title ?? item.title} project preview`,
+                width: 1280,
+                height: 720,
+                zoom: 1,
+            },
+            tags: [],
+            detail: projectDetail,
+            Component: FeaturedProjectAbout,
+        };
+    }
 
     if (section.id === "career-journey") {
         return careerDetailModules[item.id] ?? null;

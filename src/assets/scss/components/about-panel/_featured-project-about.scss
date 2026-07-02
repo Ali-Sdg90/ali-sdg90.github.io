@@ -1,0 +1,253 @@
+@use "../../base/variables" as *;
+@use "about-panel-units" as *;
+
+.featured-project-about {
+    display: grid;
+    gap: about-panel-cqw(16);
+    padding-right: about-panel-cqw(8);
+}
+
+.featured-project-summary,
+.featured-project-story p {
+    margin: 0;
+    color: rgba(237, 246, 255, 0.9);
+    font-size: about-panel-cqw(15);
+    line-height: 1.48;
+    font-weight: 400;
+}
+
+.featured-project-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: about-panel-cqw(10);
+}
+
+.featured-project-link {
+    min-height: about-panel-cqw(42);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: about-panel-cqw(8);
+    padding: about-panel-cqw(9) about-panel-cqw(12);
+    border: 1px solid rgba(67, 174, 255, 0.78);
+    border-radius: about-panel-cqw(8);
+    color: $color-text;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(22, 136, 255, 0.34),
+            rgba(0, 221, 255, 0.08)
+        ),
+        rgba(3, 15, 32, 0.88);
+    box-shadow:
+        inset 0 1px 0 rgba(222, 241, 255, 0.14),
+        0 0 about-panel-cqw(16) rgba(22, 136, 255, 0.16);
+    font-size: about-panel-cqw(13);
+    line-height: 1;
+    font-weight: 750;
+    text-decoration: none;
+    transition:
+        border-color $motion-fast $ease-out,
+        box-shadow $motion-fast $ease-out,
+        transform $motion-fast $ease-out;
+
+    svg {
+        width: about-panel-cqw(13);
+        height: about-panel-cqw(13);
+        color: #58b6ff;
+        flex: 0 0 auto;
+    }
+
+    &:hover,
+    &:focus-visible {
+        border-color: rgba(119, 207, 255, 0.96);
+        box-shadow:
+            inset 0 1px 0 rgba(222, 241, 255, 0.18),
+            0 0 about-panel-cqw(22) rgba(22, 136, 255, 0.28);
+        transform: translateY(about-panel-cqw(-1));
+    }
+
+    &:focus-visible {
+        outline: about-panel-cqw(2) solid rgba(88, 182, 255, 0.8);
+        outline-offset: about-panel-cqw(2);
+    }
+
+    &.is-disabled {
+        opacity: 0.64;
+        cursor: not-allowed;
+        transform: none;
+    }
+}
+
+.featured-project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: about-panel-cqw(8);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        min-height: about-panel-cqw(28);
+        display: inline-flex;
+        align-items: center;
+        padding: about-panel-cqw(5) about-panel-cqw(10);
+        border: 1px solid rgba(22, 136, 255, 0.66);
+        border-radius: about-panel-cqw(7);
+        color: #72c6ff;
+        background: rgba(5, 19, 39, 0.7);
+        box-shadow:
+            inset 0 1px 0 rgba(155, 210, 255, 0.1),
+            0 0 about-panel-cqw(12) rgba(22, 136, 255, 0.1);
+        font-size: about-panel-cqw(12);
+        line-height: 1.1;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+}
+
+.featured-project-card,
+.featured-project-section {
+    display: grid;
+    gap: about-panel-cqw(12);
+}
+
+.featured-project-card {
+    padding: about-panel-cqw(14);
+    border: 1px solid rgba(22, 136, 255, 0.48);
+    border-radius: about-panel-cqw(10);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(22, 136, 255, 0.13),
+            rgba(0, 221, 255, 0.04)
+        ),
+        rgba(3, 14, 30, 0.66);
+    box-shadow:
+        inset 0 1px 0 rgba(178, 219, 255, 0.1),
+        0 0 about-panel-cqw(20) rgba(22, 136, 255, 0.1);
+}
+
+.featured-project-section-title {
+    display: flex;
+    align-items: center;
+    gap: about-panel-cqw(8);
+    margin: 0;
+    color: $color-text;
+    font-size: about-panel-cqw(15);
+    line-height: 1.2;
+    font-weight: 800;
+
+    svg {
+        width: about-panel-cqw(15);
+        height: about-panel-cqw(15);
+        color: #37aeff;
+        filter: drop-shadow(0 0 about-panel-cqw(6) rgba(22, 136, 255, 0.55));
+        flex: 0 0 auto;
+    }
+}
+
+.featured-project-features {
+    display: grid;
+    gap: about-panel-cqw(10);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: grid;
+        grid-template-columns: about-panel-cqw(22) minmax(0, 1fr);
+        align-items: start;
+        gap: about-panel-cqw(9);
+        color: rgba(226, 239, 255, 0.9);
+        font-size: about-panel-cqw(13);
+        line-height: 1.34;
+        font-weight: 450;
+    }
+}
+
+.featured-project-feature-icon {
+    width: about-panel-cqw(22);
+    height: about-panel-cqw(22);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(22, 136, 255, 0.58);
+    border-radius: 50%;
+    background: rgba(22, 136, 255, 0.12);
+    box-shadow: 0 0 about-panel-cqw(12) rgba(22, 136, 255, 0.18);
+
+    svg {
+        width: about-panel-cqw(9);
+        height: about-panel-cqw(9);
+        color: #78d4ff;
+    }
+}
+
+.featured-project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: about-panel-cqw(9);
+}
+
+.featured-project-gallery-button {
+    width: 100%;
+    aspect-ratio: 1.22;
+    display: block;
+    padding: 0;
+    border: 1px solid rgba(22, 136, 255, 0.46);
+    border-radius: about-panel-cqw(8);
+    background: rgba(4, 16, 34, 0.74);
+    box-shadow:
+        inset 0 1px 0 rgba(178, 219, 255, 0.08),
+        0 0 about-panel-cqw(14) rgba(22, 136, 255, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition:
+        border-color $motion-fast $ease-out,
+        box-shadow $motion-fast $ease-out,
+        transform $motion-fast $ease-out;
+
+    &:hover,
+    &:focus-visible {
+        border-color: rgba(119, 207, 255, 0.9);
+        box-shadow:
+            inset 0 1px 0 rgba(178, 219, 255, 0.08),
+            0 0 about-panel-cqw(18) rgba(22, 136, 255, 0.24);
+        transform: translateY(about-panel-cqw(-1));
+    }
+
+    &:focus-visible {
+        outline: about-panel-cqw(2) solid rgba(88, 182, 255, 0.8);
+        outline-offset: about-panel-cqw(2);
+    }
+}
+
+.featured-project-gallery-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.featured-project-gallery-image-fallback {
+    display: grid;
+    place-items: center;
+    color: rgba(244, 251, 255, 0.66);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.12),
+            rgba(255, 255, 255, 0.03)
+        ),
+        rgba(8, 22, 39, 0.88);
+    font-size: about-panel-cqw(20);
+    line-height: 1;
+    font-weight: 850;
+    letter-spacing: 0;
+}
+
+.featured-project-story {
+    display: grid;
+    gap: about-panel-cqw(12);
+}

@@ -37,7 +37,6 @@ import expoLogo from "../../assets/images/thumbnails/tech-stack/expo_logo.jpg";
 import viteLogo from "../../assets/images/thumbnails/tech-stack/vite_logo.jpg";
 import eslintLogo from "../../assets/images/thumbnails/tech-stack/eslint_logo.jpg";
 import prettierLogo from "../../assets/images/thumbnails/tech-stack/prettier_logo.jpg";
-import huskyLogo from "../../assets/images/thumbnails/tech-stack/husky_logo.jpg";
 import semanticReleaseLogo from "../../assets/images/thumbnails/tech-stack/semantic-release_logo.jpg";
 
 export const shelfSections = [
@@ -60,58 +59,73 @@ export const shelfSections = [
 
         items: [
             {
-                title: "Ali’s Portfolio",
+                id: "alis-portfolio",
+                title: "Ali's Portfolio",
                 meta: "Interactive portfolio with a shelf-based experience",
+                // icon: "/images/projects/portfolio-icon.png",
             },
             {
+                id: "spot-taste-tracker",
                 title: "Spot Taste Tracker",
                 meta: "Dashboard for analyzing Spotify taste over time",
             },
             {
+                id: "fabrexa-ai-ollama",
                 title: "Fabrexa AI Ollama",
                 meta: "Local Telegram AI chatbot powered by Ollama",
             },
             {
+                id: "restook-admin",
                 title: "Restook Admin",
                 meta: "Production admin panel for platform management",
             },
             {
+                id: "settleitgpt-project",
                 title: "SettleitGPT",
                 meta: "iOS app with AI personas and voice generation",
             },
             {
+                id: "path-finder",
                 title: "Path Finder",
                 meta: "Customizable animated pathfinding sandbox",
             },
             {
+                id: "tic-tac-toe",
                 title: "Tic Tac Toe",
                 meta: "Customizable game with multiple play modes",
             },
             {
+                id: "quick-math",
                 title: "Quick Math",
                 meta: "Timed math game with a rotating cube interface",
             },
             {
+                id: "gradient-paint",
                 title: "Gradient Paint",
                 meta: "Customizable interactive gradient painting canvas",
             },
             {
+                id: "rps-battle-royale",
                 title: "RPS Battle Royale",
                 meta: "Rock-paper-scissors battle royale simulator",
             },
             {
+                id: "dice-distribution",
                 title: "Dice Distribution",
                 meta: "Configurable dice probability simulator",
             },
             {
+                id: "cs-queue-bot",
                 title: "CS Queue Bot",
                 meta: "Live Telegram bot for queue management",
             },
             {
+                id: "cs-club-bot",
                 title: "CS Club Bot",
                 meta: "Live Telegram bot for AI-assisted workflows",
             },
             {
+                id: "cs-queue-calendar",
                 title: "CS Queue Calendar",
                 meta: "Live calendar for CS Internship session planning",
             },
@@ -211,8 +225,7 @@ export const shelfSections = [
             { title: "Ant Design", image: antDesignLogo },
             { title: "TanStack Query", image: tanStackQueryLogo },
             { title: "REST APIs", image: restApiLogo },
-            { title: "semantic release", image: semanticReleaseLogo },
-            { title: "Husky", image: huskyLogo },
+            { title: "Semantic Release", image: semanticReleaseLogo },
             { title: "Prettier", image: prettierLogo },
             { title: "ESLint", image: eslintLogo },
             { title: "Vite", image: viteLogo },
@@ -223,6 +236,12 @@ export const shelfSections = [
             { title: "Git/GitHub", image: gitLogo },
             { title: "Firebase", image: firebaseLogo },
             { title: "Chart.js", image: chartJsLogo },
+            { title: "GitHub Pages", image: "" },
+            { title: "Ollama", image: "" },
+            { title: "Azure DevOps", image: "" },
+            { title: "React Router", image: "" },
+            { title: "Axios", image: "" },
+            { title: "Swagger", image: "" },
         ],
     },
     {

@@ -4,8 +4,9 @@ const ShelfCardImage = ({ item }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [hasError, setHasError] = useState(false);
     const fallbackText = item.title.trim().slice(0, 2).toUpperCase();
+    const imageSource = item.icon ?? item.image;
 
-    if (!item.image || hasError) {
+    if (!imageSource || hasError) {
         return (
             <div className="shelf-card-image-fallback" aria-hidden="true">
                 {fallbackText}
@@ -18,7 +19,7 @@ const ShelfCardImage = ({ item }) => {
             {!isLoaded && <div className="shelf-card-image-loading" />}
 
             <img
-                src={item.image}
+                src={imageSource}
                 alt={`${item.title} preview`}
                 loading="lazy"
                 decoding="async"

@@ -61,6 +61,23 @@
         object-position $motion-slow $ease-out;
 }
 
+.about-panel-avatar-fallback {
+    display: grid;
+    place-items: center;
+    color: rgba(244, 251, 255, 0.68);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.12),
+            rgba(255, 255, 255, 0.03)
+        ),
+        rgba(8, 22, 39, 0.9);
+    font-size: about-panel-cqw(48);
+    line-height: 1;
+    font-weight: 850;
+    letter-spacing: 0;
+}
+
 .about-panel-status {
     position: absolute;
     right: about-panel-cqw(26);

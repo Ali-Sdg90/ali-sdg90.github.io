@@ -21,7 +21,17 @@
         width: calc(var(--about-panel-size-width) * 1.16);
 
         .about-panel-scroll {
-            grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+            grid-template-rows: auto auto auto auto auto;
+            overflow-x: hidden;
+            overflow-y: auto;
+            overscroll-behavior: contain;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+                width: 0;
+                height: 0;
+            }
         }
     }
 }

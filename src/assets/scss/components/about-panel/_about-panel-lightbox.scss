@@ -1,13 +1,12 @@
 @use "../../base/variables" as *;
-@use "../layout/hero-stage" as *;
 
 .about-panel-lightbox {
     position: fixed;
     inset: 0;
-    z-index: 80;
+    z-index: 9999;
     display: grid;
     place-items: center;
-    padding: hero-stage-size(48);
+    padding: clamp(24px, 4vw, 64px);
     background:
         radial-gradient(
             circle at 50% 40%,
@@ -15,7 +14,7 @@
             transparent 38%
         ),
         rgba(1, 5, 12, 0.78);
-    backdrop-filter: blur(hero-stage-size(14));
+    backdrop-filter: blur(14px);
     animation: about-panel-lightbox-fade 300ms $ease-out both;
 
     &.is-closing {
@@ -29,41 +28,68 @@
 
 .about-panel-lightbox-frame {
     position: relative;
-    width: min(68vw, hero-stage-size(680));
-    height: min(76vh, hero-stage-size(680));
-    padding: hero-stage-size(10);
-    display: grid;
+    width: min(90vw, calc(86vh * var(--lightbox-image-aspect-ratio, 1.777)));
+    max-width: 1100px;
+    aspect-ratio: var(--lightbox-image-aspect-ratio, 1.777);
+    padding: 7px;
+    display: inline-grid;
     place-items: center;
     border: 1px solid rgba(87, 170, 255, 0.82);
-    border-radius: hero-stage-size(18);
+    border-radius: 22px;
     background:
         linear-gradient(
             135deg,
-            rgba(255, 255, 255, 0.12),
-            rgba(255, 255, 255, 0.02)
+            rgba(93, 194, 255, 0.36),
+            rgba(22, 136, 255, 0.18) 44%,
+            rgba(0, 221, 255, 0.28)
         ),
-        rgba(3, 12, 28, 0.92);
+        rgba(3, 12, 28, 0.96);
     box-shadow:
         0 0 0 1px rgba(35, 123, 255, 0.2),
-        0 0 hero-stage-size(34) rgba(22, 136, 255, 0.38),
-        0 hero-stage-size(28) hero-stage-size(80) rgba(0, 0, 0, 0.58);
+        inset 0 1px 0 rgba(222, 241, 255, 0.2),
+        0 0 34px rgba(22, 136, 255, 0.38),
+        0 32px 90px rgba(0, 0, 0, 0.64);
     animation: about-panel-lightbox-image-enter 360ms $ease-out both;
 }
 
 .about-panel-lightbox-image {
+    box-sizing: border-box;
     display: block;
     width: 100%;
     height: 100%;
-    border-radius: hero-stage-size(12);
+    border: 8px solid rgba(0, 6, 16, 0.96);
+    border-radius: 16px;
+    background: rgba(0, 6, 16, 0.96);
+    box-shadow:
+        inset 0 0 0 1px rgba(138, 207, 255, 0.1),
+        0 18px 42px rgba(0, 0, 0, 0.5),
+        0 0 22px rgba(22, 136, 255, 0.14);
     object-fit: contain;
+}
+
+.about-panel-lightbox-image-fallback {
+    display: grid;
+    place-items: center;
+    color: rgba(244, 251, 255, 0.7);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.12),
+            rgba(255, 255, 255, 0.03)
+        ),
+        rgba(8, 22, 39, 0.92);
+    font-size: clamp(48px, 10vw, 110px);
+    line-height: 1;
+    font-weight: 850;
+    letter-spacing: 0;
 }
 
 .about-panel-lightbox-close {
     position: fixed;
-    top: hero-stage-size(34);
-    right: hero-stage-size(38);
-    z-index: 81;
-    width: hero-stage-size(38);
+    top: clamp(18px, 3vh, 34px);
+    right: clamp(18px, 3vw, 42px);
+    z-index: 10000;
+    width: clamp(38px, 3.2vw, 48px);
     aspect-ratio: 1;
     display: inline-grid;
     place-items: center;
@@ -71,11 +97,18 @@
     border: 1px solid rgba(87, 170, 255, 0.62);
     border-radius: 50%;
     color: $color-text;
-    background: rgba(3, 12, 28, 0.82);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(22, 136, 255, 0.24),
+            rgba(3, 12, 28, 0.88)
+        ),
+        rgba(3, 12, 28, 0.92);
     box-shadow:
         inset 0 1px 0 rgba(222, 241, 255, 0.13),
-        0 0 hero-stage-size(18) rgba(22, 136, 255, 0.2);
-    font-size: hero-stage-size(20);
+        0 0 18px rgba(22, 136, 255, 0.2),
+        0 12px 34px rgba(0, 0, 0, 0.34);
+    font-size: 18px;
     line-height: 1;
     cursor: pointer;
     transition:
@@ -88,9 +121,15 @@
         border-color: rgba(117, 202, 255, 0.96);
         box-shadow:
             inset 0 1px 0 rgba(222, 241, 255, 0.18),
-            0 0 hero-stage-size(24) rgba(22, 136, 255, 0.34);
-        transform: translateY(hero-stage-size(-1));
+            0 0 24px rgba(22, 136, 255, 0.34),
+            0 12px 34px rgba(0, 0, 0, 0.34);
+        transform: translateY(-1px);
         outline: none;
+    }
+
+    svg {
+        width: 54%;
+        height: 54%;
     }
 }
 
@@ -117,8 +156,8 @@
 @keyframes about-panel-lightbox-image-enter {
     from {
         opacity: 0;
-        transform: translateY(hero-stage-size(14)) scale(0.96);
-        filter: blur(hero-stage-size(5));
+        transform: translateY(14px) scale(0.96);
+        filter: blur(5px);
     }
 
     to {
@@ -137,7 +176,7 @@
 
     to {
         opacity: 0;
-        transform: translateY(hero-stage-size(10)) scale(0.97);
-        filter: blur(hero-stage-size(4));
+        transform: translateY(10px) scale(0.97);
+        filter: blur(4px);
     }
 }
