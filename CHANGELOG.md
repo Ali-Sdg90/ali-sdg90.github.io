@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.7.1...v1.8.0) (2026-07-02)
+
+
+### Features
+
+* implement shelf item selection and detail display in AboutPanel, before starting the BIG row template structure ([d06b1ff](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d06b1ff18fd3e4b58f2920e31b93b0bc1553c8c4))
+
 ## [1.7.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.7.0...v1.7.1) (2026-07-01)
 
 
