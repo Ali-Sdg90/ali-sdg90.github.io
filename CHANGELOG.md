@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.8.0...v1.8.1) (2026-07-02)
+
+
+### Bug Fixes
+
+* add FeaturedProjectAbout component with styling and lightbox functionality ([2d32799](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/2d32799856420f3b433da0965613fcb84956d748))
+
 # [1.8.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.7.1...v1.8.0) (2026-07-02)
 
 
