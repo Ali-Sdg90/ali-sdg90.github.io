@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.8...v1.24.0) (2026-09-16)
+
+
+### Features
+
+* add Health Data Relay project card to project and remove mlk dvr receiver, use new md structure for md files for stories in project ([9b475f4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/9b475f4476f7ab2766999d5295d88ebb0b359aea))
+
 ## [1.23.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.7...v1.23.8) (2026-08-26)
 
 
