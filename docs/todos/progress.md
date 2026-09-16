@@ -2,7 +2,7 @@
 
 - [x] add "How this site created" btn and its own page
 
-- [ ] create agents.md file
+- [x] create agents.md file
 
 - [x] shorten the about me text
 
@@ -58,6 +58,8 @@
 
 - [ ] Finalize fabrexa bot description and info via bot-father
 
+- [ ] Add Website for fabrexa ai ollama repo
+
 - [x] Maybe remove gpt and dpa projects in featured projects? -yes
 
 - [ ] Maybe Remove intro animation for gallery section in h.m.p.w.b
@@ -70,13 +72,13 @@
 
 - [x] Improve gallery image orders
 
-- [ ] Add a separated page for stories?
+- [x] Add a separated page for stories?
 
 - [ ] Add ability to zoom in lighthouse
 
-- [ ] Double check the MLK DVR Receiver project for L-problems
+- [x] Double check the MLK DVR Receiver project for L-problems
 
-- [ ] Add Health Data Relay project
+- [x] Add Health Data Relay project
 
 - [ ] Update tags in aboutMe section for showcase more builder side of me
 
@@ -86,4 +88,6 @@
 
 - [ ] Try to fix or add cool animation when aboutSection is change state that text in it don't have seizure
 
-- [ ] Add Notice and other files in the repo
+- [x] Add Notice and other files in the repo
+
+- [ ] Add url redirect to main url if the url that user insert is wrong

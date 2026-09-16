@@ -248,6 +248,10 @@ export const aboutCareerData = {
         storyTitle: "Story",
         storyEN: careerCsInternshipStoryEN.trim(),
         storyFA: careerCsInternshipStoryFA.trim(),
+        storySource: {
+            collection: "career",
+            slug: "cs-internship",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -321,6 +325,10 @@ export const aboutCareerData = {
         storyEN: careerMelkradarStoryEN.trim(),
 
         storyFA: careerMelkradarStoryFA.trim(),
+        storySource: {
+            collection: "career",
+            slug: "melkradar",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -365,6 +373,10 @@ export const aboutCareerData = {
         storyEN: careerDadehPardaziAzmoudehKaranStoryEN.trim(),
 
         storyFA: careerDadehPardaziAzmoudehKaranStoryFA.trim(),
+        storySource: {
+            collection: "career",
+            slug: "dadeh-pardazi-azmoudeh-karan",
+        },
         hasRelatedLinks: false,
         relatedLinks: [],
     },
@@ -405,6 +417,10 @@ export const aboutCareerData = {
         storyEN: careerSettleitgptStoryEN.trim(),
 
         storyFA: careerSettleitgptStoryFA.trim(),
+        storySource: {
+            collection: "career",
+            slug: "settleitgpt",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {

@@ -1,9 +1,8 @@
-import { useId, useLayoutEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { useRef, useState } from "react";
 import {
     FaArrowUpRightFromSquare,
+    FaBookOpen,
     FaCheck,
-    FaChevronDown,
     FaGithub,
     FaImages,
     FaLayerGroup,
@@ -13,6 +12,7 @@ import {
 } from "react-icons/fa6";
 
 import LightboxImage from "../../ui/LightboxImage";
+import StoryReaderModal from "./StoryReaderModal";
 import { trackUmamiEvent } from "../../../utils/analytics";
 
 const sectionIcons = {
@@ -182,20 +182,16 @@ const DetailGallery = ({ columns = 3, images = [], title }) => {
 const ProjectStory = ({
     activeLanguage,
     languageToggle,
+    storySource,
+    storyType,
     storyEN,
     storyFA,
+    subjectTitle,
     title = "Story",
     titleFA,
 }) => {
-    const [isExpanded, setIsExpanded] = useState(false);
-    const [isStoryClamped, setIsStoryClamped] = useState(true);
-    const [storyHeights, setStoryHeights] = useState({
-        collapsed: 0,
-        expanded: 0,
-    });
-    const [shouldAnimateHeight, setShouldAnimateHeight] = useState(false);
-    const storyContentRef = useRef(null);
-    const storyId = useId();
+    const [isReaderOpen, setIsReaderOpen] = useState(false);
+    const readerTriggerRef = useRef(null);
     const isFarsi = activeLanguage === "FA" && storyFA;
     const visibleStory = isFarsi ? storyFA : storyEN;
     const visibleTitle = isFarsi ? (titleFA ?? title) : title;
@@ -203,34 +199,6 @@ const ProjectStory = ({
         ?.split("\n\n")
         .map((paragraph) => paragraph.trim())
         .filter(Boolean);
-
-    useLayoutEffect(() => {
-        const storyContent = storyContentRef.current;
-
-        if (!storyContent) return undefined;
-
-        const measureStory = () => {
-            const firstParagraph = storyContent.querySelector("p");
-            const paragraphStyles = firstParagraph
-                ? window.getComputedStyle(firstParagraph)
-                : null;
-            const lineHeight = paragraphStyles
-                ? Number.parseFloat(paragraphStyles.lineHeight)
-                : 0;
-
-            setStoryHeights({
-                collapsed: Math.min(storyContent.scrollHeight, lineHeight * 3),
-                expanded: storyContent.scrollHeight,
-            });
-        };
-
-        measureStory();
-
-        const resizeObserver = new ResizeObserver(measureStory);
-        resizeObserver.observe(storyContent);
-
-        return () => resizeObserver.disconnect();
-    }, [visibleStory]);
 
     if (!paragraphs?.length) return null;
 
@@ -242,67 +210,45 @@ const ProjectStory = ({
                 </DetailSectionTitle>
                 {languageToggle}
             </div>
-            <motion.div
+            <div
                 className={[
                     "featured-project-story",
-                    isExpanded ? "is-expanded" : "is-collapsed",
                     isFarsi ? "is-farsi-text" : "",
                 ]
                     .filter(Boolean)
                     .join(" ")}
                 dir={isFarsi ? "rtl" : undefined}
                 lang={isFarsi ? "fa" : undefined}
-                id={storyId}
-                initial={false}
-                animate={{
-                    height: isExpanded
-                        ? storyHeights.expanded
-                        : storyHeights.collapsed,
-                }}
-                transition={{
-                    duration: shouldAnimateHeight ? (isExpanded ? 1.5 : 1) : 0,
-                    ease: [0.22, 1, 0.36, 1],
-                }}
-                onAnimationComplete={() => {
-                    if (!isExpanded) setIsStoryClamped(true);
-                }}
             >
-                <div
-                    className={[
-                        "featured-project-story-content",
-                        isStoryClamped ? "is-clamped" : "",
-                    ]
-                        .filter(Boolean)
-                        .join(" ")}
-                >
+                <div className="featured-project-story-content is-clamped">
                     {paragraphs.map((paragraph) => (
                         <p key={paragraph}>{paragraph}</p>
                     ))}
                 </div>
-                <div
-                    className="featured-project-story-measure"
-                    aria-hidden="true"
-                    ref={storyContentRef}
-                >
-                    {paragraphs.map((paragraph) => (
-                        <p key={paragraph}>{paragraph}</p>
-                    ))}
-                </div>
-            </motion.div>
+            </div>
             <button
                 className="featured-project-story-toggle"
                 type="button"
-                aria-expanded={isExpanded}
-                aria-controls={storyId}
-                onClick={() => {
-                    setShouldAnimateHeight(true);
-                    if (!isExpanded) setIsStoryClamped(false);
-                    setIsExpanded((current) => !current);
-                }}
+                aria-haspopup="dialog"
+                onClick={() => setIsReaderOpen(true)}
+                ref={readerTriggerRef}
             >
-                <span>{isExpanded ? "Collapse story" : "Expand story"}</span>
-                <FaChevronDown aria-hidden="true" />
+                <span>Read full story</span>
+                <FaBookOpen aria-hidden="true" />
             </button>
+
+            {isReaderOpen && (
+                <StoryReaderModal
+                    initialLanguage={isFarsi ? "FA" : "EN"}
+                    onClose={() => setIsReaderOpen(false)}
+                    returnFocusRef={readerTriggerRef}
+                    storyEN={storyEN}
+                    storyFA={storyFA}
+                    storySource={storySource}
+                    storyType={storyType}
+                    title={subjectTitle}
+                />
+            )}
         </section>
     );
 };
@@ -410,8 +356,17 @@ const FeaturedProjectAbout = ({
             <ProjectStory
                 activeLanguage={activeLanguage}
                 languageToggle={languageToggle}
+                storySource={detail.storySource}
+                storyType={
+                    section?.id === "projects"
+                        ? "projects"
+                        : section?.id === "career-journey"
+                          ? "career"
+                          : "default"
+                }
                 storyEN={detail.storyEN}
                 storyFA={detail.storyFA}
+                subjectTitle={detail.title ?? item.title}
                 title={detail.storyTitle}
                 titleFA={detail.storyTitleFA}
             />

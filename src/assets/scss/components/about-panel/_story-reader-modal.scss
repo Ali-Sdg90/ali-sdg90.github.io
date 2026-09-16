@@ -1,0 +1,325 @@
+@use "../../base/variables" as *;
+
+.story-reader-modal__frame {
+    --about-panel-reference-size: 357px;
+
+    box-sizing: border-box;
+    width: min(920px, calc(100vw - 112px));
+    min-width: min(920px, calc(100vw - 112px));
+    height: min(82vh, 780px);
+    min-height: 560px;
+    max-width: 920px;
+    aspect-ratio: auto;
+    display: block;
+}
+
+.story-reader-modal__surface {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    overflow: hidden;
+    border: 8px solid rgba(0, 6, 16, 0.96);
+    border-radius: 16px;
+    background:
+        radial-gradient(
+            circle at 18% 0%,
+            rgba(22, 136, 255, 0.13),
+            transparent 34%
+        ),
+        radial-gradient(
+            circle at 86% 92%,
+            rgba(0, 221, 255, 0.07),
+            transparent 32%
+        ),
+        linear-gradient(145deg, rgba(7, 21, 42, 0.98), rgba(1, 8, 19, 0.99));
+    box-shadow:
+        inset 0 0 0 1px rgba(138, 207, 255, 0.1),
+        0 18px 42px rgba(0, 0, 0, 0.5),
+        0 0 22px rgba(22, 136, 255, 0.14);
+}
+
+.story-reader-modal__surface::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.22;
+    background-image:
+        linear-gradient(rgba(117, 202, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(117, 202, 255, 0.025) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to bottom, black, transparent 72%);
+}
+
+.story-reader-modal__header {
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    min-height: 92px;
+    padding: 19px 24px 20px 26px;
+    border-bottom: 1px solid rgba(87, 170, 255, 0.2);
+    background:
+        linear-gradient(110deg, rgba(22, 136, 255, 0.11), transparent 48%),
+        rgba(3, 12, 28, 0.78);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(18px);
+}
+
+.story-reader-modal__heading {
+    min-width: 0;
+}
+
+.story-reader-modal__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(117, 202, 255, 0.78);
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 750;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    svg {
+        width: 12px;
+        height: 12px;
+        filter: drop-shadow(0 0 7px rgba(22, 136, 255, 0.5));
+    }
+}
+
+.story-reader-modal__heading h2 {
+    overflow: hidden;
+    margin: 7px 0 0;
+    color: rgba(246, 251, 255, 0.98);
+    font-size: clamp(21px, 2vw, 29px);
+    line-height: 1.14;
+    font-weight: 760;
+    letter-spacing: -0.025em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-shadow: 0 0 24px rgba(22, 136, 255, 0.16);
+}
+
+.story-reader-modal__controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex: 0 0 auto;
+}
+
+.story-reader-modal__source-link {
+    min-height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 12px;
+    border: 1px solid rgba(87, 170, 255, 0.42);
+    border-radius: 8px;
+    color: rgba(231, 245, 255, 0.9);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(22, 136, 255, 0.15),
+            rgba(0, 221, 255, 0.04)
+        ),
+        rgba(3, 13, 30, 0.78);
+    box-shadow:
+        inset 0 1px 0 rgba(222, 241, 255, 0.08),
+        0 0 16px rgba(22, 136, 255, 0.08);
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    transition:
+        color $motion-fast $ease-out,
+        border-color $motion-fast $ease-out,
+        background-color $motion-fast $ease-out,
+        box-shadow $motion-fast $ease-out,
+        transform $motion-fast $ease-out;
+
+    svg:first-child {
+        width: 14px;
+        height: 14px;
+    }
+
+    svg:last-child {
+        width: 9px;
+        height: 9px;
+        color: rgba(117, 202, 255, 0.82);
+    }
+
+    &:hover,
+    &:focus-visible {
+        color: $color-text;
+        border-color: rgba(117, 202, 255, 0.9);
+        background: rgba(12, 43, 78, 0.8);
+        box-shadow:
+            inset 0 1px 0 rgba(222, 241, 255, 0.12),
+            0 0 22px rgba(22, 136, 255, 0.2);
+        transform: translateY(-1px);
+        outline: none;
+    }
+}
+
+.story-reader-modal__progress {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    overflow: hidden;
+    background: rgba(117, 202, 255, 0.06);
+}
+
+.story-reader-modal__progress::after {
+    content: "";
+    display: block;
+    width: var(--story-progress, 0%);
+    height: 100%;
+    border-radius: 0 999px 999px 0;
+    background: linear-gradient(90deg, #1688ff, #62cfff, #00ddff);
+    box-shadow:
+        0 0 8px rgba(22, 136, 255, 0.75),
+        0 0 14px rgba(0, 221, 255, 0.32);
+}
+
+.story-reader-modal__scroll {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: clamp(34px, 5vh, 54px) clamp(42px, 6vw, 76px) 58px;
+    scrollbar-color: rgba(83, 174, 243, 0.76) rgba(4, 16, 34, 0.5);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        margin: 8px 0;
+        border-radius: 999px;
+        background: rgba(4, 16, 34, 0.5);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border: 3px solid transparent;
+        border-radius: 999px;
+        background: rgba(83, 174, 243, 0.76);
+        background-clip: padding-box;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(117, 202, 255, 0.96);
+        background-clip: padding-box;
+    }
+}
+
+.story-reader-modal__content {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    color: rgba(225, 239, 250, 0.88);
+
+    p {
+        margin: 0 0 1.35em;
+        font-size: 17px;
+        line-height: 1.88;
+        font-weight: 400;
+        letter-spacing: 0.004em;
+    }
+
+    p:first-of-type {
+        color: rgba(244, 250, 255, 0.96);
+        font-size: 18px;
+        font-weight: 470;
+    }
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.story-reader-modal__scroll[dir="rtl"] {
+    font-family: $font-family-farsi;
+    text-align: right;
+
+    .story-reader-modal__content p {
+        font-size: 17px;
+        line-height: 2.05;
+        letter-spacing: 0;
+    }
+
+    .story-reader-modal__content p:first-of-type {
+        font-size: 18px;
+    }
+}
+
+.story-reader-modal__opening-mark {
+    direction: ltr;
+    display: grid;
+    grid-template-columns: minmax(36px, 1fr) auto minmax(36px, 1fr);
+    align-items: center;
+    gap: 12px;
+    width: min(220px, 48%);
+    margin: 0 auto 28px;
+    color: rgba(117, 202, 255, 0.7);
+
+    span {
+        height: 1px;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(117, 202, 255, 0.42)
+        );
+    }
+
+    span:last-child {
+        transform: rotate(180deg);
+    }
+
+    svg {
+        width: 14px;
+        height: 14px;
+        filter: drop-shadow(0 0 8px rgba(22, 136, 255, 0.52));
+    }
+}
+
+.story-reader-modal__closing-mark {
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+
+    span {
+        width: 42px;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #1688ff, #62cfff, #00ddff);
+        box-shadow: 0 0 12px rgba(22, 136, 255, 0.38);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .story-reader-modal__source-link {
+        transition-duration: 0.01ms;
+    }
+}

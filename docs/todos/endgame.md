@@ -5,6 +5,7 @@
 - [ ] check lighthouse for improvements in performance and accessibility
 
 - [ ] improve SEO of the site
+    - [x] Part 1
 
 - [ ] Maybe add Agentic browsing and robot file
 
@@ -23,7 +24,7 @@
 
 - [ ] Remove the UnderConstructionBadge
 
-- [ ] Maybe move all stories in separated md file and project read from that md file?
+- [x] Maybe move all stories in separated md file and project read from that md file?
 
 - [ ] Maybe add a Telegram bot to send me message with status data?
 

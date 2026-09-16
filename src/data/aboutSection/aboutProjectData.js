@@ -179,6 +179,10 @@ export const aboutProjectData = {
         galleryImages: projectGalleryImages["mlk-dvr-receiver"],
         storyEN: projectMlkDvrReceiverStoryEN.trim(),
         storyFA: projectMlkDvrReceiverStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "mlk-dvr-receiver",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -243,6 +247,10 @@ export const aboutProjectData = {
         storyEN: projectCsQueueCalendarStoryEN.trim(),
 
         storyFA: projectCsQueueCalendarStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "cs-queue-calendar",
+        },
 
         hasRelatedLinks: true,
         relatedLinks: [
