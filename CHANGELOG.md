@@ -1,3 +1,10 @@
+## [1.25.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.25.1...v1.25.2) (2026-09-16)
+
+
+### Bug Fixes
+
+* finalize fabrexa project logo ([09c9f93](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/09c9f937ef56215e395c981c10bcbc03ec002558))
+
 ## [1.25.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.25.0...v1.25.1) (2026-09-16)
 
 
