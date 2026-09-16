@@ -1,0 +1,21 @@
+# Ali Sadeghi Interactive Portfolio
+
+> Ali Sadeghi's personal portfolio presents selected software projects, professional experience, measurable impact, technical tools, and a bilingual account of how the site was designed and built.
+
+The canonical site is https://ali-sdg.is-a.dev/. It is a single-page React application with English and Persian content. Treat project dates, metrics, and descriptions as portfolio claims made by the site owner. The repository and original content use a custom all-rights-reserved license; this file grants no additional rights.
+
+## Primary resources
+
+- [Live portfolio](https://ali-sdg.is-a.dev/): The canonical interactive website.
+- [English resume](https://ali-sdg.is-a.dev/resume/ali-sadeghi-resume-en.pdf): The current public resume in PDF format.
+- [Project overview](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/README.md): Architecture, features, local setup, and development workflow.
+
+## Project records
+
+- [Changelog](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/CHANGELOG.md): Published release history.
+- [Source repository](https://github.com/Ali-Sdg90/ali-sdg90.github.io): Public source and issue history.
+
+## Optional
+
+- [License](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/LICENSE): Terms governing the repository and original portfolio content.
+- [Copyright and third-party notices](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/NOTICE): Ownership and bundled font attribution.

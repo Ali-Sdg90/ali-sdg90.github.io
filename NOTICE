@@ -1,0 +1,21 @@
+Ali Sadeghi Interactive Portfolio
+Copyright (c) 2026 Ali Sadeghi. All rights reserved.
+
+This repository and its original content are provided under the terms in the
+LICENSE file. No additional permission is granted by this notice.
+
+Third-party components remain governed by their respective licenses. Bundled
+font software includes:
+
+- Geist
+  Copyright (c) 2023 Vercel, in collaboration with basement.studio
+- Manrope
+  Copyright 2018 The Manrope Project Authors
+- Vazirmatn
+  Copyright 2015 The Vazirmatn Project Authors
+
+These fonts are licensed under the SIL Open Font License, Version 1.1. License
+copies are stored with the font files in `src/assets/fonts` and `public/fonts`.
+
+Product names, logos, and trademarks referenced by the portfolio belong to
+their respective owners. Their appearance does not imply endorsement.
