@@ -35,7 +35,6 @@
 
 - [ ] finalize the repos readme that are mentioned in the projects section
     - [x] ~~rps-battle-royale~~
-
     - [ ] portfolio
     - [ ] spot tracker
     - [ ] fabrexa-ollama
@@ -64,7 +63,7 @@
 
 - [ ] Maybe Remove intro animation for gallery section in h.m.p.w.b
 
-- [ ] Finalize intro bottom section spacing
+- [x] Finalize intro bottom section spacing
 
 - [ ] Do char-gpt test for about me text
 

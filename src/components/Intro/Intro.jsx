@@ -35,7 +35,7 @@ const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
                 <p className="hero-role">Software Engineer</p>
 
                 <p className="hero-copy">
-                    I love building polished web projects, useful tools, and
+                    I love building polished software, useful tools, and
                     reliable systems.
                     <br />
                     Crafted with care, curiosity, and{" "}

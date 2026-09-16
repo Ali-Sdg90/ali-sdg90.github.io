@@ -29,5 +29,6 @@
 - [ ] Maybe add a Telegram bot to send me message with status data?
 
 - [ ] Get feedback from trusted friends
+    - [x] S.K.
 
 - [ ] Maybe announce the site in my social medias?

@@ -1,5 +1,3 @@
-// Career Journey images
-
 import csiLogo from "../../assets/images/thumbnails/career/csi_logo.jpg";
 import melkRadarLogo from "../../assets/images/thumbnails/career/melkradar_logo.jpg";
 import dpaLogo from "../../assets/images/thumbnails/career/dpa_logo.jpg";

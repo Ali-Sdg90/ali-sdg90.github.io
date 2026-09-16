@@ -40,7 +40,7 @@ export const aboutData = {
         "Automation",
         "System Design",
         "Internal Tools",
-        "AI Workflows",
+        "AI Integration",
         "React",
         "JavaScript",
     ],
