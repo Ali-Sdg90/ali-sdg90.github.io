@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.24.0...v1.25.0) (2026-09-16)
+
+
+### Features
+
+* add story-reader system, update aboutData tags and english translation, update todos ([03a32b8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/03a32b8dc5d1465aef2c0f446e260e25c1ca5902))
+
 # [1.24.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.23.8...v1.24.0) (2026-09-16)
 
 
