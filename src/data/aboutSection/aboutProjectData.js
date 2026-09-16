@@ -2,6 +2,7 @@ import gradientPaintLarge from "../../assets/images/large-images/projects/cgp.pn
 import csClubLarge from "../../assets/images/large-images/projects/cs-club.png";
 import csQueueLarge from "../../assets/images/large-images/projects/cs-queue.png";
 import fabrexaLarge from "../../assets/images/large-images/projects/fabrexa.png";
+import healthDataRelayLarge from "../../assets/images/large-images/projects/health-data-relay.png";
 import pathFinderLarge from "../../assets/images/large-images/projects/path-finder.png";
 import portfolioLarge from "../../assets/images/large-images/projects/portfolio.png";
 import quickMathLarge from "../../assets/images/large-images/projects/quick-math.png";
@@ -13,6 +14,7 @@ import gradientPaintThumbnail from "../../assets/images/thumbnails/projects/cgp.
 import csClubThumbnail from "../../assets/images/thumbnails/projects/cs-club.jpg";
 import csQueueThumbnail from "../../assets/images/thumbnails/projects/cs-queue.jpg";
 import fabrexaThumbnail from "../../assets/images/thumbnails/projects/fabrexa.jpg";
+import healthDataRelayThumbnail from "../../assets/images/thumbnails/projects/health-data-relay.jpg";
 import pathFinderThumbnail from "../../assets/images/thumbnails/projects/path-finder.jpg";
 import portfolioThumbnail from "../../assets/images/thumbnails/projects/portfolio.jpg";
 import quickMathThumbnail from "../../assets/images/thumbnails/projects/quick-math.jpg";
@@ -21,6 +23,10 @@ import ticTacToeThumbnail from "../../assets/images/thumbnails/projects/xo.jpg";
 import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
 import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import { projectGalleryImages } from "./projectGalleryData";
+import projectMlkDvrReceiverStoryEN from "../stories/en/projects/mlk-dvr-receiver.md?raw";
+import projectMlkDvrReceiverStoryFA from "../stories/fa/projects/mlk-dvr-receiver.md?raw";
+import projectCsQueueCalendarStoryEN from "../stories/en/projects/cs-queue-calendar.md?raw";
+import projectCsQueueCalendarStoryFA from "../stories/fa/projects/cs-queue-calendar.md?raw";
 
 export const aboutProjectData = {
     "alis-portfolio": {
@@ -67,6 +73,76 @@ export const aboutProjectData = {
             },
         ],
     },
+    "health-data-relay": {
+        id: "health-data-relay",
+        title: "Health Data Relay",
+        subtitle: "Android app for backing up health data to Google Drive",
+        year: "2026",
+        image: healthDataRelayThumbnail,
+        lightboxImage: healthDataRelayLarge,
+        imageWidth: 1254,
+        imageHeight: 1254,
+        lightboxWidth: 1254,
+        lightboxHeight: 1254,
+        summary:
+            "A privacy-focused Android app that creates a seamless, automated pipeline from selected Health Connect records to compact daily JSON summaries stored directly in a user-owned Google Drive folder.",
+        links: [
+            {
+                label: "App Website",
+                url: "https://ali-sdg.is-a.dev/health-data-relay/",
+            },
+            {
+                label: "GitHub Repo",
+                url: "https://github.com/Ali-Sdg90/health-data-relay",
+            },
+        ],
+        tech: [
+            "Kotlin",
+            "Jetpack Compose",
+            "Material 3",
+            "Health Connect",
+            "WorkManager",
+            "DataStore",
+            "Google Drive API",
+        ],
+        features: [
+            "Creates compact daily JSON summaries from selected Health Connect data",
+            "Runs automatic daily backups with optional manual backups",
+            "Retries failures and fills in missing recent backups",
+            "Processes data on-device and uploads directly to Google Drive",
+            "Supports English, Persian, Jalali dates, and configurable data categories",
+        ],
+        storyEN: "",
+        storyFA: "",
+        hasRelatedLinks: true,
+        relatedLinks: [
+            {
+                label: "APKPure",
+                text: "Download the latest Health Data Relay release",
+                url: "https://apkpure.com/p/com.alisadeghi.autohealthsync",
+            },
+            {
+                label: "Cafe Bazaar",
+                text: "Download the latest Health Data Relay release",
+                url: "https://cafebazaar.ir/app/com.alisadeghi.autohealthsync",
+            },
+            {
+                label: "GitHub Releases",
+                text: "Download versioned APK releases from GitHub",
+                url: "https://github.com/Ali-Sdg90/health-data-relay/releases",
+            },
+            {
+                label: "Privacy Policy",
+                text: "How health data and permissions are handled",
+                url: "https://ali-sdg.is-a.dev/health-data-relay/privacy/",
+            },
+            {
+                label: "Changelog",
+                text: "Version history, fixes, and improvements",
+                url: "https://github.com/Ali-Sdg90/health-data-relay/blob/main/CHANGELOG.md",
+            },
+        ],
+    },
     "mlk-dvr-receiver": {
         id: "mlk-dvr-receiver",
         title: "MLK DVR Receiver",
@@ -101,104 +177,8 @@ export const aboutProjectData = {
             "Automatically delivered 212 codes in its first 14 days, 2.86 times the 74 codes shared manually during the previous 14-day period",
         ],
         galleryImages: projectGalleryImages["mlk-dvr-receiver"],
-        storyEN: `Building MLK DVR Receiver was one of the most enjoyable and rewarding programming experiences I have had.
-
-Previously, the process of receiving login codes for Divar accounts was completely manual. When someone needed a code, they would ask in the group who was online. The person who was available would send their phone number in the group, the requester would enter that number on the website, an SMS would be sent to the phone owner, and they would then have to send the code back into the group so the requester could enter it.
-
-The whole process was manual, time-consuming, and inconvenient for everyone involved.
-
-When I saw how the process worked, I felt it could be made much simpler.
-
-I shared my idea in the group and mentioned the CEO and CTO. My proposal was to build a separate app that could be installed on the phones. The app would stay active in the background, detect incoming Divar SMS messages, automatically extract the verification code, and send it to the group through the Telegram API.
-
-After getting initial approval, I built the first version only for my own phone. It was a simple app that stayed active in the background and automatically sent the code to the group whenever a Divar SMS arrived.
-
-Requesters would enter my phone number, and a few moments later they could receive the code directly in the group.
-
-After only one day of using this version and receiving very positive feedback from the requesters, the CEO suggested that the other people in the group install the app as well. Within a short time, around 6 or 7 people had installed it on their phones, and getting login codes had become significantly easier for the requesters.
-
-But this was only the MVP, and it had one important problem: security and traceability.
-
-In the first version, there was no clear record of who had requested a code. The app simply extracted the code from the SMS and sent it into the group. If a problem later happened with one of the accounts, there was no reliable way to determine who had received its login code and at what time.
-
-Because of that, I decided to design a more complete and professional version.
-
-The new version included a backend for managing requests, authentication, and event logging. In about three days, I implemented the first version of this architecture and introduced it in the group for testing.
-
-In the new version, the requester first sent a command such as /code 09901234567 inside the group. The bot recorded who had requested a code for which phone number and created a temporary two-minute request for that number.
-
-If a Divar SMS containing a login code arrived on the phone associated with that number during those two minutes, the app sent the code to the backend. The backend found the active request, and the Telegram bot sent the code privately to the exact person who had requested it. The group only received a message confirming that the code had been received and delivered to the requester.
-
-This meant that login codes were no longer exposed directly inside the group and were only delivered to the person who had an active and valid request.
-
-At the same time, the system created a traceable history of the requests: who requested a code, when they requested it, which phone number the request was for, and whether the code was received successfully. If something later went wrong with an account, the request history could be reviewed.
-
-During the testing phase, the backend ran on my own system for about two days. After we became confident that the system was working properly, we moved it to MelkRadar's servers.
-
-Later, I realized that some Android devices required additional settings and permissions to prevent the operating system from stopping the app in the background. I investigated that part as well, improved the app setup process, and tested it with several people across different devices.
-
-Eventually, the system reached a point where the app, backend, and bot could operate independently without requiring my supervision.
-
-To make sure using the system would not depend on me either, I recorded a roughly 10-minute video explaining installation, setup, and how to use the bot. I also prepared full documentation and a Quick Guide and shared them in the group.
-
-After that, more people installed the app and the requesters started using the bot as part of their normal workflow.
-
-In its first 14 days, the system automatically delivered 212 Divar verification codes directly to the people who requested them. During the preceding 14-day period, only 74 codes had been shared manually in the group. That meant 2.86 times as many codes were delivered, a 186% increase, while removing the need for people to follow up manually.
-
-What makes this experience even more interesting to me is that the entire process, from identifying the problem and proposing the idea, to building the MVP and getting real user feedback, designing a more secure version, building the backend and bot, testing across different devices, moving the system to the company servers, and finally preparing the video and documentation, all happened within about seven days.
-
-For me, MLK DVR Receiver was not just about building an app or a bot. It was an experience where I saw a manual and inconvenient process, built a solution for it, discovered the weaknesses of the first version through real usage, and gradually turned it into a more secure, reliable, and independent system.
-
-That is why it is still one of my favorite and most rewarding programming experiences.`,
-        storyFA: `ساخت MLK DVR Receiver یکی از شیرین‌ترین تجربه‌های برنامه‌نویسی من بود.
-
-قبلاً فرایند دریافت کد ورود به اکانت‌های دیوار کاملاً دستی بود. وقتی کسی به یک کد نیاز داشت، داخل گروه می‌پرسید چه کسی آنلاین است. فردی که آنلاین بود شماره‌اش را در گروه می‌فرستاد، درخواست‌کننده آن شماره را در سایت ثبت می‌کرد، SMS برای صاحب شماره ارسال می‌شد و او باید کد را دوباره داخل گروه می‌فرستاد تا درخواست‌کننده بتواند آن را وارد کند.
-
-این فرایند برای همه‌ی افراد درگیر، دستی، زمان‌بر و پردردسر بود.
-
-وقتی این روند را دیدم، احساس کردم می‌شود خیلی ساده‌ترش کرد.
-
-ایده‌ام را داخل گروه مطرح کردم و CEO و CTO را منشن کردم. پیشنهادم این بود که یک اپ جداگانه روی گوشی نصب شود؛ اپ در پس‌زمینه منتظر SMSهای دیوار بماند و وقتی پیام حاوی کد ورود دریافت شد، کد را به‌صورت خودکار استخراج کند و از طریق Telegram API داخل گروه بفرستد.
-
-بعد از گرفتن تأیید اولیه، اولین نسخه را فقط برای گوشی خودم پیاده‌سازی کردم. یک اپ ساده که در پس‌زمینه فعال بود و هر زمان SMS دیوار دریافت می‌کرد، کد را مستقیماً داخل گروه می‌فرستاد.
-
-درخواست‌کننده‌ها شماره من را ثبت می‌کردند و چند لحظه بعد کد را داخل گروه دریافت می‌کردند.
-
-بعد از فقط یک روز استفاده از این نسخه و بازخورد خیلی خوب درخواست‌کننده‌ها، CEO به بقیه افراد گروه هم پیشنهاد داد برنامه را نصب کنند. در مدت کوتاهی حدود ۶ یا ۷ نفر اپ را روی گوشی خودشان نصب کرده بودند و دریافت کد برای درخواست‌کننده‌ها به شکل قابل‌توجهی ساده‌تر شده بود.
-
-اما این فقط MVP بود و یک مشکل مهم داشت: امنیت و قابلیت ردیابی.
-
-در نسخه اولیه مشخص نبود چه کسی درخواست دریافت یک کد را داده است. اپ فقط کد را از SMS استخراج می‌کرد و داخل گروه می‌فرستاد. اگر بعدها برای یکی از اکانت‌ها مشکلی پیش می‌آمد، راه دقیقی برای مشخص کردن اینکه چه کسی و در چه زمانی کد آن اکانت را دریافت کرده وجود نداشت.
-
-به همین دلیل تصمیم گرفتم نسخه کامل‌تر و حرفه‌ای‌تری طراحی کنم.
-
-نسخه جدید یک backend برای مدیریت درخواست‌ها، احراز هویت و ثبت رویدادها داشت. طی حدود سه روز نسخه اولیه این معماری را پیاده‌سازی کردم و برای تست داخل گروه قرار دادم.
-
-در نسخه جدید، درخواست‌کننده ابتدا داخل گروه دستوری مثل /code 09901234567 ارسال می‌کرد. بات ثبت می‌کرد چه کسی برای چه شماره‌ای درخواست کد داده و یک درخواست موقت دو دقیقه‌ای برای آن شماره ایجاد می‌شد.
-
-اگر در این دو دقیقه روی گوشی مربوط به آن شماره SMS دیوار حاوی کد ورود دریافت می‌شد، اپ کد را به backend ارسال می‌کرد. Backend درخواست فعال را پیدا می‌کرد و کد از طریق بات تلگرام، به‌صورت خصوصی برای همان فردی که درخواست را ثبت کرده بود ارسال می‌شد. داخل گروه هم فقط اعلام می‌شد که کد دریافت و برای درخواست‌کننده ارسال شده است.
-
-به این شکل دیگر کدهای ورود مستقیماً داخل گروه قرار نمی‌گرفتند و فقط فردی که درخواست معتبر ثبت کرده بود آن‌ها را دریافت می‌کرد.
-
-در کنار آن، سیستم یک مسیر قابل‌ردیابی از درخواست‌ها ایجاد می‌کرد: چه کسی، در چه زمانی، برای چه شماره‌ای درخواست دریافت کد ثبت کرده و آیا کد را دریافت کرده است یا نه. در نتیجه اگر مشکلی برای یک اکانت پیش می‌آمد، امکان بررسی تاریخچه درخواست‌ها وجود داشت.
-
-Backend برای حدود دو روز و در مرحله تست روی سیستم خودم اجرا می‌شد و بعد از اینکه عملکرد سیستم مطمئن شد، آن را به سرورهای MelkRadar منتقل کردیم.
-
-در ادامه متوجه شدم روی بعضی گوشی‌های Android لازم است تنظیمات و دسترسی‌های خاصی انجام شود تا سیستم‌عامل اپ را در پس‌زمینه متوقف نکند. این بخش را هم بررسی کردم، راه‌اندازی اپ را بهبود دادم و با چند نفر روی دستگاه‌های مختلف تست کردم.
-
-در نهایت سیستم به نقطه‌ای رسید که اپ، backend و بات می‌توانستند بدون نظارت من و به‌صورت مستقل کار کنند.
-
-برای اینکه استفاده از سیستم هم وابسته به من نباشد، یک ویدیوی حدود ۱۰ دقیقه‌ای برای نصب، راه‌اندازی و کار با بات ضبط کردم و در کنار آن documentation کامل و یک Quick Guide آماده کردم و داخل گروه قرار دادم.
-
-بعد از آن افراد بیشتری برنامه را نصب کردند و درخواست‌کننده‌ها شروع به استفاده روزمره از بات کردند.
-
-در ۱۴ روز اول معرفی نسخه نهایی، سیستم ۲۱۲ کد ورود دیوار را به‌صورت خودکار برای درخواست‌کننده‌ها ارسال کرد. در ۱۴ روز قبل از فعال شدن این فرایند، در مجموع ۷۴ کد به‌صورت دستی داخل گروه ارسال شده بود. یعنی در یک بازه زمانی مشابه، تعداد کدهای ارسال‌شده حدود ۲.۸۶ برابر شد؛ معادل ۱۸۶٪ افزایش، بدون اینکه افراد نیاز به پیگیری دستی داشته باشند.
-
-و چیزی که این تجربه را برای من جذاب‌تر می‌کند این است که تمام این مسیر، از دیدن مشکل و مطرح کردن ایده، ساخت MVP و گرفتن بازخورد واقعی، طراحی نسخه امن‌تر، ساخت backend و بات، تست روی دستگاه‌های مختلف، انتقال به سرورهای شرکت و در نهایت آماده کردن ویدیو و مستندات، همگی در حدود هفت روز انجام شدند.
-
-MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبود. تجربه‌ای بود که در آن یک فرایند دستی و پردردسر را دیدم، برایش راه‌حل ساختم، با استفاده واقعی افراد ضعف‌های راه‌حل اولیه را پیدا کردم و قدم‌به‌قدم آن را به سیستمی امن‌تر، قابل‌اتکاتر و مستقل تبدیل کردم.
-
-به همین دلیل هنوز هم یکی از دوست‌داشتنی‌ترین و شیرین‌ترین تجربه‌های برنامه‌نویسی من است.`,
+        storyEN: projectMlkDvrReceiverStoryEN.trim(),
+        storyFA: projectMlkDvrReceiverStoryFA.trim(),
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -260,73 +240,9 @@ MLK DVR Receiver برای من فقط ساخت یک اپ یا یک بات نبو
         ],
         galleryImages: projectGalleryImages["cs-queue-calendar"],
 
-        storyEN: `At CSI, we were redesigning the program's entry process and reached a point where we needed a clear way to show applicants how the onboarding and interview sessions were scheduled and when each session would take place.
+        storyEN: projectCsQueueCalendarStoryEN.trim(),
 
-We discussed several different ideas. The best solution that came to my mind was to create a calendar inside a web app, so applicants could simply open the page and immediately see which sessions were happening on each day.
-
-Some of the mentors did not agree with the idea at first. Their suggestion was to write the session dates and details inside a README page on GitHub, which they felt was enough for the current need. I thought that approach might work in the short term, but for the future growth of the program and a better applicant experience, having a dedicated and extensible tool would be a better choice.
-
-I discussed the idea with them, explained my reasoning, and eventually convinced the team to move forward with it.
-
-Then it was time to build the application.
-
-From the beginning, I wanted the calendar to stay simple. I had no intention of making it overly busy or complicated. I tested several different libraries, but none of them provided exactly the features I needed for this project.
-
-At the same time, I was working on the project for Dadeh Pardazi Azmoudeh Karan and had gained a lot of experience with Ant Design. When I checked, I found that Ant Design also had a Calendar component. The advantage was that it already handled many of the basic behaviors, animations, and core features, which allowed me to focus on the project-specific behavior, styling, and content.
-
-After several dozen hours of work, I finished the first version.
-
-From the start, I did not want the application to feel visually weak or ordinary. This page was going to be one of the first tools new CSI applicants interacted with, so it mattered to me that they had a good experience from the very beginning.
-
-I spent a lot of time on small details and eventually built something with a simple interface where the important information could be understood very quickly.
-
-I tried to build exactly what I would have wanted if I were an applicant myself: session times, meeting links, study material for each session, and a clear overview of how the sessions were arranged throughout the week and month.
-
-After introducing the application, more than 200 people visited the site and more than 50 joined sessions directly through the calendar. During that initial usage, I did not receive any reports or complaints about the calendar being difficult to use.
-
-The following year, I returned to the project and refined the interface to make it more polished, smoother, and lighter. I added the ability to add events directly to Google Calendar and improved the experience on mobile devices and tablets.
-
-I also added a personal letter somewhere inside the application. I won't say exactly where it is, but it is one of the parts I personally really like :)
-
-Later, I added a modal for generating the weekly session announcement. Every week, one of the program coordinators uses it to prepare the message for the upcoming sessions and send it to the group.
-
-Ease of use and reliability were also my main priorities when building this part, and it ended up working very well in practice.
-
-This project was built with love for the bright future of CSI. It became more mature over time, received a great deal of care in its smallest details, and eventually became one of the important tools used in the program.`,
-
-        storyFA: `در CSI در حال بازطراحی فرایند ورود به برنامه بودیم و به بخشی رسیده بودیم که لازم بود به متقاضی‌ها نشان بدهیم زمان‌بندی جلسات ورود و مصاحبه چطور است و هر جلسه چه زمانی برگزار می‌شود.
-
-ایده‌های مختلفی مطرح شد. بهترین ایده‌ای که به ذهنم رسید این بود که یک تقویم داخل یک وب‌اپ داشته باشیم تا متقاضی‌ها بتوانند خیلی ساده صفحه را باز کنند و ببینند در هر روز چه جلسه‌ای برگزار می‌شود.
-
-بعضی از منتورها با این ایده موافق نبودند. پیشنهادشان این بود که تاریخ و اطلاعات جلسات را داخل یک صفحه README در GitHub بنویسیم و همین برای نیاز فعلی کافی است. من فکر می‌کردم این راه‌حل شاید در کوتاه‌مدت جواب بدهد، اما برای رشد آینده برنامه و تجربه بهتر متقاضی‌ها، داشتن یک ابزار مستقل و قابل توسعه انتخاب بهتری است.
-
-در مورد ایده صحبت کردم، دلایلم را توضیح دادم و در نهایت توانستم تیم را برای ساخت آن قانع کنم.
-
-حالا نوبت ساخت برنامه بود.
-
-از ابتدا می‌خواستم تقویم ساده باشد و اصلاً قصد نداشتم آن را بیش از حد شلوغ یا پیچیده کنم. چند کتابخانه مختلف را بررسی و امتحان کردم، اما هیچ‌کدام دقیقاً قابلیت‌هایی را که برای این پروژه نیاز داشتم ارائه نمی‌دادند.
-
-در همان زمان روی پروژه شرکت داده‌پردازی آزموده‌کاران هم کار می‌کردم و تجربه زیادی با Ant Design پیدا کرده بودم. وقتی بررسی کردم، دیدم Ant Design یک کامپوننت Calendar هم دارد. مزیتش این بود که بسیاری از رفتارها، انیمیشن‌ها و قابلیت‌های پایه را خودش مدیریت می‌کرد و من می‌توانستم تمرکزم را روی رفتارهای موردنیاز پروژه، استایل و محتوای تقویم بگذارم.
-
-بعد از چند ده ساعت کار، توانستم نسخه اولیه را آماده کنم.
-
-از همان ابتدا نمی‌خواستم این برنامه از نظر بصری ضعیف یا معمولی به نظر برسد. این صفحه قرار بود یکی از اولین ابزارهایی باشد که متقاضی‌های تازه‌وارد CSI با آن تعامل می‌کردند، بنابراین برایم مهم بود تجربه خوبی از همان ابتدا داشته باشند.
-
-روی جزئیات کوچک زیادی وقت گذاشتم و در نهایت چیزی ساختم که رابط کاربری ساده‌ای داشت و اطلاعات موردنیاز را می‌شد خیلی سریع از آن دریافت کرد.
-
-سعی کردم چیزی بسازم که اگر خودم جای یک متقاضی بودم، دقیقاً همان اطلاعاتی را که نیاز داشتم در اختیارم قرار دهد: زمان جلسات، لینک ورود به جلسه، محتوای مطالعاتی مربوط به هر جلسه و یک دید کلی از ترتیب جلسات در طول هفته و ماه.
-
-بعد از معرفی برنامه، بیش از ۲۰۰ نفر وارد سایت شدند و بیش از ۵۰ نفر از طریق خود تقویم وارد جلسات شدند. در طول این استفاده اولیه هم هیچ گزارش یا شکایتی درباره دشوار بودن کار با تقویم دریافت نکردم.
-
-سال بعد دوباره به پروژه برگشتم و رابط کاربری آن را کمی حرفه‌ای‌تر، نرم‌تر و سبک‌تر کردم. قابلیت اضافه کردن مستقیم ایونت‌ها به Google Calendar را اضافه کردم و نمایش برنامه روی موبایل و تبلت را هم بهبود دادم.
-
-یک نامه شخصی هم داخل برنامه قرار دادم. نمی‌گم دقیقاً کجاست، ولی یکی از بخش‌هایی است که خودم خیلی دوستش دارم :)
-
-بعدتر یک مودال برای ساخت پیام جلسات هفتگی هم به برنامه اضافه کردم. هر هفته یکی از مسئولان برنامه از آن استفاده می‌کند تا پیام مربوط به جلسات هفته بعد را آماده کند و داخل گروه بفرستد.
-
-در طراحی این بخش هم راحتی استفاده و قابل‌اعتماد بودن برایم اولویت داشت و در عمل هم خیلی خوب جواب داد.
-
-این پروژه با عشق برای آینده روشن CSI ساخته شد. برنامه‌ای که به مرور بالغ‌تر شد، با ظرافت زیادی روی جزئیاتش کار شد و در نهایت به یکی از ابزارهای مهم CSI تبدیل شد.`,
+        storyFA: projectCsQueueCalendarStoryFA.trim(),
 
         hasRelatedLinks: true,
         relatedLinks: [

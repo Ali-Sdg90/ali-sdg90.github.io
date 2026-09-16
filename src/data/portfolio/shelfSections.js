@@ -8,13 +8,14 @@ import csClubThumbnail from "../../assets/images/thumbnails/projects/cs-club.jpg
 import csQueueThumbnail from "../../assets/images/thumbnails/projects/cs-queue.jpg";
 import gradientPaintThumbnail from "../../assets/images/thumbnails/projects/cgp.jpg";
 import fabrexaThumbnail from "../../assets/images/thumbnails/projects/fabrexa.jpg";
+import healthDataRelayThumbnail from "../../assets/images/thumbnails/projects/health-data-relay.jpg";
 import pathFinderThumbnail from "../../assets/images/thumbnails/projects/path-finder.jpg";
 import portfolioThumbnail from "../../assets/images/thumbnails/projects/portfolio.jpg";
 import quickMathThumbnail from "../../assets/images/thumbnails/projects/quick-math.jpg";
 import spotTasteThumbnail from "../../assets/images/thumbnails/projects/spot.jpg";
 import ticTacToeThumbnail from "../../assets/images/thumbnails/projects/xo.jpg";
 import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
-import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
+// import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import {
     FaCalendarCheck,
     FaChalkboardUser,
@@ -77,11 +78,19 @@ export const shelfSections = [
                 imageWidth: 1254,
                 imageHeight: 1254,
             },
+            // {
+            //     id: "mlk-dvr-receiver",
+            //     title: "MLK DVR Receiver",
+            //     meta: "Automated and secure Divar verification code delivery",
+            //     image: mlkDvrBotThumbnail,
+            //     imageWidth: 1254,
+            //     imageHeight: 1254,
+            // },
             {
-                id: "mlk-dvr-receiver",
-                title: "MLK DVR Receiver",
-                meta: "Automated and secure Divar verification code delivery",
-                image: mlkDvrBotThumbnail,
+                id: "health-data-relay",
+                title: "Health Data Relay",
+                meta: "Android app for backing up health data to Google Drive",
+                image: healthDataRelayThumbnail,
                 imageWidth: 1254,
                 imageHeight: 1254,
             },

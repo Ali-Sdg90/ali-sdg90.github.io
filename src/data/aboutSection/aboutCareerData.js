@@ -38,6 +38,14 @@ import melkRadarKhodroRadarSmall from "../../assets/images/gallery-images/small-
 import melkRadarMapboxSmall from "../../assets/images/gallery-images/small-images/career/mlk/mapbox.jpg";
 import melkRadarDvrReceiverAppSmall from "../../assets/images/gallery-images/small-images/projects/drvbot/img1.jpg";
 import melkRadarDvrReceiverTelegramSmall from "../../assets/images/gallery-images/small-images/projects/drvbot/img2.jpg";
+import careerCsInternshipStoryEN from "../stories/en/career/cs-internship.md?raw";
+import careerCsInternshipStoryFA from "../stories/fa/career/cs-internship.md?raw";
+import careerMelkradarStoryEN from "../stories/en/career/melkradar.md?raw";
+import careerMelkradarStoryFA from "../stories/fa/career/melkradar.md?raw";
+import careerDadehPardaziAzmoudehKaranStoryEN from "../stories/en/career/dadeh-pardazi-azmoudeh-karan.md?raw";
+import careerDadehPardaziAzmoudehKaranStoryFA from "../stories/fa/career/dadeh-pardazi-azmoudeh-karan.md?raw";
+import careerSettleitgptStoryEN from "../stories/en/career/settleitgpt.md?raw";
+import careerSettleitgptStoryFA from "../stories/fa/career/settleitgpt.md?raw";
 
 const galleryImage = (
     src,
@@ -238,36 +246,8 @@ export const aboutCareerData = {
             csiQueuePage,
         ],
         storyTitle: "Story",
-        storyEN: `I started my path in CS as an intern. I completed the web track, and around the middle of my study period, I got the opportunity to also take part in the program as someone who could contribute to its management and improvement.
-
-After some time, my role changed from a regular intern to a coordinator, and I became responsible for supporting and onboarding new interns. A little later, I worked as an assistant mentor and technical mentor. I held technical sessions for web-track interns, reviewed their technical work, followed their progress, and guided them throughout the program.
-
-The more I got to know the program and its needs, the more serious my role became. I joined governance meetings and started contributing to decisions about the structure and future of the program. Over time, a large part of my work became focused on designing, redesigning, and implementing the program's rules and processes.
-
-During this path, I worked on many different parts of the program, from redesigning the full onboarding process and designing the technical mentor process, to reshaping how interns participated in the program, defining roles more clearly, and updating internal rules and structures.
-
-Alongside all of that, whenever I felt a need could be solved better with a tool or automation, I built something for it with the knowledge I had. Some of those tools, along with their links and details, are included in the projects section. And honestly, there are quite a few of them :)
-
-Being part of CS was not just an internship experience for me. It was where I learned effective communication, community and team management, process design, and how to turn an idea or need into an executable system.
-
-The most valuable part of this journey for me was its human impact. I was able to affect the path of many friends and people who joined the program, help them begin their technical journey, and later see some of them enter different companies and professional positions.
-
-Being able to make the program more organized, scalable, automated, and truly more like a living community was deeply valuable to me. The real value of my work was in the people who benefited from it at the time, and in the future people who will join the program and use my redesigns in their own growth path.`,
-        storyFA: `من مسیرم در CS را به‌عنوان یک اینترن شروع کردم. دوره‌ی وب را گذراندم و از اواسط دوره‌ی مطالعاتی، این فرصت را پیدا کردم که در خود برنامه هم به‌عنوان عضوی که می‌تونه در مدیریت برنامه اثرگذار باشه نقش داشته باشم.
-
-بعد از مدتی، نقشم از یک اینترن معمولی به کوردینیتور تغییر کرد و مسئول همراهی و آنبورد اینترن‌های جدید شدم. کمی بعد، به‌عنوان دستیار منتور و منتور فنی فعالیت کردم؛ جلسات فنی اینترن‌های دوره‌ی وب را برگزار می‌کردم، روی مسیر و کارهای فنی آن‌ها نظارت داشتم و در طول دوره راهنمایی‌شان می‌کردم.
-
-هرچه بیشتر با برنامه و نیازهایش آشنا شدم، حضورم هم جدی‌تر شد. وارد جلسات گاورننس شدم و در تصمیم‌گیری‌های مربوط به ساختار و آینده‌ی برنامه مشارکت کردم. به‌مرور، بخش اصلی فعالیتم به طراحی، بازطراحی و اجرای قوانین و فرایندهای برنامه تبدیل شد.
-
-در این مسیر روی بخش‌های مختلفی کار کردم؛ از بازطراحی کامل فرایند ورود به برنامه و طراحی فرایند منتور فنی، تا بازطراحی نحوه‌ی فعالیت اینترن‌ها، تعریف دقیق‌تر نقش‌ها و به‌روزرسانی ساختارها و قوانین داخلی برنامه.
-
-در کنار این‌ها، هرجا احساس می‌کردم یک نیاز می‌تواند با ابزار یا اتوماسیون بهتر حل شود، برایش ابزاری با سوادی که داشتم می‌ساختم. تعدادی از این ابزارها، همراه با لینک و توضیحاتشان، در بخش پروژه‌ها قرار دارد. تعدادش هم اصلا کم نیست :)
-
-بودن در CS برای من فقط یک تجربه‌ی کارآموزی نبود. جایی بود که در آن ارتباط مؤثر، مدیریت کامیونیتی و تیم، طراحی فرایند و تبدیل یک ایده یا نیاز به یک سیستم قابل‌اجرا را یاد گرفتم.
-
-باارزش‌ترین بخش این مسیر برای من، اثر انسانی آن بود. توانستم روی مسیر تعداد زیادی از دوستانم و آدم‌هایی که وارد برنامه شدند تأثیر بگذارم، به شروع مسیر فنی‌شان کمک کنم و ببینم که بعضی از آن‌ها بعدتر وارد شرکت‌ها و موقعیت‌های حرفه‌ای مختلف شدند.
-
-اینکه توانستم برنامه را منظم‌تر، مقیاس‌پذیرتر و خودکارتر و واقعا شبیه یک کامیونیتی زنده بکنم برام خیلی ارزشمند بود. ارزشی که کارم برای آدم‌های اون زمان و آیندگانی که وارد برنامه خواهند شد و از بازطراحی‌های من در مسیر رشد خودشون استفاده می‌کنن.`,
+        storyEN: careerCsInternshipStoryEN.trim(),
+        storyFA: careerCsInternshipStoryFA.trim(),
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -338,37 +318,9 @@ Being able to make the program more organized, scalable, automated, and truly mo
             melkRadarDvrReceiverTelegram,
         ],
         storyTitle: "Story",
-        storyEN: `I joined MelkRadar as an intern. My internship ended earlier than planned, and after that, I continued as a full-time team member at the company.
+        storyEN: careerMelkradarStoryEN.trim(),
 
-During my time there, I was involved in different parts of the MelkRadar ecosystem, from the main MelkRadar website and MelkRadar extension to the start and development of the company’s new project, KhodroRadar, TonReach, and two other external projects the company had taken on.
-
-I always tried to deliver my work with the highest quality possible. I was genuinely satisfied with the quality and care behind my work, and I could see that the team was satisfied with the quality of what I delivered.
-
-After a while, I became one of the reviewers on the front-end team. This meant that I was both writing code myself and reviewing and merging code from other team members.
-
-During this time, I onboarded several new people into the team, and I recorded different onboarding videos to improve the onboarding process.
-
-At MelkRadar, I was deeply involved in different parts of the work. Frequent meetings with the design team, product design, backend developers, guiding front-end teammates, consulting on task distribution, and many other responsibilities had all become part of my work.
-
-After a certain point, I reduced my role in the company and continued working with the team mostly as a reviewer and merger of front-end code.
-
-This experience was heavy, valuable, and sweet for me. It became the real beginning of teamwork in my career. I have a deep sense of satisfaction from being in that professional and complex environment, and I was able to build many of my personal and professional foundations there.`,
-
-        storyFA: `من به عنوان نیروی کارآموز وارد ملک‌رادار شدم. دوره کارآموزیم زودتر از زمانی که قرار بود تموم شد و بعد از اون به عنوان نیروی استخدامی شرکت ادامه دادم.
-
-در طول حضورم، در بخش‌های مختلفی از اکوسیستم ملک‌رادار نقش داشتم؛ از سایت اصلی ملک‌رادار و اکستنشن ملک‌رادار گرفته تا شروع و ساخت پروژه جدید شرکت، خودرو رادار، تون‌ریچ و دو پروژه خارجی دیگری که شرکت گرفته بود.
-
-همیشه سعی می‌کردم کارهایی که انجام می‌دم رو با بهترین کیفیت ممکن تحویل بدم و واقعاً هم خودم از کیفیت و ظرافت کارهام راضی بودم و می‌دیدم تیم هم از کیفیت کارم رضایت داره.
-
-بعد از مدتی تبدیل به یکی از ریویوئرهای تیم فرانت شدم؛ یعنی هم خودم کد می‌زدم، هم کدهای بقیه اعضای تیم رو ریویو و مرج می‌کردم.
-
-در این مدت چند نفر جدید رو به تیم آنبورد کردم و برای بهتر شدن روند آنبوردینگ، ویدئوهای مختلفی ضبط کردم.
-
-در ملک‌رادار خیلی درگیر بخش‌های مختلف کار بودم. جلسه‌های متعدد با تیم دیزاین، طراحی محصول، بچه‌های بک‌اند، راهنمایی بچه‌های فرانت، مشاوره برای تقسیم تسک‌ها و مسائل مختلف دیگه، همگی بخشی از کارهایم شده بودند.
-
-بعد از یه مقطع، نقشم رو در شرکت کم‌تر کردم و بیشتر به عنوان ریویوئر و مرج‌کننده کدهای فرانت با تیم همکاری داشتم.
-
-این تجربه برای من سنگین، ارزشمند و شیرین بود؛ تجربه‌ای که شروع جدی کار تیمی رو برای من ساخت. از بودن در اون محیط حرفه‌ای و پیچیده رضایت عمیقی دارم و خیلی از پایه‌های شخصیتی و حرفه‌ایم رو تونستم اونجا برای خودم بسازم.`,
+        storyFA: careerMelkradarStoryFA.trim(),
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -410,37 +362,9 @@ This experience was heavy, valuable, and sweet for me. It became the real beginn
         galleryColumns: 3,
         galleryImages: [dpaPage1, dpaPage2, dpaPage3],
         storyTitle: "Story",
-        storyEN: `I joined Dadeh Pardazi Azmoudeh Karan after passing the company’s entry assessments. There, we worked as a two-person development team; I was responsible for building and developing the entire front end from scratch, while my teammate built and expanded the back end.
+        storyEN: careerDadehPardaziAzmoudehKaranStoryEN.trim(),
 
-This was the first project where I was fully responsible for the front end from beginning to end. Throughout the project, I learned a lot about proper project structure, designing core components, and the foundations needed for a project to grow in a healthy and maintainable way.
-
-The project was relatively large and connected to an extensive database containing restaurant information, restaurant members, resumes submitted to each restaurant, and various other types of data that were displayed across the website in different ways.
-
-The project was built around Ant Design, so I needed to become comfortable with it before starting development. Learning and working with it was a challenging but enjoyable experience, and the final result was a high-quality product that I am very proud of.
-
-The project required integration with more than 60 APIs. I used Swagger to test those APIs and then implemented them throughout the application.
-
-Building the project took around seven months. After that, the website was ready for its marketing activities and the next stages of the product, and my work on the project came to an end.
-
-This experience was very valuable to me because building and managing the front end of a large project from start to finish was entirely my responsibility. Along the way, I often had to learn new things in the moment so I could keep the project moving forward.
-
-However, there was not a broad team-based experience in this project. I received tasks, completed and delivered them, and marked them as Done. Unlike my experience at MelkRadar, I did not directly work with a complete team that included testing, design, and other departments. This sometimes made the working experience more difficult, but overall, it was an interesting and highly educational experience.`,
-
-        storyFA: `با پشت سر گذاشتن آزمون‌های ورودی وارد شرکت داده‌پردازی آزموده‌کاران شدم. آنجا در یک تیم دو نفره مسئول ساخت سایت بودیم؛ من باید کل فرانت‌اند را از پایه می‌ساختم و توسعه می‌دادم و همکارم هم بک‌اند را از ابتدا پیاده‌سازی و گسترش می‌داد.
-
-این اولین پروژه‌ای بود که از ابتدا تا انتها مسئولیت کامل فرانت‌اند آن بر عهده خودم بود. در طول پروژه چیزهای زیادی درباره ساختار درست پروژه، طراحی کامپوننت‌های اصلی و مواردی که برای رشد سالم و قابل‌مدیریت پروژه لازم بود، یاد گرفتم.
-
-پروژه نسبتاً بزرگ بود و به یک پایگاه داده گسترده متصل می‌شد که اطلاعات رستوران‌ها، اعضای هر رستوران، رزومه‌های ارسال‌شده برای آن‌ها و اطلاعات مختلف دیگری را به شکل‌های گوناگون در سایت نمایش می‌داد.
-
-پروژه بر پایه Ant Design بود و لازم بود قبل از شروع کار به آن مسلط شوم. فرایند یادگیری و کار با آن برایم چالشی شیرین و جالب بود و در نهایت هم خروجی باکیفیت و خوبی حاصل شد که بهش خیلی افتخار می‌کنم.
-
-این پروژه بیش از ۶۰ API برای اتصال داشت و من با استفاده از Swagger آن‌ها را تست می‌کردم و در پروژه پیاده‌سازی می‌کردم.
-
-ساخت پروژه حدود هفت ماه طول کشید و بعد از آن، سایت آماده شد تا فعالیت‌های بازاریابی و مراحل بعدی آن شروع شود و کار من روی پروژه به پایان رسید.
-
-این تجربه برای من خیلی ارزشمند بود؛ چون ساخت و مدیریت فرانت‌اند یک پروژه بزرگ از ابتدا تا انتها کاملاً بر عهده خودم بود و در طول مسیر لازم بود چیزهای زیادی را همان لحظه یاد بگیرم تا بتوانم پروژه را جلو ببرم.
-
-البته تجربه تیمی گسترده‌ای در این پروژه وجود نداشت. من تسک‌ها را دریافت می‌کردم، انجام می‌دادم، تحویل می‌دادم و آن‌ها را Done می‌کردم. برخلاف تجربه‌ام در ملک‌رادار، ارتباط مستقیمی با یک تیم کامل شامل تست، طراحی و بخش‌های دیگر نداشتم و همین موضوع گاهی تجربه کاری را برایم سخت‌تر می‌کرد؛ ولی در مجموع، تجربه آموزنده و جالبی بود.`,
+        storyFA: careerDadehPardaziAzmoudehKaranStoryFA.trim(),
         hasRelatedLinks: false,
         relatedLinks: [],
     },
@@ -478,37 +402,9 @@ However, there was not a broad team-based experience in this project. I received
             settleitGptImage3,
         ],
         storyTitle: "Story",
-        storyEN: `I worked on this project with one of my friends. He had already built the initial version as an MVP, and after that, we worked together to finalize and complete the product.
+        storyEN: careerSettleitgptStoryEN.trim(),
 
-The app was designed to run on Apple devices, so I needed to learn the SDKs and iOS development workflow before I could properly contribute. I installed the iOS simulator and developed the application on macOS. The app was built with Expo and React Native.
-
-The project had a very creative concept. Two people would present their arguments and points of view, then choose a famous character to act as the judge. That selected character was defined through a custom prompt and passed to the AI, which then decided who had won the argument.
-
-The app could even generate the voice of the selected character, meaning users could receive the final judgment in a generated version of that character’s voice and tone.
-
-During the project, I also learned how to work with native iOS capabilities such as the microphone, photo library, and camera, and how to implement them inside the application.
-
-The app used Firebase for its back end, and changes to each feature usually required updates on both sides of the project. Both my friend and I worked across the front end and back end, and in the end, we were able to complete the app, pass the App Store review process, and publish it on the Apple App Store.
-
-To support the launch, I also published an introduction and promotional post for the app, which received strong reach and engagement.
-
-This experience took me far outside my comfort zone, but at the same time, it was a very rewarding, exciting, and enjoyable experience.`,
-
-        storyFA: `این پروژه را همراه با یکی از دوستانم پیش بردم. او نسخه اولیه پروژه را در حد MVP ساخته بود و بعد از آن، با همکاری هم فرایند نهایی‌سازی و تکمیل پروژه را انجام دادیم.
-
-اپ قرار بود روی گوشی‌های اپل اجرا شود، بنابراین لازم بود SDKها و روش توسعه برای iOS را یاد بگیرم تا بتوانم روی پروژه کار کنم. شبیه‌ساز iOS را نصب کردم و توسعه اپ را روی سیستم macOS انجام دادم. اپ با Expo و بر پایه React Native ساخته شده بود.
-
-پروژه ایده خیلی خلاقانه‌ای داشت. دو نفر منطق و دیدگاه خودشان را مطرح می‌کردند و بعد یکی از شخصیت‌های معروف را به‌عنوان داور انتخاب می‌کردند. شخصیت انتخاب‌شده از طریق پرامپتی که برایش تعریف شده بود به هوش مصنوعی داده می‌شد و در نهایت اعلام می‌کرد کدام طرف برنده بحث است.
-
-اپ حتی می‌توانست صدای آن شخصیت را هم تولید کند؛ یعنی نتیجه بحث را با لحن و صدای تولیدشده همان شخصیت دریافت می‌کردی.
-
-در طول پروژه یاد گرفتم از قابلیت‌های داخلی iOS مثل میکروفون، گالری و دوربین هم استفاده کنم و آن‌ها را داخل اپ پیاده‌سازی کنم.
-
-اپ برای بک‌اند از Firebase استفاده می‌کرد و تغییرات هر بخش معمولاً نیازمند به‌روزرسانی در هر دو سمت پروژه بود. در این پروژه هم من و هم دوستم روی فرانت‌اند و بک‌اند کار می‌کردیم و در نهایت توانستیم اپ را کامل کنیم، تأیید اپ استور را بگیریم و آن را در Apple App Store منتشر کنیم.
-
-برای معرفی و انتشار اپ، یک پست تبلیغاتی و معرفی هم منتشر کردم که بازدید و تعامل خیلی خوبی گرفت.
-
-این تجربه خیلی خارج از محدوده امنم بود، اما در عین حال تجربه‌ای بسیار شیرین، جذاب و لذت‌بخش بود.`,
+        storyFA: careerSettleitgptStoryFA.trim(),
         hasRelatedLinks: true,
         relatedLinks: [
             {

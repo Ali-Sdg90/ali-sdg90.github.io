@@ -28,8 +28,9 @@
 
 ## Visual and release checks
 
-- For visual changes, inspect the rendered page at desktop and narrow viewport sizes and verify keyboard focus and reduced-motion behavior where relevant.
-- Treat a successful build and a successful rendered review as separate checks.
+- Do not inspect or review the rendered application in a browser unless explicitly requested.
+- Do not perform desktop, mobile, responsive, keyboard-focus, or reduced-motion visual checks unless explicitly requested.
+- A successful build does not imply that a rendered review was performed.
 - Use Conventional Commits for commit messages.
 - Do not edit `CHANGELOG.md`, the package version, Git tags, or generated releases manually unless explicitly requested; semantic-release owns them.
 - Do not commit or push changes unless explicitly requested.
