@@ -1,3 +1,10 @@
+## [1.25.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.25.0...v1.25.1) (2026-09-16)
+
+
+### Bug Fixes
+
+* update site favicon, finalize intro spacing, update todos ([d9da026](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d9da026b01baab70faeb396ef6ecce738c44ed4b))
+
 # [1.25.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.24.0...v1.25.0) (2026-09-16)
 
 
