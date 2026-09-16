@@ -28,7 +28,7 @@
 
 - [ ] Spot taste tracker and custom gradient paint title need to be changed in title or images
 
-- [ ] Double check the Fabrexa image
+- [x] Double check the Fabrexa image
 
 - [ ] finalize the resume.pdf file
     - [ ] Add CSI YouTube video link in the resume
