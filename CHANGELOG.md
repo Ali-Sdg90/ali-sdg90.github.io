@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.25.2...v1.26.0) (2026-09-20)
+
+
+### Features
+
+* add structure of mobile view ([6358a81](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/6358a81790a2cba414a5182b1f4e63ef585e44d2))
+
 ## [1.25.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.25.1...v1.25.2) (2026-09-16)
 
 
