@@ -1,3 +1,10 @@
+## [1.27.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.27.0...v1.27.1) (2026-09-20)
+
+
+### Bug Fixes
+
+* finalize tech stack and impacts items and remove gallery card in hmpwb intro transition ([747c047](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/747c047e7a7eaa5919aa4b385d1b896884376d67))
+
 # [1.27.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.26.0...v1.27.0) (2026-09-20)
 
 
