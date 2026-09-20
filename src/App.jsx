@@ -4,6 +4,7 @@ import AboutPanel from "./components/AboutPanel/AboutPanel";
 import Intro from "./components/Intro/Intro";
 import AppVersion from "./components/layout/AppVersion";
 import DynamicBackground from "./components/layout/DynamicBackground";
+import MobileWipNotice from "./components/layout/MobileWipNotice";
 import PortfolioReveal from "./components/PortfolioReveal/PortfolioReveal";
 import Shelf from "./components/Shelf/Shelf";
 import UnderConstructionBadge from "./components/UnderConstructionBadge/UnderConstructionBadge";
@@ -53,22 +54,6 @@ const App = () => {
         return item && section ? { item, section } : null;
     }, [selectedShelfItem]);
 
-    const revealMobileAboutPanel = () => {
-        if (!window.matchMedia("(max-width: 899px)").matches) return;
-
-        window.requestAnimationFrame(() => {
-            const behavior = window.matchMedia(
-                "(prefers-reduced-motion: reduce)",
-            ).matches
-                ? "auto"
-                : "smooth";
-
-            document
-                .getElementById("about-panel")
-                ?.scrollIntoView({ behavior, block: "start" });
-        });
-    };
-
     const handleShelfItemSelect = ({ sectionId, itemId }) => {
         setHasInteractedWithShelf(true);
 
@@ -92,8 +77,6 @@ const App = () => {
                     item_name: item.title,
                 });
             }
-
-            revealMobileAboutPanel();
         }
 
         setSelectedShelfItem((currentItem) =>
@@ -112,8 +95,6 @@ const App = () => {
         if (!selectedShelfItem) {
             triggerAboutMePulse();
         }
-
-        revealMobileAboutPanel();
     };
 
     const triggerAboutMePulse = () => {
@@ -121,38 +102,47 @@ const App = () => {
     };
 
     return (
-        <PortfolioReveal>
-            <UnderConstructionBadge />
-            <AppVersion />
+        <>
+            <MobileWipNotice />
 
-            <div
-                className={`page-style${hasSixteenTenDisplay ? " is-16-10-display" : ""}`}
-            >
-                <DynamicBackground />
+            <div className="desktop-portfolio">
+                <PortfolioReveal>
+                    <UnderConstructionBadge />
+                    <AppVersion />
 
-                <main className="portfolio-hero" aria-labelledby="hero-title">
-                    <section className="hero-intro">
-                        <Intro
-                            isAboutMeActive={!selectedShelfItem}
-                            onAboutMeSelect={handleAboutMeSelect}
-                        />
-                    </section>
+                    <div
+                        className={`page-style${hasSixteenTenDisplay ? " is-16-10-display" : ""}`}
+                    >
+                        <DynamicBackground />
 
-                    <section className="hero-shelf">
-                        <Shelf
-                            hasInteracted={hasInteractedWithShelf}
-                            selectedShelfItem={selectedShelfItem}
-                            onShelfItemSelect={handleShelfItemSelect}
-                        />
-                    </section>
+                        <main
+                            className="portfolio-hero"
+                            aria-labelledby="hero-title"
+                        >
+                            <section className="hero-intro">
+                                <Intro
+                                    isAboutMeActive={!selectedShelfItem}
+                                    onAboutMeSelect={handleAboutMeSelect}
+                                />
+                            </section>
 
-                    <AboutPanel
-                        selectedShelfItem={selectedShelfItemDetail}
-                        aboutMePulse={aboutMePulse}
-                    />
-                </main>
+                            <section className="hero-shelf">
+                                <Shelf
+                                    hasInteracted={hasInteractedWithShelf}
+                                    selectedShelfItem={selectedShelfItem}
+                                    onShelfItemSelect={handleShelfItemSelect}
+                                />
+                            </section>
+
+                            <AboutPanel
+                                selectedShelfItem={selectedShelfItemDetail}
+                                aboutMePulse={aboutMePulse}
+                            />
+                        </main>
+                    </div>
+                </PortfolioReveal>
             </div>
-        </PortfolioReveal>
+        </>
     );
 };
 
