@@ -58,13 +58,15 @@
 
 - [ ] create mobile version :\_(
 
+- [x] ~~Quick math image need to have more contrast~~
+
+- [x] ~~Maybe test different image color for live version btn in projects about section~~
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [ ] Impacts
     - [ ] Tech Stack
     - [x] Career
-
-- [ ] Quick math image need to have more contrast
 
 - [ ] Spot taste tracker and custom gradient paint title need to be changed in title or images
 
@@ -76,8 +78,6 @@
     - [ ] portfolio
     - [ ] spot tracker
     - [ ] fabrexa-ollama
-
-- [ ] Maybe test different image color for live version btn in projects about section
 
 - > [ ] Finalize fabrexa bot description and info via bot-father
 
@@ -104,3 +104,7 @@
 - [ ] Lighthouse and memory usage check for the site
 
 - [ ] Add 404 page for my github network that can redirect to this project or my github page
+
+- [ ] Check if it is possible to write page-pile native instead of using the old react-page-pile library
+
+- [ ] Finalize the package.json to be probational and standardized

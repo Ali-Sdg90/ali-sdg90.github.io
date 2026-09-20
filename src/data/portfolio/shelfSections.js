@@ -15,15 +15,11 @@ import ticTacToeThumbnail from "../../assets/images/thumbnails/projects/xo.jpg";
 import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
 // import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import {
-    FaCalendarCheck,
+    FaAndroid,
+    FaApple,
     FaChalkboardUser,
     FaCodeCommit,
     FaCodePullRequest,
-    FaFileLines,
-    FaFilePen,
-    FaMagnifyingGlass,
-    FaPeopleGroup,
-    FaRegHandshake,
     FaRobot,
     FaToolbox,
     FaUserGraduate,
@@ -38,6 +34,7 @@ import antDesignLogo from "../../assets/images/thumbnails/tech-stack/ant-design_
 import tanStackQueryLogo from "../../assets/images/thumbnails/tech-stack/tanstack-query_logo.jpg";
 import restApiLogo from "../../assets/images/thumbnails/tech-stack/rest-api_logo.jpg";
 import chartJsLogo from "../../assets/images/thumbnails/tech-stack/chart.js_logo.jpg";
+import apexChartsLogo from "../../assets/images/thumbnails/tech-stack/apexcharts_logo.svg";
 import firebaseLogo from "../../assets/images/thumbnails/tech-stack/firebase_logo.jpg";
 import gitLogo from "../../assets/images/thumbnails/tech-stack/git_logo.jpg";
 import githubActionsLogo from "../../assets/images/thumbnails/tech-stack/github-actions_logo.jpg";
@@ -45,14 +42,8 @@ import nodejsLogo from "../../assets/images/thumbnails/tech-stack/nodejs_logo.jp
 import reactNativeLogo from "../../assets/images/thumbnails/tech-stack/react-native_logo.jpg";
 import expoLogo from "../../assets/images/thumbnails/tech-stack/expo_logo.jpg";
 import viteLogo from "../../assets/images/thumbnails/tech-stack/vite_logo.jpg";
-import eslintLogo from "../../assets/images/thumbnails/tech-stack/eslint_logo.jpg";
-import prettierLogo from "../../assets/images/thumbnails/tech-stack/prettier_logo.jpg";
-import semanticReleaseLogo from "../../assets/images/thumbnails/tech-stack/semantic-release_logo.jpg";
 import azureLogo from "../../assets/images/thumbnails/tech-stack/azure_logo.jpg";
-import axiosLogo from "../../assets/images/thumbnails/tech-stack/axios_logo.jpg";
 import ollamaLogo from "../../assets/images/thumbnails/tech-stack/ollama_logo.jpg";
-import routerLogo from "../../assets/images/thumbnails/tech-stack/router_logo.jpg";
-import swaggerLogo from "../../assets/images/thumbnails/tech-stack/swagger_logo.jpg";
 
 export const shelfSections = [
     {
@@ -76,14 +67,6 @@ export const shelfSections = [
                 imageWidth: 1254,
                 imageHeight: 1254,
             },
-            // {
-            //     id: "mlk-dvr-receiver",
-            //     title: "MLK DVR Receiver",
-            //     meta: "Automated and secure Divar verification code delivery",
-            //     image: mlkDvrBotThumbnail,
-            //     imageWidth: 1254,
-            //     imageHeight: 1254,
-            // },
             {
                 id: "health-data-relay",
                 title: "Health Data Relay",
@@ -192,41 +175,34 @@ export const shelfSections = [
             },
             {
                 id: "technicalSessions",
-                title: "25+",
+                title: "30+",
                 meta: "Technical sessions led",
                 icon: FaChalkboardUser,
             },
 
             {
-                id: "governanceMeetings",
-                title: "79+",
-                meta: "Governance meetings attended",
-                icon: FaRegHandshake,
-            },
-            {
-                id: "operationalMeetings",
-                title: "117+",
-                meta: "Operational meetings attended",
-                icon: FaCalendarCheck,
-            },
-
-            {
                 id: "telegramBots",
-                title: "4",
+                title: "6",
                 meta: "Telegram bots built",
                 icon: FaRobot,
             },
             {
                 id: "internalTools",
-                title: "5",
+                title: "7",
                 meta: "Internal tools shipped",
                 icon: FaToolbox,
             },
             {
-                id: "governanceContribution",
-                title: "1.5+ yrs",
-                meta: "Governance team contribution",
-                icon: FaPeopleGroup,
+                id: "androidAppShipped",
+                title: "2",
+                meta: "Android apps shipped",
+                icon: FaAndroid,
+            },
+            {
+                id: "iosAppShipped",
+                title: "1",
+                meta: "iOS app shipped",
+                icon: FaApple,
             },
 
             {
@@ -235,26 +211,6 @@ export const shelfSections = [
                 meta: "Internal pull requests reviewed",
                 icon: FaCodePullRequest,
             },
-            {
-                id: "reviewerRole",
-                title: "14 mo",
-                meta: "Pull request reviewer role",
-                icon: FaMagnifyingGlass,
-            },
-
-            {
-                id: "technicalDocsReviewed",
-                title: "39",
-                meta: "Internal technical documents reviewed",
-                icon: FaFileLines,
-            },
-            {
-                id: "documentsUpdated",
-                title: "15",
-                meta: "Internal documents updated",
-                icon: FaFilePen,
-            },
-
             {
                 id: "openSourceCommits",
                 title: "603+",
@@ -285,13 +241,6 @@ export const shelfSections = [
                 image: tanStackQueryLogo,
             },
             { id: "restApis", title: "REST APIs", image: restApiLogo },
-            {
-                id: "semanticRelease",
-                title: "Semantic Release",
-                image: semanticReleaseLogo,
-            },
-            { id: "prettier", title: "Prettier", image: prettierLogo },
-            { id: "eslint", title: "ESLint", image: eslintLogo },
             { id: "vite", title: "Vite", image: viteLogo },
             { id: "expo", title: "Expo", image: expoLogo },
             {
@@ -308,11 +257,15 @@ export const shelfSections = [
             { id: "gitGithub", title: "Git/GitHub", image: gitLogo },
             { id: "firebase", title: "Firebase", image: firebaseLogo },
             { id: "chartjs", title: "Chart.js", image: chartJsLogo },
+            {
+                id: "apexCharts",
+                title: "ApexCharts",
+                image: apexChartsLogo,
+                imageWidth: 300,
+                imageHeight: 300,
+            },
             { id: "ollama", title: "Ollama", image: ollamaLogo },
             { id: "azureDevops", title: "Azure DevOps", image: azureLogo },
-            { id: "reactRouter", title: "React Router", image: routerLogo },
-            { id: "axios", title: "Axios", image: axiosLogo },
-            { id: "swagger", title: "Swagger", image: swaggerLogo },
         ],
     },
     {

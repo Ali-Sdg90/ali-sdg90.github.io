@@ -7,7 +7,7 @@ const formatCount = (count) => String(count).padStart(2, "0");
 const GalleryInformation = ({
     activeLanguage,
     chapter,
-    prefersReducedMotion,
+    shouldAnimateContent,
     selectedIndex,
     total,
 }) => {
@@ -18,7 +18,7 @@ const GalleryInformation = ({
         <motion.div
             className={`build-gallery__information${isFarsi ? " is-farsi is-farsi-text" : ""}`}
             key={`${chapter.id}-${activeLanguage}`}
-            initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
+            initial={shouldAnimateContent ? { opacity: 0, y: 12 } : false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, ease: APPLE_EASE }}
             dir={isFarsi ? "rtl" : "ltr"}

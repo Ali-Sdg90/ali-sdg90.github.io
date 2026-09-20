@@ -1,8 +1,7 @@
 import antDesignLogoLarge from "../../assets/images/large-images/tech-stack/ant-design_logo.jpg";
-import axiosLogoLarge from "../../assets/images/large-images/tech-stack/axios_logo.jpg";
+import apexChartsLogoLarge from "../../assets/images/large-images/tech-stack/apexcharts_logo.svg";
 import azureLogoLarge from "../../assets/images/large-images/tech-stack/azure_logo.jpg";
 import chartJsLogoLarge from "../../assets/images/large-images/tech-stack/chart.js_logo.jpg";
-import eslintLogoLarge from "../../assets/images/large-images/tech-stack/eslint_logo.jpg";
 import expoLogoLarge from "../../assets/images/large-images/tech-stack/expo_logo.jpg";
 import firebaseLogoLarge from "../../assets/images/large-images/tech-stack/firebase_logo.jpg";
 import gitLogoLarge from "../../assets/images/large-images/tech-stack/git_logo.jpg";
@@ -10,14 +9,10 @@ import githubActionsLogoLarge from "../../assets/images/large-images/tech-stack/
 import javascriptLogoLarge from "../../assets/images/large-images/tech-stack/javascript_logo.jpg";
 import nodejsLogoLarge from "../../assets/images/large-images/tech-stack/nodejs_logo.jpg";
 import ollamaLogoLarge from "../../assets/images/large-images/tech-stack/ollama_logo.jpg";
-import prettierLogoLarge from "../../assets/images/large-images/tech-stack/prettier_logo.jpg";
 import reactLogoLarge from "../../assets/images/large-images/tech-stack/react_logo.jpg";
 import reactNativeLogoLarge from "../../assets/images/large-images/tech-stack/react-native_logo.jpg";
 import restApiLogoLarge from "../../assets/images/large-images/tech-stack/rest-api_logo.jpg";
-import routerLogoLarge from "../../assets/images/large-images/tech-stack/router_logo.jpg";
 import scssLogoLarge from "../../assets/images/large-images/tech-stack/scss_logo.jpg";
-import semanticReleaseLogoLarge from "../../assets/images/large-images/tech-stack/semantic-release_logo.jpg";
-import swaggerLogoLarge from "../../assets/images/large-images/tech-stack/swagger_logo.jpg";
 import tanStackQueryLogoLarge from "../../assets/images/large-images/tech-stack/tanstack-query_logo.jpg";
 import viteLogoLarge from "../../assets/images/large-images/tech-stack/vite_logo.jpg";
 
@@ -126,66 +121,6 @@ export const aboutTechStackData = {
         id: "restApis",
         title: "REST APIs",
         lightboxImage: restApiLogoLarge,
-        subtitle: "Placeholder",
-        summary: "Placeholder",
-        tech: ["Placeholder"],
-        featuresTitle: "Where It Helps",
-        features: ["Placeholder"],
-        storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-        ],
-    },
-    semanticRelease: {
-        id: "semanticRelease",
-        title: "Semantic Release",
-        lightboxImage: semanticReleaseLogoLarge,
-        subtitle: "Placeholder",
-        summary: "Placeholder",
-        tech: ["Placeholder"],
-        featuresTitle: "Where It Helps",
-        features: ["Placeholder"],
-        storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-        ],
-    },
-    prettier: {
-        id: "prettier",
-        title: "Prettier",
-        lightboxImage: prettierLogoLarge,
-        subtitle: "Placeholder",
-        summary: "Placeholder",
-        tech: ["Placeholder"],
-        featuresTitle: "Where It Helps",
-        features: ["Placeholder"],
-        storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-        ],
-    },
-    eslint: {
-        id: "eslint",
-        title: "ESLint",
-        lightboxImage: eslintLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],
@@ -362,23 +297,15 @@ export const aboutTechStackData = {
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    githubPages: {
-        id: "githubPages",
-        title: "GitHub Pages",
-        subtitle: "Placeholder",
-        summary: "Placeholder",
-        tech: ["Placeholder"],
-        featuresTitle: "Where It Helps",
-        features: ["Placeholder"],
-        storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
+    apexCharts: {
+        id: "apexCharts",
+        title: "ApexCharts",
+        lightboxImage: apexChartsLogoLarge,
+        featuresTitle: "Where I Used It",
+        features: [
+            "Built interactive timelines and comparative charts for Spotify listening analysis",
+            "Visualized trends, moving averages, and changes across multiple time periods",
+            "Configured responsive charts, tooltips, series, axes, and data-driven presentation",
         ],
     },
     ollama: {
@@ -405,66 +332,6 @@ export const aboutTechStackData = {
         id: "azureDevops",
         title: "Azure DevOps",
         lightboxImage: azureLogoLarge,
-        subtitle: "Placeholder",
-        summary: "Placeholder",
-        tech: ["Placeholder"],
-        featuresTitle: "Where It Helps",
-        features: ["Placeholder"],
-        storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-        ],
-    },
-    reactRouter: {
-        id: "reactRouter",
-        title: "React Router",
-        lightboxImage: routerLogoLarge,
-        subtitle: "Placeholder",
-        summary: "Placeholder",
-        tech: ["Placeholder"],
-        featuresTitle: "Where It Helps",
-        features: ["Placeholder"],
-        storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-        ],
-    },
-    axios: {
-        id: "axios",
-        title: "Axios",
-        lightboxImage: axiosLogoLarge,
-        subtitle: "Placeholder",
-        summary: "Placeholder",
-        tech: ["Placeholder"],
-        featuresTitle: "Where It Helps",
-        features: ["Placeholder"],
-        storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-        ],
-    },
-    swagger: {
-        id: "swagger",
-        title: "Swagger",
-        lightboxImage: swaggerLogoLarge,
         subtitle: "Placeholder",
         summary: "Placeholder",
         tech: ["Placeholder"],

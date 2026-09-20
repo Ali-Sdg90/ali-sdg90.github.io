@@ -23,8 +23,6 @@ import ticTacToeThumbnail from "../../assets/images/thumbnails/projects/xo.jpg";
 import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
 import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import { projectGalleryImages } from "./projectGalleryData";
-import projectMlkDvrReceiverStoryEN from "../stories/en/projects/mlk-dvr-receiver.md?raw";
-import projectMlkDvrReceiverStoryFA from "../stories/fa/projects/mlk-dvr-receiver.md?raw";
 import projectCsQueueCalendarStoryEN from "../stories/en/projects/cs-queue-calendar.md?raw";
 import projectCsQueueCalendarStoryFA from "../stories/fa/projects/cs-queue-calendar.md?raw";
 
@@ -177,12 +175,8 @@ export const aboutProjectData = {
             "Automatically delivered 212 codes in its first 14 days, 2.86 times the 74 codes shared manually during the previous 14-day period",
         ],
         galleryImages: projectGalleryImages["mlk-dvr-receiver"],
-        storyEN: projectMlkDvrReceiverStoryEN.trim(),
-        storyFA: projectMlkDvrReceiverStoryFA.trim(),
-        storySource: {
-            collection: "projects",
-            slug: "mlk-dvr-receiver",
-        },
+        storyEN: "",
+        storyFA: "",
         hasRelatedLinks: true,
         relatedLinks: [
             {

@@ -10,15 +10,9 @@ const GalleryMedia = ({
     isLast,
     onNext,
     onPrevious,
-    prefersReducedMotion,
+    shouldAnimateContent,
 }) => (
-    <motion.div
-        className="build-gallery__media"
-        initial={prefersReducedMotion ? false : { opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.6, ease: APPLE_EASE }}
-    >
+    <div className="build-gallery__media">
         <LightboxImage
             image={chapter.image}
             imageKey={chapter.id}
@@ -32,7 +26,7 @@ const GalleryMedia = ({
                 key={chapter.id}
                 decoding="async"
                 initial={
-                    prefersReducedMotion ? false : { opacity: 0, scale: 1.025 }
+                    shouldAnimateContent ? { opacity: 0, scale: 1.025 } : false
                 }
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.65, ease: APPLE_EASE }}
@@ -57,7 +51,7 @@ const GalleryMedia = ({
         >
             <FaChevronRight aria-hidden="true" />
         </button>
-    </motion.div>
+    </div>
 );
 
 export default GalleryMedia;
