@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.26.0...v1.27.0) (2026-09-20)
+
+
+### Features
+
+* add better mobile wip, add network host on dev command ([774551b](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/774551b88eacb630626e839c1d1ef81a77eb2fc4))
+
 # [1.26.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.25.2...v1.26.0) (2026-09-20)
 
 
