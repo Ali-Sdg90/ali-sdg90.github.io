@@ -4,7 +4,6 @@ import AboutPanel from "./components/AboutPanel/AboutPanel";
 import Intro from "./components/Intro/Intro";
 import AppVersion from "./components/layout/AppVersion";
 import DynamicBackground from "./components/layout/DynamicBackground";
-import MobileWipNotice from "./components/layout/MobileWipNotice";
 import PortfolioReveal from "./components/PortfolioReveal/PortfolioReveal";
 import Shelf from "./components/Shelf/Shelf";
 import UnderConstructionBadge from "./components/UnderConstructionBadge/UnderConstructionBadge";
@@ -54,6 +53,22 @@ const App = () => {
         return item && section ? { item, section } : null;
     }, [selectedShelfItem]);
 
+    const revealMobileAboutPanel = () => {
+        if (!window.matchMedia("(max-width: 899px)").matches) return;
+
+        window.requestAnimationFrame(() => {
+            const behavior = window.matchMedia(
+                "(prefers-reduced-motion: reduce)",
+            ).matches
+                ? "auto"
+                : "smooth";
+
+            document
+                .getElementById("about-panel")
+                ?.scrollIntoView({ behavior, block: "start" });
+        });
+    };
+
     const handleShelfItemSelect = ({ sectionId, itemId }) => {
         setHasInteractedWithShelf(true);
 
@@ -77,6 +92,8 @@ const App = () => {
                     item_name: item.title,
                 });
             }
+
+            revealMobileAboutPanel();
         }
 
         setSelectedShelfItem((currentItem) =>
@@ -95,6 +112,8 @@ const App = () => {
         if (!selectedShelfItem) {
             triggerAboutMePulse();
         }
+
+        revealMobileAboutPanel();
     };
 
     const triggerAboutMePulse = () => {
@@ -106,9 +125,8 @@ const App = () => {
             <UnderConstructionBadge />
             <AppVersion />
 
-            {/* TEMPORARY: Remove this wrapper class with the mobile WIP gate. */}
             <div
-                className={`page-style desktop-experience${hasSixteenTenDisplay ? " is-16-10-display" : ""}`}
+                className={`page-style${hasSixteenTenDisplay ? " is-16-10-display" : ""}`}
             >
                 <DynamicBackground />
 
@@ -134,9 +152,6 @@ const App = () => {
                     />
                 </main>
             </div>
-
-            {/* TEMPORARY: Mobile/tablet placeholder until responsive work begins. */}
-            <MobileWipNotice />
         </PortfolioReveal>
     );
 };

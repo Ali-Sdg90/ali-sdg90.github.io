@@ -121,6 +121,7 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
 
     return (
         <aside
+            id="about-panel"
             className={[
                 "about-panel",
                 isShowingDetailModule ? "is-showing-detail-module" : "",

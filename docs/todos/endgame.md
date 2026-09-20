@@ -1,6 +1,7 @@
 - [ ] remove un-used woff2 files
 
 - [ ] Write repo readme.md file
+    - [ ] Part 1
 
 - [ ] check lighthouse for improvements in performance and accessibility
 
