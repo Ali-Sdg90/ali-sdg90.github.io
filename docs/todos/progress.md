@@ -6,38 +6,15 @@
 
 - [x] shorten the about me text
 
-- [ ] maybe add a hidden "More about Ali" btn with password and encryption ??
-
 - [x] test hand waving animation
-
-- [ ] create mobile version :\_(
 
 - [x] create 16:10 aspect ratio showcase
 
 - [x] ~~maybe add onboarding animation for moving the cards in shelves?~~
 
-- [ ] Write all of the descriptions!
-    - [ ] Projects
-    - [ ] Impacts
-    - [ ] Tech Stack
-    - [x] Career
-
 - [x] create add images for projects i built
 
-- [ ] Quick math image need to have more contrast
-
-- [ ] Spot taste tracker and custom gradient paint title need to be changed in title or images
-
 - [x] Double check the Fabrexa image
-
-- [ ] finalize the resume.pdf file
-    - [ ] Add CSI YouTube video link in the resume
-
-- [ ] finalize the repos readme that are mentioned in the projects section
-    - [x] ~~rps-battle-royale~~
-    - [ ] portfolio
-    - [ ] spot tracker
-    - [ ] fabrexa-ollama
 
 - [x] add bigger and higher quality images for the about sections for all items.
     - [x] Part 1, career cards and tech stack
@@ -49,23 +26,13 @@
 
 - [x] finalize ico image of the site
 
-- [ ] Maybe test different image color for live version btn in projects about section
-
 - [x] Fix second img in settleitgpt base sizes
 
 - [x] Fix third img in cs club bot base sizes
 
-- [ ] Finalize fabrexa bot description and info via bot-father
-
-- [ ] Add Website for fabrexa ai ollama repo
-
 - [x] Maybe remove gpt and dpa projects in featured projects? -yes
 
-- [ ] Maybe Remove intro animation for gallery section in h.m.p.w.b
-
 - [x] Finalize intro bottom section spacing
-
-- [ ] Do char-gpt test for about me text
 
 - [x] Add new MLK DVR Receiver project to the projects section and MLK Card in the career section
 
@@ -73,20 +40,67 @@
 
 - [x] Add a separated page for stories?
 
-- [ ] Add ability to zoom in lighthouse
-
 - [x] Double check the MLK DVR Receiver project for L-problems
 
 - [x] Add Health Data Relay project
 
-- [ ] Update tags in aboutMe section for showcase more builder side of me
+- [x] Add Notice and other files in the repo
 
-- [ ] Maybe add "I let my outputs speak for me" text some where?
+- [x] ~~Do char-gpt test for about me text~~
 
-- [ ] Finalize sections in the "Impacts" and "Tech Stack" sections
+- [x] Update tags in aboutMe section
+
+- [x] ~~Maybe add "I let my outputs speak for me" text some where?~~
+
+- [x] ~~Add url redirect to main url if the url that user insert is wrong~~
+
+- [ ] maybe add a hidden "More about Ali" btn with password and encryption ??
+
+- [ ] create mobile version :\_(
+
+- [ ] Write all of the descriptions!
+    - [ ] Projects
+    - [ ] Impacts
+    - [ ] Tech Stack
+    - [x] Career
+
+- [ ] Quick math image need to have more contrast
+
+- [ ] Spot taste tracker and custom gradient paint title need to be changed in title or images
+
+- [ ] finalize the resume.pdf file
+    - [ ] Add CSI YouTube video link in the resume
+
+- [ ] finalize the repos readme that are mentioned in the projects section
+    - [x] ~~rps-battle-royale~~
+    - [ ] portfolio
+    - [ ] spot tracker
+    - [ ] fabrexa-ollama
+
+- [ ] Maybe test different image color for live version btn in projects about section
+
+- > [ ] Finalize fabrexa bot description and info via bot-father
+
+- [ ] Add Website for fabrexa ai ollama repo
+
+- > [ ] Maybe Remove intro animation for gallery section in h.m.p.w.b
+
+- [ ] Add ability to zoom in lighthouse
+
+- > [ ] Finalize sections in the "Impacts" and "Tech Stack" sections
 
 - [ ] Try to fix or add cool animation when aboutSection is change state that text in it don't have seizure
 
-- [x] Add Notice and other files in the repo
+- [ ] Add intro-simple page that redirect to main meal.
 
-- [ ] Add url redirect to main url if the url that user insert is wrong
+- [ ] shorten the about me text...
+
+- [ ] Make it more Me. about my hobbies? other part of ali but not in the main page
+
+- [ ] Add Link-Tree url link and feature
+
+- [ ] Add ICARUS E.E. url link
+
+- [ ] Lighthouse and memory usage check for the site
+
+- [ ] Add 404 page for my github network that can redirect to this project or my github page
