@@ -54,13 +54,19 @@
 
 - [x] ~~Add url redirect to main url if the url that user insert is wrong~~
 
-- [ ] maybe add a hidden "More about Ali" btn with password and encryption ??
-
-- [ ] create mobile version :\_(
-
 - [x] ~~Quick math image need to have more contrast~~
 
 - [x] ~~Maybe test different image color for live version btn in projects about section~~
+
+- [x] Finalize fabrexa bot description and info via bot-father
+
+- [x] Maybe Remove intro animation for gallery section in h.m.p.w.b
+
+- [x] Finalize sections in the "Impacts" and "Tech Stack" sections
+
+- [ ] maybe add a hidden "More about Ali" btn with password and encryption ??
+
+- [ ] create mobile version :\_(
 
 - [ ] Write all of the descriptions!
     - [ ] Projects
@@ -79,15 +85,9 @@
     - [ ] spot tracker
     - [ ] fabrexa-ollama
 
-- > [ ] Finalize fabrexa bot description and info via bot-father
-
 - [ ] Add Website for fabrexa ai ollama repo
 
-- > [ ] Maybe Remove intro animation for gallery section in h.m.p.w.b
-
 - [ ] Add ability to zoom in lighthouse
-
-- > [ ] Finalize sections in the "Impacts" and "Tech Stack" sections
 
 - [ ] Try to fix or add cool animation when aboutSection is change state that text in it don't have seizure
 
