@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.27.1...v1.28.0) (2026-09-21)
+
+
+### Features
+
+* write and fill the first iteration of the impact section, i need to rest xp ([ae04a42](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/ae04a4282decf69ed8b817fc9ba8062868113952))
+
 ## [1.27.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.27.0...v1.27.1) (2026-09-20)
 
 
