@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.28.3...v1.29.0) (2026-09-22)
+
+
+### Features
+
+* re-create light weighted version of peel.js for my needs and remove the library from the project ([16ea143](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/16ea143189136091a1a6bc41f12e897b12ea128e))
+
 ## [1.28.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.28.2...v1.28.3) (2026-09-22)
 
 
