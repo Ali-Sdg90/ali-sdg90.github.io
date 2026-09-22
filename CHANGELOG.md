@@ -1,3 +1,10 @@
+## [1.28.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.28.0...v1.28.1) (2026-09-22)
+
+
+### Bug Fixes
+
+* update impact about cards, and small images in about cards ([8f9f48d](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/8f9f48d0dc9d394dc7fdfedcdb8846ad5716e7b5))
+
 # [1.28.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.27.1...v1.28.0) (2026-09-21)
 
 
