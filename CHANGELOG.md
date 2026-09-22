@@ -1,3 +1,10 @@
+## [1.28.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.28.2...v1.28.3) (2026-09-22)
+
+
+### Bug Fixes
+
+* shorten and finalize features in impact cards, update progress.md ([c88ea25](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/c88ea25ed54f287cf1671a31c7e16f90dffa67bb))
+
 ## [1.28.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.28.1...v1.28.2) (2026-09-22)
 
 
