@@ -111,6 +111,12 @@
     text-shadow: 0 0 24px rgba(22, 136, 255, 0.16);
 }
 
+.story-reader-modal.is-impact-story .story-reader-modal__heading h2 {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+}
+
 .story-reader-modal__controls {
     display: flex;
     align-items: center;

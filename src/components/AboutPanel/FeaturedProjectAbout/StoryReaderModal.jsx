@@ -24,6 +24,7 @@ const storyTypeLabels = {
 
 const StoryReaderModal = ({
     initialLanguage,
+    isImpactStory = false,
     onClose,
     returnFocusRef,
     storyEN,
@@ -144,6 +145,7 @@ const StoryReaderModal = ({
             className={[
                 "about-panel-lightbox",
                 "story-reader-modal",
+                isImpactStory ? "is-impact-story" : "",
                 isClosing ? "is-closing" : "",
             ]
                 .filter(Boolean)

@@ -302,6 +302,11 @@
     font-weight: 800;
 }
 
+.about-panel.is-impact-detail-module .about-panel-title {
+    font-size: about-panel-cqw(21);
+    line-height: 1.18;
+}
+
 .about-panel-subtitle {
     margin: 0;
     color: #1688ff;
@@ -488,6 +493,16 @@
             height: 100%;
             min-height: about-panel-cqw(148);
         }
+    }
+}
+
+.about-panel.is-impact-detail-module:not(.is-expanded) {
+    .about-panel-avatar-wrap {
+        margin-top: about-panel-cqw(18);
+    }
+
+    .about-panel-heading {
+        margin-bottom: about-panel-cqw(12);
     }
 }
 

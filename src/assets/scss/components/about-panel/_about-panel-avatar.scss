@@ -3,7 +3,7 @@
 
 .about-panel-avatar-wrap {
     position: relative;
-    width: about-panel-cqw(200);
+    width: about-panel-cqw(180);
     aspect-ratio: 1;
     margin: 0 auto about-panel-cqw(19);
     border-radius: 50%;
@@ -22,7 +22,7 @@
 .about-panel.is-expanded {
     .about-panel-avatar-wrap {
         grid-area: avatar;
-        width: min(about-panel-cqw(214), 100%);
+        width: min(about-panel-cqw(193), 100%);
         align-self: start;
         margin: 0 auto about-panel-cqw(4);
     }
@@ -112,7 +112,7 @@
 
 .about-panel.is-showing-detail-module {
     .about-panel-avatar-wrap {
-        width: about-panel-cqw(180);
+        width: about-panel-cqw(144);
         border-radius: about-panel-cqw(18);
         box-shadow:
             0 0 0 1px rgba(0, 8, 18, 0.82),
@@ -136,6 +136,31 @@
 
 .about-panel.is-expanded.is-showing-detail-module {
     .about-panel-avatar-wrap {
-        width: min(about-panel-cqw(193), 100%);
+        width: min(about-panel-cqw(154), 100%);
+    }
+}
+
+.about-panel.is-impact-detail-module {
+    .about-panel-avatar-wrap,
+    &.is-expanded .about-panel-avatar-wrap {
+        width: about-panel-cqw(88);
+        margin-bottom: about-panel-cqw(14);
+    }
+
+    .about-panel-impact-icon {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        place-items: center;
+        color: #82ceff;
+        background: rgba(5, 19, 39, 0.9);
+
+        svg {
+            width: about-panel-cqw(42);
+            height: about-panel-cqw(42);
+            filter: drop-shadow(
+                0 0 about-panel-cqw(12) rgba(22, 136, 255, 0.45)
+            );
+        }
     }
 }

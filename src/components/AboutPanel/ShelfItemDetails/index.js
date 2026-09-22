@@ -88,7 +88,7 @@ export const getShelfItemDetailModule = ({ item, section }) => {
         const impactDetail = getAboutImpactById(item.id);
 
         return {
-            title: impactDetail?.title ?? item.title,
+            title: `${item.title} ${item.meta}`,
             subtitle: "",
             image: getGenericImage(item, section),
             tags: [],

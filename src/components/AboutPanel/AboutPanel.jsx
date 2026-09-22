@@ -45,6 +45,11 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
     const isShowingDetailModule = Boolean(selectedModule);
     const isSimpleDetailModule = selectedModule?.detailVariant === "simple";
     const isCompactDetailModule = selectedModule?.detailVariant === "compact";
+    const isImpactDetailModule =
+        selectedShelfItem?.section.id === "achievements";
+    const ImpactIcon = isImpactDetailModule
+        ? selectedShelfItem.item.icon
+        : null;
     const [isExpanded, setIsExpanded] = useState(false);
     const aboutPanelRef = useRef(null);
     const handledAboutMePulseRef = useRef(aboutMePulse);
@@ -127,6 +132,7 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
                 isShowingDetailModule ? "is-showing-detail-module" : "",
                 isSimpleDetailModule ? "is-simple-detail-module" : "",
                 isCompactDetailModule ? "is-compact-detail-module" : "",
+                isImpactDetailModule ? "is-impact-detail-module" : "",
                 isExpanded ? "is-expanded" : "",
             ]
                 .filter(Boolean)
@@ -153,23 +159,29 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
 
                     <div className="about-panel-avatar-wrap">
                         <div className="about-panel-avatar-frame">
-                            <LightboxImage
-                                image={image}
-                                imageKey={contentKey}
-                                buttonClassName="about-panel-avatar-button"
-                                fallbackClassName="about-panel-avatar about-panel-avatar-fallback"
-                                imageClassName="about-panel-avatar"
-                                imageProps={{
-                                    width: image.width,
-                                    height: image.height,
-                                    style: {
-                                        "--about-panel-avatar-zoom":
-                                            image.zoom ?? 1,
-                                    },
-                                    decoding: "sync",
-                                    fetchPriority: "high",
-                                }}
-                            />
+                            {ImpactIcon ? (
+                                <span className="about-panel-impact-icon">
+                                    <ImpactIcon aria-hidden="true" />
+                                </span>
+                            ) : (
+                                <LightboxImage
+                                    image={image}
+                                    imageKey={contentKey}
+                                    buttonClassName="about-panel-avatar-button"
+                                    fallbackClassName="about-panel-avatar about-panel-avatar-fallback"
+                                    imageClassName="about-panel-avatar"
+                                    imageProps={{
+                                        width: image.width,
+                                        height: image.height,
+                                        style: {
+                                            "--about-panel-avatar-zoom":
+                                                image.zoom ?? 1,
+                                        },
+                                        decoding: "sync",
+                                        fetchPriority: "high",
+                                    }}
+                                />
+                            )}
                         </div>
                         <span
                             className="about-panel-status"

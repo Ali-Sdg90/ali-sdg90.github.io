@@ -189,6 +189,7 @@ const ProjectStory = ({
     subjectTitle,
     title = "Story",
     titleFA,
+    isImpactStory = false,
 }) => {
     const [isReaderOpen, setIsReaderOpen] = useState(false);
     const readerTriggerRef = useRef(null);
@@ -203,7 +204,14 @@ const ProjectStory = ({
     if (!paragraphs?.length) return null;
 
     return (
-        <section className="featured-project-section">
+        <section
+            className={[
+                "featured-project-section",
+                isImpactStory ? "is-impact-story" : "",
+            ]
+                .filter(Boolean)
+                .join(" ")}
+        >
             <div className="featured-project-story-header">
                 <DetailSectionTitle type="story">
                     {visibleTitle}
@@ -240,6 +248,7 @@ const ProjectStory = ({
             {isReaderOpen && (
                 <StoryReaderModal
                     initialLanguage={isFarsi ? "FA" : "EN"}
+                    isImpactStory={isImpactStory}
                     onClose={() => setIsReaderOpen(false)}
                     returnFocusRef={readerTriggerRef}
                     storyEN={storyEN}
@@ -334,8 +343,8 @@ const FeaturedProjectAbout = ({
     const shouldHideSummary = section?.id === "tech-stack";
     const project =
         section?.id === "projects" ? { id: item.id, title: item.title } : null;
-    const summary =
-        section?.id === "achievements" ? item?.meta : detail.summary;
+    const isImpactDetail = section?.id === "achievements";
+    const summary = detail.summary;
 
     return (
         <div className="featured-project-about">
@@ -366,9 +375,14 @@ const FeaturedProjectAbout = ({
                 }
                 storyEN={detail.storyEN}
                 storyFA={detail.storyFA}
-                subjectTitle={detail.title ?? item.title}
+                subjectTitle={
+                    isImpactDetail
+                        ? `${item.title} ${item.meta}`
+                        : (detail.title ?? item.title)
+                }
                 title={detail.storyTitle}
                 titleFA={detail.storyTitleFA}
+                isImpactStory={isImpactDetail}
             />
             {detail.hasRelatedLinks && (
                 <RelatedLinks links={detail.relatedLinks} project={project} />

@@ -309,6 +309,20 @@
     }
 }
 
+.is-impact-story .featured-project-story-content.is-clamped {
+    max-height: about-panel-cqw(155);
+    overflow: hidden;
+
+    p:first-child {
+        display: block;
+        overflow: visible;
+    }
+
+    p:not(:first-child) {
+        display: block;
+    }
+}
+
 .featured-project-story-toggle {
     align-self: flex-start;
     display: inline-flex;

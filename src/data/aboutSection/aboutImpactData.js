@@ -4,8 +4,7 @@ export const aboutImpactData = {
         title: "25+",
         subtitle: "Web Development Interns Mentored",
         summary:
-            "Mentored 25+ web development interns through their learning paths, technical challenges, projects, and day-to-day progress in the CS Internship program.",
-        tech: ["HTML", "CSS", "SCSS", "JavaScript", "TypeScript", "React"],
+            "Guided CS Internship web development interns through projects and technical challenges.",
         featuresTitle: "What I Did",
         features: [
             "Guided interns through their technical learning paths, projects, tasks, and development challenges",
@@ -54,8 +53,7 @@ Looking after the interns, guiding them, watching them grow, and seeing the impa
         title: "11",
         subtitle: "Frontend Developers Onboarded",
         summary:
-            "Onboarded 11 new frontend team members at MelkRadar, helping them get familiar with projects, access, engineering standards, and the team's development workflow.",
-        tech: ["Git", "Branching", "Pull Requests", "Frontend Workflow"],
+            "Helped new MelkRadar frontend developers settle into projects, standards, and team workflows.",
         featuresTitle: "What I Did",
         features: [
             "Guided new team members through company projects, required access, onboarding material, and frontend standards",
@@ -95,7 +93,7 @@ It was another part of my work that I genuinely enjoyed. Helping someone go from
         title: "30+",
         subtitle: "Technical Mentoring Sessions",
         summary:
-            "Held 30+ technical mentoring sessions for web development interns in the CS Internship program, reviewing their work, projects, questions, and learning progress.",
+            "Reviewed interns' projects and questions in CS Internship mentoring sessions.",
         featuresTitle: "What I Did",
         features: [
             "Held weekly technical mentoring sessions for web development interns",
@@ -136,8 +134,7 @@ One of my favorite parts of being in the program was these weekly sessions. Ever
         title: "6",
         subtitle: "Telegram Bots Built",
         summary:
-            "Built 6 Telegram bots for community management, AI-assisted workflows, monitoring, internal automation, and personal tools across CS Internship, MelkRadar, and my own projects.",
-        tech: ["Telegram Bot API", "Node.js", "LLMs", "Ollama", "Automation"],
+            "Built Telegram bots for community management, monitoring, sales automation, and AI conversations.",
         featuresTitle: "What I Built",
         features: [
             "Built 3 bots for CS Internship, 1 internal bot for MelkRadar, and 2 personal AI-powered bots",
@@ -217,15 +214,8 @@ Askly90 یه بات آزمایشی بود که برای خودم و یکی از 
         title: "9",
         subtitle: "Internal Tools Built",
         summary:
-            "Built 9 internal tools for MelkRadar and CS Internship to automate repetitive work, improve operational workflows, and help teams work more efficiently and at scale.",
-        tech: [
-            "React",
-            "Node.js",
-            "Kotlin",
-            "Telegram Bot API",
-            "Azure DevOps API",
-            "Automation",
-        ],
+            "Automated sales and program workflows with tools for MelkRadar and CS Internship.",
+
         featuresTitle: "What I Built",
         features: [
             "Built internal systems for sales operations, onboarding, queue management, feedback, scheduling, monitoring, and administration",
@@ -327,15 +317,8 @@ CS Feedback Webhook هم یکی از پایه‌های Feedback System برنا�
         title: "2",
         subtitle: "Android Apps Shipped",
         summary:
-            "Built and shipped two native Android applications in Kotlin for business and personal needs, from learning the Android ecosystem from scratch to handling real releases, permissions, background processing, and external integrations.",
-        tech: [
-            "Kotlin",
-            "Android",
-            "Health Connect",
-            "Google Drive API",
-            "Background Processing",
-            "REST APIs",
-        ],
+            "Shipped a sales workflow app and a health backup app, both built natively in Kotlin.",
+
         featuresTitle: "What I Shipped",
         features: [
             "Built MLK DVR Receiver as an internal Android app connected to a backend and Telegram bot for MelkRadar's sales workflow",
@@ -420,16 +403,8 @@ MLK DVR Receiver یه اپ داخلی شرکت هست و به همین دلیل 
         title: "1",
         subtitle: "iOS App Shipped",
         summary:
-            "Co-developed and shipped an AI-powered iOS application from an early prototype to a subscription-based product published on the Apple App Store.",
-        tech: [
-            "React Native",
-            "Expo",
-            "Firebase",
-            "Stripe",
-            "LLMs",
-            "Text-to-Speech",
-            "iOS Native APIs",
-        ],
+            "Co-developed an AI-powered subscription app published on the Apple App Store.",
+
         featuresTitle: "What I Shipped",
         features: [
             "Co-developed an AI-powered iOS app with authentication, cloud backend, subscriptions, and native device capabilities",
@@ -493,8 +468,7 @@ It was one of the most challenging projects we had worked on, but also a really 
         title: "376+",
         subtitle: "Pull Requests Reviewed",
         summary:
-            "Reviewed 376+ pull requests across MelkRadar's main frontend projects, helping maintain code quality, implementation standards, and production reliability.",
-        tech: ["React", "JavaScript", "Code Review", "Git", "Pull Requests"],
+            "Reviewed pull requests across MelkRadar's main frontend projects to maintain code quality.",
         featuresTitle: "What I Did",
         features: [
             "Reviewed pull requests across three main frontend projects at MelkRadar",
@@ -538,8 +512,7 @@ Both I and the company were happy with how the role went during the time I had i
         title: "603+",
         subtitle: "Open Source Commits",
         summary:
-            "Contributed 603+ commits across open-source projects, including CS Internship repositories and other collaborative projects such as fx-blox and TonRich.",
-        tech: ["Git", "GitHub", "Open Source", "Code Collaboration"],
+            "Contributed to CS Internship and other open-source projects, including fx-blox and TonRich.",
         featuresTitle: "What I Contributed",
         features: [
             "Contributed extensively to open-source projects and repositories used by the CS Internship program",
