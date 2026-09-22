@@ -68,6 +68,8 @@
 
 - [x] ~~Spot taste tracker and custom gradient paint title need to be changed in title or images~~
 
+- [x] Check if it is possible to write page-pile native instead of using the old react-page-pile library
+
 - [ ] maybe add a hidden "More about Ali" btn with password and encryption ??
 
 - [ ] create mobile version :\_(
@@ -107,8 +109,6 @@
 - [ ] Lighthouse and memory usage check for the site
 
 - [ ] Add 404 page for my github network that can redirect to this project or my github page
-
-- [ ] Check if it is possible to write page-pile native instead of using the old react-page-pile library
 
 - [ ] Improve intro animation for sections in the about sections
 
