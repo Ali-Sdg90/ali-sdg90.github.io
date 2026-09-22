@@ -66,6 +66,8 @@
 
 - [x] Finalize the package.json to be probational and standardized
 
+- [x] ~~Spot taste tracker and custom gradient paint title need to be changed in title or images~~
+
 - [ ] maybe add a hidden "More about Ali" btn with password and encryption ??
 
 - [ ] create mobile version :\_(
@@ -76,8 +78,6 @@
     - [ ] Tech Stack
     - [x] Career
     - [ ] FINALIZE ALL DESCRIPTIONS
-
-- [ ] Spot taste tracker and custom gradient paint title need to be changed in title or images
 
 - [ ] finalize the resume.pdf file
     - [ ] Add CSI YouTube video link in the resume
@@ -111,3 +111,10 @@
 - [ ] Check if it is possible to write page-pile native instead of using the old react-page-pile library
 
 - [ ] Improve intro animation for sections in the about sections
+
+- [ ] Update galleries
+    - [ ] Melkradar
+    - [ ] Portfolio
+    - [ ] CSI
+
+- [ ] Add remaining hmpwb cards
