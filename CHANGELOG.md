@@ -1,3 +1,10 @@
+## [1.28.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.28.1...v1.28.2) (2026-09-22)
+
+
+### Bug Fixes
+
+* use md files stories in impact cards, fill package.json author data ([a6e35ba](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/a6e35bab58a7b857ade6df14c4a4e72a31f3188e))
+
 ## [1.28.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.28.0...v1.28.1) (2026-09-22)
 
 
