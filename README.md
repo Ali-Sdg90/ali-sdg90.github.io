@@ -48,7 +48,7 @@ The design process is also part of the finished experience. A page-peel interact
 | Build tooling      | Vite 8                              | Local development and optimized production builds                                     |
 | Styling            | SCSS                                | Component styles, perspective composition, responsive behavior, and visual effects    |
 | Motion             | Framer Motion                       | Panel transitions, onboarding, gestures, and reduced-motion support                   |
-| Page interaction   | Peel.js                             | The page-peel entrance to the build journal                                           |
+| Page interaction   | Custom React and CSS page turn      | The page-peel entrance to the build journal                                           |
 | Interface assets   | React Icons and custom media        | Consistent iconography, shelf content, and gallery presentation                       |
 | Code quality       | ESLint, Prettier, Husky, Commitlint | Formatting, linting, and conventional commit enforcement                              |
 | Release automation | semantic-release                    | Versioning, changelog generation, tags, and GitHub releases                           |

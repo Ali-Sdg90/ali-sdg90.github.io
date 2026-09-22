@@ -1,74 +1,75 @@
 @use "../../base/variables" as *;
 
-.page-peel-shell {
+.page-turn-shell {
     position: fixed;
     z-index: 0;
     inset: 0;
     width: 100%;
     height: 100vh;
     height: 100dvh;
-    // overflow: hidden;
     background: #000;
 }
 
-.page-peel {
+.page-turn {
     position: absolute;
     z-index: 1;
     inset: 0;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
-    opacity: 1;
-
-    &:not(.peel-ready) {
-        .peel-back,
-        .peel-bottom {
-            visibility: hidden;
-        }
-    }
-
-    .peel-layer {
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-        max-height: 100%;
-    }
-
-    .peel-top-shadow,
-    .peel-back-shadow,
-    .peel-back-reflection,
-    .peel-bottom-shadow {
-        pointer-events: none;
-    }
-
-    .peel-top {
-        overflow: hidden;
-        color: $color-text;
-        background: $color-background;
-        pointer-events: auto;
-        user-select: auto;
-    }
-
-    .peel-back,
-    .peel-bottom {
-        pointer-events: none;
-    }
-
-    .peel-back {
-        background: linear-gradient(
-            135deg,
-            #17212b 0%,
-            #0d141d 56%,
-            #06090d 100%
-        );
-    }
-
-    .peel-bottom {
-        background: #000;
-    }
 }
 
-.page-peel-content {
+.page-turn-bottom,
+.page-turn-top,
+.page-turn-underfold,
+.page-turn-back {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.page-turn-bottom {
+    z-index: 1;
+    background: #000;
+    pointer-events: none;
+}
+
+.page-turn-top {
+    z-index: 2;
+    overflow: hidden;
+    color: $color-text;
+    background: $color-background;
+    pointer-events: auto;
+    // Keep fixed shelf content positioned relative to the page layer.
+    transform: translate(0, 0);
+}
+
+.page-turn-underfold {
+    z-index: 3;
+    background: #040608;
+    clip-path: polygon(0 0, 0 0, 0 0);
+    pointer-events: none;
+}
+
+.page-turn-back {
+    z-index: 4;
+    background: linear-gradient(135deg, #17212b 0%, #0d141d 56%, #06090d 100%);
+    clip-path: polygon(0 0, 0 0, 0 0);
+    pointer-events: none;
+    transform-origin: top left;
+}
+
+.page-turn-crease-line {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 1px;
+    transform-origin: 0 0;
+    background: rgba(62, 64, 67, 0.6);
+    pointer-events: none;
+}
+
+.page-turn-content {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -79,7 +80,7 @@
     pointer-events: auto;
 }
 
-.page-peel-trigger {
+.page-turn-trigger {
     position: absolute;
     z-index: 20;
     right: -5px;
@@ -141,36 +142,36 @@
     }
 }
 
-.page-peel-shell.is-open {
-    .peel-bottom {
+.page-turn-shell.is-open {
+    .page-turn-bottom {
         pointer-events: auto;
     }
 
-    .page-peel {
+    .page-turn {
         pointer-events: none;
     }
 
-    .page-peel-trigger {
+    .page-turn-trigger {
         display: none;
     }
 }
 
 @media (hover: none) {
-    .page-peel-trigger__hint {
+    .page-turn-trigger__hint {
         display: none;
     }
 
-    .page-peel-trigger.is-onboarding .page-peel-trigger__hint {
+    .page-turn-trigger.is-onboarding .page-turn-trigger__hint {
         display: block;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .page-peel-trigger__hint {
+    .page-turn-trigger__hint {
         transition-duration: 1ms;
     }
 
-    .page-peel-shell.is-open .page-peel {
+    .page-turn-shell.is-open .page-turn {
         visibility: hidden;
     }
 }

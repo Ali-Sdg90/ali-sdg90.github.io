@@ -4,8 +4,7 @@
     position: absolute;
     isolation: isolate;
     inset: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
     color: #f5f7fb;
     background:
         radial-gradient(
@@ -30,6 +29,7 @@
     }
 
     &.is-active {
+        overflow-y: auto;
         scrollbar-color: rgba(143, 172, 255, 0.72) rgba(255, 255, 255, 0.04);
         scrollbar-width: thin;
 

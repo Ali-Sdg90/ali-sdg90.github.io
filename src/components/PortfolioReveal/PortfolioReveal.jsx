@@ -1,9 +1,9 @@
+import { flushSync } from "react-dom";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Peel, PeelCorners } from "peel.js";
-import "peel.js/style";
 
 import HowItWasBuilt from "../HowItWasBuilt";
 import { trackUmamiEvent } from "../../utils/analytics";
+import { getPageTurnGeometry, pointOnCubicPath } from "./pageTurnGeometry";
 
 const DEFAULT_FOLD = 28;
 const HOVER_FOLD = 72;
@@ -20,8 +20,11 @@ const easeInOutCubic = (value) =>
 const easeOutCubic = (value) => 1 - (1 - value) ** 3;
 
 const PortfolioReveal = ({ children }) => {
-    const peelElementRef = useRef(null);
-    const peelRef = useRef(null);
+    const turnRef = useRef(null);
+    const topRef = useRef(null);
+    const underRef = useRef(null);
+    const backRef = useRef(null);
+    const creaseRef = useRef(null);
     const returnButtonRef = useRef(null);
     const triggerRef = useRef(null);
     const buildStoryRef = useRef(null);
@@ -29,6 +32,7 @@ const PortfolioReveal = ({ children }) => {
     const foldAnimationFrameRef = useRef(null);
     const onboardingDelayRef = useRef(null);
     const onboardingEndRef = useRef(null);
+    const dimensionsRef = useRef({ width: 0, height: 0 });
     const hasInteractedRef = useRef(false);
     const isAnimatingRef = useRef(false);
     const isOpenRef = useRef(false);
@@ -41,32 +45,92 @@ const PortfolioReveal = ({ children }) => {
     const [isOnboarding, setIsOnboarding] = useState(false);
     const [hasOpenedBuildStory, setHasOpenedBuildStory] = useState(false);
 
-    const animateFoldTo = useCallback((targetDistance) => {
-        const peel = peelRef.current;
-        if (!peel || isAnimatingRef.current || isOpenRef.current) return;
+    const renderPosition = useCallback((position, clipTop = true) => {
+        const { width, height } = dimensionsRef.current;
+        if (!width || !height) return;
 
-        cancelAnimationFrame(foldAnimationFrameRef.current);
-        const startDistance = foldRef.current;
-        const startTime = performance.now();
+        const geometry = getPageTurnGeometry(width, height, position);
+        topRef.current.style.clipPath = clipTop ? geometry.topClip : "none";
+        underRef.current.style.clipPath = clipTop
+            ? "polygon(0 0, 0 0, 0 0)"
+            : geometry.underClip;
+        backRef.current.style.clipPath = geometry.backClip;
+        backRef.current.style.transform = geometry.backTransform;
+        creaseRef.current.style.height = `${geometry.creaseLength}px`;
+        creaseRef.current.style.transform =
+            `translate(${geometry.creaseX}px, ${geometry.creaseY}px) ` +
+            `rotate(${geometry.creaseAngle}deg) translate(-120%, -50%)`;
+    }, []);
 
-        const tick = (now) => {
+    const renderProgress = useCallback(
+        (progress) => {
+            const { width, height } = dimensionsRef.current;
+            if (!width || !height) return;
+
+            const points =
+                pathModeRef.current === "return"
+                    ? [
+                          { x: -width * 1.15, y: -height * 1.15 },
+                          { x: -width * 0.28, y: -height * 0.3 },
+                          { x: width * 0.62, y: height * 0.65 },
+                          {
+                              x: width - DEFAULT_FOLD,
+                              y: height - DEFAULT_FOLD,
+                          },
+                      ]
+                    : [
+                          {
+                              x: width - pathStartFoldRef.current,
+                              y: height - pathStartFoldRef.current,
+                          },
+                          { x: width * 0.66, y: height * 0.68 },
+                          { x: -width * 0.08, y: -height * 0.04 },
+                          { x: -width * 1.15, y: -height * 1.15 },
+                      ];
+
+            renderPosition(pointOnCubicPath(points, progress));
+            progressRef.current = progress;
+        },
+        [renderPosition],
+    );
+
+    const animateFoldTo = useCallback(
+        (targetDistance) => {
             if (isAnimatingRef.current || isOpenRef.current) return;
 
-            const elapsed = Math.min((now - startTime) / HOVER_DURATION_MS, 1);
-            const distance =
-                startDistance +
-                (targetDistance - startDistance) * easeOutCubic(elapsed);
+            cancelAnimationFrame(foldAnimationFrameRef.current);
+            const startDistance = foldRef.current;
+            const startTime = performance.now();
 
-            foldRef.current = distance;
-            peel.setPeelPosition(peel.width - distance, peel.height - distance);
+            const tick = (now) => {
+                if (isAnimatingRef.current || isOpenRef.current) return;
 
-            if (elapsed < 1) {
-                foldAnimationFrameRef.current = requestAnimationFrame(tick);
-            }
-        };
+                const elapsed = Math.min(
+                    (now - startTime) / HOVER_DURATION_MS,
+                    1,
+                );
+                const distance =
+                    startDistance +
+                    (targetDistance - startDistance) * easeOutCubic(elapsed);
+                const { width, height } = dimensionsRef.current;
 
-        foldAnimationFrameRef.current = requestAnimationFrame(tick);
-    }, []);
+                foldRef.current = distance;
+                renderPosition(
+                    { x: width - distance, y: height - distance },
+                    Math.abs(distance - DEFAULT_FOLD) > 0.1,
+                );
+
+                if (elapsed < 1) {
+                    foldAnimationFrameRef.current = requestAnimationFrame(tick);
+                } else {
+                    foldAnimationFrameRef.current = null;
+                }
+            };
+
+            foldAnimationFrameRef.current = requestAnimationFrame(tick);
+        },
+        [renderPosition],
+    );
 
     const registerInteraction = useCallback(() => {
         if (hasInteractedRef.current) return;
@@ -77,108 +141,58 @@ const PortfolioReveal = ({ children }) => {
         setIsOnboarding(false);
     }, []);
 
-    const configurePeel = useCallback((progress = 0) => {
-        const peel = peelRef.current;
-        if (!peel) return;
-
-        peel.setupDimensions();
-        const { width, height } = peel;
-        peel.corner = peel.getPoint(PeelCorners.BOTTOM_RIGHT);
-        peel.setPeelPath(
-            width - pathStartFoldRef.current,
-            height - pathStartFoldRef.current,
-            width * 0.66,
-            height * 0.68,
-            -width * 0.08,
-            -height * 0.04,
-            -width * 1.15,
-            -height * 1.15,
-        );
-        peel.setTimeAlongPath(progress);
-        progressRef.current = progress;
-    }, []);
-
-    const configureReturnPeel = useCallback((progress = 0) => {
-        const peel = peelRef.current;
-        if (!peel) return;
-
-        peel.setupDimensions();
-        const { width, height } = peel;
-        peel.corner = peel.getPoint(PeelCorners.BOTTOM_RIGHT);
-        peel.setPeelPath(
-            -width * 1.15,
-            -height * 1.15,
-            -width * 0.28,
-            -height * 0.3,
-            width * 0.62,
-            height * 0.65,
-            width - DEFAULT_FOLD,
-            height - DEFAULT_FOLD,
-        );
-        peel.setTimeAlongPath(progress);
-        progressRef.current = progress;
-    }, []);
-
-    const animateTo = useCallback((targetProgress, onComplete) => {
-        const peel = peelRef.current;
-        if (!peel || isAnimatingRef.current) return;
-
+    const beginTurn = useCallback(() => {
         cancelAnimationFrame(foldAnimationFrameRef.current);
+        isAnimatingRef.current = true;
+    }, []);
+
+    const finishTurn = useCallback(() => {
+        isAnimatingRef.current = false;
+        animationFrameRef.current = null;
+    }, []);
+
+    const openPage = useCallback(() => {
+        if (isOpenRef.current || isAnimatingRef.current) return;
+
+        trackUmamiEvent("build_story_open", { entry_point: "page_peel" });
+        // Mount the underneath page before the first visible turn frame.
+        if (!hasOpenedBuildStory) flushSync(() => setHasOpenedBuildStory(true));
+        setIsReturning(false);
+        buildStoryRef.current?.scrollTo({ top: 0 });
+        triggerRef.current.hidden = true;
+        pathModeRef.current = "open";
+        pathStartFoldRef.current = foldRef.current;
+        renderProgress(0);
 
         const reducedMotion = window.matchMedia(
             "(prefers-reduced-motion: reduce)",
         ).matches;
-
         if (reducedMotion) {
-            isOpenRef.current = targetProgress === 1;
-            setIsOpen(isOpenRef.current);
-            peel.setTimeAlongPath(targetProgress);
-            progressRef.current = targetProgress;
-            onComplete?.();
+            renderProgress(1);
+            isOpenRef.current = true;
+            setIsOpen(true);
+            requestAnimationFrame(() => returnButtonRef.current?.focus());
             return;
         }
 
-        isAnimatingRef.current = true;
-        const startProgress = isOpenRef.current ? 1 : 0;
+        beginTurn();
         const startTime = performance.now();
-
         const tick = (now) => {
             const elapsed = Math.min((now - startTime) / PEEL_DURATION_MS, 1);
-            const eased = easeInOutCubic(elapsed);
-            const progress =
-                startProgress + (targetProgress - startProgress) * eased;
-
-            peel.setTimeAlongPath(progress);
-            progressRef.current = progress;
+            renderProgress(easeInOutCubic(elapsed));
 
             if (elapsed < 1) {
                 animationFrameRef.current = requestAnimationFrame(tick);
                 return;
             }
 
-            isAnimatingRef.current = false;
-            isOpenRef.current = targetProgress === 1;
-            setIsOpen(isOpenRef.current);
-            onComplete?.();
+            finishTurn();
+            isOpenRef.current = true;
+            setIsOpen(true);
+            returnButtonRef.current?.focus();
         };
-
         animationFrameRef.current = requestAnimationFrame(tick);
-    }, []);
-
-    const openPage = useCallback(() => {
-        if (isOpenRef.current || isAnimatingRef.current) return;
-        trackUmamiEvent("build_story_open", {
-            entry_point: "page_peel",
-        });
-        setHasOpenedBuildStory(true);
-        setIsReturning(false);
-        buildStoryRef.current?.scrollTo({ top: 0 });
-        triggerRef.current.hidden = true;
-        pathModeRef.current = "open";
-        pathStartFoldRef.current = foldRef.current;
-        configurePeel(0);
-        animateTo(1, () => returnButtonRef.current?.focus());
-    }, [animateTo, configurePeel]);
+    }, [beginTurn, finishTurn, hasOpenedBuildStory, renderProgress]);
 
     const closePage = useCallback(() => {
         if (!isOpenRef.current || isAnimatingRef.current) return;
@@ -186,43 +200,18 @@ const PortfolioReveal = ({ children }) => {
         setIsReturning(true);
         cancelAnimationFrame(foldAnimationFrameRef.current);
 
-        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        const finishClose = () => {
+            finishTurn();
             isOpenRef.current = false;
             foldRef.current = DEFAULT_FOLD;
             pathStartFoldRef.current = DEFAULT_FOLD;
             pathModeRef.current = "open";
-            configurePeel(0);
-            setIsOpen(false);
-            setIsReturning(false);
-            buildStoryRef.current?.scrollTo({ top: 0 });
-            triggerRef.current.hidden = false;
-            requestAnimationFrame(() => triggerRef.current?.focus());
-            return;
-        }
-
-        pathModeRef.current = "return";
-        configureReturnPeel(0);
-        isAnimatingRef.current = true;
-        const startTime = performance.now();
-
-        const tick = (now) => {
-            const elapsed = Math.min((now - startTime) / RETURN_DURATION_MS, 1);
-            const progress = easeOutCubic(elapsed);
-
-            peelRef.current?.setTimeAlongPath(progress);
-            progressRef.current = progress;
-
-            if (elapsed < 1) {
-                animationFrameRef.current = requestAnimationFrame(tick);
-                return;
-            }
-
-            isAnimatingRef.current = false;
-            isOpenRef.current = false;
-            foldRef.current = DEFAULT_FOLD;
-            pathStartFoldRef.current = DEFAULT_FOLD;
-            pathModeRef.current = "open";
-            configurePeel(0);
+            renderProgress(0);
+            const { width, height } = dimensionsRef.current;
+            renderPosition(
+                { x: width - DEFAULT_FOLD, y: height - DEFAULT_FOLD },
+                false,
+            );
             setIsOpen(false);
             setIsReturning(false);
             buildStoryRef.current?.scrollTo({ top: 0 });
@@ -230,39 +219,64 @@ const PortfolioReveal = ({ children }) => {
             requestAnimationFrame(() => triggerRef.current?.focus());
         };
 
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            finishClose();
+            return;
+        }
+
+        pathModeRef.current = "return";
+        renderProgress(0);
+        beginTurn();
+        const startTime = performance.now();
+        const tick = (now) => {
+            const elapsed = Math.min((now - startTime) / RETURN_DURATION_MS, 1);
+            renderProgress(easeOutCubic(elapsed));
+
+            if (elapsed < 1) {
+                animationFrameRef.current = requestAnimationFrame(tick);
+                return;
+            }
+
+            finishClose();
+        };
         animationFrameRef.current = requestAnimationFrame(tick);
-    }, [configurePeel, configureReturnPeel]);
+    }, [beginTurn, finishTurn, renderPosition, renderProgress]);
 
     useEffect(() => {
-        const element = peelElementRef.current;
+        const element = turnRef.current;
         if (!element) return undefined;
 
-        const peel = new Peel(element, {
-            corner: PeelCorners.BOTTOM_RIGHT,
-            backReflection: true,
-            backReflectionAlpha: 0.12,
-            backShadowAlpha: 0.2,
-            bottomShadowDarkAlpha: 0.52,
-            bottomShadowLightAlpha: 0.08,
-            topShadowAlpha: 0.34,
-            topShadowBlur: 10,
-            clippingBoxScale: 5,
-            setPeelOnInit: false,
-        });
-        peelRef.current = peel;
-        configurePeel();
+        const updateDimensions = () => {
+            const width = element.clientWidth;
+            const height = element.clientHeight;
+            if (
+                width === dimensionsRef.current.width &&
+                height === dimensionsRef.current.height
+            ) {
+                return;
+            }
 
+            dimensionsRef.current = { width, height };
+            if (isOpenRef.current) {
+                renderProgress(1);
+            } else if (
+                pathModeRef.current === "open" &&
+                !isAnimatingRef.current
+            ) {
+                renderPosition(
+                    { x: width - foldRef.current, y: height - foldRef.current },
+                    Math.abs(foldRef.current - DEFAULT_FOLD) > 0.1,
+                );
+            } else {
+                renderProgress(progressRef.current);
+            }
+        };
+
+        updateDimensions();
         let resizeFrame;
         const resizeObserver = new ResizeObserver(() => {
             cancelAnimationFrame(resizeFrame);
-            resizeFrame = requestAnimationFrame(() => {
-                if (pathModeRef.current === "return") {
-                    configureReturnPeel(progressRef.current);
-                    return;
-                }
-
-                configurePeel(progressRef.current);
-            });
+            resizeFrame = requestAnimationFrame(updateDimensions);
         });
         resizeObserver.observe(element);
 
@@ -271,14 +285,26 @@ const PortfolioReveal = ({ children }) => {
             cancelAnimationFrame(foldAnimationFrameRef.current);
             cancelAnimationFrame(resizeFrame);
             resizeObserver.disconnect();
-            peel.removeDragListeners();
-            [peel.topClip, peel.backClip].forEach((clip) =>
-                clip?.shape?.parentElement?.remove(),
-            );
-            peelRef.current = null;
-            isAnimatingRef.current = false;
         };
-    }, [configurePeel, configureReturnPeel]);
+    }, [renderPosition, renderProgress]);
+
+    useEffect(() => {
+        if (hasOpenedBuildStory) return undefined;
+        if (window.matchMedia("(max-width: 899px)").matches) return undefined;
+
+        // Prepare the journal during idle time so its first render cannot flash
+        // into view halfway through an interaction.
+        if ("requestIdleCallback" in window) {
+            const id = window.requestIdleCallback(
+                () => setHasOpenedBuildStory(true),
+                { timeout: 4000 },
+            );
+            return () => window.cancelIdleCallback(id);
+        }
+
+        const id = window.setTimeout(() => setHasOpenedBuildStory(true), 2000);
+        return () => clearTimeout(id);
+    }, [hasOpenedBuildStory]);
 
     useEffect(() => {
         let isDisposed = false;
@@ -295,7 +321,6 @@ const PortfolioReveal = ({ children }) => {
 
                 setIsOnboarding(true);
                 animateFoldTo(HOVER_FOLD);
-
                 onboardingEndRef.current = window.setTimeout(() => {
                     if (
                         isDisposed ||
@@ -313,7 +338,6 @@ const PortfolioReveal = ({ children }) => {
         };
 
         scheduleOnboarding();
-
         return () => {
             isDisposed = true;
             clearTimeout(onboardingDelayRef.current);
@@ -321,35 +345,52 @@ const PortfolioReveal = ({ children }) => {
         };
     }, [animateFoldTo]);
 
+    const isStoryActive = isOpen && !isReturning;
+
     return (
-        <div className={`page-peel-shell${isOpen ? " is-open" : ""}`}>
-            <div className="page-peel peel" ref={peelElementRef}>
+        <div className={`page-turn-shell${isOpen ? " is-open" : ""}`}>
+            <div className="page-turn" ref={turnRef}>
                 <div
-                    className="peel-bottom"
-                    aria-hidden={!isOpen}
-                    inert={isOpen ? undefined : true}
+                    className="page-turn-bottom"
+                    aria-hidden={!isStoryActive}
+                    inert={isStoryActive ? undefined : true}
                 >
                     {hasOpenedBuildStory && (
                         <HowItWasBuilt
                             ref={buildStoryRef}
-                            isActive={isOpen && !isReturning}
+                            isActive={isStoryActive}
                             returnButtonRef={returnButtonRef}
                             onReturn={closePage}
                         />
                     )}
                 </div>
-                <div className="peel-back" aria-hidden="true" />
                 <div
-                    className="peel-top"
+                    className="page-turn-top"
+                    ref={topRef}
                     aria-hidden={isOpen}
                     inert={isOpen ? true : undefined}
                 >
-                    <div className="page-peel-content">{children}</div>
+                    <div className="page-turn-content">{children}</div>
                 </div>
+                <div
+                    className="page-turn-underfold"
+                    ref={underRef}
+                    aria-hidden="true"
+                />
+                <div
+                    className="page-turn-back"
+                    ref={backRef}
+                    aria-hidden="true"
+                />
+                <div
+                    className="page-turn-crease-line"
+                    ref={creaseRef}
+                    aria-hidden="true"
+                />
             </div>
 
             <button
-                className={`page-peel-trigger${isOnboarding ? " is-onboarding" : ""}`}
+                className={`page-turn-trigger${isOnboarding ? " is-onboarding" : ""}`}
                 type="button"
                 ref={triggerRef}
                 aria-label="Reveal how this portfolio was built"
@@ -364,7 +405,7 @@ const PortfolioReveal = ({ children }) => {
                     openPage();
                 }}
             >
-                <span className="page-peel-trigger__hint">
+                <span className="page-turn-trigger__hint">
                     See how my portfolio was built
                 </span>
             </button>
