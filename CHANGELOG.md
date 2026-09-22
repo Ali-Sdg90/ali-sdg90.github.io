@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.29.0...v1.30.0) (2026-09-22)
+
+
+### Features
+
+* write tech about cards part 1, this is hardest part of the project :( ([6fef76d](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/6fef76d25c8081891c032d26263760fc5006aa0a))
+
 # [1.29.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.28.3...v1.29.0) (2026-09-22)
 
 
