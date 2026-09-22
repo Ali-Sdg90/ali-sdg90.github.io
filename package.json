@@ -2,6 +2,26 @@
   "name": "ali-sdg90-portfolio",
   "private": true,
   "version": "1.28.1",
+  "description": "Ali Sadeghi's interactive portfolio, featuring selected projects, technical skills, career journey, and impact.",
+  "homepage": "https://ali-sdg.is-a.dev/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ali-Sdg90/ali-sdg90.github.io.git"
+  },
+  "author": {
+    "name": "Ali Sadeghi",
+    "url": "https://github.com/Ali-Sdg90"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "portfolio",
+    "software-engineer",
+    "systems-designer",
+    "react",
+    "vite",
+    "frontend",
+    "web-development"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",

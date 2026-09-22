@@ -64,15 +64,18 @@
 
 - [x] Finalize sections in the "Impacts" and "Tech Stack" sections
 
+- [x] Finalize the package.json to be probational and standardized
+
 - [ ] maybe add a hidden "More about Ali" btn with password and encryption ??
 
 - [ ] create mobile version :\_(
 
 - [ ] Write all of the descriptions!
     - [ ] Projects
-    - [ ] Impacts
+    - [x] Impacts
     - [ ] Tech Stack
     - [x] Career
+    - [ ] FINALIZE ALL DESCRIPTIONS
 
 - [ ] Spot taste tracker and custom gradient paint title need to be changed in title or images
 
@@ -91,7 +94,7 @@
 
 - [ ] Try to fix or add cool animation when aboutSection is change state that text in it don't have seizure
 
-- [ ] Add intro-simple page that redirect to main meal.
+- [ ] Add intro-simple page that redirect to shelf page with peal animation
 
 - [ ] shorten the about me text...
 
@@ -107,4 +110,4 @@
 
 - [ ] Check if it is possible to write page-pile native instead of using the old react-page-pile library
 
-- [ ] Finalize the package.json to be probational and standardized
+- [ ] Improve intro animation for sections in the about sections

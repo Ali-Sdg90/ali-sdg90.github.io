@@ -5,6 +5,19 @@ import portfolioImage1 from "../../assets/images/gallery-images/large-images/pro
 import portfolioImage2 from "../../assets/images/gallery-images/large-images/projects/portfolio/img2.png";
 import portfolioImage3 from "../../assets/images/gallery-images/large-images/projects/portfolio/img3.png";
 
+import healthDataRelayThumbnail1 from "../../assets/images/gallery-images/small-images/projects/healthdr/img1.jpg";
+import healthDataRelayThumbnail2 from "../../assets/images/gallery-images/small-images/projects/healthdr/img2.jpg";
+import healthDataRelayThumbnail3 from "../../assets/images/gallery-images/small-images/projects/healthdr/img3.jpg";
+import healthDataRelayThumbnail4 from "../../assets/images/gallery-images/small-images/projects/healthdr/img4.jpg";
+import healthDataRelayThumbnail5 from "../../assets/images/gallery-images/small-images/projects/healthdr/img5.jpg";
+import healthDataRelayThumbnail6 from "../../assets/images/gallery-images/small-images/projects/healthdr/img6.jpg";
+import healthDataRelayImage1 from "../../assets/images/gallery-images/large-images/projects/healthdr/img1.jpg";
+import healthDataRelayImage2 from "../../assets/images/gallery-images/large-images/projects/healthdr/img2.jpg";
+import healthDataRelayImage3 from "../../assets/images/gallery-images/large-images/projects/healthdr/img3.jpg";
+import healthDataRelayImage4 from "../../assets/images/gallery-images/large-images/projects/healthdr/img4.png";
+import healthDataRelayImage5 from "../../assets/images/gallery-images/large-images/projects/healthdr/img5.png";
+import healthDataRelayImage6 from "../../assets/images/gallery-images/large-images/projects/healthdr/img6.png";
+
 import dvrReceiverThumbnail1 from "../../assets/images/gallery-images/small-images/projects/drvbot/img1.jpg";
 import dvrReceiverThumbnail2 from "../../assets/images/gallery-images/small-images/projects/drvbot/img2.jpg";
 import dvrReceiverThumbnail3 from "../../assets/images/gallery-images/small-images/projects/drvbot/img3.jpg";
@@ -114,6 +127,50 @@ export const projectGalleryImages = {
             portfolioImage2,
             "Ali's Portfolio project detail experience",
             1919,
+            908,
+        ),
+    ],
+    "health-data-relay": [
+        galleryImage(
+            healthDataRelayThumbnail1,
+            healthDataRelayImage1,
+            "Health Data Relay automatic backup dashboard",
+            941,
+            1672,
+        ),
+        galleryImage(
+            healthDataRelayThumbnail2,
+            healthDataRelayImage2,
+            "Health Data Relay onboarding for Health Connect and Google Drive",
+            941,
+            1672,
+        ),
+        galleryImage(
+            healthDataRelayThumbnail3,
+            healthDataRelayImage3,
+            "Health Data Relay backup settings and date format",
+            941,
+            1672,
+        ),
+        galleryImage(
+            healthDataRelayThumbnail4,
+            healthDataRelayImage4,
+            "Health Data Relay website home page",
+            1903,
+            1078,
+        ),
+        galleryImage(
+            healthDataRelayThumbnail5,
+            healthDataRelayImage5,
+            "Health Data Relay GitHub repository",
+            1919,
+            1079,
+        ),
+        galleryImage(
+            healthDataRelayThumbnail6,
+            healthDataRelayImage6,
+            "Health Data Relay APKPure app listing",
+            903,
             908,
         ),
     ],

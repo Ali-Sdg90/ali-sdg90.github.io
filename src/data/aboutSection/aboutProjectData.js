@@ -110,6 +110,7 @@ export const aboutProjectData = {
             "Processes data on-device and uploads directly to Google Drive",
             "Supports English, Persian, Jalali dates, and configurable data categories",
         ],
+        galleryImages: projectGalleryImages["health-data-relay"],
         storyEN: "",
         storyFA: "",
         hasRelatedLinks: true,
