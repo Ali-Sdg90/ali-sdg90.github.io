@@ -3,9 +3,10 @@
 
 .about-panel-avatar-wrap {
     position: relative;
-    width: about-panel-cqw(180);
+    top: about-panel-cqw(-13);
+    width: about-panel-cqw(190);
     aspect-ratio: 1;
-    margin: 0 auto about-panel-cqw(19);
+    margin: 0 auto about-panel-cqw(2);
     border-radius: 50%;
     padding: about-panel-cqw(2);
     background: linear-gradient(135deg, #33a8ff, #045be7 52%, #1aa2ff);
@@ -25,6 +26,13 @@
         width: min(about-panel-cqw(193), 100%);
         align-self: start;
         margin: 0 auto about-panel-cqw(4);
+    }
+}
+
+.about-panel.is-expanded:not(.is-showing-detail-module) {
+    .about-panel-avatar-wrap {
+        top: 0;
+        margin-top: about-panel-cqw(8);
     }
 }
 

@@ -330,12 +330,12 @@ export const aboutProjectData = {
             "A self-hosted Telegram chatbot that runs local Ollama models with configurable personalities, persistent memory, and streaming responses.",
         links: [
             {
-                label: "GitHub Repo",
-                url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama",
-            },
-            {
                 label: "Telegram Bot",
                 url: "https://t.me/FabrexaAIBot",
+            },
+            {
+                label: "GitHub Repo",
+                url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama",
             },
         ],
         tech: ["Node.js", "Telegraf", "Ollama", "node-cron", "Axios"],

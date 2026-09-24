@@ -3,6 +3,7 @@ import {
     FaArrowUpRightFromSquare,
     FaBookOpen,
     FaCheck,
+    FaFileLines,
     FaGithub,
     FaImages,
     FaLayerGroup,
@@ -16,6 +17,7 @@ import StoryReaderModal from "./StoryReaderModal";
 import { trackUmamiEvent } from "../../../utils/analytics";
 
 const sectionIcons = {
+    description: FaFileLines,
     features: FaListCheck,
     gallery: FaImages,
     story: FaPenNib,
@@ -325,6 +327,7 @@ const RelatedLinks = ({ links = [], project }) => {
 const FeaturedProjectAbout = ({
     activeLanguage,
     detail,
+    isExpanded,
     item,
     languageToggle,
     section,
@@ -349,7 +352,14 @@ const FeaturedProjectAbout = ({
     return (
         <div className="featured-project-about">
             {!shouldHideSummary && summary && (
-                <p className="featured-project-summary">{summary}</p>
+                <section className="featured-project-description">
+                    {isExpanded && (
+                        <DetailSectionTitle type="description">
+                            Description
+                        </DetailSectionTitle>
+                    )}
+                    <p className="featured-project-summary">{summary}</p>
+                </section>
             )}
             <ProjectLinks links={detail.links} project={project} />
             {/* <TechChips tech={detail.tech} /> */}

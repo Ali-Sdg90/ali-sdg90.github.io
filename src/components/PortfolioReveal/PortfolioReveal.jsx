@@ -6,7 +6,7 @@ import { trackUmamiEvent } from "../../utils/analytics";
 import { getPageTurnGeometry, pointOnCubicPath } from "./pageTurnGeometry";
 
 const DEFAULT_FOLD = 28;
-const HOVER_FOLD = 72;
+const HOVER_FOLD = 60;
 const HOVER_DURATION_MS = 340;
 const PEEL_DURATION_MS = 1380;
 const RETURN_DURATION_MS = 1380;

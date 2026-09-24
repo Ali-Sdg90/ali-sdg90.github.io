@@ -115,6 +115,27 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
         : isAboutMeFarsi
           ? titleFa
           : titleEn;
+    const shouldStackCareerSubtitle =
+        isExpanded && selectedShelfItem?.section.id === "career-journey";
+    const shouldStackProjectSubtitle =
+        isExpanded &&
+        selectedShelfItem?.section.id === "projects" &&
+        selectedModule?.detail;
+    const panelSubtitle = shouldStackCareerSubtitle ? (
+        <>
+            {selectedShelfItem.item.meta}
+            <br />
+            {selectedShelfItem.item.year}
+        </>
+    ) : shouldStackProjectSubtitle ? (
+        <>
+            {selectedModule.detail.subtitle}
+            <br />
+            {selectedModule.detail.year}
+        </>
+    ) : (
+        selectedModule?.subtitle
+    );
 
     const visibleTags = isShowingDetailModule ? tags : aboutData.tags;
     const languageToggle = (
@@ -215,9 +236,9 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
                                 </>
                             )} */}
                         </h2>
-                        {selectedModule?.subtitle && (
+                        {panelSubtitle && (
                             <p className="about-panel-subtitle">
-                                {selectedModule.subtitle}
+                                {panelSubtitle}
                             </p>
                         )}
                     </div>
@@ -235,6 +256,7 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
                                     section={selectedShelfItem.section}
                                     detail={selectedModule.detail}
                                     activeLanguage={activeLanguage}
+                                    isExpanded={isExpanded}
                                     languageToggle={languageToggle}
                                 />
                             ) : (
