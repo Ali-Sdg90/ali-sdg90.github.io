@@ -1,7 +1,7 @@
 {
   "name": "ali-sdg90-portfolio",
   "private": true,
-  "version": "1.30.0",
+  "version": "1.31.0",
   "description": "Ali Sadeghi's interactive portfolio, featuring selected projects, technical skills, career journey, and impact.",
   "homepage": "https://ali-sdg.is-a.dev/",
   "repository": {

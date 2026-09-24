@@ -1,3 +1,10 @@
+# [1.31.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.30.0...v1.31.0) (2026-09-24)
+
+
+### Features
+
+* add hash navigation to project ([323fb34](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/323fb34559465aea47114f2d7e4fc77faca3b8b4))
+
 # [1.30.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.29.0...v1.30.0) (2026-09-22)
 
 
