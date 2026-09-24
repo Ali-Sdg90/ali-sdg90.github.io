@@ -74,6 +74,14 @@
 
 - [x] ~~When user come with an link with hash, the about section of that page should be opened automatically~~
 
+- [x] Try to fix or add cool animation when aboutSection is change state that text in it don't have seizure
+
+- [x] Add ICARUS E.E. url link
+
+- [x] Add feature that track how much of the site visit comes form mobile devices
+
+- [x] Add ability to zoom in lighthouse
+
 - [ ] maybe add a hidden "More about Ali" btn with password and encryption ??
 
 - [ ] create mobile version :\_(
@@ -96,19 +104,12 @@
 
 - [ ] Add Website for fabrexa ai ollama repo
 
-- [ ] Add ability to zoom in lighthouse
-
-- [ ] Try to fix or add cool animation when aboutSection is change state that text in it don't have seizure
-
 - [ ] Add intro-simple page that redirect to shelf page with peal animation
+    - [ ] Make it more Me. about my hobbies? other part of ali but not in the main page
 
 - [ ] shorten the about me text...
 
-- [ ] Make it more Me. about my hobbies? other part of ali but not in the main page
-
 - [ ] Add Link-Tree url link and feature
-
-- [ ] Add ICARUS E.E. url link
 
 - [ ] Lighthouse and memory usage check for the site
 
@@ -129,4 +130,4 @@
 
 - [ ] Add a way to go back to the intro page. Maybe in about me section be the button of going to intro page?
 
-- [ ] Add feature that track how much of the site visit comes form mobile devices
+- [ ] Check if it is need to rename images for better SEO? or project use alt and it maps like that

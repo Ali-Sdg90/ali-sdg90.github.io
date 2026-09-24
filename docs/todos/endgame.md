@@ -6,17 +6,21 @@
 
 - [x] Maybe move all stories in separated md file and project read from that md file?
 
-- [ ] remove un-used woff2 files
-
 - [ ] Write repo readme.md file
-    - [ ] Part 1
+    - [x] Part 1
+    - [ ] Part 2
 
 - [ ] check lighthouse for improvements in performance and accessibility
 
 - [ ] improve SEO of the site
     - [x] Part 1
+    - [ ] Part 2
 
 - [ ] Maybe add Agentic browsing and robot file
+
+- [ ] Delete unused files in the repo
+    - [ ] remove un-used woff2 files
+    - [ ] Remove MobileWipNotice
 
 - [ ] create makefile files
 

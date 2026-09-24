@@ -22,6 +22,7 @@
     pointer-events: auto;
     container-type: inline-size;
     transition: width $motion-slow $ease-out;
+    will-change: width;
 
     &.is-showing-detail-module {
         --about-panel-content-width: var(--about-panel-detail-width);
@@ -47,7 +48,6 @@
         width: var(--about-panel-expanded-width);
 
         .about-panel-scroll {
-            width: 100%;
             grid-template-columns:
                 minmax(about-panel-cqw(190), 0.34fr)
                 minmax(0, 1fr);
@@ -236,12 +236,21 @@
 .about-panel-scroll {
     position: relative;
     width: var(--about-panel-content-width);
+    min-width: var(--about-panel-content-width);
+    max-width: var(--about-panel-content-width);
     height: 100%;
+    box-sizing: border-box;
     display: grid;
     grid-template-rows: auto auto auto minmax(0, 1fr) auto;
     overflow: hidden;
     padding: about-panel-cqw(28) about-panel-cqw(30) about-panel-cqw(23);
     padding-right: about-panel-cqw(12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-panel {
+        transition-duration: 1ms;
+    }
 }
 
 @keyframes about-panel-data-sweep {
