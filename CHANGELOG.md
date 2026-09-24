@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.31.1...v1.32.0) (2026-09-24)
+
+
+### Features
+
+* add light-box zoom feature, add smooth opening and closing of the about section, update todos ([4cacbb8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/4cacbb834905dee9969cb2fb2fab65c31cab439e))
+
 ## [1.31.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.31.0...v1.31.1) (2026-09-24)
 
 
