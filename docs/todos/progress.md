@@ -120,3 +120,13 @@
 - [ ] Add remaining hmpwb cards
 
 - [ ] Add more Whimsy!
+
+- [ ] When user come with an link with hash, the about section of that page should be opened automatically
+
+- [ ] Add hash link to my career and projects in my resume.pdf file
+
+- [ ] Maybe add sparckle or small doodles comes out of my image in the about me section?
+
+- [ ] Add a way to go back to the intro page. Maybe in about me section be the button of going to intro page?
+
+- [ ] Add feature that track how much of the site visit comes form mobile devices
