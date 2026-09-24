@@ -1,3 +1,10 @@
+## [1.31.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.31.0...v1.31.1) (2026-09-24)
+
+
+### Bug Fixes
+
+* improve spacing about me in collapse and expanded, improve styles in expanded of about cards and lower the HOVER_FOLD for page3 hint ([c93acc3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/c93acc322e72b51c28babf2b6315449c5ddedbb9))
+
 # [1.31.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.30.0...v1.31.0) (2026-09-24)
 
 
