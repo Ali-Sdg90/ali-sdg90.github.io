@@ -18,8 +18,8 @@ import impactOpenSourceCommitsStoryEN from "../stories/en/impact/open-source-com
 import impactOpenSourceCommitsStoryFA from "../stories/fa/impact/open-source-commits.md?raw";
 
 export const aboutImpactData = {
-    internsMentored: {
-        id: "internsMentored",
+    "interns-mentored": {
+        id: "interns-mentored",
         title: "25+",
         subtitle: "Web Development Interns Mentored",
         summary:
@@ -50,8 +50,8 @@ export const aboutImpactData = {
             },
         ],
     },
-    developersOnboarded: {
-        id: "developersOnboarded",
+    "developers-onboarded": {
+        id: "developers-onboarded",
         title: "11",
         subtitle: "Frontend Developers Onboarded",
         summary:
@@ -78,8 +78,8 @@ export const aboutImpactData = {
             },
         ],
     },
-    technicalSessions: {
-        id: "technicalSessions",
+    "technical-sessions": {
+        id: "technical-sessions",
         title: "30+",
         subtitle: "Technical Mentoring Sessions",
         summary:
@@ -110,8 +110,8 @@ export const aboutImpactData = {
             },
         ],
     },
-    telegramBots: {
-        id: "telegramBots",
+    "telegram-bots": {
+        id: "telegram-bots",
         title: "6",
         subtitle: "Telegram Bots Built",
         summary:
@@ -158,8 +158,8 @@ export const aboutImpactData = {
             },
         ],
     },
-    internalTools: {
-        id: "internalTools",
+    "internal-tools": {
+        id: "internal-tools",
         title: "9",
         subtitle: "Internal Tools Built",
         summary:
@@ -217,8 +217,8 @@ export const aboutImpactData = {
             },
         ],
     },
-    androidAppShipped: {
-        id: "androidAppShipped",
+    "android-app-shipped": {
+        id: "android-app-shipped",
         title: "2",
         subtitle: "Android Apps Shipped",
         summary:
@@ -262,8 +262,8 @@ export const aboutImpactData = {
             },
         ],
     },
-    iosAppShipped: {
-        id: "iosAppShipped",
+    "ios-app-shipped": {
+        id: "ios-app-shipped",
         title: "1",
         subtitle: "iOS App Shipped",
         summary:
@@ -292,8 +292,8 @@ export const aboutImpactData = {
             },
         ],
     },
-    pullRequestsReviewed: {
-        id: "pullRequestsReviewed",
+    "pull-requests-reviewed": {
+        id: "pull-requests-reviewed",
         title: "376+",
         subtitle: "Pull Requests Reviewed",
         summary:
@@ -320,8 +320,8 @@ export const aboutImpactData = {
             },
         ],
     },
-    openSourceCommits: {
-        id: "openSourceCommits",
+    "open-source-commits": {
+        id: "open-source-commits",
         title: "603+",
         subtitle: "Open Source Commits",
         summary:

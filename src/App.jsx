@@ -9,6 +9,7 @@ import PortfolioReveal from "./components/PortfolioReveal/PortfolioReveal";
 import Shelf from "./components/Shelf/Shelf";
 import UnderConstructionBadge from "./components/UnderConstructionBadge/UnderConstructionBadge";
 import { shelfSections } from "./data/portfolio/shelfSections";
+import usePortfolioHashNavigation from "./hooks/usePortfolioHashNavigation";
 import { getShelfItemId } from "./utils/getShelfItemId";
 import { setDocumentTitle } from "./utils/setDocumentTitle";
 import { trackUmamiEvent } from "./utils/analytics";
@@ -24,7 +25,13 @@ const isSixteenTenDisplay = () => {
 };
 
 const App = () => {
-    const [selectedShelfItem, setSelectedShelfItem] = useState(null);
+    const {
+        view,
+        selectedShelfItem,
+        navigateToShelf,
+        navigateToCard,
+        navigateToBuildStory,
+    } = usePortfolioHashNavigation();
     const [hasInteractedWithShelf, setHasInteractedWithShelf] = useState(false);
     const [aboutMePulse, setAboutMePulse] = useState(0);
     const [hasSixteenTenDisplay, setHasSixteenTenDisplay] =
@@ -79,20 +86,17 @@ const App = () => {
             }
         }
 
-        setSelectedShelfItem((currentItem) =>
-            currentItem?.sectionId === sectionId &&
-            currentItem?.itemId === itemId
-                ? null
-                : { sectionId, itemId },
-        );
+        if (isClosingSelectedItem) {
+            navigateToShelf();
+        } else {
+            navigateToCard(itemId);
+        }
     };
 
     const handleAboutMeSelect = () => {
-        setSelectedShelfItem((currentItem) =>
-            currentItem ? null : currentItem,
-        );
-
-        if (!selectedShelfItem) {
+        if (selectedShelfItem) {
+            navigateToShelf();
+        } else {
             triggerAboutMePulse();
         }
     };
@@ -106,7 +110,11 @@ const App = () => {
             <MobileWipNotice />
 
             <div className="desktop-portfolio">
-                <PortfolioReveal>
+                <PortfolioReveal
+                    isBuildStoryOpen={view === "build-story"}
+                    onBuildStoryOpen={navigateToBuildStory}
+                    onBuildStoryClose={navigateToShelf}
+                >
                     <UnderConstructionBadge />
                     <AppVersion />
 

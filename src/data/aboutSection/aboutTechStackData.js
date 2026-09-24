@@ -286,8 +286,8 @@ React دوست خوبم هست.`,
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    antDesign: {
-        id: "antDesign",
+    "ant-design": {
+        id: "ant-design",
         title: "Ant Design",
         lightboxImage: antDesignLogoLarge,
         subtitle: "Placeholder",
@@ -305,8 +305,8 @@ React دوست خوبم هست.`,
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    tanStackQuery: {
-        id: "tanStackQuery",
+    "tan-stack-query": {
+        id: "tan-stack-query",
         title: "TanStack Query",
         lightboxImage: tanStackQueryLogoLarge,
         subtitle: "Placeholder",
@@ -324,8 +324,8 @@ React دوست خوبم هست.`,
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    restApis: {
-        id: "restApis",
+    "rest-apis": {
+        id: "rest-apis",
         title: "REST APIs",
         lightboxImage: restApiLogoLarge,
         subtitle: "Placeholder",
@@ -381,8 +381,8 @@ React دوست خوبم هست.`,
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    reactNative: {
-        id: "reactNative",
+    "react-native": {
+        id: "react-native",
         title: "React Native",
         lightboxImage: reactNativeLogoLarge,
         subtitle: "Placeholder",
@@ -400,8 +400,8 @@ React دوست خوبم هست.`,
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    nodejs: {
-        id: "nodejs",
+    "node-js": {
+        id: "node-js",
         title: "Node.js",
         lightboxImage: nodejsLogoLarge,
         subtitle: "Placeholder",
@@ -419,8 +419,8 @@ React دوست خوبم هست.`,
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    githubActions: {
-        id: "githubActions",
+    "github-actions": {
+        id: "github-actions",
         title: "GitHub Actions",
         lightboxImage: githubActionsLogoLarge,
         subtitle: "Placeholder",
@@ -438,8 +438,8 @@ React دوست خوبم هست.`,
             { label: "Placeholder", text: "Placeholder", url: "" },
         ],
     },
-    gitGithub: {
-        id: "gitGithub",
+    "git-github": {
+        id: "git-github",
         title: "Git/GitHub",
         lightboxImage: gitLogoLarge,
         subtitle: "Placeholder",
@@ -552,8 +552,8 @@ Firebase ابزار خیلی قدرتمند و کار راه‌بندیه، مخ
             },
         ],
     },
-    chartjs: {
-        id: "chartjs",
+    "chart-js": {
+        id: "chart-js",
         title: "Chart.js",
         lightboxImage: chartJsLogoLarge,
         subtitle: "Data Visualization & Custom Charts",
@@ -631,8 +631,8 @@ Chart.js لایببری قدرتمندیه، ولی وقتی درخواست‌ه
             },
         ],
     },
-    apexCharts: {
-        id: "apexCharts",
+    "apex-charts": {
+        id: "apex-charts",
         title: "ApexCharts",
         lightboxImage: apexChartsLogoLarge,
         subtitle: "Interactive Data Visualization",
@@ -730,8 +730,8 @@ Ollama واقعا ابزار باحال و کاربردی‌ایه. کار کر�
             },
         ],
     },
-    azureDevops: {
-        id: "azureDevops",
+    "azure-devops": {
+        id: "azure-devops",
         title: "Azure DevOps",
         lightboxImage: azureLogoLarge,
         subtitle: "Boards, Automation & Delivery Workflows",

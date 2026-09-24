@@ -70,6 +70,8 @@
 
 - [x] Check if it is possible to write page-pile native instead of using the old react-page-pile library
 
+- [x] Add 404 page for my github network that can redirect to this project or my github page
+
 - [ ] maybe add a hidden "More about Ali" btn with password and encryption ??
 
 - [ ] create mobile version :\_(
@@ -108,8 +110,6 @@
 
 - [ ] Lighthouse and memory usage check for the site
 
-- [ ] Add 404 page for my github network that can redirect to this project or my github page
-
 - [ ] Improve intro animation for sections in the about sections
 
 - [ ] Update galleries
@@ -118,3 +118,5 @@
     - [ ] CSI
 
 - [ ] Add remaining hmpwb cards
+
+- [ ] Add more Whimsy!

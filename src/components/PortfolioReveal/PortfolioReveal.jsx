@@ -19,7 +19,12 @@ const easeInOutCubic = (value) =>
 
 const easeOutCubic = (value) => 1 - (1 - value) ** 3;
 
-const PortfolioReveal = ({ children }) => {
+const PortfolioReveal = ({
+    children,
+    isBuildStoryOpen,
+    onBuildStoryOpen,
+    onBuildStoryClose,
+}) => {
     const turnRef = useRef(null);
     const topRef = useRef(null);
     const underRef = useRef(null);
@@ -154,7 +159,6 @@ const PortfolioReveal = ({ children }) => {
     const openPage = useCallback(() => {
         if (isOpenRef.current || isAnimatingRef.current) return;
 
-        trackUmamiEvent("build_story_open", { entry_point: "page_peel" });
         // Mount the underneath page before the first visible turn frame.
         if (!hasOpenedBuildStory) flushSync(() => setHasOpenedBuildStory(true));
         setIsReturning(false);
@@ -289,6 +293,18 @@ const PortfolioReveal = ({ children }) => {
     }, [renderPosition, renderProgress]);
 
     useEffect(() => {
+        const frame = requestAnimationFrame(() => {
+            if (isBuildStoryOpen) {
+                openPage();
+            } else {
+                closePage();
+            }
+        });
+
+        return () => cancelAnimationFrame(frame);
+    }, [closePage, isBuildStoryOpen, isOpen, openPage]);
+
+    useEffect(() => {
         if (hasOpenedBuildStory) return undefined;
         if (window.matchMedia("(max-width: 899px)").matches) return undefined;
 
@@ -360,7 +376,7 @@ const PortfolioReveal = ({ children }) => {
                             ref={buildStoryRef}
                             isActive={isStoryActive}
                             returnButtonRef={returnButtonRef}
-                            onReturn={closePage}
+                            onReturn={onBuildStoryClose}
                         />
                     )}
                 </div>
@@ -402,7 +418,10 @@ const PortfolioReveal = ({ children }) => {
                 onPointerLeave={() => animateFoldTo(DEFAULT_FOLD)}
                 onClick={() => {
                     registerInteraction();
-                    openPage();
+                    trackUmamiEvent("build_story_open", {
+                        entry_point: "page_peel",
+                    });
+                    onBuildStoryOpen();
                 }}
             >
                 <span className="page-turn-trigger__hint">

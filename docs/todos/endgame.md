@@ -2,6 +2,7 @@
     - [x] X
     - [x] LinkedIn
     - [x] GitHub
+    - [x] YouTube
 
 - [x] Maybe move all stories in separated md file and project read from that md file?
 

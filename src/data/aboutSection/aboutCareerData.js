@@ -296,8 +296,8 @@ export const aboutCareerData = {
             },
         ],
     },
-    melkradar: {
-        id: "melkradar",
+    "melk-radar": {
+        id: "melk-radar",
         title: "MelkRadar",
         lightboxImage: melkRadarLogoLarge,
         summary:
@@ -380,8 +380,8 @@ export const aboutCareerData = {
         hasRelatedLinks: false,
         relatedLinks: [],
     },
-    settleitgpt: {
-        id: "settleitgpt",
+    "settleit-gpt": {
+        id: "settleit-gpt",
         title: "SettleitGPT",
         lightboxImage: settleitGptLogoLarge,
         summary:
