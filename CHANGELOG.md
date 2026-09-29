@@ -1,3 +1,10 @@
+## [1.32.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.32.0...v1.32.1) (2026-09-29)
+
+
+### Bug Fixes
+
+* update fabrexa about card and add new todo ([69b4495](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/69b449550baafd3d6892d6f3b0d9f8dac9bf7e9c))
+
 # [1.32.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.31.1...v1.32.0) (2026-09-24)
 
 
