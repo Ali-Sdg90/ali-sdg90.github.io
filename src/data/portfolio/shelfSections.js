@@ -94,7 +94,7 @@ export const shelfSections = [
             {
                 id: "fabrexa-ai-ollama",
                 title: "Fabrexa AI Ollama",
-                meta: "Local Telegram AI chatbot powered by Ollama",
+                meta: "Self-hosted Telegram bot powered by local models",
                 image: fabrexaThumbnail,
                 imageWidth: 1254,
                 imageHeight: 1254,

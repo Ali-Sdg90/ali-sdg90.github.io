@@ -131,3 +131,5 @@
 - [ ] Add a way to go back to the intro page. Maybe in about me section be the button of going to intro page?
 
 - [ ] Check if it is need to rename images for better SEO? or project use alt and it maps like that
+
+- [ ] Make all labels and link description use impacts template (especially for the featured projects section)
