@@ -6,6 +6,8 @@
 
 - [x] Maybe move all stories in separated md file and project read from that md file?
 
+- [x] ~~maybe add a lower resolution shelf image for initial load?~~
+
 - [ ] Write repo readme.md file
     - [x] Part 1
     - [ ] Part 2
@@ -27,8 +29,6 @@
 - [ ] do super dooper checking with agents for project structure and code quality at the end of the project
 
 - [ ] pad your back, ali you created something really cool and useful for your future. proud of you me in past and future :D
-
-- [ ] maybe add a lower resolution shelf image for initial load?
 
 - [ ] Remove the UnderConstructionBadge
 

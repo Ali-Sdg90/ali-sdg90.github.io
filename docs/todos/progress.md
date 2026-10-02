@@ -92,6 +92,17 @@
     - [x] spot tracker
     - [x] fabrexa-ollama
 
+- [x] ~~Add intro-simple page that redirect to shelf page with peal animation~~
+- [x] ~~Make it more Me. about my hobbies? other part of ali but not in the main page~~
+
+- [x] Improve intro animation for sections in the about sections
+
+- [x] ~~Maybe add sparkle or small doodles comes out of my image in the about me section?~~
+
+- [x] ~~Add a way to go back to the intro page. Maybe in about me section be the button of going to intro page?~~
+
+- [x] ~~Add intro page~~
+
 - [ ] create mobile version :\_(
 
 - [ ] Write all of the descriptions!
@@ -105,17 +116,12 @@
     - [ ] Add CSI YouTube video link in the resume
     - [ ] Add hash link to my career and projects in my resume.pdf file
 
-- [ ] Add intro-simple page that redirect to shelf page with peal animation
-    - [ ] Make it more Me. about my hobbies? other part of ali but not in the main page
-
 - [ ] shorten the about me text...
     - or maybe just refine it because the short version is going to be on intro page
 
 - [ ] Add Link-Tree url link and feature
 
 - [ ] Lighthouse and memory usage check for the site
-
-- [ ] Improve intro animation for sections in the about sections
 
 - [ ] Update galleries
     - [ ] Melkradar
@@ -126,15 +132,9 @@
 
 - [ ] Add more Whimsy!
 
-- [ ] Maybe add sparkle or small doodles comes out of my image in the about me section?
-
-- [ ] Add a way to go back to the intro page. Maybe in about me section be the button of going to intro page?
-
 - [ ] Check if it is need to rename images for better SEO? or project use alt and it maps like that
 
 - [ ] Make all labels and link description use impacts template (especially for the featured projects section)
-
-- [ ] Add intro page
 
 - [ ] Add 404 page for my url network that can redirect to portfolio or my github page
 
@@ -160,3 +160,5 @@
 - [ ] Maybe record a video for the "How this site created" page?
 
 - [ ] Fix https://ali-sdg.is-a.dev/mlk-monthly-report-generator/#shelf url address
+
+- [ ] Add don't show me again checkbox in the onboarding modal
