@@ -1,3 +1,10 @@
+## [1.33.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.33.0...v1.33.1) (2026-10-02)
+
+
+### Bug Fixes
+
+* update shelf left, update todos ([cef2138](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/cef21383b0c5a49644302b6069154ea32637bebc))
+
 # [1.33.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.32.1...v1.33.0) (2026-10-02)
 
 
