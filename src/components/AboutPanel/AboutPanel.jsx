@@ -37,7 +37,7 @@ const AboutPanelLanguageToggle = ({ activeLanguage, onLanguageChange }) => (
     </div>
 );
 
-const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
+const AboutPanel = ({ aboutMePulse, className, inert, selectedShelfItem }) => {
     const [activeLanguage, setActiveLanguage] = useState("EN");
     const selectedModule = selectedShelfItem
         ? getShelfItemDetailModule(selectedShelfItem)
@@ -150,6 +150,7 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
             id="about-panel"
             className={[
                 "about-panel",
+                className,
                 isShowingDetailModule ? "is-showing-detail-module" : "",
                 isSimpleDetailModule ? "is-simple-detail-module" : "",
                 isCompactDetailModule ? "is-compact-detail-module" : "",
@@ -159,6 +160,7 @@ const AboutPanel = ({ aboutMePulse, selectedShelfItem }) => {
                 .filter(Boolean)
                 .join(" ")}
             aria-labelledby="about-panel-title"
+            inert={inert}
             ref={aboutPanelRef}
         >
             <AboutPanelExpandToggle

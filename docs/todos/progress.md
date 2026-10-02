@@ -154,3 +154,9 @@
     - [ ] Stackoverflow?
 
 - [ ] Research if it is needed to add my social medias in the resume.pdf file and portfolio
+
+- [ ] Remove unnecessary slides in history class
+
+- [ ] Maybe record a video for the "How this site created" page?
+
+- [ ] Fix https://ali-sdg.is-a.dev/mlk-monthly-report-generator/#shelf url address

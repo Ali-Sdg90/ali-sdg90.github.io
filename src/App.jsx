@@ -5,6 +5,7 @@ import Intro from "./components/Intro/Intro";
 import AppVersion from "./components/layout/AppVersion";
 import DynamicBackground from "./components/layout/DynamicBackground";
 import MobileWipNotice from "./components/layout/MobileWipNotice";
+import PortfolioOnboarding from "./components/PortfolioOnboarding/PortfolioOnboarding";
 import PortfolioReveal from "./components/PortfolioReveal/PortfolioReveal";
 import Shelf from "./components/Shelf/Shelf";
 import UnderConstructionBadge from "./components/UnderConstructionBadge/UnderConstructionBadge";
@@ -32,8 +33,8 @@ const App = () => {
         navigateToCard,
         navigateToBuildStory,
     } = usePortfolioHashNavigation();
-    const [hasInteractedWithShelf, setHasInteractedWithShelf] = useState(false);
     const [aboutMePulse, setAboutMePulse] = useState(0);
+    const [isOnboardingOpen, setIsOnboardingOpen] = useState(true);
     const [hasSixteenTenDisplay, setHasSixteenTenDisplay] =
         useState(isSixteenTenDisplay);
 
@@ -62,8 +63,6 @@ const App = () => {
     }, [selectedShelfItem]);
 
     const handleShelfItemSelect = ({ sectionId, itemId }) => {
-        setHasInteractedWithShelf(true);
-
         const isClosingSelectedItem =
             selectedShelfItem?.sectionId === sectionId &&
             selectedShelfItem?.itemId === itemId;
@@ -124,7 +123,7 @@ const App = () => {
                         <DynamicBackground />
 
                         <main
-                            className="portfolio-hero"
+                            className={`portfolio-hero${isOnboardingOpen ? " is-onboarding-open" : ""}`}
                             aria-labelledby="hero-title"
                         >
                             <section className="hero-intro">
@@ -134,17 +133,25 @@ const App = () => {
                                 />
                             </section>
 
-                            <section className="hero-shelf">
+                            <section
+                                className="hero-shelf"
+                                inert={isOnboardingOpen}
+                            >
                                 <Shelf
-                                    hasInteracted={hasInteractedWithShelf}
                                     selectedShelfItem={selectedShelfItem}
                                     onShelfItemSelect={handleShelfItemSelect}
                                 />
                             </section>
 
                             <AboutPanel
+                                inert={isOnboardingOpen}
                                 selectedShelfItem={selectedShelfItemDetail}
                                 aboutMePulse={aboutMePulse}
+                            />
+
+                            <PortfolioOnboarding
+                                isOpen={isOnboardingOpen}
+                                onDismiss={() => setIsOnboardingOpen(false)}
                             />
                         </main>
                     </div>
