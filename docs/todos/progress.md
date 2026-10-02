@@ -82,7 +82,15 @@
 
 - [x] Add ability to zoom in lighthouse
 
-- [ ] maybe add a hidden "More about Ali" btn with password and encryption ??
+- [x] ~~maybe add a hidden "More about Ali" btn with password and encryption ??~~
+
+- [x] Add Website for fabrexa ai ollama repo
+
+- [x] finalize the repos readme that are mentioned in the projects section
+    - [x] ~~rps-battle-royale~~
+    - [x] ~~portfolio~~
+    - [x] spot tracker
+    - [x] fabrexa-ollama
 
 - [ ] create mobile version :\_(
 
@@ -95,19 +103,13 @@
 
 - [ ] finalize the resume.pdf file
     - [ ] Add CSI YouTube video link in the resume
-
-- [ ] finalize the repos readme that are mentioned in the projects section
-    - [x] ~~rps-battle-royale~~
-    - [ ] portfolio
-    - [ ] spot tracker
-    - [ ] fabrexa-ollama
-
-- [ ] Add Website for fabrexa ai ollama repo
+    - [ ] Add hash link to my career and projects in my resume.pdf file
 
 - [ ] Add intro-simple page that redirect to shelf page with peal animation
     - [ ] Make it more Me. about my hobbies? other part of ali but not in the main page
 
 - [ ] shorten the about me text...
+    - or maybe just refine it because the short version is going to be on intro page
 
 - [ ] Add Link-Tree url link and feature
 
@@ -124,8 +126,6 @@
 
 - [ ] Add more Whimsy!
 
-- [ ] Add hash link to my career and projects in my resume.pdf file
-
 - [ ] Maybe add sparkle or small doodles comes out of my image in the about me section?
 
 - [ ] Add a way to go back to the intro page. Maybe in about me section be the button of going to intro page?
@@ -133,3 +133,24 @@
 - [ ] Check if it is need to rename images for better SEO? or project use alt and it maps like that
 
 - [ ] Make all labels and link description use impacts template (especially for the featured projects section)
+
+- [ ] Add intro page
+
+- [ ] Add 404 page for my url network that can redirect to portfolio or my github page
+
+- [ ] Research if it is needed to create short description page for crawlers and llms?
+
+- [ ] Research my rules in mlk in my freelance era, and what should i add to my portfolio and resume.pdf and linkedin for it
+
+- [ ] Finalize my linkedin career journey and related sections
+
+- [ ] Research what about how can i improve my github profile for better seo and maybe adding .github to it?
+
+- [ ] Research my seo and how my socials are structured and how can i improve them
+    - [ ] YouTube
+    - [ ] X
+    - [ ] Spotify?
+    - [ ] instagram?
+    - [ ] Stackoverflow?
+
+- [ ] Research if it is needed to add my social medias in the resume.pdf file and portfolio

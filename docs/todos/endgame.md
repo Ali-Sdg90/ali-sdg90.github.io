@@ -22,7 +22,7 @@
     - [ ] remove un-used woff2 files
     - [ ] Remove MobileWipNotice
 
-- [ ] create makefile files
+- [ ] Maybe create makefile files?
 
 - [ ] do super dooper checking with agents for project structure and code quality at the end of the project
 
