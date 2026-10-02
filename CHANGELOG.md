@@ -1,3 +1,10 @@
+# [1.33.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.32.1...v1.33.0) (2026-10-02)
+
+
+### Features
+
+* add new site onboarding, add idea for mobile view ([d2fe6b5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d2fe6b5c491b0182fd28dd555df4fa1914b1c30c))
+
 ## [1.32.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.32.0...v1.32.1) (2026-09-29)
 
 
