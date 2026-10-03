@@ -37,7 +37,7 @@ const OnboardingDismissControls = ({ disabled, onDismiss }) => {
                 >
                     <HiCheck />
                 </span>
-                <span>Don’t show this again</span>
+                <span>Don’t show this panel again</span>
             </label>
 
             <button

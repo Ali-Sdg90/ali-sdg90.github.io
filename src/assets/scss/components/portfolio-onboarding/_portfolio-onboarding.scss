@@ -7,11 +7,11 @@
 
 .portfolio-onboarding {
     position: fixed;
-    top: max(2rem, #{hero-stage-size(46)});
     right: max(1rem, #{hero-stage-size(95)});
-    bottom: max(1.5rem, #{hero-stage-size(34)});
+    bottom: calc(hero-stage-size(35) + var(--hero-stage-lift));
     left: max(1rem, #{hero-stage-size(420)});
     z-index: 30;
+    height: hero-stage-size(890);
     overflow: hidden;
     border: 1px solid rgba(45, 163, 255, 0.92);
     border-radius: hero-stage-size(28);
