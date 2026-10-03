@@ -1,3 +1,10 @@
+## [1.34.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.34.2...v1.34.3) (2026-10-03)
+
+
+### Bug Fixes
+
+* update position of shelf, finalize aboutData and profileLinks, use better implementation of llms.txt, update and finalize sitemap file ([70bf429](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/70bf42925ddcce5fffcb367abf8de8acac639eaa))
+
 ## [1.34.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.34.1...v1.34.2) (2026-10-03)
 
 
