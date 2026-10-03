@@ -1,3 +1,10 @@
+## [1.34.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.34.3...v1.34.4) (2026-10-03)
+
+
+### Bug Fixes
+
+* fix two focus based related browser warnings ([69d6e4c](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/69d6e4c587a12b9b6ed896fee8bf31ba4f95d64c))
+
 ## [1.34.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.34.2...v1.34.3) (2026-10-03)
 
 
