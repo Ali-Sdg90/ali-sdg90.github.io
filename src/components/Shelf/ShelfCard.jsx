@@ -6,6 +6,7 @@ const ShelfCard = ({
     cardHeight,
     cardWidth,
     sectionId,
+    isAccessible = true,
     isSelected = false,
     onSelect,
 }) => {
@@ -23,7 +24,7 @@ const ShelfCard = ({
     if (sectionId === "career-journey") {
         return (
             <article
-                aria-pressed={isSelected}
+                aria-pressed={isAccessible ? isSelected : undefined}
                 className={[
                     "shelf-card",
                     "shelf-card-career-journey",
@@ -33,9 +34,9 @@ const ShelfCard = ({
                     .join(" ")}
                 onClick={handleSelect}
                 onKeyDown={handleKeyDown}
-                role="button"
+                role={isAccessible ? "button" : undefined}
                 style={{ flexBasis: cardWidth, height: cardHeight }}
-                tabIndex={0}
+                tabIndex={isAccessible ? 0 : undefined}
             >
                 <div className="shelf-card-career-year">{item.year}</div>
 
@@ -64,13 +65,13 @@ const ShelfCard = ({
 
     return (
         <article
-            aria-pressed={isSelected}
+            aria-pressed={isAccessible ? isSelected : undefined}
             className={cardClassName}
             onClick={handleSelect}
             onKeyDown={handleKeyDown}
-            role="button"
+            role={isAccessible ? "button" : undefined}
             style={{ flexBasis: cardWidth, height: cardHeight }}
-            tabIndex={0}
+            tabIndex={isAccessible ? 0 : undefined}
         >
             {shouldShowImage && <ShelfCardImage item={item} />}
             {sectionId === "achievements" && Icon && (

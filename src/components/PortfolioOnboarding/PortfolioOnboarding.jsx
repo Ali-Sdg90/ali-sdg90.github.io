@@ -30,7 +30,6 @@ const PortfolioOnboarding = ({ isOpen, onDismiss }) => {
             role="dialog"
             aria-modal="true"
             aria-labelledby="portfolio-onboarding-title"
-            aria-hidden={!isOpen}
             inert={!isOpen}
         >
             <header className="portfolio-onboarding__header">

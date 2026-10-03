@@ -48,6 +48,7 @@ const ShelfCardTrack = ({
                                     cardHeight={section.cardHeight}
                                     cardWidth={section.cardWidth}
                                     sectionId={section.id}
+                                    isAccessible={copyIndex === centerSetIndex}
                                     isSelected={
                                         selectedShelfItem?.sectionId ===
                                             section.id &&

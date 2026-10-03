@@ -93,6 +93,7 @@
     - [x] fabrexa-ollama
 
 - [x] ~~Add intro-simple page that redirect to shelf page with peal animation~~
+
 - [x] ~~Make it more Me. about my hobbies? other part of ali but not in the main page~~
 
 - [x] Improve intro animation for sections in the about sections
@@ -162,3 +163,7 @@
 - [ ] Fix https://ali-sdg.is-a.dev/mlk-monthly-report-generator/#shelf url address
 
 - [ ] Fix text overflow in stories in about section
+
+- [ ] Maybe move fabrexa one up
+
+- [ ] Maybe Add 3 more images for fabrexa
