@@ -84,8 +84,8 @@
 
     &__target {
         position: absolute;
-        top: 8%;
-        bottom: 11%;
+        top: 10%;
+        bottom: 16%;
         z-index: 1;
         border: 1px solid rgba(255, 255, 255, 0.62);
         border-radius: hero-stage-size(18);
@@ -101,7 +101,7 @@
 
         &--shelf {
             left: 3%;
-            width: 61%;
+            width: 60%;
         }
 
         &--about {
@@ -187,56 +187,10 @@
         line-height: 1;
         transform: translate(-50%, -50%);
     }
-
-    &__dismiss {
-        position: absolute;
-        left: 50%;
-        bottom: 3.8%;
-        min-width: hero-stage-size(154);
-        min-height: hero-stage-size(52);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: hero-stage-size(11) hero-stage-size(24);
-        border: 1px solid rgba(127, 207, 255, 0.9);
-        border-radius: hero-stage-size(10);
-        color: $color-text;
-        background: linear-gradient(135deg, #0068ff, #1688ff);
-        box-shadow:
-            inset 0 1px 0 rgba(255, 255, 255, 0.2),
-            0 0 hero-stage-size(18) rgba(22, 136, 255, 0.3),
-            0 hero-stage-size(10) hero-stage-size(26) rgba(0, 94, 230, 0.3);
-        font-family: inherit;
-        font-size: hero-stage-size(17);
-        font-weight: 600;
-        line-height: 1;
-        cursor: pointer;
-        transform: translateX(-50%);
-        transition:
-            background $motion-fast $ease-out,
-            border-color $motion-fast $ease-out,
-            transform $motion-fast $ease-out;
-
-        &:hover {
-            border-color: rgba(170, 220, 255, 0.86);
-            background: linear-gradient(135deg, #0872ff, #2692ff);
-            transform: translateX(-50%) translateY(hero-stage-size(-1));
-        }
-
-        &:active {
-            transform: translateX(-50%) translateY(0);
-        }
-
-        &:focus-visible {
-            outline: hero-stage-size(2) solid rgba(150, 211, 255, 0.92);
-            outline-offset: hero-stage-size(4);
-        }
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .portfolio-onboarding,
-    .portfolio-onboarding__dismiss {
+    .portfolio-onboarding {
         transition-duration: 1ms;
     }
 }

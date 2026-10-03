@@ -1,0 +1,133 @@
+@use "../../base/variables" as *;
+@use "../layout/hero-stage" as *;
+
+.onboarding-dismiss-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 3.8%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: hero-stage-size(14);
+    transform: translateX(-50%);
+    user-select: none;
+
+    &__preference {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: hero-stage-size(9);
+        color: rgba(215, 228, 244, 0.82);
+        font-size: hero-stage-size(13.5);
+        font-weight: 500;
+        line-height: 1.2;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: color $motion-fast $ease-out;
+
+        input {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        &:hover,
+        &:has(input:focus-visible) {
+            color: rgba(240, 247, 255, 0.96);
+        }
+    }
+
+    &__checkbox {
+        width: hero-stage-size(20);
+        aspect-ratio: 1;
+        display: inline-grid;
+        flex: 0 0 auto;
+        place-items: center;
+        border: 1px solid rgba(127, 207, 255, 0.58);
+        border-radius: hero-stage-size(6);
+        color: transparent;
+        background: rgba(5, 24, 48, 0.78);
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.08),
+            0 0 hero-stage-size(12) transparent;
+        transition:
+            color $motion-fast $ease-out,
+            background $motion-fast $ease-out,
+            border-color $motion-fast $ease-out,
+            box-shadow $motion-fast $ease-out,
+            transform $motion-fast $ease-out;
+
+        svg {
+            width: 72%;
+            height: 72%;
+            stroke-width: 1.2;
+        }
+    }
+
+    &__preference input:checked + &__checkbox {
+        border-color: rgba(151, 220, 255, 0.98);
+        color: #ffffff;
+        background: linear-gradient(145deg, #0872ff, #2ba2ff);
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.3),
+            0 0 hero-stage-size(14) rgba(22, 136, 255, 0.48);
+        transform: scale(1.04);
+    }
+
+    &__preference input:focus-visible + &__checkbox {
+        outline: hero-stage-size(2) solid rgba(150, 211, 255, 0.92);
+        outline-offset: hero-stage-size(3);
+    }
+
+    &__button {
+        min-width: hero-stage-size(154);
+        min-height: hero-stage-size(52);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: hero-stage-size(11) hero-stage-size(24);
+        border: 1px solid rgba(127, 207, 255, 0.9);
+        border-radius: hero-stage-size(10);
+        color: $color-text;
+        background: linear-gradient(135deg, #0068ff, #1688ff);
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            0 0 hero-stage-size(18) rgba(22, 136, 255, 0.3),
+            0 hero-stage-size(10) hero-stage-size(26) rgba(0, 94, 230, 0.3);
+        font-family: inherit;
+        font-size: hero-stage-size(17);
+        font-weight: 600;
+        line-height: 1;
+        cursor: pointer;
+        transition:
+            background $motion-fast $ease-out,
+            border-color $motion-fast $ease-out,
+            transform $motion-fast $ease-out;
+
+        &:hover {
+            border-color: rgba(170, 220, 255, 0.86);
+            background: linear-gradient(135deg, #0872ff, #2692ff);
+            transform: translateY(hero-stage-size(-1));
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+
+        &:focus-visible {
+            outline: hero-stage-size(2) solid rgba(150, 211, 255, 0.92);
+            outline-offset: hero-stage-size(4);
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .onboarding-dismiss-controls__preference,
+    .onboarding-dismiss-controls__checkbox,
+    .onboarding-dismiss-controls__button {
+        transition-duration: 1ms;
+    }
+}

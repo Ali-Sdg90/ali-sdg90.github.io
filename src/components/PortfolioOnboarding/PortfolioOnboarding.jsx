@@ -1,21 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { HiSparkles } from "react-icons/hi2";
+
+import OnboardingDismissControls from "../OnboardingDismissControls/OnboardingDismissControls";
 
 const ONBOARDING_EXIT_DURATION_MS = 760;
 
 const PortfolioOnboarding = ({ isOpen, onDismiss }) => {
-    const dismissButtonRef = useRef(null);
     const [shouldRender, setShouldRender] = useState(true);
-
-    useEffect(() => {
-        if (!isOpen) return undefined;
-
-        const focusFrame = window.requestAnimationFrame(() => {
-            dismissButtonRef.current?.focus({ preventScroll: true });
-        });
-
-        return () => window.cancelAnimationFrame(focusFrame);
-    }, [isOpen]);
 
     useEffect(() => {
         if (isOpen) return undefined;
@@ -85,15 +76,10 @@ const PortfolioOnboarding = ({ isOpen, onDismiss }) => {
                 </article>
             </div>
 
-            <button
-                className="portfolio-onboarding__dismiss"
-                type="button"
+            <OnboardingDismissControls
                 disabled={!isOpen}
-                ref={dismissButtonRef}
-                onClick={onDismiss}
-            >
-                Got it
-            </button>
+                onDismiss={onDismiss}
+            />
         </section>
     );
 };

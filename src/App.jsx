@@ -11,9 +11,10 @@ import Shelf from "./components/Shelf/Shelf";
 import UnderConstructionBadge from "./components/UnderConstructionBadge/UnderConstructionBadge";
 import { shelfSections } from "./data/portfolio/shelfSections";
 import usePortfolioHashNavigation from "./hooks/usePortfolioHashNavigation";
-import { getShelfItemId } from "./utils/getShelfItemId";
-import { setDocumentTitle } from "./utils/setDocumentTitle";
 import { trackUmamiEvent } from "./utils/analytics";
+import { getShelfItemId } from "./utils/getShelfItemId";
+import { shouldShowPortfolioOnboarding } from "./utils/portfolioOnboardingPreference";
+import { setDocumentTitle } from "./utils/setDocumentTitle";
 
 setDocumentTitle();
 
@@ -34,7 +35,9 @@ const App = () => {
         navigateToBuildStory,
     } = usePortfolioHashNavigation();
     const [aboutMePulse, setAboutMePulse] = useState(0);
-    const [isOnboardingOpen, setIsOnboardingOpen] = useState(true);
+    const [isOnboardingOpen, setIsOnboardingOpen] = useState(
+        shouldShowPortfolioOnboarding,
+    );
     const [hasSixteenTenDisplay, setHasSixteenTenDisplay] =
         useState(isSixteenTenDisplay);
 
