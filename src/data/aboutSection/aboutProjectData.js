@@ -9,7 +9,6 @@ import quickMathLarge from "../../assets/images/large-images/projects/quick-math
 import spotTasteLarge from "../../assets/images/large-images/projects/spot.png";
 import ticTacToeLarge from "../../assets/images/large-images/projects/xo.png";
 import csCalendarLarge from "../../assets/images/large-images/projects/cs-calender.png";
-import mlkDvrBotLarge from "../../assets/images/large-images/projects/mlk-dvr-bot.png";
 import gradientPaintThumbnail from "../../assets/images/thumbnails/projects/cgp.jpg";
 import csClubThumbnail from "../../assets/images/thumbnails/projects/cs-club.jpg";
 import csQueueThumbnail from "../../assets/images/thumbnails/projects/cs-queue.jpg";
@@ -21,7 +20,6 @@ import quickMathThumbnail from "../../assets/images/thumbnails/projects/quick-ma
 import spotTasteThumbnail from "../../assets/images/thumbnails/projects/spot.jpg";
 import ticTacToeThumbnail from "../../assets/images/thumbnails/projects/xo.jpg";
 import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
-import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
 import { projectGalleryImages } from "./projectGalleryData";
 import projectCsQueueCalendarStoryEN from "../stories/en/projects/cs-queue-calendar.md?raw";
 import projectCsQueueCalendarStoryFA from "../stories/fa/projects/cs-queue-calendar.md?raw";
@@ -139,71 +137,6 @@ export const aboutProjectData = {
                 label: "Changelog",
                 text: "Version history, fixes, and improvements",
                 url: "https://github.com/Ali-Sdg90/health-data-relay/blob/main/CHANGELOG.md",
-            },
-        ],
-    },
-    "mlk-dvr-receiver": {
-        id: "mlk-dvr-receiver",
-        title: "MLK DVR Receiver",
-        subtitle: "Automated and secure Divar verification code delivery",
-        year: "2026",
-        image: mlkDvrBotThumbnail,
-        lightboxImage: mlkDvrBotLarge,
-        imageWidth: 1254,
-        imageHeight: 1254,
-        lightboxWidth: 1254,
-        lightboxHeight: 1254,
-        summary:
-            "An Android-to-Telegram delivery system that captures Divar verification SMS messages and routes each code privately through a secure Node.js backend.",
-        links: [
-            {
-                label: "GitHub Repo",
-                url: "https://github.com/Ali-Sdg90/mlk-dvr-receiver",
-            },
-        ],
-        tech: [
-            "Kotlin",
-            "Android SDK",
-            "Node.js",
-            "Express",
-            "Telegram Bot API",
-        ],
-        features: [
-            "Automates the Divar verification code workflow from SMS reception to private Telegram delivery",
-            "Matches each verification code to the correct active requester and keeps codes out of group chats",
-            "Creates a traceable history of code requests and delivery outcomes for accountability and auditing",
-            "Built for reliable unattended operation with background recovery, authenticated backend communication, and automated delivery",
-            "Automatically delivered 212 codes in its first 14 days, 2.86 times the 74 codes shared manually during the previous 14-day period",
-        ],
-        galleryImages: projectGalleryImages["mlk-dvr-receiver"],
-        storyEN: "",
-        storyFA: "",
-        hasRelatedLinks: true,
-        relatedLinks: [
-            {
-                label: "Telegram",
-                text: "Open the MLK DVR Receiver bot",
-                url: "https://t.me/mlk_dvr_sms_bot",
-            },
-            {
-                label: "Deployment",
-                text: "Deployment and security guide",
-                url: "https://github.com/Ali-Sdg90/mlk-dvr-receiver/blob/main/docs/DEPLOYMENT.md",
-            },
-            {
-                label: "Onboarding Video",
-                text: "Installation and usage walkthrough",
-                url: "https://youtu.be/_IXXjlE-Cyg?si=YTcUeUdOdqjAaL5N",
-            },
-            {
-                label: "Process Flowcharts - EN",
-                text: "System architecture and flow in English",
-                url: "https://github.com/Ali-Sdg90/mlk-dvr-receiver/blob/main/docs/system-flow.md",
-            },
-            {
-                label: "Process Flowcharts - FA",
-                text: "System architecture and flow in Farsi",
-                url: "https://github.com/Ali-Sdg90/mlk-dvr-receiver/blob/main/docs/system-flow-fa.md",
             },
         ],
     },

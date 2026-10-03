@@ -103,6 +103,8 @@
 
 - [x] ~~Add intro page~~
 
+- [x] Add don't show me again checkbox in the onboarding modal
+
 - [ ] create mobile version :\_(
 
 - [ ] Write all of the descriptions!
@@ -160,5 +162,3 @@
 - [ ] Maybe record a video for the "How this site created" page?
 
 - [ ] Fix https://ali-sdg.is-a.dev/mlk-monthly-report-generator/#shelf url address
-
-- [ ] Add don't show me again checkbox in the onboarding modal

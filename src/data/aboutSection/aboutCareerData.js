@@ -18,8 +18,6 @@ import melkRadarChartsLarge from "../../assets/images/gallery-images/large-image
 import melkRadarDesignLarge from "../../assets/images/gallery-images/large-images/career/mlk/desing.png";
 import melkRadarKhodroRadarLarge from "../../assets/images/gallery-images/large-images/career/mlk/khd.png";
 import melkRadarMapboxLarge from "../../assets/images/gallery-images/large-images/career/mlk/mapbox.png";
-import melkRadarDvrReceiverAppLarge from "../../assets/images/gallery-images/large-images/projects/dvrbot/img1.png";
-import melkRadarDvrReceiverTelegramLarge from "../../assets/images/gallery-images/large-images/projects/dvrbot/img2.png";
 import csiClubBot1Small from "../../assets/images/gallery-images/small-images/career/csi/club-bot1.jpg";
 import csiClubBot2Small from "../../assets/images/gallery-images/small-images/career/csi/club-bot2.jpg";
 import csiContributionSmall from "../../assets/images/gallery-images/small-images/career/csi/conterbution.jpg";
@@ -36,8 +34,6 @@ import melkRadarChartsSmall from "../../assets/images/gallery-images/small-image
 import melkRadarDesignSmall from "../../assets/images/gallery-images/small-images/career/mlk/desing.jpg";
 import melkRadarKhodroRadarSmall from "../../assets/images/gallery-images/small-images/career/mlk/khd.jpg";
 import melkRadarMapboxSmall from "../../assets/images/gallery-images/small-images/career/mlk/mapbox.jpg";
-import melkRadarDvrReceiverAppSmall from "../../assets/images/gallery-images/small-images/projects/drvbot/img1.jpg";
-import melkRadarDvrReceiverTelegramSmall from "../../assets/images/gallery-images/small-images/projects/drvbot/img2.jpg";
 import careerCsInternshipStoryEN from "../stories/en/career/cs-internship.md?raw";
 import careerCsInternshipStoryFA from "../stories/fa/career/cs-internship.md?raw";
 import careerMelkradarStoryEN from "../stories/en/career/melkradar.md?raw";
@@ -46,6 +42,8 @@ import careerDadehPardaziAzmoudehKaranStoryEN from "../stories/en/career/dadeh-p
 import careerDadehPardaziAzmoudehKaranStoryFA from "../stories/fa/career/dadeh-pardazi-azmoudeh-karan.md?raw";
 import careerSettleitgptStoryEN from "../stories/en/career/settleitgpt.md?raw";
 import careerSettleitgptStoryFA from "../stories/fa/career/settleitgpt.md?raw";
+
+import placeholderImage from "../../assets/images/global/placeholder.jpg";
 
 const galleryImage = (
     src,
@@ -195,22 +193,22 @@ const melkRadarMapbox = galleryImage(
     1918,
     904,
 );
-const melkRadarDvrReceiverApp = galleryImage(
-    melkRadarDvrReceiverAppSmall,
-    melkRadarDvrReceiverAppLarge,
-    1220,
-    2712,
-    1220,
-    2712,
-);
-const melkRadarDvrReceiverTelegram = galleryImage(
-    melkRadarDvrReceiverTelegramSmall,
-    melkRadarDvrReceiverTelegramLarge,
-    1053,
-    1477,
-    1053,
-    1477,
-);
+// const melkRadarDvrReceiverApp = galleryImage(
+//     melkRadarDvrReceiverAppSmall,
+//     melkRadarDvrReceiverAppLarge,
+//     1220,
+//     2712,
+//     1220,
+//     2712,
+// );
+// const melkRadarDvrReceiverTelegram = galleryImage(
+//     melkRadarDvrReceiverTelegramSmall,
+//     melkRadarDvrReceiverTelegramLarge,
+//     1053,
+//     1477,
+//     1053,
+//     1477,
+// );
 
 export const aboutCareerData = {
     "cs-internship": {
@@ -318,8 +316,8 @@ export const aboutCareerData = {
             melkRadarCharts,
             melkRadarDesign,
             melkRadarKhodroRadar,
-            melkRadarDvrReceiverApp,
-            melkRadarDvrReceiverTelegram,
+            placeholderImage,
+            placeholderImage,
         ],
         storyTitle: "Story",
         storyEN: careerMelkradarStoryEN.trim(),

@@ -18,13 +18,6 @@ import healthDataRelayImage4 from "../../assets/images/gallery-images/large-imag
 import healthDataRelayImage5 from "../../assets/images/gallery-images/large-images/projects/healthdr/img5.png";
 import healthDataRelayImage6 from "../../assets/images/gallery-images/large-images/projects/healthdr/img6.png";
 
-import dvrReceiverThumbnail1 from "../../assets/images/gallery-images/small-images/projects/drvbot/img1.jpg";
-import dvrReceiverThumbnail2 from "../../assets/images/gallery-images/small-images/projects/drvbot/img2.jpg";
-import dvrReceiverThumbnail3 from "../../assets/images/gallery-images/small-images/projects/drvbot/img3.jpg";
-import dvrReceiverImage1 from "../../assets/images/gallery-images/large-images/projects/dvrbot/img1.png";
-import dvrReceiverImage2 from "../../assets/images/gallery-images/large-images/projects/dvrbot/img2.png";
-import dvrReceiverImage3 from "../../assets/images/gallery-images/large-images/projects/dvrbot/img3.png";
-
 import spotTasteThumbnail1 from "../../assets/images/gallery-images/small-images/projects/spot/img1.jpg";
 import spotTasteThumbnail2 from "../../assets/images/gallery-images/small-images/projects/spot/img2.jpg";
 import spotTasteThumbnail3 from "../../assets/images/gallery-images/small-images/projects/spot/img3.jpg";
@@ -172,29 +165,6 @@ export const projectGalleryImages = {
             "Health Data Relay APKPure app listing",
             903,
             908,
-        ),
-    ],
-    "mlk-dvr-receiver": [
-        galleryImage(
-            dvrReceiverThumbnail1,
-            dvrReceiverImage1,
-            "MLK DVR Receiver Android configuration and activity screen",
-            1220,
-            2712,
-        ),
-        galleryImage(
-            dvrReceiverThumbnail2,
-            dvrReceiverImage2,
-            "MLK DVR Receiver Telegram verification workflow",
-            1053,
-            1477,
-        ),
-        galleryImage(
-            dvrReceiverThumbnail3,
-            dvrReceiverImage3,
-            "MLK DVR Receiver system flowchart",
-            4099,
-            4693,
         ),
     ],
     "spot-taste-tracker": [
