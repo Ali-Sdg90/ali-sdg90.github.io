@@ -1,3 +1,10 @@
+## [1.34.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.34.0...v1.34.1) (2026-10-03)
+
+
+### Bug Fixes
+
+* remove mlk dvr receiver from portfolio ([d5e7fa1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d5e7fa1f2a5d15f470eecff760cca514765e10e5))
+
 # [1.34.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.33.1...v1.34.0) (2026-10-03)
 
 
