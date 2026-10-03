@@ -1,3 +1,10 @@
+## [1.34.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.34.1...v1.34.2) (2026-10-03)
+
+
+### Bug Fixes
+
+* update about me text, fix onboarding section scale unites, update onboarding checkbox label ([136e05f](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/136e05ff4bcfe42322ea57738456368537c3c74a))
+
 ## [1.34.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.34.0...v1.34.1) (2026-10-03)
 
 
