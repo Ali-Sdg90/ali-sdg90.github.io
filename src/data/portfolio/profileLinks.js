@@ -60,7 +60,7 @@ export const socialItems = [
         id: "spotify",
         icon: FaSpotify,
         label: "Spotify",
-        href: "https://open.spotify.com/user/lttt11sgbz5h0ecxyt0u7mmri?si=d6749292a7724b77",
+        href: "https://open.spotify.com/user/lttt11sgbz5h0ecxyt0u7mmri",
     },
     {
         id: "instagram",

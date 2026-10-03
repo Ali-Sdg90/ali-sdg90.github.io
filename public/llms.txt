@@ -1,21 +1,25 @@
-# Ali Sadeghi Interactive Portfolio
+# Ali Sadeghi Portfolio
 
-> Ali Sadeghi's personal portfolio presents selected software projects, professional experience, measurable impact, technical tools, and a bilingual account of how the site was designed and built.
+Ali Sadeghi's interactive portfolio presents selected software projects, professional experience, technical tools, and a concise account of how the site was built.
 
-The canonical site is https://ali-sdg.is-a.dev/. It is a single-page React application with English and Persian content. Treat project dates, metrics, and descriptions as portfolio claims made by the site owner. The repository and original content use a custom all-rights-reserved license; this file grants no additional rights.
+Canonical site: https://ali-sdg.is-a.dev/
 
-## Primary resources
+Dates, metrics, experience details, and project descriptions are claims published by the portfolio owner.
 
-- [Live portfolio](https://ali-sdg.is-a.dev/): The canonical interactive website.
-- [English resume](https://ali-sdg.is-a.dev/resume/ali-sadeghi-resume-en.pdf): The current public resume in PDF format.
-- [Project overview](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/README.md): Architecture, features, local setup, and development workflow.
+Copyright (c) 2026 Ali Sadeghi. All rights reserved. The repository and original portfolio content are governed by the custom license linked below; this index grants no additional rights.
 
-## Project records
+## Portfolio content
 
-- [Changelog](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/CHANGELOG.md): Published release history.
-- [Source repository](https://github.com/Ali-Sdg90/ali-sdg90.github.io): Public source and issue history.
+- [About Ali](/llms/about.md)
+- [Featured projects](/llms/projects.md)
+- [Experience](/llms/experience.md)
+- [Technology stack](/llms/stack.md)
 
-## Optional
+## Primary links
 
-- [License](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/LICENSE): Terms governing the repository and original portfolio content.
-- [Copyright and third-party notices](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/NOTICE): Ownership and bundled font attribution.
+- [Live portfolio](https://ali-sdg.is-a.dev/)
+- [English resume](https://ali-sdg.is-a.dev/resume/ali-sadeghi-resume-en.pdf)
+- [Source repository](https://github.com/Ali-Sdg90/ali-sdg90.github.io)
+- [LICENSE](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/LICENSE)
+- [NOTICE](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/NOTICE)
+- [CHANGELOG](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/CHANGELOG.md)

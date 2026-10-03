@@ -8,6 +8,8 @@
 
 - [x] ~~maybe add a lower resolution shelf image for initial load?~~
 
+- [x] Maybe add Agentic browsing and robot file
+
 - [ ] Write repo readme.md file
     - [x] Part 1
     - [ ] Part 2
@@ -17,8 +19,6 @@
 - [ ] improve SEO of the site
     - [x] Part 1
     - [ ] Part 2
-
-- [ ] Maybe add Agentic browsing and robot file
 
 - [ ] Delete unused files in the repo
     - [ ] remove un-used woff2 files

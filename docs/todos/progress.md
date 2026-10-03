@@ -105,6 +105,13 @@
 
 - [x] Add don't show me again checkbox in the onboarding modal
 
+- [x] shorten the about me text...
+    - ~~or maybe just refine it because the short version is going to be on intro page~~
+
+- [x] Check if it is need to rename images for better SEO? or project use alt and it maps like that - No. Alt is enough for SEO.
+
+- [x] Research if it is needed to create short description page for crawlers and llms? - No, it is good enough.
+
 - [ ] create mobile version :\_(
 
 - [ ] Write all of the descriptions!
@@ -117,9 +124,6 @@
 - [ ] finalize the resume.pdf file
     - [ ] Add CSI YouTube video link in the resume
     - [ ] Add hash link to my career and projects in my resume.pdf file
-
-- [ ] shorten the about me text...
-    - or maybe just refine it because the short version is going to be on intro page
 
 - [ ] Add Link-Tree url link and feature
 
@@ -134,13 +138,9 @@
 
 - [ ] Add more Whimsy!
 
-- [ ] Check if it is need to rename images for better SEO? or project use alt and it maps like that
-
 - [ ] Make all labels and link description use impacts template (especially for the featured projects section)
 
 - [ ] Add 404 page for my url network that can redirect to portfolio or my github page
-
-- [ ] Research if it is needed to create short description page for crawlers and llms?
 
 - [ ] Research my rules in mlk in my freelance era, and what should i add to my portfolio and resume.pdf and linkedin for it
 
@@ -155,10 +155,10 @@
     - [ ] instagram?
     - [ ] Stackoverflow?
 
-- [ ] Research if it is needed to add my social medias in the resume.pdf file and portfolio
-
 - [ ] Remove unnecessary slides in history class
 
 - [ ] Maybe record a video for the "How this site created" page?
 
 - [ ] Fix https://ali-sdg.is-a.dev/mlk-monthly-report-generator/#shelf url address
+
+- [ ] Fix text overflow in stories in about section

@@ -2,9 +2,10 @@
 
 .hero-shelf {
     position: fixed;
-    left: shelf-cqw(-15);
+    left: shelf-cqw(-6);
+    left: shelf-cqw(-20);
     right: 0;
-    bottom: var(--hero-stage-lift);
+    bottom: calc(var(--hero-stage-lift) - shelf-cqw(2));
     z-index: 3;
     width: 100%;
     pointer-events: none;
@@ -15,7 +16,8 @@
     z-index: 1;
 
     // Change size of the Shelf
-    width: var(--hero-stage-width);
+    // width: calc(var(--hero-stage-width) * 1.00);
+    width: calc(var(--hero-stage-width) * 1.02);
 
     max-width: none;
     margin-inline: auto;

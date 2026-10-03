@@ -192,6 +192,7 @@ const ProjectStory = ({
     title = "Story",
     titleFA,
     isImpactStory = false,
+    hasTallPreview = false,
 }) => {
     const [isReaderOpen, setIsReaderOpen] = useState(false);
     const readerTriggerRef = useRef(null);
@@ -210,6 +211,7 @@ const ProjectStory = ({
             className={[
                 "featured-project-section",
                 isImpactStory ? "is-impact-story" : "",
+                hasTallPreview ? "has-tall-story-preview" : "",
             ]
                 .filter(Boolean)
                 .join(" ")}
@@ -347,6 +349,7 @@ const FeaturedProjectAbout = ({
     const project =
         section?.id === "projects" ? { id: item.id, title: item.title } : null;
     const isImpactDetail = section?.id === "achievements";
+    const hasTallStoryPreview = isImpactDetail || section?.id === "tech-stack";
     const summary = detail.summary;
 
     return (
@@ -393,6 +396,7 @@ const FeaturedProjectAbout = ({
                 title={detail.storyTitle}
                 titleFA={detail.storyTitleFA}
                 isImpactStory={isImpactDetail}
+                hasTallPreview={hasTallStoryPreview}
             />
             {detail.hasRelatedLinks && (
                 <RelatedLinks links={detail.relatedLinks} project={project} />
