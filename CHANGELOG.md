@@ -1,3 +1,10 @@
+# [1.34.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.33.1...v1.34.0) (2026-10-03)
+
+
+### Features
+
+* add OnboardingDismissControl ([ae561ed](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/ae561ed3a1b6075c62c4627567d91e9550e7055f))
+
 ## [1.33.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.33.0...v1.33.1) (2026-10-02)
 
 
