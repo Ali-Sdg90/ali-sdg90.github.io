@@ -4,7 +4,8 @@ import AboutPanel from "./components/AboutPanel/AboutPanel";
 import Intro from "./components/Intro/Intro";
 import AppVersion from "./components/layout/AppVersion";
 import DynamicBackground from "./components/layout/DynamicBackground";
-import MobileWipNotice from "./components/layout/MobileWipNotice";
+// import MobileWipNotice from "./components/layout/MobileWipNotice";
+import MobilePortfolio from "./components/MobilePortfolio/MobilePortfolio";
 import PortfolioOnboarding from "./components/PortfolioOnboarding/PortfolioOnboarding";
 import PortfolioReveal from "./components/PortfolioReveal/PortfolioReveal";
 import Shelf from "./components/Shelf/Shelf";
@@ -109,7 +110,17 @@ const App = () => {
 
     return (
         <>
-            <MobileWipNotice />
+            {/* Kept for later cleanup after the dedicated mobile portfolio ships. */}
+            {/* <MobileWipNotice /> */}
+
+            <MobilePortfolio
+                view={view}
+                selectedShelfItem={selectedShelfItemDetail}
+                onShelfItemSelect={handleShelfItemSelect}
+                onShelfItemClose={navigateToShelf}
+                onBuildStoryOpen={navigateToBuildStory}
+                onBuildStoryClose={navigateToShelf}
+            />
 
             <div className="desktop-portfolio">
                 <PortfolioReveal

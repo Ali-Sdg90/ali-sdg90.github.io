@@ -1,0 +1,83 @@
+@use "../../base/variables" as *;
+
+@media (max-width: 899px) {
+    .mobile-build-entry {
+        margin: 6.5rem var(--mobile-gutter) 0;
+        padding: 1.35rem;
+        border: 1px solid rgba(123, 151, 255, 0.25);
+        border-radius: 1.35rem;
+        background:
+            radial-gradient(
+                circle at 90% 10%,
+                rgba(82, 104, 255, 0.19),
+                transparent 13rem
+            ),
+            linear-gradient(
+                145deg,
+                rgba(25, 30, 61, 0.88),
+                rgba(8, 13, 27, 0.94)
+            );
+        box-shadow: 0 1.3rem 4rem rgba(0, 0, 0, 0.3);
+
+        h2 {
+            max-width: 15ch;
+            margin: 0;
+            font-size: clamp(1.75rem, 8vw, 2.35rem);
+            line-height: 1.02;
+            letter-spacing: -0.05em;
+        }
+
+        > span {
+            display: block;
+            margin-top: 0.75rem;
+            color: rgba(190, 204, 224, 0.72);
+            font-size: 0.8rem;
+            line-height: 1.58;
+        }
+
+        button {
+            width: 100%;
+            min-height: 3.35rem;
+            margin-top: 1.2rem;
+            padding: 0.8rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid rgba(157, 173, 255, 0.38);
+            border-radius: 0.9rem;
+            color: #f4f5ff;
+            background: rgba(99, 111, 220, 0.17);
+            font-size: 0.78rem;
+            font-weight: 720;
+            cursor: pointer;
+        }
+    }
+
+    .mobile-footer {
+        margin-top: 4.5rem;
+        min-height: 7.5rem;
+        padding: 2.25rem var(--mobile-gutter)
+            calc(2.75rem + env(safe-area-inset-bottom));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.48rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        text-align: center;
+
+        p {
+            margin: 0;
+            color: rgba(211, 228, 242, 0.76);
+            font-size: 0.7rem;
+            font-weight: 650;
+            line-height: 1.4;
+        }
+
+        small {
+            color: rgba(154, 179, 201, 0.52);
+            font-size: 0.61rem;
+            line-height: 1.4;
+        }
+    }
+}

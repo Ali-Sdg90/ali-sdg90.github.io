@@ -1,0 +1,43 @@
+@keyframes mobile-sheet-in {
+    from {
+        opacity: 0.2;
+        transform: translateY(3.25rem) scale(0.985);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes mobile-sheet-out {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(2.5rem) scale(0.99);
+    }
+}
+
+@keyframes mobile-sheet-backdrop-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes mobile-sheet-backdrop-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

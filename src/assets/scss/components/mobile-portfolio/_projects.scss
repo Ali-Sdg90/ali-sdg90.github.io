@@ -1,0 +1,173 @@
+@use "../../base/variables" as *;
+
+@media (max-width: 899px) {
+    .mobile-project-rail {
+        margin-top: 1.65rem;
+        padding: 0 var(--mobile-gutter) 1rem;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: min(54vw, 14rem);
+        gap: 0.8rem;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-padding-inline: var(--mobile-gutter);
+        scroll-snap-type: inline mandatory;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .mobile-project-card {
+        position: relative;
+        padding: 0;
+        display: grid;
+        grid-template-rows: auto minmax(8rem, 1fr);
+        overflow: hidden;
+        border: 1px solid rgba(114, 190, 255, 0.2);
+        border-radius: 1.2rem;
+        color: inherit;
+        background: linear-gradient(
+            165deg,
+            rgba(17, 34, 55, 0.95),
+            rgba(5, 14, 25, 0.98)
+        );
+        box-shadow:
+            inset 0 1px rgba(255, 255, 255, 0.08),
+            0 1rem 2.8rem rgba(0, 0, 0, 0.28);
+        scroll-snap-align: start;
+        text-align: left;
+        cursor: pointer;
+
+        > img {
+            width: 100%;
+            aspect-ratio: 1;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--mobile-accent);
+            outline-offset: 3px;
+        }
+    }
+
+    .mobile-project-card-copy {
+        position: relative;
+        min-height: 8rem;
+        padding: 1rem 0.8rem 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 0.3rem;
+            background: linear-gradient(
+                90deg,
+                $color-shelf-dark,
+                $color-shelf-light 50%,
+                $color-shelf-dark
+            );
+            box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.45);
+            content: "";
+        }
+
+        small {
+            color: rgba(102, 199, 255, 0.72);
+            font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+            font-size: 0.66rem;
+        }
+
+        strong {
+            margin-top: 0.32rem;
+            color: #f4f9fe;
+            font-size: 1.05rem;
+            line-height: 1.1;
+            letter-spacing: -0.025em;
+        }
+
+        > span {
+            margin-top: 0.34rem;
+            color: rgba(181, 204, 223, 0.72);
+            font-size: 0.7rem;
+            line-height: 1.5;
+        }
+
+        i {
+            margin-top: auto;
+            padding-top: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: #72cbff;
+            font-size: 0.7rem;
+            font-style: normal;
+            font-weight: 720;
+
+            svg {
+                width: 0.85rem;
+                height: 0.85rem;
+            }
+        }
+    }
+
+    .mobile-project-pagination {
+        padding: 0.1rem var(--mobile-gutter) 0;
+        display: grid;
+        grid-template-columns: auto minmax(3rem, 1fr) auto;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .mobile-project-pagination-label {
+        color: rgba(175, 201, 222, 0.66);
+        font-size: 0.62rem;
+        font-weight: 720;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+
+    .mobile-project-pagination-track {
+        height: 0.18rem;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(122, 170, 209, 0.16);
+
+        > span {
+            height: 100%;
+            display: block;
+            border-radius: inherit;
+            background: linear-gradient(
+                90deg,
+                var(--mobile-accent),
+                var(--mobile-accent-bright)
+            );
+            box-shadow: 0 0 0.75rem rgba(22, 136, 255, 0.38);
+            transition: width 240ms $ease-out;
+        }
+    }
+
+    .mobile-project-pagination-count {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.28rem;
+        color: rgba(174, 202, 224, 0.54);
+        font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+        font-size: 0.64rem;
+
+        strong {
+            color: var(--mobile-accent-bright);
+            font-size: 0.82rem;
+        }
+
+        span {
+            color: rgba(174, 202, 224, 0.32);
+        }
+    }
+}

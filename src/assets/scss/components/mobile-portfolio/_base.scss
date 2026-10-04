@@ -1,0 +1,129 @@
+@use "../../base/variables" as *;
+
+.mobile-portfolio,
+.mobile-build-story {
+    display: none;
+}
+
+@media (max-width: 899px) {
+    html {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        overscroll-behavior-x: none;
+        overscroll-behavior-y: auto;
+    }
+
+    body,
+    #root {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        min-height: 100%;
+        overflow: visible;
+    }
+
+    body {
+        background: #050a11;
+    }
+
+    .mobile-portfolio {
+        --mobile-gutter: clamp(1rem, 5vw, 1.5rem);
+        --mobile-accent: #1688ff;
+        --mobile-accent-bright: #58b6ff;
+
+        position: relative;
+        isolation: isolate;
+        display: block;
+        overflow: visible;
+        color: $color-text;
+        background:
+            radial-gradient(
+                circle at 96% 4%,
+                rgba(22, 136, 255, 0.1),
+                transparent 20rem
+            ),
+            radial-gradient(
+                circle at 0% 26%,
+                rgba(24, 112, 255, 0.09),
+                transparent 24rem
+            ),
+            linear-gradient(180deg, #07101b 0%, #050a11 24%, #070b11 100%);
+
+        &::before {
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            opacity: 0.2;
+            background-image:
+                linear-gradient(
+                    rgba(255, 255, 255, 0.025) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.018) 1px,
+                    transparent 1px
+                );
+            background-size: 3.5rem 3.5rem;
+            mask-image: linear-gradient(to bottom, #000, transparent 35%);
+            content: "";
+            pointer-events: none;
+        }
+
+        .construction-badge {
+            position: absolute;
+            top: 4.2rem;
+            left: -0.3rem;
+            z-index: 10;
+            transform: scale(0.76);
+            transform-origin: top left;
+        }
+    }
+
+    .mobile-portfolio > main {
+        padding-top: 4.15rem;
+    }
+
+    .mobile-reveal {
+        opacity: 0;
+        transform: translateY(1.4rem);
+        transition:
+            opacity 620ms $ease-out,
+            transform 720ms $ease-out;
+
+        &.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .mobile-section {
+        padding: 6.2rem 0 1rem;
+        scroll-margin-top: 3.6rem;
+    }
+
+    .mobile-section-heading {
+        padding-inline: var(--mobile-gutter);
+
+        h2 {
+            margin: 0;
+            color: #f6fbff;
+            font-size: clamp(2rem, 10vw, 2.85rem);
+            line-height: 0.98;
+            letter-spacing: -0.055em;
+        }
+
+        > span {
+            max-width: 30rem;
+            display: block;
+            margin-top: 0.72rem;
+            color: rgba(177, 200, 220, 0.7);
+            font-size: 0.84rem;
+            line-height: 1.62;
+        }
+    }
+}

@@ -1,0 +1,235 @@
+@use "../../base/variables" as *;
+
+@media (max-width: 899px) {
+    .mobile-sheet-layer {
+        position: fixed;
+        z-index: 1000;
+        inset: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        &.is-closing {
+            pointer-events: none;
+
+            .mobile-sheet-backdrop {
+                animation: mobile-sheet-backdrop-out 360ms ease both;
+            }
+
+            .mobile-sheet {
+                animation: mobile-sheet-out 420ms cubic-bezier(0.4, 0, 0.2, 1)
+                    both;
+            }
+        }
+    }
+
+    .mobile-sheet-backdrop {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        border: 0;
+        background: rgba(0, 5, 12, 0.54);
+        backdrop-filter: blur(0.42rem) saturate(0.86);
+        -webkit-backdrop-filter: blur(0.42rem) saturate(0.86);
+        cursor: default;
+        animation: mobile-sheet-backdrop-in 420ms ease both;
+    }
+
+    .mobile-sheet {
+        --about-panel-reference-size: 375px;
+
+        position: relative;
+        z-index: 1;
+        width: min(100%, 42rem);
+        max-height: calc(94dvh - env(safe-area-inset-top));
+        display: grid;
+        grid-template-rows: auto auto minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid rgba(102, 188, 255, 0.22);
+        border-bottom: 0;
+        border-radius: 1.5rem 1.5rem 0 0;
+        background:
+            radial-gradient(
+                circle at 82% 0%,
+                rgba(22, 136, 255, 0.09),
+                transparent 18rem
+            ),
+            linear-gradient(160deg, #0a1726, #050c16 68%);
+        box-shadow: 0 -1.4rem 5rem rgba(0, 0, 0, 0.55);
+        animation: mobile-sheet-in 1280ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .mobile-sheet-handle {
+        width: 2.8rem;
+        height: 0.28rem;
+        margin: 0.55rem auto 0;
+        border-radius: 999px;
+        background: rgba(189, 220, 244, 0.34);
+    }
+
+    .mobile-sheet-header {
+        min-height: 3.45rem;
+        padding: 0.45rem 0.85rem 0.55rem 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+        > p {
+            margin: 0;
+            color: rgba(112, 201, 255, 0.72);
+            font-size: 0.65rem;
+            font-weight: 740;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+    }
+
+    .mobile-sheet-close {
+        width: 2.4rem;
+        height: 2.4rem;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        color: #dcecf8;
+        background: rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+
+        svg {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+
+    .mobile-sheet-scroll {
+        min-height: 0;
+        padding: 1rem var(--mobile-gutter)
+            calc(2rem + env(safe-area-inset-bottom));
+        overflow-x: hidden;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        scrollbar-width: thin;
+    }
+
+    .mobile-sheet-hero {
+        display: grid;
+        grid-template-columns: 5.4rem minmax(0, 1fr);
+        align-items: center;
+        column-gap: clamp(1.6rem, 7vw, 2rem);
+        margin-bottom: 0.45rem;
+        padding-block: 0.35rem 0.75rem;
+    }
+
+    .mobile-sheet-media {
+        width: 5.4rem;
+        height: 5.4rem;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        border: 1px solid rgba(98, 188, 255, 0.28);
+        border-radius: 1.05rem;
+        background: rgba(13, 33, 54, 0.8);
+        box-shadow:
+            inset 0 1px rgba(255, 255, 255, 0.08),
+            0 0.8rem 2rem rgba(0, 0, 0, 0.28);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        > svg {
+            width: 2.4rem;
+            height: 2.4rem;
+            color: #64c7ff;
+        }
+    }
+
+    .mobile-sheet-heading {
+        min-width: 0;
+
+        h2 {
+            margin: 0;
+            color: #f4f9fe;
+            font-size: clamp(1.45rem, 7vw, 2rem);
+            line-height: 1.03;
+            letter-spacing: -0.04em;
+            overflow-wrap: anywhere;
+        }
+
+        p {
+            margin: 0.42rem 0 0;
+            color: rgba(177, 201, 220, 0.68);
+            font-size: 0.7rem;
+            line-height: 1.4;
+        }
+    }
+
+    .mobile-sheet-controls {
+        margin: 1rem 0 1.2rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mobile-sheet-language {
+        padding: 0.2rem;
+        display: inline-flex;
+        gap: 0.15rem;
+        border: 1px solid rgba(99, 188, 255, 0.2);
+        border-radius: 999px;
+        background: rgba(3, 13, 24, 0.72);
+
+        button {
+            min-width: 2.5rem;
+            min-height: 1.85rem;
+            padding: 0.35rem 0.55rem;
+            border: 0;
+            border-radius: 999px;
+            color: rgba(181, 207, 226, 0.62);
+            background: transparent;
+            font-size: 0.63rem;
+            font-weight: 760;
+            cursor: pointer;
+
+            &.is-active {
+                color: #eff9ff;
+                background: rgba(30, 137, 218, 0.5);
+                box-shadow: 0 0 0.8rem rgba(22, 136, 255, 0.16);
+            }
+        }
+    }
+
+    .mobile-sheet-about {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        color: rgba(222, 237, 248, 0.86);
+
+        p {
+            margin: 0;
+            font-size: 0.88rem;
+            line-height: 1.72;
+        }
+
+        ul {
+            margin: 0.5rem 0 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            list-style: none;
+
+            li {
+                padding: 0.42rem 0.65rem;
+                border: 1px solid rgba(95, 190, 255, 0.24);
+                border-radius: 999px;
+                color: #82d1ff;
+                background: rgba(20, 86, 135, 0.16);
+                font-size: 0.66rem;
+                font-weight: 680;
+            }
+        }
+    }
+}

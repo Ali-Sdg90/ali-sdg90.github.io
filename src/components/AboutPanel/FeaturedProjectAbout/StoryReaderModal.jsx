@@ -25,7 +25,9 @@ const storyTypeLabels = {
 const StoryReaderModal = ({
     initialLanguage,
     isImpactStory = false,
+    language: controlledLanguage,
     onClose,
+    onLanguageChange,
     returnFocusRef,
     storyEN,
     storyFA,
@@ -34,12 +36,13 @@ const StoryReaderModal = ({
     title,
 }) => {
     const [isClosing, setIsClosing] = useState(false);
-    const [activeLanguage, setActiveLanguage] = useState(initialLanguage);
+    const [localLanguage, setLocalLanguage] = useState(initialLanguage);
     const dialogRef = useRef(null);
     const scrollAreaRef = useRef(null);
     const progressRef = useRef(null);
     const closeButtonRef = useRef(null);
     const titleId = useId();
+    const activeLanguage = controlledLanguage ?? localLanguage;
     const isFarsi = activeLanguage === "FA" && storyFA;
     const visibleStory = isFarsi ? storyFA : storyEN;
     const paragraphs = visibleStory
@@ -55,6 +58,14 @@ const StoryReaderModal = ({
     const requestClose = useCallback(() => {
         setIsClosing(true);
     }, []);
+
+    const changeLanguage = (language) => {
+        if (controlledLanguage === undefined) {
+            setLocalLanguage(language);
+        }
+
+        onLanguageChange?.(language);
+    };
 
     useEffect(() => {
         if (!isClosing) return undefined;
@@ -212,9 +223,7 @@ const StoryReaderModal = ({
                                         aria-pressed={
                                             activeLanguage === language
                                         }
-                                        onClick={() =>
-                                            setActiveLanguage(language)
-                                        }
+                                        onClick={() => changeLanguage(language)}
                                     >
                                         {language}
                                     </button>

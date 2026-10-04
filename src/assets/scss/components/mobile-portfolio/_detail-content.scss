@@ -1,0 +1,127 @@
+@use "../../base/variables" as *;
+
+@media (max-width: 899px) {
+    .mobile-sheet {
+        .featured-project-about {
+            gap: 1rem;
+            padding-right: 0;
+        }
+
+        .featured-project-summary,
+        .featured-project-story p {
+            color: rgba(222, 237, 248, 0.86);
+            font-size: 0.85rem;
+            line-height: 1.65;
+        }
+
+        .featured-project-links {
+            gap: 0.55rem;
+        }
+
+        .featured-project-link {
+            min-height: 2.85rem;
+            padding: 0.7rem;
+            border-radius: 0.75rem;
+            font-size: 0.7rem;
+
+            svg {
+                width: 0.85rem;
+                height: 0.85rem;
+            }
+        }
+
+        .featured-project-card,
+        .featured-project-description,
+        .featured-project-section {
+            gap: 0.7rem;
+        }
+
+        .featured-project-card {
+            padding: 0.9rem;
+            border-radius: 0.85rem;
+        }
+
+        .featured-project-section-title {
+            gap: 0.45rem;
+            font-size: 0.84rem;
+
+            svg {
+                width: 0.88rem;
+                height: 0.88rem;
+            }
+        }
+
+        .featured-project-features {
+            gap: 0.65rem;
+
+            li {
+                grid-template-columns: 1.35rem minmax(0, 1fr);
+                gap: 0.55rem;
+                font-size: 0.76rem;
+                line-height: 1.5;
+            }
+        }
+
+        .featured-project-feature-icon {
+            width: 1.35rem;
+            height: 1.35rem;
+            min-width: 1.35rem;
+            min-height: 1.35rem;
+
+            svg {
+                width: 0.55rem;
+                height: 0.55rem;
+            }
+        }
+
+        .featured-project-gallery {
+            width: 100% !important;
+            gap: 0.45rem;
+        }
+
+        .featured-project-gallery-button {
+            border-radius: 0.65rem;
+        }
+
+        .featured-project-story-content {
+            gap: 0.75rem;
+        }
+
+        .featured-project-story-toggle {
+            min-height: 2.25rem;
+            margin-top: 0;
+            padding: 0.55rem 0.7rem;
+            gap: 0.4rem;
+            border-radius: 0.65rem;
+            font-size: 0.7rem;
+
+            svg {
+                width: 0.75rem;
+                height: 0.75rem;
+            }
+        }
+
+        .featured-project-related-links {
+            gap: 0.5rem;
+        }
+
+        .featured-project-related-link {
+            min-height: 3.6rem;
+            padding: 0.7rem;
+            border-radius: 0.7rem;
+
+            > svg {
+                width: 0.75rem;
+                height: 0.75rem;
+            }
+        }
+
+        .featured-project-related-link-label {
+            font-size: 0.62rem;
+        }
+
+        .featured-project-related-link-text {
+            font-size: 0.75rem;
+        }
+    }
+}

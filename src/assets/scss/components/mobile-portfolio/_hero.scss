@@ -1,0 +1,249 @@
+@use "../../base/variables" as *;
+
+@media (max-width: 899px) {
+    .mobile-hero {
+        position: relative;
+        padding: 1.35rem var(--mobile-gutter) 1.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+
+    .mobile-hero-glow {
+        position: absolute;
+        z-index: -1;
+        top: 7%;
+        right: -8rem;
+        width: 18rem;
+        height: 18rem;
+        border-radius: 50%;
+        background: rgba(18, 142, 255, 0.13);
+        filter: blur(4.5rem);
+    }
+
+    .mobile-hero-introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.55rem;
+    }
+
+    .mobile-hero-avatar {
+        width: clamp(6.16rem, 28.6vw, 7.7rem);
+        aspect-ratio: 1;
+        flex: 0 0 auto;
+        overflow: hidden;
+        border-radius: 1.05rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: inherit;
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1.13);
+            transition: opacity 80ms ease-out;
+        }
+
+        &.has-morph img {
+            opacity: 0;
+        }
+    }
+
+    .mobile-section-heading > p,
+    .mobile-desktop-preview-copy > p {
+        display: flex;
+        align-items: center;
+        gap: 0.48rem;
+        margin: 0;
+        color: rgba(115, 203, 255, 0.82);
+        font-size: 0.7rem;
+        font-weight: 750;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+    }
+
+    .mobile-hero-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.32rem;
+        margin: 0;
+        color: $color-text-muted;
+        font-size: 0.82rem;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+
+    .mobile-hero-greeting-hand {
+        display: inline-block;
+        transform-origin: 70% 75%;
+        animation: hero-greeting-wave 3.6s cubic-bezier(0.45, 0, 0.25, 1)
+            infinite;
+        will-change: transform;
+    }
+
+    .mobile-hero h1 {
+        margin: 0.75rem 0 0;
+        color: #f7fbff;
+        font-size: clamp(3.1rem, 16vw, 4.8rem);
+        line-height: 0.9;
+        font-weight: 820;
+        letter-spacing: -0.035em;
+        text-wrap: balance;
+        text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.36);
+
+        em {
+            color: var(--mobile-accent);
+            font-style: normal;
+            text-shadow: 0 0 2.2rem rgba(22, 136, 255, 0.18);
+        }
+    }
+
+    .mobile-hero-role {
+        margin: 0.75rem 0 0;
+        color: var(--mobile-accent);
+        font-size: clamp(0.95rem, 4.2vw, 1.2rem);
+        font-weight: 700;
+        letter-spacing: 0.01em;
+    }
+
+    .mobile-hero-copy {
+        max-width: 34rem;
+        margin: 0.45rem 0 0;
+        color: rgba(185, 207, 226, 0.78);
+        font-size: 0.86rem;
+        line-height: 1.55;
+
+        a {
+            color: inherit;
+            text-decoration-color: rgba(88, 182, 255, 0.52);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.2em;
+
+            &:focus-visible {
+                border-radius: 0.2rem;
+                outline: 2px solid var(--mobile-accent);
+                outline-offset: 3px;
+            }
+        }
+    }
+
+    .mobile-hero-actions {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.65rem;
+
+        a,
+        button {
+            min-height: 2.8rem;
+            padding: 0.68rem 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.45rem;
+            border: 1px solid rgba(86, 190, 255, 0.38);
+            border-radius: 0.9rem;
+            color: #f2f9ff;
+            background: linear-gradient(
+                145deg,
+                rgba(19, 123, 215, 0.3),
+                rgba(3, 18, 34, 0.78)
+            );
+            box-shadow:
+                inset 0 1px rgba(255, 255, 255, 0.11),
+                0 0.8rem 2rem rgba(0, 0, 0, 0.2);
+            font-size: 0.78rem;
+            font-weight: 720;
+            text-decoration: none;
+
+            svg {
+                width: 1rem;
+                height: 1rem;
+                color: #69caff;
+            }
+
+            &:active {
+                transform: scale(0.98);
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--mobile-accent);
+                outline-offset: 3px;
+            }
+        }
+
+        button {
+            border-color: rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.045);
+            cursor: pointer;
+        }
+    }
+
+    .mobile-hero-contact {
+        margin-top: 1rem;
+    }
+
+    .mobile-hero-location-link {
+        width: fit-content;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.48rem;
+        color: rgba(196, 218, 236, 0.76);
+        font-size: 0.7rem;
+        font-weight: 650;
+        text-decoration: none;
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+            color: var(--mobile-accent-bright);
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--mobile-accent);
+            outline-offset: 4px;
+        }
+    }
+
+    .mobile-hero-links {
+        margin-top: 0.6rem;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.45rem;
+
+        a {
+            min-width: 0;
+            min-height: 2.65rem;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(103, 176, 235, 0.16);
+            border-radius: 0.78rem;
+            color: rgba(210, 229, 244, 0.8);
+            background: rgba(10, 25, 42, 0.58);
+            text-decoration: none;
+            transition:
+                color $motion-fast $ease-out,
+                border-color $motion-fast $ease-out,
+                background $motion-fast $ease-out,
+                transform $motion-fast $ease-out;
+
+            svg {
+                width: 1.2rem;
+                height: 1.2rem;
+                color: var(--mobile-accent-bright);
+            }
+
+            &:active {
+                transform: scale(0.97);
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--mobile-accent);
+                outline-offset: 3px;
+            }
+        }
+    }
+}

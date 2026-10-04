@@ -184,6 +184,7 @@ const DetailGallery = ({ columns = 3, images = [], title }) => {
 const ProjectStory = ({
     activeLanguage,
     languageToggle,
+    onLanguageChange,
     storySource,
     storyType,
     storyEN,
@@ -253,7 +254,9 @@ const ProjectStory = ({
                 <StoryReaderModal
                     initialLanguage={isFarsi ? "FA" : "EN"}
                     isImpactStory={isImpactStory}
+                    language={onLanguageChange ? activeLanguage : undefined}
                     onClose={() => setIsReaderOpen(false)}
+                    onLanguageChange={onLanguageChange}
                     returnFocusRef={readerTriggerRef}
                     storyEN={storyEN}
                     storyFA={storyFA}
@@ -332,6 +335,7 @@ const FeaturedProjectAbout = ({
     isExpanded,
     item,
     languageToggle,
+    onLanguageChange,
     section,
 }) => {
     if (!detail) {
@@ -378,6 +382,7 @@ const FeaturedProjectAbout = ({
             <ProjectStory
                 activeLanguage={activeLanguage}
                 languageToggle={languageToggle}
+                onLanguageChange={onLanguageChange}
                 storySource={detail.storySource}
                 storyType={
                     section?.id === "projects"
