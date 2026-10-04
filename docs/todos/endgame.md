@@ -10,6 +10,8 @@
 
 - [x] Maybe add Agentic browsing and robot file
 
+- [x] Remove the UnderConstructionBadge
+
 - [ ] Write repo readme.md file
     - [x] Part 1
     - [ ] Part 2
@@ -18,7 +20,8 @@
 
 - [ ] improve SEO of the site
     - [x] Part 1
-    - [ ] Part 2
+    - [x] Part 2
+    - [ ] Final Check
 
 - [ ] Delete unused files in the repo
     - [ ] remove un-used woff2 files
@@ -29,8 +32,6 @@
 - [ ] do super dooper checking with agents for project structure and code quality at the end of the project
 
 - [ ] pad your back, ali you created something really cool and useful for your future. proud of you me in past and future :D
-
-- [ ] Remove the UnderConstructionBadge
 
 - [ ] Maybe add a Telegram bot to send me message with status data?
 

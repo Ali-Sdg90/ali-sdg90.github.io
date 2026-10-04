@@ -9,7 +9,7 @@ import MobilePortfolio from "./components/MobilePortfolio/MobilePortfolio";
 import PortfolioOnboarding from "./components/PortfolioOnboarding/PortfolioOnboarding";
 import PortfolioReveal from "./components/PortfolioReveal/PortfolioReveal";
 import Shelf from "./components/Shelf/Shelf";
-import UnderConstructionBadge from "./components/UnderConstructionBadge/UnderConstructionBadge";
+// import UnderConstructionBadge from "./components/UnderConstructionBadge/UnderConstructionBadge";
 import { shelfSections } from "./data/portfolio/shelfSections";
 import usePortfolioHashNavigation from "./hooks/usePortfolioHashNavigation";
 import { trackUmamiEvent } from "./utils/analytics";
@@ -128,7 +128,7 @@ const App = () => {
                     onBuildStoryOpen={navigateToBuildStory}
                     onBuildStoryClose={navigateToShelf}
                 >
-                    <UnderConstructionBadge />
+                    {/* <UnderConstructionBadge /> */}
                     <AppVersion />
 
                     <div

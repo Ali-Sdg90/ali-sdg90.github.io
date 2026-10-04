@@ -113,7 +113,9 @@
 
 - [x] Research if it is needed to create short description page for crawlers and llms? - No, it is good enough.
 
-- [ ] create mobile version :\_(
+- [x] create mobile version :\_(
+
+- [x] Add more Whimsy!
 
 - [ ] Write all of the descriptions!
     - [ ] Projects
@@ -136,8 +138,6 @@
     - [ ] CSI
 
 - [ ] Add remaining hmpwb cards
-
-- [ ] Add more Whimsy!
 
 - [ ] Make all labels and link description use impacts template (especially for the featured projects section)
 
@@ -167,3 +167,34 @@
 - [ ] Maybe move fabrexa one up
 
 - [ ] Maybe Add 3 more images for fabrexa
+
+- [ ] Add "more about ali" section :)
+
+- [ ] Finalize the Mobile View
+    - [ ] Fix hero spacing and pace
+    - [ ] Use better version of showing my socials
+    - [ ] Improve text in Desktop view section
+    - [ ] use image in Desktop view that don't have wip badge
+    - [ ] Re-oder the Impacts sections cards
+    - [ ] Check if the cards in Impacts section could be smaller
+    - [ ] Check if can make mini-icons in Impacts section cards bigger
+    - [ ] Check if can make the cards in tech stack bigger
+    - [ ] Improve career journey card padding, use better arrow icon and extends the left line
+    - [ ] Check if can make the footer smaller
+    - [ ] Check what can i do for lighthouse image preview in mobile view
+    - [ ] Fix font size in loading section of the lighthouse
+    - [ ] Add missing images to use lighthouse in mobile view
+    - [ ] Fix spacing on top of the bottom-sheet in mobile view and remove that extra line on top
+    - [ ] remove en-fa version in the mobile view and replace it with regular desktop version
+    - [ ] Fix spacing in story modal and position of the close btn in mobile view
+    - [ ] Fix spacing between labels and meta for sections
+    - [ ] Maybe add click color change for header items?
+    - [ ] fix pacing and spacing in the how-my-portfolio-was-built section
+    - [ ] Check lighthouse and memory usage for the site in mobile view
+    - [ ] Get AI feedback for the view
+    - [ ] Use better icons or indicators for buttons in the hero section
+    - [ ] Fix spacing in the about me section
+    - [ ] Use better style for badges in about me section
+    - [ ] Maybe add collapsible ali's image in about me section?
+    - [ ] Check wording in the how-my-portfolio-was-built section
+    - [ ] Check what happen when using pre-loaded url and viewing the site in mobile view
