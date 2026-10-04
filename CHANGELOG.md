@@ -1,3 +1,10 @@
+# [1.35.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.34.4...v1.35.0) (2026-10-04)
+
+
+### Features
+
+* finally add mobile version! ([899407c](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/899407c89979a516b312b431739cb2f52600c535))
+
 ## [1.34.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.34.3...v1.34.4) (2026-10-03)
 
 
