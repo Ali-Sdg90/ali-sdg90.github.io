@@ -1,3 +1,10 @@
+## [1.35.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.0...v1.35.1) (2026-10-04)
+
+
+### Bug Fixes
+
+* remove the UnderConstructionBadge, add mobile-view todos ([caaa6d8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/caaa6d8fa114788c2b9b8a2e85ba639c76dab63a))
+
 # [1.35.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.34.4...v1.35.0) (2026-10-04)
 
 
