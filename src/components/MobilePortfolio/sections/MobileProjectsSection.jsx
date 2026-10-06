@@ -1,4 +1,4 @@
-import { HiArrowUpRight } from "react-icons/hi2";
+import { HiOutlineArrowUpRight } from "react-icons/hi2";
 
 import { getShelfItemId } from "../../../utils/getShelfItemId";
 import MobileReveal from "../components/MobileReveal";
@@ -48,7 +48,7 @@ const MobileProjectsSection = ({ items, onItemOpen, section }) => {
                                 <span>{item.meta}</span>
                                 <i>
                                     Explore project{" "}
-                                    <HiArrowUpRight aria-hidden="true" />
+                                    <HiOutlineArrowUpRight aria-hidden="true" />
                                 </i>
                             </span>
                         </button>

@@ -171,17 +171,17 @@
 - [ ] Add "more about ali" section :)
 
 - [ ] Finalize the Mobile View
-    - [ ] Fix hero spacing and pace
-    - [ ] Use better version of showing my socials
-    - [ ] Improve text in Desktop view section
+    - [x] Fix hero spacing and pace
+    - [x] Use better version of showing my socials
+    - [x] Improve text in Desktop view section
     - [ ] use image in Desktop view that don't have wip badge
-    - [ ] Re-oder the Impacts sections cards
-    - [ ] Check if the cards in Impacts section could be smaller
-    - [ ] Check if can make mini-icons in Impacts section cards bigger
-    - [ ] Check if can make the cards in tech stack bigger
-    - [ ] Improve career journey card padding, use better arrow icon and extends the left line
-    - [ ] Check if can make the footer smaller
-    - [ ] Check what can i do for lighthouse image preview in mobile view
+    - [x] Re-oder the Impacts sections cards
+    - [x] Check if the cards in Impacts section could be smaller
+    - [x] Check if can make mini-icons in Impacts section cards bigger
+    - [x] Check if can make the cards in tech stack bigger
+    - [x] Improve career journey card padding, use better arrow icon and extends the left line
+    - [x] Check if can make the footer smaller
+    - [x] Check what can i do for lighthouse image preview in mobile view
     - [ ] Fix font size in loading section of the lighthouse
     - [ ] Add missing images to use lighthouse in mobile view
     - [ ] Fix spacing on top of the bottom-sheet in mobile view and remove that extra line on top
@@ -198,3 +198,7 @@
     - [ ] Maybe add collapsible ali's image in about me section?
     - [ ] Check wording in the how-my-portfolio-was-built section
     - [ ] Check what happen when using pre-loaded url and viewing the site in mobile view
+
+- [ ] Check slow opening for the history model
+
+- [ ] Check what is this blank spaces are in light-box

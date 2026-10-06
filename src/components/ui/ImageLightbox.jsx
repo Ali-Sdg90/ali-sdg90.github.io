@@ -13,6 +13,14 @@ const MIN_ZOOM = 1;
 const MAX_ZOOM = 4;
 const ZOOM_STEP = 0.25;
 
+const getDistance = (firstPoint, secondPoint) =>
+    Math.hypot(secondPoint.x - firstPoint.x, secondPoint.y - firstPoint.y);
+
+const getMidpoint = (firstPoint, secondPoint) => ({
+    x: (firstPoint.x + secondPoint.x) / 2,
+    y: (firstPoint.y + secondPoint.y) / 2,
+});
+
 const getDownloadName = (image, source) => {
     if (image.downloadName) return image.downloadName;
 
@@ -44,6 +52,10 @@ const ImageLightbox = ({ image, onClose }) => {
     );
     const viewportRef = useRef(null);
     const lastPointerPositionRef = useRef(null);
+    const activeTouchPointersRef = useRef(new Map());
+    const pinchGestureRef = useRef(null);
+    const zoomRef = useRef(MIN_ZOOM);
+    const offsetRef = useRef({ x: 0, y: 0 });
     const fallbackText = getFallbackText(image);
     const lightboxSrc = image.lightboxSrc ?? image.src;
     const canPan = zoom > MIN_ZOOM;
@@ -90,7 +102,7 @@ const ImageLightbox = ({ image, onClose }) => {
     }, []);
 
     const clampOffset = useCallback(
-        (nextOffset, nextZoom = zoom) => {
+        (nextOffset, nextZoom) => {
             const viewport = viewportRef.current;
 
             if (!viewport || nextZoom <= MIN_ZOOM) {
@@ -119,24 +131,117 @@ const ImageLightbox = ({ image, onClose }) => {
                 y: Math.min(maxY, Math.max(-maxY, nextOffset.y)),
             };
         },
-        [imageAspectRatio, zoom],
+        [imageAspectRatio],
     );
+
+    const updateView = useCallback(
+        (nextZoom, nextOffset) => {
+            const clampedZoom = Math.min(
+                MAX_ZOOM,
+                Math.max(MIN_ZOOM, nextZoom),
+            );
+            const clampedOffset = clampOffset(nextOffset, clampedZoom);
+
+            zoomRef.current = clampedZoom;
+            offsetRef.current = clampedOffset;
+            setZoom(clampedZoom);
+            setOffset(clampedOffset);
+        },
+        [clampOffset],
+    );
+
+    useEffect(() => {
+        const handleResize = () => {
+            updateView(zoomRef.current, offsetRef.current);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, [updateView]);
 
     const updateZoom = (nextZoom) => {
         const clampedZoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, nextZoom));
 
-        setZoom(clampedZoom);
-        setOffset((currentOffset) => clampOffset(currentOffset, clampedZoom));
+        updateView(clampedZoom, offsetRef.current);
     };
 
     const resetView = () => {
+        zoomRef.current = MIN_ZOOM;
+        offsetRef.current = { x: 0, y: 0 };
         setZoom(MIN_ZOOM);
         setOffset({ x: 0, y: 0 });
         setIsPanning(false);
         lastPointerPositionRef.current = null;
+        pinchGestureRef.current = null;
+    };
+
+    const startPinchGesture = () => {
+        const viewport = viewportRef.current;
+        const touchPoints = Array.from(
+            activeTouchPointersRef.current.values(),
+        ).slice(0, 2);
+
+        if (!viewport || touchPoints.length < 2) {
+            pinchGestureRef.current = null;
+            return;
+        }
+
+        const [firstPoint, secondPoint] = touchPoints;
+        const rect = viewport.getBoundingClientRect();
+        const midpoint = getMidpoint(firstPoint, secondPoint);
+        const localMidpoint = {
+            x: midpoint.x - rect.left,
+            y: midpoint.y - rect.top,
+        };
+        const currentZoom = zoomRef.current;
+        const currentOffset = offsetRef.current;
+
+        pinchGestureRef.current = {
+            pointerIds: [firstPoint.id, secondPoint.id],
+            startDistance: Math.max(1, getDistance(firstPoint, secondPoint)),
+            startZoom: currentZoom,
+            contentPoint: {
+                x:
+                    (localMidpoint.x - rect.width / 2 - currentOffset.x) /
+                    currentZoom,
+                y:
+                    (localMidpoint.y - rect.height / 2 - currentOffset.y) /
+                    currentZoom,
+            },
+        };
+        lastPointerPositionRef.current = null;
+        setIsPanning(true);
     };
 
     const handlePointerDown = (event) => {
+        if (event.pointerType === "touch") {
+            if (!isImageLoaded || hasImageError) return;
+
+            event.preventDefault();
+            event.currentTarget.setPointerCapture(event.pointerId);
+            activeTouchPointersRef.current.set(event.pointerId, {
+                id: event.pointerId,
+                x: event.clientX,
+                y: event.clientY,
+            });
+
+            if (activeTouchPointersRef.current.size >= 2) {
+                startPinchGesture();
+            } else {
+                lastPointerPositionRef.current = {
+                    id: event.pointerId,
+                    x: event.clientX,
+                    y: event.clientY,
+                };
+                setIsPanning(zoomRef.current > MIN_ZOOM);
+            }
+
+            return;
+        }
+
         if (!canPan || event.pointerType !== "mouse" || event.button !== 0) {
             return;
         }
@@ -151,6 +256,95 @@ const ImageLightbox = ({ image, onClose }) => {
     };
 
     const handlePointerMove = (event) => {
+        if (event.pointerType === "touch") {
+            if (!activeTouchPointersRef.current.has(event.pointerId)) return;
+
+            event.preventDefault();
+            activeTouchPointersRef.current.set(event.pointerId, {
+                id: event.pointerId,
+                x: event.clientX,
+                y: event.clientY,
+            });
+
+            if (activeTouchPointersRef.current.size >= 2) {
+                const pinchGesture = pinchGestureRef.current;
+
+                if (
+                    !pinchGesture ||
+                    pinchGesture.pointerIds.some(
+                        (pointerId) =>
+                            !activeTouchPointersRef.current.has(pointerId),
+                    )
+                ) {
+                    startPinchGesture();
+                    return;
+                }
+
+                const [firstPoint, secondPoint] = pinchGesture.pointerIds.map(
+                    (pointerId) =>
+                        activeTouchPointersRef.current.get(pointerId),
+                );
+                const viewport = viewportRef.current;
+
+                if (!viewport) return;
+
+                const rect = viewport.getBoundingClientRect();
+                const midpoint = getMidpoint(firstPoint, secondPoint);
+                const localMidpoint = {
+                    x: midpoint.x - rect.left,
+                    y: midpoint.y - rect.top,
+                };
+                const nextZoom =
+                    pinchGesture.startZoom *
+                    (getDistance(firstPoint, secondPoint) /
+                        pinchGesture.startDistance);
+                const clampedZoom = Math.min(
+                    MAX_ZOOM,
+                    Math.max(MIN_ZOOM, nextZoom),
+                );
+
+                updateView(clampedZoom, {
+                    x:
+                        localMidpoint.x -
+                        rect.width / 2 -
+                        pinchGesture.contentPoint.x * clampedZoom,
+                    y:
+                        localMidpoint.y -
+                        rect.height / 2 -
+                        pinchGesture.contentPoint.y * clampedZoom,
+                });
+                return;
+            }
+
+            if (!lastPointerPositionRef.current) {
+                lastPointerPositionRef.current = {
+                    id: event.pointerId,
+                    x: event.clientX,
+                    y: event.clientY,
+                };
+                return;
+            }
+
+            const deltaX = event.clientX - lastPointerPositionRef.current.x;
+            const deltaY = event.clientY - lastPointerPositionRef.current.y;
+
+            lastPointerPositionRef.current = {
+                id: event.pointerId,
+                x: event.clientX,
+                y: event.clientY,
+            };
+
+            if (zoomRef.current > MIN_ZOOM) {
+                setIsPanning(true);
+                updateView(zoomRef.current, {
+                    x: offsetRef.current.x + deltaX,
+                    y: offsetRef.current.y + deltaY,
+                });
+            }
+
+            return;
+        }
+
         if (!isPanning || !lastPointerPositionRef.current) return;
 
         const deltaX = event.clientX - lastPointerPositionRef.current.x;
@@ -160,23 +354,42 @@ const ImageLightbox = ({ image, onClose }) => {
             x: event.clientX,
             y: event.clientY,
         };
-        setOffset((currentOffset) =>
-            clampOffset(
-                {
-                    x: currentOffset.x + deltaX,
-                    y: currentOffset.y + deltaY,
-                },
-                zoom,
-            ),
-        );
+        updateView(zoomRef.current, {
+            x: offsetRef.current.x + deltaX,
+            y: offsetRef.current.y + deltaY,
+        });
     };
 
     const stopPanning = (event) => {
-        if (!isPanning) return;
-
         if (event.currentTarget.hasPointerCapture(event.pointerId)) {
             event.currentTarget.releasePointerCapture(event.pointerId);
         }
+
+        if (event.pointerType === "touch") {
+            activeTouchPointersRef.current.delete(event.pointerId);
+
+            if (activeTouchPointersRef.current.size >= 2) {
+                startPinchGesture();
+                return;
+            }
+
+            pinchGestureRef.current = null;
+
+            if (activeTouchPointersRef.current.size === 1) {
+                const [remainingPoint] =
+                    activeTouchPointersRef.current.values();
+
+                lastPointerPositionRef.current = remainingPoint;
+                setIsPanning(zoomRef.current > MIN_ZOOM);
+                return;
+            }
+
+            lastPointerPositionRef.current = null;
+            setIsPanning(false);
+            return;
+        }
+
+        if (!isPanning) return;
 
         lastPointerPositionRef.current = null;
         setIsPanning(false);

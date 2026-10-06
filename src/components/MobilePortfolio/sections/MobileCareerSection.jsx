@@ -1,4 +1,4 @@
-import { HiArrowUpRight } from "react-icons/hi2";
+import { HiOutlineArrowUpRight } from "react-icons/hi2";
 
 import { getShelfItemId } from "../../../utils/getShelfItemId";
 import MobileReveal from "../components/MobileReveal";
@@ -34,7 +34,7 @@ const MobileCareerSection = ({ items, onItemOpen, section }) => (
                                 <strong>{item.title}</strong>
                                 <span>{item.meta}</span>
                             </span>
-                            <HiArrowUpRight aria-hidden="true" />
+                            <HiOutlineArrowUpRight aria-hidden="true" />
                         </button>
                     </li>
                 ))}

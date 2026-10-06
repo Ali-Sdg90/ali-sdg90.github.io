@@ -237,13 +237,35 @@
         background: rgba(10, 25, 42, 0.42);
 
         > span {
-            display: block;
+            position: relative;
+            align-self: stretch;
+            display: flex;
+            align-items: center;
             color: rgba(155, 183, 207, 0.62);
             font-size: 0.55rem;
             font-weight: 700;
             letter-spacing: 0.11em;
             line-height: 1;
             text-transform: uppercase;
+
+            &::after {
+                position: absolute;
+                top: 0.32rem;
+                right: 0.28rem;
+                bottom: 0.32rem;
+                width: 1px;
+                background: linear-gradient(
+                    180deg,
+                    transparent,
+                    rgba(112, 198, 255, 0.2) 24%,
+                    rgba(112, 198, 255, 0.249) 50%,
+                    rgba(112, 198, 255, 0.2) 76%,
+                    transparent
+                );
+                box-shadow: 0 0 0.5rem rgba(64, 169, 255, 0.14);
+                opacity: 0.4;
+                content: "";
+            }
         }
 
         > div {

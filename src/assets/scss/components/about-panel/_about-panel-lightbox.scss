@@ -57,6 +57,8 @@
     inset: 7px;
     overflow: hidden;
     border-radius: 16px;
+    touch-action: none;
+    overscroll-behavior: contain;
 
     &.can-pan {
         cursor: grab;
@@ -304,6 +306,17 @@
     svg {
         width: 54%;
         height: 54%;
+    }
+}
+
+@media (max-width: 899px) {
+    .about-panel-lightbox-toolbar {
+        transform: translate(-50%, 78%);
+
+        button,
+        a {
+            touch-action: manipulation;
+        }
     }
 }
 

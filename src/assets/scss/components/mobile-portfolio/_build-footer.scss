@@ -55,9 +55,9 @@
 
     .mobile-footer {
         margin-top: 4.5rem;
-        min-height: 7.5rem;
-        padding: 2.25rem var(--mobile-gutter)
-            calc(2.75rem + env(safe-area-inset-bottom));
+        min-height: 6.5rem;
+        padding: 1.75rem var(--mobile-gutter)
+            calc(2.25rem + env(safe-area-inset-bottom));
         display: flex;
         flex-direction: column;
         align-items: center;

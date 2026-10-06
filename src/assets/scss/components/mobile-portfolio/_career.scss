@@ -9,13 +9,15 @@
 
         &::before {
             position: absolute;
-            top: 1.2rem;
-            bottom: 1.2rem;
+            top: 0.65rem;
+            bottom: 0.65rem;
             left: calc(var(--mobile-gutter) + 0.85rem);
             width: 1px;
             background: linear-gradient(
                 var(--mobile-accent),
-                rgba(22, 136, 255, 0.05)
+                rgba(22, 136, 255, 0.74) 58%,
+                rgba(22, 136, 255, 0.28) 88%,
+                rgba(22, 136, 255, 0.08)
             );
             content: "";
         }
@@ -106,6 +108,8 @@
         }
 
         > svg {
+            width: 0.653125rem;
+            height: 0.653125rem;
             color: #64c5ff;
         }
 
