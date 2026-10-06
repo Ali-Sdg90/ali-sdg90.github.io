@@ -1,3 +1,10 @@
+## [1.35.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.1...v1.35.2) (2026-10-06)
+
+
+### Bug Fixes
+
+* finalize hero and header in mobile view, remove github icon in header ([c74db90](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/c74db90017c179f5297c62f656d10fc5b54331e6))
+
 ## [1.35.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.0...v1.35.1) (2026-10-04)
 
 
