@@ -1,3 +1,10 @@
+## [1.35.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.2...v1.35.3) (2026-10-06)
+
+
+### Bug Fixes
+
+* improve mobile view, update todos ([7820fd9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/7820fd94bdac1b4bcbeed1e11a40d52a301ed29e))
+
 ## [1.35.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.1...v1.35.2) (2026-10-06)
 
 
