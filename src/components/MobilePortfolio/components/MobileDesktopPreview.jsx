@@ -11,10 +11,14 @@ const MobileDesktopPreview = () => (
         >
             <div className="mobile-desktop-preview-copy">
                 <p>
-                    <HiOutlineSparkles aria-hidden="true" /> Desktop portfolio
+                    <HiOutlineSparkles aria-hidden="true" /> Desktop-first
+                    portfolio
                 </p>
-                <h2 id="desktop-preview-title">The original experience</h2>
-                <span>Explore the interactive shelf on a larger screen.</span>
+                <h2 id="desktop-preview-title">Best experienced on desktop</h2>
+                <span>
+                    A larger screen unlocks the interactive shelf, richer
+                    motion, and the full project experience.
+                </span>
             </div>
             <div className="mobile-desktop-preview-frame">
                 <img

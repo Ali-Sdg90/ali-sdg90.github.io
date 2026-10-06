@@ -1,7 +1,5 @@
 import { aboutData } from "../../../data/portfolio/aboutData";
-import { githubItem, NAV_ITEMS } from "../mobilePortfolioConfig";
-
-const GithubIcon = githubItem?.icon;
+import { NAV_ITEMS } from "../mobilePortfolioConfig";
 
 const MobileHeader = ({
     activeSection,
@@ -38,19 +36,6 @@ const MobileHeader = ({
                     </a>
                 ))}
             </nav>
-
-            {githubItem && GithubIcon && (
-                <a
-                    className="mobile-nav-github"
-                    href={githubItem.href}
-                    aria-label="Open Ali's GitHub profile"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <span>My GitHub</span>
-                    <GithubIcon aria-hidden="true" />
-                </a>
-            )}
         </header>
 
         <div

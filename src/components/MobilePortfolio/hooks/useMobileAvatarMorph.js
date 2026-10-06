@@ -1,61 +1,9 @@
 import { useEffect, useState } from "react";
 
-const NAVIGATION_PROPERTIES = [
-    "--mobile-avatar-progress",
-    "--mobile-nav-avatar-space",
-    "--mobile-nav-github-space",
-    "--mobile-nav-github-width",
-    "--mobile-nav-github-gap",
-    "--mobile-nav-github-label-width",
-    "--mobile-nav-github-label-opacity",
-    "--mobile-nav-github-label-shift",
-];
-
 const clamp = (value, minimum, maximum) =>
     Math.min(Math.max(value, minimum), maximum);
 
 const interpolate = (start, end, progress) => start + (end - start) * progress;
-
-const clearNavigationProgress = (navigation) => {
-    NAVIGATION_PROPERTIES.forEach((property) =>
-        navigation.style.removeProperty(property),
-    );
-};
-
-const setNavigationProgress = (navigation, progress) => {
-    navigation.style.setProperty(
-        "--mobile-avatar-progress",
-        progress.toFixed(4),
-    );
-    navigation.style.setProperty(
-        "--mobile-nav-avatar-space",
-        `${interpolate(0, 3.4, progress)}rem`,
-    );
-    navigation.style.setProperty(
-        "--mobile-nav-github-space",
-        `${interpolate(7.45, 3.2, progress)}rem`,
-    );
-    navigation.style.setProperty(
-        "--mobile-nav-github-width",
-        `${interpolate(6.8, 2.5, progress)}rem`,
-    );
-    navigation.style.setProperty(
-        "--mobile-nav-github-gap",
-        `${interpolate(0.45, 0, progress)}rem`,
-    );
-    navigation.style.setProperty(
-        "--mobile-nav-github-label-width",
-        `${interpolate(4.2, 0, progress)}rem`,
-    );
-    navigation.style.setProperty(
-        "--mobile-nav-github-label-opacity",
-        (1 - progress).toFixed(4),
-    );
-    navigation.style.setProperty(
-        "--mobile-nav-github-label-shift",
-        `${interpolate(0, 0.25, progress)}rem`,
-    );
-};
 
 const setAvatarProgress = (avatar, source, target, progress) => {
     const sourceBounds = source.getBoundingClientRect();
@@ -84,7 +32,6 @@ const setAvatarProgress = (avatar, source, target, progress) => {
 const useMobileAvatarMorph = ({
     avatarMorphRef,
     heroAvatarRef,
-    navigationRef,
     navigationTargetRef,
     view,
 }) => {
@@ -96,9 +43,8 @@ const useMobileAvatarMorph = ({
         const avatar = avatarMorphRef.current;
         const source = heroAvatarRef.current;
         const target = navigationTargetRef.current;
-        const navigation = navigationRef.current;
 
-        if (!avatar || !source || !target || !navigation) return undefined;
+        if (!avatar || !source || !target) return undefined;
 
         const mobileViewport = window.matchMedia("(max-width: 899px)");
         const reducedMotion = window.matchMedia(
@@ -110,7 +56,6 @@ const useMobileAvatarMorph = ({
             if (!mobileViewport.matches) {
                 avatar.classList.remove("is-ready");
                 source.classList.remove("has-morph");
-                clearNavigationProgress(navigation);
                 setIsAvatarDocked(false);
                 return;
             }
@@ -140,7 +85,6 @@ const useMobileAvatarMorph = ({
                 : rawProgress * rawProgress * (3 - 2 * rawProgress);
 
             setAvatarProgress(avatar, source, target, progress);
-            setNavigationProgress(navigation, progress);
             setIsAvatarDocked((currentValue) => {
                 const nextValue = progress >= 0.8;
                 return currentValue === nextValue ? currentValue : nextValue;
@@ -168,15 +112,8 @@ const useMobileAvatarMorph = ({
             window.removeEventListener("resize", requestAvatarUpdate);
             reducedMotion.removeEventListener?.("change", requestAvatarUpdate);
             source.classList.remove("has-morph");
-            clearNavigationProgress(navigation);
         };
-    }, [
-        avatarMorphRef,
-        heroAvatarRef,
-        navigationRef,
-        navigationTargetRef,
-        view,
-    ]);
+    }, [avatarMorphRef, heroAvatarRef, navigationTargetRef, view]);
 
     return isAvatarDocked;
 };

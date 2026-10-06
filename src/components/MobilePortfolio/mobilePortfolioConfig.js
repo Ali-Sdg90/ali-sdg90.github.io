@@ -12,11 +12,10 @@ export const NAV_ITEMS = [
 ];
 
 export const locationItem = contactItems.find(({ id }) => id === "location");
-export const githubItem = contactItems.find(({ id }) => id === "github");
-export const socialLinkItems = [
-    ...contactItems.filter(({ id }) => id !== "location"),
-    ...socialItems,
-];
+export const contactLinkItems = contactItems.filter(
+    ({ id }) => id !== "location",
+);
+export const socialLinkItems = socialItems;
 
 export const SHELF_SECTION_MAP = Object.fromEntries(
     shelfSections.map((section) => [section.id, section]),

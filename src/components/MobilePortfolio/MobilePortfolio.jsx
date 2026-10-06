@@ -40,7 +40,6 @@ const MobilePortfolio = ({
     const isAvatarDocked = useMobileAvatarMorph({
         avatarMorphRef,
         heroAvatarRef,
-        navigationRef: mobileNavRef,
         navigationTargetRef: navBrandRef,
         view,
     });
