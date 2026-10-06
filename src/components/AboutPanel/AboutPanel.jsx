@@ -1,41 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 
 import AboutPanelExpandToggle from "./AboutPanelExpandToggle";
+import AboutPanelLanguageToggle from "./AboutPanelLanguageToggle";
 import AboutMeContent from "./AboutMeContent";
 import { getShelfItemDetailModule } from "./ShelfItemDetails";
 import CustomScrollbar from "../ui/CustomScrollbar";
 import LightboxImage from "../ui/LightboxImage";
 import { aboutData } from "../../data/portfolio/aboutData";
-
-const AboutPanelLanguageToggle = ({ activeLanguage, onLanguageChange }) => (
-    <div
-        className={[
-            "about-panel-language-toggle",
-            activeLanguage === "FA" ? "is-fa-active" : "is-en-active",
-        ]
-            .filter(Boolean)
-            .join(" ")}
-        aria-label="Language"
-    >
-        <span className="about-panel-language-thumb" aria-hidden="true" />
-        {["EN", "FA"].map((language) => (
-            <button
-                className={[
-                    "about-panel-language-option",
-                    activeLanguage === language ? "is-active" : "",
-                ]
-                    .filter(Boolean)
-                    .join(" ")}
-                key={language}
-                type="button"
-                aria-pressed={activeLanguage === language}
-                onClick={() => onLanguageChange(language)}
-            >
-                {language}
-            </button>
-        ))}
-    </div>
-);
 
 const AboutPanel = ({ aboutMePulse, className, inert, selectedShelfItem }) => {
     const [activeLanguage, setActiveLanguage] = useState("EN");

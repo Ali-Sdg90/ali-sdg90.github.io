@@ -41,9 +41,9 @@
         position: relative;
         z-index: 1;
         width: min(100%, 42rem);
-        max-height: calc(94dvh - env(safe-area-inset-top));
+        max-height: calc(96dvh - env(safe-area-inset-top));
         display: grid;
-        grid-template-rows: auto auto minmax(0, 1fr);
+        grid-template-rows: auto minmax(0, 1fr);
         overflow: hidden;
         border: 1px solid rgba(102, 188, 255, 0.22);
         border-bottom: 0;
@@ -59,17 +59,9 @@
         animation: mobile-sheet-in 1280ms cubic-bezier(0.16, 1, 0.3, 1) both;
     }
 
-    .mobile-sheet-handle {
-        width: 2.8rem;
-        height: 0.28rem;
-        margin: 0.55rem auto 0;
-        border-radius: 999px;
-        background: rgba(189, 220, 244, 0.34);
-    }
-
     .mobile-sheet-header {
-        min-height: 3.45rem;
-        padding: 0.45rem 0.85rem 0.55rem 1.1rem;
+        min-height: 3.1rem;
+        padding: 0.35rem 0.65rem 0.45rem 1.1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -86,19 +78,25 @@
     }
 
     .mobile-sheet-close {
-        width: 2.4rem;
-        height: 2.4rem;
+        width: 2rem;
+        height: 2rem;
         display: grid;
         place-items: center;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
+        padding: 0;
+        border: 0;
+        border-radius: 0.45rem;
         color: #dcecf8;
-        background: rgba(255, 255, 255, 0.05);
+        background: transparent;
         cursor: pointer;
 
+        &:focus-visible {
+            outline: 2px solid rgba(100, 199, 255, 0.72);
+            outline-offset: 2px;
+        }
+
         svg {
-            width: 1.2rem;
-            height: 1.2rem;
+            width: 1.25rem;
+            height: 1.25rem;
         }
     }
 
@@ -173,32 +171,23 @@
         justify-content: flex-end;
     }
 
-    .mobile-sheet-language {
-        padding: 0.2rem;
-        display: inline-flex;
-        gap: 0.15rem;
-        border: 1px solid rgba(99, 188, 255, 0.2);
-        border-radius: 999px;
-        background: rgba(3, 13, 24, 0.72);
+    .mobile-sheet .about-panel-language-toggle {
+        border-color: rgba(22, 136, 255, 0.3);
+        box-shadow:
+            inset 0 1px 0 rgba(222, 241, 255, 0.06),
+            0 0 0.45rem rgba(22, 136, 255, 0.04);
+    }
 
-        button {
-            min-width: 2.5rem;
-            min-height: 1.85rem;
-            padding: 0.35rem 0.55rem;
-            border: 0;
-            border-radius: 999px;
-            color: rgba(181, 207, 226, 0.62);
-            background: transparent;
-            font-size: 0.63rem;
-            font-weight: 760;
-            cursor: pointer;
+    .mobile-sheet .about-panel-language-thumb {
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.18),
+            0 0 0.5rem rgba(22, 136, 255, 0.18);
+    }
 
-            &.is-active {
-                color: #eff9ff;
-                background: rgba(30, 137, 218, 0.5);
-                box-shadow: 0 0 0.8rem rgba(22, 136, 255, 0.16);
-            }
-        }
+    .mobile-sheet .about-panel-language-option.is-active {
+        box-shadow:
+            inset 0 1px 0 rgba(222, 241, 255, 0.16),
+            0 0 0.45rem rgba(22, 136, 255, 0.16);
     }
 
     .mobile-sheet-about {

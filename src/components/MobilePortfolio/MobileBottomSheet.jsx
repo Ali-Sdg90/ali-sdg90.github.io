@@ -1,26 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { HiOutlineXMark } from "react-icons/hi2";
 
+import AboutPanelLanguageToggle from "../AboutPanel/AboutPanelLanguageToggle";
 import { getShelfItemDetailModule } from "../AboutPanel/ShelfItemDetails";
 import { aboutData } from "../../data/portfolio/aboutData";
 
 const EXIT_ANIMATION_MS = 420;
-
-const LanguageToggle = ({ activeLanguage, onChange }) => (
-    <div className="mobile-sheet-language" aria-label="Language">
-        {["EN", "FA"].map((language) => (
-            <button
-                className={activeLanguage === language ? "is-active" : ""}
-                key={language}
-                type="button"
-                aria-pressed={activeLanguage === language}
-                onClick={() => onChange(language)}
-            >
-                {language}
-            </button>
-        ))}
-    </div>
-);
 
 const MobileBottomSheet = ({ content, onClose }) => {
     const [activeLanguage, setActiveLanguage] = useState("EN");
@@ -39,16 +24,16 @@ const MobileBottomSheet = ({ content, onClose }) => {
             ? aboutData.titleFa
             : aboutData.titleEn
         : selectedModule?.title;
-    const subtitle = isAboutMe ? "Software Engineer" : selectedModule?.subtitle;
+    const subtitle = isAboutMe ? null : selectedModule?.subtitle;
     const image = isAboutMe ? aboutData.image : selectedModule?.image;
     const ImpactIcon =
         selectedShelfItem?.section.id === "achievements"
             ? selectedShelfItem.item.icon
             : null;
     const languageToggle = (
-        <LanguageToggle
+        <AboutPanelLanguageToggle
             activeLanguage={activeLanguage}
-            onChange={setActiveLanguage}
+            onLanguageChange={setActiveLanguage}
         />
     );
 
@@ -119,8 +104,6 @@ const MobileBottomSheet = ({ content, onClose }) => {
                 aria-modal="true"
                 aria-labelledby="mobile-sheet-title"
             >
-                <div className="mobile-sheet-handle" aria-hidden="true" />
-
                 <header className="mobile-sheet-header">
                     <p>
                         {isAboutMe

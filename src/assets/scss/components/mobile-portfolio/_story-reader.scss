@@ -1,34 +1,120 @@
 @use "../../base/variables" as *;
 
 @media (max-width: 899px) {
+    .story-reader-modal {
+        box-sizing: border-box;
+        align-items: stretch;
+        justify-items: center;
+        padding-top: calc(env(safe-area-inset-top) + 4.5rem);
+        padding-right: max(1rem, env(safe-area-inset-right));
+        padding-bottom: calc(env(safe-area-inset-bottom) + 2rem);
+        padding-left: max(1rem, env(safe-area-inset-left));
+    }
+
+    .story-reader-modal > .about-panel-lightbox-close {
+        top: calc(env(safe-area-inset-top) + 0.75rem);
+        right: max(1rem, env(safe-area-inset-right));
+        width: 2.6rem;
+        border: 0;
+        color: rgba(232, 245, 255, 0.92);
+        background: transparent;
+
+        svg {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+    }
+
     .story-reader-modal__frame {
-        width: calc(100vw - 1rem);
+        width: 100%;
         min-width: 0;
-        height: calc(100dvh - 1rem);
+        max-width: 42rem;
+        height: auto;
         min-height: 0;
+        max-height: none;
+        align-self: stretch;
+        padding: 4px;
+        border-radius: 1.15rem;
     }
 
     .story-reader-modal__surface {
-        border-width: 4px;
-        border-radius: 1rem;
+        border-width: 3px;
+        border-radius: 0.9rem;
     }
 
     .story-reader-modal__header {
-        min-height: 4.8rem;
-        padding: 0.8rem;
+        min-height: 0;
+        padding: 0.9rem 0.95rem 0.85rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         gap: 0.7rem;
     }
 
-    .story-reader-modal__heading h2 {
-        font-size: 1rem;
+    .story-reader-modal__heading {
+        min-width: 0;
+        flex: 1 1 auto;
     }
 
-    .story-reader-modal__source-link span {
-        display: none;
+    .story-reader-modal__eyebrow {
+        gap: 0.4rem;
+        font-size: 0.58rem;
+        letter-spacing: 0.12em;
+
+        svg {
+            width: 0.68rem;
+            height: 0.68rem;
+        }
+    }
+
+    .story-reader-modal__heading h2 {
+        display: -webkit-box;
+        overflow: hidden;
+        margin-top: 0.42rem;
+        font-size: clamp(1rem, 4.8vw, 1.25rem);
+        line-height: 1.2;
+        text-overflow: clip;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    .story-reader-modal.is-impact-story .story-reader-modal__heading h2 {
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+    }
+
+    .story-reader-modal__controls {
+        width: auto;
+        gap: 0.55rem;
+        flex: 0 0 auto;
+    }
+
+    .story-reader-modal__source-link {
+        width: 2.3rem;
+        min-height: 2.3rem;
+        padding: 0;
+        border-radius: 0.65rem;
+
+        span,
+        svg:last-child {
+            display: none;
+        }
+
+        svg:first-child {
+            width: 0.95rem;
+            height: 0.95rem;
+        }
     }
 
     .story-reader-modal__scroll {
-        padding: 1.5rem 1.1rem 2rem;
+        padding: 1.35rem 1rem calc(2rem + env(safe-area-inset-bottom));
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     .story-reader-modal__content p,
@@ -38,6 +124,24 @@
         .story-reader-modal__content
         p:first-of-type {
         font-size: 0.9rem;
+    }
+
+    .story-reader-modal__content p {
+        margin-bottom: 1.2em;
+        line-height: 1.82;
+    }
+
+    .story-reader-modal__scroll[dir="rtl"] .story-reader-modal__content p {
+        line-height: 2;
+    }
+
+    .story-reader-modal__opening-mark {
+        width: min(12rem, 68%);
+        margin-bottom: 1.35rem;
+    }
+
+    .story-reader-modal__closing-mark {
+        margin-top: 1.8rem;
     }
 
     .mobile-build-story {

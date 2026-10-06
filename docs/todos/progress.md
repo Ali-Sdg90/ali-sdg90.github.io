@@ -182,11 +182,11 @@
     - [x] Improve career journey card padding, use better arrow icon and extends the left line
     - [x] Check if can make the footer smaller
     - [x] Check what can i do for lighthouse image preview in mobile view
-    - [ ] Fix font size in loading section of the lighthouse
-    - [ ] Add missing images to use lighthouse in mobile view
-    - [ ] Fix spacing on top of the bottom-sheet in mobile view and remove that extra line on top
-    - [ ] remove en-fa version in the mobile view and replace it with regular desktop version
-    - [ ] Fix spacing in story modal and position of the close btn in mobile view
+    - [x] Fix font size in loading section of the lighthouse
+    - [x] Add missing images to use lighthouse in mobile view
+    - [x] Fix spacing on top of the bottom-sheet in mobile view and remove that extra line on top
+    - [x] remove en-fa version in the mobile view and replace it with regular desktop version
+    - [x] Fix spacing in story modal and position of the close btn in mobile view
     - [ ] Fix spacing between labels and meta for sections
     - [ ] Maybe add click color change for header items?
     - [ ] fix pacing and spacing in the how-my-portfolio-was-built section
@@ -202,3 +202,23 @@
 - [ ] Check slow opening for the history model
 
 - [ ] Check what is this blank spaces are in light-box
+
+- [ ] Update timing of hmpwb pop up
+
+- [ ] Check if can move the fist part of intro in desktop view a bit higher
+
+- [ ] Do a ai-check for overcooking the box-shadows
+
+- [ ] Update the first and third texts in the hmpwb
+
+- [ ] Add global dictionary for hash addresses and use it for mobile url addressing
+
+- [ ] Double check if the featured projects order and items are ok
+
+- [ ] Check if can change z-index of portfolio-hero for dev-viewing in desktop view
+
+- [ ] Check if can use another route for static.cloudflareinsights.com/beacon.min.js/ ERR_CONNECTION_CLOSED
+
+- [ ] Re-write career stories with the new format of writing the stories
+
+- [ ] Check state of pre-loading fonts in the project
