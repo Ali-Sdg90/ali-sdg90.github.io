@@ -222,3 +222,7 @@
 - [ ] Re-write career stories with the new format of writing the stories
 
 - [ ] Check state of pre-loading fonts in the project
+
+- [ ] Update and finalize the Agent.md
+
+- [ ] Maybe add contributing, pull req and etc files?

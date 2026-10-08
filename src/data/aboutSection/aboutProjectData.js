@@ -23,6 +23,8 @@ import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-cale
 import { projectGalleryImages } from "./projectGalleryData";
 import projectCsQueueCalendarStoryEN from "../stories/en/projects/cs-queue-calendar.md?raw";
 import projectCsQueueCalendarStoryFA from "../stories/fa/projects/cs-queue-calendar.md?raw";
+import projectHealthDataRelayStoryEN from "../stories/en/projects/health-data-relay.md?raw";
+import projectHealthDataRelayStoryFA from "../stories/fa/projects/health-data-relay.md?raw";
 
 export const aboutProjectData = {
     "alis-portfolio": {
@@ -109,19 +111,28 @@ export const aboutProjectData = {
             "Supports English, Persian, Jalali dates, and configurable data categories",
         ],
         galleryImages: projectGalleryImages["health-data-relay"],
-        storyEN: "",
-        storyFA: "",
+        storyEN: projectHealthDataRelayStoryEN.trim(),
+        storyFA: projectHealthDataRelayStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "health-data-relay",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "APKPure",
-                text: "Download the latest Health Data Relay release",
-                url: "https://apkpure.com/p/com.alisadeghi.autohealthsync",
+                label: "LinkedIn Post",
+                text: "Read the launch story behind Health Data Relay",
+                url: "https://www.linkedin.com/feed/update/urn:li:activity:7513531566740918272/",
             },
             {
                 label: "Cafe Bazaar",
                 text: "Download the latest Health Data Relay release",
                 url: "https://cafebazaar.ir/app/com.alisadeghi.autohealthsync",
+            },
+            {
+                label: "APKPure",
+                text: "Download the latest Health Data Relay release",
+                url: "https://apkpure.com/p/com.alisadeghi.autohealthsync",
             },
             {
                 label: "GitHub Releases",

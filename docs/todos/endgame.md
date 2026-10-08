@@ -38,4 +38,6 @@
 - [ ] Get feedback from trusted friends
     - [x] S.K.
 
-- [ ] Maybe announce the site in my social medias?
+- [ ] Announce the project on my social medias
+
+- [ ] Share my portfolio on developer communities and platforms like Reddit to get feedback and visibility
