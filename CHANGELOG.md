@@ -1,3 +1,10 @@
+## [1.35.9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.8...v1.35.9) (2026-10-10)
+
+
+### Performance Improvements
+
+* separated the mobile view form desktop view, lazy load the light-box and hmpwb and persian font, load en font in high priority ([bb82cc8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/bb82cc8b6c0e31847c9363a84062d3a9bce78445))
+
 ## [1.35.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.7...v1.35.8) (2026-10-10)
 
 
