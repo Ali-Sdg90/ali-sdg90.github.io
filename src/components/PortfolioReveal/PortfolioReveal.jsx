@@ -1,9 +1,18 @@
 import { flushSync } from "react-dom";
-import { useCallback, useEffect, useRef, useState } from "react";
+import {
+    lazy,
+    Suspense,
+    useCallback,
+    useEffect,
+    useRef,
+    useState,
+} from "react";
 
-import HowItWasBuilt from "../HowItWasBuilt";
 import { trackUmamiEvent } from "../../utils/analytics";
 import { getPageTurnGeometry, pointOnCubicPath } from "./pageTurnGeometry";
+
+const loadHowItWasBuilt = () => import("../HowItWasBuilt");
+const HowItWasBuilt = lazy(loadHowItWasBuilt);
 
 const DEFAULT_FOLD = 28;
 const HOVER_FOLD = 60;
@@ -160,7 +169,7 @@ const PortfolioReveal = ({
         if (isOpenRef.current || isAnimatingRef.current) return;
 
         // Mount the underneath page before the first visible turn frame.
-        if (!hasOpenedBuildStory) flushSync(() => setHasOpenedBuildStory(true));
+        flushSync(() => setHasOpenedBuildStory(true));
         setIsReturning(false);
         buildStoryRef.current?.scrollTo({ top: 0 });
         triggerRef.current.hidden = true;
@@ -196,7 +205,7 @@ const PortfolioReveal = ({
             returnButtonRef.current?.focus();
         };
         animationFrameRef.current = requestAnimationFrame(tick);
-    }, [beginTurn, finishTurn, hasOpenedBuildStory, renderProgress]);
+    }, [beginTurn, finishTurn, renderProgress]);
 
     const closePage = useCallback(() => {
         if (!isOpenRef.current || isAnimatingRef.current) return;
@@ -293,34 +302,28 @@ const PortfolioReveal = ({
     }, [renderPosition, renderProgress]);
 
     useEffect(() => {
-        const frame = requestAnimationFrame(() => {
+        let isCancelled = false;
+        let frame;
+
+        const syncBuildStory = async () => {
             if (isBuildStoryOpen) {
-                openPage();
-            } else {
-                closePage();
+                await loadHowItWasBuilt();
+                if (isCancelled) return;
+
+                frame = requestAnimationFrame(openPage);
+                return;
             }
-        });
 
-        return () => cancelAnimationFrame(frame);
-    }, [closePage, isBuildStoryOpen, isOpen, openPage]);
+            frame = requestAnimationFrame(closePage);
+        };
 
-    useEffect(() => {
-        if (hasOpenedBuildStory) return undefined;
-        if (window.matchMedia("(max-width: 899px)").matches) return undefined;
+        void syncBuildStory();
 
-        // Prepare the journal during idle time so its first render cannot flash
-        // into view halfway through an interaction.
-        if ("requestIdleCallback" in window) {
-            const id = window.requestIdleCallback(
-                () => setHasOpenedBuildStory(true),
-                { timeout: 4000 },
-            );
-            return () => window.cancelIdleCallback(id);
-        }
-
-        const id = window.setTimeout(() => setHasOpenedBuildStory(true), 2000);
-        return () => clearTimeout(id);
-    }, [hasOpenedBuildStory]);
+        return () => {
+            isCancelled = true;
+            cancelAnimationFrame(frame);
+        };
+    }, [closePage, isBuildStoryOpen, openPage]);
 
     useEffect(() => {
         let isDisposed = false;
@@ -372,12 +375,14 @@ const PortfolioReveal = ({
                     inert={isStoryActive ? undefined : true}
                 >
                     {hasOpenedBuildStory && (
-                        <HowItWasBuilt
-                            ref={buildStoryRef}
-                            isActive={isStoryActive}
-                            returnButtonRef={returnButtonRef}
-                            onReturn={onBuildStoryClose}
-                        />
+                        <Suspense fallback={null}>
+                            <HowItWasBuilt
+                                ref={buildStoryRef}
+                                isActive={isStoryActive}
+                                returnButtonRef={returnButtonRef}
+                                onReturn={onBuildStoryClose}
+                            />
+                        </Suspense>
                     )}
                 </div>
                 <div

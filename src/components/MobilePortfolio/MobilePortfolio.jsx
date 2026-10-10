@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 
-import HowItWasBuilt from "../HowItWasBuilt";
 // import UnderConstructionBadge from "../UnderConstructionBadge/UnderConstructionBadge";
 import MobileBottomSheet from "./MobileBottomSheet";
 import MobileBuildStoryEntry from "./components/MobileBuildStoryEntry";
@@ -20,6 +19,8 @@ import MobileProjectsSection from "./sections/MobileProjectsSection";
 import MobileStackSection from "./sections/MobileStackSection";
 import { trackUmamiEvent } from "../../utils/analytics";
 import { getShelfItemId } from "../../utils/getShelfItemId";
+
+const HowItWasBuilt = lazy(() => import("../HowItWasBuilt"));
 
 const MobilePortfolio = ({
     onBuildStoryClose,
@@ -132,12 +133,14 @@ const MobilePortfolio = ({
     if (view === "build-story") {
         return (
             <div className="mobile-build-story">
-                <HowItWasBuilt
-                    ref={buildStoryRef}
-                    isActive
-                    returnButtonRef={buildStoryReturnRef}
-                    onReturn={onBuildStoryClose}
-                />
+                <Suspense fallback={null}>
+                    <HowItWasBuilt
+                        ref={buildStoryRef}
+                        isActive
+                        returnButtonRef={buildStoryReturnRef}
+                        onReturn={onBuildStoryClose}
+                    />
+                </Suspense>
             </div>
         );
     }

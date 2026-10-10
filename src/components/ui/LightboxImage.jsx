@@ -1,6 +1,6 @@
-import { useRef, useState } from "react";
+import { lazy, Suspense, useRef, useState } from "react";
 
-import ImageLightbox from "./ImageLightbox";
+const ImageLightbox = lazy(() => import("./ImageLightbox"));
 
 const getFallbackText = (image) => {
     const sourceText = image.fallbackText ?? image.alt ?? "Image";
@@ -106,10 +106,12 @@ const LightboxImage = ({
             </button>
 
             {isLightboxOpen && (
-                <ImageLightbox
-                    image={lightboxImage}
-                    onClose={() => setIsLightboxOpen(false)}
-                />
+                <Suspense fallback={null}>
+                    <ImageLightbox
+                        image={lightboxImage}
+                        onClose={() => setIsLightboxOpen(false)}
+                    />
+                </Suspense>
             )}
         </>
     );

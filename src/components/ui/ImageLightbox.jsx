@@ -8,6 +8,8 @@ import {
     FaXmark,
 } from "react-icons/fa6";
 
+import "../../assets/scss/components/about-panel/_about-panel-lightbox.scss";
+
 const EXIT_ANIMATION_MS = 220;
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 4;

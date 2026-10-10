@@ -7,6 +7,7 @@ import StoryClosing from "./StoryClosing";
 import StoryHeader from "./StoryHeader";
 import StoryHero from "./StoryHero";
 import useBuildStoryAnalytics from "../../hooks/useBuildStoryAnalytics";
+import "../../assets/scss/components/how-it-was-built/index.scss";
 
 const HowItWasBuilt = forwardRef(function HowItWasBuilt(
     { isActive, onReturn, returnButtonRef },
