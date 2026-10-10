@@ -6,6 +6,7 @@ const MobileHeader = ({
     avatarMorphRef,
     isAvatarDocked,
     navigationRef,
+    navigationTarget,
     navigationTargetRef,
     onNavigate,
 }) => (
@@ -24,7 +25,14 @@ const MobileHeader = ({
             <nav aria-label="Portfolio sections">
                 {NAV_ITEMS.map((item) => (
                     <a
-                        className={activeSection === item.id ? "is-active" : ""}
+                        className={[
+                            activeSection === item.id ? "is-active" : "",
+                            navigationTarget === item.id
+                                ? "is-navigation-target"
+                                : "",
+                        ]
+                            .filter(Boolean)
+                            .join(" ")}
                         href={`#${item.id}`}
                         key={item.id}
                         aria-current={

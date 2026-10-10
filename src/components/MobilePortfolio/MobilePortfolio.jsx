@@ -27,6 +27,7 @@ const MobilePortfolio = ({
     view,
 }) => {
     const [isAboutOpen, setIsAboutOpen] = useState(false);
+    const [navigationTarget, setNavigationTarget] = useState(null);
     const buildStoryRef = useRef(null);
     const buildStoryReturnRef = useRef(null);
     const avatarMorphRef = useRef(null);
@@ -36,6 +37,7 @@ const MobilePortfolio = ({
     const [activeSection, setActiveSection] = useActiveMobileSection(
         view,
         mobileNavRef,
+        setNavigationTarget,
     );
     const isAvatarDocked = useMobileAvatarMorph({
         avatarMorphRef,
@@ -75,7 +77,12 @@ const MobilePortfolio = ({
 
     const scrollToSection = (event, sectionId) => {
         event.preventDefault();
-        setActiveSection(sectionId === "mobile-top" ? null : sectionId);
+        setNavigationTarget(
+            sectionId === "mobile-top" || sectionId === activeSection
+                ? null
+                : sectionId,
+        );
+        if (sectionId === "mobile-top") setActiveSection(null);
         document.getElementById(sectionId)?.scrollIntoView({
             behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
                 .matches
@@ -107,6 +114,7 @@ const MobilePortfolio = ({
                 avatarMorphRef={avatarMorphRef}
                 isAvatarDocked={isAvatarDocked}
                 navigationRef={mobileNavRef}
+                navigationTarget={navigationTarget}
                 navigationTargetRef={navBrandRef}
                 onNavigate={scrollToSection}
             />

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { NAV_ITEMS } from "../mobilePortfolioConfig";
 
-const useActiveMobileSection = (view, navigationRef) => {
+const useActiveMobileSection = (view, navigationRef, setNavigationTarget) => {
     const [activeSection, setActiveSection] = useState(null);
 
     useEffect(() => {
@@ -27,6 +27,9 @@ const useActiveMobileSection = (view, navigationRef) => {
             setActiveSection((currentSection) =>
                 currentSection === nextSection ? currentSection : nextSection,
             );
+            setNavigationTarget((currentTarget) =>
+                currentTarget === nextSection ? null : currentTarget,
+            );
         };
 
         const requestSectionUpdate = () => {
@@ -45,7 +48,7 @@ const useActiveMobileSection = (view, navigationRef) => {
             window.removeEventListener("scroll", requestSectionUpdate);
             window.removeEventListener("resize", requestSectionUpdate);
         };
-    }, [navigationRef, view]);
+    }, [navigationRef, setNavigationTarget, view]);
 
     return [activeSection, setActiveSection];
 };

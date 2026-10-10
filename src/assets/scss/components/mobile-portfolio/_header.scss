@@ -58,6 +58,10 @@
                         0 0.45rem 1.25rem rgba(0, 95, 210, 0.14);
                 }
 
+                &.is-navigation-target:not(.is-active) {
+                    color: rgba(238, 247, 255, 0.92);
+                }
+
                 &:focus-visible {
                     outline: 2px solid var(--mobile-accent);
                     outline-offset: 2px;

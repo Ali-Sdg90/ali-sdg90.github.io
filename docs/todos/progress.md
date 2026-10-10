@@ -187,17 +187,17 @@
     - [x] Fix spacing on top of the bottom-sheet in mobile view and remove that extra line on top
     - [x] remove en-fa version in the mobile view and replace it with regular desktop version
     - [x] Fix spacing in story modal and position of the close btn in mobile view
-    - [ ] Fix spacing between labels and meta for sections
-    - [ ] Maybe add click color change for header items?
+    - [x] Fix spacing between labels and meta for sections
+    - [x] Maybe add click color change for header items?
     - [ ] fix pacing and spacing in the how-my-portfolio-was-built section
     - [ ] Check lighthouse and memory usage for the site in mobile view
-    - [ ] Get AI feedback for the view
-    - [ ] Use better icons or indicators for buttons in the hero section
+    - [x] Use better icons or indicators for buttons in the hero section
     - [ ] Fix spacing in the about me section
-    - [ ] Use better style for badges in about me section
-    - [ ] Maybe add collapsible ali's image in about me section?
+    - [x] Use better style for badges in about me section
+    - [x] Maybe add collapsible ali's image in about me section?
     - [ ] Check wording in the how-my-portfolio-was-built section
     - [ ] Check what happen when using pre-loaded url and viewing the site in mobile view
+    - [ ] Get AI feedback for the view and finalize it
 
 - [ ] Check slow opening for the history model
 

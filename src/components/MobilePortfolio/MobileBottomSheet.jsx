@@ -3,6 +3,7 @@ import { HiOutlineXMark } from "react-icons/hi2";
 
 import AboutPanelLanguageToggle from "../AboutPanel/AboutPanelLanguageToggle";
 import { getShelfItemDetailModule } from "../AboutPanel/ShelfItemDetails";
+import LightboxImage from "../ui/LightboxImage";
 import { aboutData } from "../../data/portfolio/aboutData";
 
 const EXIT_ANIMATION_MS = 420;
@@ -99,7 +100,7 @@ const MobileBottomSheet = ({ content, onClose }) => {
             />
 
             <section
-                className="mobile-sheet"
+                className={`mobile-sheet${isAboutMe ? " is-about" : ""}`}
                 role="dialog"
                 aria-modal="true"
                 aria-labelledby="mobile-sheet-title"
@@ -126,6 +127,14 @@ const MobileBottomSheet = ({ content, onClose }) => {
                         <div className="mobile-sheet-media">
                             {ImpactIcon ? (
                                 <ImpactIcon aria-hidden="true" />
+                            ) : isAboutMe ? (
+                                <LightboxImage
+                                    image={image}
+                                    buttonClassName="mobile-sheet-media-button"
+                                    fallbackClassName="mobile-sheet-media-fallback"
+                                    imageClassName="mobile-sheet-media-image"
+                                    imageProps={{ decoding: "async" }}
+                                />
                             ) : (
                                 <img
                                     src={image?.src}
