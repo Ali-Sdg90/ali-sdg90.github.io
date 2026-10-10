@@ -1,3 +1,10 @@
+## [1.35.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.7...v1.35.8) (2026-10-10)
+
+
+### Performance Improvements
+
+* simplify styles of the bottom-sheet and light-box and history modal in mobile view, before applying lighthouse suggestion to mobile view ([6b63ef9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/6b63ef9a551230b7f4217441e1ff12301d9f6316))
+
 ## [1.35.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.6...v1.35.7) (2026-10-10)
 
 
