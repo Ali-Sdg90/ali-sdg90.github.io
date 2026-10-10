@@ -1,3 +1,10 @@
+# [1.36.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.9...v1.36.0) (2026-10-10)
+
+
+### Features
+
+* add new image optimization pipeline and create/update assets ([afd5d3a](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/afd5d3a37f514721e5a02a47a19ee9ab96a01e1d))
+
 ## [1.35.9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.8...v1.35.9) (2026-10-10)
 
 
