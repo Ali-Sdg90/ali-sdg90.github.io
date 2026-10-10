@@ -199,7 +199,7 @@
     - [x] Check what happen when using pre-loaded url and viewing the site in mobile view
     - [ ] Get AI feedback for the view and finalize it
 
-- [ ] Check slow opening for the history model
+- [x] Check slow opening for the history model
 
 - [x] Check what is this blank spaces are in light-box
 
@@ -226,3 +226,7 @@
 - [ ] Update and finalize the Agent.md
 
 - [ ] Maybe add contributing, pull req and etc files?
+
+- [ ] Add og-image and other header html mates
+
+- [ ] Check for performance of the desktop and mobile view

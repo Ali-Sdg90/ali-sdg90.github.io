@@ -40,6 +40,10 @@
     .story-reader-modal__surface {
         border-width: 3px;
         border-radius: 0.9rem;
+        box-shadow:
+            inset 0 0 0 1px rgba(138, 207, 255, 0.08),
+            0 12px 28px rgba(0, 0, 0, 0.42),
+            0 0 14px rgba(22, 136, 255, 0.1);
     }
 
     .story-reader-modal__header {
@@ -49,6 +53,11 @@
         align-items: center;
         justify-content: space-between;
         gap: 0.7rem;
+        background:
+            linear-gradient(110deg, rgba(22, 136, 255, 0.1), transparent 48%),
+            rgba(3, 12, 28, 0.88);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+        backdrop-filter: blur(7px);
     }
 
     .story-reader-modal__heading {
@@ -142,6 +151,16 @@
 
     .story-reader-modal__closing-mark {
         margin-top: 1.8rem;
+
+        span {
+            box-shadow: 0 0 8px rgba(22, 136, 255, 0.28);
+        }
+    }
+
+    .story-reader-modal__progress::after {
+        box-shadow:
+            0 0 5px rgba(22, 136, 255, 0.58),
+            0 0 9px rgba(0, 221, 255, 0.22);
     }
 
     .mobile-build-story {

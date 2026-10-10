@@ -325,10 +325,41 @@
 }
 
 @media (max-width: 899px) {
+    .about-panel-lightbox {
+        backdrop-filter: blur(7px);
+        animation-duration: 330ms;
+
+        &.is-closing {
+            animation-duration: 220ms;
+
+            .about-panel-lightbox-frame {
+                animation: about-panel-lightbox-mobile-image-exit 220ms
+                    $ease-out both;
+            }
+        }
+    }
+
     .about-panel-lightbox-frame {
         --lightbox-frame-max-height: calc(
             100dvh - 9rem - env(safe-area-inset-bottom)
         );
+
+        box-shadow:
+            0 0 0 1px rgba(35, 123, 255, 0.16),
+            inset 0 1px 0 rgba(222, 241, 255, 0.16),
+            0 0 20px rgba(22, 136, 255, 0.26),
+            0 18px 48px rgba(0, 0, 0, 0.52);
+        animation: about-panel-lightbox-mobile-image-enter 360ms $ease-out both;
+    }
+
+    .about-panel-lightbox-image:not(.about-panel-lightbox-image-fallback) {
+        box-shadow:
+            inset 0 0 0 1px rgba(138, 207, 255, 0.08),
+            0 10px 24px rgba(0, 0, 0, 0.42),
+            0 0 14px rgba(22, 136, 255, 0.1);
+        transition:
+            opacity 360ms $ease-out,
+            transform 420ms $ease-out;
     }
 
     .about-panel-lightbox-loader-text {
@@ -340,12 +371,41 @@
     }
 
     .about-panel-lightbox-toolbar {
+        box-shadow:
+            inset 0 1px 0 rgba(222, 241, 255, 0.1),
+            0 0 14px rgba(22, 136, 255, 0.14),
+            0 9px 24px rgba(0, 0, 0, 0.36);
+        backdrop-filter: blur(7px);
         transform: translate(-50%, 78%);
 
         button,
         a {
             touch-action: manipulation;
         }
+    }
+}
+
+@keyframes about-panel-lightbox-mobile-image-enter {
+    from {
+        opacity: 0.35;
+        transform: translateY(10px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes about-panel-lightbox-mobile-image-exit {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(8px) scale(0.985);
     }
 }
 
