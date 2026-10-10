@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title">
+  <title id="title">ApexCharts logo</title>
+  <rect width="300" height="300" rx="28" fill="#081627" />
+  <g transform="translate(41.2 55.8)">
+    <path d="M46.18 161.79H74.54L89.93 188.45H0L108.8 0L217.61 188.45H186.82L171.43 161.79L163.11 147.38L108.8 53.33Z" fill="#fff" fill-rule="evenodd" />
+    <path d="M175.25 188.45L117.2 87.9L101.8 114.57L144.46 188.45Z" fill="#00e396" fill-rule="evenodd" />
+    <path d="M132.29 188.45L95.71 125.11L80.32 151.77L101.5 188.45Z" fill="#feb019" fill-rule="evenodd" />
+  </g>
+</svg>

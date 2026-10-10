@@ -1,0 +1,28 @@
+{
+    "featuredProjects": {
+        "width": 480,
+        "height": 480
+    },
+    "techStack": {
+        "width": 96,
+        "height": 96
+    },
+    "careerJourney": {
+        "width": 128,
+        "height": 128
+    },
+    "gallery": {
+        "mobile": {
+            "width": 256,
+            "height": 208
+        },
+        "desktop": {
+            "width": 1640,
+            "height": 1200
+        }
+    },
+    "aboutMe": {
+        "width": 256,
+        "height": 256
+    }
+}
