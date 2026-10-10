@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > **Project under construction** — the core experience is available, while content, mobile support, and final refinements are still in active development.
 
-![Ali Sadeghi's interactive portfolio interface](./src/assets/images/gallery-images/large-images/projects/portfolio/img1.png)
+![Ali Sadeghi's interactive portfolio interface](./src/assets/images/projects/alis-portfolio/gallery/img1.full.webp)
 
 An interactive, shelf-inspired portfolio created to present my projects, technical experience, career journey, and the thinking behind the product itself.
 

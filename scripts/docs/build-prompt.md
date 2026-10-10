@@ -17,9 +17,12 @@ Preserve the exact relative directory structure in the output directory.
 
 ## 2. Image outputs
 
-Generate exactly two WebP files for every source PNG.
+Generate outputs according to the matching rule mode.
+
+For normal responsive-image rules, generate exactly two WebP files:
 
 **Thumbnail — `filename.thumb.webp`**
+
 - Dimensions determined by the matching preset from `image-config.mjs`.
 - Use Sharp with `fit: "cover"` and `position: "centre"`.
 - Use lossy WebP with `quality: 82`.
@@ -27,6 +30,7 @@ Generate exactly two WebP files for every source PNG.
 - Preserve transparency where applicable.
 
 **Full — `filename.full.webp`**
+
 - Use WebP with `lossless: true`.
 - Preserve the source image's original dimensions, aspect ratio, and pixel quality.
 - Never resize or crop.
@@ -34,12 +38,18 @@ Generate exactly two WebP files for every source PNG.
 
 Never copy original PNG files into the output directory.
 
+For `single` rules such as `site/**` and `ui/**`, generate only
+`filename.webp` using WebP with `lossless: true`. Preserve the source image's
+original dimensions and never resize or crop it. Do not retain corresponding
+`.thumb.webp` or `.full.webp` files for these sources.
+
 Example:
 
 Input:
 `image-sources/projects/example/gallery/screenshot.png`
 
 Outputs:
+
 - `src/assets/images/projects/example/gallery/screenshot.thumb.webp`
 - `src/assets/images/projects/example/gallery/screenshot.full.webp`
 
@@ -48,7 +58,8 @@ Outputs:
 Import and use the existing `presets` and `rules` exports from `scripts/image-config.mjs`.
 
 - Match image paths against the configured glob patterns.
-- Use the matching rule to select the thumbnail preset.
+- Use responsive rules to select a thumbnail preset and single rules to create
+  one original-size lossless WebP.
 - Normalize paths for cross-platform compatibility, including Windows.
 - Validate preset dimensions and rule references.
 - Do not hardcode folder names or dimensions inside the processing logic.
@@ -101,6 +112,7 @@ Image processing must happen entirely in Node.js during development/build, never
 Provide clean, readable CLI output.
 
 Include:
+
 - Number of source images discovered.
 - Number processed.
 - Number skipped.
@@ -124,7 +136,8 @@ After implementation:
 
 1. Install any required dependencies.
 2. Run `npm run image:opt`.
-3. Verify that both WebP variants are generated correctly.
+3. Verify that responsive rules generate both WebP variants and single rules
+   generate only one lossless WebP.
 4. Verify directory structure preservation.
 5. Verify thumbnail dimensions against their presets.
 6. Verify full-size images retain their original dimensions.

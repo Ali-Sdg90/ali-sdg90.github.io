@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { HiArrowDownTray, HiArrowUpRight } from "react-icons/hi2";
 
 import { version as appVersion } from "../../../package.json";
-import mobileWipArtwork from "../../assets/images/global/bgg-2.png";
+import mobileWipArtwork from "../../assets/images/site/bgg-2.webp";
 import { PROJECT_REPOSITORY_URL } from "../UnderConstructionBadge/constants";
 
 const MobileWipNotice = () => (

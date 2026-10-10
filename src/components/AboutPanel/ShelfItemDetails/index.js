@@ -1,4 +1,4 @@
-import placeholderImage from "../../../assets/images/global/placeholder.jpg";
+import placeholderImage from "../../../assets/images/ui/placeholder.webp";
 import { getAboutCareerById } from "../../../data/aboutSection/aboutCareerData";
 import { getAboutImpactById } from "../../../data/aboutSection/aboutImpactData";
 import { getAboutProjectById } from "../../../data/aboutSection/aboutProjectData";

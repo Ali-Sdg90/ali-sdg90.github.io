@@ -230,3 +230,10 @@
 - [ ] Add og-image and other header html mates
 
 - [ ] Check for performance of the desktop and mobile view
+
+- [ ] Add general test cases
+
+- [ ] Set up new image optimizer pipeline to project
+    - [ ] Can be run via command and automatic on build
+    - [ ] Remove the temporary docs after the pipeline is set up and working
+    - [ ] Fix images in hmpwb

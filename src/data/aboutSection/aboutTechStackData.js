@@ -1,20 +1,20 @@
-import antDesignLogoLarge from "../../assets/images/large-images/tech-stack/ant-design_logo.jpg";
-import apexChartsLogoLarge from "../../assets/images/large-images/tech-stack/apexcharts_logo.svg";
-import azureLogoLarge from "../../assets/images/large-images/tech-stack/azure_logo.jpg";
-import chartJsLogoLarge from "../../assets/images/large-images/tech-stack/chart.js_logo.jpg";
-import expoLogoLarge from "../../assets/images/large-images/tech-stack/expo_logo.jpg";
-import firebaseLogoLarge from "../../assets/images/large-images/tech-stack/firebase_logo.jpg";
-import gitLogoLarge from "../../assets/images/large-images/tech-stack/git_logo.jpg";
-import githubActionsLogoLarge from "../../assets/images/large-images/tech-stack/github-actions_logo.jpg";
-import javascriptLogoLarge from "../../assets/images/large-images/tech-stack/javascript_logo.jpg";
-import nodejsLogoLarge from "../../assets/images/large-images/tech-stack/nodejs_logo.jpg";
-import ollamaLogoLarge from "../../assets/images/large-images/tech-stack/ollama_logo.jpg";
-import reactLogoLarge from "../../assets/images/large-images/tech-stack/react_logo.jpg";
-import reactNativeLogoLarge from "../../assets/images/large-images/tech-stack/react-native_logo.jpg";
-import restApiLogoLarge from "../../assets/images/large-images/tech-stack/rest-api_logo.jpg";
-import scssLogoLarge from "../../assets/images/large-images/tech-stack/scss_logo.jpg";
-import tanStackQueryLogoLarge from "../../assets/images/large-images/tech-stack/tanstack-query_logo.jpg";
-import viteLogoLarge from "../../assets/images/large-images/tech-stack/vite_logo.jpg";
+import antDesignLogoLarge from "../../assets/images/tech-stack/ant-design_logo.full.webp";
+import apexChartsLogoLarge from "../../assets/images/tech-stack/apexcharts_logo.full.webp";
+import azureLogoLarge from "../../assets/images/tech-stack/azure_logo.full.webp";
+import chartJsLogoLarge from "../../assets/images/tech-stack/chart.js_logo.full.webp";
+import expoLogoLarge from "../../assets/images/tech-stack/expo_logo.full.webp";
+import firebaseLogoLarge from "../../assets/images/tech-stack/firebase_logo.full.webp";
+import gitLogoLarge from "../../assets/images/tech-stack/git_logo.full.webp";
+import githubActionsLogoLarge from "../../assets/images/tech-stack/github-actions_logo.full.webp";
+import javascriptLogoLarge from "../../assets/images/tech-stack/javascript_logo.full.webp";
+import nodejsLogoLarge from "../../assets/images/tech-stack/nodejs_logo.full.webp";
+import ollamaLogoLarge from "../../assets/images/tech-stack/ollama_logo.full.webp";
+import reactLogoLarge from "../../assets/images/tech-stack/react_logo.full.webp";
+import reactNativeLogoLarge from "../../assets/images/tech-stack/react-native_logo.full.webp";
+import restApiLogoLarge from "../../assets/images/tech-stack/rest-api_logo.full.webp";
+import scssLogoLarge from "../../assets/images/tech-stack/scss_logo.full.webp";
+import tanStackQueryLogoLarge from "../../assets/images/tech-stack/tanstack-query_logo.full.webp";
+import viteLogoLarge from "../../assets/images/tech-stack/vite_logo.full.webp";
 
 export const aboutTechStackData = {
     react: {

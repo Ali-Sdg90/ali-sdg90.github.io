@@ -1,19 +1,18 @@
-import csiLogo from "../../assets/images/thumbnails/career/csi_logo.jpg";
-import melkRadarLogo from "../../assets/images/thumbnails/career/melkradar_logo.jpg";
-import dpaLogo from "../../assets/images/thumbnails/career/dpa_logo.jpg";
-import settleitLogo from "../../assets/images/thumbnails/career/settleitgpt_logo.jpg";
-import csClubThumbnail from "../../assets/images/thumbnails/projects/cs-club.jpg";
-import csQueueThumbnail from "../../assets/images/thumbnails/projects/cs-queue.jpg";
-import gradientPaintThumbnail from "../../assets/images/thumbnails/projects/cgp.jpg";
-import fabrexaThumbnail from "../../assets/images/thumbnails/projects/fabrexa.jpg";
-import healthDataRelayThumbnail from "../../assets/images/thumbnails/projects/health-data-relay.jpg";
-import pathFinderThumbnail from "../../assets/images/thumbnails/projects/path-finder.jpg";
-import portfolioThumbnail from "../../assets/images/thumbnails/projects/portfolio.jpg";
-import quickMathThumbnail from "../../assets/images/thumbnails/projects/quick-math.jpg";
-import spotTasteThumbnail from "../../assets/images/thumbnails/projects/spot.jpg";
-import ticTacToeThumbnail from "../../assets/images/thumbnails/projects/xo.jpg";
-import csCalendarThumbnail from "../../assets/images/thumbnails/projects/cs-calender.jpg";
-// import mlkDvrBotThumbnail from "../../assets/images/thumbnails/projects/mlk-dvr-bot.jpg";
+import csiLogo from "../../assets/images/career/cs-internship/cover.thumb.webp";
+import melkRadarLogo from "../../assets/images/career/melk-radar/cover.thumb.webp";
+import dpaLogo from "../../assets/images/career/dadeh-pardazi-azmoudeh-karan/cover.thumb.webp";
+import settleitLogo from "../../assets/images/career/settleit-gpt/cover.thumb.webp";
+import csClubThumbnail from "../../assets/images/projects/cs-club-bot/cover.thumb.webp";
+import csQueueThumbnail from "../../assets/images/projects/cs-queue-bot/cover.thumb.webp";
+import gradientPaintThumbnail from "../../assets/images/projects/gradient-paint/cover.thumb.webp";
+import fabrexaThumbnail from "../../assets/images/projects/fabrexa-ai-ollama/cover.thumb.webp";
+import healthDataRelayThumbnail from "../../assets/images/projects/health-data-relay/cover.thumb.webp";
+import pathFinderThumbnail from "../../assets/images/projects/path-finder/cover.thumb.webp";
+import portfolioThumbnail from "../../assets/images/projects/alis-portfolio/cover.thumb.webp";
+import quickMathThumbnail from "../../assets/images/projects/quick-math/cover.thumb.webp";
+import spotTasteThumbnail from "../../assets/images/projects/spot-taste-tracker/cover.thumb.webp";
+import ticTacToeThumbnail from "../../assets/images/projects/tic-tac-toe/cover.thumb.webp";
+import csCalendarThumbnail from "../../assets/images/projects/cs-queue-calendar/cover.thumb.webp";
 import {
     FaAndroid,
     FaApple,
@@ -27,23 +26,23 @@ import {
 } from "react-icons/fa6";
 
 // Tech Stack & Tools images
-import reactLogo from "../../assets/images/thumbnails/tech-stack/react_logo.jpg";
-import javascriptLogo from "../../assets/images/thumbnails/tech-stack/javascript_logo.jpg";
-import scssLogo from "../../assets/images/thumbnails/tech-stack/scss_logo.jpg";
-import antDesignLogo from "../../assets/images/thumbnails/tech-stack/ant-design_logo.jpg";
-import tanStackQueryLogo from "../../assets/images/thumbnails/tech-stack/tanstack-query_logo.jpg";
-import restApiLogo from "../../assets/images/thumbnails/tech-stack/rest-api_logo.jpg";
-import chartJsLogo from "../../assets/images/thumbnails/tech-stack/chart.js_logo.jpg";
-import apexChartsLogo from "../../assets/images/thumbnails/tech-stack/apexcharts_logo.svg";
-import firebaseLogo from "../../assets/images/thumbnails/tech-stack/firebase_logo.jpg";
-import gitLogo from "../../assets/images/thumbnails/tech-stack/git_logo.jpg";
-import githubActionsLogo from "../../assets/images/thumbnails/tech-stack/github-actions_logo.jpg";
-import nodejsLogo from "../../assets/images/thumbnails/tech-stack/nodejs_logo.jpg";
-import reactNativeLogo from "../../assets/images/thumbnails/tech-stack/react-native_logo.jpg";
-import expoLogo from "../../assets/images/thumbnails/tech-stack/expo_logo.jpg";
-import viteLogo from "../../assets/images/thumbnails/tech-stack/vite_logo.jpg";
-import azureLogo from "../../assets/images/thumbnails/tech-stack/azure_logo.jpg";
-import ollamaLogo from "../../assets/images/thumbnails/tech-stack/ollama_logo.jpg";
+import reactLogo from "../../assets/images/tech-stack/react_logo.thumb.webp";
+import javascriptLogo from "../../assets/images/tech-stack/javascript_logo.thumb.webp";
+import scssLogo from "../../assets/images/tech-stack/scss_logo.thumb.webp";
+import antDesignLogo from "../../assets/images/tech-stack/ant-design_logo.thumb.webp";
+import tanStackQueryLogo from "../../assets/images/tech-stack/tanstack-query_logo.thumb.webp";
+import restApiLogo from "../../assets/images/tech-stack/rest-api_logo.thumb.webp";
+import chartJsLogo from "../../assets/images/tech-stack/chart.js_logo.thumb.webp";
+import apexChartsLogo from "../../assets/images/tech-stack/apexcharts_logo.thumb.webp";
+import firebaseLogo from "../../assets/images/tech-stack/firebase_logo.thumb.webp";
+import gitLogo from "../../assets/images/tech-stack/git_logo.thumb.webp";
+import githubActionsLogo from "../../assets/images/tech-stack/github-actions_logo.thumb.webp";
+import nodejsLogo from "../../assets/images/tech-stack/nodejs_logo.thumb.webp";
+import reactNativeLogo from "../../assets/images/tech-stack/react-native_logo.thumb.webp";
+import expoLogo from "../../assets/images/tech-stack/expo_logo.thumb.webp";
+import viteLogo from "../../assets/images/tech-stack/vite_logo.thumb.webp";
+import azureLogo from "../../assets/images/tech-stack/azure_logo.thumb.webp";
+import ollamaLogo from "../../assets/images/tech-stack/ollama_logo.thumb.webp";
 
 export const shelfSections = [
     {

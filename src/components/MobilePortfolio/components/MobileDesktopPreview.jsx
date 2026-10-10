@@ -1,6 +1,6 @@
 import { HiOutlineSparkles } from "react-icons/hi2";
 
-import desktopPreview from "../../../assets/images/global/desktop-preview.jpg";
+import desktopPreview from "../../../assets/images/site/desktop-preview.webp";
 import MobileReveal from "./MobileReveal";
 
 const MobileDesktopPreview = () => (

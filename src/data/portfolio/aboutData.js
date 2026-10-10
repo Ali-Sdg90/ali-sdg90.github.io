@@ -1,13 +1,17 @@
-import profileImage from "../../assets/images/ali-images/ali-profile.jpg";
+import profileImage from "../../assets/images/profile/ali-profile.thumb.webp";
+import profileImageFull from "../../assets/images/profile/ali-profile.full.webp";
 
 export const aboutData = {
     titleEn: "About me",
     titleFa: "درباره من",
     image: {
         src: profileImage,
+        lightboxSrc: profileImageFull,
         alt: "Ali Sadeghi",
-        width: 856,
-        height: 856,
+        width: 480,
+        height: 480,
+        lightboxWidth: 856,
+        lightboxHeight: 856,
         zoom: 1.08,
     },
     paragraphs: {

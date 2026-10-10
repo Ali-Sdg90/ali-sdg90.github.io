@@ -49,6 +49,7 @@ Ali Sadeghi image box: 97.50 x 97.50 px
 Rendered image inside the box: 108.67 x 108.67 px
 
 Notes
+
 - All values are CSS pixels measured from the live rendered page.
 - Gallery entries use the same box size, so only one representative box is listed.
 - Impact cards do not contain image elements.

@@ -370,27 +370,18 @@ Geist در HTML با اولویت بالا preload می‌شود. Vazirmatn بر
 
 ```text
 src/assets/images/
-├── ali-images/                   تصویر پروفایل
-├── global/                       placeholder، امضا و preview عمومی
-├── page/                         تصویر اصلی قفسه
-├── ui/                           assetهای کوچک رابط کاربری
-├── thumbnails/
-│   ├── projects/                 تصاویر سبک کارت پروژه‌ها
-│   ├── career/                   لوگوهای سبک تجربه‌های کاری
-│   └── tech-stack/               لوگوهای سبک فناوری‌ها
-├── large-images/
-│   ├── projects/                 تصاویر بزرگ پروژه‌ها
-│   ├── career/                   لوگوهای بزرگ مسیر شغلی
-│   └── tech-stack/               لوگوهای بزرگ فناوری‌ها
-├── gallery-images/
-│   ├── small-images/             previewهای سبک گالری
-│   └── large-images/             نسخه‌های Lightbox و download
-└── history-class/
-    ├── small-images/             thumbnail فصل‌های Build Story
-    └── large-images/             تصاویر بزرگ فصل‌های Build Story
+├── build-story/                  نسخه‌های thumb و full تصاویر داستان ساخت
+├── career/
+│   └── <career-id>/              cover و gallery هر تجربه کاری
+├── profile/                      نسخه‌های thumb و full تصویر پروفایل
+├── projects/
+│   └── <project-id>/             cover و gallery هر پروژه
+├── site/                         WebPهای lossless با ابعاد اصلی سایت
+├── tech-stack/                   نسخه‌های thumb و full لوگوهای فناوری
+└── ui/                           WebPهای lossless با ابعاد اصلی رابط کاربری
 ```
 
-قاعده کلی رسانه‌ها این است که رابط عادی از thumbnail استفاده کند و تصویر بزرگ فقط هنگام بازشدن Lightbox یا بخش مربوط دریافت شود.
+فایل‌های این پوشه خروجی بهینه‌سازی‌شده‌ی `image-sources` هستند. تصاویر محتوایی نسخه‌های `*.thumb.webp` و `*.full.webp` دارند؛ اما `site` و `ui` فقط یک فایل `*.webp` به‌صورت lossless و با ابعاد اصلی تولید می‌کنند. دستور `npm run image:opt` این خروجی‌ها را تولید یا به‌روزرسانی می‌کند.
 
 ## مسیر کلی اجرای برنامه
 

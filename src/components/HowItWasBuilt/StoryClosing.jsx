@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import emojiSignature from "../../assets/images/global/emoji-signature.webp";
+import emojiSignature from "../../assets/images/ui/emoji-signature.webp";
 import { REVEAL_TRANSITION } from "./motionConfig";
 import useLotusEasterEgg from "./useLotusEasterEgg";
 
