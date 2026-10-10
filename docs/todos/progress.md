@@ -117,6 +117,18 @@
 
 - [x] Add more Whimsy!
 
+- [x] Lighthouse and memory usage check for the site
+
+- [x] Check slow opening for the history model
+
+- [x] Check what is this blank spaces are in light-box
+
+- [x] Add global dictionary for hash addresses and use it for mobile url addressing
+
+- [x] Check state of pre-loading fonts in the project
+
+- [x] Check for performance of the desktop and mobile view
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -129,8 +141,6 @@
     - [ ] Add hash link to my career and projects in my resume.pdf file
 
 - [ ] Add Link-Tree url link and feature
-
-- [ ] Lighthouse and memory usage check for the site
 
 - [ ] Update galleries
     - [ ] Melkradar
@@ -190,7 +200,7 @@
     - [x] Fix spacing between labels and meta for sections
     - [x] Maybe add click color change for header items?
     - [ ] fix pacing and spacing in the how-my-portfolio-was-built section
-    - [ ] Check lighthouse and memory usage for the site in mobile view
+    - [x] Check lighthouse and memory usage for the site in mobile view
     - [x] Use better icons or indicators for buttons in the hero section
     - [x] Fix spacing in the about me section
     - [x] Use better style for badges in about me section
@@ -199,19 +209,15 @@
     - [x] Check what happen when using pre-loaded url and viewing the site in mobile view
     - [ ] Get AI feedback for the view and finalize it
 
-- [x] Check slow opening for the history model
-
-- [x] Check what is this blank spaces are in light-box
-
 - [ ] Update timing of hmpwb pop up
 
 - [ ] Check if can move the fist part of intro in desktop view a bit higher
 
 - [ ] Do a ai-check for overcooking the box-shadows
+    - [x] part 1
+    - [ ] part 2
 
-- [ ] Update the first and third texts in the hmpwb
-
-- [x] Add global dictionary for hash addresses and use it for mobile url addressing
+- [ ] Update the first and third section texts in the hmpwb
 
 - [ ] Double check if the featured projects order and items are ok
 
@@ -221,19 +227,25 @@
 
 - [ ] Re-write career stories with the new format of writing the stories
 
-- [ ] Check state of pre-loading fonts in the project
-
 - [ ] Update and finalize the Agent.md
 
 - [ ] Maybe add contributing, pull req and etc files?
 
 - [ ] Add og-image and other header html mates
 
-- [ ] Check for performance of the desktop and mobile view
-
 - [ ] Add general test cases
 
 - [ ] Set up new image optimizer pipeline to project
-    - [ ] Can be run via command and automatic on build
+    - [x] Can be run via command and automatic on build
     - [ ] Remove the temporary docs after the pipeline is set up and working
     - [ ] Fix images in hmpwb
+
+- [ ] Fix story modal's hight in mobile view
+
+- [ ] Check console error
+
+- [ ] Review and fix deprecated APIs reported by Lighthouse
+
+- [ ] Create smaller desktop view image with lower dpi for readme and mobile-view
+
+- [ ] Maybe create a new library for the new image creation pipeline and use it in project?

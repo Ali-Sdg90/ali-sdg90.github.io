@@ -16,7 +16,7 @@
     - [x] Part 1
     - [ ] Part 2
 
-- [ ] check lighthouse for improvements in performance and accessibility
+- [ ] Check and finalize lighthouse for improvements in performance and accessibility
 
 - [ ] improve SEO of the site
     - [x] Part 1
