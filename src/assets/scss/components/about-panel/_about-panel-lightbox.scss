@@ -27,10 +27,25 @@
 }
 
 .about-panel-lightbox-frame {
+    --lightbox-frame-chrome: 32px;
+    --lightbox-frame-max-height: 90vh;
+    --lightbox-frame-width: min(
+        94vw,
+        calc(
+            (var(--lightbox-frame-max-height) - var(--lightbox-frame-chrome)) *
+                var(--lightbox-image-aspect-ratio, 1.777) +
+                var(--lightbox-frame-chrome)
+        ),
+        1440px
+    );
+
     position: relative;
-    width: min(94vw, calc(90vh * var(--lightbox-image-aspect-ratio, 1.777)));
-    max-width: 1440px;
-    aspect-ratio: var(--lightbox-image-aspect-ratio, 1.777);
+    width: var(--lightbox-frame-width);
+    height: calc(
+        (var(--lightbox-frame-width) - var(--lightbox-frame-chrome)) *
+            var(--lightbox-image-inverse-aspect-ratio, 0.563) +
+            var(--lightbox-frame-chrome)
+    );
     padding: 7px;
     display: inline-grid;
     place-items: center;
@@ -310,6 +325,12 @@
 }
 
 @media (max-width: 899px) {
+    .about-panel-lightbox-frame {
+        --lightbox-frame-max-height: calc(
+            100dvh - 9rem - env(safe-area-inset-bottom)
+        );
+    }
+
     .about-panel-lightbox-loader-text {
         max-width: calc(100% - 2rem);
         font-size: clamp(0.58rem, 2.5vw, 0.66rem);

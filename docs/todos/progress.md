@@ -192,16 +192,16 @@
     - [ ] fix pacing and spacing in the how-my-portfolio-was-built section
     - [ ] Check lighthouse and memory usage for the site in mobile view
     - [x] Use better icons or indicators for buttons in the hero section
-    - [ ] Fix spacing in the about me section
+    - [x] Fix spacing in the about me section
     - [x] Use better style for badges in about me section
     - [x] Maybe add collapsible ali's image in about me section?
     - [ ] Check wording in the how-my-portfolio-was-built section
-    - [ ] Check what happen when using pre-loaded url and viewing the site in mobile view
+    - [x] Check what happen when using pre-loaded url and viewing the site in mobile view
     - [ ] Get AI feedback for the view and finalize it
 
 - [ ] Check slow opening for the history model
 
-- [ ] Check what is this blank spaces are in light-box
+- [x] Check what is this blank spaces are in light-box
 
 - [ ] Update timing of hmpwb pop up
 
@@ -211,7 +211,7 @@
 
 - [ ] Update the first and third texts in the hmpwb
 
-- [ ] Add global dictionary for hash addresses and use it for mobile url addressing
+- [x] Add global dictionary for hash addresses and use it for mobile url addressing
 
 - [ ] Double check if the featured projects order and items are ok
 

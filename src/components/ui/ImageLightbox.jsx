@@ -420,6 +420,8 @@ const ImageLightbox = ({ image, onClose }) => {
                 ].join(" ")}
                 style={{
                     "--lightbox-image-aspect-ratio": imageAspectRatio,
+                    "--lightbox-image-inverse-aspect-ratio":
+                        1 / imageAspectRatio,
                 }}
                 onClick={(event) => event.stopPropagation()}
             >
