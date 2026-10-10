@@ -1,3 +1,10 @@
+## [1.35.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.6...v1.35.7) (2026-10-10)
+
+
+### Bug Fixes
+
+* add section viewer for pre-selected urls in mobile view, fix blank spaces in light-box and add narrow view mode for some light-boxes ([f5e0583](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/f5e058346bcec7b321a19c3604d83a71a2fd1191))
+
 ## [1.35.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.5...v1.35.6) (2026-10-10)
 
 
