@@ -1,0 +1,936 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/ImageLightbox-rjI_garY.js","assets/index-C7RlfY43.js","assets/index-XFSHh8Ru.css","assets/ImageLightbox-DULnDuKE.css"])))=>i.map(i=>d[i]);
+import{A as e,B as t,C as n,D as r,F as i,G as a,H as o,I as s,K as c,L as l,M as u,N as d,P as f,R as p,S as m,U as h,V as g,W as _,Z as v,_ as y,b,d as x,g as S,h as C,j as w,k as T,l as E,n as D,q as O,r as k,t as A,u as j,v as ee,w as te,x as ne,y as re,z as ie}from"./index-C7RlfY43.js";var M=D(),ae=({activeLanguage:e,onLanguageChange:t})=>(0,M.jsxs)(`div`,{className:[`about-panel-language-toggle`,e===`FA`?`is-fa-active`:`is-en-active`].filter(Boolean).join(` `),"aria-label":`Language`,children:[(0,M.jsx)(`span`,{className:`about-panel-language-thumb`,"aria-hidden":`true`}),[`EN`,`FA`].map(n=>(0,M.jsx)(`button`,{className:[`about-panel-language-option`,e===n?`is-active`:``].filter(Boolean).join(` `),type:`button`,"aria-pressed":e===n,onClick:()=>t(n),children:n},n))]}),N=`/assets/placeholder-BkvicHGP.jpg`,oe=`/assets/csi_logo-v0sGCDny.jpg`,se=`/assets/dpa_logo-CEWkIFgJ.jpg`,ce=`/assets/melkradar_logo-rdCPmCPf.jpg`,le=`/assets/settleitgpt_logo-eSXhCEwr.jpg`,P=`/assets/club-bot1-DObly--o.png`,F=`/assets/club-bot2-Bl5x6Lyg.png`,ue=`/assets/conterbution-CP5vJ0oI.png`,de=`/assets/flow-charts-DtPoMWL8.png`,I=`/assets/queue-bot1-Z_kZqW2k.png`,L=`/assets/queue-page-B7akNjjn.png`,fe=`/assets/page1-kMBs_ytS.png`,pe=`/assets/page2-BpmyZmyo.png`,me=`/assets/page3-Ch5zT6dH.png`,he=`/assets/img1-BrEDnBmg.jpg`,R=`/assets/img3-CQfWfVj0.png`,ge=`/assets/img4-COrODJU-.png`,_e=`/assets/charts-C4dhuZ64.png`,ve=`/assets/desing-CCBYjrB3.png`,ye=`/assets/khd-BzE_F_zX.png`,be=`/assets/mapbox-CNX5ktHx.png`,z=`/assets/club-bot1-Fb6_-ify.jpg`,B=`/assets/club-bot2-DUbPqWWa.jpg`,xe=`/assets/conterbution-w8b5WhSZ.jpg`,Se=`/assets/flow-charts-Bjg8RjFm.jpg`,V=`/assets/queue-bot1-DfjQEOwD.jpg`,H=`/assets/queue-page-ClqdHZBK.jpg`,Ce=`/assets/page1-RD0GNMxE.jpg`,we=`/assets/page2-zOV3JPss.jpg`,Te=`/assets/page3-CtrVcvZr.jpg`,Ee=`/assets/img1-BfJ4fK2p.jpg`,De=`/assets/img3-dtSD_d4h.jpg`,Oe=`/assets/img4-DIpJnSnf.jpg`,ke=`/assets/charts-XZPmXtUh.jpg`,Ae=`/assets/desing-BNMjL-_D.jpg`,je=`/assets/khd-DpUS54oS.jpg`,Me=`/assets/mapbox-DoOg2yFb.jpg`,Ne=`I started my path in CS as an intern. I completed the web track, and around the middle of my study period, I got the opportunity to also take part in the program as someone who could contribute to its management and improvement.
+
+After some time, my role changed from a regular intern to a coordinator, and I became responsible for supporting and onboarding new interns. A little later, I worked as an assistant mentor and technical mentor. I held technical sessions for web-track interns, reviewed their technical work, followed their progress, and guided them throughout the program.
+
+The more I got to know the program and its needs, the more serious my role became. I joined governance meetings and started contributing to decisions about the structure and future of the program. Over time, a large part of my work became focused on designing, redesigning, and implementing the program's rules and processes.
+
+During this path, I worked on many different parts of the program, from redesigning the full onboarding process and designing the technical mentor process, to reshaping how interns participated in the program, defining roles more clearly, and updating internal rules and structures.
+
+Alongside all of that, whenever I felt a need could be solved better with a tool or automation, I built something for it with the knowledge I had. Some of those tools, along with their links and details, are included in the projects section. And honestly, there are quite a few of them :)
+
+Being part of CS was not just an internship experience for me. It was where I learned effective communication, community and team management, process design, and how to turn an idea or need into an executable system.
+
+The most valuable part of this journey for me was its human impact. I was able to affect the path of many friends and people who joined the program, help them begin their technical journey, and later see some of them enter different companies and professional positions.
+
+Being able to make the program more organized, scalable, automated, and truly more like a living community was deeply valuable to me. The real value of my work was in the people who benefited from it at the time, and in the future people who will join the program and use my redesigns in their own growth path.
+`,Pe=`من مسیرم در CS را به‌عنوان یک اینترن شروع کردم. دوره‌ی وب را گذراندم و از اواسط دوره‌ی مطالعاتی، این فرصت را پیدا کردم که در خود برنامه هم به‌عنوان عضوی که می‌تونه در مدیریت برنامه اثرگذار باشه نقش داشته باشم.
+
+بعد از مدتی، نقشم از یک اینترن معمولی به کوردینیتور تغییر کرد و مسئول همراهی و آنبورد اینترن‌های جدید شدم. کمی بعد، به‌عنوان دستیار منتور و منتور فنی فعالیت کردم؛ جلسات فنی اینترن‌های دوره‌ی وب را برگزار می‌کردم، روی مسیر و کارهای فنی آن‌ها نظارت داشتم و در طول دوره راهنمایی‌شان می‌کردم.
+
+هرچه بیشتر با برنامه و نیازهایش آشنا شدم، حضورم هم جدی‌تر شد. وارد جلسات گاورننس شدم و در تصمیم‌گیری‌های مربوط به ساختار و آینده‌ی برنامه مشارکت کردم. به‌مرور، بخش اصلی فعالیتم به طراحی، بازطراحی و اجرای قوانین و فرایندهای برنامه تبدیل شد.
+
+در این مسیر روی بخش‌های مختلفی کار کردم؛ از بازطراحی کامل فرایند ورود به برنامه و طراحی فرایند منتور فنی، تا بازطراحی نحوه‌ی فعالیت اینترن‌ها، تعریف دقیق‌تر نقش‌ها و به‌روزرسانی ساختارها و قوانین داخلی برنامه.
+
+در کنار این‌ها، هرجا احساس می‌کردم یک نیاز می‌تواند با ابزار یا اتوماسیون بهتر حل شود، برایش ابزاری با سوادی که داشتم می‌ساختم. تعدادی از این ابزارها، همراه با لینک و توضیحاتشان، در بخش پروژه‌ها قرار دارد. تعدادش هم اصلا کم نیست :)
+
+بودن در CS برای من فقط یک تجربه‌ی کارآموزی نبود. جایی بود که در آن ارتباط مؤثر، مدیریت کامیونیتی و تیم، طراحی فرایند و تبدیل یک ایده یا نیاز به یک سیستم قابل‌اجرا را یاد گرفتم.
+
+باارزش‌ترین بخش این مسیر برای من، اثر انسانی آن بود. توانستم روی مسیر تعداد زیادی از دوستانم و آدم‌هایی که وارد برنامه شدند تأثیر بگذارم، به شروع مسیر فنی‌شان کمک کنم و ببینم که بعضی از آن‌ها بعدتر وارد شرکت‌ها و موقعیت‌های حرفه‌ای مختلف شدند.
+
+اینکه توانستم برنامه را منظم‌تر، مقیاس‌پذیرتر و خودکارتر و واقعا شبیه یک کامیونیتی زنده بکنم برام خیلی ارزشمند بود. ارزشی که کارم برای آدم‌های اون زمان و آیندگانی که وارد برنامه خواهند شد و از بازطراحی‌های من در مسیر رشد خودشون استفاده می‌کنن.
+`,Fe=`I joined MelkRadar as an intern. My internship ended earlier than planned, and after that, I continued as a full-time team member at the company.
+
+During my time there, I was involved in different parts of the MelkRadar ecosystem, from the main MelkRadar website and MelkRadar extension to the start and development of the company’s new project, KhodroRadar, TonReach, and two other external projects the company had taken on.
+
+I always tried to deliver my work with the highest quality possible. I was genuinely satisfied with the quality and care behind my work, and I could see that the team was satisfied with the quality of what I delivered.
+
+After a while, I became one of the reviewers on the front-end team. This meant that I was both writing code myself and reviewing and merging code from other team members.
+
+During this time, I onboarded several new people into the team, and I recorded different onboarding videos to improve the onboarding process.
+
+At MelkRadar, I was deeply involved in different parts of the work. Frequent meetings with the design team, product design, backend developers, guiding front-end teammates, consulting on task distribution, and many other responsibilities had all become part of my work.
+
+After a certain point, I reduced my role in the company and continued working with the team mostly as a reviewer and merger of front-end code.
+
+This experience was heavy, valuable, and sweet for me. It became the real beginning of teamwork in my career. I have a deep sense of satisfaction from being in that professional and complex environment, and I was able to build many of my personal and professional foundations there.
+`,Ie=`من به عنوان نیروی کارآموز وارد ملک‌رادار شدم. دوره کارآموزیم زودتر از زمانی که قرار بود تموم شد و بعد از اون به عنوان نیروی استخدامی شرکت ادامه دادم.
+
+در طول حضورم، در بخش‌های مختلفی از اکوسیستم ملک‌رادار نقش داشتم؛ از سایت اصلی ملک‌رادار و اکستنشن ملک‌رادار گرفته تا شروع و ساخت پروژه جدید شرکت، خودرو رادار، تون‌ریچ و دو پروژه خارجی دیگری که شرکت گرفته بود.
+
+همیشه سعی می‌کردم کارهایی که انجام می‌دم رو با بهترین کیفیت ممکن تحویل بدم و واقعاً هم خودم از کیفیت و ظرافت کارهام راضی بودم و می‌دیدم تیم هم از کیفیت کارم رضایت داره.
+
+بعد از مدتی تبدیل به یکی از ریویوئرهای تیم فرانت شدم؛ یعنی هم خودم کد می‌زدم، هم کدهای بقیه اعضای تیم رو ریویو و مرج می‌کردم.
+
+در این مدت چند نفر جدید رو به تیم آنبورد کردم و برای بهتر شدن روند آنبوردینگ، ویدئوهای مختلفی ضبط کردم.
+
+در ملک‌رادار خیلی درگیر بخش‌های مختلف کار بودم. جلسه‌های متعدد با تیم دیزاین، طراحی محصول، بچه‌های بک‌اند، راهنمایی بچه‌های فرانت، مشاوره برای تقسیم تسک‌ها و مسائل مختلف دیگه، همگی بخشی از کارهایم شده بودند.
+
+بعد از یه مقطع، نقشم رو در شرکت کم‌تر کردم و بیشتر به عنوان ریویوئر و مرج‌کننده کدهای فرانت با تیم همکاری داشتم.
+
+این تجربه برای من سنگین، ارزشمند و شیرین بود؛ تجربه‌ای که شروع جدی کار تیمی رو برای من ساخت. از بودن در اون محیط حرفه‌ای و پیچیده رضایت عمیقی دارم و خیلی از پایه‌های شخصیتی و حرفه‌ایم رو تونستم اونجا برای خودم بسازم.
+`,Le=`I joined Dadeh Pardazi Azmoudeh Karan after passing the company’s entry assessments. There, we worked as a two-person development team; I was responsible for building and developing the entire front end from scratch, while my teammate built and expanded the back end.
+
+This was the first project where I was fully responsible for the front end from beginning to end. Throughout the project, I learned a lot about proper project structure, designing core components, and the foundations needed for a project to grow in a healthy and maintainable way.
+
+The project was relatively large and connected to an extensive database containing restaurant information, restaurant members, resumes submitted to each restaurant, and various other types of data that were displayed across the website in different ways.
+
+The project was built around Ant Design, so I needed to become comfortable with it before starting development. Learning and working with it was a challenging but enjoyable experience, and the final result was a high-quality product that I am very proud of.
+
+The project required integration with more than 60 APIs. I used Swagger to test those APIs and then implemented them throughout the application.
+
+Building the project took around seven months. After that, the website was ready for its marketing activities and the next stages of the product, and my work on the project came to an end.
+
+This experience was very valuable to me because building and managing the front end of a large project from start to finish was entirely my responsibility. Along the way, I often had to learn new things in the moment so I could keep the project moving forward.
+
+However, there was not a broad team-based experience in this project. I received tasks, completed and delivered them, and marked them as Done. Unlike my experience at MelkRadar, I did not directly work with a complete team that included testing, design, and other departments. This sometimes made the working experience more difficult, but overall, it was an interesting and highly educational experience.
+`,Re=`با پشت سر گذاشتن آزمون‌های ورودی وارد شرکت داده‌پردازی آزموده‌کاران شدم. آنجا در یک تیم دو نفره مسئول ساخت سایت بودیم؛ من باید کل فرانت‌اند را از پایه می‌ساختم و توسعه می‌دادم و همکارم هم بک‌اند را از ابتدا پیاده‌سازی و گسترش می‌داد.
+
+این اولین پروژه‌ای بود که از ابتدا تا انتها مسئولیت کامل فرانت‌اند آن بر عهده خودم بود. در طول پروژه چیزهای زیادی درباره ساختار درست پروژه، طراحی کامپوننت‌های اصلی و مواردی که برای رشد سالم و قابل‌مدیریت پروژه لازم بود، یاد گرفتم.
+
+پروژه نسبتاً بزرگ بود و به یک پایگاه داده گسترده متصل می‌شد که اطلاعات رستوران‌ها، اعضای هر رستوران، رزومه‌های ارسال‌شده برای آن‌ها و اطلاعات مختلف دیگری را به شکل‌های گوناگون در سایت نمایش می‌داد.
+
+پروژه بر پایه Ant Design بود و لازم بود قبل از شروع کار به آن مسلط شوم. فرایند یادگیری و کار با آن برایم چالشی شیرین و جالب بود و در نهایت هم خروجی باکیفیت و خوبی حاصل شد که بهش خیلی افتخار می‌کنم.
+
+این پروژه بیش از ۶۰ API برای اتصال داشت و من با استفاده از Swagger آن‌ها را تست می‌کردم و در پروژه پیاده‌سازی می‌کردم.
+
+ساخت پروژه حدود هفت ماه طول کشید و بعد از آن، سایت آماده شد تا فعالیت‌های بازاریابی و مراحل بعدی آن شروع شود و کار من روی پروژه به پایان رسید.
+
+این تجربه برای من خیلی ارزشمند بود؛ چون ساخت و مدیریت فرانت‌اند یک پروژه بزرگ از ابتدا تا انتها کاملاً بر عهده خودم بود و در طول مسیر لازم بود چیزهای زیادی را همان لحظه یاد بگیرم تا بتوانم پروژه را جلو ببرم.
+
+البته تجربه تیمی گسترده‌ای در این پروژه وجود نداشت. من تسک‌ها را دریافت می‌کردم، انجام می‌دادم، تحویل می‌دادم و آن‌ها را Done می‌کردم. برخلاف تجربه‌ام در ملک‌رادار، ارتباط مستقیمی با یک تیم کامل شامل تست، طراحی و بخش‌های دیگر نداشتم و همین موضوع گاهی تجربه کاری را برایم سخت‌تر می‌کرد؛ ولی در مجموع، تجربه آموزنده و جالبی بود.
+`,ze=`I worked on this project with one of my friends. He had already built the initial version as an MVP, and after that, we worked together to finalize and complete the product.
+
+The app was designed to run on Apple devices, so I needed to learn the SDKs and iOS development workflow before I could properly contribute. I installed the iOS simulator and developed the application on macOS. The app was built with Expo and React Native.
+
+The project had a very creative concept. Two people would present their arguments and points of view, then choose a famous character to act as the judge. That selected character was defined through a custom prompt and passed to the AI, which then decided who had won the argument.
+
+The app could even generate the voice of the selected character, meaning users could receive the final judgment in a generated version of that character’s voice and tone.
+
+During the project, I also learned how to work with native iOS capabilities such as the microphone, photo library, and camera, and how to implement them inside the application.
+
+The app used Firebase for its back end, and changes to each feature usually required updates on both sides of the project. Both my friend and I worked across the front end and back end, and in the end, we were able to complete the app, pass the App Store review process, and publish it on the Apple App Store.
+
+To support the launch, I also published an introduction and promotional post for the app, which received strong reach and engagement.
+
+This experience took me far outside my comfort zone, but at the same time, it was a very rewarding, exciting, and enjoyable experience.
+`,Be=`این پروژه را همراه با یکی از دوستانم پیش بردم. او نسخه اولیه پروژه را در حد MVP ساخته بود و بعد از آن، با همکاری هم فرایند نهایی‌سازی و تکمیل پروژه را انجام دادیم.
+
+اپ قرار بود روی گوشی‌های اپل اجرا شود، بنابراین لازم بود SDKها و روش توسعه برای iOS را یاد بگیرم تا بتوانم روی پروژه کار کنم. شبیه‌ساز iOS را نصب کردم و توسعه اپ را روی سیستم macOS انجام دادم. اپ با Expo و بر پایه React Native ساخته شده بود.
+
+پروژه ایده خیلی خلاقانه‌ای داشت. دو نفر منطق و دیدگاه خودشان را مطرح می‌کردند و بعد یکی از شخصیت‌های معروف را به‌عنوان داور انتخاب می‌کردند. شخصیت انتخاب‌شده از طریق پرامپتی که برایش تعریف شده بود به هوش مصنوعی داده می‌شد و در نهایت اعلام می‌کرد کدام طرف برنده بحث است.
+
+اپ حتی می‌توانست صدای آن شخصیت را هم تولید کند؛ یعنی نتیجه بحث را با لحن و صدای تولیدشده همان شخصیت دریافت می‌کردی.
+
+در طول پروژه یاد گرفتم از قابلیت‌های داخلی iOS مثل میکروفون، گالری و دوربین هم استفاده کنم و آن‌ها را داخل اپ پیاده‌سازی کنم.
+
+اپ برای بک‌اند از Firebase استفاده می‌کرد و تغییرات هر بخش معمولاً نیازمند به‌روزرسانی در هر دو سمت پروژه بود. در این پروژه هم من و هم دوستم روی فرانت‌اند و بک‌اند کار می‌کردیم و در نهایت توانستیم اپ را کامل کنیم، تأیید اپ استور را بگیریم و آن را در Apple App Store منتشر کنیم.
+
+برای معرفی و انتشار اپ، یک پست تبلیغاتی و معرفی هم منتشر کردم که بازدید و تعامل خیلی خوبی گرفت.
+
+این تجربه خیلی خارج از محدوده امنم بود، اما در عین حال تجربه‌ای بسیار شیرین، جذاب و لذت‌بخش بود.
+`,U=(e,t,n,r,i,a)=>({src:e,lightboxSrc:t,width:n,height:r,lightboxWidth:i,lightboxHeight:a}),Ve=U(z,P,216,408,864,1633),He=U(B,F,640,400,2559,1599),Ue=U(xe,ue,171,185,684,738),We=U(Se,de,434,171,1736,757),Ge=U(V,I,253,227,1012,909),Ke=U(H,L,640,335,2559,1340),qe=U(Ce,fe,222,301,888,1204),Je=U(we,pe,306,218,1224,870),Ye=U(Te,me,266,224,1064,894),Xe=U(Ee,he,147,320,589,1280),Ze=U(De,R,488,305,1952,1220),Qe=U(Oe,ge,110,241,438,962),$e=U(ke,_e,419,210,1676,841),et=U(Ae,ve,200,225,798,900),tt=U(je,ye,687,810,687,810),nt=U(Me,be,480,226,1918,904),rt={"cs-internship":{id:`cs-internship`,title:`CS Internship`,lightboxImage:oe,summary:`From web intern to technical mentor and program contributor, mentoring 30+ interns, redesigning core processes, and building automation tools to make CS Internship more scalable and effective.`,tech:[`Technical Mentorship`,`Process Design`,`Program Operations`,`Workflow Automation`,`React`,`Telegram Bots`,`Azure Boards`],featuresTitle:`Focus Areas`,features:[`Mentored 30+ web development interns through technical coaching and progress reviews`,`Personally onboarded 8 interns into the program and supported their early journey`,`Led the redesign of the program entry process over a 6-month period with the governance team`,`Designed and improved internal systems, workflows, roles, and operating processes`,`Built 5 internal automation tools for queue management, club feedback, scheduling, and admin operations`],galleryColumns:3,galleryImages:[He,Ue,We,Ge,Ve,Ke],storyTitle:`Story`,storyEN:Ne.trim(),storyFA:Pe.trim(),storySource:{collection:`career`,slug:`cs-internship`},hasRelatedLinks:!0,relatedLinks:[{label:`CS Queue Calendar`,text:`React calendar for displaying CS Internship queue meetings with Persian/Gregorian support.`,url:`https://github.com/cs-internship/CS-Queue-Calendar`},{label:`CS Club Bot`,text:`Automated Telegram bot for CS internship clubs, with feedback system and AI-driven analysis.`,url:`https://github.com/cs-internship/CS-Club-Bot`},{label:`CS Queue Bot`,text:`Automated Telegram bot for managing the CS Internship queue group, with Azure DevOps integration.`,url:`https://github.com/cs-internship/CS-Queue-Bot`},{label:`CS Feedback Webhook`,text:`Automated Telegram bot for CS Internship feedback, integrated with Notion and Tally.`,url:`https://github.com/cs-internship/CS-Feedback-Webhook`},{label:`CS Queue Message Maker`,text:`Simplifies queue updates for CS Internship admins.`,url:`https://github.com/cs-internship/CS-Queue-Message-Maker`},{label:`My CS Steps`,text:`My CS Internship Journey Documentation`,url:`https://github.com/Ali-Sdg90/CS-Steps`},{label:`CS Azure Board Automation`,text:`Automate Azure Board updates for CS Internship program`,url:`https://github.com/Ali-Sdg90/CS-Azure-Board-Automation`},{label:`CS Internship Specifications`,text:`Specifications for the CS Internship program.`,url:`https://github.com/cs-internship/cs-internship-spec`}]},"melk-radar":{id:`melk-radar`,title:`MelkRadar`,lightboxImage:ce,summary:`Front-End Technical Lead across the MelkRadar ecosystem, contributing to 6 products and projects, reviewing production code, onboarding team members, and developing internal tools and automation systems to improve team workflows.`,featuresTitle:`Focus Areas`,features:[`Contributed across 6 MelkRadar products and projects, including the main platform, browser extension, KhodroRadar, TonReach, and client-facing projects.`,`Built and maintained reusable front-end components and shared UI patterns with a strong focus on maintainability and interface quality.`,`Served as one of the main front-end code reviewers for 1.5 years, reviewing and merging production code across the team.`,`Delivered 50+ production-ready Chart.js visualizations under tight deadlines.`,`Integrated Mapbox GL JS into the product and helped onboard the front-end team on using it effectively.`,`Onboarded 4 front-end engineers, created onboarding resources, and mentored new team members.`,`Designed and built MLK DVR Receiver end-to-end, combining an Android app, Node.js backend, and Telegram bot into a reliable internal automation system.`],galleryColumns:3,galleryImages:[nt,$e,et,tt,N,N],storyTitle:`Story`,storyEN:Fe.trim(),storyFA:Ie.trim(),storySource:{collection:`career`,slug:`melkradar`},hasRelatedLinks:!0,relatedLinks:[{label:`Company`,text:`MelkRadar Official Website`,url:`https://melkradar.com/p/search`},{label:`Chart.js Work`,text:`Chart.js templates from my chart-building work at MelkRadar.`,url:`https://github.com/Ali-Sdg90/Learning-Chart.js-`}]},"dadeh-pardazi-azmoudeh-karan":{id:`dadeh-pardazi-azmoudeh-karan`,title:`Dadeh Pardazi Azmoudeh Karan`,lightboxImage:se,summary:`Built the front end of a large administrative platform from scratch, translating Figma designs into a production-ready React application with Ant Design and 60+ API integrations.`,tech:[`React`,`JavaScript`,`Ant Design`,`REST APIs`,`Swagger`,`Figma`,`Large-scale Front-End`,`Component Architecture`],featuresTitle:`Focus Areas`,features:[`Built the entire front end of the platform from scratch.`,`Integrated 60+ REST APIs using Swagger.`,`Created reusable components and a maintainable project structure.`,`Turned Figma designs into a production-ready React application.`,`Improved and refactored the codebase as the project evolved.`],galleryColumns:3,galleryImages:[qe,Je,Ye],storyTitle:`Story`,storyEN:Le.trim(),storyFA:Re.trim(),storySource:{collection:`career`,slug:`dadeh-pardazi-azmoudeh-karan`},hasRelatedLinks:!1,relatedLinks:[]},"settleit-gpt":{id:`settleit-gpt`,title:`SettleitGPT`,lightboxImage:le,summary:`Co-developed and launched an AI-powered iOS application with React Native and Expo, taking the product from an early MVP to a complete App Store release.`,tech:[`React Native`,`Expo`,`JavaScript`,`iOS Development`,`Firebase`,`REST APIs`,`AI Integration`,`Prompt Engineering`,`Voice Generation`,`Native Device APIs`],featuresTitle:`Focus Areas`,features:[`Built AI-powered character personas for judging user discussions.`,`Integrated native iOS features including the microphone, camera, and photo library.`,`Implemented AI-generated voice responses for selected characters.`,`Worked across both the React Native app and Firebase backend.`,`Helped prepare and publish the app on the Apple App Store.`],galleryColumns:3,galleryImages:[Xe,Qe,Ze],storyTitle:`Story`,storyEN:ze.trim(),storyFA:Be.trim(),storySource:{collection:`career`,slug:`settleitgpt`},hasRelatedLinks:!0,relatedLinks:[{label:`Launch Post`,text:`SettleitGPT Introduction on LinkedIn`,url:`https://www.linkedin.com/posts/ali-sdg90_settleitgpt-share-7374421474943700993-_H3R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiHtIwB6ffMAWL0iNc5fSdSRqvEYI6Q2IA`}]}},it=e=>rt[e]??null,at={"interns-mentored":{id:`interns-mentored`,title:`25+`,subtitle:`Web Development Interns Mentored`,summary:`Guided CS Internship web development interns through projects and technical challenges.`,featuresTitle:`What I Did`,features:[`Mentored web development interns from across Iran for around two years`,`Reviewed their work and helped them find their own answers`],storyTitle:`Story`,storyEN:`This was one of my favorite experiences in the CS Internship program.
+
+I spent around two years as a technical mentor for interns from different parts of Iran, from 17-year-olds to people over 50.
+
+My role in the program was technical mentoring. That meant I was there to guide interns through their technical path. I wasn't a teacher that they would join a session with just to learn something from me. When they had questions, got stuck somewhere, or wanted to hear their mentor's opinion, they would join a session with me. I would review their posts, projects, work, and overall activity and guide them through their next steps.
+
+The sessions were held online through Microsoft Teams.
+
+I also made a lot of friends along the way. Some completed the web development path and later joined companies and continued working in web development. Others realized somewhere along the way that this path wasn't right for them and decided to leave the program.
+
+Looking after the interns, guiding them, watching them grow, and seeing the impact I could have on their technical journey was something I really loved about this experience.`,storyFA:`این یکی از دوست‌داشتنی‌ترین تجربه‌های من در برنامه CS Internship بود.
+
+حدود ۲ سال منتور فنی اینترن‌های برنامه از نقاط مختلف ایران بودم. از ۱۷ ساله تا افراد بالای ۵۰ سال.
+
+نقش من منتور فنی در برنامه بود. منتور فنی یعنی من راهنمای اینترن‌ها در مسیر فنی‌شون بودم. من معلم نبودم که با من جلسه بیان و من بهشون چیزی یاد بدم. وقتی سوال داشتند، جایی گیر می‌کردند یا نیاز داشتند نظر منتورشون رو بشنوند با من جلسه میومدن و من پست‌ها، کارها، پروژه‌ها و فعالیتشون رو بررسی میکردم و تو مسیرشون راهنماییشون می‌کردم.
+
+جلسات به صورت آنلاین در محیط Microsoft Teams بود.
+
+در این مسیر دوست‌های زیادی هم پیدا کردم. بعضی‌ها دوره وب رو کامل کردند و بعد از برنامه وارد شرکت‌هایی شدند و مسیر فنی وب رو ادامه دادند. بعضی‌ها هم وسط مسیر متوجه شدند این مسیر براشون مناسب نیست و از برنامه خارج شدند.
+
+مراقب اینترن‌ها بودن، راهنمایی کردنشون، دیدن رشدشون و تاثیری که میتونستم روی مسیر فنیشون داشته باشم، برام فوق العاده دوست‌داشتنی و شیرین بود.`,storySource:{collection:`impact`,slug:`interns-mentored`},hasRelatedLinks:!0,relatedLinks:[{label:`Program Repo`,text:`CS Internship Specification`,url:`https://github.com/cs-internship/cs-internship-spec`},{label:`My Whiteboard`,text:`My Technical Sessions Whiteboard`,url:`https://github.com/Ali-Sdg90/CS-Technical-Sessions-Whiteboard`}]},"developers-onboarded":{id:`developers-onboarded`,title:`11`,subtitle:`Frontend Developers Onboarded`,summary:`Helped new MelkRadar frontend developers settle into projects, standards, and team workflows.`,featuresTitle:`What I Did`,features:[`Helped new teammates get access and understand the projects and standards`,`Walked them through Git, branching, and pull requests on their first tasks`,`Stayed available for questions until they could work independently`],storyTitle:`Story`,storyEN:`MelkRadar already had its own onboarding process, documentation, videos, and learning material. But someone still needed to be there for each new team member, follow their progress, answer questions, and make sure they were actually comfortable with the process. I was always happy that I was trusted with that role.
+
+I was responsible for onboarding 11 new members of the frontend team.
+
+I guided them through different company projects, helped them get the access they needed, and explained the standards and workflows we used in the team.
+
+For some of their first tasks, I would also work alongside them so we could go through the process together. From creating a branch and thinking through the task to opening a pull request and getting familiar with the way we worked as a team.
+
+It was another part of my work that I genuinely enjoyed. Helping someone go from being completely new to the project to feeling comfortable working inside the team was nice to see.`,storyFA:`شرکت ملک رادار خودش مسیر آنبوردینگ، ویدئوها، داکیومنت‌ها و آموزش‌های لازم برای اعضای جدید رو داشت. ولی همچنان نیاز بود یک نفر کنار هر عضو جدید باشه، حواسش به مسیر آنبوردینگش باشه، سوال‌هاش رو جواب بده و کمک کنه با روال تیم آشنا بشه. خوشحال بودم که برای این نقش به من اعتماد میشد.
+
+مسئول آنبورد ۱۱ عضو جدید تیم فرانت بودم.
+
+توی این مسیر پروژه‌های مختلف شرکت رو بهشون معرفی میکردم، برای گرفتن دسترسی‌های مورد نیاز راهنماییشون میکردم و استانداردها و روال‌های مختلف تیم رو براشون توضیح میدادم.
+
+حتی بعضی از تسک‌های اولشون رو هم باهاشون پیش میرفتم. از اینکه چجوری برای تسک فکر کنند و برنچ بسازند تا اینکه کارشون رو پیش ببرند و در نهایت Pull Request بزنند و با روال واقعی کار تیم آشنا بشن.
+
+دیدن اینکه یک نفر از روز اولی که وارد تیم میشه و همه چیز براش جدیده، کم کم با پروژه و تیم آشنا میشه و میتونه مستقل کارش رو پیش ببره، برام تجربه دوست‌داشتنی‌ای بود.`,storySource:{collection:`impact`,slug:`developers-onboarded`},hasRelatedLinks:!0,relatedLinks:[{label:`Company Website`,text:`MelkRadar`,url:`https://melkradar.com/`}]},"technical-sessions":{id:`technical-sessions`,title:`30+`,subtitle:`Technical Mentoring Sessions`,summary:`Reviewed interns' projects and questions in CS Internship mentoring sessions.`,featuresTitle:`What I Did`,features:[`Held weekly, hour-long sessions to discuss interns' work and questions`,`Reviewed their posts and projects, then helped plan their next steps`],storyTitle:`Story`,storyEN:`For around two years, I was a technical mentor in the CS Internship program and held technical sessions for web development interns.
+
+These sessions had their own weekly time slot. Interns could register for them and join the session to show me their posts, activities, projects, or anything they had questions about. I would review their work, talk through the problem with them, and guide them through it.
+
+The sessions were usually around an hour long.
+
+One of my favorite parts of being in the program was these weekly sessions. Every week I got to sit down with interns, see what they had been working on, hear their questions, and talk through the things they were dealing with. I really enjoyed these sessions.`,storyFA:`حدود ۲ سال در برنامه CS Internship منتور فنی بودم و توی این مدت برای اینترن‌های دوره وب جلسات فنی برگزار می‌کردم.
+
+این جلسات هر هفته زمان مشخص خودشون رو داشتند و اینترن‌ها می‌تونستند برای جلسه ثبت‌نام کنند و شرکت کنند. توی جلسه پست‌ها، فعالیت‌ها و پروژه‌هاشون رو بهم نشون می‌دادند یا اگر سوال و مشکلی داشتند مطرح می‌کردند و من کارشون رو بررسی می‌کردم و راهنماییشون می‌کردم.
+
+جلسات معمولا حدود یک ساعت بودند.
+
+یکی از شیرین‌ترین بخش‌های حضورم تو برنامه همین جلسات هفتگی بود. اینکه هر هفته با اینترن‌ها جلسه داشتم، کارهاشون رو می‌دیدم و درباره چیزهایی که درگیرش بودن باهم حرف می‌زدیم، واقعا برام دوست‌داشتنی بود.`,storySource:{collection:`impact`,slug:`technical-sessions`},hasRelatedLinks:!0,relatedLinks:[{label:`Program Repo`,text:`CS Internship Specification`,url:`https://github.com/cs-internship/cs-internship-spec`},{label:`My Whiteboard`,text:`My Technical Sessions Whiteboard`,url:`https://github.com/Ali-Sdg90/CS-Technical-Sessions-Whiteboard`}]},"telegram-bots":{id:`telegram-bots`,title:`6`,subtitle:`Telegram Bots Built`,summary:`Built Telegram bots for community management, monitoring, sales automation, and AI conversations.`,featuresTitle:`What I Built`,features:[`Built three CS Internship bots for entry, feedback, and monitoring`,`Built a MelkRadar sales bot to replace a repetitive manual process`,`Created two personal AI bots for local models and answers within chats`],storyTitle:`Story`,storyEN:`I really like building Telegram bots.
+
+Telegram is an environment I use every day, and I love being able to create something inside it with its own purpose and behavior, designed by me to help with something I care about.
+
+For CS Internship, I built three bots.
+
+CS Queue Bot manages the group used for people entering the program and is still being used today. There's a more detailed explanation of this bot in the Featured Projects section.
+
+CS Club Bot ran for around a year and a half. It used LLMs to analyze interns' Telegram posts and give them long, technical feedback. It performed really well and became one of the highlights of the CS Internship program. There's a more detailed explanation of this bot in the Featured Projects section.
+
+CS Automation Bot is another active bot in the program. It monitors services and bots running on the program's servers. If something goes down or a server needs attention, it sends an alert to the mentors' group so someone can take the required action and bring the service back up.
+
+For MelkRadar, I built a bot that became an important part of the sales team's workflow. It replaced a very repetitive manual process with an automated system, reduced most of the manual effort, and increased the amount of work the team could complete by more than five times. The bot is still actively used today.
+
+For myself, I built Fabrexa AI Bot and Askly90 Bot.
+
+Fabrexa AI Bot lets users connect to local LLMs through Ollama directly from Telegram. It supports short-term and long-term memory, different personalities, and switching between different local models. There's a more detailed explanation of this bot in the Featured Projects section.
+
+Askly90 was a small experimental bot I built for myself and a friend. Whenever a question came up in a Telegram chat, we could mention the bot with the question. It would send it to Perplexity's LLM and reply directly inside the conversation. It was really useful while it was running, but because it had an ongoing cost, I shut it down after around two months.`,storyFA:`من ساختن بات تلگرام رو خیلی دوست دارم.
+
+تلگرام محیطیه که خودم هر روز توش زندگی می‌کنم و اینکه می‌تونم توی همین محیط چیزی خلق کنم که کار، هدف و مدل رفتارش رو خودم تعریف کرده باشم و برای خودم یا چیزی که برام مهمه مفید باشه، برام خیلی جذابه.
+
+برای برنامه CS Internship سه بات ساختم.
+
+CS Queue Bot بات مدیریت گروه ورود افراد به برنامه هست و هنوز هم داره استفاده میشه. توضیح کامل‌تر این بات تو قسمت Featured Projects هست.
+
+CS Club Bot حدود یک سال و نیم فعالیت کرد. کارش این بود که پست‌های تلگرام اینترن‌ها رو با کمک LLMها تحلیل کنه و براشون بازخورد فنی و مفصل بنویسه. عملکرد خیلی خوبی تو برنامه داشت و یکی از هایلایت‌های برنامه CS بود. توضیح کامل‌تر این بات تو قسمت Featured Projects هست.
+
+CS Automation Bot هم یکی از بات‌های فعال برنامه هست. کارش مانیتور کردن سرویس‌ها و بات‌هایی هست که روی سرورهای برنامه اجرا میشن. اگه سرویسی از دسترس خارج بشه یا سروری نیاز به رسیدگی داشته باشه، تو گروه منتورها هشدار میده تا یکی از اعضای برنامه اقدام لازم رو انجام بده و سرویس دوباره بالا بیاد.
+
+برای شرکت ملک رادار هم یه بات ساختم که تبدیل شد به یکی از ابزارهای مهم بخش فروش شرکت. یه پروسه خیلی وقت‌گیر و دستی رو تبدیل کردم به یه سیستم اتومات که زحمت انجام کار برای افراد تقریبا به صفر رسید و خروجی انجام کار بیشتر از ۵ برابر شد. این بات هنوز هم مدام داره استفاده میشه.
+
+برای خودم هم Fabrexa AI Bot و Askly90 Bot رو ساختم.
+
+Fabrexa AI Bot به کاربر اجازه میده از داخل تلگرام به LLMهای لوکال از طریق Ollama وصل بشه. بات حافظه کوتاه‌مدت و بلندمدت، شخصیت‌های مختلف و قابلیت عوض کردن مدل LLM رو هم داره. توضیح کامل‌تر این بات تو قسمت Featured Projects هست.
+
+Askly90 یه بات آزمایشی بود که برای خودم و یکی از دوست‌هام ساختم. وقتی وسط چت تلگرام سوالی برامون پیش میومد، بات رو صدا می‌زدیم و سوالمون رو جلوی اسمش می‌نوشتیم. بات سوال رو برای LLM پرپلاکسیتی می‌فرستاد و جواب رو مستقیم تو همون چت ریپلای می‌کرد. برای مدتی که کار می‌کرد خیلی کاربردی بود، ولی چون استفاده ازش برام هزینه داشت بعد از حدود ۲ ماه خاموشش کردم.`,storySource:{collection:`impact`,slug:`telegram-bots`},hasRelatedLinks:!0,relatedLinks:[{label:`Telegram Bot`,text:`CS Automation Bot`,url:`https://t.me/CSIAutomationBot`},{label:`GitHub Repository`,text:`CS Club Bot`,url:`https://github.com/cs-internship/CS-Club-Bot`},{label:`GitHub Repository`,text:`CS Queue Bot`,url:`https://github.com/cs-internship/CS-Queue-Bot`},{label:`GitHub Repository`,text:`Fabrexa AI Ollama`,url:`https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama`},{label:`GitHub Repository`,text:`Askly90 Bot`,url:`https://github.com/Ali-Sdg90/Askly90-Bot`}]},"internal-tools":{id:`internal-tools`,title:`9`,subtitle:`Internal Tools Built`,summary:`Automated sales and program workflows with tools for MelkRadar and CS Internship.`,featuresTitle:`What I Built`,features:[`Built tools for sales, onboarding, feedback, scheduling, and monitoring`,`Automated a MelkRadar sales workflow, raising output more than fivefold`,`Cut weekly Azure Board setup from about 30 minutes to under five seconds`],storyTitle:`Story`,storyEN:`I like automating things that can be automated.
+
+At both CS Internship and MelkRadar, I built internal tools and systems to make everyday work easier, more scalable, and more reliable. Some of them were part of my responsibilities, but for most of them I noticed a problem myself, discussed it with the people responsible, got approval, built a solution, and eventually saw it become part of the actual workflow.
+
+At MelkRadar, I built MLK DVR Receiver. I was personally one of the people dealing with the old process, so I knew how slow and frustrating it was. After coordinating with management, I built an internal system consisting of an Android app, a backend, and a Telegram bot that all worked together. It removed almost all of the manual effort from the process and increased the team's output by more than 5x within a month.
+
+Most of the other tools were built for CS Internship. Scalability was always an important need for the program, and a lot of that depended on having good internal systems.
+
+I built CS Queue Bot to manage the program's entry queue. It connects to Azure DevOps, creates the required tasks and backlogs for new members, and also helps manage incorrect behavior inside the group. It made the whole entry process much more organized. There's a more detailed explanation of this project in the Featured Projects section.
+
+I built CS Club Bot to give interns technical feedback on their posts. It used Perplexity AI with a carefully designed prompt to analyze posts from different program clubs and return detailed technical feedback within seconds. There's a more detailed explanation of this project in the Featured Projects section.
+
+I also built CS Azure Board Automation. Every week, around 70 tasks and backlogs had to be created from templates and assigned manually. The process used to take the sprint manager around half an hour. I built a React application that handled the entire process through the Azure DevOps API in less than 5 seconds. It was used for around five months, until the management team decided that manually working with the board was more useful for the interns' learning.
+
+CS Automation Bot was a monitoring system for the program's servers. Every hour, it checked whether the required servers and services were still running. If something went down, it notified the mentors' Telegram group so someone could take action.
+
+I built CS Queue Calendar from start to finish to show applicants when the program's required weekly meetings were happening. It became one of the most-used tools in the program and one of the first things applicants interacted with. I received really good feedback about it from both program members and applicants. There's a more detailed explanation of this project in the Featured Projects section.
+
+CS Queue Message Maker was one of my first automation tools for the program. It semi-automated the process of creating and organizing the queue message that was used by the queue manager.
+
+CS Queue Meetings Intro was a simple tool shown through screen sharing before entry meetings. It displayed a countdown until the meeting started along with the instructions applicants needed before the session.
+
+And CS Feedback Webhook was one of the foundations of the program's feedback system. It received data from technical-session feedback forms, stored it on the program's server, and sent the required Telegram messages.
+
+I really enjoyed building these systems. Seeing a repetitive or frustrating process, building a clean and practical tool for it, and then watching it actually become part of the workflow and get used is one of the things I love most about working.`,storyFA:`من دوست دارم چیزی که می‌تونه اتومات بشه رو اتومات کنم.
+
+توی CS Internship و ملک‌رادار ابزارها و سیستم‌های داخلی‌ای ساختم که کارها رو راحت‌تر، قابل اسکیل‌تر و حرفه‌ای‌تر کنند. بعضی از این ابزارها جزو مسئولیتم بودند، ولی بیشترشون چیزهایی بودند که خودم مشکلشون رو دیدم، با افراد مسئول هماهنگ کردم، تاییدیه گرفتم و براشون یه راه‌حل ساختم. خیلی‌هاشون هم بعد از ساخته شدن جزو روال واقعی کار شدند.
+
+توی ملک‌رادار MLK DVR Receiver رو ساختم. خودم هم یکی از افرادی بودم که با پروسه قبلی درگیر بودم و می‌دیدم چقدر کار دستی، کند و سختی هست. با هماهنگی مدیریت یه سیستم داخلی براشون ساختم که از یه اپ اندروید، بک‌اند و بات تلگرام تشکیل شده بود و هر سه با هم کار می‌کردند. سیستم تقریبا تمام زحمت دستی اون پروسه رو حذف کرد و کارکرد تیم تو بازه یک ماه بیشتر از ۵ برابر شد.
+
+بیشتر ابزارهای دیگه رو برای CS Internship ساختم. یکی از نیازهای مهم برنامه این بود که بتونه اسکیل بشه و بخش زیادی از این نیاز با داشتن سیستم‌های داخلی خوب قابل حل بود. خوشحالم که تو اون بازه من تو برنامه بودم و می‌تونستم تو ساختن این سیستم‌ها نقش داشته باشم.
+
+CS Queue Bot رو برای مدیریت گروه ورود افراد به برنامه ساختم. بات به Azure DevOps برنامه دسترسی داره، برای افراد تازه‌وارد تسک‌ها و بک‌لاگ‌های مورد نیاز رو می‌سازه و حواسش به رفتارهای نادرست داخل گروه هم هست. این ابزار پروسه ورود به برنامه رو خیلی منظم‌تر و حرفه‌ای‌تر کرد. توضیح کامل‌تر این پروژه تو قسمت Featured Projects هست.
+
+CS Club Bot رو برای فیدبک دادن به اینترن‌ها ساختم. بات تو گروه کلاب‌های دوره‌های مختلف حضور داشت و وقتی اینترن پست فنی می‌فرستاد، پست رو با کمک هوش مصنوعی پرپلاکسیتی و یه پرامپت خیلی به‌خصوص تحلیل می‌کرد و چند ثانیه بعد بازخورد فنی کامل بهش می‌داد. توضیح کامل‌تر این پروژه تو قسمت Featured Projects هست.
+
+CS Azure Board Automation رو هم برای برنامه ساختم. هر هفته حدود ۷۰ تسک و بک‌لاگ باید از روی یه سری تمپلیت ساخته و برای افراد مختلف اساین می‌شد. این کار هر هفته حدود نیم ساعت از مدیر اسپرینت وقت می‌گرفت. یه برنامه React ساختم که با کمک Azure DevOps API کل این پروسه رو در کمتر از ۵ ثانیه انجام می‌داد. این ابزار حدود ۵ ماه تو برنامه استفاده شد، ولی بعد تیم مدیریتی به این نتیجه رسید که استفاده ازش داره جلوی تمرین و یادگیری کار با Azure Board توسط افراد برنامه رو می‌گیره و تصمیم گرفتیم استفاده ازش متوقف بشه.
+
+CS Automation Bot یه سیستم مراقبت از سرورهای برنامه بود. هر یک ساعت چک می‌کرد که سرورها و سرویس‌های مورد نیاز برنامه فعال هستند یا نه و اگه مشکلی پیش میومد، تو گروه منتورها خبر می‌داد که یکی از اعضای برنامه بیاد و اقدام لازم رو انجام بده.
+
+CS Queue Calendar رو از اول تا آخر برای برنامه ساختم. برنامه نیاز داشت به افرادی که می‌خواستند وارد CS بشن، خیلی ساده نشون بده جلسات هفتگی‌ای که لازمه توشون شرکت کنند چه زمانی برگزار میشن. این ابزار تبدیل شد به یکی از پراستفاده‌ترین ابزارهای برنامه و یکی از اولین چیزهایی بود که فرد متقاضی ورود به برنامه می‌دید. از اعضای برنامه و متقاضی‌های ورود هم بازخورد خیلی خوبی براش گرفتم. توضیح کامل‌تر این پروژه تو قسمت Featured Projects هست.
+
+CS Queue Message Maker یکی از اولین ابزارهایی بود که تو مسیر اتومیشن برنامه ساختم. کارش ساختن و نظم دادن پیام صف برنامه بود و به‌صورت نیمه‌اتوماتیک ساختار پیام رو آماده می‌کرد و تحویل مدیر صف می‌داد.
+
+CS Queue Meetings Intro یه ابزار ساده بود که موقع شروع جلسات ورود به برنامه با Screen Share نمایش داده می‌شد. شمارش معکوس تا شروع جلسه و توضیحاتی که متقاضی‌ها قبل از شروع جلسه لازم بود بدونند رو نشون می‌داد.
+
+CS Feedback Webhook هم یکی از پایه‌های Feedback System برنامه بود. اطلاعاتی که از فرم بازخورد جلسات فنی ارسال می‌شد رو دریافت می‌کرد، روی سرور برنامه ذخیره می‌کرد و پیام‌های تلگرام مورد نیاز رو می‌فرستاد.
+
+ساختن این سیستم‌ها رو خیلی دوست داشتم. اینکه یه پروسه تکراری یا آزاردهنده رو ببینم، براش یه ابزار تمیز و کار راه‌بند بسازم و بعد ببینم واقعا وارد روال کار شده و آدم‌ها دارن ازش استفاده می‌کنند، یکی از دوست‌داشتنی‌ترین حس‌های کار کردن برام هست.`,storySource:{collection:`impact`,slug:`internal-tools`},hasRelatedLinks:!0,relatedLinks:[{label:`GitHub Repository`,text:`CS Queue Bot`,url:`https://github.com/cs-internship/CS-Queue-Bot`},{label:`GitHub Repository`,text:`CS Club Bot`,url:`https://github.com/cs-internship/CS-Club-Bot`},{label:`GitHub Repository`,text:`CS Queue Calendar`,url:`https://github.com/cs-internship/CS-Queue-Calendar`},{label:`GitHub Repository`,text:`CS Azure Board Automation`,url:`https://github.com/Ali-Sdg90/CS-Azure-Board-Automation`},{label:`GitHub Repository`,text:`CS Queue Message Maker`,url:`https://github.com/Ali-Sdg90/CS-Queue-Message-Maker`},{label:`GitHub Repository`,text:`CS Queue Meetings Intro`,url:`https://github.com/cs-internship/CS-Queue-Meetings-Intro`},{label:`GitHub Repository`,text:`CS Feedback Webhook`,url:`https://github.com/cs-internship/CS-Feedback-Webhook`}]},"android-app-shipped":{id:`android-app-shipped`,title:`2`,subtitle:`Android Apps Shipped`,summary:`Shipped a sales workflow app and a health backup app, both built natively in Kotlin.`,featuresTitle:`What I Shipped`,features:[`Designed MLK DVR Receiver's Android app, backend, and Telegram bot`,`Built Health Data Relay for automatic backups to each user's Google Drive`,`Published Health Data Relay on Cafe Bazaar and APKPure`,`Handled app signing, permissions, and Play Protect verification`],storyTitle:`Story`,storyEN:`Android development wasn't something I originally expected to get into.
+
+But both the company I worked with and I had problems that needed an Android app, so I started from zero. I learned Kotlin, how Android apps are built and installed, app signing, permissions, ADB, releases, background processing, and the other parts I needed to actually build and ship what I had in mind.
+
+The first app I built was MLK DVR Receiver for MelkRadar.
+
+It's an internal Android application installed on the phones used by members of the team. The app receives the required information and sends it to the system's backend. The backend stores and processes it and, when needed, sends the result to the team's Telegram group through a bot.
+
+I designed and implemented the entire system myself: the Android app, backend, and Telegram bot.
+
+The result was automating one of the most manual and frustrating workflows in the sales team. In the first month with the system running, the team was able to complete more than 5x the amount of work compared to the previous month.
+
+MLK DVR Receiver is an internal company application, so its source code, downloads, and technical details aren't publicly available.
+
+After that, I built Health Data Relay for myself.
+
+I needed an app that could automatically take my health data and back it up to my own Google Drive at a time I could configure. I looked for something that did exactly what I wanted and couldn't find it, so I decided to build it myself.
+
+I spent around a month and a half building it and eventually published it on both Iranian and international Android platforms including Cafe Bazaar and APKPure.
+
+The app reads health information through Health Connect and can automatically upload the daily data to the user's own Google Drive. Getting the required Google Drive access was a whole journey by itself. I had to go through Google's application and approval process for the required permissions. That was honestly one of the darkest parts of building the whole thing.
+
+The app and my developer signing setup also went through Google Play Protect's verification process. There's a more detailed explanation of Health Data Relay in the Featured Projects section.`,storyFA:`ساخت اپ اندروید چیزی نبود که اولش فکر کنم یه روز میرم سمتش.
+
+ولی هم شرکتی که باهاش کار می‌کردم و هم خودم به چیزهایی نیاز داشتیم که راه‌حلشون ساختن یه اپ اندروید بود. برای همین تقریبا از صفر شروع کردم. اینکه Kotlin چیه، اپ اندروید چجوری ساخته و روی گوشی نصب میشه، امضای دولوپر چیه، دسترسی‌ها چجوری کار می‌کنند، ADB چیه، چجوری ریلیز بدم، پردازش‌های پس‌زمینه چجوری کار می‌کنند و هر چیز دیگه‌ای که برای ساختن چیزی که نیاز داشتم لازم بود رو یاد گرفتم.
+
+اولین اپی که ساختم MLK DVR Receiver برای شرکت ملک‌رادار بود.
+
+این یه اپ داخلیه که روی گوشی افراد تیم نصب میشه، اطلاعات مورد نیاز رو دریافت می‌کنه و برای بک‌اند سیستم می‌فرسته. بک‌اند اطلاعات رو ذخیره و پردازش می‌کنه و هرجا لازم باشه نتیجه از طریق بات تلگرام داخل گروه تیم ارسال میشه.
+
+طراحی و پیاده‌سازی کل این سیستم، از اپ اندروید تا بک‌اند و بات تلگرام با خودم بود.
+
+نتیجه این سیستم اتومات شدن یکی از دستی‌ترین و پرزحمت‌ترین کارهای تیم فروش بود. تو اولین ماهی که سیستم در حال استفاده بود، تیم تونست بیشتر از ۵ برابر ماه قبل خروجی داشته باشه.
+
+MLK DVR Receiver یه اپ داخلی شرکت هست و به همین دلیل لینک دانلود، سورس کد و جزئیات فنی سیستم به‌صورت پابلیک در دسترس نیست.
+
+بعد از اون Health Data Relay رو برای خودم ساختم.
+
+خودم نیاز داشتم اپی داشته باشم که اطلاعات سلامت گوشیم رو به‌صورت خودکار و در ساعتی که مشخص می‌کنم روی Google Drive خودم بکاپ بگیره. دنبال ابزاری که دقیقا چیزی که می‌خوام رو انجام بده گشتم ولی پیدا نکردم، برای همین تصمیم گرفتم خودم بسازمش.
+
+حدود یک ماه و نیم روی اپ کار کردم و در نهایت روی پلتفرم‌های داخلی و خارجی مثل کافه بازار و APKPure منتشرش کردم.
+
+اپ اطلاعات سلامت رو از Health Connect می‌خونه و می‌تونه به‌صورت خودکار اطلاعات هر روز رو روی Google Drive خود کاربر آپلود کنه.
+
+گرفتن دسترسی لازم برای Google Drive خودش یه مسیر کامل بود. برای اینکه اپ اجازه لازم برای نوشتن روی Google Drive کاربر رو داشته باشه، مجبور شدم پروسه درخواست، بررسی و گرفتن تاییدیه از گوگل رو طی کنم. این یکی از دارک‌ترین مسیرهایی بود که تا الان تو ساخت یه پروژه داشتم!
+
+اپ و امضای دولوپری خودم هم پروسه بررسی Google Play Protect رو طی کردند. توضیح کامل‌تر Health Data Relay تو قسمت Featured Projects هست.`,storySource:{collection:`impact`,slug:`android-app-shipped`},hasRelatedLinks:!0,relatedLinks:[{label:`Project Website`,text:`Health Data Relay`,url:`https://ali-sdg.is-a.dev/health-data-relay/`},{label:`GitHub Repository`,text:`Health Data Relay`,url:`https://github.com/Ali-Sdg90/health-data-relay`},{label:`Android Store`,text:`Health Data Relay on Cafe Bazaar`,url:`https://cafebazaar.ir/app/com.alisadeghi.autohealthsync`},{label:`Android Store`,text:`Health Data Relay on APKPure`,url:`https://apkpure.com/p/com.alisadeghi.autohealthsync`}]},"ios-app-shipped":{id:`ios-app-shipped`,title:`1`,subtitle:`iOS App Shipped`,summary:`Co-developed an AI-powered subscription app published on the Apple App Store.`,featuresTitle:`What I Shipped`,features:[`Co-developed Settle It GPT from a basic prototype into a working iOS app`,`Connected accounts, camera and microphone input, and AI responses through Firebase`,`Added spoken answers and a subscription flow with Stripe`,`Worked with my co-developer to publish it on the Apple App Store`],storyTitle:`Story`,storyEN:`Settle It GPT was the first mobile app I ever seriously worked on.
+
+My friend came to me with the main idea for the project and had already built a very basic version of it. This was before I had ever built an Android app or even used Expo for any serious application.
+
+I didn't have a Mac myself, so I used to borrow my sister's laptop to work on the project.
+
+We spent around three months building the app.
+
+The backend was built on Firebase. Users could create accounts and use native iOS capabilities like the camera and microphone. The collected information was sent to the backend, an online AI model generated the response, and another model generated text-to-speech audio for it.
+
+The app also had a subscription system. Users could make three requests for free and after that they needed an active subscription. Payments and subscriptions were handled through Stripe.
+
+Setting up all of these pieces and getting them to work together was a really complicated challenge, especially because most of it was completely new to me at the time.
+
+Eventually we got to a point where the whole thing actually worked and we were able to publish it on the Apple App Store.
+
+I also made a post introducing the app after release, and it ended up getting a lot of views and attention.
+
+My friend kept the app available on the App Store for around a year, but later removed it because keeping the developer account and the app available wasn't financially worth it anymore.
+
+It was one of the most challenging projects we had worked on, but also a really cool experience for both of us. We started with an idea and a very early prototype and ended up with something real that actually worked and that we could ship.`,storyFA:`Settle It GPT اولین اپ موبایلی بود که به‌صورت جدی روش کار کردم.
+
+دوستم با ایده کلی پروژه اومد پیشم و خودش هم یه نسخه خیلی پایه ازش ساخته بود. این حتی قبل از زمانی بود که من بخوام اپ اندروید بسازم یا با Expo یه پروژه جدی انجام بدم.
+
+خودم مک نداشتم و برای اینکه بتونم پروژه رو پیش ببرم لپ‌تاپ خواهرم رو ازش امانت می‌گرفتم و با اون روی اپ کار می‌کردم.
+
+حدود ۳ ماه روی پروژه کار کردیم.
+
+بک‌اند اپ روی Firebase بود. کاربر می‌تونست اکانت بسازه و از قابلیت‌های خود iOS مثل دوربین و میکروفون استفاده کنه. اطلاعات برای سرور فرستاده می‌شد، یه مدل آنلاین هوش مصنوعی جواب رو تولید می‌کرد و یه مدل دیگه هم از روی جواب TTS می‌ساخت.
+
+اپ سیستم اشتراک هم داشت. هر کاربر می‌تونست ۳ درخواست رایگان انجام بده و بعد از اون برای ادامه استفاده نیاز به اشتراک داشت. پرداخت و سیستم اشتراک هم با Stripe انجام می‌شد.
+
+ستاپ کردن همه این بخش‌ها و وصل کردنشون به هم برای چیزی که اون موقع تقریبا همش برام جدید بود، یه چالش فوق العاده پیچیده بود.
+
+در نهایت به جایی رسیدیم که همه چیز واقعا کار می‌کرد و تونستیم اپ رو روی Apple App Store منتشر کنیم.
+
+بعد از انتشار من یه پست معرفی هم براش گذاشتم که خیلی خوب دیده شد و بازدید خیلی خوبی گرفت.
+
+دوستم حدود یک سال اپ رو روی App Store نگه داشت ولی بعد از اون چون نگه داشتن اکانت دولوپر و اپ براش صرفه اقتصادی نداشت، تصمیم گرفت اپ رو حذف کنه.
+
+تجربه خیلی خفنی برای هردومون بود. از یه ایده و یه نسخه خیلی پایه شروع کردیم و در نهایت چیزی ساختیم که واقعا کار می‌کرد و تونستیم شیپش کنیم.`,storySource:{collection:`impact`,slug:`ios-app-shipped`},hasRelatedLinks:!0,relatedLinks:[{label:`LinkedIn Post`,text:`Settle It GPT Launch Post`,url:`https://www.linkedin.com/posts/ali-sdg90_settleitgpt-share-7374421474943700993-_H3R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiHtIwB6ffMAWL0iNc5fSdSRqvEYI6Q2IA`}]},"pull-requests-reviewed":{id:`pull-requests-reviewed`,title:`376+`,subtitle:`Pull Requests Reviewed`,summary:`Reviewed pull requests across MelkRadar's main frontend projects to maintain code quality.`,featuresTitle:`What I Did`,features:[`Reviewed pull requests across MelkRadar's three main frontend projects`,`Checked code structure, team standards, and how each feature worked`,`Explained changes through PR comments, screenshots, and conversations`],storyTitle:`Story`,storyEN:`I joined MelkRadar as a frontend developer, but after some time I was trusted with reviewing and overseeing the work of other frontend team members.
+
+Over around two years, a large number of pull requests came through me, mostly across the company's three main frontend projects.
+
+For each pull request, I checked things like how elements and components were defined and used, the final output of the feature, the company's coding standards, the implementation approach, and anything else that could affect the quality of the project.
+
+When something needed to be changed, I would leave comments on the pull request, send screenshots to show the issue more clearly, or sometimes have a meeting with the developer and explain it directly.
+
+It was a relatively heavy responsibility. If a problem reached production or the main branch, it meant that the work had also passed through my review, so I had to take the role seriously.
+
+Both I and the company were happy with how the role went during the time I had it. It was a demanding responsibility, but also a really interesting experience for me.`,storyFA:`من به عنوان نیروی فرانت وارد شرکت ملک‌رادار شدم، ولی بعد از مدتی مسئول ریویو و نظارت روی کار بقیه اعضای تیم فرانت شدم.
+
+توی حدود ۲ سال، تعداد زیادی Pull Request دستم می‌رسید که بیشترشون برای ۳ پروژه اصلی فرانت شرکت بودند.
+
+توی هر Pull Request چیزهایی مثل درست تعریف و استفاده شدن المنت‌ها و کامپوننت‌ها، خروجی نهایی پروژه، رعایت استانداردهای کدنویسی شرکت، نحوه پیاده‌سازی و هر چیزی که می‌تونست روی کیفیت پروژه تاثیر بذاره رو بررسی می‌کردم.
+
+اگه چیزی نیاز به تغییر داشت، روی Pull Request کامنت می‌ذاشتم، با عکس مشکل یا خروجی رو نشون می‌دادم یا بعضی وقت‌ها با دولوپر جلسه می‌رفتم و مستقیم توضیح می‌دادم.
+
+مسئولیت نسبتا سنگینی بود. اگه مشکلی وارد پروداکت یا برنچ اصلی می‌شد، یعنی اون کار از زیر دست من هم رد شده بود و من هم نسبت بهش مسئول بودم.
+
+هم خودم و هم شرکت از مدتی که این نقش رو داشتم راضی بودیم. مسئولیت سنگینی بود، ولی تجربه خیلی باحالی برام بود.`,storySource:{collection:`impact`,slug:`pull-requests-reviewed`},hasRelatedLinks:!0,relatedLinks:[{label:`Company Website`,text:`MelkRadar`,url:`https://melkradar.com/`}]},"open-source-commits":{id:`open-source-commits`,title:`603+`,subtitle:`Open Source Commits`,summary:`Contributed to CS Internship and other open-source projects, including fx-blox and TonRich.`,featuresTitle:`What I Contributed`,features:[`Contributed to open-source tools used by the CS Internship program`,`Worked with other contributors on fx-blox, TonRich, and smaller projects`],storyTitle:`Story`,storyEN:`I've spent a good amount of time working on open-source projects.
+
+CS Internship itself is an open-source program, so a large part of these commits came from projects and tools that were hosted under its GitHub organization and used inside the program.
+
+I also contributed to projects outside CS, including fx-blox, TonRich, and some smaller projects along the way.
+
+I genuinely like open source and working with other people on the same thing. Building something together, seeing other people's approaches, and having everyone contribute their own part to a shared project is something I've always enjoyed.
+
+It's something I know I'll want to keep doing in the future too.`,storyFA:`روی پروژه‌های اوپن سورس هم فعالیت نسبتا زیادی داشتم.
+
+خود CS Internship یه برنامه اوپن سورس هست و بخش زیادی از این کامیت‌ها مربوط به پروژه‌ها و ابزارهایی بود که روی GitHub Organization برنامه قرار داشتند و داخل خود برنامه استفاده می‌شدند.
+
+بیرون از CS هم روی پروژه‌هایی مثل fx-blox، TonRich و یه سری پروژه‌های کوچیک‌تر فعالیت داشتم.
+
+من کلا اوپن سورس و کار گروهی رو دوست دارم. اینکه چند نفر باهم روی یه چیز کار کنند، هرکس بخشی ازش رو بسازه و در نهایت چیزی رو باهم جلو ببریم همیشه برام دوست‌داشتنی بوده.
+
+چیزیه که می‌دونم در آینده هم دوست دارم ادامه‌ش بدم.`,storySource:{collection:`impact`,slug:`open-source-commits`},hasRelatedLinks:!0,relatedLinks:[{label:`GitHub Organization`,text:`CS Internship`,url:`https://github.com/cs-internship`},{label:`GitHub Repository`,text:`Functionland fx-blox`,url:`https://github.com/functionland/fx-blox`},{label:`GitHub Repository`,text:`TonRich`,url:`https://github.com/tonradar/tonrich`}]}},ot=e=>at[e]??null,st=`/assets/cgp-C2S2wyLe.png`,ct=`/assets/cs-club-CXmxd6e_.png`,lt=`/assets/cs-queue-BTL6y3GM.png`,ut=`/assets/fabrexa-ButC_YFD.png`,dt=`/assets/health-data-relay-B23VK4BG.png`,ft=`/assets/path-finder-CAKkoKc1.png`,pt=`/assets/portfolio-ChIUE_eg.png`,mt=`/assets/quick-math-ComzoUUT.png`,ht=`/assets/spot-BKVfVqhy.png`,gt=`/assets/xo-CCgkRYGn.png`,_t=`/assets/cs-calender-cDhXWubb.png`,vt=`/assets/img1-CVdW-SLM.jpg`,yt=`/assets/img2-BxCsjz3w.jpg`,bt=`/assets/img3-qh1WNNGf.jpg`,xt=`/assets/img1-ByR1tvTl.png`,St=`/assets/img2-qzOEb-Z6.png`,Ct=`/assets/img3-C4loDtiV.png`,wt=`/assets/img1-BDGC_q-Q.jpg`,Tt=`/assets/img2-CvpW9Hmo.jpg`,Et=`/assets/img3-CNjT67Jc.jpg`,Dt=`/assets/img4-BsEzyjKl.jpg`,Ot=`/assets/img5-BW5gSmDj.jpg`,kt=`/assets/img6-DwhKgc6s.jpg`,At=`/assets/img1-BDGC_q-Q.jpg`,jt=`/assets/img2-CvpW9Hmo.jpg`,Mt=`/assets/img3-CNjT67Jc.jpg`,Nt=`/assets/img4-DLeCVB5E.png`,Pt=`/assets/img5-DqhcA4Ld.png`,Ft=`/assets/img6-Ds5qsG4W.png`,It=`/assets/img1-DYFHscnz.jpg`,Lt=`/assets/img2-B9QSReOR.jpg`,Rt=`/assets/img3-f_6mybGV.jpg`,zt=`/assets/img1-DN7vtfe8.png`,Bt=`/assets/img2-BUzGAeoQ.png`,Vt=`/assets/img3-DEajHH2x.png`,Ht=`/assets/img1-woYbb-eI.jpg`,Ut=`/assets/img2-BS-34C0Q.jpg`,Wt=`/assets/img3-DSeU9Fes.jpg`,Gt=`/assets/img1-BEXo5xIB.png`,Kt=`/assets/img2-BgAFq8ZQ.png`,qt=`/assets/img3-BIFYE2jq.png`,Jt=`/assets/img1-Cw34JDqG.jpg`,Yt=`/assets/img2-T5DXvoMR.jpg`,Xt=`/assets/img3-BRAZS4vY.jpg`,Zt=`/assets/img1-DKLOFwiJ.png`,Qt=`/assets/img2-CJTFNpGT.png`,$t=`/assets/img3-DXr9U55o.png`,en=`/assets/img1-CIIQn5cM.jpg`,tn=`/assets/img2-7svSCj_d.jpg`,nn=`/assets/img3-BpbiJqK1.jpg`,rn=`/assets/img1-D8sVXL5v.png`,an=`/assets/img2-CT3GZXbh.png`,on=`/assets/img3-DzxrQCxQ.png`,sn=`/assets/img1-C86JeWDq.jpg`,cn=`/assets/img2-BnUvjxtJ.jpg`,ln=`/assets/img3-CNPkh4_-.jpg`,un=`/assets/img1-B5rEjB8L.png`,dn=`/assets/img2-CV-I9TBI.png`,fn=`/assets/img3-BhdG71ck.png`,pn=`/assets/img1-CjBEQ89B.jpg`,mn=`/assets/img2-CtkIyIIo.jpg`,hn=`/assets/img3-DOoFDPwW.jpg`,gn=`/assets/img1-e2TCPHy8.png`,_n=`/assets/img2-CbtZEcue.png`,vn=`/assets/img3-OIpfxAv6.png`,yn=`/assets/img1-D-Of9PPi.jpg`,bn=`/assets/img3-De-9Rdp3.jpg`,xn=`/assets/img1-BUv-WZnR.png`,Sn=`/assets/img3-BIZy_sx7.png`,Cn=`/assets/img3-CXi0YCYs.jpg`,wn=`/assets/img3-DNaEOddq.png`,Tn=`/assets/img1-4BX7F6_O.jpg`,En=`/assets/img3-BAaeXYj4.jpg`,Dn=`/assets/img1-22wm9lW9.png`,On=`/assets/img3-D6tvyFVb.png`,W=(e,t,n,r,i,a=r,o=i)=>({src:e,lightboxSrc:t,alt:n,width:r,height:i,lightboxWidth:a,lightboxHeight:o}),G={"alis-portfolio":[W(vt,xt,`Ali's Portfolio interactive shelf overview`,1919,903),W(bt,Ct,`Ali's Portfolio build story`,1919,904),W(yt,St,`Ali's Portfolio project detail experience`,1919,908)],"health-data-relay":[W(wt,At,`Health Data Relay automatic backup dashboard`,941,1672),W(Tt,jt,`Health Data Relay onboarding for Health Connect and Google Drive`,941,1672),W(Et,Mt,`Health Data Relay backup settings and date format`,941,1672),W(Dt,Nt,`Health Data Relay website home page`,1903,1078),W(Ot,Pt,`Health Data Relay GitHub repository`,1919,1079),W(kt,Ft,`Health Data Relay APKPure app listing`,903,908)],"spot-taste-tracker":[W(It,zt,`Spot Taste Tracker overview dashboard`,1919,1079),W(Lt,Bt,`Spot Taste Tracker listening analytics`,1919,1079),W(Rt,Vt,`Spot Taste Tracker taste history`,1919,1079)],"fabrexa-ai-ollama":[W(Ut,Kt,`Fabrexa AI Ollama Telegram conversation`,1046,1481),W(Wt,qt,`Fabrexa AI Ollama mobile chat flow`,1234,2215),W(Ht,Gt,`Fabrexa AI Ollama chat interface`,1919,1079)],"cs-queue-calendar":[W(H,L,`CS Queue Calendar queue page`,640,335,2559,1340),W(bn,Sn,`CS Queue Calendar session planning view`,2559,1340),W(yn,xn,`CS Queue Calendar schedule overview`,2559,1599)],"cs-club-bot":[W(z,P,`CS Club Bot Telegram interface`,216,408,864,1633),W(Cn,wn,`CS Club Bot conversation flow`,2452,1979),W(B,F,`CS Club Bot workflow overview`,640,400,2559,1599)],"cs-queue-bot":[W(V,I,`CS Queue Bot command interface`,253,227,1012,909),W(En,On,`CS Queue Bot mobile workflow`,1048,1933),W(Tn,Dn,`CS Queue Bot queue management page`,1919,1079)],"gradient-paint":[W(Jt,Zt,`Gradient Paint canvas with a red radial gradient`,1919,1079),W(Yt,Qt,`Gradient Paint canvas and interaction settings`,1919,1079),W(Xt,$t,`Gradient Paint development time-lapse`,1919,905)],"quick-math":[W(en,rn,`Quick Math rotating cube game interface`,1920,1080),W(tn,an,`Quick Math round results with time, lives, and questions`,1920,1080),W(nn,on,`Quick Math repository and project documentation`,1919,904)],"tic-tac-toe":[W(pn,gn,`Tic Tac Toe customizable game board`,1920,1080),W(mn,_n,`Tic Tac Toe completed match screen`,1920,1080),W(hn,vn,`Tic Tac Toe development time-lapse`,1919,1079)],"path-finder":[W(sn,un,`Path Finder weighted route through an obstacle grid`,1919,903),W(cn,dn,`Path Finder grid and wall settings`,948,902),W(ln,fn,`Path Finder repository overview and examples`,924,1064)]},kn={"alis-portfolio":{id:`alis-portfolio`,title:`Ali's Portfolio`,subtitle:`Interactive portfolio with a shelf-based experience`,year:`2026`,image:ie,lightboxImage:pt,imageWidth:1254,imageHeight:1254,lightboxWidth:1254,lightboxHeight:1254,summary:`An interactive, shelf-inspired portfolio presenting projects, skills, career milestones, and a bilingual build journal in a focused 3D experience.`,links:[{label:`Live Version`,url:`https://ali-sdg90.github.io`},{label:`GitHub Repo`,url:`https://github.com/Ali-Sdg90/ali-sdg90.github.io`}],tech:[`React 19`,`Vite 8`,`SCSS`,`Framer Motion`,`GitHub Pages`],features:[`Custom shelf navigation with drag momentum, friction, and infinite scrolling`,`Reusable data system for projects, skills, career history, and impact metrics`,`Project panels with image galleries, lightboxes, external links, and bilingual stories`,`A 26-chapter build journal with keyboard and reduced-motion support`],galleryImages:G[`alis-portfolio`],storyEN:`placeholder: see the bottom-right corner of the page`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Engineering`,text:`CI/CD, PR previews, semantic releases, and GitHub Pages deployment`,url:`https://github.com/Ali-Sdg90/ali-sdg90.github.io/blob/main/.github/workflows/ci.yml`},{label:`Release History`,text:`Versioned changelog generated from the release workflow`,url:`https://github.com/Ali-Sdg90/ali-sdg90.github.io/blob/main/CHANGELOG.md`}]},"health-data-relay":{id:`health-data-relay`,title:`Health Data Relay`,subtitle:`Android app for backing up health data to Google Drive`,year:`2026`,image:g,lightboxImage:dt,imageWidth:1254,imageHeight:1254,lightboxWidth:1254,lightboxHeight:1254,summary:`A privacy-focused Android app that creates a seamless, automated pipeline from selected Health Connect records to compact daily JSON summaries stored directly in a user-owned Google Drive folder.`,links:[{label:`App Website`,url:`https://ali-sdg.is-a.dev/health-data-relay/`},{label:`GitHub Repo`,url:`https://github.com/Ali-Sdg90/health-data-relay`}],tech:[`Kotlin`,`Jetpack Compose`,`Material 3`,`Health Connect`,`WorkManager`,`DataStore`,`Google Drive API`],features:[`Creates compact daily JSON summaries from selected Health Connect data`,`Runs automatic daily backups with optional manual backups`,`Retries failures and fills in missing recent backups`,`Processes data on-device and uploads directly to Google Drive`,`Supports English, Persian, Jalali dates, and configurable data categories`],galleryImages:G[`health-data-relay`],storyEN:`Health Data Relay started from a very simple personal need.
+
+For a while, I had been building a system for myself that used AI to write my daily reports. Things like my commits, how I felt during the day, activity from my phone and laptop, and a few other signals were collected automatically, and the final report was saved to my Google Calendar.
+
+I really liked that system, and at some point I thought it would be great if my health and sleep data could be part of it too.
+
+So I started looking for an app that could take information like my steps, sleep, and workout activity from my phone and make it available in the exact way I needed.
+
+I couldn't find anything that really did that.
+
+Around the same time, I had recently built an internal Android app for a company, so Android development was still fresh in my mind.
+
+I thought: why not build it myself?
+
+And that's where Health Data Relay started.
+
+The idea was simple. Read health data from Health Connect and, every day at a time chosen by the user, save a compact report of that day's data to their own Google Drive.
+
+The implementation was not nearly as simple.
+
+Along the way, I ran into a lot of things I had never worked with before. Health Connect APIs, permission management, reliable background backups with WorkManager, Google Drive API, OAuth, application signing, and CI/CD with GitHub Actions.
+
+A few times, I also had to completely change the approach I had chosen and find another way forward.
+
+One of the hardest parts was getting the Google Drive access the app needed. For the app to be able to write files to a user's Drive, I had to go through Google's application and review process.
+
+That became one of the darkest parts of the entire project. :)
+
+But little by little, all the pieces started working together.
+
+Eventually, I reached the point where the app could do exactly what I originally built it for, completely automatically and without me having to think about it.
+
+That was the point where I felt genuinely proud of what I had built.
+
+Then I thought: I've already come this far. Why not publish it?
+
+That way, I could learn the full process of releasing a real application and also turn the project from a personal tool into something I could actually share with other people.
+
+That opened another completely new part of the journey.
+
+Testing on different devices, app signing, releases, Google Play Protect verification, marketing images, a Privacy Policy, the project website, and finally publishing the app on Cafe Bazaar and APKPure.
+
+From the start of development to release, the whole journey took around a month and a half.
+
+Health Data Relay is a very niche app, and I know it isn't something everyone needs.
+
+But for me, it became one of my favorite projects because it started from a real problem I had, forced me to learn a lot of things I didn't know, and eventually became a complete product that actually worked, was open source, and could be released publicly.
+
+It was one of those projects where every time I moved forward, another layer of something I didn't know opened up in front of me.
+
+And I think that's exactly why I love it so much.`,storyFA:`Health Data Relay از یه نیاز شخصی خیلی ساده شروع شد.
+
+یه مدت بود برای خودم سیستمی ساخته بودم که با کمک هوش مصنوعی گزارش روزانه‌م رو می‌نوشت. اطلاعاتی مثل commitهام، حال‌وهوای روزم، فعالیت‌هام روی گوشی و لپ‌تاپ و یه سری چیزهای دیگه به‌صورت خودکار جمع می‌شدند و در نهایت گزارش روز تو Google Calendar ذخیره می‌شد.
+
+خیلی این سیستمم رو دوست داشتم و یه جایی با خودم گفتم خوب می‌شد اطلاعات سلامتی و خوابم هم توش باشه.
+
+شروع کردم دنبال اپی گشتن که بتونه اطلاعاتی مثل قدم‌ها، خواب و فعالیت‌های ورزشی رو از گوشی بگیره و به شکلی که خودم می‌خوام در اختیارم بذاره.
+
+چیزی که دقیقا نیاز داشتم پیدا نکردم.
+
+همون زمان تازگی برای یه شرکت یه اپ اندروید داخلی ساخته بودم و دستم برای Android گرم شده بود. برای همین با خودم گفتم چرا خودم نسازمش؟
+
+و Health Data Relay از همین‌جا شروع شد.
+
+ایده اپ ساده بود. اطلاعات سلامت رو از Health Connect بگیره و هر روز در ساعتی که کاربر مشخص می‌کنه، یه گزارش خلاصه از اطلاعات همون روز روی Google Drive خودش ذخیره کنه.
+
+ولی پیاده‌سازیش خیلی ساده نبود.
+
+تو مسیر با چیزهای زیادی روبه‌رو شدم که قبلش بلد نبودم. از Health Connect API و مدیریت Permissionها گرفته تا اجرای مطمئن بکاپ‌ها تو پس‌زمینه با WorkManager، کار با Google Drive API، OAuth، امضای اپ و CI/CD با GitHub Actions.
+
+چند بار هم وسط مسیر مجبور شدم راه‌حلی که انتخاب کرده بودم رو عوض کنم و از یه مسیر دیگه برم.
+
+یکی از سخت‌ترین قسمت‌ها گرفتن دسترسی مورد نیاز Google Drive بود. برای اینکه اپ بتونه روی Drive خود کاربر فایل بنویسه، باید پروسه درخواست و بررسی گوگل رو طی می‌کردم. این خودش تبدیل شد به یکی از دارک‌ترین قسمت‌های کل پروژه. :)
+
+ولی کم‌کم همه تکه‌ها کنار هم قرار گرفتند و به جایی رسیدم که اپ می‌تونست کاری که از اول برایش ساخته شده بود رو کاملا خودکار و بدون نیاز به دخالت من انجام بده.
+
+اونجا واقعا به چیزی که ساخته بودم افتخار می‌کردم.
+
+بعد با خودم گفتم حالا که تا اینجا اومدم، چرا منتشرش نکنم؟
+
+این‌طوری هم تجربه کامل انتشار یه اپ واقعی رو یاد می‌گرفتم و هم پروژه از یه ابزار شخصی تبدیل می‌شد به چیزی که واقعا می‌تونستم به بقیه نشونش بدم.
+
+از اونجا وارد یه بخش کاملا جدید شدم. تست روی دستگاه‌های مختلف، امضای اپ، Release، تایید Google Play Protect، ساخت تصاویر مارکتینگ، Privacy Policy، سایت پروژه و در نهایت انتشار روی کافه‌بازار و APKPure.
+
+کل این مسیر از شروع ساخت تا انتشار حدود یک ماه و نیم طول کشید.
+
+Health Data Relay اپ خیلی niche‌ایه و می‌دونم چیزی نیست که همه بهش نیاز داشته باشند.
+
+ولی برای خودم یکی از دوست‌داشتنی‌ترین پروژه‌هام شد، چون از یه نیاز واقعی خودم شروع شد، مجبورم کرد کلی چیز جدید یاد بگیرم و در نهایت تبدیل شد به یه محصول کامل که واقعا کار می‌کرد، Open Source بود و تونستم منتشرش کنم.
+
+یکی از اون پروژه‌هایی بود که هرچی جلوتر رفتم، یه لایه جدید از چیزی که بلد نبودم جلوم باز شد.
+
+و فکر کنم دقیقا به همین دلیل انقدر دوستش دارم.`,storySource:{collection:`projects`,slug:`health-data-relay`},hasRelatedLinks:!0,relatedLinks:[{label:`LinkedIn Post`,text:`Read the launch story behind Health Data Relay`,url:`https://www.linkedin.com/feed/update/urn:li:activity:7513531566740918272/`},{label:`Cafe Bazaar`,text:`Download the latest Health Data Relay release`,url:`https://cafebazaar.ir/app/com.alisadeghi.autohealthsync`},{label:`APKPure`,text:`Download the latest Health Data Relay release`,url:`https://apkpure.com/p/com.alisadeghi.autohealthsync`},{label:`GitHub Releases`,text:`Download versioned APK releases from GitHub`,url:`https://github.com/Ali-Sdg90/health-data-relay/releases`},{label:`Privacy Policy`,text:`How health data and permissions are handled`,url:`https://ali-sdg.is-a.dev/health-data-relay/privacy/`},{label:`Changelog`,text:`Version history, fixes, and improvements`,url:`https://github.com/Ali-Sdg90/health-data-relay/blob/main/CHANGELOG.md`}]},"cs-queue-calendar":{id:`cs-queue-calendar`,title:`CS Queue Calendar`,subtitle:`Interactive calendar to coordinate queue sessions`,year:`2025`,image:i,lightboxImage:_t,imageWidth:1254,imageHeight:1254,lightboxWidth:1254,lightboxHeight:1254,summary:`A responsive calendar for tracking CS Internship queue meetings, announcements, and events with Persian and Gregorian date support.`,links:[{label:`Live Version`,url:`https://cs-internship.github.io/CS-Queue-Calendar`},{label:`GitHub Repo`,url:`https://github.com/cs-internship/CS-Queue-Calendar`}],tech:[`React`,`Ant Design`,`Sass`,`Day.js`,`Jalali Moment`],features:[`Displays both Jalali and Gregorian dates for scheduled sessions`,`Creates ready-to-share weekly announcements for queue admins`,`Adds full event details to Google Calendar with one click`,`Uses automated tests, coverage reports, releases, deployment, and Telegram build alerts`],galleryImages:G[`cs-queue-calendar`],storyEN:`At CSI, we were redesigning the program's entry process and reached a point where we needed a clear way to show applicants how the onboarding and interview sessions were scheduled and when each session would take place.
+
+We discussed several different ideas. The best solution that came to my mind was to create a calendar inside a web app, so applicants could simply open the page and immediately see which sessions were happening on each day.
+
+Some of the mentors did not agree with the idea at first. Their suggestion was to write the session dates and details inside a README page on GitHub, which they felt was enough for the current need. I thought that approach might work in the short term, but for the future growth of the program and a better applicant experience, having a dedicated and extensible tool would be a better choice.
+
+I discussed the idea with them, explained my reasoning, and eventually convinced the team to move forward with it.
+
+Then it was time to build the application.
+
+From the beginning, I wanted the calendar to stay simple. I had no intention of making it overly busy or complicated. I tested several different libraries, but none of them provided exactly the features I needed for this project.
+
+At the same time, I was working on the project for Dadeh Pardazi Azmoudeh Karan and had gained a lot of experience with Ant Design. When I checked, I found that Ant Design also had a Calendar component. The advantage was that it already handled many of the basic behaviors, animations, and core features, which allowed me to focus on the project-specific behavior, styling, and content.
+
+After several dozen hours of work, I finished the first version.
+
+From the start, I did not want the application to feel visually weak or ordinary. This page was going to be one of the first tools new CSI applicants interacted with, so it mattered to me that they had a good experience from the very beginning.
+
+I spent a lot of time on small details and eventually built something with a simple interface where the important information could be understood very quickly.
+
+I tried to build exactly what I would have wanted if I were an applicant myself: session times, meeting links, study material for each session, and a clear overview of how the sessions were arranged throughout the week and month.
+
+After introducing the application, more than 200 people visited the site and more than 50 joined sessions directly through the calendar. During that initial usage, I did not receive any reports or complaints about the calendar being difficult to use.
+
+The following year, I returned to the project and refined the interface to make it more polished, smoother, and lighter. I added the ability to add events directly to Google Calendar and improved the experience on mobile devices and tablets.
+
+I also added a personal letter somewhere inside the application. I won't say exactly where it is, but it is one of the parts I personally really like :)
+
+Later, I added a modal for generating the weekly session announcement. Every week, one of the program coordinators uses it to prepare the message for the upcoming sessions and send it to the group.
+
+Ease of use and reliability were also my main priorities when building this part, and it ended up working very well in practice.
+
+This project was built with love for the bright future of CSI. It became more mature over time, received a great deal of care in its smallest details, and eventually became one of the important tools used in the program.`,storyFA:`در CSI در حال بازطراحی فرایند ورود به برنامه بودیم و به بخشی رسیده بودیم که لازم بود به متقاضی‌ها نشان بدهیم زمان‌بندی جلسات ورود و مصاحبه چطور است و هر جلسه چه زمانی برگزار می‌شود.
+
+ایده‌های مختلفی مطرح شد. بهترین ایده‌ای که به ذهنم رسید این بود که یک تقویم داخل یک وب‌اپ داشته باشیم تا متقاضی‌ها بتوانند خیلی ساده صفحه را باز کنند و ببینند در هر روز چه جلسه‌ای برگزار می‌شود.
+
+بعضی از منتورها با این ایده موافق نبودند. پیشنهادشان این بود که تاریخ و اطلاعات جلسات را داخل یک صفحه README در GitHub بنویسیم و همین برای نیاز فعلی کافی است. من فکر می‌کردم این راه‌حل شاید در کوتاه‌مدت جواب بدهد، اما برای رشد آینده برنامه و تجربه بهتر متقاضی‌ها، داشتن یک ابزار مستقل و قابل توسعه انتخاب بهتری است.
+
+در مورد ایده صحبت کردم، دلایلم را توضیح دادم و در نهایت توانستم تیم را برای ساخت آن قانع کنم.
+
+حالا نوبت ساخت برنامه بود.
+
+از ابتدا می‌خواستم تقویم ساده باشد و اصلاً قصد نداشتم آن را بیش از حد شلوغ یا پیچیده کنم. چند کتابخانه مختلف را بررسی و امتحان کردم، اما هیچ‌کدام دقیقاً قابلیت‌هایی را که برای این پروژه نیاز داشتم ارائه نمی‌دادند.
+
+در همان زمان روی پروژه شرکت داده‌پردازی آزموده‌کاران هم کار می‌کردم و تجربه زیادی با Ant Design پیدا کرده بودم. وقتی بررسی کردم، دیدم Ant Design یک کامپوننت Calendar هم دارد. مزیتش این بود که بسیاری از رفتارها، انیمیشن‌ها و قابلیت‌های پایه را خودش مدیریت می‌کرد و من می‌توانستم تمرکزم را روی رفتارهای موردنیاز پروژه، استایل و محتوای تقویم بگذارم.
+
+بعد از چند ده ساعت کار، توانستم نسخه اولیه را آماده کنم.
+
+از همان ابتدا نمی‌خواستم این برنامه از نظر بصری ضعیف یا معمولی به نظر برسد. این صفحه قرار بود یکی از اولین ابزارهایی باشد که متقاضی‌های تازه‌وارد CSI با آن تعامل می‌کردند، بنابراین برایم مهم بود تجربه خوبی از همان ابتدا داشته باشند.
+
+روی جزئیات کوچک زیادی وقت گذاشتم و در نهایت چیزی ساختم که رابط کاربری ساده‌ای داشت و اطلاعات موردنیاز را می‌شد خیلی سریع از آن دریافت کرد.
+
+سعی کردم چیزی بسازم که اگر خودم جای یک متقاضی بودم، دقیقاً همان اطلاعاتی را که نیاز داشتم در اختیارم قرار دهد: زمان جلسات، لینک ورود به جلسه، محتوای مطالعاتی مربوط به هر جلسه و یک دید کلی از ترتیب جلسات در طول هفته و ماه.
+
+بعد از معرفی برنامه، بیش از ۲۰۰ نفر وارد سایت شدند و بیش از ۵۰ نفر از طریق خود تقویم وارد جلسات شدند. در طول این استفاده اولیه هم هیچ گزارش یا شکایتی درباره دشوار بودن کار با تقویم دریافت نکردم.
+
+سال بعد دوباره به پروژه برگشتم و رابط کاربری آن را کمی حرفه‌ای‌تر، نرم‌تر و سبک‌تر کردم. قابلیت اضافه کردن مستقیم ایونت‌ها به Google Calendar را اضافه کردم و نمایش برنامه روی موبایل و تبلت را هم بهبود دادم.
+
+یک نامه شخصی هم داخل برنامه قرار دادم. نمی‌گم دقیقاً کجاست، ولی یکی از بخش‌هایی است که خودم خیلی دوستش دارم :)
+
+بعدتر یک مودال برای ساخت پیام جلسات هفتگی هم به برنامه اضافه کردم. هر هفته یکی از مسئولان برنامه از آن استفاده می‌کند تا پیام مربوط به جلسات هفته بعد را آماده کند و داخل گروه بفرستد.
+
+در طراحی این بخش هم راحتی استفاده و قابل‌اعتماد بودن برایم اولویت داشت و در عمل هم خیلی خوب جواب داد.
+
+این پروژه با عشق برای آینده روشن CSI ساخته شد. برنامه‌ای که به مرور بالغ‌تر شد، با ظرافت زیادی روی جزئیاتش کار شد و در نهایت به یکی از ابزارهای مهم CSI تبدیل شد.`,storySource:{collection:`projects`,slug:`cs-queue-calendar`},hasRelatedLinks:!0,relatedLinks:[{label:`CI/CD Pipeline`,text:`Tests, releases, deployment, and Telegram alerts`,url:`https://github.com/cs-internship/CS-Queue-Calendar/blob/main/.github/workflows/ci.yml`},{label:`Release History`,text:`Versioned project changelog`,url:`https://github.com/cs-internship/CS-Queue-Calendar/blob/main/CHANGELOG.md`}]},"spot-taste-tracker":{id:`spot-taste-tracker`,title:`Spot Taste Tracker`,subtitle:`Dashboard for analyzing Spotify taste over time`,year:`2026`,image:l,lightboxImage:ht,imageWidth:1254,imageHeight:1254,lightboxWidth:1254,lightboxHeight:1254,summary:`A browser-based dashboard for exploring how a Spotify collection changes across listening order, mood, genres, artists, and audio features.`,links:[{label:`Live Version`,url:`https://ali-sdg90.github.io/Spotify-Taste-Timeline`},{label:`GitHub Repo`,url:`https://github.com/Ali-Sdg90/Spotify-Taste-Timeline`}],tech:[`React`,`Vite`,`JavaScript`,`SCSS`,`ApexCharts`,`PapaParse`],features:[`Analyzes playlist CSV files inside the browser without uploading personal data`,`Shows music changes over time with two timelines and moving averages for 11 audio features`,`Compares mood, artists, genres, release age, explicit content, Camelot data, and outliers`,`Creates an AI-ready report from summary data instead of the full listening history`],galleryImages:G[`spot-taste-tracker`],storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`CSV Tool`,text:`Chosic Spotify Playlist Analyzer`,url:`https://www.chosic.com/spotify-playlist-analyzer/`},{label:`Deployment`,text:`Automated GitHub Pages build and deployment workflow`,url:`https://github.com/Ali-Sdg90/Spotify-Taste-Timeline/blob/main/.github/workflows/deploy-pages.yml`}]},"fabrexa-ai-ollama":{id:`fabrexa-ai-ollama`,title:`Fabrexa AI Ollama`,subtitle:`Self-hosted Telegram bot powered by local models`,year:`2026`,image:o,lightboxImage:ut,imageWidth:1254,imageHeight:1254,lightboxWidth:1254,lightboxHeight:1254,summary:`A self-hosted Telegram chatbot for local Ollama models, with streamed replies, custom personalities, editable memory, owner-only access, and a dedicated project website.`,links:[{label:`Live Website`,url:`https://ali-sdg.is-a.dev/Fabrexa-AI-Ollama/`},{label:`GitHub Repo`,url:`https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama`}],tech:[`Node.js`,`Telegraf`,`Ollama`,`node-cron`,`HTML`,`CSS`,`JavaScript`],features:[`Connects Telegram to local Ollama models and streams replies as they are generated`,`Includes reusable plain-text personalities, four ready-to-use demos, and configurable model controls`,`Separates recent chats from optional short- and long-term memory that users can view, edit, or remove`,`Ships with owner-only access by default, automated setup checks, and a responsive project website`],galleryImages:G[`fabrexa-ai-ollama`],storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Project Guide`,text:`Runtime flow, configuration, personalities, memory behavior, and module reference`,url:`https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama/blob/main/docs/PROJECT_GUIDE.md`},{label:`Troubleshooting`,text:`Setup, Ollama, Telegram, streaming, personality, and memory troubleshooting`,url:`https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama/blob/main/docs/TROUBLESHOOTING.md`},{label:`Contributing`,text:`Development workflow, checks, and contribution guidelines`,url:`https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama/blob/main/CONTRIBUTING.md`},{label:`Telegram Bot`,text:`placeholder text`,url:`https://t.me/FabrexaAIBot`}]},"cs-club-bot":{id:`cs-club-bot`,title:`CS Club Bot`,subtitle:`Live Telegram bot for AI-assisted workflows`,year:`2025`,image:a,lightboxImage:ct,imageWidth:774,imageHeight:774,lightboxWidth:774,lightboxHeight:774,summary:`An automated Telegram bot for managing CS internship club registration, feedback, messaging, and AI-assisted group workflows.`,links:[{label:`Telegram Bot`,url:`https://t.me/CSIClubBot`},{label:`GitHub Repo`,url:`https://github.com/cs-internship/CS-Club-Bot`}],tech:[`Node.js`,`Telegraf`,`Express`,`Notion API`,`Perplexity AI`,`CryptoJS`],features:[`Uses Notion for registration, roles, and ban checks`,`Creates encrypted feedback links for technical and mentorship sessions`,`Uses Perplexity AI to analyze selected group discussions and format long Telegram replies`,`Runs linting and Jest coverage before automatic releases and Render deployment`],galleryImages:G[`cs-club-bot`],storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Engineering`,text:`CI/CD pipeline for tests, coverage, releases, Render deployment, and Telegram alerts`,url:`https://github.com/cs-internship/CS-Club-Bot/blob/main/.github/workflows/ci.yml`},{label:`Operations`,text:`Scheduled Render service health and uptime workflow`,url:`https://github.com/cs-internship/CS-Club-Bot/blob/main/.github/workflows/ping-render.yml`},{label:`Quality`,text:`Extensive Jest suite covering handlers, integrations, validation, and utilities`,url:`https://github.com/cs-internship/CS-Club-Bot/tree/main/__tests__`},{label:`Release History`,text:`Versioned project changelog`,url:`https://github.com/cs-internship/CS-Club-Bot/blob/main/CHANGELOG.md`}]},"cs-queue-bot":{id:`cs-queue-bot`,title:`CS Queue Bot`,subtitle:`Live Telegram bot for queue management`,year:`2025`,image:_,lightboxImage:lt,imageWidth:774,imageHeight:774,lightboxWidth:774,lightboxHeight:774,summary:`An automated Telegram bot for managing CS Internship queue onboarding, moderation, admin tasks, and Azure DevOps candidate tracking.`,links:[{label:`Telegram Bot`,url:`https://t.me/CSQueueBot`},{label:`GitHub Repo`,url:`https://github.com/cs-internship/CS-Queue-Bot`}],tech:[`Node.js`,`Telegraf`,`Express`,`Axios`,`Azure DevOps REST API`],features:[`Checks Telegram usernames and guides new members through onboarding`,`Detects message spam and applies moderation rules automatically`,`Creates and links Azure DevOps work items from bot commands`,`Supports scheduled messages, health checks, tests, releases, and automatic Render deployment`],galleryImages:G[`cs-queue-bot`],storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Engineering`,text:`Test, coverage, semantic release, Render deployment, and Telegram alert pipeline`,url:`https://github.com/cs-internship/CS-Queue-Bot/blob/main/.github/workflows/ci.yml`},{label:`Quality`,text:`Jest suite covering onboarding, moderation, scheduling, Azure integration, and server health`,url:`https://github.com/cs-internship/CS-Queue-Bot/tree/main/__tests__`},{label:`Release History`,text:`Versioned project changelog`,url:`https://github.com/cs-internship/CS-Queue-Bot/blob/main/CHANGELOG.md`}]},"gradient-paint":{id:`gradient-paint`,title:`Gradient Paint`,subtitle:`Customizable interactive gradient painting canvas`,year:`2023`,image:h,lightboxImage:st,imageWidth:1254,imageHeight:1254,lightboxWidth:1254,lightboxHeight:1254,summary:`An interactive grid canvas for painting customizable color gradients through click or drag gestures.`,links:[{label:`Live Version`,url:`https://ali-sdg90.github.io/Custom-Gradient-Paint`},{label:`GitHub Repo`,url:`https://github.com/Ali-Sdg90/Custom-Gradient-Paint`}],tech:[`HTML`,`JavaScript`,`SCSS`,`CSS`],features:[`Spreads fading colors across nearby grid cells from each selected point`,`Lets users change grid size, colors, spread distance, borders, and cell numbers`,`Supports both click painting and continuous drag painting`],galleryImages:G[`gradient-paint`],storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Process`,text:`Development time-lapse`,url:`https://youtu.be/jG_HB7bDDH0`}]},"quick-math":{id:`quick-math`,title:`Quick Math`,subtitle:`Timed math game with a rotating cube interface`,year:`2023`,image:p,lightboxImage:mt,imageWidth:1254,imageHeight:1254,lightboxWidth:1254,lightboxHeight:1254,summary:`A timed arithmetic game that presents three questions through a rotating cube interface with configurable difficulty aids.`,links:[{label:`Live Version`,url:`https://ali-sdg90.github.io/Quick-Math`},{label:`GitHub Repo`,url:`https://github.com/Ali-Sdg90/Quick-Math`}],tech:[`HTML`,`JavaScript`,`SCSS`,`CSS`],features:[`Uses three-question rounds with lives, question timers, and total time tracking`,`Shows each question on a different side of a rotating cube`,`Saves answer hints, color themes, and ready-screen settings in local storage`],galleryImages:G[`quick-math`],storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!1,relatedLinks:[]},"tic-tac-toe":{id:`tic-tac-toe`,title:`Tic Tac Toe`,subtitle:`Customizable game with multiple play modes`,year:`2022`,image:s,lightboxImage:gt,imageWidth:1254,imageHeight:1254,lightboxWidth:1254,lightboxHeight:1254,summary:`A customizable Tic-Tac-Toe game with local multiplayer, computer opponents, persistent settings, and unlockable challenges.`,links:[{label:`Live Version`,url:`https://ali-sdg90.github.io/Tic-Tac-Toe`},{label:`GitHub Repo`,url:`https://github.com/Ali-Sdg90/Tic-Tac-Toe`}],tech:[`HTML`,`JavaScript`,`CSS`],features:[`Includes classic, computer, local two-player, and rule-breaking unbeatable modes`,`Adds challenges that keep progress between game sessions`,`Saves game settings and changes the background after every move`],galleryImages:G[`tic-tac-toe`],storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`??`,text:`Project interdiction post`,url:`https://x.com/Ali_Sdg90/status/1663115176504344576?s=20`},{label:`Process`,text:`Development time-lapse`,url:`https://youtu.be/s278dOASbqg`}]},"path-finder":{id:`path-finder`,title:`Path Finder`,subtitle:`Customizable animated pathfinding sandbox`,year:`2025`,image:t,lightboxImage:ft,imageWidth:1254,imageHeight:1254,lightboxWidth:1254,lightboxHeight:1254,summary:`An interactive pathfinding sandbox that uses weighted randomness to fill a grid while favoring configurable movement directions.`,links:[{label:`Live Version`,url:`https://ali-sdg90.github.io/Path-Finder`},{label:`GitHub Repo`,url:`https://github.com/Ali-Sdg90/Path-Finder`}],tech:[`React`,`Ant Design`,`Sass`,`CryptoJS`],features:[`Uses weighted random movement to favor directions selected by the user`,`Shows the grid filling step by step instead of only displaying the final result`,`Lets users change grid size, direction weights, colors, speed, and display options`,`Works on both desktop and mobile screens`],galleryImages:G[`path-finder`],storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`??`,text:`Project interdiction post`,url:`https://x.com/Ali_Sdg90/status/1963653671083790650?s=20`},{label:`Predecessor`,text:`Spread Color, the related grid-propagation project`,url:`https://github.com/Ali-Sdg90/Spread-Color`}]}},An=e=>kn[e]??null,jn={react:{id:`react`,title:`React`,lightboxImage:`/assets/react_logo-DwpWMhnS.jpg`,subtitle:`My Main Frontend Foundation`,summary:`React has been one of the main foundations of my development work, from early self-taught projects to large production systems, internal tools, automation, and AI-assisted product development.`,featuresTitle:`Where It Helps`,features:[`Building maintainable interfaces from small internal tools to large multi-feature applications`,`Turning complex workflows, APIs, data, and business requirements into clear interactive products`,`Creating reusable systems with strong attention to structure, UX, maintainability, and the small details`],storyTitle:`Story`,storyEN:`I started learning React on my own around 2023–2024.
+
+I bought a course, took notes in a notebook whenever I learned something new, and had a separate practice project where I would code along while watching the lessons.
+
+React was really exciting to me. With plain JavaScript, I mostly thought about the page as one thing. React made me see it as a collection of smaller worlds. Each component could have its own behavior and responsibilities, and all of those pieces could live together and build the final page.
+
+I definitely didn't understand everything at the beginning. I remember not really understanding useEffect and using it for almost every small change or check happening on the page.
+
+One of the first bigger projects I built was React Dice Distribution. At the time, it felt visually interesting and pretty complicated for my level. Today I can look at the idea and mentally picture how I would structure the whole thing, but back then I absolutely couldn't. I just went into it anyway and slowly figured out how to build it.
+
+At some point the React course I was following started feeling outdated and too theoretical, so I moved more toward building projects myself.
+
+Around that time I built a Rick and Morty characters project. Someone on Twitter had posted the challenge and said that if someone could build it well in two days, they would consider mentoring them.
+
+I remember spending hours learning how CRUD actually worked while trying to build the project at the same time. I was figuring out things like endless scrolling, requests, state, and the rest of the application as I went.
+
+This was before AI became part of everyday development. Most of the answers came from documentation, Stack Overflow, and a lot of trial and error. It was a harder world, but in some ways a sweeter one too.
+
+I was really proud when I finished the project. I didn't end up being selected for the mentorship, but I learned a lot from trying.
+
+Around the same period I started experimenting with tools like ApexCharts and Ant Design and built small projects just to understand how they worked.
+
+Later I built CS Step0 Message Maker with React for the CS Internship program. By that point, working with React had become much more comfortable for me. The application connected to Firebase, handled CRUD operations, and included things like encryption, read-only states, notifications, and other small systems around the main workflow. I really liked that project.
+
+Then I joined Dadeh Pardazi Azmoudeh Karan.
+
+The hiring process itself was interesting. I showed them CS Step0 Message Maker and explained the logic and structure behind it. I also built a demo project with a Postman collection for them, and after that they trusted me with the actual project.
+
+And that project was huge compared to anything I had built before.
+
+I had to build an admin panel from scratch with React. It had more than 70 APIs, a lot of features, and a level of complexity that was way beyond anything I had worked on until then.
+
+I was learning while building it almost every day.
+
+AI was starting to become useful around that time, but it still couldn't really build the project for me. It was more like having a university friend next to me who could explain something or give me an idea when I got stuck.
+
+The whole project used Ant Design too, so during those months I became much more familiar with its structure and with building larger React applications in general.
+
+It took around seven months to build, and by the end we had a clean and working system.
+
+That project gave me a lot of confidence. I had gone from teaching myself React to building the entire frontend of a complex product for a company by myself.
+
+Around the same time, we were redesigning the entry process for CS Internship. We needed a simple way to show applicants when the program's weekly meetings were happening, and I volunteered to build a calendar for it.
+
+That became CS Queue Calendar.
+
+I knew I could build it, but I also knew I didn't want to build something that was just functional. I wanted it to feel like something that belonged to me and to the program.
+
+I randomly found out that Ant Design already had a calendar component, but it was very different from what I had in mind for a Persian experience. I added a lot of custom CSS, changed the way information was presented, and eventually shipped the first version for the launch of the new entry system.
+
+The feedback was really good, and during the next year and a half I don't remember applicants having trouble understanding how to use it.
+
+I even hid a small easter egg in the browser console.
+
+About a year later I came back to the project because I knew I could make it better. I redesigned parts of the UI, made the information simpler and clearer, improved the easter egg, and added proper mobile support.
+
+It's still one of my favorite projects. I volunteered to build it, made everything from the first version to the mobile experience myself, maintained it, and even left a small piece of my personality inside it.
+
+Later, I felt like some of my React skills were getting rusty, so I built React Mastery Loop AI for myself.
+
+The idea was simple. AI would look at my current skill level and give me a project challenge. I would build it, practice things I already knew, and learn something new along the way.
+
+When I finished, another AI process would review the project, score it, explain what I could have done better, and save the result into a report. The next challenge could then use the reports from my previous projects to decide what I should practice next.
+
+I went through several challenges with it and learned things like React Query while also refreshing older skills.
+
+During that period I also started paying much more attention to everything around the React code itself: project maintenance, cleaner tooling, automated releases, CI/CD, formatting, linting, and systems that keep a project healthy over time.
+
+Then AI coding became dramatically more capable.
+
+My role started changing. I wasn't always the person manually writing every line anymore. More and more, I became the person defining the architecture, breaking down the work, making decisions, reviewing the result, testing it, and guiding the project toward what I actually wanted.
+
+That became especially clear when I started building internal tools for MelkRadar.
+
+One example was MLK Monthly Report Generator, a fairly large and complicated React application that took two spreadsheet files and turned them into a complete HTML/CSS report that could be printed as a PDF.
+
+With AI helping with implementation and me managing the architecture, requirements, iterations, testing, and details, I was able to build and deliver the whole project in less than 45 hours.
+
+React is still one of the most important technical foundations I have.
+
+I understand how much I can build with it, how I like to structure things, and how to use it to turn real problems into working products. If I have the choice, React is still one of the first tools I want to reach for when I'm solving a problem for a team or a company.
+
+I'm really happy that I introduced myself to React and kept following this path.
+
+I'm happy that even when I knew I didn't yet have the knowledge to build something, I still accepted the challenge, went into it, learned what I needed, and tried to deliver the best version I could.
+
+And I'm happy that I care about the little details enough to stop, learn the right way to do something, and improve it instead of just making it work.
+
+React has been a good friend to me.`,storyFA:`یادگیری React رو حدود سال‌های ۱۴۰۲ و ۱۴۰۳ به‌صورت خودخوان شروع کردم.
+
+یه دوره پولی براش گرفتم، وقتی چیز جدیدی یاد می‌گرفتم تو دفترم نوت برمی‌داشتم و یه پروژه چرک‌نویس هم داشتم که همزمان با دیدن ویدئوها توش کد می‌زدم و تمرین می‌کردم.
+
+React برام خیلی هیجان‌انگیز بود. وقتی فقط JavaScript کار می‌کردم بیشتر صفحه رو به‌عنوان یه چیز واحد می‌دیدم، ولی React باعث شد بتونم صفحه رو به چند دنیای کوچیک‌تر تقسیم کنم. هر کامپوننت می‌تونست رفتار و مسئولیت خودش رو داشته باشه و بعد همه این دنیاهای کوچیک کنار هم قرار بگیرند و صفحه نهایی رو بسازند.
+
+اوایل قطعا همه چیز رو درست نمی‌فهمیدم. یادمه مفهوم useEffect رو خوب درک نکرده بودم و برای کوچک‌ترین تغییر یا چک کردن اتفاقی که تو صفحه می‌افتاد useEffect می‌نوشتم.
+
+یکی از اولین پروژه‌های بزرگ‌تری که ساختم React Dice Distribution بود. برای سطحی که اون موقع داشتم پروژه نسبتا پیچیده و از نظر بصری خیلی جذابی بود. الان اگه بهش نگاه کنم می‌تونم تو ذهنم بگم ساختار کلیش رو چجوری می‌سازم، ولی اون موقع اصلا همچین توانایی‌ای نداشتم. با کله رفتم تو دل پروژه و آروم آروم سعی کردم بفهمم هر قسمت رو چجوری باید بسازم.
+
+یه جایی دوره‌ای که باهاش React یاد می‌گرفتم قدیمی و بیش از حد تئوری شد. از اونجا به بعد بیشتر خودم شروع کردم پروژه ساختن و تمرین کردن.
+
+تقریبا همون زمان پروژه React Rick and Morty Characters رو ساختم. یه نفر تو توییتر پروژه رو معرفی کرده بود و گفته بود اگه کسی بتونه تو دو روز خوب بسازتش، حاضر میشه منتورش بشه.
+
+یادمه ساعت‌ها داشتم همزمان با ساخت پروژه سعی می‌کردم CRUD رو بفهمم، Endless Scroll پیاده کنم، درخواست‌ها و State رو مدیریت کنم و بقیه قسمت‌های پروژه رو هم جلو ببرم.
+
+اون زمان هنوز AI وارد زندگی روزمره برنامه‌نویسی نشده بود. بیشتر چیزها از داکیومنتیشن، Stack Overflow و کلی آزمون و خطا درمیومد. دنیای سخت‌تری بود ولی یه جورهایی شیرین‌تر هم بود.
+
+وقتی پروژه رو ساختم خیلی بهش افتخار می‌کردم. در نهایت اون فرد من رو برای منتورشیپ انتخاب نکرد، ولی خود تلاش برای ساختنش چیزهای زیادی بهم یاد داد.
+
+همون دوره با ابزارهایی مثل ApexCharts و Ant Design هم آشنا شدم و برای اینکه یادشون بگیرم پروژه‌های تمرینی باهاشون ساختم.
+
+بعدتر CS Step0 Message Maker رو با React برای برنامه CS Internship ساختم. اینجا دیگه کار کردن با React و ساختن پروژه برام خیلی راحت‌تر شده بود. برنامه به Firebase وصل می‌شد، عملیات CRUD انجام می‌داد و چیزهایی مثل Encryption، حالت Read Only، Toastify و یه سری سیستم‌های دیگه هم کنارش داشت. پروژه خفنی بود و خیلی دوستش داشتم.
+
+بعد وارد شرکت داده‌پردازی آزموده‌کاران شدم.
+
+پروسه ورودم به شرکت خودش داستان داشت. CS Step0 Message Maker و منطق و ساختارش رو بهشون معرفی کردم، یه پروژه دمو همراه فایل Postman براشون ساختم و بعد از اون موافقت کردند پروژه اصلی رو به من بدن.
+
+و پروژه اصلی خیلی خیلی بزرگ‌تر از هر چیزی بود که تا اون زمان ساخته بودم.
+
+قرار بود یه Admin Panel رو از پایه با React بسازم. پروژه بیشتر از ۷۰ API داشت، کلی فیچر مختلف داشت و از نظر حجم و پیچیدگی خیلی بالاتر از تجربه‌ای بود که تا اون موقع داشتم.
+
+در حین ساخت پروژه تقریبا لحظه به لحظه داشتم یاد می‌گرفتم و همزمان می‌ساختم.
+
+اون زمان AI تازه داشت یکم کاربردی‌تر می‌شد ولی هنوز نمی‌تونست واقعا پروژه رو برات بسازه. بیشتر شبیه یه دوست دانشگاهی بود که وقتی گیر می‌کردی می‌تونستی ازش سوال بپرسی و یه راهنمایی بگیری.
+
+کل پروژه هم با Ant Design ساخته می‌شد و تو اون چند ماه خیلی عمیق‌تر با ساختارش و کلا ساخت پروژه‌های بزرگ React آشنا شدم.
+
+ساخت پروژه حدود ۷ ماه طول کشید و در نهایت یه سیستم مرتب و درست بالا اومده بود.
+
+اون پروژه اعتماد به نفس خیلی زیادی بهم داد. از جایی که React رو خودم داشتم یاد می‌گرفتم رسیده بودم به اینکه کل فرانت یه پروژه پیچیده شرکتی رو به‌تنهایی بالا آورده بودم.
+
+تقریبا همون دوره تو CS Internship داشتیم سیستم ورود افراد به برنامه رو بازطراحی می‌کردیم. نیاز داشتیم یه راه ساده داشته باشیم که متقاضی‌ها بتونند زمان جلسات هفتگی برنامه رو ببینند و من پیشنهاد دادم یه برنامه تقویم براش می‌سازم.
+
+اون پروژه شد CS Queue Calendar.
+
+می‌دونستم می‌تونم بسازمش، ولی می‌دونستم یه چیز صرفا کار راه‌بند هم نمی‌سازم. می‌خواستم چیزی بسازم که برازنده کار خودم و برنامه باشه.
+
+خیلی رندوم دیدم Ant Design خودش کامپوننت Calendar داره، ولی چیزی که من برای یه تجربه فارسی تو ذهنم داشتم خیلی باهاش فرق داشت. کلی CSS کاستوم بهش اضافه کردم، مدل نمایش اطلاعات رو تغییر دادم و در نهایت نسخه اول رو برای رونمایی سیستم جدید برنامه آماده کردم.
+
+بازخورد خیلی خوبی گرفت و تو حدود یک سال و نیم بعدش یادم نمیاد متقاضی‌ای برای فهمیدن نحوه استفاده ازش مشکل داشته باشه.
+
+حتی یه Easter Egg خیلی ناز هم تو کنسولش گذاشته بودم.
+
+حدود یه سال بعد دوباره برگشتم سراغ پروژه چون می‌دونستم می‌تونم بهترش کنم. UI رو بهتر کردم، مدل نمایش اطلاعات رو مینیمال‌تر و قابل فهم‌تر کردم، Easter Egg رو بهتر کردم و ساپورت درست موبایل هم بهش اضافه کردم.
+
+هنوز هم یکی از دوست‌داشتنی‌ترین پروژه‌هام می‌دونمش. خودم داوطلب شدم بسازمش، از نسخه اول تا نسخه موبایل همه چیزش رو خودم ساختم، خودم مراقبش بودم و حتی یه تیکه کوچیک از خودم رو هم تو Easter Egg پروژه گذاشتم.
+
+بعد از یه مدت حس کردم یه مقدار روی مهارت Reactم خاک نشسته. برای همین React Mastery Loop AI رو برای خودم ساختم.
+
+ایده این بود که AI سطح مهارتم رو ببینه و یه پروژه برای تمرین بهم بده. من پروژه رو می‌ساختم، چیزهایی که بلد بودم رو تمرین می‌کردم و وسطش چیزهای جدید هم یاد می‌گرفتم.
+
+بعد از تموم شدن پروژه، AI میومد کل پروژه رو بررسی می‌کرد، بهم نمره می‌داد، می‌گفت چه چیزهایی رو می‌شد بهتر ساخت و نتیجه رو تو یه فایل گزارش ذخیره می‌کرد. وقتی زمان چلنج بعدی می‌رسید، AI به گزارش پروژه‌های قبلی هم دسترسی داشت و با توجه به اون‌ها تمرین بعدی رو می‌ساخت.
+
+چندین چلنج با این سیستم انجام دادم و تو همون مسیر چیزهایی مثل React Query رو هم یاد گرفتم و یه سری مهارت‌های قدیمی‌ترم رو دوباره تمرین کردم.
+
+تو اون دوره خیلی بیشتر هم رفتم سمت چیزهایی که اطراف خود کد React قرار دارند. مراقبت از پروژه، ابزارهای تمیز نگه داشتن کد، Release خودکار، CI/CD، Formatting، Linting و چیزهایی که باعث میشن یه پروژه در طول زمان سالم و مرتب بمونه.
+
+بعد وارد دوره‌ای شدیم که AI تو کدنویسی خیلی خیلی قدرتمند شد.
+
+از اونجا کم کم نقش خودم هم تغییر کرد. دیگه همیشه قرار نبود خودم نویسنده تک تک خط‌های کد باشم. بیشتر تبدیل شدم به کسی که معماری رو مشخص می‌کنه، کارها رو می‌شکنه، تصمیم می‌گیره، خروجی رو بررسی می‌کنه، تست می‌کنه و پروژه رو به سمتی که می‌خواد هدایت می‌کنه.
+
+این موضوع مخصوصا وقتی برای ملک‌رادار شروع کردم ابزارهای داخلی ساختن خیلی مشخص شد.
+
+یکی از اون‌ها MLK Monthly Report Generator بود. یه پروژه React نسبتا بزرگ و بسیار پیچیده که دو فایل Excel رو می‌گرفت و از اطلاعاتشون یه گزارش کامل HTML/CSS می‌ساخت که می‌شد ازش PDF گرفت.
+
+با کمک AI در پیاده‌سازی و با مدیریت معماری، نیازمندی‌ها، تسک‌ها، تست و ریزه‌کاری‌های پروژه از سمت خودم، تونستم کل پروژه رو تو کمتر از ۴۵ ساعت بسازم و تحویل بدم.
+
+React هنوز یکی از مهم‌ترین پایه‌های فنی من هست.
+
+درک خوبی از قدرتش، ساختارش و مدل پیاده‌سازی پروژه باهاش دارم و اگه انتخاب با خودم باشه، React هنوز یکی از اولین ابزارهاییه که برای حل مسئله یه شرکت یا تیم میرم سمتش.
+
+خوشحالم که خودم رو با React آشنا کردم و این مسیر رو برای خودم ساختم.
+
+خوشحالم زمان‌هایی که می‌دونستم در لحظه سواد ساخت یه پروژه رو ندارم، باز قبولش کردم، رفتم تو دلش، چیزهایی که لازم داشتم رو یاد گرفتم و سعی کردم به بهترین شکلی که می‌تونم تحویلش بدم.
+
+و خوشحالم که تو کارهام روی ریزه‌کاری‌ها حساسم و حتی برای چیزهای کوچیک هم دوست دارم بفهمم راه درست‌تر و بهتر انجام دادنش چیه.
+
+React دوست خوبم هست.`,hasRelatedLinks:!0,relatedLinks:[{label:`GitHub Repository`,text:`React Mastery Loop AI`,url:`https://github.com/Ali-Sdg90/React-Mastery-Loop-AI`},{label:`GitHub Repository`,text:`CS Queue Calendar`,url:`https://github.com/cs-internship/CS-Queue-Calendar`},{label:`GitHub Repository`,text:`React Dice Distribution`,url:`https://github.com/Ali-Sdg90/React-Dice-Distribution`},{label:`GitHub Repository`,text:`CS Step0 Message Maker`,url:`https://github.com/Ali-Sdg90/CS-Step0-Message-Maker`},{label:`GitHub Repository`,text:`React 25 Project Course`,url:`https://github.com/Ali-Sdg90/React-25-Project-Course`},{label:`GitHub Repository`,text:`Path Finder`,url:`https://github.com/Ali-Sdg90/Path-Finder`},{label:`GitHub Repository`,text:`HTTP Methods Demo`,url:`https://github.com/Ali-Sdg90/HTTP-Methods-Demo`}]},javascript:{id:`javascript`,title:`JavaScript`,lightboxImage:`/assets/javascript_logo-B9I2YfTy.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},scss:{id:`scss`,title:`SCSS`,lightboxImage:`/assets/scss_logo-Dc54uR07.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},"ant-design":{id:`ant-design`,title:`Ant Design`,lightboxImage:`/assets/ant-design_logo-VEpifnHO.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},"tan-stack-query":{id:`tan-stack-query`,title:`TanStack Query`,lightboxImage:`/assets/tanstack-query_logo-BBnusbD8.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},"rest-apis":{id:`rest-apis`,title:`REST APIs`,lightboxImage:`/assets/rest-api_logo-DlrG0b-D.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},vite:{id:`vite`,title:`Vite`,lightboxImage:`/assets/vite_logo-CHgVgJUC.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},expo:{id:`expo`,title:`Expo`,lightboxImage:`/assets/expo_logo-DOg3DKIR.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},"react-native":{id:`react-native`,title:`React Native`,lightboxImage:`/assets/react-native_logo-D8xKviAy.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},"node-js":{id:`node-js`,title:`Node.js`,lightboxImage:`/assets/nodejs_logo-DyGrl71r.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},"github-actions":{id:`github-actions`,title:`GitHub Actions`,lightboxImage:`/assets/github-actions_logo-CaC6OKHW.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},"git-github":{id:`git-github`,title:`Git/GitHub`,lightboxImage:`/assets/git_logo-d5yQbzn0.jpg`,subtitle:`Placeholder`,summary:`Placeholder`,featuresTitle:`Where It Helps`,features:[`Placeholder`],storyTitle:`Story`,storyEN:`Placeholder`,storyFA:`Placeholder`,hasRelatedLinks:!0,relatedLinks:[{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``},{label:`Placeholder`,text:`Placeholder`,url:``}]},firebase:{id:`firebase`,title:`Firebase`,lightboxImage:`/assets/firebase_logo-CHe-WbV3.jpg`,subtitle:`Backend, Authentication & Data`,summary:`Used Firebase across learning projects, CS Internship tools, and a real iOS product for authentication, data storage, and backend services.`,featuresTitle:`Where It Helps`,features:[`Adding authentication and persistent cloud data without building a full backend from scratch`,`Building CRUD-based applications with structured user-specific data`,`Providing backend infrastructure for web and mobile products`],storyTitle:`Story`,storyEN:`I first came across Firebase through one of the learning steps in the CS Internship program.
+
+My first project with it was a Todo App.
+
+Each user had their own data structure in the database, with their todos stored underneath it and each todo containing things like its text, status, and other information.
+
+Because Firebase is part of Google's ecosystem, it also made things like Google authentication possible.
+
+I still remember somehow managing to add Sign in with Google to that Todo App with the very limited knowledge I had at the time.
+
+When I look back at it now, I'm honestly impressed that version of me managed to build it with YouTube, Stack Overflow, and a lot of trial and error.
+
+That project was basically my first real experience with databases, storing application data, authentication, and anything that felt like backend development.
+
+It was a completely new world for me. There wasn't an AI sitting next to me explaining everything. It was mostly me, YouTube, documentation, Stack Overflow, and trying things until they worked.
+
+Those were really sweet days. :)
+
+The next time I seriously used Firebase was CS Step0 Message Maker.
+
+That was a project I volunteered to build for CS Internship and it needed somewhere to persist its data, so I went back to Firebase. By then everything felt much more familiar and the integration went pretty smoothly.
+
+Around that period, accessing Firebase from Iran also became much more difficult and using it reliably often required a VPN, which made both development and actually using the application more annoying.
+
+Later, I worked with Firebase much more deeply while building Settle It GPT with my friend.
+
+The app's backend, account system, and a big part of its user infrastructure were built around Firebase, so this time I got to use it as part of a real iOS product rather than just a learning or internal project.
+
+Firebase is a really powerful tool for getting a product moving quickly, especially when you don't want to build every backend piece yourself.
+
+I like working with it. It's lightweight, understandable, and usually gets out of your way.`,storyFA:`اولین بار از طریق یکی از تسک‌های مسیر یادگیری CS Internship با Firebase آشنا شدم.
+
+اولین پروژه‌ای که باهاش ساختم یه Todo App بود.
+
+هر کاربر اطلاعات خودش رو تو دیتابیس داشت و Todoهاش زیر همون ساختار ذخیره می‌شدند. هر Todo هم اطلاعاتی مثل متن، وضعیت و چیزهای دیگه خودش رو داشت.
+
+چون Firebase جزو اکوسیستم گوگل هست، قابلیت‌هایی مثل لاگین با اکانت گوگل هم خیلی راحت‌تر در دسترس بود.
+
+یادمه اون موقع با سواد خیلی دست و پا شکسته‌م یه جوری تونستم Sign in with Google رو هم به Todo App اضافه کنم.
+
+الان که به اون پروژه نگاه می‌کنم واقعا از علی اون موقع impress میشم که با YouTube، Stack Overflow و کلی آزمون و خطا تونسته همچین چیزی بسازه.
+
+اون پروژه عملا اولین تجربه واقعی من با دیتابیس، ذخیره اطلاعات اپلیکیشن، Authentication و چیزی بود که برای من حس بک‌اند نویسی داشت.
+
+یه دنیای کاملا جدید بود که خیلی اتفاقی واردش شده بودم. AIای نبود که کنارم باشه و همه چیز رو توضیح بده. خودم بودم و YouTube و داکیومنتیشن و Stack Overflow و آزمون و خطا.
+
+چه روزهای شیرین و خوبی بود واقعا. :)
+
+دفعه بعدی که جدی از Firebase استفاده کردم تو پروژه CS Step0 Message Maker بود.
+
+این پروژه رو خودم داوطلب شدم برای CS Internship بسازم و نیاز داشت یه جا اطلاعاتش رو ذخیره کنه، برای همین دوباره رفتم سراغ Firebase. این بار دیگه کار کردن باهاش خیلی برام آشناتر شده بود و همه چیز خوب پیش رفت.
+
+همون دوره دسترسی به Firebase از ایران هم خیلی سخت‌تر شده بود و برای استفاده درست ازش معمولا نیاز به VPN داشتم. هم دولوپ کردن و هم استفاده از برنامه رو پیچیده‌تر کرده بود.
+
+بعدتر موقع ساخت Settle It GPT با دوستم خیلی عمیق‌تر با Firebase کار کردم.
+
+بک‌اند، سیستم اکانت و بخش مهمی از زیرساخت کاربرهای اپ روی Firebase بود و این بار دیگه داشتم ازش تو یه محصول واقعی iOS استفاده می‌کردم، نه فقط یه پروژه تمرینی یا ابزار داخلی.
+
+Firebase ابزار خیلی قدرتمند و کار راه‌بندیه، مخصوصا وقتی نمی‌خوای برای هر پروژه از صفر کل بک‌اند رو خودت بسازی.
+
+کار کردن باهاش رو دوست دارم. سبک، قابل فهم و راحت برای شروع کردنه.`,hasRelatedLinks:!0,relatedLinks:[{label:`GitHub Repository`,text:`Todo App Firebase`,url:`https://github.com/Ali-Sdg90/Todo-App-Firebase`},{label:`GitHub Repository`,text:`CS Step0 Message Maker`,url:`https://github.com/Ali-Sdg90/CS-Step0-Message-Maker`},{label:`LinkedIn Post`,text:`Settle It GPT Launch Post`,url:`https://www.linkedin.com/posts/ali-sdg90_settleitgpt-share-7374421474943700993-_H3R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiHtIwB6ffMAWL0iNc5fSdSRqvEYI6Q2IA`}]},"chart-js":{id:`chart-js`,title:`Chart.js`,lightboxImage:`/assets/chart.js_logo-BfHwm6zQ.jpg`,subtitle:`Data Visualization & Custom Charts`,summary:`Worked extensively with Chart.js at MelkRadar, building and delivering more than 50 charts for production while also creating reusable templates and documentation for the design team.`,featuresTitle:`Where It Helps`,features:[`Building production-ready charts and data visualizations for web applications`,`Creating reusable chart templates and patterns for consistent implementation across teams`,`Extending charts with custom configuration and plugins when standard options aren't enough`],storyTitle:`Story`,storyEN:`I've worked with Chart.js a lot. Unfortunately. :)
+
+Most of that experience came from MelkRadar.
+
+Close to Nowruz 1403, the company needed more than 50 charts prepared and delivered in a very short amount of time. I was the person on the team who was more comfortable taking on the challenge of learning the library deeply and building them.
+
+At the same time, part of the work was going to be handled by the design team, so I also needed to teach them how to work with Chart.js and how to build the simpler charts themselves.
+
+Learning the library, building a large number of complicated charts under a tight deadline, and having multiple sessions with the design team to explain how everything worked made that period pretty exhausting for me.
+
+But the result was worth it. The company was able to use all of those charts in one of the most important parts of its product, and eventually I got to see all that work actually being used.
+
+To make working with the design team easier, I created a repository containing the important chart templates the company needed.
+
+I also made a complete 12-page reference for the design team with the chart structures they commonly needed and explanations for how to use and modify them. It basically became their dictionary for working with the charts.
+
+Chart.js is powerful, but I also found it pretty limiting when you start asking for very specific things. Its plugin system can get really complicated too.
+
+I know the library pretty well.
+
+I just don't like it that much anymore.
+
+Probably because of the trauma. :)`,storyFA:`با Chart.js خیلی خیلی زیاد کار کردم. متاسفانه. :)
+
+عمده تجربه‌م باهاش مربوط به شرکت ملک‌رادار بود.
+
+نزدیک عید ۱۴۰۳ شرکت نیاز داشت بیشتر از ۵۰ چارت تو یه بازه زمانی خیلی فشرده آماده و تحویل داده بشه. توی تیم من راحت‌تر بودم که این چالش رو بگیرم، لایببری رو درست یاد بگیرم و چارت‌ها رو بسازم.
+
+همزمان قرار شد تیم دیزاین هم بخشی از کار رو انجام بده، برای همین لازم بود کار با Chart.js رو به اون‌ها هم یاد بدم که بتونند چارت‌های ساده‌تر رو خودشون بسازند.
+
+پروسه یاد گرفتن لایببری، ساخت و تحویل تعداد زیادی چارت پیچیده تو زمان خیلی محدود و همزمان جلسه‌های متعدد با تیم دیزاین برای توضیح نحوه کار، دوره خیلی سنگینی برام بود.
+
+ولی نتیجه خیلی خوب شد. شرکت تونست از همه این نمودارها تو یکی از مهم‌ترین قسمت‌های محصولش استفاده کنه و در نهایت دیدم زحمتی که براش کشیده بودم واقعا نتیجه داد.
+
+برای اینکه ارتباط و تحویل چارت‌ها به تیم دیزاین راحت‌تر باشه، یه ریپازیتوری ساختم و تمپلیت چارت‌های مهمی که شرکت نیاز داشت رو توش قرار دادم.
+
+حتی یه فایل کامل ۱۲ صفحه‌ای هم ساختم که ساختارهای مورد نیاز تیم دیزاین و نحوه استفاده و تغییرشون رو توضیح می‌داد. عملا تبدیل شده بود به دیکشنری تیم دیزاین برای ساخت چارت‌ها.
+
+Chart.js لایببری قدرتمندیه، ولی وقتی درخواست‌ها خیلی خاص میشن می‌تونه فوق العاده محدودکننده باشه و سیستم Pluginهاش هم بعضی وقت‌ها خیلی پیچیده میشه.
+
+خیلی خوب می‌شناسمش.
+
+فقط دیگه اونقدر دوستش ندارم.
+
+احتمالا به خاطر ترامایی که برام ساخته. :)`,hasRelatedLinks:!0,relatedLinks:[{label:`GitHub Repository`,text:`Learning Chart.js`,url:`https://github.com/Ali-Sdg90/Learning-Chart.js-`},{label:`Live Examples`,text:`Chart.js Design Team Examples`,url:`https://ali-sdg90.github.io/Learning-Chart.js-/`},{label:`Reference Guide`,text:`Chart.js Design Team Guide`,url:`https://ali-sdg.is-a.dev/Learning-Chart.js-/ChartJS.one`}]},"apex-charts":{id:`apex-charts`,title:`ApexCharts`,lightboxImage:`data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3eApexCharts%20logo%3c/title%3e%3crect%20width='300'%20height='300'%20rx='28'%20fill='%23081627'%20/%3e%3cg%20transform='translate(41.2%2055.8)'%3e%3cpath%20d='M46.18%20161.79H74.54L89.93%20188.45H0L108.8%200L217.61%20188.45H186.82L171.43%20161.79L163.11%20147.38L108.8%2053.33Z'%20fill='%23fff'%20fill-rule='evenodd'%20/%3e%3cpath%20d='M175.25%20188.45L117.2%2087.9L101.8%20114.57L144.46%20188.45Z'%20fill='%2300e396'%20fill-rule='evenodd'%20/%3e%3cpath%20d='M132.29%20188.45L95.71%20125.11L80.32%20151.77L101.5%20188.45Z'%20fill='%23feb019'%20fill-rule='evenodd'%20/%3e%3c/g%3e%3c/svg%3e`,subtitle:`Interactive Data Visualization`,summary:`Used ApexCharts across React projects to build interactive charts and turn complex data into clear, visual interfaces.`,featuresTitle:`Where It Helps`,features:[`Building interactive and visually rich charts inside React applications`,`Supporting different chart types and data-heavy interfaces with one flexible library`,`Turning raw application data into something much easier to understand and explore`],storyTitle:`Story`,storyEN:`I first used ApexCharts in one of my earliest React projects, React Dice Distribution.
+
+At the time I was still learning React itself, so I slowly learned ApexCharts through its documentation and demos other people had built with it. This was before ChatGPT and AI became part of my development workflow, so most of the process was documentation, searching, testing, and figuring things out myself.
+
+I really liked how powerful and flexible the library was.
+
+I also learned one of its limitations the painful way in React Dice Distribution. ApexCharts renders SVG, and when you're trying to update and redraw charts extremely frequently, like every half second, the browser isn't particularly happy about constantly creating and removing all of that SVG.
+
+Years later I came back to ApexCharts in Spotify Taste Timeline, this time in a much more modern project built with help from Codex.
+
+I needed several different kinds of charts and visualizations, and because the project was already React-based, ApexCharts was an easy choice. A huge part of the experience of that project comes from the charts the library helped me build.
+
+It's a really powerful and versatile library. Maybe not what I'd choose for extremely high-frequency updates, but for almost everything else, I really like it.`,storyFA:`اولین بار تو یکی از اولین پروژه‌های Reactم به اسم React Dice Distribution از ApexCharts استفاده کردم.
+
+اون موقع خود React رو هم هنوز داشتم یاد می‌گرفتم و آروم آروم با داکیومنتیشن خود ApexCharts و دموهایی که بقیه باهاش ساخته بودند یاد گرفتم چجوری ازش استفاده کنم. اون زمان هنوز ChatGPT و AI وارد روند کدنویسی من نشده بودند و بیشتر مسیر با داکیومنتیشن، سرچ کردن، تست کردن و آزمون و خطا جلو می‌رفت.
+
+خیلی زود جذب قدرت و تنوع ApexCharts شدم.
+
+یکی از محدودیت‌هاش رو هم دردناک تو React Dice Distribution یاد گرفتم. خروجی چارت‌ها SVG هست و وقتی بخوای مثلا هر نیم ثانیه اطلاعات چارت رو آپدیت کنی، مرورگر خیلی دوست نداره مدام اون همه SVG رو بسازه و حذف کنه.
+
+چند سال بعد دوباره تو یه پروژه مدرن‌تر به اسم Spotify Taste Timeline رفتم سراغ ApexCharts. این بار پروژه با کمک Codex ساخته می‌شد و استفاده‌م از ApexCharts خیلی بیشتر و متنوع‌تر بود.
+
+انواع مختلف نمودار و نمایش اطلاعات لازم داشتم و چون پروژه React بود دوباره رفتم سراغش. خیلی هم انتخاب خوبی بود. بخش بزرگی از قدرت و جذابیت اون پروژه به همین چارت‌هایی هست که با ApexCharts ساختم.
+
+لایببری فوق العاده قدرتمند و همه‌کاره‌ایه. برای آپدیت‌های خیلی خیلی سریع انتخاب مورد علاقه‌م نیست، ولی برای تقریبا هر چیز دیگه‌ای واقعا دوستش دارم.`,hasRelatedLinks:!0,relatedLinks:[{label:`GitHub Repository`,text:`React Dice Distribution`,url:`https://github.com/Ali-Sdg90/React-Dice-Distribution`},{label:`GitHub Repository`,text:`Spotify Taste Timeline`,url:`https://github.com/Ali-Sdg90/Spotify-Taste-Timeline`}]},ollama:{id:`ollama`,title:`Ollama`,lightboxImage:`/assets/ollama_logo-lsQ7C3d7.jpg`,subtitle:`Local LLM Runtime`,summary:`Used Ollama to run and manage local LLMs and connect them to Fabrexa AI Bot through its local API.`,featuresTitle:`Where It Helps`,features:[`Running different LLMs locally without depending on external AI APIs`,`Exposing local models through a simple API for use inside applications`,`Testing and switching between models based on system resources and project needs`],storyTitle:`Story`,storyEN:`I started working with Ollama because of a specific need I had for Fabrexa AI Ollama.
+
+I wanted to build a Telegram bot that could talk to LLMs running locally on my own system instead of depending on an online AI service.
+
+That's when I found Ollama and realized how useful it was. It made running local models simple, and it also exposed a local API that I could easily connect to from my own application.
+
+Depending on what I needed and what my system could handle, I downloaded different models from Hugging Face, imported them into Ollama, and then connected Fabrexa AI Bot to them through the Ollama API.
+
+The Telegram bot could send the user's message to the selected local model and return the generated response directly inside Telegram.
+
+It's a really cool and practical tool. It made experimenting with local AI and integrating it into my own projects much easier.`,storyFA:`کارم با Ollama از یه نیاز مشخص تو پروژه Fabrexa AI Ollama شروع شد.
+
+می‌خواستم یه بات تلگرام بسازم که به‌جای وابسته بودن به سرویس‌های آنلاین هوش مصنوعی، بتونه به مدل‌هایی که روی سیستم خودم به‌صورت لوکال اجرا میشن وصل بشه.
+
+اونجا با Ollama آشنا شدم و دیدم چقدر ابزار قدرتمند و کار راه‌بندیه. هم اجرای مدل‌های لوکال رو خیلی راحت می‌کرد و هم API داخلی داشت که می‌تونستم مستقیم از پروژه خودم بهش وصل بشم.
+
+با توجه به نیازم و قدرت سیستمم، مدل‌های مختلف رو از Hugging Face دانلود می‌کردم، وارد Ollama می‌کردم و بعد Fabrexa AI Bot از طریق API خود Ollama به اون مدل‌ها دسترسی داشت.
+
+بات می‌تونست پیام کاربر رو برای مدل لوکال انتخاب‌شده بفرسته و جوابش رو مستقیم داخل تلگرام برگردونه.
+
+Ollama واقعا ابزار باحال و کاربردی‌ایه. کار کردن با مدل‌های لوکال و وصل کردنشون به پروژه‌های خودم رو خیلی راحت‌تر کرد.`,hasRelatedLinks:!0,relatedLinks:[{label:`GitHub Repository`,text:`Fabrexa AI Ollama`,url:`https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama`}]},"azure-devops":{id:`azure-devops`,title:`Azure DevOps`,lightboxImage:`/assets/azure_logo-C7fthbk5.jpg`,subtitle:`Boards, Automation & Delivery Workflows`,summary:`Worked extensively with Azure DevOps across CS Internship and MelkRadar, from boards and sprint workflows to automation, pull request reviews, releases, test cases, wikis, queries, and project administration.`,featuresTitle:`Where It Helps`,features:[`Managing tasks, backlogs, sprints, assignments, queries, and team workflows through Azure Boards`,`Automating repetitive board operations through the Azure DevOps API`,`Working with pull requests, test cases, builds, releases, wikis, permissions, and project administration`],storyTitle:`Story`,storyEN:`I first started working with Azure DevOps through the CS Internship program.
+
+I was immediately interested in how much structure it could bring to a team. We created routine tasks and backlogs, assigned them to people, reviewed the board during sprint meetings, closed the sprint, and then started the next one with a new set of work.
+
+For a long time, I was mostly just a user of the board.
+
+After around a year of seeing how CS worked, I noticed that one part of the sprint process was extremely repetitive. Every week, around 70 tasks and backlogs had to be created from the same templates and assigned manually. It took the sprint manager around half an hour every single time.
+
+Then I found out Azure DevOps had an API.
+
+By that point I was confident enough with React that I trusted myself to start the project and actually finish it.
+
+I built CS Azure Board Automation, a web app that could take those templates, copy all of the required tasks and backlogs into a selected sprint, set the correct sprint information, and assign everything automatically.
+
+A process that used to take around 30 minutes could now finish in less than 5 seconds.
+
+I introduced the tool to CS Internship and it was used regularly for around five months. Later, the governance team decided to stop using it because manually working with the board was part of how members learned Azure DevOps. I shut the automation down when they asked.
+
+Around the same time, CS was also trying to become more scalable, and I was really eager to work on that side of the program.
+
+I was given full admin access to the program's Azure DevOps setup and started working on things like new groups, permission structures, privacy settings, and controlling how people inside and outside the program could access different parts of the board.
+
+Some of those changes became part of the regular workflow and some experiments didn't end up being used.
+
+Azure Boards permissions and configuration can get ridiculously complicated, but they're also incredibly powerful.
+
+I also built CS Queue Bot with access to the Azure DevOps API. When someone entered the program's queue group, the bot could automatically create the required task on a specific board and fill in the information for them. I really liked that project too.
+
+At MelkRadar, Azure DevOps was also part of everyday work across different projects.
+
+I worked with test cases, builds, deployments to different environments, project wikis, analytical boards, queries, and the normal sprint and task workflows.
+
+The part I probably spent the most time in was pull requests. For around a year and a half I was responsible for reviewing the frontend team's PRs, so I was constantly reviewing and checking work directly inside Azure DevOps.
+
+I've spent a lot of time with Azure DevOps at this point. I have a strong understanding of Boards, workflows, queries, analysis, permissions, and its day-to-day collaboration features, along with a good understanding of project setup, builds, and releases.
+
+I genuinely like Azure DevOps. It's a powerful, well-thought-out system.
+
+Maybe a little too well-thought-out.`,storyFA:`اولین بار از طریق برنامه CS Internship با Azure DevOps آشنا شدم.
+
+خیلی زود جذب قدرت، نظم و ساختارش شدم. تو برنامه تسک‌ها و بک‌لاگ‌های روتین می‌ساختیم، به افراد اساین می‌کردیم، تو جلسات اسپرینت بورد رو بررسی می‌کردیم، اسپرینت رو می‌بستیم و بعد کارهای اسپرینت جدید رو می‌دیدیم و شروع می‌کردیم.
+
+مدت زیادی فقط یه عضو از بورد بودم.
+
+بعد از حدود یک سال دیدن روند کاری CS، متوجه شدم یه قسمت از کار خیلی تکراریه. هر هفته برای هر اسپرینت حدود ۷۰ تسک و بک‌لاگ از روی یه سری تمپلیت ثابت ساخته و برای افراد مختلف اساین می‌شد. کاری که هر بار حدود نیم ساعت از مدیر اسپرینت وقت می‌گرفت.
+
+بعد فهمیدم Azure DevOps API هم داره.
+
+اون موقع تواناییم تو React خیلی بهتر شده بود و اعتماد داشتم اگه پروژه‌ای رو شروع کنم می‌تونم تا آخرش پیش ببرمش.
+
+CS Azure Board Automation رو ساختم. یه وب اپ که می‌تونست همه اون تسک‌ها و بک‌لاگ‌ها رو از روی تمپلیت‌ها تو اسپرینتی که مشخص می‌کردی بسازه، شماره اسپرینت درست رو بذاره و برای افراد مورد نیاز اساینشون کنه.
+
+کاری که حدود ۳۰ دقیقه طول می‌کشید، تو کمتر از ۵ ثانیه انجام می‌شد.
+
+برنامه رو به CS معرفی کردم و حدود ۵ ماه به‌صورت دائم استفاده شد. بعد تیم Governance برنامه به این نتیجه رسید که استفاده از این ابزار باعث میشه افراد برنامه کار کردن دستی با Azure Board رو تمرین نکنند و با درخواستشون استفاده از برنامه رو متوقف کردم.
+
+همون دوره خود CS هم داشت روی اسکیلبل‌تر شدنش کار می‌کرد و من خیلی eager بودم که روی این قسمت کار کنم.
+
+دسترسی کامل ادمینی Azure DevOps برنامه رو گرفتم و رفتم سراغ گروه‌ها، سطح‌های دسترسی، تنظیمات Privacy، مدل دسترسی افراد داخل و خارج برنامه به بورد و یه عالمه تنظیمات دیگه.
+
+بعضی از چیزهایی که ساختیم وارد روند عادی برنامه شدند و بعضی‌ها هم در نهایت به نتیجه نرسیدند.
+
+قسمت دسترسی‌ها و تنظیمات Azure Boards واقعا شاهکار پیچیده و قدرتمندیه.
+
+CS Queue Bot رو هم ساختم که به Azure DevOps API دسترسی داشت. وقتی فردی وارد گروه صف برنامه می‌شد، بات می‌تونست روی یه بورد مشخص براش تسک بسازه و اطلاعات مورد نیاز رو به‌صورت خودکار پر کنه. این پروژه هم خیلی برام دوست‌داشتنی بود.
+
+توی شرکت ملک‌رادار هم تو پروژه‌های مختلف خیلی با Azure DevOps کار می‌کردیم.
+
+با Test Case، Build، ریلیز روی محیط‌های مختلف، Wiki، بوردهای تحلیلی، Query و روند عادی تسک‌ها و اسپرینت‌ها کار کردم.
+
+ولی بخشی که احتمالا بیشتر از همه باهاش درگیر بودم Pull Requestها بودند. حدود یک سال و نیم مسئول ریویوی PRهای تیم فرانت بودم و مدام داخل خود Azure DevOps کارها رو بررسی، ریویو و چک می‌کردم.
+
+در مجموع خیلی با Azure DevOps کار کردم. درک خیلی خوبی از Boards، روندهای کاری، Query، تحلیل اطلاعات، دسترسی‌ها و قابلیت‌های روزمره‌ش دارم و درک خوبی هم از تعریف پروژه، Build و Release روی اون دارم.
+
+Azure DevOps رو واقعا دوست دارم. سیستم خیلی قدرتمند، فکرشده و دوست‌داشتنی‌ایه.
+
+شاید یکم زیادی فکرشده.`,hasRelatedLinks:!0,relatedLinks:[{label:`GitHub Repository`,text:`CS Azure Board Automation`,url:`https://github.com/Ali-Sdg90/CS-Azure-Board-Automation`}]}},Mn=e=>jn[e]??null,K=v(O(),1),Nn=(0,K.lazy)(()=>A(()=>import(`./ImageLightbox-rjI_garY.js`),__vite__mapDeps([0,1,2,3]))),Pn=e=>(e.fallbackText??e.alt??`Image`).trim().slice(0,2).toUpperCase(),q=({image:e,buttonClassName:t,fallbackClassName:n,imageClassName:r,imageKey:i,imageProps:a,children:o})=>{let[s,c]=(0,K.useState)(!1),[l,u]=(0,K.useState)(null),[d,f]=(0,K.useState)(null),p=(0,K.useRef)(null),m=l?.src===e.src,h=Pn(e),g=e.width&&e.height,_=d?.src===e.src,v=g||!_?e:{...e,width:d.width,height:d.height};return(0,M.jsxs)(M.Fragment,{children:[(0,M.jsx)(`button`,{className:t,type:`button`,ref:p,"aria-label":`Preview ${e.alt}`,onClick:()=>{if(!g){let{naturalWidth:t,naturalHeight:n}=p.current?.querySelector(`img`)??{};t&&n&&f({src:e.src,width:t,height:n})}c(!0)},children:o??(0,M.jsx)(M.Fragment,{children:m?(0,M.jsx)(`span`,{className:n??`${r} lightbox-image-fallback`,"aria-hidden":`true`,children:h}):(0,M.jsx)(`img`,{className:r,src:e.src,alt:e.alt,width:e.width,height:e.height,...a,onLoad:t=>{a?.onLoad?.(t);let{naturalWidth:n,naturalHeight:r}=t.currentTarget;n&&r&&f({src:e.src,width:n,height:r})},onError:t=>{a?.onError?.(t),u({src:e.src})}},i)})}),s&&(0,M.jsx)(K.Suspense,{fallback:null,children:(0,M.jsx)(Nn,{image:v,onClose:()=>c(!1)})})]})},Fn=c(),In=220,Ln=`https://github.com/Ali-Sdg90/ali-sdg90.github.io/blob/main/src/data/stories`,Rn=[`a[href]`,`button:not([disabled])`,`[tabindex]:not([tabindex='-1'])`].join(`,`),J={projects:`Project story`,career:`Career story`,default:`Story`},zn=({initialLanguage:e,isImpactStory:t=!1,language:n,onClose:r,onLanguageChange:i,returnFocusRef:a,storyEN:o,storyFA:s,storySource:c,storyType:l,title:d})=>{let[f,p]=(0,K.useState)(!1),[m,h]=(0,K.useState)(e),g=(0,K.useRef)(null),_=(0,K.useRef)(null),v=(0,K.useRef)(null),b=(0,K.useRef)(null),x=(0,K.useId)(),S=n??m,C=S===`FA`&&s,w=(C?s:o)?.split(`
+
+`).map(e=>e.trim()).filter(Boolean),T=C?`fa`:`en`,D=J[l]??J.default,O=c?`${Ln}/${T}/${c.collection}/${c.slug}.md`:null,k=(0,K.useCallback)(()=>{p(!0)},[]),A=e=>{n===void 0&&h(e),i?.(e)};return(0,K.useEffect)(()=>{if(!f)return;let e=window.setTimeout(r,In);return()=>window.clearTimeout(e)},[f,r]),(0,K.useEffect)(()=>{let e=document.body.style.overflow,t=document.activeElement,n=a?.current??t;document.body.style.overflow=`hidden`,b.current?.focus();let r=e=>{if(e.key===`Escape`){e.preventDefault(),k();return}if(e.key!==`Tab`)return;let t=Array.from(g.current?.querySelectorAll(Rn)??[]);if(!t.length)return;let n=t[0],r=t.at(-1);e.shiftKey&&document.activeElement===n?(e.preventDefault(),r.focus()):!e.shiftKey&&document.activeElement===r&&(e.preventDefault(),n.focus())};return window.addEventListener(`keydown`,r),()=>{document.body.style.overflow=e,window.removeEventListener(`keydown`,r),n?.focus?.()}},[k,a]),(0,K.useEffect)(()=>{let e=_.current;e&&(e.scrollTop=0,v.current?.style.setProperty(`--story-progress`,e.scrollHeight>e.clientHeight?`0%`:`100%`))},[S]),(0,Fn.createPortal)((0,M.jsxs)(`div`,{className:[`about-panel-lightbox`,`story-reader-modal`,t?`is-impact-story`:``,f?`is-closing`:``].filter(Boolean).join(` `),role:`dialog`,"aria-modal":`true`,"aria-labelledby":x,onClick:k,ref:g,children:[(0,M.jsx)(`button`,{className:`about-panel-lightbox-close`,type:`button`,"aria-label":C?`بستن استوری`:`Close story`,onClick:k,ref:b,children:(0,M.jsx)(u,{"aria-hidden":`true`})}),(0,M.jsx)(`div`,{className:`about-panel-lightbox-frame story-reader-modal__frame`,onClick:e=>e.stopPropagation(),children:(0,M.jsxs)(`div`,{className:`story-reader-modal__surface`,children:[(0,M.jsxs)(`header`,{className:`story-reader-modal__header`,children:[(0,M.jsxs)(`div`,{className:`story-reader-modal__heading`,children:[(0,M.jsxs)(`span`,{className:`story-reader-modal__eyebrow`,children:[(0,M.jsx)(j,{"aria-hidden":`true`}),D]}),(0,M.jsx)(`h2`,{id:x,children:d})]}),(0,M.jsxs)(`div`,{className:`story-reader-modal__controls`,"aria-label":`Story controls`,children:[(0,M.jsxs)(`div`,{className:[`about-panel-language-toggle`,S===`FA`?`is-fa-active`:`is-en-active`].join(` `),"aria-label":`Story language`,children:[(0,M.jsx)(`span`,{className:`about-panel-language-thumb`,"aria-hidden":`true`}),[`EN`,`FA`].map(e=>(0,M.jsx)(`button`,{className:[`about-panel-language-option`,S===e?`is-active`:``].filter(Boolean).join(` `),type:`button`,"aria-pressed":S===e,onClick:()=>A(e),children:e},e))]}),O&&(0,M.jsxs)(`a`,{className:`story-reader-modal__source-link`,href:O,target:`_blank`,rel:`noopener noreferrer`,children:[(0,M.jsx)(y,{"aria-hidden":`true`}),(0,M.jsx)(`span`,{children:`View on GitHub`}),(0,M.jsx)(E,{"aria-hidden":`true`})]})]}),(0,M.jsx)(`span`,{className:`story-reader-modal__progress`,"aria-hidden":`true`,ref:v})]}),(0,M.jsx)(`div`,{className:`story-reader-modal__scroll`,dir:C?`rtl`:`ltr`,lang:C?`fa`:`en`,onScroll:e=>{let t=e.currentTarget,n=t.scrollHeight-t.clientHeight,r=n>0?Math.min(100,t.scrollTop/n*100):100;v.current?.style.setProperty(`--story-progress`,`${r}%`)},ref:_,children:(0,M.jsxs)(`article`,{className:`story-reader-modal__content`,children:[(0,M.jsxs)(`div`,{className:`story-reader-modal__opening-mark`,"aria-hidden":`true`,children:[(0,M.jsx)(`span`,{}),(0,M.jsx)(j,{}),(0,M.jsx)(`span`,{})]}),w.map((e,t)=>(0,M.jsx)(`p`,{children:e},`${t}-${e}`)),(0,M.jsx)(`div`,{className:`story-reader-modal__closing-mark`,"aria-hidden":`true`,children:(0,M.jsx)(`span`,{})})]})})]})})]}),document.body)},Bn={description:S,features:n,gallery:ee,story:r,relatedLinks:ne},Vn=(e=``)=>e.trim().toLowerCase().replace(/[^a-z0-9]+/g,`_`).replace(/^_+|_+$/g,``)||`link`,Y=({link:e,placement:t,project:n})=>{n&&k(`project_link_click`,{project_id:n.id,project_name:n.title,link_type:Vn(e.label),link_name:e.label,placement:t})},Hn=({links:e=[],project:t})=>{let n=e.filter(e=>e.label);return n.length?(0,M.jsx)(`div`,{className:`featured-project-links`,"aria-label":`Project links`,children:n.map(e=>{let n=e.label.toLowerCase().includes(`github`)?y:E;return e.url?(0,M.jsx)(`a`,{className:`featured-project-link`,href:e.url,target:`_blank`,rel:`noreferrer`,onClick:()=>Y({link:e,placement:`primary`,project:t}),children:(0,M.jsxs)(`span`,{className:`featured-project-link-content`,children:[(0,M.jsx)(n,{"aria-hidden":`true`}),(0,M.jsx)(`span`,{children:e.label})]})},e.label):(0,M.jsx)(`button`,{className:`featured-project-link is-disabled`,type:`button`,disabled:!0,children:(0,M.jsxs)(`span`,{className:`featured-project-link-content`,children:[(0,M.jsx)(n,{"aria-hidden":`true`}),(0,M.jsx)(`span`,{children:e.label})]})},e.label)})}):null},X=({children:e,type:t})=>(0,M.jsxs)(`h3`,{className:`featured-project-section-title`,children:[(0,M.jsx)(Bn[t]??b,{"aria-hidden":`true`}),(0,M.jsx)(`span`,{children:e})]}),Un=({features:e=[],title:t=`Features`})=>e.length?(0,M.jsxs)(`section`,{className:`featured-project-card`,children:[(0,M.jsx)(X,{type:`features`,children:t}),(0,M.jsx)(`ul`,{className:`featured-project-features`,children:e.map(e=>(0,M.jsxs)(`li`,{children:[(0,M.jsx)(`span`,{className:`featured-project-feature-icon`,children:(0,M.jsx)(x,{"aria-hidden":`true`})}),(0,M.jsx)(`span`,{children:e})]},e))})]}):null,Wn=({columns:e=3,images:t=[],title:n})=>t.length?(0,M.jsxs)(`section`,{className:`featured-project-section`,children:[(0,M.jsx)(X,{type:`gallery`,children:`Gallery`}),(0,M.jsx)(`div`,{className:`featured-project-gallery`,style:{"--gallery-columns":Math.min(3,Math.max(1,e))},children:t.map((e,t)=>{let r=typeof e==`string`?{src:e}:e;return(0,M.jsx)(q,{image:{...r,alt:r.alt??`${n} gallery ${t+1}`},buttonClassName:`featured-project-gallery-button`,fallbackClassName:`featured-project-gallery-image featured-project-gallery-image-fallback`,imageClassName:`featured-project-gallery-image`,imageProps:{loading:`lazy`,decoding:`async`}},r.src)})})]}):null,Gn=({activeLanguage:e,languageToggle:t,onLanguageChange:n,storySource:r,storyType:i,storyEN:a,storyFA:o,subjectTitle:s,title:c=`Story`,titleFA:l,isImpactStory:u=!1,hasTallPreview:d=!1})=>{let[f,p]=(0,K.useState)(!1),m=(0,K.useRef)(null),h=e===`FA`&&o,g=h?o:a,_=h?l??c:c,v=g?.split(`
+
+`).map(e=>e.trim()).filter(Boolean);return v?.length?(0,M.jsxs)(`section`,{className:[`featured-project-section`,u?`is-impact-story`:``,d?`has-tall-story-preview`:``].filter(Boolean).join(` `),children:[(0,M.jsxs)(`div`,{className:`featured-project-story-header`,children:[(0,M.jsx)(X,{type:`story`,children:_}),t]}),(0,M.jsx)(`div`,{className:[`featured-project-story`,h?`is-farsi-text`:``].filter(Boolean).join(` `),dir:h?`rtl`:void 0,lang:h?`fa`:void 0,children:(0,M.jsx)(`div`,{className:`featured-project-story-content is-clamped`,children:v.map(e=>(0,M.jsx)(`p`,{children:e},e))})}),(0,M.jsxs)(`button`,{className:`featured-project-story-toggle`,type:`button`,"aria-haspopup":`dialog`,onClick:()=>p(!0),ref:m,children:[(0,M.jsx)(`span`,{children:`Read full story`}),(0,M.jsx)(j,{"aria-hidden":`true`})]}),f&&(0,M.jsx)(zn,{initialLanguage:h?`FA`:`EN`,isImpactStory:u,language:n?e:void 0,onClose:()=>p(!1),onLanguageChange:n,returnFocusRef:m,storyEN:a,storyFA:o,storySource:r,storyType:i,title:s})]}):null},Kn=({links:e=[],project:t})=>{let n=e.filter(e=>e.label||e.text||e.url);return n.length?(0,M.jsxs)(`section`,{className:`featured-project-section`,children:[(0,M.jsx)(X,{type:`relatedLinks`,children:`Related links`}),(0,M.jsx)(`ul`,{className:`featured-project-related-links`,children:n.map((e,n)=>{let r=(0,M.jsxs)(M.Fragment,{children:[(0,M.jsxs)(`span`,{className:`featured-project-related-link-copy`,children:[(0,M.jsx)(`span`,{className:`featured-project-related-link-label`,children:e.label}),(0,M.jsx)(`span`,{className:`featured-project-related-link-text`,children:e.text})]}),(0,M.jsx)(E,{"aria-hidden":`true`})]});return(0,M.jsx)(`li`,{children:e.url?(0,M.jsx)(`a`,{className:`featured-project-related-link`,href:e.url,target:`_blank`,rel:`noreferrer`,title:e.text,onClick:()=>Y({link:e,placement:`related`,project:t}),children:r}):(0,M.jsx)(`div`,{className:`featured-project-related-link is-disabled`,children:r})},`${e.label}-${n}`)})})]}):null},Z=({activeLanguage:e,detail:t,isExpanded:n,item:r,languageToggle:i,onLanguageChange:a,section:o})=>{if(!t)return(0,M.jsx)(`div`,{className:`featured-project-about`,children:(0,M.jsx)(`p`,{className:`featured-project-summary`,children:`Project detail content is being prepared for this shelf item.`})});let s=o?.id===`tech-stack`,c=o?.id===`projects`?{id:r.id,title:r.title}:null,l=o?.id===`achievements`,u=l||o?.id===`tech-stack`,d=t.summary;return(0,M.jsxs)(`div`,{className:`featured-project-about`,children:[!s&&d&&(0,M.jsxs)(`section`,{className:`featured-project-description`,children:[n&&(0,M.jsx)(X,{type:`description`,children:`Description`}),(0,M.jsx)(`p`,{className:`featured-project-summary`,children:d})]}),(0,M.jsx)(Hn,{links:t.links,project:c}),(0,M.jsx)(Wn,{columns:t.galleryColumns,images:t.galleryImages,title:t.title}),(0,M.jsx)(Un,{features:t.features,title:t.featuresTitle}),(0,M.jsx)(Gn,{activeLanguage:e,languageToggle:i,onLanguageChange:a,storySource:t.storySource,storyType:o?.id===`projects`?`projects`:o?.id===`career-journey`?`career`:`default`,storyEN:t.storyEN,storyFA:t.storyFA,subjectTitle:l?`${r.title} ${r.meta}`:t.title??r.title,title:t.storyTitle,titleFA:t.storyTitleFA,isImpactStory:l,hasTallPreview:u}),t.hasRelatedLinks&&(0,M.jsx)(Kn,{links:t.relatedLinks,project:c})]})},qn={projects:`Project detail placeholder`,achievements:`Impact detail placeholder`,"tech-stack":`Technology detail placeholder`,"career-journey":`Career detail placeholder`},Q=(e,t,n)=>e.image?{src:e.image,lightboxSrc:n,alt:`${e.title} logo`,width:e.imageWidth??300,height:e.imageHeight??300,lightboxWidth:n?600:void 0,lightboxHeight:n?600:void 0,zoom:1}:{src:N,alt:`${t.label} placeholder`,width:500,height:500,zoom:1},Jn=({item:e,section:t})=>{if(!e||!t)return null;if(t.id===`projects`){let t=An(e.id),n=t?.image??e.image;return{title:t?.title??e.title,subtitle:t?`${t.subtitle} · ${t.year}`:`Project details coming soon`,image:{src:n??`/assets/placeholder-BkvicHGP.jpg`,lightboxSrc:t?.lightboxImage,alt:`${t?.title??e.title} project preview`,width:t?.imageWidth??e.imageWidth??(n?1280:500),height:t?.imageHeight??e.imageHeight??(n?720:500),lightboxWidth:t?.lightboxWidth,lightboxHeight:t?.lightboxHeight,zoom:1},tags:[],detail:t,detailVariant:`featured`,Component:Z}}if(t.id===`career-journey`){let n=it(e.id);return{title:n?.title??e.title,subtitle:[e.meta,e.year].filter(Boolean).join(` · `),image:Q(e,t,n?.lightboxImage),tags:[],detail:n,detailVariant:`compact`,Component:Z}}if(t.id===`achievements`){let n=ot(e.id);return{title:`${e.title} ${e.meta}`,subtitle:``,image:Q(e,t),tags:[],detail:n,detailVariant:`compact`,Component:Z}}if(t.id===`tech-stack`){let n=Mn(e.id);return{title:n?.title??e.title,subtitle:``,image:Q(e,t,n?.lightboxImage),tags:[],detail:n,detailVariant:`compact`,Component:Z}}return{title:e.title,subtitle:qn[t.id]??`${t.label} detail`,image:Q(e,t),tags:[],detail:null,detailVariant:`compact`,Component:Z}},Yn={titleEn:`About me`,titleFa:`درباره من`,image:{src:`/assets/ali-profile-CeAfK_eZ.jpg`,alt:`Ali Sadeghi`,width:856,height:856,zoom:1.08},paragraphs:{fa:[`سلام، من علی هستم.`,`من Software Developer با استک اصلی React و JavaScript هستم.`,`چیزهایی که می‌سازم رو با دقت و استاندارد بالا می‌سازم. برام مهمه خروجی کارم چیزی باشه که واقعا بهش افتخار کنم. مثل همین صفحه‌ای که دارین می‌بینین :)`,`خودم رو بیشتر یک builder می‌بینم. اگه ایده یا مسئله‌ای برام جذاب باشه، ابزارش رو یاد می‌گیرم و می‌سازمش.`,`تا الان بات‌های تلگرام، ابزارهای اتوماسیون و سیستم‌های داخلی مختلفی برای خودم و تیم‌هایی که توشون بودم ساختم؛ بعضی‌هاشون حتی وظیفه‌ی مستقیمم نبودن.`,`توی تجربه‌های کاری مختلف هم بارها از نقش اولیه‌ام فراتر رفتم و درگیر منتورینگ، ریویو، ساختن پروسه‌ها و هدایت تیم شدم.`,`بهترین عملکردم رو تو محیط‌هایی داشتم که بهم اعتماد کردن، فضا دادن و اجازه دادن فقط اجراکننده‌ی تسک نباشم؛ جایی که بتونم رشد کنم، چیزی بسازم و روی تیم و محصول اثر واقعی بذارم.`],en:[`Hi, I'm Ali.`,`I'm a Software Developer working primarily with React and JavaScript.`,`I care a lot about building things with attention to detail and a high standard for quality. I want the end result to be something I'm genuinely proud of. Like the page you're looking at right now :)`,`More than anything, I see myself as a builder. If an idea or problem interests me, I'll learn whatever tools I need and figure out how to build it.`,`So far, I've created Telegram bots, automation tools, and internal systems for myself and the teams I've been part of; some of them weren't even things I was originally responsible for.`,`Throughout my work experience, I've often grown beyond my original role and become involved in mentoring, code reviews, building processes, and helping lead teams.`,`I do my best work in environments where I'm trusted, given room to grow, and encouraged to contribute beyond simply completing tasks; places where I can build, keep growing, and make a real impact on both the team and the product.`]},tags:[`Automation`,`System Design`,`Internal Tools`,`AI Integration`,`React`,`JavaScript`]},$=[{id:`location`,icon:te,label:`Tehran, Iran`,href:`https://maps.google.com/?q=Tehran%2C%20Iran`},{id:`github`,icon:y,label:`github.com/ali-sdg90`,href:`https://github.com/ali-sdg90`},{id:`linkedin`,icon:m,label:`linkedin.com/in/ali-sdg90`,href:`https://linkedin.com/in/ali-sdg90`},{id:`email`,icon:C,label:`ali.sdg.dev90@gmail.com`,href:`mailto:ali.sdg.dev90@gmail.com`},{id:`telegram`,icon:e,label:`https://t.me/ali_sdg90`,href:`https://t.me/ali_sdg90`}],Xn=[{id:`x`,icon:w,label:`X`,href:`https://x.com/Ali_Sdg90`},{id:`youtube`,icon:d,label:`YouTube`,href:`https://www.youtube.com/@Ali_Sdg90`},{id:`spotify`,icon:T,label:`Spotify`,href:`https://open.spotify.com/user/lttt11sgbz5h0ecxyt0u7mmri`},{id:`instagram`,icon:re,label:`Instagram`,href:`https://www.instagram.com/ali_sdg90`}];function Zn(e){return f({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`currentColor`,"aria-hidden":`true`},child:[{tag:`path`,attr:{fillRule:`evenodd`,d:`M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z`,clipRule:`evenodd`},child:[]}]})(e)}function Qn(e){return f({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`currentColor`,"aria-hidden":`true`},child:[{tag:`path`,attr:{fillRule:`evenodd`,d:`M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z`,clipRule:`evenodd`},child:[]}]})(e)}function $n(e){return f({tag:`svg`,attr:{viewBox:`0 0 24 24`,fill:`currentColor`,"aria-hidden":`true`},child:[{tag:`path`,attr:{fillRule:`evenodd`,d:`M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z`,clipRule:`evenodd`},child:[]}]})(e)}function er(e){return f({tag:`svg`,attr:{fill:`none`,viewBox:`0 0 24 24`,strokeWidth:`1.5`,stroke:`currentColor`,"aria-hidden":`true`},child:[{tag:`path`,attr:{strokeLinecap:`round`,strokeLinejoin:`round`,d:`M6 18 18 6M6 6l12 12`},child:[]}]})(e)}function tr(e){return f({tag:`svg`,attr:{fill:`none`,viewBox:`0 0 24 24`,strokeWidth:`1.5`,stroke:`currentColor`,"aria-hidden":`true`},child:[{tag:`path`,attr:{strokeLinecap:`round`,strokeLinejoin:`round`,d:`M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z`},child:[]}]})(e)}function nr(e){return f({tag:`svg`,attr:{fill:`none`,viewBox:`0 0 24 24`,strokeWidth:`1.5`,stroke:`currentColor`,"aria-hidden":`true`},child:[{tag:`path`,attr:{strokeLinecap:`round`,strokeLinejoin:`round`,d:`m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25`},child:[]}]})(e)}export{er as a,Xn as c,q as d,ae as f,tr as i,Yn as l,Qn as n,Zn as o,nr as r,$ as s,$n as t,Jn as u};
