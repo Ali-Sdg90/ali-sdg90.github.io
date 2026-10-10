@@ -1,3 +1,10 @@
+## [1.35.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.5...v1.35.6) (2026-10-10)
+
+
+### Bug Fixes
+
+* improve mobile view styles, add header click indicator ([a2ef03e](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/a2ef03eb68401ecf9e9e46c61563691244a18167))
+
 ## [1.35.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.4...v1.35.5) (2026-10-08)
 
 
