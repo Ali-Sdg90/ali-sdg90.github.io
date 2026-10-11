@@ -2,7 +2,12 @@ import { useEffect, useRef } from "react";
 
 import useThumbnailMomentum from "./useThumbnailMomentum";
 
-const ThumbnailRail = ({ chapters, onSelect, selectedIndex }) => {
+const ThumbnailRail = ({
+    chapters,
+    onSelect,
+    selectedIndex,
+    shouldLoadImages,
+}) => {
     const thumbnailRefs = useRef([]);
     const {
         railRef,
@@ -54,15 +59,17 @@ const ThumbnailRail = ({ chapters, onSelect, selectedIndex }) => {
                         if (!suppressClickRef.current) onSelect(index);
                     }}
                 >
-                    <img
-                        src={chapter.image.src}
-                        alt=""
-                        width={chapter.image.width}
-                        height={chapter.image.height}
-                        loading="lazy"
-                        decoding="async"
-                        draggable="false"
-                    />
+                    {shouldLoadImages ? (
+                        <img
+                            src={chapter.image.src}
+                            alt=""
+                            width={chapter.image.width}
+                            height={chapter.image.height}
+                            loading="lazy"
+                            decoding="async"
+                            draggable="false"
+                        />
+                    ) : null}
                 </button>
             ))}
         </div>

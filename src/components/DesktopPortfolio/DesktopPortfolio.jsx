@@ -56,6 +56,7 @@ const DesktopPortfolio = ({
         <div className="desktop-portfolio">
             <PortfolioReveal
                 isBuildStoryOpen={view === "build-story"}
+                isReminderEnabled={!isOnboardingOpen}
                 onBuildStoryOpen={onBuildStoryOpen}
                 onBuildStoryClose={onNavigateToShelf}
             >

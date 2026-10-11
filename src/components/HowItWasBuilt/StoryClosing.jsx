@@ -4,7 +4,11 @@ import emojiSignature from "../../assets/images/ui/emoji-signature.webp";
 import { REVEAL_TRANSITION } from "./motionConfig";
 import useLotusEasterEgg from "./useLotusEasterEgg";
 
-const StoryClosing = ({ completionElementRef, prefersReducedMotion }) => {
+const StoryClosing = ({
+    completionElementRef,
+    prefersReducedMotion,
+    shouldLoadImages,
+}) => {
     const { animation, handleClick } = useLotusEasterEgg(prefersReducedMotion);
 
     const handleKeyDown = (event) => {
@@ -58,13 +62,15 @@ const StoryClosing = ({ completionElementRef, prefersReducedMotion }) => {
                         ease: [0.34, 1.56, 0.64, 1],
                     }}
                 >
-                    <img
-                        src={emojiSignature}
-                        alt=""
-                        width="1024"
-                        height="1024"
-                        draggable="false"
-                    />
+                    {shouldLoadImages ? (
+                        <img
+                            src={emojiSignature}
+                            alt=""
+                            width="1024"
+                            height="1024"
+                            draggable="false"
+                        />
+                    ) : null}
                 </motion.div>
             </motion.div>
 

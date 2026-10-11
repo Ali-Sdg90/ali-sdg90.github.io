@@ -11,6 +11,7 @@ const GalleryMedia = ({
     onNext,
     onPrevious,
     shouldAnimateContent,
+    shouldLoadImages,
 }) => (
     <div className="build-gallery__media">
         <LightboxImage
@@ -18,19 +19,23 @@ const GalleryMedia = ({
             imageKey={chapter.id}
             buttonClassName="build-gallery__image-button"
         >
-            <motion.img
-                src={chapter.image.src}
-                alt={chapter.image.alt}
-                width={chapter.image.width}
-                height={chapter.image.height}
-                key={chapter.id}
-                decoding="async"
-                initial={
-                    shouldAnimateContent ? { opacity: 0, scale: 1.025 } : false
-                }
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.65, ease: APPLE_EASE }}
-            />
+            {shouldLoadImages ? (
+                <motion.img
+                    src={chapter.image.src}
+                    alt={chapter.image.alt}
+                    width={chapter.image.width}
+                    height={chapter.image.height}
+                    key={chapter.id}
+                    decoding="async"
+                    initial={
+                        shouldAnimateContent
+                            ? { opacity: 0, scale: 1.025 }
+                            : false
+                    }
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.65, ease: APPLE_EASE }}
+                />
+            ) : null}
         </LightboxImage>
 
         <button

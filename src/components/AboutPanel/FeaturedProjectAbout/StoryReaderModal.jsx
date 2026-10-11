@@ -7,6 +7,8 @@ import {
     FaXmark,
 } from "react-icons/fa6";
 
+import "../../../assets/scss/components/about-panel/_about-panel-lightbox.scss";
+
 const EXIT_ANIMATION_MS = 220;
 const STORY_SOURCE_BASE_URL =
     "https://github.com/Ali-Sdg90/ali-sdg90.github.io/blob/main/src/data/stories";

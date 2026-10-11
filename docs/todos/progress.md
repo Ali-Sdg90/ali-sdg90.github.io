@@ -129,6 +129,20 @@
 
 - [x] Check for performance of the desktop and mobile view
 
+- [x] Fix story modal's hight in mobile view
+
+- [x] Check console error
+
+- [x] Review and fix deprecated APIs reported by Lighthouse
+
+- [x] Add hmpwb to desktop view initial rendering
+
+- [x] Update timing of hmpwb pop up
+
+- [x] Create smaller desktop view image with lower dpi for readme and mobile-view
+
+- [x] Check if can move the fist part of intro in desktop view a bit higher
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -143,9 +157,11 @@
 - [ ] Add Link-Tree url link and feature
 
 - [ ] Update galleries
-    - [ ] Melkradar
-    - [ ] Portfolio
-    - [ ] CSI
+    - [ ] Melkradar - mlk monthly report generator and one more
+    - [ ] Portfolio - 3 more images
+    - [ ] CSI - CS Queue Calender
+    - [ ] CS Queue Calender github?
+    - [ ] New Fabrexa images - ?? research what to add
 
 - [ ] Add remaining hmpwb cards
 
@@ -209,10 +225,6 @@
     - [x] Check what happen when using pre-loaded url and viewing the site in mobile view
     - [ ] Get AI feedback for the view and finalize it
 
-- [ ] Update timing of hmpwb pop up
-
-- [ ] Check if can move the fist part of intro in desktop view a bit higher
-
 - [ ] Do a ai-check for overcooking the box-shadows
     - [x] part 1
     - [ ] part 2
@@ -239,13 +251,3 @@
     - [x] Can be run via command and automatic on build
     - [ ] Remove the temporary docs after the pipeline is set up and working
     - [ ] Fix images in hmpwb
-
-- [ ] Fix story modal's hight in mobile view
-
-- [ ] Check console error
-
-- [ ] Review and fix deprecated APIs reported by Lighthouse
-
-- [ ] Create smaller desktop view image with lower dpi for readme and mobile-view
-
-- [ ] Maybe create a new library for the new image creation pipeline and use it in project?

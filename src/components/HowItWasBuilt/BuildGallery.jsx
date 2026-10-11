@@ -12,6 +12,7 @@ const BuildGallery = ({
     isActive,
     onSelect,
     selectedIndex,
+    shouldLoadImages,
 }) => {
     const prefersReducedMotion = useReducedMotion();
     const [hasInteracted, setHasInteracted] = useState(false);
@@ -58,12 +59,14 @@ const BuildGallery = ({
                         isLast={isLast}
                         onNext={selectNext}
                         onPrevious={selectPrevious}
+                        shouldLoadImages={shouldLoadImages}
                     />
                     <div>
                         <ThumbnailRail
                             chapters={chapters}
                             selectedIndex={selectedIndex}
                             onSelect={handleSelect}
+                            shouldLoadImages={shouldLoadImages}
                         />
                     </div>
                 </div>

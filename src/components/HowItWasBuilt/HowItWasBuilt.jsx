@@ -10,7 +10,7 @@ import useBuildStoryAnalytics from "../../hooks/useBuildStoryAnalytics";
 import "../../assets/scss/components/how-it-was-built/index.scss";
 
 const HowItWasBuilt = forwardRef(function HowItWasBuilt(
-    { isActive, onReturn, returnButtonRef },
+    { isActive, onReturn, returnButtonRef, shouldLoadImages = true },
     scrollContainerRef,
 ) {
     const prefersReducedMotion = useReducedMotion();
@@ -60,6 +60,7 @@ const HowItWasBuilt = forwardRef(function HowItWasBuilt(
                 activeLanguage={activeLanguage}
                 chapters={chapters}
                 isActive={isActive}
+                shouldLoadImages={shouldLoadImages}
                 selectedIndex={selectedIndex}
                 onSelect={setSelectedIndex}
             />
@@ -70,6 +71,7 @@ const HowItWasBuilt = forwardRef(function HowItWasBuilt(
                     isActive ? "story-closing-active" : "story-closing-inactive"
                 }
                 prefersReducedMotion={prefersReducedMotion}
+                shouldLoadImages={shouldLoadImages}
             />
         </section>
     );

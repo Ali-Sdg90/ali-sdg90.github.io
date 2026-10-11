@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import {
     access,
+    copyFile,
     mkdir,
     readFile,
     readdir,
@@ -35,6 +36,7 @@ const thumbnailOptions = {
 };
 
 const normalizePath = (value) => value.split(path.sep).join("/");
+const isWebpPath = (value) => path.extname(value).toLowerCase() === ".webp";
 
 const globToRegExp = (pattern) => {
     const normalizedPattern = normalizePath(pattern);
@@ -173,29 +175,38 @@ const createProcessingFingerprint = async (
 ) => {
     const sourceBuffer = await readFile(sourcePath);
     const processingConfiguration = JSON.stringify(
-        mode === "single"
+        isWebpPath(sourcePath)
             ? {
                   version: cacheVersion,
                   relativePath,
                   output: {
-                      format: "webp",
-                      lossless: true,
-                      preserveDimensions: true,
+                      strategy: "copy",
+                      preserveBytes: true,
                   },
               }
-            : {
-                  version: cacheVersion,
-                  relativePath,
-                  thumbnail: {
-                      width: preset.width,
-                      height: preset.height,
-                      fit: thumbnailOptions.fit,
-                      position: thumbnailOptions.position,
-                      format: "webp",
-                      quality: thumbnailOptions.quality,
-                  },
-                  full: { format: "webp", lossless: true },
-              },
+            : mode === "single"
+              ? {
+                    version: cacheVersion,
+                    relativePath,
+                    output: {
+                        format: "webp",
+                        lossless: true,
+                        preserveDimensions: true,
+                    },
+                }
+              : {
+                    version: cacheVersion,
+                    relativePath,
+                    thumbnail: {
+                        width: preset.width,
+                        height: preset.height,
+                        fit: thumbnailOptions.fit,
+                        position: thumbnailOptions.position,
+                        format: "webp",
+                        quality: thumbnailOptions.quality,
+                    },
+                    full: { format: "webp", lossless: true },
+                },
     );
 
     return createHash("sha256")
@@ -235,6 +246,17 @@ const needsGeneration = async ({
     return false;
 };
 
+const filesAreIdentical = async (firstPath, secondPath) => {
+    if (!(await canAccess(secondPath))) return false;
+
+    const [firstBuffer, secondBuffer] = await Promise.all([
+        readFile(firstPath),
+        readFile(secondPath),
+    ]);
+
+    return firstBuffer.equals(secondBuffer);
+};
+
 const replaceWithTemporaryFile = async (outputPath, writeTemporaryFile) => {
     const temporaryPath = `${outputPath}.${process.pid}.${Date.now()}.tmp`;
 
@@ -261,6 +283,32 @@ const processSourceImage = async ({
         `${parsedPath.name}.thumb.webp`,
     );
     const fullPath = path.join(outputDirectory, `${parsedPath.name}.full.webp`);
+
+    if (isWebpPath(sourcePath)) {
+        const outputPath = path.join(outputRoot, relativePath);
+        const generateOutput =
+            configurationChanged ||
+            !(await filesAreIdentical(sourcePath, outputPath));
+
+        if (generateOutput) {
+            await mkdir(outputDirectory, { recursive: true });
+            await replaceWithTemporaryFile(outputPath, (temporaryPath) =>
+                copyFile(sourcePath, temporaryPath),
+            );
+        }
+
+        let removedLegacyVariant = false;
+
+        for (const legacyPath of [thumbnailPath, fullPath]) {
+            if (await canAccess(legacyPath)) {
+                await rm(legacyPath);
+                removedLegacyVariant = true;
+            }
+        }
+
+        return generateOutput || removedLegacyVariant;
+    }
+
     const sourceMetadata = await sharp(sourcePath).metadata();
 
     if (!sourceMetadata.width || !sourceMetadata.height) {
@@ -353,6 +401,15 @@ const main = async () => {
         ? await readFile(cachePath, "utf8")
         : "";
     const counters = { processed: 0, skipped: 0, failed: 0 };
+    const directWebpOutputs = new Set(
+        sourceFiles
+            .filter(isWebpPath)
+            .map((sourcePath) =>
+                normalizePath(
+                    path.relative(sourceRoot, sourcePath),
+                ).toLowerCase(),
+            ),
+    );
 
     for (const sourcePath of sourceFiles) {
         const relativePath = normalizePath(
@@ -365,6 +422,21 @@ const main = async () => {
         if (!rule) {
             counters.failed += 1;
             console.error(`[failed] No image rule matches: ${relativePath}`);
+            continue;
+        }
+
+        const parsedPath = path.parse(relativePath);
+        const singleOutputPath = normalizePath(
+            path.join(parsedPath.dir, `${parsedPath.name}.webp`),
+        ).toLowerCase();
+
+        if (
+            !isWebpPath(sourcePath) &&
+            rule.mode === "single" &&
+            directWebpOutputs.has(singleOutputPath)
+        ) {
+            delete cache.images[relativePath];
+            counters.skipped += 1;
             continue;
         }
 

@@ -1,7 +1,7 @@
 @use "../../base/variables" as *;
 
 @media (max-width: 899px) {
-    .story-reader-modal {
+    .about-panel-lightbox.story-reader-modal {
         box-sizing: border-box;
         align-items: stretch;
         justify-items: center;
@@ -25,13 +25,14 @@
         }
     }
 
-    .story-reader-modal__frame {
+    .story-reader-modal > .story-reader-modal__frame {
         width: 100%;
         min-width: 0;
         max-width: 42rem;
         height: auto;
         min-height: 0;
         max-height: none;
+        display: block;
         align-self: stretch;
         padding: 4px;
         border-radius: 1.15rem;

@@ -19,9 +19,10 @@ const HOVER_FOLD = 60;
 const HOVER_DURATION_MS = 340;
 const PEEL_DURATION_MS = 1380;
 const RETURN_DURATION_MS = 1380;
-const ONBOARDING_DELAY_MS = 10_000;
+const REMINDER_DELAY_MS = 10_000;
 const ONBOARDING_REPEAT_DELAY_MS = 8_000;
 const ONBOARDING_DURATION_MS = 2500;
+const BACKGROUND_PREPARE_DELAY_MS = 1500;
 
 const easeInOutCubic = (value) =>
     value < 0.5 ? 4 * value ** 3 : 1 - (-2 * value + 2) ** 3 / 2;
@@ -31,6 +32,7 @@ const easeOutCubic = (value) => 1 - (1 - value) ** 3;
 const PortfolioReveal = ({
     children,
     isBuildStoryOpen,
+    isReminderEnabled,
     onBuildStoryOpen,
     onBuildStoryClose,
 }) => {
@@ -57,23 +59,37 @@ const PortfolioReveal = ({
     const [isOpen, setIsOpen] = useState(false);
     const [isReturning, setIsReturning] = useState(false);
     const [isOnboarding, setIsOnboarding] = useState(false);
-    const [hasOpenedBuildStory, setHasOpenedBuildStory] = useState(false);
+    const [hasMountedBuildStory, setHasMountedBuildStory] = useState(false);
+    const [shouldLoadBuildStoryImages, setShouldLoadBuildStoryImages] =
+        useState(isBuildStoryOpen);
 
     const renderPosition = useCallback((position, clipTop = true) => {
         const { width, height } = dimensionsRef.current;
-        if (!width || !height) return;
+        if (!width || !height) return false;
+
+        const topElement = topRef.current;
+        const underElement = underRef.current;
+        const backElement = backRef.current;
+        const creaseElement = creaseRef.current;
+
+        // A queued animation frame can run after React has detached these refs.
+        if (!topElement || !underElement || !backElement || !creaseElement) {
+            return false;
+        }
 
         const geometry = getPageTurnGeometry(width, height, position);
-        topRef.current.style.clipPath = clipTop ? geometry.topClip : "none";
-        underRef.current.style.clipPath = clipTop
+        topElement.style.clipPath = clipTop ? geometry.topClip : "none";
+        underElement.style.clipPath = clipTop
             ? "polygon(0 0, 0 0, 0 0)"
             : geometry.underClip;
-        backRef.current.style.clipPath = geometry.backClip;
-        backRef.current.style.transform = geometry.backTransform;
-        creaseRef.current.style.height = `${geometry.creaseLength}px`;
-        creaseRef.current.style.transform =
+        backElement.style.clipPath = geometry.backClip;
+        backElement.style.transform = geometry.backTransform;
+        creaseElement.style.height = `${geometry.creaseLength}px`;
+        creaseElement.style.transform =
             `translate(${geometry.creaseX}px, ${geometry.creaseY}px) ` +
             `rotate(${geometry.creaseAngle}deg) translate(-120%, -50%)`;
+
+        return true;
     }, []);
 
     const renderProgress = useCallback(
@@ -129,10 +145,15 @@ const PortfolioReveal = ({
                 const { width, height } = dimensionsRef.current;
 
                 foldRef.current = distance;
-                renderPosition(
+                const didRender = renderPosition(
                     { x: width - distance, y: height - distance },
                     Math.abs(distance - DEFAULT_FOLD) > 0.1,
                 );
+
+                if (!didRender) {
+                    foldAnimationFrameRef.current = null;
+                    return;
+                }
 
                 if (elapsed < 1) {
                     foldAnimationFrameRef.current = requestAnimationFrame(tick);
@@ -169,7 +190,7 @@ const PortfolioReveal = ({
         if (isOpenRef.current || isAnimatingRef.current) return;
 
         // Mount the underneath page before the first visible turn frame.
-        flushSync(() => setHasOpenedBuildStory(true));
+        flushSync(() => setHasMountedBuildStory(true));
         setIsReturning(false);
         buildStoryRef.current?.scrollTo({ top: 0 });
         triggerRef.current.hidden = true;
@@ -307,6 +328,7 @@ const PortfolioReveal = ({
 
         const syncBuildStory = async () => {
             if (isBuildStoryOpen) {
+                setShouldLoadBuildStoryImages(true);
                 await loadHowItWasBuilt();
                 if (isCancelled) return;
 
@@ -326,9 +348,57 @@ const PortfolioReveal = ({
     }, [closePage, isBuildStoryOpen, openPage]);
 
     useEffect(() => {
+        if (!isReminderEnabled || hasMountedBuildStory) return undefined;
+
+        let isDisposed = false;
+        let prepareDelay;
+        let idleCallback;
+
+        const prepareBuildStory = () => {
+            void loadHowItWasBuilt().then(() => {
+                if (!isDisposed) setHasMountedBuildStory(true);
+            });
+        };
+
+        const scheduleIdlePreparation = () => {
+            prepareDelay = window.setTimeout(() => {
+                if ("requestIdleCallback" in window) {
+                    idleCallback = window.requestIdleCallback(
+                        prepareBuildStory,
+                        { timeout: 3000 },
+                    );
+                    return;
+                }
+
+                prepareBuildStory();
+            }, BACKGROUND_PREPARE_DELAY_MS);
+        };
+
+        if (document.readyState === "complete") {
+            scheduleIdlePreparation();
+        } else {
+            window.addEventListener("load", scheduleIdlePreparation, {
+                once: true,
+            });
+        }
+
+        return () => {
+            isDisposed = true;
+            window.removeEventListener("load", scheduleIdlePreparation);
+            window.clearTimeout(prepareDelay);
+
+            if (idleCallback !== undefined) {
+                window.cancelIdleCallback(idleCallback);
+            }
+        };
+    }, [hasMountedBuildStory, isReminderEnabled]);
+
+    useEffect(() => {
+        if (!isReminderEnabled) return undefined;
+
         let isDisposed = false;
 
-        const scheduleOnboarding = (delay = ONBOARDING_DELAY_MS) => {
+        const scheduleOnboarding = (delay = REMINDER_DELAY_MS) => {
             onboardingDelayRef.current = window.setTimeout(() => {
                 if (
                     isDisposed ||
@@ -362,7 +432,7 @@ const PortfolioReveal = ({
             clearTimeout(onboardingDelayRef.current);
             clearTimeout(onboardingEndRef.current);
         };
-    }, [animateFoldTo]);
+    }, [animateFoldTo, isReminderEnabled]);
 
     const isStoryActive = isOpen && !isReturning;
 
@@ -374,11 +444,12 @@ const PortfolioReveal = ({
                     aria-hidden={!isStoryActive}
                     inert={isStoryActive ? undefined : true}
                 >
-                    {hasOpenedBuildStory && (
+                    {hasMountedBuildStory && (
                         <Suspense fallback={null}>
                             <HowItWasBuilt
                                 ref={buildStoryRef}
                                 isActive={isStoryActive}
+                                shouldLoadImages={shouldLoadBuildStoryImages}
                                 returnButtonRef={returnButtonRef}
                                 onReturn={onBuildStoryClose}
                             />

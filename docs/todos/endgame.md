@@ -31,6 +31,8 @@
 
 - [ ] do super dooper checking with agents for project structure and code quality at the end of the project
 
+- [ ] Maybe create a new library for the new image creation pipeline and use it in project?
+
 - [ ] pad your back, ali you created something really cool and useful for your future. proud of you me in past and future :D
 
 - [ ] Maybe add a Telegram bot to send me message with status data?

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { lazy, Suspense, useRef, useState } from "react";
 import {
     FaArrowUpRightFromSquare,
     FaBookOpen,
@@ -13,8 +13,9 @@ import {
 } from "react-icons/fa6";
 
 import LightboxImage from "../../ui/LightboxImage";
-import StoryReaderModal from "./StoryReaderModal";
 import { trackUmamiEvent } from "../../../utils/analytics";
+
+const StoryReaderModal = lazy(() => import("./StoryReaderModal"));
 
 const sectionIcons = {
     description: FaFileLines,
@@ -251,19 +252,21 @@ const ProjectStory = ({
             </button>
 
             {isReaderOpen && (
-                <StoryReaderModal
-                    initialLanguage={isFarsi ? "FA" : "EN"}
-                    isImpactStory={isImpactStory}
-                    language={onLanguageChange ? activeLanguage : undefined}
-                    onClose={() => setIsReaderOpen(false)}
-                    onLanguageChange={onLanguageChange}
-                    returnFocusRef={readerTriggerRef}
-                    storyEN={storyEN}
-                    storyFA={storyFA}
-                    storySource={storySource}
-                    storyType={storyType}
-                    title={subjectTitle}
-                />
+                <Suspense fallback={null}>
+                    <StoryReaderModal
+                        initialLanguage={isFarsi ? "FA" : "EN"}
+                        isImpactStory={isImpactStory}
+                        language={onLanguageChange ? activeLanguage : undefined}
+                        onClose={() => setIsReaderOpen(false)}
+                        onLanguageChange={onLanguageChange}
+                        returnFocusRef={readerTriggerRef}
+                        storyEN={storyEN}
+                        storyFA={storyFA}
+                        storySource={storySource}
+                        storyType={storyType}
+                        title={subjectTitle}
+                    />
+                </Suspense>
             )}
         </section>
     );
