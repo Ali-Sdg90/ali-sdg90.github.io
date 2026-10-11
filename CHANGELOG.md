@@ -1,3 +1,10 @@
+## [1.36.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.36.0...v1.36.1) (2026-10-11)
+
+
+### Bug Fixes
+
+* fix lazy loading problem in story modal and hmpwb in desktop view, use lighter images to readme and mobile view and update generator-script of it, update todos ([cea44a7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/cea44a760640e55fbb0e7fa8ddca5f81230b9fcd))
+
 # [1.36.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.35.9...v1.36.0) (2026-10-10)
 
 
