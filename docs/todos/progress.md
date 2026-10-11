@@ -87,7 +87,7 @@
 - [x] Add Website for fabrexa ai ollama repo
 
 - [x] finalize the repos readme that are mentioned in the projects section
-    - [x] ~~rps-battle-royale~~
+    - [x] ~~rps-battle-royal~~
     - [x] ~~portfolio~~
     - [x] spot tracker
     - [x] fabrexa-ollama
@@ -251,3 +251,13 @@
     - [x] Can be run via command and automatic on build
     - [ ] Remove the temporary docs after the pipeline is set up and working
     - [ ] Fix images in hmpwb
+
+- [ ] Maybe lower the resolution of the cards in shelf to fix the flashing lines?
+
+- [ ] Add impacts.txt in llms folder!
+
+- [ ] Update and finalize the llms.txt and llms folder content
+
+- [ ] Learn about CSR and SSG methods
+
+- [ ] Research [CSR and crawler accessibility](../misc/csr-crawler-accessibility.md)
