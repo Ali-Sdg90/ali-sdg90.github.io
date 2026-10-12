@@ -1,0 +1,1 @@
+var e=`/assets/emoji-signature-DtJBpAk-.webp`;export{e as t};
