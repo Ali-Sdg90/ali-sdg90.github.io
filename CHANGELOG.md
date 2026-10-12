@@ -1,3 +1,10 @@
+# [1.38.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.37.0...v1.38.0) (2026-10-12)
+
+
+### Features
+
+* add pageNotFound for my github network and updated todos ([6d3aadc](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/6d3aadc16eb7ef7bba4fc1ff51ad131ec71856f0))
+
 # [1.37.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.36.1...v1.37.0) (2026-10-12)
 
 
