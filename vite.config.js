@@ -10,6 +10,7 @@ export default defineConfig({
             input: {
                 portfolio: "index.html",
                 links: "links/index.html",
+                notFound: "404.html",
             },
         },
     },

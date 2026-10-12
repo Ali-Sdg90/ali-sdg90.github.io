@@ -46,9 +46,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Add SPA 404 fallback
-        run: cp dist/index.html dist/404.html
-
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
@@ -82,9 +79,6 @@ jobs:
         run: npm run build
         env:
           VITE_BASE: /pr-preview/pr-${{ github.event.number }}/
-
-      - name: Add SPA 404 fallback
-        run: cp dist/index.html dist/404.html
 
       - name: Deploy PR preview to gh-pages
         uses: peaceiris/actions-gh-pages@v4

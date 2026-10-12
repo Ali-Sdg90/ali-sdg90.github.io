@@ -143,6 +143,14 @@
 
 - [x] Check if can move the fist part of intro in desktop view a bit higher
 
+- [x] ~~Maybe record a video for the "How this site created" page?~~
+
+- [x] Add Link-Tree url link and feature
+
+- [x] Add 404 page for my url network that can redirect to portfolio or my github page
+
+- [x] Fix https://ali-sdg.is-a.dev/mlk-monthly-report-generator/#shelf url address
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -154,8 +162,6 @@
     - [ ] Add CSI YouTube video link in the resume
     - [ ] Add hash link to my career and projects in my resume.pdf file
 
-- [ ] Add Link-Tree url link and feature
-
 - [ ] Update galleries
     - [ ] Melkradar - mlk monthly report generator and one more
     - [ ] Portfolio - 3 more images
@@ -166,8 +172,6 @@
 - [ ] Add remaining hmpwb cards
 
 - [ ] Make all labels and link description use impacts template (especially for the featured projects section)
-
-- [ ] Add 404 page for my url network that can redirect to portfolio or my github page
 
 - [ ] Research my rules in mlk in my freelance era, and what should i add to my portfolio and resume.pdf and linkedin for it
 
@@ -183,10 +187,6 @@
     - [ ] Stackoverflow?
 
 - [ ] Remove unnecessary slides in history class
-
-- [ ] Maybe record a video for the "How this site created" page?
-
-- [ ] Fix https://ali-sdg.is-a.dev/mlk-monthly-report-generator/#shelf url address
 
 - [ ] Fix text overflow in stories in about section
 
