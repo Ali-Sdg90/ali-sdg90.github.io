@@ -261,3 +261,5 @@
 - [ ] Learn about CSR and SSG methods
 
 - [ ] Research [CSR and crawler accessibility](../misc/csr-crawler-accessibility.md)
+
+- [ ] Research indexing the URLs into Google Search Console
