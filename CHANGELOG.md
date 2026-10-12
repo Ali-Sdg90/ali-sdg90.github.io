@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.36.1...v1.37.0) (2026-10-12)
+
+
+### Features
+
+* add project link-tree page ([8b03adb](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/8b03adb55ba8de249f8581ee5f6583fae29395d1))
+
 ## [1.36.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.36.0...v1.36.1) (2026-10-11)
 
 
