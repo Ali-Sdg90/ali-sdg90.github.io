@@ -1,3 +1,10 @@
+## [1.39.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.0...v1.39.1) (2026-10-13)
+
+
+### Bug Fixes
+
+* update and finalize all gallery images in the project, except portfolio gallery ([34ae50e](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/34ae50e666cb616cabc3750a2777755933e1c0c5))
+
 # [1.39.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.38.0...v1.39.0) (2026-10-13)
 
 
