@@ -151,6 +151,8 @@
 
 - [x] Fix https://ali-sdg.is-a.dev/mlk-monthly-report-generator/#shelf url address
 
+- [x] ~~Maybe Add 3 more images for fabrexa~~
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -163,11 +165,11 @@
     - [ ] Add hash link to my career and projects in my resume.pdf file
 
 - [ ] Update galleries
-    - [ ] Melkradar - mlk monthly report generator and one more
+    - [x] Melkradar - mlk monthly report generator and one more
     - [ ] Portfolio - 3 more images
-    - [ ] CSI - CS Queue Calender
-    - [ ] CS Queue Calender github?
-    - [ ] New Fabrexa images - ?? research what to add
+    - [x] CSI - CS Queue Calender
+    - [x] CS Queue Calender github?
+    - [x] New Fabrexa images - ?? research what to add
 
 - [ ] Add remaining hmpwb cards
 
@@ -191,8 +193,6 @@
 - [ ] Fix text overflow in stories in about section
 
 - [ ] Maybe move fabrexa one up
-
-- [ ] Maybe Add 3 more images for fabrexa
 
 - [ ] Add "more about ali" section :)
 
@@ -263,3 +263,5 @@
 - [ ] Research [CSR and crawler accessibility](../misc/csr-crawler-accessibility.md)
 
 - [ ] Research indexing the URLs into Google Search Console
+
+- [ ] Add MLK Report Generator desc in melkradar career card and story

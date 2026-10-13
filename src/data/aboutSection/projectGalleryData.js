@@ -68,11 +68,11 @@ import queueCalendarImage2 from "../../assets/images/projects/cs-queue-calendar/
 import queueCalendarImage3 from "../../assets/images/career/cs-internship/gallery/queue-page.full.webp";
 
 import clubBotThumbnail1 from "../../assets/images/career/cs-internship/gallery/club-bot1.thumb.webp";
-import clubBotThumbnail2 from "../../assets/images/career/cs-internship/gallery/club-bot2.thumb.webp";
 import clubBotThumbnail3 from "../../assets/images/projects/cs-club-bot/gallery/img3.thumb.webp";
+import clubBotThumbnail4 from "../../assets/images/projects/cs-club-bot/gallery/img4.thumb.webp";
 import clubBotImage1 from "../../assets/images/career/cs-internship/gallery/club-bot1.full.webp";
-import clubBotImage2 from "../../assets/images/career/cs-internship/gallery/club-bot2.full.webp";
 import clubBotImage3 from "../../assets/images/projects/cs-club-bot/gallery/img3.full.webp";
+import clubBotImage4 from "../../assets/images/projects/cs-club-bot/gallery/img4.full.webp";
 
 import queueBotThumbnail1 from "../../assets/images/career/cs-internship/gallery/queue-bot1.thumb.webp";
 import queueBotThumbnail2 from "../../assets/images/projects/cs-queue-bot/gallery/img1.thumb.webp";
@@ -155,9 +155,11 @@ export const projectGalleryImages = {
         galleryImage(
             healthDataRelayThumbnail5,
             healthDataRelayImage5,
-            "Health Data Relay GitHub repository",
-            1919,
-            1079,
+            "Health Data Relay v1.7.0 GitHub release and downloadable assets",
+            285,
+            232,
+            1168,
+            889,
         ),
         galleryImage(
             healthDataRelayThumbnail6,
@@ -233,9 +235,11 @@ export const projectGalleryImages = {
         galleryImage(
             queueCalendarThumbnail1,
             queueCalendarImage1,
-            "CS Queue Calendar schedule overview",
-            2559,
-            1599,
+            "Successful CS Queue Calendar CI/CD workflow run on GitHub Actions",
+            285,
+            232,
+            2538,
+            1064,
         ),
     ],
     "cs-club-bot": [
@@ -256,13 +260,13 @@ export const projectGalleryImages = {
             1979,
         ),
         galleryImage(
-            clubBotThumbnail2,
-            clubBotImage2,
-            "CS Club Bot workflow overview",
-            640,
-            400,
-            2559,
-            1599,
+            clubBotThumbnail4,
+            clubBotImage4,
+            "CS Club Bot Telegram user records and roles in Notion",
+            285,
+            232,
+            2123,
+            1265,
         ),
     ],
     "cs-queue-bot": [
@@ -317,7 +321,9 @@ export const projectGalleryImages = {
         galleryImage(
             quickMathThumbnail1,
             quickMathImage1,
-            "Quick Math rotating cube game interface",
+            "Quick Math rotating 3D cube game interface",
+            285,
+            232,
             1920,
             1080,
         ),
@@ -331,9 +337,11 @@ export const projectGalleryImages = {
         galleryImage(
             quickMathThumbnail3,
             quickMathImage3,
-            "Quick Math repository and project documentation",
-            1919,
-            904,
+            "Quick Math game running alongside its code in JSFiddle",
+            285,
+            232,
+            1918,
+            1078,
         ),
     ],
     "tic-tac-toe": [

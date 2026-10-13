@@ -3,11 +3,11 @@ import dpaLogoLarge from "../../assets/images/career/dadeh-pardazi-azmoudeh-kara
 import melkRadarLogoLarge from "../../assets/images/career/melk-radar/cover.full.webp";
 import settleitGptLogoLarge from "../../assets/images/career/settleit-gpt/cover.full.webp";
 import csiClubBot1Large from "../../assets/images/career/cs-internship/gallery/club-bot1.full.webp";
-import csiClubBot2Large from "../../assets/images/career/cs-internship/gallery/club-bot2.full.webp";
 import csiContributionLarge from "../../assets/images/career/cs-internship/gallery/conterbution.full.webp";
 import csiFlowChartsLarge from "../../assets/images/career/cs-internship/gallery/flow-charts.full.webp";
 import csiQueueBot1Large from "../../assets/images/career/cs-internship/gallery/queue-bot1.full.webp";
 import csiQueuePageLarge from "../../assets/images/career/cs-internship/gallery/queue-page.full.webp";
+import csiQueueBotRepositoryLarge from "../../assets/images/projects/cs-queue-bot/gallery/img1.full.webp";
 import dpaPage1Large from "../../assets/images/career/dadeh-pardazi-azmoudeh-karan/gallery/page1.full.webp";
 import dpaPage2Large from "../../assets/images/career/dadeh-pardazi-azmoudeh-karan/gallery/page2.full.webp";
 import dpaPage3Large from "../../assets/images/career/dadeh-pardazi-azmoudeh-karan/gallery/page3.full.webp";
@@ -18,12 +18,14 @@ import melkRadarChartsLarge from "../../assets/images/career/melk-radar/gallery/
 import melkRadarDesignLarge from "../../assets/images/career/melk-radar/gallery/desing.full.webp";
 import melkRadarKhodroRadarLarge from "../../assets/images/career/melk-radar/gallery/khd.full.webp";
 import melkRadarMapboxLarge from "../../assets/images/career/melk-radar/gallery/mapbox.full.webp";
+import melkRadarReportGeneratorLarge from "../../assets/images/career/melk-radar/gallery/report-generator.full.webp";
+import melkRadarReportPostLarge from "../../assets/images/career/melk-radar/gallery/report-post.full.webp";
 import csiClubBot1Small from "../../assets/images/career/cs-internship/gallery/club-bot1.thumb.webp";
-import csiClubBot2Small from "../../assets/images/career/cs-internship/gallery/club-bot2.thumb.webp";
 import csiContributionSmall from "../../assets/images/career/cs-internship/gallery/conterbution.thumb.webp";
 import csiFlowChartsSmall from "../../assets/images/career/cs-internship/gallery/flow-charts.thumb.webp";
 import csiQueueBot1Small from "../../assets/images/career/cs-internship/gallery/queue-bot1.thumb.webp";
 import csiQueuePageSmall from "../../assets/images/career/cs-internship/gallery/queue-page.thumb.webp";
+import csiQueueBotRepositorySmall from "../../assets/images/projects/cs-queue-bot/gallery/img1.thumb.webp";
 import dpaPage1Small from "../../assets/images/career/dadeh-pardazi-azmoudeh-karan/gallery/page1.thumb.webp";
 import dpaPage2Small from "../../assets/images/career/dadeh-pardazi-azmoudeh-karan/gallery/page2.thumb.webp";
 import dpaPage3Small from "../../assets/images/career/dadeh-pardazi-azmoudeh-karan/gallery/page3.thumb.webp";
@@ -34,6 +36,8 @@ import melkRadarChartsSmall from "../../assets/images/career/melk-radar/gallery/
 import melkRadarDesignSmall from "../../assets/images/career/melk-radar/gallery/desing.thumb.webp";
 import melkRadarKhodroRadarSmall from "../../assets/images/career/melk-radar/gallery/khd.thumb.webp";
 import melkRadarMapboxSmall from "../../assets/images/career/melk-radar/gallery/mapbox.thumb.webp";
+import melkRadarReportGeneratorSmall from "../../assets/images/career/melk-radar/gallery/report-generator.thumb.webp";
+import melkRadarReportPostSmall from "../../assets/images/career/melk-radar/gallery/report-post.thumb.webp";
 
 import careerCsInternshipStoryEN from "../stories/en/career/cs-internship.md?raw";
 import careerCsInternshipStoryFA from "../stories/fa/career/cs-internship.md?raw";
@@ -44,8 +48,6 @@ import careerDadehPardaziAzmoudehKaranStoryFA from "../stories/fa/career/dadeh-p
 import careerSettleitgptStoryEN from "../stories/en/career/settleitgpt.md?raw";
 import careerSettleitgptStoryFA from "../stories/fa/career/settleitgpt.md?raw";
 
-import placeholderImage from "../../assets/images/ui/placeholder.webp";
-
 const galleryImage = (
     src,
     lightboxSrc,
@@ -53,6 +55,7 @@ const galleryImage = (
     height,
     lightboxWidth,
     lightboxHeight,
+    alt,
 ) => ({
     src,
     lightboxSrc,
@@ -60,6 +63,7 @@ const galleryImage = (
     height,
     lightboxWidth,
     lightboxHeight,
+    alt,
 });
 
 const csiClubBot1 = galleryImage(
@@ -70,13 +74,14 @@ const csiClubBot1 = galleryImage(
     864,
     1633,
 );
-const csiClubBot2 = galleryImage(
-    csiClubBot2Small,
-    csiClubBot2Large,
-    640,
-    400,
-    2559,
-    1599,
+const csiQueueBotRepository = galleryImage(
+    csiQueueBotRepositorySmall,
+    csiQueueBotRepositoryLarge,
+    285,
+    232,
+    1919,
+    1079,
+    "CS Queue Bot GitHub repository",
 );
 const csiContribution = galleryImage(
     csiContributionSmall,
@@ -194,6 +199,24 @@ const melkRadarMapbox = galleryImage(
     1918,
     904,
 );
+const melkRadarReportGenerator = galleryImage(
+    melkRadarReportGeneratorSmall,
+    melkRadarReportGeneratorLarge,
+    285,
+    232,
+    1919,
+    1079,
+    "MLK Monthly Report Generator report preview interface",
+);
+const melkRadarReportPost = galleryImage(
+    melkRadarReportPostSmall,
+    melkRadarReportPostLarge,
+    285,
+    232,
+    1220,
+    2712,
+    "MelkRadar Instagram post presenting the monthly housing market report",
+);
 // const melkRadarDvrReceiverApp = galleryImage(
 //     melkRadarDvrReceiverAppSmall,
 //     melkRadarDvrReceiverAppLarge,
@@ -237,7 +260,7 @@ export const aboutCareerData = {
         ],
         galleryColumns: 3,
         galleryImages: [
-            csiClubBot2,
+            csiQueueBotRepository,
             csiContribution,
             csiFlowCharts,
             csiQueueBot1,
@@ -317,8 +340,8 @@ export const aboutCareerData = {
             melkRadarCharts,
             melkRadarDesign,
             melkRadarKhodroRadar,
-            placeholderImage,
-            placeholderImage,
+            melkRadarReportGenerator,
+            melkRadarReportPost,
         ],
         storyTitle: "Story",
         storyEN: careerMelkradarStoryEN.trim(),
