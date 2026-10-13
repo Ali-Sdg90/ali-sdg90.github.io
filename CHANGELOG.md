@@ -1,3 +1,10 @@
+## [1.39.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.1...v1.39.2) (2026-10-13)
+
+
+### Bug Fixes
+
+* update order of featured projects and finalize text in desktop tip in mobile view, update todos ([0922fb2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/0922fb254301e262c97976373bbc98075d7b5c53))
+
 ## [1.39.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.0...v1.39.1) (2026-10-13)
 
 
