@@ -1,3 +1,10 @@
+# [1.39.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.38.0...v1.39.0) (2026-10-13)
+
+
+### Features
+
+* add 9 more tech stack stories and organize story content to use md for reading stories ([da93434](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/da93434aba5e713d20de808fa5820f726720151a))
+
 # [1.38.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.37.0...v1.38.0) (2026-10-12)
 
 
