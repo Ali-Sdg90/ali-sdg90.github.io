@@ -14,10 +14,10 @@ const MobileDesktopPreview = () => (
                     <HiOutlineSparkles aria-hidden="true" /> Desktop-first
                     portfolio
                 </p>
-                <h2 id="desktop-preview-title">Best experienced on desktop</h2>
+                <h2 id="desktop-preview-title">Discover more on desktop</h2>
                 <span>
-                    A larger screen unlocks the interactive shelf, richer
-                    motion, and the full project experience.
+                    Explore the interactive shelf, richer motion, and the
+                    complete project experience on a larger screen.
                 </span>
             </div>
             <div className="mobile-desktop-preview-frame">

@@ -153,6 +153,37 @@
 
 - [x] ~~Maybe Add 3 more images for fabrexa~~
 
+- [x] Finalize the Mobile View
+    - [x] Fix hero spacing and pace
+    - [x] Use better version of showing my socials
+    - [x] Improve text in Desktop view section
+    - [x] use image in Desktop view that don't have wip badge
+    - [x] Re-oder the Impacts sections cards
+    - [x] Check if the cards in Impacts section could be smaller
+    - [x] Check if can make mini-icons in Impacts section cards bigger
+    - [x] Check if can make the cards in tech stack bigger
+    - [x] Improve career journey card padding, use better arrow icon and extends the left line
+    - [x] Check if can make the footer smaller
+    - [x] Check what can i do for lighthouse image preview in mobile view
+    - [x] Fix font size in loading section of the lighthouse
+    - [x] Add missing images to use lighthouse in mobile view
+    - [x] Fix spacing on top of the bottom-sheet in mobile view and remove that extra line on top
+    - [x] remove en-fa version in the mobile view and replace it with regular desktop version
+    - [x] Fix spacing in story modal and position of the close btn in mobile view
+    - [x] Fix spacing between labels and meta for sections
+    - [x] Maybe add click color change for header items?
+    - [x] fix pacing and spacing in the how-my-portfolio-was-built section
+    - [x] Check lighthouse and memory usage for the site in mobile view
+    - [x] Use better icons or indicators for buttons in the hero section
+    - [x] Fix spacing in the about me section
+    - [x] Use better style for badges in about me section
+    - [x] Maybe add collapsible ali's image in about me section?
+    - [x] Check wording in the how-my-portfolio-was-built section
+    - [x] Check what happen when using pre-loaded url and viewing the site in mobile view
+    - [x] Get AI feedback for the view and finalize it
+
+- [x] Maybe move fabrexa one up
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -192,38 +223,7 @@
 
 - [ ] Fix text overflow in stories in about section
 
-- [ ] Maybe move fabrexa one up
-
 - [ ] Add "more about ali" section :)
-
-- [ ] Finalize the Mobile View
-    - [x] Fix hero spacing and pace
-    - [x] Use better version of showing my socials
-    - [x] Improve text in Desktop view section
-    - [ ] use image in Desktop view that don't have wip badge
-    - [x] Re-oder the Impacts sections cards
-    - [x] Check if the cards in Impacts section could be smaller
-    - [x] Check if can make mini-icons in Impacts section cards bigger
-    - [x] Check if can make the cards in tech stack bigger
-    - [x] Improve career journey card padding, use better arrow icon and extends the left line
-    - [x] Check if can make the footer smaller
-    - [x] Check what can i do for lighthouse image preview in mobile view
-    - [x] Fix font size in loading section of the lighthouse
-    - [x] Add missing images to use lighthouse in mobile view
-    - [x] Fix spacing on top of the bottom-sheet in mobile view and remove that extra line on top
-    - [x] remove en-fa version in the mobile view and replace it with regular desktop version
-    - [x] Fix spacing in story modal and position of the close btn in mobile view
-    - [x] Fix spacing between labels and meta for sections
-    - [x] Maybe add click color change for header items?
-    - [ ] fix pacing and spacing in the how-my-portfolio-was-built section
-    - [x] Check lighthouse and memory usage for the site in mobile view
-    - [x] Use better icons or indicators for buttons in the hero section
-    - [x] Fix spacing in the about me section
-    - [x] Use better style for badges in about me section
-    - [x] Maybe add collapsible ali's image in about me section?
-    - [ ] Check wording in the how-my-portfolio-was-built section
-    - [x] Check what happen when using pre-loaded url and viewing the site in mobile view
-    - [ ] Get AI feedback for the view and finalize it
 
 - [ ] Do a ai-check for overcooking the box-shadows
     - [x] part 1
@@ -265,3 +265,7 @@
 - [ ] Research indexing the URLs into Google Search Console
 
 - [ ] Add MLK Report Generator desc in melkradar career card and story
+
+- [ ] Make hmpwb mobile view
+
+- [ ] Finalize Readme
