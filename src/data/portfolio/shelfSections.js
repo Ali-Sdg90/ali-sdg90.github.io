@@ -203,7 +203,6 @@ export const shelfSections = [
                 meta: "iOS app shipped",
                 icon: FaApple,
             },
-
             {
                 id: "pull-requests-reviewed",
                 title: "376+",

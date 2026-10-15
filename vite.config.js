@@ -9,6 +9,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 portfolio: "index.html",
+                buildStory: "how-i-built-my-portfolio/index.html",
                 links: "links/index.html",
                 notFound: "404.html",
             },

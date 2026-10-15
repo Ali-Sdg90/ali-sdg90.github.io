@@ -3,7 +3,7 @@ import { shelfSections } from "../../data/portfolio/shelfSections";
 import { getShelfItemId } from "../../utils/getShelfItemId";
 
 export const RESUME_URL = "/resume/ali-sadeghi-resume-en.pdf";
-export const CARD_INSTRUCTION = "Tap a card to view its details.";
+export const CARD_INSTRUCTION = "Tap a card to explore its details.";
 
 export const NAV_ITEMS = [
     { id: "mobile-projects", label: "Projects" },

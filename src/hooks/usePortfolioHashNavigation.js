@@ -2,8 +2,13 @@ import { useCallback, useEffect, useState } from "react";
 
 import { shelfSections } from "../data/portfolio/shelfSections";
 import { getShelfItemId } from "../utils/getShelfItemId";
+import {
+    buildStoryPath,
+    isBuildStoryPath,
+    portfolioHomePath,
+} from "../utils/portfolioRoutes";
 
-const SHELF_HASH = "shelf";
+const LEGACY_SHELF_HASH = "shelf";
 const BUILD_STORY_HASH = "how-i-built-my-portfolio";
 
 const shelfItemsById = new Map(
@@ -28,21 +33,44 @@ const readHash = () => {
     }
 };
 
+const withCurrentSearch = (path) => `${path}${window.location.search}`;
+
 const resolveNavigation = () => {
     const hash = readHash();
 
-    // This is the only temporary Intro-page decision. When Intro is ready,
-    // an empty hash can resolve to that view instead of replacing it here.
-    if (!hash) {
-        return { ...shelfNavigation, replacementHash: SHELF_HASH };
+    if (isBuildStoryPath(window.location.pathname)) {
+        return {
+            view: "build-story",
+            selectedShelfItem: null,
+            replacementUrl:
+                window.location.pathname === buildStoryPath && !hash
+                    ? null
+                    : withCurrentSearch(buildStoryPath),
+        };
     }
 
-    if (hash === SHELF_HASH) return shelfNavigation;
+    if (!hash) {
+        return {
+            ...shelfNavigation,
+            replacementUrl:
+                window.location.pathname === portfolioHomePath
+                    ? null
+                    : withCurrentSearch(portfolioHomePath),
+        };
+    }
+
+    if (hash === LEGACY_SHELF_HASH) {
+        return {
+            ...shelfNavigation,
+            replacementUrl: withCurrentSearch(portfolioHomePath),
+        };
+    }
 
     if (hash === BUILD_STORY_HASH) {
         return {
             view: "build-story",
             selectedShelfItem: null,
+            replacementUrl: withCurrentSearch(buildStoryPath),
         };
     }
 
@@ -55,7 +83,16 @@ const resolveNavigation = () => {
         };
     }
 
-    return { ...shelfNavigation, replacementHash: SHELF_HASH };
+    return {
+        ...shelfNavigation,
+        replacementUrl: withCurrentSearch(portfolioHomePath),
+    };
+};
+
+const replaceNavigationUrl = (replacementUrl) => {
+    if (!replacementUrl) return;
+
+    window.history.replaceState(window.history.state, "", replacementUrl);
 };
 
 const usePortfolioHashNavigation = () => {
@@ -64,13 +101,7 @@ const usePortfolioHashNavigation = () => {
     const syncNavigation = useCallback(() => {
         const nextNavigation = resolveNavigation();
 
-        if (nextNavigation.replacementHash) {
-            window.history.replaceState(
-                window.history.state,
-                "",
-                `#${nextNavigation.replacementHash}`,
-            );
-        }
+        replaceNavigationUrl(nextNavigation.replacementUrl);
 
         setNavigation((currentNavigation) => ({
             view: nextNavigation.view,
@@ -84,13 +115,7 @@ const usePortfolioHashNavigation = () => {
     useEffect(() => {
         const initialNavigation = resolveNavigation();
 
-        if (initialNavigation.replacementHash) {
-            window.history.replaceState(
-                window.history.state,
-                "",
-                `#${initialNavigation.replacementHash}`,
-            );
-        }
+        replaceNavigationUrl(initialNavigation.replacementUrl);
 
         window.addEventListener("hashchange", syncNavigation);
         window.addEventListener("popstate", syncNavigation);
@@ -101,14 +126,16 @@ const usePortfolioHashNavigation = () => {
         };
     }, [syncNavigation]);
 
-    const navigateToHash = useCallback(
-        (hash) => {
-            if (readHash() === hash) {
+    const navigateToUrl = useCallback(
+        (url) => {
+            const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+
+            if (currentUrl === url) {
                 syncNavigation();
                 return;
             }
 
-            window.history.pushState(window.history.state, "", `#${hash}`);
+            window.history.pushState(window.history.state, "", url);
             syncNavigation();
         },
         [syncNavigation],
@@ -117,16 +144,19 @@ const usePortfolioHashNavigation = () => {
     return {
         ...navigation,
         navigateToShelf: useCallback(
-            () => navigateToHash(SHELF_HASH),
-            [navigateToHash],
+            () => navigateToUrl(withCurrentSearch(portfolioHomePath)),
+            [navigateToUrl],
         ),
         navigateToCard: useCallback(
-            (itemId) => navigateToHash(itemId),
-            [navigateToHash],
+            (itemId) =>
+                navigateToUrl(
+                    `${withCurrentSearch(portfolioHomePath)}#${itemId}`,
+                ),
+            [navigateToUrl],
         ),
         navigateToBuildStory: useCallback(
-            () => navigateToHash(BUILD_STORY_HASH),
-            [navigateToHash],
+            () => navigateToUrl(withCurrentSearch(buildStoryPath)),
+            [navigateToUrl],
         ),
     };
 };

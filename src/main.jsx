@@ -1,12 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
+import { isBuildStoryPath, isPortfolioHomePath } from "./utils/portfolioRoutes";
 
 import "./assets/scss/index.scss";
 
-const basePath = import.meta.env.BASE_URL;
-const portfolioPaths = new Set([basePath, `${basePath}index.html`]);
-const isPortfolioPath = portfolioPaths.has(window.location.pathname);
+const isPortfolioPath =
+    isPortfolioHomePath(window.location.pathname) ||
+    isBuildStoryPath(window.location.pathname);
 const root = createRoot(document.getElementById("root"));
 
 const renderNotFoundPage = async () => {

@@ -1,4 +1,4 @@
-import { lazy, Suspense, useMemo } from "react";
+import { lazy, Suspense, useEffect, useMemo } from "react";
 
 // import MobileWipNotice from "./components/layout/MobileWipNotice";
 import { shelfSections } from "./data/portfolio/shelfSections";
@@ -6,7 +6,7 @@ import useMobileViewport from "./hooks/useMobileViewport";
 import usePortfolioHashNavigation from "./hooks/usePortfolioHashNavigation";
 import { trackUmamiEvent } from "./utils/analytics";
 import { getShelfItemId } from "./utils/getShelfItemId";
-import { setDocumentTitle } from "./utils/setDocumentTitle";
+import { setPageMetadata } from "./utils/setPageMetadata";
 
 const DesktopPortfolio = lazy(
     () => import("./components/DesktopPortfolio/DesktopPortfolio"),
@@ -14,8 +14,6 @@ const DesktopPortfolio = lazy(
 const MobilePortfolio = lazy(
     () => import("./components/MobilePortfolio/MobilePortfolio"),
 );
-
-setDocumentTitle();
 
 const App = () => {
     const {
@@ -26,6 +24,10 @@ const App = () => {
         navigateToBuildStory,
     } = usePortfolioHashNavigation();
     const isMobileViewport = useMobileViewport();
+
+    useEffect(() => {
+        setPageMetadata(view === "build-story");
+    }, [view]);
 
     const selectedShelfItemDetail = useMemo(() => {
         if (!selectedShelfItem) return null;
