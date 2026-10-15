@@ -1,3 +1,10 @@
+## [1.39.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.2...v1.39.3) (2026-10-15)
+
+
+### Bug Fixes
+
+* use separated url link for hmpwb and remove shelf hash in default view ([a30fe43](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/a30fe43f247178cf43cd9dc90d3cbea5ff559d31))
+
 ## [1.39.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.1...v1.39.2) (2026-10-13)
 
 
