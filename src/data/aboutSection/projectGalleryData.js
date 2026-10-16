@@ -1,9 +1,15 @@
 import portfolioThumbnail1 from "../../assets/images/projects/alis-portfolio/gallery/img1.thumb.webp";
 import portfolioThumbnail2 from "../../assets/images/projects/alis-portfolio/gallery/img2.thumb.webp";
 import portfolioThumbnail3 from "../../assets/images/projects/alis-portfolio/gallery/img3.thumb.webp";
+import portfolioThumbnail4 from "../../assets/images/projects/alis-portfolio/gallery/img4.thumb.webp";
+import portfolioThumbnail5 from "../../assets/images/projects/alis-portfolio/gallery/img5.thumb.webp";
+import portfolioThumbnail6 from "../../assets/images/projects/alis-portfolio/gallery/img6.thumb.webp";
 import portfolioImage1 from "../../assets/images/projects/alis-portfolio/gallery/img1.full.webp";
 import portfolioImage2 from "../../assets/images/projects/alis-portfolio/gallery/img2.full.webp";
 import portfolioImage3 from "../../assets/images/projects/alis-portfolio/gallery/img3.full.webp";
+import portfolioImage4 from "../../assets/images/projects/alis-portfolio/gallery/img4.full.webp";
+import portfolioImage5 from "../../assets/images/projects/alis-portfolio/gallery/img5.full.webp";
+import portfolioImage6 from "../../assets/images/projects/alis-portfolio/gallery/img6.full.webp";
 
 import healthDataRelayThumbnail1 from "../../assets/images/projects/health-data-relay/gallery/img1.thumb.webp";
 import healthDataRelayThumbnail2 from "../../assets/images/projects/health-data-relay/gallery/img2.thumb.webp";
@@ -104,23 +110,56 @@ export const projectGalleryImages = {
         galleryImage(
             portfolioThumbnail1,
             portfolioImage1,
-            "Ali's Portfolio interactive shelf overview",
+            "Ali's Portfolio desktop shelf and About Me panel",
+            285,
+            232,
             1919,
-            903,
-        ),
-        galleryImage(
-            portfolioThumbnail3,
-            portfolioImage3,
-            "Ali's Portfolio build story",
-            1919,
-            904,
+            908,
         ),
         galleryImage(
             portfolioThumbnail2,
             portfolioImage2,
-            "Ali's Portfolio project detail experience",
+            "Ali's Portfolio desktop Health Data Relay project details",
+            285,
+            232,
+            1919,
+            909,
+        ),
+        galleryImage(
+            portfolioThumbnail3,
+            portfolioImage3,
+            "Ali's Portfolio bilingual build journal in Persian",
+            285,
+            232,
             1919,
             908,
+        ),
+        galleryImage(
+            portfolioThumbnail4,
+            portfolioImage4,
+            "Ali's Portfolio mobile introduction and desktop preview",
+            285,
+            232,
+            1220,
+            2712,
+        ),
+        galleryImage(
+            portfolioThumbnail5,
+            portfolioImage5,
+            "Ali's Portfolio mobile Health Data Relay project details",
+            285,
+            232,
+            1220,
+            2712,
+        ),
+        galleryImage(
+            portfolioThumbnail6,
+            portfolioImage6,
+            "Ali's Portfolio links page with profile and social links",
+            285,
+            232,
+            787,
+            1078,
         ),
     ],
     "health-data-relay": [

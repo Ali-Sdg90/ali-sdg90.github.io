@@ -184,6 +184,21 @@
 
 - [x] Maybe move fabrexa one up
 
+- [x] Finalize Readme
+
+- [x] Update galleries
+    - [x] Melkradar - mlk monthly report generator and one more
+    - [x] Portfolio - 3 more images
+    - [x] CSI - CS Queue Calender
+    - [x] CS Queue Calender github?
+    - [x] New Fabrexa images - ?? research what to add
+
+- [x] Double check if the featured projects order and items are ok
+
+- [x] Update and finalize the Agent.md
+
+- [x] Add og-image and other header html mates
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -194,13 +209,6 @@
 - [ ] finalize the resume.pdf file
     - [ ] Add CSI YouTube video link in the resume
     - [ ] Add hash link to my career and projects in my resume.pdf file
-
-- [ ] Update galleries
-    - [x] Melkradar - mlk monthly report generator and one more
-    - [ ] Portfolio - 3 more images
-    - [x] CSI - CS Queue Calender
-    - [x] CS Queue Calender github?
-    - [x] New Fabrexa images - ?? research what to add
 
 - [ ] Add remaining hmpwb cards
 
@@ -231,19 +239,13 @@
 
 - [ ] Update the first and third section texts in the hmpwb
 
-- [ ] Double check if the featured projects order and items are ok
-
 - [ ] Check if can change z-index of portfolio-hero for dev-viewing in desktop view
 
 - [ ] Check if can use another route for static.cloudflareinsights.com/beacon.min.js/ ERR_CONNECTION_CLOSED
 
 - [ ] Re-write career stories with the new format of writing the stories
 
-- [ ] Update and finalize the Agent.md
-
 - [ ] Maybe add contributing, pull req and etc files?
-
-- [ ] Add og-image and other header html mates
 
 - [ ] Add general test cases
 
@@ -268,4 +270,4 @@
 
 - [ ] Make hmpwb mobile view
 
-- [ ] Finalize Readme
+- [ ] Update number of slides in hmpwb in llms.txt, readme and project about card

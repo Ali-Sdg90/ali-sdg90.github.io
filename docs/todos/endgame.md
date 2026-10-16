@@ -12,9 +12,9 @@
 
 - [x] Remove the UnderConstructionBadge
 
-- [ ] Write repo readme.md file
+- [x] Write repo readme.md file
     - [x] Part 1
-    - [ ] Part 2
+    - [x] Part 2
 
 - [ ] Check and finalize lighthouse for improvements in performance and accessibility
 

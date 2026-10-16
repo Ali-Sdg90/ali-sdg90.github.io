@@ -5,7 +5,7 @@
 [![Latest Release](https://img.shields.io/github/v/release/Ali-Sdg90/ali-sdg90.github.io?display_name=tag&sort=semver&style=flat-square)](https://github.com/Ali-Sdg90/ali-sdg90.github.io/releases/latest)
 [![License](https://img.shields.io/badge/license-source--available-8a8f98?style=flat-square)](#license)
 
-**[Explore the portfolio ↗](https://ali-sdg.is-a.dev/)** · **[See how I built it ↗](https://ali-sdg.is-a.dev/#how-i-built-my-portfolio)**
+**[Explore the portfolio ↗](https://ali-sdg.is-a.dev/)** · **[See how I built it ↗](https://ali-sdg.is-a.dev/how-i-built-my-portfolio)**
 
 [![A short preview of my interactive portfolio](./src/assets/images/site/readme-preview.webp)](https://ali-sdg.is-a.dev/)
 
@@ -40,9 +40,8 @@ You can move through the cards with dragging and momentum, then select one to op
 
 <table>
   <tr>
-    <td width="33%"><img src="./src/assets/images/site/desktop-preview.webp" alt="Desktop overview of the interactive portfolio shelf" /></td>
-    <td width="33%"><img src="./src/assets/images/site/readme-desktop-preview1.webp" alt="A selected card and its detailed About view on desktop" /></td>
-    <td width="33%"><img src="./src/assets/images/site/readme-desktop-preview2.webp" alt="How My Portfolio Was Built, the visual journal of the project" /></td>
+    <td width="50%"><img src="./src/assets/images/site/readme-desktop-preview1.webp" alt="A selected card and its detailed About view on desktop" /></td>
+    <td width="50%"><img src="./src/assets/images/site/readme-desktop-preview2.webp" alt="How My Portfolio Was Built, the visual journal of the project" /></td>
   </tr>
 </table>
 
@@ -72,7 +71,7 @@ So I made **How My Portfolio Was Built**, a 26-chapter visual journal available 
 
 The journal is part of the site itself, with its own page-turn interaction, chapter navigation, and images from the journey.
 
-**[Read the full build story ↗](https://ali-sdg.is-a.dev/#how-i-built-my-portfolio)**
+**[Read the full build story ↗](https://ali-sdg.is-a.dev/how-i-built-my-portfolio)**
 
 ## The engineering behind it
 
@@ -95,9 +94,14 @@ They're simpler parts of the site, but I wanted them to have the same attention 
 
 <table>
   <tr>
-    <td align="center">
+    <td width="50%" align="center">
       <a href="https://ali-sdg.is-a.dev/links">
-        <img src="./src/assets/images/site/readme-linktree-preview.webp" width="38%" alt="My personal Links page" />
+        <img src="./src/assets/images/site/readme-linktree-preview.webp" width="100%" alt="My personal Links page" />
+      </a>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://ali-sdg.is-a.dev/404.html">
+        <img src="./src/assets/images/site/readme-404-preview.webp" width="100%" alt="My custom 404 page" />
       </a>
     </td>
   </tr>
