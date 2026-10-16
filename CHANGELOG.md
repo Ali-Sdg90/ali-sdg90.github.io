@@ -1,3 +1,10 @@
+## [1.39.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.3...v1.39.4) (2026-10-16)
+
+
+### Bug Fixes
+
+* add portfolio project gallery images, finalize the readme, finalize agent.md, finalize seo and add og-image, update todos ([740ede2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/740ede2e2ae4ad8c555f65de269bb294471af5ea))
+
 ## [1.39.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.2...v1.39.3) (2026-10-15)
 
 
