@@ -1,88 +1,137 @@
-# Ali Sadeghi — Interactive Portfolio
+# Ali Sadeghi | Interactive Portfolio
 
-> [!IMPORTANT]
-> **Project under construction** — the core experience is available, while content, mobile support, and final refinements are still in active development.
+[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-Explore-1688ff?style=flat-square)](https://ali-sdg.is-a.dev/)
+[![CI/CD](https://img.shields.io/github/actions/workflow/status/Ali-Sdg90/ali-sdg90.github.io/ci.yml?branch=main&style=flat-square&label=CI%20%2F%20CD)](https://github.com/Ali-Sdg90/ali-sdg90.github.io/actions/workflows/ci.yml)
+[![Latest Release](https://img.shields.io/github/v/release/Ali-Sdg90/ali-sdg90.github.io?display_name=tag&sort=semver&style=flat-square)](https://github.com/Ali-Sdg90/ali-sdg90.github.io/releases/latest)
+[![License](https://img.shields.io/badge/license-source--available-8a8f98?style=flat-square)](#license)
 
-![Ali Sadeghi's interactive portfolio interface](./src/assets/images/site/readme-preview.webp)
+**[Explore the portfolio ↗](https://ali-sdg.is-a.dev/)** · **[See how I built it ↗](https://ali-sdg.is-a.dev/#how-i-built-my-portfolio)**
 
-An interactive, shelf-inspired portfolio created to present my projects, technical experience, career journey, and the thinking behind the product itself.
+[![A short preview of my interactive portfolio](./src/assets/images/site/readme-preview.webp)](https://ali-sdg.is-a.dev/)
 
-This is not a conventional grid of project cards or a static résumé website. The interface is built around a three-dimensional digital shelf: each row represents a different part of my work, and every card opens a focused detail view without taking attention away from the main scene. The result is a personal portfolio that behaves more like a small interactive product than a collection of pages.
+## A little world of my own
+
+I wanted my portfolio to be more than a list of projects, skills, and places I've worked.
+
+Some things I've built began with curiosity. Others grew from problems I wanted to solve, people I worked with, and things I learned or shared along the way. Each has a story, and I wanted those stories to share a home.
+
+Because of how I've structured GitHub Pages across my account, each project's live site can automatically sit under the same domain. That makes this portfolio a hub for everything I've built over the years and whatever comes next. I had wanted a place like this for a long time, but never had the time or the right idea for it.
+
+I kept refining how the shelf moves, how the light and perspective feel, how cards open, and how the experience works across screens.
+
+## What's inside
+
+The shelf brings together four sides of my work:
+
+- **Featured Projects**: selected things I've built, with their purpose, screenshots, technical context, stories, and links.
+- **Impact in Numbers**: some of the outcomes that matter to me, including building useful tools, mentoring, and contributing to teams.
+- **Tech Stack & Tools**: technologies I've used and the experiences I've had with them, beyond a simple list of logos.
+- **Career Journey**: the roles, responsibilities, and people and projects that helped shape the way I work.
+
+Rather than asking visitors to read everything in order, the site lets them follow their own curiosity.
 
 ## The experience
 
-The portfolio is organized into four data-driven collections:
+### On desktop
 
-- **Featured Projects** — selected software projects with summaries, technologies, media, source links, and live links where available.
-- **Impact in Numbers** — measurable results and milestones from my work.
-- **Tech Stack & Tools** — technologies and platforms I use across frontend development, automation, infrastructure, and AI-assisted workflows.
-- **Career Journey** — a concise timeline of professional roles and experience.
+The main interface is a perspective-based digital shelf. Its rows have different dimensions and interaction settings, but work together as one scene.
 
-Each collection has its own geometry and motion behavior while sharing a reusable shelf-row system. Cards can move continuously through the shelf, respond to dragging with momentum and friction, and preserve the perspective of the surrounding scene. Edge shadows and controlled acceleration keep the interaction readable instead of making it feel like a standard horizontal carousel.
+You can move through the cards with dragging and momentum, then select one to open its details without leaving the experience. Depending on the item, the detail view can include its background, technologies, longer stories in English and Persian, a gallery, and links to explore further.
 
-Selecting a card transforms the default **About Me** panel into a contextual detail view. Depending on the item, that view can include:
+<table>
+  <tr>
+    <td width="33%"><img src="./src/assets/images/site/desktop-preview.webp" alt="Desktop overview of the interactive portfolio shelf" /></td>
+    <td width="33%"><img src="./src/assets/images/site/readme-desktop-preview1.webp" alt="A selected card and its detailed About view on desktop" /></td>
+    <td width="33%"><img src="./src/assets/images/site/readme-desktop-preview2.webp" alt="How My Portfolio Was Built, the visual journal of the project" /></td>
+  </tr>
+</table>
 
-- A concise overview and technology tags
-- Longer project or career stories in English and Persian
-- Image galleries with lightweight previews and high-resolution lightbox media
-- Relevant repository, product, or external links
-- An expandable reading mode for longer content
+### On mobile
 
-The interface also includes keyboard-accessible card activation, reduced-motion handling, subtle onboarding cues, custom scrolling behavior, and a set of restrained hidden details for visitors who explore beyond the primary interaction.
+I didn't want the mobile version to feel like a desktop design squeezed into a smaller screen.
 
-## How it was built
+It has its own layout and navigation, with touch-friendly horizontal collections, focused content sections, and bottom sheets for details. It shares the same stories and visual identity as desktop, while approaching the interactions differently where it makes sense.
 
-The project began with a rough sketch of a bookshelf as a visual metaphor: projects would be presented as objects with a place and identity, rather than identical tiles in a grid. That sketch became a three-dimensional shelf asset, refined in Photoshop and integrated into a dark, restrained neon environment. Perspective, shadows, floor reflections, and background gradients were tuned together so the shelf would feel embedded in the page instead of placed on top of it.
+<table>
+  <tr>
+    <td width="33%"><img src="./src/assets/images/site/readme-mobile-preview1.webp" alt="Introduction at the top of the mobile portfolio" /></td>
+    <td width="33%"><img src="./src/assets/images/site/readme-mobile-preview2.webp" alt="Tech Stack and Tools in the mobile portfolio" /></td>
+    <td width="33%"><img src="./src/assets/images/site/readme-mobile-preview3.webp" alt="A portfolio detail bottom sheet on mobile" /></td>
+  </tr>
+</table>
 
-The most demanding part was making interactive content follow that visual perspective. Every row required its own dimensions, angle, movement speed, and card behavior. The final implementation separates those values from the rendering logic, allowing the shelf to be configured from data while a reusable component handles movement, drag physics, infinite circulation, and selection.
+## How it came to life
 
-Scaling introduced another challenge. Shelf elements use container-query units so their proportions follow the shelf itself rather than the browser width alone. This keeps the scene visually coherent across desktop resolutions and browser zoom levels, while special handling protects the intended composition on unusually narrow or tall viewports.
+This project went through quite a few versions before it became what it is today.
 
-The design process is also part of the finished experience. A page-peel interaction in the lower-right corner opens **How This Page Was Built**, a 26-chapter visual journal covering the original concept, rejected layouts, perspective experiments, interaction decisions, media optimization, privacy choices, and the final gallery system. The journal supports English and Persian content, keyboard navigation, a thumbnail rail, and motion-aware transitions.
+I tried different layouts, experimented with perspective and movement, changed how details opened, rethought the mobile experience, and spent more time than I expected on images, accessibility, and all the small choices that make an interface feel right.
+
+I wanted to remember that process, including the ideas I didn't keep.
+
+So I made **How My Portfolio Was Built**, a 26-chapter visual journal available in **English and Persian**. It brings together early sketches, experiments, rejected approaches, design decisions, technical challenges, and the thinking behind the final experience.
+
+The journal is part of the site itself, with its own page-turn interaction, chapter navigation, and images from the journey.
+
+**[Read the full build story ↗](https://ali-sdg.is-a.dev/#how-i-built-my-portfolio)**
+
+## The engineering behind it
+
+The shelf may be the first thing you notice, but a lot of this project is about what happens behind the visuals.
+
+- **A configurable shelf system.** Each row defines its own geometry, perspective, dimensions, and movement behavior, while reusable React components handle the shared interactions.
+- **Motion that belongs to the interface.** Dragging, momentum, friction, card selection, panel transitions, and the page-turn interaction are designed to feel connected.
+- **Content separated from components.** Projects, career entries, tools, impact figures, and build-story chapters live in structured data, so content can evolve without rebuilding the UI around it.
+- **Two deliberate layouts.** Desktop and mobile share their content and identity, but use different compositions and interaction patterns.
+- **An image pipeline.** Original images are processed with Sharp into optimized WebP assets, including thumbnails and high-resolution versions where needed. Caching avoids unnecessary work when files haven't changed.
+- **Accessibility considerations.** The interface uses semantic controls, visible focus states, reduced-motion handling, and keyboard support for selected interactions such as shelf cards, galleries, and dialogs.
+- **Shareable navigation.** Important states can be opened with direct URL hashes, making it easier to share a particular part of the portfolio.
+- **Lightweight analytics.** Production-only Umami events help me understand meaningful interactions without turning the experience into a tracking-heavy website.
+
+## Beyond the main page
+
+I also built a small [Links page](https://ali-sdg.is-a.dev/links) and a custom [404 page](https://ali-sdg.is-a.dev/404.html).
+
+They're simpler parts of the site, but I wanted them to have the same attention to detail and feel like they belong here.
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://ali-sdg.is-a.dev/links">
+        <img src="./src/assets/images/site/readme-linktree-preview.webp" width="38%" alt="My personal Links page" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## Technology
 
-| Area               | Technology                          | Purpose                                                                               |
-| ------------------ | ----------------------------------- | ------------------------------------------------------------------------------------- |
-| Application        | React 19                            | Component architecture, state, and interactive UI                                     |
-| Build tooling      | Vite 8                              | Local development and optimized production builds                                     |
-| Styling            | SCSS                                | Component styles, perspective composition, responsive behavior, and visual effects    |
-| Motion             | Framer Motion                       | Panel transitions, onboarding, gestures, and reduced-motion support                   |
-| Page interaction   | Custom React and CSS page turn      | The page-peel entrance to the build journal                                           |
-| Interface assets   | React Icons and custom media        | Consistent iconography, shelf content, and gallery presentation                       |
-| Code quality       | ESLint, Prettier, Husky, Commitlint | Formatting, linting, and conventional commit enforcement                              |
-| Release automation | semantic-release                    | Versioning, changelog generation, tags, and GitHub releases                           |
-| Delivery           | GitHub Actions and GitHub Pages     | Builds, pull-request previews, releases, and deployment                               |
-| Analytics          | Umami                               | Lightweight production analytics for meaningful interactions and build-story progress |
+The tools matter, but I see them as choices that help bring the idea to life.
 
-## Project structure
+| Area               | Technology                          | What it does here                                                    |
+| ------------------ | ----------------------------------- | -------------------------------------------------------------------- |
+| Interface          | React 19                            | Components, state, and the interactive experience                    |
+| Build tooling      | Vite 8                              | Local development, production builds, and multiple HTML entry points |
+| Styling            | SCSS                                | Perspective, layouts, responsive behavior, and visual details        |
+| Motion             | Framer Motion + CSS                 | Transitions, gestures, and custom interactions                       |
+| Image processing   | Sharp                               | Optimized WebP generation and cached image processing                |
+| Code quality       | ESLint, Prettier, Husky, Commitlint | Code consistency and commit checks                                   |
+| Release automation | semantic-release                    | Versions, changelogs, tags, and releases                             |
+| Delivery           | GitHub Actions + GitHub Pages       | Automated builds, pull-request previews, and deployment              |
+| Analytics          | Umami                               | Measuring useful interactions in production                          |
 
-```text
-src/
-├── assets/                  # Interface artwork, thumbnails, and gallery media
-├── components/
-│   ├── AboutPanel/          # About and selected-card detail experience
-│   ├── HowItWasBuilt/       # Build journal, navigation, and chapter gallery
-│   ├── Intro/               # Profile introduction and primary links
-│   ├── PortfolioReveal/     # Page-peel discovery interaction
-│   ├── Shelf/               # Shelf rows, cards, movement, and selection
-│   └── UI/                  # Shared interface components
-├── data/
-│   ├── aboutSection/        # Profile content
-│   ├── howItWasBuilt/       # Bilingual build-story chapters
-│   └── portfolio/           # Projects, metrics, tools, and career data
-├── hooks/                   # Shelf behavior and analytics hooks
-├── styles/                  # Global tokens and shared styles
-└── utils/                   # Shared helpers
-```
+## Quality and delivery
 
-Content and presentation are intentionally separated. Most shelf entries, chapter text, media references, and row behavior can be changed in the data layer without rewriting the components that display them. This keeps a visually complex interface maintainable and makes future content additions predictable.
+I wanted this to be something I could keep improving, not just something that looked good on launch day.
 
-## Running locally
+That has meant revisiting performance, deferring heavier content when appropriate, keeping image sizes under control, checking interactions across screen sizes, and paying attention to accessibility and motion preferences.
+
+The repository uses automated tooling for formatting, linting, builds, and releases. Pull requests from branches in this repository can receive isolated GitHub Pages previews. Changes merged into `main` go through the release and deployment workflow, with semantic-release creating a new version when the commits call for one.
+
+## Run it locally
 
 ### Requirements
 
-- Node.js 20 or later
+- Node.js 20.19+ or a newer supported version
 - npm
 
 ### Setup
@@ -90,63 +139,38 @@ Content and presentation are intentionally separated. Most shelf entries, chapte
 ```bash
 git clone https://github.com/Ali-Sdg90/ali-sdg90.github.io.git
 cd ali-sdg90.github.io
-npm install
+npm ci
 npm run dev
 ```
 
-Vite will print the local development address after the server starts. To expose the development server to another device on the same network, use:
+### Available commands
 
-```bash
-npm run mobile
-```
+| Command             | Purpose                                                     |
+| ------------------- | ----------------------------------------------------------- |
+| `npm run dev`       | Start the development server                                |
+| `npm run dev:debug` | Start a fixed-port local server for debugging               |
+| `npm run mobile`    | Make the development server available on your local network |
+| `npm run image:opt` | Generate optimized images from `image-sources/`             |
+| `npm run check`     | Check formatting, lint, and create a production build       |
+| `npm run build`     | Build the site for production                               |
+| `npm run preview`   | Preview the production build locally                        |
 
-### Available scripts
+## Still growing
 
-| Command                | Description                                            |
-| ---------------------- | ------------------------------------------------------ |
-| `npm run dev`          | Start the Vite development server                      |
-| `npm run mobile`       | Start Vite on the local network at port 5173           |
-| `npm run build`        | Create an optimized production build                   |
-| `npm run preview`      | Preview the production build locally                   |
-| `npm run lint`         | Check the codebase with ESLint                         |
-| `npm run lint:fix`     | Apply safe ESLint fixes                                |
-| `npm run format`       | Format supported files with Prettier                   |
-| `npm run format:check` | Verify formatting without changing files               |
-| `npm run check`        | Run formatting checks, linting, and a production build |
+I don't think of this as a finished collection of everything I've done.
 
-## Quality, performance, and accessibility
+New projects will find their way onto the shelf. Older ones might get new stories. And as I learn and change, I expect this space to change with me.
 
-The project treats polish as part of the implementation rather than a final visual pass. Current considerations include:
-
-- Low-resolution thumbnails for the normal interface and higher-quality assets loaded for lightbox viewing
-- Lazy media loading where appropriate to reduce unnecessary initial work
-- Keyboard activation for interactive shelf cards and keyboard navigation in the build journal
-- Visible focus states and semantic controls for primary interactions
-- Reduced-motion behavior for visitors who prefer less animation
-- Container-relative sizing to preserve composition without hard-coding the experience to one monitor
-- Production-only Umami analytics, limited to understanding interactions and improving the experience
-- Deliberate exclusion of private photographs and information belonging to other people
-
-## Development and release workflow
-
-Pre-commit hooks verify formatting and linting, while commit messages follow the Conventional Commits format. Pull requests receive isolated GitHub Pages previews so visual changes can be reviewed in a production-like environment.
-
-Changes merged into `main` pass through the automated release workflow. When a release is warranted, semantic-release determines the next version, updates the changelog, creates the Git tag and GitHub release, and allows the production build to be deployed to GitHub Pages. The deployment also includes a fallback page for client-side navigation.
-
-## Current development focus
-
-The desktop experience and its central interactions are in place. Work is continuing in a few focused areas:
-
-- Completing and reviewing project, career, and story content
-- Building the dedicated mobile and tablet experience
-- Refining edge cases across viewport sizes and browser zoom levels
-- Continuing accessibility, performance, and image-delivery improvements
-- Final visual and interaction quality assurance
-
-Until the dedicated small-screen experience is complete, the portfolio is best viewed on a desktop or laptop display.
+If you've taken the time to explore it, thank you. I hope it gives you a sense of both **what I build** and **why I enjoy building it**.
 
 ## License
 
 Copyright © 2026 Ali Sadeghi. All rights reserved.
 
-The repository is publicly available for viewing, personal study, and educational reference. Its source code, design, structure, written content, branding, résumé, photographs, and other assets may not be copied, redistributed, deployed, or used to create a substantially similar portfolio without prior written permission. See the [LICENSE](./LICENSE) file for the complete terms.
+This repository is publicly available for viewing, personal study, and educational reference. It is **source-available, not open source**.
+
+The code, design, structure, written content, branding, résumé, photographs, and other assets may not be copied, redistributed, deployed, or used to create a substantially similar portfolio without prior written permission.
+
+See [LICENSE](./LICENSE) for the complete terms.
+
+_Made with love ❤️_
