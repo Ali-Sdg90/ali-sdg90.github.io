@@ -1,69 +1,102 @@
-import historyImage01Large from "../../assets/images/build-story/img01.full.webp";
-import historyImage01Small from "../../assets/images/build-story/img01.thumb.webp";
-import historyImage02Large from "../../assets/images/build-story/img02.full.webp";
-import historyImage02Small from "../../assets/images/build-story/img02.thumb.webp";
-import historyImage03Large from "../../assets/images/build-story/img03.full.webp";
-import historyImage03Small from "../../assets/images/build-story/img03.thumb.webp";
-import historyImage04Large from "../../assets/images/build-story/img04.full.webp";
-import historyImage04Small from "../../assets/images/build-story/img04.thumb.webp";
-import historyImage05Large from "../../assets/images/build-story/img05.full.webp";
-import historyImage05Small from "../../assets/images/build-story/img05.thumb.webp";
-import historyImage06Large from "../../assets/images/build-story/img06.full.webp";
-import historyImage06Small from "../../assets/images/build-story/img06.thumb.webp";
-import historyImage07Large from "../../assets/images/build-story/img07.full.webp";
-import historyImage07Small from "../../assets/images/build-story/img07.thumb.webp";
-import historyImage08Large from "../../assets/images/build-story/img08.full.webp";
-import historyImage08Small from "../../assets/images/build-story/img08.thumb.webp";
-import historyImage09Large from "../../assets/images/build-story/img09.full.webp";
-import historyImage09Small from "../../assets/images/build-story/img09.thumb.webp";
-import historyImage10Large from "../../assets/images/build-story/img10.full.webp";
-import historyImage10Small from "../../assets/images/build-story/img10.thumb.webp";
-import historyImage11Large from "../../assets/images/build-story/img11.full.webp";
-import historyImage11Small from "../../assets/images/build-story/img11.thumb.webp";
-import historyImage12Large from "../../assets/images/build-story/img12.full.webp";
-import historyImage12Small from "../../assets/images/build-story/img12.thumb.webp";
-import historyImage13Large from "../../assets/images/build-story/img13.full.webp";
-import historyImage13Small from "../../assets/images/build-story/img13.thumb.webp";
-import historyImage14Large from "../../assets/images/build-story/img14.full.webp";
-import historyImage14Small from "../../assets/images/build-story/img14.thumb.webp";
-import historyImage15Large from "../../assets/images/build-story/img15.full.webp";
-import historyImage15Small from "../../assets/images/build-story/img15.thumb.webp";
-import historyImage16Large from "../../assets/images/build-story/img16.full.webp";
-import historyImage16Small from "../../assets/images/build-story/img16.thumb.webp";
-import historyImage17Large from "../../assets/images/build-story/img17.full.webp";
-import historyImage17Small from "../../assets/images/build-story/img17.thumb.webp";
-import historyImage18Large from "../../assets/images/build-story/img18.full.webp";
-import historyImage18Small from "../../assets/images/build-story/img18.thumb.webp";
-import historyImage19Large from "../../assets/images/build-story/img19.full.webp";
-import historyImage19Small from "../../assets/images/build-story/img19.thumb.webp";
-import historyImage20Large from "../../assets/images/build-story/img20.full.webp";
-import historyImage20Small from "../../assets/images/build-story/img20.thumb.webp";
-import historyImage21Large from "../../assets/images/build-story/img21.full.webp";
-import historyImage21Small from "../../assets/images/build-story/img21.thumb.webp";
-import historyImage22Large from "../../assets/images/build-story/img22.full.webp";
-import historyImage22Small from "../../assets/images/build-story/img22.thumb.webp";
-import historyImage23Large from "../../assets/images/build-story/img23.full.webp";
-import historyImage23Small from "../../assets/images/build-story/img23.thumb.webp";
-import historyImage24Large from "../../assets/images/build-story/img24.full.webp";
-import historyImage24Small from "../../assets/images/build-story/img24.thumb.webp";
-import historyImage25Large from "../../assets/images/build-story/img25.full.webp";
-import historyImage25Small from "../../assets/images/build-story/img25.thumb.webp";
-import historyImage26Large from "../../assets/images/build-story/img26.full.webp";
-import historyImage26Small from "../../assets/images/build-story/img26.thumb.webp";
-import historyImage27Large from "../../assets/images/build-story/img27.full.webp";
-import historyImage27Small from "../../assets/images/build-story/img27.thumb.webp";
-import historyImage28Large from "../../assets/images/build-story/img28.full.webp";
-import historyImage28Small from "../../assets/images/build-story/img28.thumb.webp";
-import historyImage29Large from "../../assets/images/build-story/img29.full.webp";
-import historyImage29Small from "../../assets/images/build-story/img29.thumb.webp";
-import historyImage30Large from "../../assets/images/build-story/img30.full.webp";
-import historyImage30Small from "../../assets/images/build-story/img30.thumb.webp";
-import historyImage31Large from "../../assets/images/build-story/img31.full.webp";
-import historyImage31Small from "../../assets/images/build-story/img31.thumb.webp";
-import historyImage32Large from "../../assets/images/build-story/img32.full.webp";
-import historyImage32Small from "../../assets/images/build-story/img32.thumb.webp";
-import historyImage33Large from "../../assets/images/build-story/img33.full.webp";
-import historyImage33Small from "../../assets/images/build-story/img33.thumb.webp";
+import historyImage01Display from "../../assets/images/build-story/img01.display.webp";
+import historyImage01Thumbnail from "../../assets/images/build-story/img01.thumb.webp";
+import historyImage01Original from "../../../image-sources/build-story/img01.png";
+import historyImage02Display from "../../assets/images/build-story/img02.display.webp";
+import historyImage02Thumbnail from "../../assets/images/build-story/img02.thumb.webp";
+import historyImage02Original from "../../../image-sources/build-story/img02.png";
+import historyImage03Display from "../../assets/images/build-story/img03.display.webp";
+import historyImage03Thumbnail from "../../assets/images/build-story/img03.thumb.webp";
+import historyImage03Original from "../../../image-sources/build-story/img03.png";
+import historyImage04Display from "../../assets/images/build-story/img04.display.webp";
+import historyImage04Thumbnail from "../../assets/images/build-story/img04.thumb.webp";
+import historyImage04Original from "../../../image-sources/build-story/img04.png";
+import historyImage05Display from "../../assets/images/build-story/img05.display.webp";
+import historyImage05Thumbnail from "../../assets/images/build-story/img05.thumb.webp";
+import historyImage05Original from "../../../image-sources/build-story/img05.png";
+import historyImage06Display from "../../assets/images/build-story/img06.display.webp";
+import historyImage06Thumbnail from "../../assets/images/build-story/img06.thumb.webp";
+import historyImage06Original from "../../../image-sources/build-story/img06.png";
+import historyImage07Display from "../../assets/images/build-story/img07.display.webp";
+import historyImage07Thumbnail from "../../assets/images/build-story/img07.thumb.webp";
+import historyImage07Original from "../../../image-sources/build-story/img07.png";
+import historyImage08Display from "../../assets/images/build-story/img08.display.webp";
+import historyImage08Thumbnail from "../../assets/images/build-story/img08.thumb.webp";
+import historyImage08Original from "../../../image-sources/build-story/img08.png";
+import historyImage09Display from "../../assets/images/build-story/img09.display.webp";
+import historyImage09Thumbnail from "../../assets/images/build-story/img09.thumb.webp";
+import historyImage09Original from "../../../image-sources/build-story/img09.png";
+import historyImage10Display from "../../assets/images/build-story/img10.display.webp";
+import historyImage10Thumbnail from "../../assets/images/build-story/img10.thumb.webp";
+import historyImage10Original from "../../../image-sources/build-story/img10.png";
+import historyImage11Display from "../../assets/images/build-story/img11.display.webp";
+import historyImage11Thumbnail from "../../assets/images/build-story/img11.thumb.webp";
+import historyImage11Original from "../../../image-sources/build-story/img11.png";
+import historyImage12Display from "../../assets/images/build-story/img12.display.webp";
+import historyImage12Thumbnail from "../../assets/images/build-story/img12.thumb.webp";
+import historyImage12Original from "../../../image-sources/build-story/img12.png";
+import historyImage13Display from "../../assets/images/build-story/img13.display.webp";
+import historyImage13Thumbnail from "../../assets/images/build-story/img13.thumb.webp";
+import historyImage13Original from "../../../image-sources/build-story/img13.png";
+import historyImage14Display from "../../assets/images/build-story/img14.display.webp";
+import historyImage14Thumbnail from "../../assets/images/build-story/img14.thumb.webp";
+import historyImage14Original from "../../../image-sources/build-story/img14.png";
+import historyImage15Display from "../../assets/images/build-story/img15.display.webp";
+import historyImage15Thumbnail from "../../assets/images/build-story/img15.thumb.webp";
+import historyImage15Original from "../../../image-sources/build-story/img15.png";
+import historyImage16Display from "../../assets/images/build-story/img16.display.webp";
+import historyImage16Thumbnail from "../../assets/images/build-story/img16.thumb.webp";
+import historyImage16Original from "../../../image-sources/build-story/img16.png";
+import historyImage17Display from "../../assets/images/build-story/img17.display.webp";
+import historyImage17Thumbnail from "../../assets/images/build-story/img17.thumb.webp";
+import historyImage17Original from "../../../image-sources/build-story/img17.png";
+import historyImage18Display from "../../assets/images/build-story/img18.display.webp";
+import historyImage18Thumbnail from "../../assets/images/build-story/img18.thumb.webp";
+import historyImage18Original from "../../../image-sources/build-story/img18.png";
+import historyImage19Display from "../../assets/images/build-story/img19.display.webp";
+import historyImage19Thumbnail from "../../assets/images/build-story/img19.thumb.webp";
+import historyImage19Original from "../../../image-sources/build-story/img19.png";
+import historyImage20Display from "../../assets/images/build-story/img20.display.webp";
+import historyImage20Thumbnail from "../../assets/images/build-story/img20.thumb.webp";
+import historyImage20Original from "../../../image-sources/build-story/img20.png";
+import historyImage21Display from "../../assets/images/build-story/img21.display.webp";
+import historyImage21Thumbnail from "../../assets/images/build-story/img21.thumb.webp";
+import historyImage21Original from "../../../image-sources/build-story/img21.png";
+import historyImage22Display from "../../assets/images/build-story/img22.display.webp";
+import historyImage22Thumbnail from "../../assets/images/build-story/img22.thumb.webp";
+import historyImage22Original from "../../../image-sources/build-story/img22.png";
+import historyImage23Display from "../../assets/images/build-story/img23.display.webp";
+import historyImage23Thumbnail from "../../assets/images/build-story/img23.thumb.webp";
+import historyImage23Original from "../../../image-sources/build-story/img23.png";
+import historyImage24Display from "../../assets/images/build-story/img24.display.webp";
+import historyImage24Thumbnail from "../../assets/images/build-story/img24.thumb.webp";
+import historyImage24Original from "../../../image-sources/build-story/img24.png";
+import historyImage25Display from "../../assets/images/build-story/img25.display.webp";
+import historyImage25Thumbnail from "../../assets/images/build-story/img25.thumb.webp";
+import historyImage25Original from "../../../image-sources/build-story/img25.png";
+import historyImage26Display from "../../assets/images/build-story/img26.display.webp";
+import historyImage26Thumbnail from "../../assets/images/build-story/img26.thumb.webp";
+import historyImage26Original from "../../../image-sources/build-story/img26.png";
+import historyImage27Display from "../../assets/images/build-story/img27.display.webp";
+import historyImage27Thumbnail from "../../assets/images/build-story/img27.thumb.webp";
+import historyImage27Original from "../../../image-sources/build-story/img27.png";
+import historyImage28Display from "../../assets/images/build-story/img28.display.webp";
+import historyImage28Thumbnail from "../../assets/images/build-story/img28.thumb.webp";
+import historyImage28Original from "../../../image-sources/build-story/img28.png";
+import historyImage29Display from "../../assets/images/build-story/img29.display.webp";
+import historyImage29Thumbnail from "../../assets/images/build-story/img29.thumb.webp";
+import historyImage29Original from "../../../image-sources/build-story/img29.png";
+import historyImage30Display from "../../assets/images/build-story/img30.display.webp";
+import historyImage30Thumbnail from "../../assets/images/build-story/img30.thumb.webp";
+import historyImage30Original from "../../../image-sources/build-story/img30.png";
+import historyImage31Display from "../../assets/images/build-story/img31.display.webp";
+import historyImage31Thumbnail from "../../assets/images/build-story/img31.thumb.webp";
+import historyImage31Original from "../../../image-sources/build-story/img31.png";
+import historyImage32Display from "../../assets/images/build-story/img32.display.webp";
+import historyImage32Thumbnail from "../../assets/images/build-story/img32.thumb.webp";
+import historyImage32Original from "../../../image-sources/build-story/img32.png";
+import historyImage33Display from "../../assets/images/build-story/img33.display.webp";
+import historyImage33Thumbnail from "../../assets/images/build-story/img33.thumb.webp";
+import historyImage33Original from "../../../image-sources/build-story/img33.png";
 
 // import placeholderImageSmall from "../../assets/images/ui/placeholder.webp";
 
@@ -105,11 +138,12 @@ I drew the first version of the idea very simply in Paint, and this became the f
                 },
             },
             image: {
-                src: historyImage01Small,
-                lightboxSrc: historyImage01Large,
+                thumbnailSrc: historyImage01Thumbnail,
+                src: historyImage01Display,
+                lightboxSrc: historyImage01Original,
                 alt: "Portfolio history image 01",
-                width: 1100,
-                height: 670,
+                lightboxWidth: 1100,
+                lightboxHeight: 670,
             },
             accent: "#78a9ff",
         },
@@ -146,11 +180,12 @@ So now that I had the design and the vision, I could start the project.`,
                 },
             },
             image: {
-                src: historyImage02Small,
-                lightboxSrc: historyImage02Large,
+                thumbnailSrc: historyImage02Thumbnail,
+                src: historyImage02Display,
+                lightboxSrc: historyImage02Original,
                 alt: "Portfolio history image 02",
-                width: 1601,
-                height: 1097,
+                lightboxWidth: 1601,
+                lightboxHeight: 1097,
             },
             accent: "#b78cff",
         },
@@ -171,11 +206,12 @@ I brought the image into Photoshop and removed its background. I wanted the shad
                 },
             },
             image: {
-                src: historyImage03Small,
-                lightboxSrc: historyImage03Large,
+                thumbnailSrc: historyImage03Thumbnail,
+                src: historyImage03Display,
+                lightboxSrc: historyImage03Original,
                 alt: "Portfolio history image 03",
-                width: 1918,
-                height: 1078,
+                lightboxWidth: 1918,
+                lightboxHeight: 1078,
             },
             accent: "#48d7c7",
         },
@@ -212,11 +248,12 @@ Now it was time to arrange them.`,
                 },
             },
             image: {
-                src: historyImage04Small,
-                lightboxSrc: historyImage04Large,
+                thumbnailSrc: historyImage04Thumbnail,
+                src: historyImage04Display,
+                lightboxSrc: historyImage04Original,
                 alt: "Portfolio history image 04",
-                width: 2560,
-                height: 1444,
+                lightboxWidth: 2560,
+                lightboxHeight: 1444,
             },
             accent: "#ff9d66",
         },
@@ -253,11 +290,12 @@ So later, I could go back and find the correct values for each shelf.`,
                 },
             },
             image: {
-                src: historyImage05Small,
-                lightboxSrc: historyImage05Large,
+                thumbnailSrc: historyImage05Thumbnail,
+                src: historyImage05Display,
+                lightboxSrc: historyImage05Original,
                 alt: "Portfolio history image 05",
-                width: 1918,
-                height: 1078,
+                lightboxWidth: 1918,
+                lightboxHeight: 1078,
             },
             accent: "#f47caa",
         },
@@ -290,11 +328,12 @@ The movement speed of the cards and the amount of friction when they were thrown
                 },
             },
             image: {
-                src: historyImage06Small,
-                lightboxSrc: historyImage06Large,
+                thumbnailSrc: historyImage06Thumbnail,
+                src: historyImage06Display,
+                lightboxSrc: historyImage06Original,
                 alt: "Portfolio history image 06",
-                width: 1917,
-                height: 1078,
+                lightboxWidth: 1917,
+                lightboxHeight: 1078,
             },
             accent: "#63c5ff",
         },
@@ -319,11 +358,12 @@ For the first time, I could really see how beautiful it was going to become!`,
                 },
             },
             image: {
-                src: historyImage07Small,
-                lightboxSrc: historyImage07Large,
+                thumbnailSrc: historyImage07Thumbnail,
+                src: historyImage07Display,
+                lightboxSrc: historyImage07Original,
                 alt: "Portfolio history image 07",
-                width: 2559,
-                height: 1341,
+                lightboxWidth: 2559,
+                lightboxHeight: 1341,
             },
             accent: "#8fdb78",
         },
@@ -356,11 +396,12 @@ And I do not know why this screenshot is so much brighter than the others... but
                 },
             },
             image: {
-                src: historyImage08Small,
-                lightboxSrc: historyImage08Large,
+                thumbnailSrc: historyImage08Thumbnail,
+                src: historyImage08Display,
+                lightboxSrc: historyImage08Original,
                 alt: "Portfolio history image 08",
-                width: 2559,
-                height: 1337,
+                lightboxWidth: 2559,
+                lightboxHeight: 1337,
             },
             accent: "#ffd166",
         },
@@ -389,11 +430,12 @@ Oh, and yeah, I also filled the left side of the page.`,
                 },
             },
             image: {
-                src: historyImage09Small,
-                lightboxSrc: historyImage09Large,
+                thumbnailSrc: historyImage09Thumbnail,
+                src: historyImage09Display,
+                lightboxSrc: historyImage09Original,
                 alt: "Portfolio history image 09",
-                width: 1918,
-                height: 1078,
+                lightboxWidth: 1918,
+                lightboxHeight: 1078,
             },
             accent: "#ae96ff",
         },
@@ -426,11 +468,12 @@ So this was a failed but cool test, and saw that I needed to change the design o
                 },
             },
             image: {
-                src: historyImage10Small,
-                lightboxSrc: historyImage10Large,
+                thumbnailSrc: historyImage10Thumbnail,
+                src: historyImage10Display,
+                lightboxSrc: historyImage10Original,
                 alt: "Portfolio history image 10",
-                width: 1916,
-                height: 902,
+                lightboxWidth: 1916,
+                lightboxHeight: 902,
             },
             accent: "#56e0d2",
         },
@@ -455,11 +498,12 @@ I created the new design image with ChatGPT and started building it.`,
                 },
             },
             image: {
-                src: historyImage11Small,
-                lightboxSrc: historyImage11Large,
+                thumbnailSrc: historyImage11Thumbnail,
+                src: historyImage11Display,
+                lightboxSrc: historyImage11Original,
                 alt: "Portfolio history image 11",
-                width: 1666,
-                height: 969,
+                lightboxWidth: 1666,
+                lightboxHeight: 969,
             },
             accent: "#78a9ff",
         },
@@ -488,11 +532,12 @@ I improved the Career cards based on the design. They were no longer just an ima
                 },
             },
             image: {
-                src: historyImage12Small,
-                lightboxSrc: historyImage12Large,
+                thumbnailSrc: historyImage12Thumbnail,
+                src: historyImage12Display,
+                lightboxSrc: historyImage12Original,
                 alt: "Portfolio history image 12",
-                width: 1915,
-                height: 1073,
+                lightboxWidth: 1915,
+                lightboxHeight: 1073,
             },
             accent: "#b78cff",
         },
@@ -525,11 +570,12 @@ It felt like a creative and good idea to me. With ChatGPT, I made the rough desi
                 },
             },
             image: {
-                src: historyImage13Small,
-                lightboxSrc: historyImage13Large,
+                thumbnailSrc: historyImage13Thumbnail,
+                src: historyImage13Display,
+                lightboxSrc: historyImage13Original,
                 alt: "Portfolio history image 13",
-                width: 1516,
-                height: 1031,
+                lightboxWidth: 1516,
+                lightboxHeight: 1031,
             },
             accent: "#48d7c7",
         },
@@ -558,11 +604,12 @@ I also made the whole section straight and removed the tilted perspective from i
                 },
             },
             image: {
-                src: historyImage14Small,
-                lightboxSrc: historyImage14Large,
+                thumbnailSrc: historyImage14Thumbnail,
+                src: historyImage14Display,
+                lightboxSrc: historyImage14Original,
                 alt: "Portfolio history image 14",
-                width: 1917,
-                height: 1074,
+                lightboxWidth: 1917,
+                lightboxHeight: 1074,
             },
             accent: "#ff9d66",
         },
@@ -591,11 +638,12 @@ Then I thought I could use different widths for About Me and About Card, so when
                 },
             },
             image: {
-                src: historyImage15Small,
-                lightboxSrc: historyImage15Large,
+                thumbnailSrc: historyImage15Thumbnail,
+                src: historyImage15Display,
+                lightboxSrc: historyImage15Original,
                 alt: "Portfolio history image 15",
-                width: 1915,
-                height: 906,
+                lightboxWidth: 1915,
+                lightboxHeight: 906,
             },
             accent: "#f47caa",
         },
@@ -631,11 +679,12 @@ In the next step, I cleaned up the section.`,
                 },
             },
             image: {
-                src: historyImage16Small,
-                lightboxSrc: historyImage16Large,
+                thumbnailSrc: historyImage16Thumbnail,
+                src: historyImage16Display,
+                lightboxSrc: historyImage16Original,
                 alt: "Portfolio history image 16",
-                width: 1825,
-                height: 841,
+                lightboxWidth: 1825,
+                lightboxHeight: 841,
             },
             accent: "#63c5ff",
         },
@@ -664,11 +713,12 @@ Writing the stories and adding gallery images gave my project a lot of soul and 
                 },
             },
             image: {
-                src: historyImage17Small,
-                lightboxSrc: historyImage17Large,
+                thumbnailSrc: historyImage17Thumbnail,
+                src: historyImage17Display,
+                lightboxSrc: historyImage17Original,
                 alt: "Portfolio history image 17",
-                width: 1916,
-                height: 1078,
+                lightboxWidth: 1916,
+                lightboxHeight: 1078,
             },
             accent: "#8fdb78",
         },
@@ -697,11 +747,12 @@ I had never used Codex like this before, and I was really amazed by its power an
                 },
             },
             image: {
-                src: historyImage18Small,
-                lightboxSrc: historyImage18Large,
+                thumbnailSrc: historyImage18Thumbnail,
+                src: historyImage18Display,
+                lightboxSrc: historyImage18Original,
                 alt: "Portfolio history image 18",
-                width: 2559,
-                height: 1599,
+                lightboxWidth: 2559,
+                lightboxHeight: 1599,
             },
             accent: "#ffd166",
         },
@@ -733,11 +784,12 @@ Every part of the page had its own reason to be there, and I could not just plac
                 },
             },
             image: {
-                src: historyImage19Small,
-                lightboxSrc: historyImage19Large,
+                thumbnailSrc: historyImage19Thumbnail,
+                src: historyImage19Display,
+                lightboxSrc: historyImage19Original,
                 alt: "Portfolio history image 19",
-                width: 1918,
-                height: 901,
+                lightboxWidth: 1918,
+                lightboxHeight: 901,
             },
             accent: "#ae96ff",
         },
@@ -768,11 +820,12 @@ So I gave up on this idea.`,
                 },
             },
             image: {
-                src: historyImage20Small,
-                lightboxSrc: historyImage20Large,
+                thumbnailSrc: historyImage20Thumbnail,
+                src: historyImage20Display,
+                lightboxSrc: historyImage20Original,
                 alt: "Portfolio history image 20",
-                width: 2552,
-                height: 1288,
+                lightboxWidth: 2552,
+                lightboxHeight: 1288,
             },
             accent: "#ae96ff",
         },
@@ -809,11 +862,12 @@ I was really happy that the confusion I had from the start of the project about 
                 },
             },
             image: {
-                src: historyImage21Small,
-                lightboxSrc: historyImage21Large,
+                thumbnailSrc: historyImage21Thumbnail,
+                src: historyImage21Display,
+                lightboxSrc: historyImage21Original,
                 alt: "Portfolio history image 21",
-                width: 2552,
-                height: 1288,
+                lightboxWidth: 2552,
+                lightboxHeight: 1288,
             },
             accent: "#56e0d2",
         },
@@ -842,11 +896,12 @@ You might not believe it, but filling a single card took an unbelievable amount 
                 },
             },
             image: {
-                src: historyImage22Small,
-                lightboxSrc: historyImage22Large,
+                thumbnailSrc: historyImage22Thumbnail,
+                src: historyImage22Display,
+                lightboxSrc: historyImage22Original,
                 alt: "Portfolio history image 22",
-                width: 1916,
-                height: 1078,
+                lightboxWidth: 1916,
+                lightboxHeight: 1078,
             },
             accent: "#56e0d2",
         },
@@ -875,11 +930,12 @@ This feature might still get lost in the user’s view, but I did not want to ma
                 },
             },
             image: {
-                src: historyImage23Small,
-                lightboxSrc: historyImage23Large,
+                thumbnailSrc: historyImage23Thumbnail,
+                src: historyImage23Display,
+                lightboxSrc: historyImage23Original,
                 alt: "Portfolio history image 23",
-                width: 1918,
-                height: 1078,
+                lightboxWidth: 1918,
+                lightboxHeight: 1078,
             },
             accent: "#78a9ff",
         },
@@ -908,11 +964,12 @@ So the design had to change.`,
                 },
             },
             image: {
-                src: historyImage24Small,
-                lightboxSrc: historyImage24Large,
+                thumbnailSrc: historyImage24Thumbnail,
+                src: historyImage24Display,
+                lightboxSrc: historyImage24Original,
                 alt: "Portfolio history image 24",
-                width: 2559,
-                height: 1599,
+                lightboxWidth: 2559,
+                lightboxHeight: 1599,
             },
             accent: "#b78cff",
         },
@@ -941,11 +998,12 @@ It felt like a good idea to me, so I went for implementing it.`,
                 },
             },
             image: {
-                src: historyImage25Small,
-                lightboxSrc: historyImage25Large,
+                thumbnailSrc: historyImage25Thumbnail,
+                src: historyImage25Display,
+                lightboxSrc: historyImage25Original,
                 alt: "Portfolio history image 25",
-                width: 1918,
-                height: 1078,
+                lightboxWidth: 1918,
+                lightboxHeight: 1078,
             },
             accent: "#48d7c7",
         },
@@ -976,11 +1034,12 @@ Everything felt pretty okay. The only things left were filling the card informat
                 },
             },
             image: {
-                src: historyImage26Small,
-                lightboxSrc: historyImage26Large,
+                thumbnailSrc: historyImage26Thumbnail,
+                src: historyImage26Display,
+                lightboxSrc: historyImage26Original,
                 alt: "Portfolio history image 26",
-                width: 1919,
-                height: 1079,
+                lightboxWidth: 1919,
+                lightboxHeight: 1079,
             },
             accent: "#ff9d66",
         },
@@ -1009,11 +1068,12 @@ In the bottom-right corner, I had also added the page-peeling effect. It looked 
                 },
             },
             image: {
-                src: historyImage27Small,
-                lightboxSrc: historyImage27Large,
+                thumbnailSrc: historyImage27Thumbnail,
+                src: historyImage27Display,
+                lightboxSrc: historyImage27Original,
                 alt: "Portfolio history image 27",
-                width: 1919,
-                height: 907,
+                lightboxWidth: 1919,
+                lightboxHeight: 907,
             },
             accent: "#f47caa",
         },
@@ -1050,11 +1110,12 @@ So... it was time to focus on building a mobile version that looked just as pret
                 },
             },
             image: {
-                src: historyImage28Small,
-                lightboxSrc: historyImage28Large,
+                thumbnailSrc: historyImage28Thumbnail,
+                src: historyImage28Display,
+                lightboxSrc: historyImage28Original,
                 alt: "Portfolio history image 28",
-                width: 693,
-                height: 727,
+                lightboxWidth: 693,
+                lightboxHeight: 727,
             },
             accent: "#63c5ff",
         },
@@ -1087,11 +1148,12 @@ Just a few little details left D:`,
                 },
             },
             image: {
-                src: historyImage29Small,
-                lightboxSrc: historyImage29Large,
+                thumbnailSrc: historyImage29Thumbnail,
+                src: historyImage29Display,
+                lightboxSrc: historyImage29Original,
                 alt: "Portfolio history image 29",
-                width: 2335,
-                height: 1921,
+                lightboxWidth: 2335,
+                lightboxHeight: 1921,
             },
             accent: "#8fdb78",
         },
@@ -1124,11 +1186,12 @@ I really liked this idea. I spent a lot of time adjusting the blur intensity, co
                 },
             },
             image: {
-                src: historyImage30Small,
-                lightboxSrc: historyImage30Large,
+                thumbnailSrc: historyImage30Thumbnail,
+                src: historyImage30Display,
+                lightboxSrc: historyImage30Original,
                 alt: "Portfolio history image 30",
-                width: 1919,
-                height: 907,
+                lightboxWidth: 1919,
+                lightboxHeight: 907,
             },
             accent: "#ffd166",
         },
@@ -1163,11 +1226,12 @@ This system made a huge difference in my site's performance. My Lighthouse Perfo
                 },
             },
             image: {
-                src: historyImage31Small,
-                lightboxSrc: historyImage31Large,
+                thumbnailSrc: historyImage31Thumbnail,
+                src: historyImage31Display,
+                lightboxSrc: historyImage31Original,
                 alt: "Portfolio history image 31",
-                width: 1919,
-                height: 1079,
+                lightboxWidth: 1919,
+                lightboxHeight: 1079,
             },
             accent: "#ae96ff",
         },
@@ -1200,11 +1264,12 @@ I also gave the 404 page a cute little animation :)`,
                 },
             },
             image: {
-                src: historyImage32Small,
-                lightboxSrc: historyImage32Large,
+                thumbnailSrc: historyImage32Thumbnail,
+                src: historyImage32Display,
+                lightboxSrc: historyImage32Original,
                 alt: "Portfolio history image 32",
-                width: 597,
-                height: 821,
+                lightboxWidth: 597,
+                lightboxHeight: 821,
             },
             accent: "#56e0d2",
         },
@@ -1241,11 +1306,12 @@ And honestly, I really didn't want to start writing the stories for my Tech Stac
                 },
             },
             image: {
-                src: historyImage33Small,
-                lightboxSrc: historyImage33Large,
+                thumbnailSrc: historyImage33Thumbnail,
+                src: historyImage33Display,
+                lightboxSrc: historyImage33Original,
                 alt: "Portfolio history image 33",
-                width: 2559,
-                height: 1599,
+                lightboxWidth: 2559,
+                lightboxHeight: 1599,
             },
             accent: "#78a9ff",
         },

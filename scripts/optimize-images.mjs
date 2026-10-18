@@ -26,7 +26,7 @@ const cachePath = path.join(
     ".cache",
     "portfolio-image-optimizer.json",
 );
-const cacheVersion = 2;
+const cacheVersion = 3;
 const supportedExtensions = new Set([".jpeg", ".jpg", ".png", ".svg", ".webp"]);
 
 const thumbnailOptions = {
@@ -75,13 +75,20 @@ const validateConfiguration = () => {
 
         const mode = rule.mode ?? "responsive";
 
-        if (mode !== "responsive" && mode !== "single") {
+        if (
+            mode !== "responsive" &&
+            mode !== "single" &&
+            mode !== "buildStory"
+        ) {
             throw new Error(
                 `Rule "${rule.match}" has unsupported mode "${mode}".`,
             );
         }
 
-        if (mode === "responsive" && !presets[rule.preset]) {
+        if (
+            (mode === "responsive" || mode === "buildStory") &&
+            !presets[rule.preset]
+        ) {
             throw new Error(
                 `Rule "${rule.match}" references unknown preset "${rule.preset}".`,
             );
@@ -91,6 +98,25 @@ const validateConfiguration = () => {
             throw new Error(
                 `Single-output rule "${rule.match}" must not define a preset.`,
             );
+        }
+
+        if (mode === "buildStory") {
+            const display = presets[rule.preset].display;
+
+            if (
+                !display ||
+                !Number.isInteger(display.width) ||
+                display.width <= 0 ||
+                !Number.isInteger(display.height) ||
+                display.height <= 0 ||
+                !Number.isInteger(display.quality) ||
+                display.quality <= 0 ||
+                display.quality > 100
+            ) {
+                throw new Error(
+                    `Build-story preset "${rule.preset}" must define positive display dimensions and a quality from 1 to 100.`,
+                );
+            }
         }
 
         return { ...rule, mode, matcher: globToRegExp(rule.match) };
@@ -174,45 +200,78 @@ const createProcessingFingerprint = async (
     preset,
 ) => {
     const sourceBuffer = await readFile(sourcePath);
-    const processingConfiguration = JSON.stringify(
-        isWebpPath(sourcePath)
-            ? {
-                  version: cacheVersion,
-                  relativePath,
-                  output: {
-                      strategy: "copy",
-                      preserveBytes: true,
-                  },
-              }
-            : mode === "single"
-              ? {
-                    version: cacheVersion,
-                    relativePath,
-                    output: {
-                        format: "webp",
-                        lossless: true,
-                        preserveDimensions: true,
-                    },
-                }
-              : {
-                    version: cacheVersion,
-                    relativePath,
-                    thumbnail: {
-                        width: preset.width,
-                        height: preset.height,
-                        fit: thumbnailOptions.fit,
-                        position: thumbnailOptions.position,
-                        format: "webp",
-                        quality: thumbnailOptions.quality,
-                    },
-                    full: { format: "webp", lossless: true },
-                },
-    );
+    let processingConfiguration;
+
+    if (isWebpPath(sourcePath)) {
+        processingConfiguration = {
+            version: cacheVersion,
+            relativePath,
+            output: {
+                strategy: "copy",
+                preserveBytes: true,
+            },
+        };
+    } else if (mode === "single") {
+        processingConfiguration = {
+            version: cacheVersion,
+            relativePath,
+            output: {
+                format: "webp",
+                lossless: true,
+                preserveDimensions: true,
+            },
+        };
+    } else {
+        processingConfiguration = {
+            version: cacheVersion,
+            relativePath,
+            thumbnail: {
+                width: preset.width,
+                height: preset.height,
+                fit: thumbnailOptions.fit,
+                position: thumbnailOptions.position,
+                format: "webp",
+                quality: preset.quality ?? thumbnailOptions.quality,
+            },
+            ...(mode === "buildStory"
+                ? {
+                      display: {
+                          width: preset.display.width,
+                          height: preset.display.height,
+                          fit: "inside",
+                          withoutEnlargement: true,
+                          format: "webp",
+                          quality: preset.display.quality,
+                      },
+                  }
+                : { full: { format: "webp", lossless: true } }),
+        };
+    }
+
+    const serializedConfiguration = JSON.stringify(processingConfiguration);
 
     return createHash("sha256")
         .update(sourceBuffer)
-        .update(processingConfiguration)
+        .update(serializedConfiguration)
         .digest("hex");
+};
+
+const getContainedDimensions = (
+    sourceWidth,
+    sourceHeight,
+    maximumWidth,
+    maximumHeight,
+) => {
+    const scale = Math.min(
+        maximumWidth / sourceWidth,
+        maximumHeight / sourceHeight,
+        1,
+    );
+
+    return {
+        width: Math.round(sourceWidth * scale),
+        height: Math.round(sourceHeight * scale),
+    };
 };
 
 const isValidWebp = async (filePath, expectedWidth, expectedHeight) => {
@@ -283,6 +342,10 @@ const processSourceImage = async ({
         `${parsedPath.name}.thumb.webp`,
     );
     const fullPath = path.join(outputDirectory, `${parsedPath.name}.full.webp`);
+    const displayPath = path.join(
+        outputDirectory,
+        `${parsedPath.name}.display.webp`,
+    );
 
     if (isWebpPath(sourcePath)) {
         const outputPath = path.join(outputRoot, relativePath);
@@ -299,7 +362,7 @@ const processSourceImage = async ({
 
         let removedLegacyVariant = false;
 
-        for (const legacyPath of [thumbnailPath, fullPath]) {
+        for (const legacyPath of [thumbnailPath, fullPath, displayPath]) {
             if (await canAccess(legacyPath)) {
                 await rm(legacyPath);
                 removedLegacyVariant = true;
@@ -338,7 +401,7 @@ const processSourceImage = async ({
 
         let removedLegacyVariant = false;
 
-        for (const legacyPath of [thumbnailPath, fullPath]) {
+        for (const legacyPath of [thumbnailPath, fullPath, displayPath]) {
             if (await canAccess(legacyPath)) {
                 await rm(legacyPath);
                 removedLegacyVariant = true;
@@ -346,6 +409,70 @@ const processSourceImage = async ({
         }
 
         return generateOutput || removedLegacyVariant;
+    }
+
+    if (mode === "buildStory") {
+        const displayDimensions = getContainedDimensions(
+            sourceMetadata.width,
+            sourceMetadata.height,
+            preset.display.width,
+            preset.display.height,
+        );
+        const generateThumbnail = await needsGeneration({
+            outputPath: thumbnailPath,
+            expectedWidth: preset.width,
+            expectedHeight: preset.height,
+            configurationChanged,
+        });
+        const generateDisplay = await needsGeneration({
+            outputPath: displayPath,
+            expectedWidth: displayDimensions.width,
+            expectedHeight: displayDimensions.height,
+            configurationChanged,
+        });
+        const removeLegacyFull = await canAccess(fullPath);
+
+        if (!generateThumbnail && !generateDisplay && !removeLegacyFull) {
+            return false;
+        }
+
+        if (generateThumbnail || generateDisplay) {
+            await mkdir(outputDirectory, { recursive: true });
+        }
+
+        if (generateThumbnail) {
+            await replaceWithTemporaryFile(thumbnailPath, (temporaryPath) =>
+                sharp(sourcePath)
+                    .resize({
+                        width: preset.width,
+                        height: preset.height,
+                        fit: thumbnailOptions.fit,
+                        position: thumbnailOptions.position,
+                    })
+                    .webp({
+                        quality: preset.quality ?? thumbnailOptions.quality,
+                    })
+                    .toFile(temporaryPath),
+            );
+        }
+
+        if (generateDisplay) {
+            await replaceWithTemporaryFile(displayPath, (temporaryPath) =>
+                sharp(sourcePath)
+                    .resize({
+                        width: preset.display.width,
+                        height: preset.display.height,
+                        fit: "inside",
+                        withoutEnlargement: true,
+                    })
+                    .webp({ quality: preset.display.quality })
+                    .toFile(temporaryPath),
+            );
+        }
+
+        if (removeLegacyFull) await rm(fullPath);
+
+        return true;
     }
 
     const generateThumbnail = await needsGeneration({
@@ -361,9 +488,15 @@ const processSourceImage = async ({
         configurationChanged,
     });
 
-    if (!generateThumbnail && !generateFull) return false;
+    const removeLegacyDisplay = await canAccess(displayPath);
 
-    await mkdir(outputDirectory, { recursive: true });
+    if (!generateThumbnail && !generateFull && !removeLegacyDisplay) {
+        return false;
+    }
+
+    if (generateThumbnail || generateFull) {
+        await mkdir(outputDirectory, { recursive: true });
+    }
 
     if (generateThumbnail) {
         await replaceWithTemporaryFile(thumbnailPath, (temporaryPath) =>
@@ -374,7 +507,9 @@ const processSourceImage = async ({
                     fit: thumbnailOptions.fit,
                     position: thumbnailOptions.position,
                 })
-                .webp({ quality: thumbnailOptions.quality })
+                .webp({
+                    quality: preset.quality ?? thumbnailOptions.quality,
+                })
                 .toFile(temporaryPath),
         );
     }
@@ -384,6 +519,8 @@ const processSourceImage = async ({
             sharp(sourcePath).webp({ lossless: true }).toFile(temporaryPath),
         );
     }
+
+    if (removeLegacyDisplay) await rm(displayPath);
 
     return true;
 };

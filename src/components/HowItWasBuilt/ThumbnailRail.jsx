@@ -61,10 +61,8 @@ const ThumbnailRail = ({
                 >
                     {shouldLoadImages ? (
                         <img
-                            src={chapter.image.src}
+                            src={chapter.image.thumbnailSrc}
                             alt=""
-                            width={chapter.image.width}
-                            height={chapter.image.height}
                             loading="lazy"
                             decoding="async"
                             draggable="false"

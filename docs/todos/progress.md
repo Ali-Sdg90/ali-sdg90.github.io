@@ -258,6 +258,8 @@
 
 - [ ] Add impacts.txt in llms folder!
 
+- [ ] Add how-it-was-built.txt in llms folder
+
 - [ ] Update and finalize the llms.txt and llms folder content
 
 - [ ] Learn about CSR and SSG methods
