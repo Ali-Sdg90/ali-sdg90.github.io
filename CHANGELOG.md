@@ -1,3 +1,10 @@
+## [1.39.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.4...v1.39.5) (2026-10-18)
+
+
+### Bug Fixes
+
+* add 7 more slides image and stories in hmpwb, before fix optimize-images for these slides ([d992e76](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d992e765831a458b12d190573bc6b969cd180dde))
+
 ## [1.39.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.3...v1.39.4) (2026-10-16)
 
 
