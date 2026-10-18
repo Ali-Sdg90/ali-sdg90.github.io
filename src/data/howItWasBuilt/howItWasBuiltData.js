@@ -97,6 +97,9 @@ import historyImage32Original from "../../../image-sources/build-story/img32.png
 import historyImage33Display from "../../assets/images/build-story/img33.display.webp";
 import historyImage33Thumbnail from "../../assets/images/build-story/img33.thumb.webp";
 import historyImage33Original from "../../../image-sources/build-story/img33.png";
+import historyImage34Display from "../../assets/images/build-story/img34.display.webp";
+import historyImage34Thumbnail from "../../assets/images/build-story/img34.thumb.webp";
+import historyImage34Original from "../../../image-sources/build-story/img34.png";
 
 // import placeholderImageSmall from "../../assets/images/ui/placeholder.webp";
 
@@ -1314,6 +1317,46 @@ And honestly, I really didn't want to start writing the stories for my Tech Stac
                 lightboxHeight: 1599,
             },
             accent: "#78a9ff",
+        },
+        {
+            id: "history-34",
+            translations: {
+                en: {
+                    title: "The Project's Most Important File",
+                    description: `From the very beginning, my project had two files called progress.md and endgame.md. These two files were like task boards for my project.
+
+Whenever an idea or something came to mind while building the project, reviewing it myself or with AI, or even in the shower, I'd add it to these files.
+This was one of the best decisions I made for my project. Every time I wanted to work on my portfolio, all the remaining tasks were right there in front of me. I'd pick what I wanted to work on that day, get it done, and then check it off.
+
+Without these files, I would've forgotten half of my ideas, decisions, and improvements five minutes after thinking of them.
+I really love these files. In a way, they're the journey and diary of all the work I've done over these four months :)
+
+And that's the end. Thank you for being with me this far :)
+I hope this journey has been just as lovely and sweet for you as it's been for me ❤️`,
+                },
+                fa: {
+                    title: "مهم‌ترین فایل پروژه",
+                    description: `پروژم از همون اول‌ها دو تا فایل به اسم progress.md و endgame.md داشت. این دو تا فایل شبیه بورد کارها تو پروژم بودن.
+
+هر وقت موقع ساخت پروژه، بررسیش توسط خودم یا AI، یا حتی تو حموم یه ایده یا چیزی به ذهنم می‌رسید، میومدم به این فایل‌ها اضافش می‌کردم.
+این یکی از بهترین تصمیم‌هایی بود که برای پروژم گرفتم. هر دفعه که می‌خواستم رو پورتفولیوم کار کنم، تمام کارهایی که از پروژه مونده بود جلوم باز بود. می‌دیدم کدوم رو می‌خوام امروز پیش ببرم، انجامش می‌دادم و بعد تیکش رو می‌زدم.
+
+اگه این فایل‌ها نبودن، نصف ایده‌ها و تصمیم‌ها و بهبودها رو ۵ دقیقه بعد از اینکه به ذهنم می‌رسیدن یادم می‌رفت.
+این فایل‌ها رو خیلی دوست دارم. یه جورایی سفر و دفترچه خاطرات کارهام تو این ۴ ماه برام هستن :)
+
+و پایان. مرسی تا اینجا باهام همراه بودی :)
+امیدوارم همونطور که این سفر برای من دوست داشتنی و شیرین بوده، برای تو هم همینطور بوده❤️`,
+                },
+            },
+            image: {
+                thumbnailSrc: historyImage34Thumbnail,
+                src: historyImage34Display,
+                lightboxSrc: historyImage34Original,
+                alt: "Portfolio history image 34",
+                lightboxWidth: 4203,
+                lightboxHeight: 2170,
+            },
+            accent: "#b78cff",
         },
     ],
 };
