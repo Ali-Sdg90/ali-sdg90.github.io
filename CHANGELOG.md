@@ -1,3 +1,10 @@
+## [1.39.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.5...v1.39.6) (2026-10-18)
+
+
+### Bug Fixes
+
+* fix images in hmpwb and add 3 type of image for each slide, thumbnail, preview, rightbox and update optimize-images for new image settings ([77179c3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/77179c376134c447260db5d1f6503a2f1581823b))
+
 ## [1.39.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.4...v1.39.5) (2026-10-18)
 
 
