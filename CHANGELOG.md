@@ -1,3 +1,10 @@
+## [1.39.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.7...v1.39.8) (2026-10-18)
+
+
+### Bug Fixes
+
+* update linktree background to use 404 page, update todos ([3bbcb9b](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/3bbcb9be8ea247ce498dd943d407c723c3d1f3a3))
+
 ## [1.39.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.6...v1.39.7) (2026-10-18)
 
 
