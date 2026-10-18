@@ -50,6 +50,20 @@ import historyImage25Large from "../../assets/images/build-story/img25.full.webp
 import historyImage25Small from "../../assets/images/build-story/img25.thumb.webp";
 import historyImage26Large from "../../assets/images/build-story/img26.full.webp";
 import historyImage26Small from "../../assets/images/build-story/img26.thumb.webp";
+import historyImage27Large from "../../assets/images/build-story/img27.full.webp";
+import historyImage27Small from "../../assets/images/build-story/img27.thumb.webp";
+import historyImage28Large from "../../assets/images/build-story/img28.full.webp";
+import historyImage28Small from "../../assets/images/build-story/img28.thumb.webp";
+import historyImage29Large from "../../assets/images/build-story/img29.full.webp";
+import historyImage29Small from "../../assets/images/build-story/img29.thumb.webp";
+import historyImage30Large from "../../assets/images/build-story/img30.full.webp";
+import historyImage30Small from "../../assets/images/build-story/img30.thumb.webp";
+import historyImage31Large from "../../assets/images/build-story/img31.full.webp";
+import historyImage31Small from "../../assets/images/build-story/img31.thumb.webp";
+import historyImage32Large from "../../assets/images/build-story/img32.full.webp";
+import historyImage32Small from "../../assets/images/build-story/img32.thumb.webp";
+import historyImage33Large from "../../assets/images/build-story/img33.full.webp";
+import historyImage33Small from "../../assets/images/build-story/img33.thumb.webp";
 
 // import placeholderImageSmall from "../../assets/images/ui/placeholder.webp";
 
@@ -969,6 +983,271 @@ Everything felt pretty okay. The only things left were filling the card informat
                 height: 1079,
             },
             accent: "#ff9d66",
+        },
+        {
+            id: "history-27",
+            translations: {
+                en: {
+                    title: "More Than a Shelf",
+                    description: `I added two new elements to the project. One was a badge in the top-left corner showing that the project was still under development. Hovering over it would reveal the current website version and a link to GitHub. I really liked how this badge looked. I might use it in future projects too.
+
+I also added a little hint at the bottom of the page that would appear about eight seconds after the site first loaded, telling visitors they could click on the cards to see more details.
+
+Until then, it wasn't very obvious that the cards were clickable. Someone might think they were just looking at a pretty, static shelf and never even try clicking one. The hint was there to show that there was more to it than just a pretty shelf. Of course, if someone clicked a card during those eight seconds, the hint wouldn't appear at all.
+
+In the bottom-right corner, I had also added the page-peeling effect. It looked really nice, but I was using a relatively old external library called peel.js to make it work. The library was heavy, and I didn't need all its features. So I built my own lighter version that did exactly what I needed.`,
+                },
+                fa: {
+                    title: "بیشتر از یه شلف",
+                    description: `به پروژه دو قسمت جدید اضافه کردم. یکی یه بج بالا سمت چپ بود که نشون می‌داد پروژه هنوز در حال ساخته. وقتی موس رو روش هاور می‌کردی، ورژن فعلی سایت و لینک گیت‌هاب رو نشون می‌داد. ظاهر این بج رو خیلی دوست داشتم. شاید تو پروژه‌های بعدی هم ازش استفاده کنم.
+
+یه متن راهنما هم پایین صفحه گذاشتم که حدود ۸ ثانیه بعد از لود اولیه‌ی سایت ظاهر می‌شد و می‌گفت می‌تونی روی کارت‌ها کلیک کنی تا توضیحات کامل‌ترشون رو ببینی.
+
+تا اون موقع خیلی واضح نبود که کارت‌ها قابل کلیکن. ممکن بود کاربر فکر کنه فقط با یه شلف استاتیک و خوشگل طرفه و اصلا امتحان نکنه روی کارت‌ها کلیک کنه. این هینت قرار بود نشون بده ماجرا فقط یه شلف خوشگل نیست. البته اگه کاربر تو همون ۸ ثانیه روی یه کارت کلیک می‌کرد، دیگه هینت نمایش داده نمی‌شد.
+
+پایین سمت راست هم از افکت ورق زدن صفحه استفاده کرده بودم. خیلی خوب شده بود، ولی برای پیاده‌سازیش از یه لایبرری خارجی نسبتا قدیمی به اسم peel.js استفاده می‌کردم. این لایبرری سنگین بود و من هم به همه‌ی فیچرهاش نیاز نداشتم. برای همین خودم یه نسخه‌ی سبک‌تر ساختم که فقط همون کارهایی رو انجام بده که لازم داشتم.`,
+                },
+            },
+            image: {
+                src: historyImage27Small,
+                lightboxSrc: historyImage27Large,
+                alt: "Portfolio history image 27",
+                width: 1919,
+                height: 907,
+            },
+            accent: "#f47caa",
+        },
+        {
+            id: "history-28",
+            translations: {
+                en: {
+                    title: "Facing My Biggest Fear",
+                    description: `The project had finally reached a point where I really needed to start working on the mobile version.
+
+To be fair, I really didn't want to touch it until now because it felt a little scary to me. I had no idea how to fit the pretty shelf I'd built into a tiny 380-pixel-wide screen. And then there was the whole thing with opening card details and everything else.
+
+For testing, I took the same shelf and its content, scaled everything down, and placed it on a mobile screen. Since I had used cqw, resizing the entire shelf and all its elements was actually pretty easy.
+
+But unfortunately, the result wasn't that great. It looked pretty to me, but using it on a phone was really uncomfortable.
+
+I couldn't bring myself to just leave it like that. I didn't want the mobile version to be nothing more than a smaller version of the desktop one.
+
+So... it was time to focus on building a mobile version that looked just as pretty as the desktop version, and something I would genuinely love too...`,
+                },
+                fa: {
+                    title: "مواجهه با بزرگ‌ترین ترس",
+                    description: `بعد دیگه کار پروژه به جایی رسید که واقعا لازم بود برم سراغ ساخت نسخه‌ی موبایل.
+
+تا اینجا راستش خیلی دلم نمی‌خواست سمتش برم، چون یکم ترسناک به نظرم میومد. ایده‌ای نداشتم که شلف خوشگلی که ساخته بودم رو چجوری تو یه صفحه‌ی کوچیک ۳۸۰ پیکسلی جا بدم. تازه باز شدن اطلاعات کارت‌ها و بقیه‌ی چیزهاش هم بود.
+
+برای تست، اومدم همون شلف و محتواهاش رو کوچیک کردم و تو صفحه‌ی موبایل گذاشتم. چون از cqw استفاده کرده بودم، تغییر اندازه‌ی کل شلف و اجزاش خیلی راحت بود.
+
+ولی متاسفانه نتیجه خیلی خوب نبود. به چشمم خوشگل میومد، ولی روی گوشی اصلا نمی‌شد راحت باهاش کار کرد.
+
+دلم نمی‌اومد همین‌جوری ولش کنم. نمی‌خواستم نسخه‌ی موبایل فقط یه نسخه‌ی کوچیک‌شده از دسکتاپ باشه.
+
+پس... وقتش بود تمرکزم رو بذارم روی ساخت یه نسخه‌ی موبایل که مثل نسخه‌ی دسکتاپ خوشگل باشه و چیزی باشه که خودم هم دوستش داشته باشم...`,
+                },
+            },
+            image: {
+                src: historyImage28Small,
+                lightboxSrc: historyImage28Large,
+                alt: "Portfolio history image 28",
+                width: 693,
+                height: 727,
+            },
+            accent: "#63c5ff",
+        },
+        {
+            id: "history-29",
+            translations: {
+                en: {
+                    title: "Way Prettier Than I Expected!",
+                    description: `Here's a big time jump. I spent a lot of time working on the mobile version. I had full-length screenshots of both the initial and final versions, so I put them together in this image.
+
+I had built something that kept the same soul and colors as the desktop version, but instead of one shelf, it was split into several different shelf sections that worked and looked much better on a phone.
+
+The mobile version turned out really, really good. At one point, I even liked it more than the desktop version. It felt smooth and professional to me, and a bit closer to what you would normally see in a portfolio. I also added a pretty bottom sheet for showing the card details, and I was really happy with it.
+
+With the mobile version finally checked off my list, all the big tasks of the project were done.
+
+Just a few little details left D:`,
+                },
+                fa: {
+                    title: "خیلی خوشگل‌تر از انتظارم!",
+                    description: `اینجا یه پرش زمانی بزرگ داریم. کلی روی ساخت نسخه‌ی موبایل کار کردم. از نسخه‌ی اولیه و نهایی هم عکس قدی داشتم که هر دوتاش رو تو این عکس گذاشتم.
+
+چیزی ساخته بودم که همون روح و رنگ‌های نسخه‌ی دسکتاپ رو داشت، ولی به جای یه شلف، تو چند سکشن مختلف شکسته شده بود و روی گوشی خیلی خیلی بهتر نشون داده می‌شد.
+
+نسخه‌ی موبایل خیلی خیلی خوب شده بود. یه زمانی حتی از نسخه‌ی دسکتاپ هم بیشتر دوستش داشتم. به چشمم نرم و حرفه‌ای میومد و یه مقدار هم به مدل رایج‌تر پورتفولیوها نزدیک‌تر بود. برای نشون دادن توضیحات کارت‌ها هم یه باتم‌شیت خوشگل گذاشته بودم که ازش خیلی راضی بودم.
+
+با تیک خوردن تسک نسخه‌ی موبایل، دیگه کارهای گنده‌ی پروژه تموم شده بود.
+
+فقط یه سری ریزکاری مونده بود D:`,
+                },
+            },
+            image: {
+                src: historyImage29Small,
+                lightboxSrc: historyImage29Large,
+                alt: "Portfolio history image 29",
+                width: 2335,
+                height: 1921,
+            },
+            accent: "#8fdb78",
+        },
+        {
+            id: "history-30",
+            translations: {
+                en: {
+                    title: "Two Birds, One Stone",
+                    description: `I had received feedback that the desktop version showed too much information all at once, giving the eye little time to get familiar with the site's gimmick. I also wanted to make it clearer that clicking on the shelf cards would reveal more details.
+
+For a while, I considered having a separate intro page with a short introduction about me before entering the shelf. I even worked on its design and implementation, but suddenly another idea came to mind.
+
+Why have a separate page at all? I could add an onboarding experience directly to the project, making the introduction to the shelf smoother while showing users that the cards were clickable.
+
+With the blur, the user's eyes could gradually get used to the shelf's appearance and gimmick, without having all the details thrown at them right away!
+
+I really liked this idea. I spent a lot of time adjusting the blur intensity, colors, text, and how it appeared. The result felt like it made exploring my project so much better :)`,
+                },
+                fa: {
+                    title: "یه تیر، دو نشون",
+                    description: `برای نسخه‌ی دسکتاپ یه بازخورد گرفته بودم که یهویی اطلاعات زیادی به کاربر نشون داده می‌شه و چشم فرصت نمی‌کنه آروم‌آروم با گیمیک سایت آشنا بشه. از طرفی می‌خواستم واضح‌تر باشه که می‌شه روی کارت‌ها کلیک کرد و اطلاعات کامل‌ترشون رو دید.
+
+مدت زیادی درگیر ایده‌ی یه صفحه‌ی intro جدا قبل از شلف بودم. اونجا یه توضیح خلاصه از خودم باشه و بعد کاربر وارد شلف بشه. حتی روی دیزاین و پیاده‌سازیش کار کردم، ولی یهویی یه ایده‌ی دیگه به ذهنم رسید.
+
+چرا اصلا یه صفحه‌ی جدا داشته باشم؟ می‌تونم به جاش یه حالت onboarding به خود پروژه اضافه کنم که هم ورود کاربر به شلف رو نرم‌تر کنه، هم نشون بده که می‌تونه روی کارت‌ها کلیک کنه.
+
+بلور هم کمک می‌کرد چشم کاربر آروم‌آروم با ظاهر و گیمیک شلف آشنا بشه، بدون اینکه همون اول همه‌ی جزئیات صفحه یهویی بریزه جلوش!
+
+خیلی از این ایده خوشم اومد. روی شدت بلور، رنگ‌ها، متن و نحوه‌ی نمایشش کلی کار کردم و در نهایت چیزی شد که به نظرم اکسپرینس دیدن پروژه رو بهترتر می‌کرد :)`,
+                },
+            },
+            image: {
+                src: historyImage30Small,
+                lightboxSrc: historyImage30Large,
+                alt: "Portfolio history image 30",
+                width: 1919,
+                height: 907,
+            },
+            accent: "#ffd166",
+        },
+        {
+            id: "history-31",
+            translations: {
+                en: {
+                    title: "Improving Performance",
+                    description: `Then I spent a lot of time improving the performance of both the desktop and mobile versions.
+
+I separated how the two layouts were rendered, reduced some box-shadows, and tried to improve my Lighthouse scores.
+
+One thing I really loved was building an automatic image optimization system. I could just put the high-quality original image in a folder, and it would generate two versions for me: a thumbnail and a full-size image.
+
+The thumbnail was resized to match the box where it would appear, cropped to remove anything outside the visible area, and compressed.
+The full-size version, used in the lightbox, was just a slightly compressed version of the original.
+
+This system made a huge difference in my site's performance. My Lighthouse Performance score went from 76 to 98 on desktop, and from 53 to 85 on mobile!`,
+                },
+                fa: {
+                    title: "بهتر کردن Performance",
+                    description: `بعد حسابی افتادم روی بهتر کردن پرفورمنس نسخه‌ی دسکتاپ و موبایل.
+
+رندر شدن دو ساختار رو از هم جدا کردم، از یه سری box-shadowها کم کردم و سعی کردم امتیاز Lighthouse رو بهتر کنم.
+
+یه کاری که خیلی خیلی دوست داشتم، ساختن یه سیستم برای آماده کردن عکس‌های پروژه بود. فقط کافی بود نسخه‌ی باکیفیت عکس رو تو یه پوشه بذارم و سیستم خودش دو تا نسخه بسازه. یکی تامبنیل و یکی برای نمایش باکیفیت تو سایت.
+
+نسخه‌ی تامبنیل متناسب با اندازه‌ی باکسی که قرار بود توش نشون داده بشه ساخته می‌شد. عکس رو به اندازه‌ی مناسب درمی‌آورد، قسمت‌های اضافی رو کراپ می‌کرد و بعد حسابی کامپرسش می‌کرد.
+نسخه‌ی باکیفیت برای lightbox هم همون عکس اصلی بود که یکم کامپرس شده بود.
+
+این سیستم جدید خیلی خیلی روی پرفورمنس سایت تاثیر گذاشت. امتیاز Performance تو Lighthouse برای دسکتاپ از ۷۶ به ۹۸ و برای موبایل از ۵۳ به ۸۵ رسید!`,
+                },
+            },
+            image: {
+                src: historyImage31Small,
+                lightboxSrc: historyImage31Large,
+                alt: "Portfolio history image 31",
+                width: 1919,
+                height: 1079,
+            },
+            accent: "#ae96ff",
+        },
+        {
+            id: "history-32",
+            translations: {
+                en: {
+                    title: "For Those Lost in My World",
+                    description: `Since I had set ali-sdg.is-a.dev as my personal domain in my GitHub settings, all the projects I published on GitHub Pages would end up under this same domain.
+
+So I thought it would be a pretty cool idea to add a 404 page to this project, which had now become the hub for all my projects.
+
+Basically, it first tries to open the address the user entered. If GitHub can't find it, it sends them to the hub, which is this project. Then it checks whether the address is one of the routes defined in the project. If it isn't, it shows the 404 page.
+
+This way, I added a main hub and a 404 page for anyone who gets lost in the world I've been building on GitHub for years.
+
+I also gave the 404 page a cute little animation :)`,
+                },
+                fa: {
+                    title: "برای گم‌شدگان دنیام",
+                    description: `چون تو تنظیمات گیت‌هابم آدرس ali-sdg.is-a.dev رو به‌عنوان آدرس شخصیم تعریف کرده بودم، تمام پروژه‌هایی که روی GitHub Pages قرار می‌گرفتن، آدرسشون میومد زیر همین دامنه.
+
+پس گفتم ایده‌ی خوشگلی می‌شه اگه روی این پروژه که دیگه هاب تمام پروژه‌هام شده بود، یه صفحه‌ی ۴۰۴ هم بذارم.
+
+یعنی اول سعی می‌شه همون آدرسی که کاربر وارد کرده باز بشه. اگه گیت‌هاب نتونه پیداش کنه، می‌فرستتش به هاب که همین پروژه‌ست. اینجا هم چک می‌شه که آیا آدرس جزو آدرس‌های تعریف‌شده‌ی پروژه هست یا نه. اگه نبود، صفحه‌ی ۴۰۴ رو نشون می‌ده.
+
+اینجوری برای کل دنیایی که سال‌هاست تو گیت‌هاب ساختم، یه هاب اصلی و یه صفحه‌ی ۴۰۴ برای کسایی که تو دنیام گم می‌شن اضافه کردم.
+
+به صفحه‌ی ۴۰۴ هم یه انیمیشن ریز خوشگل دادم :)`,
+                },
+            },
+            image: {
+                src: historyImage32Small,
+                lightboxSrc: historyImage32Large,
+                alt: "Portfolio history image 32",
+                width: 597,
+                height: 821,
+            },
+            accent: "#56e0d2",
+        },
+        {
+            id: "history-33",
+            translations: {
+                en: {
+                    title: "Ali's Social Menu",
+                    description: `I always wanted to have a simple Linktree for myself. A place with just my social media links.
+
+Then I thought, since I was already in a flow state and really liked this design and its colors, why not add a /links route to the same project for my own Linktree page?
+
+I added my social media links there, and a little card with an image at the bottom, saying that if you wanted, you could also check out my portfolio.
+
+For the background, I used the same custom wave system I had built for the desktop version.
+
+I think it turned out pretty, clean, and cool. Right now, I'm only using it in my Instagram bio and on the 404 page. Maybe I'll use it elsewhere in the future, but for now, I have no idea where else to put it.
+
+And honestly, I really didn't want to start writing the stories for my Tech Stack and projects. Building all these little extras was just my way of putting that off :))`,
+                },
+                fa: {
+                    title: "منوی سوشال علی",
+                    description: `همیشه دوست داشتم یه لینک‌تری ساده برای خودم داشته باشم. جایی که فقط لینک سوشال‌مدیاهام باشه.
+
+بعد دیدم من که تو flow state هستم و از این مدل ظاهر و رنگ‌ها هم خوشم اومده، بذار به همین پروژه یه آدرس /links هم اضافه کنم که صفحه‌ی لینک‌تریم رو باز کنه.
+
+توش لینک سوشال‌مدیاهام رو گذاشتم. پایینش هم یه کارت با عکس گذاشتم که بگه اگه خواستی، می‌تونی بری پورتفولیوم رو هم ببینی.
+
+برای بک‌گراندش هم از همون ساختار موجی کاستومی که تو نسخه‌ی دسکتاپ استفاده کرده بودم، استفاده کردم.
+
+به نظرم چیز خوشگل و تر و تمیز و باحالی شد. الان فقط تو بیوی اینستام و صفحه‌ی ۴۰۴ ازش استفاده کردم. شاید تو آینده لینکش رو جاهای دیگه هم بذارم، ولی فعلا ایده‌ای ندارم کجاهای دیگه می‌تونم ازش استفاده کنم.
+
+و راستش اصلا دلم نمی‌خواست برم سراغ نوشتن داستان Tech Stack و پروژه‌ها. ساخت این چیزای جدید فقط تلاش برای عقب انداختن رسیدن به اون‌ها بود :))`,
+                },
+            },
+            image: {
+                src: historyImage33Small,
+                lightboxSrc: historyImage33Large,
+                alt: "Portfolio history image 33",
+                width: 2559,
+                height: 1599,
+            },
+            accent: "#78a9ff",
         },
     ],
 };
