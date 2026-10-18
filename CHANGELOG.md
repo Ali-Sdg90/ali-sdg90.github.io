@@ -1,3 +1,10 @@
+## [1.39.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.6...v1.39.7) (2026-10-18)
+
+
+### Bug Fixes
+
+* add new and last story card in hmpwb ([e0d6464](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/e0d64640ec11f1f4cd70357c55821b5bb19cc01a))
+
 ## [1.39.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.5...v1.39.6) (2026-10-18)
 
 
