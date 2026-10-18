@@ -199,6 +199,13 @@
 
 - [x] Add og-image and other header html mates
 
+- [x] Add remaining hmpwb cards
+
+- [x] Set up new image optimizer pipeline to project
+    - [x] Can be run via command and automatic on build
+    - [x] Remove the temporary docs after the pipeline is set up and working
+    - [x] Fix images in hmpwb
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -209,8 +216,6 @@
 - [ ] finalize the resume.pdf file
     - [ ] Add CSI YouTube video link in the resume
     - [ ] Add hash link to my career and projects in my resume.pdf file
-
-- [ ] Add remaining hmpwb cards
 
 - [ ] Make all labels and link description use impacts template (especially for the featured projects section)
 
@@ -248,11 +253,6 @@
 - [ ] Maybe add contributing, pull req and etc files?
 
 - [ ] Add general test cases
-
-- [ ] Set up new image optimizer pipeline to project
-    - [x] Can be run via command and automatic on build
-    - [ ] Remove the temporary docs after the pipeline is set up and working
-    - [ ] Fix images in hmpwb
 
 - [ ] Maybe lower the resolution of the cards in shelf to fix the flashing lines?
 

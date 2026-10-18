@@ -2,6 +2,7 @@ import { HiArrowUpRight } from "react-icons/hi2";
 
 import portfolioPreview from "../assets/images/site/readme-preview.webp";
 import emojiSignature from "../assets/images/ui/emoji-signature.webp";
+import DynamicBackground from "../components/layout/DynamicBackground";
 import { aboutData } from "../data/portfolio/aboutData";
 import { contactItems, socialItems } from "../data/portfolio/profileLinks";
 import { trackUmamiEvent } from "../utils/analytics";
@@ -48,6 +49,8 @@ const LinkHub = () => {
 
     return (
         <main className="link-hub-page">
+            <DynamicBackground />
+
             <section className="link-hub-card" aria-labelledby="link-hub-title">
                 <header className="link-hub-profile">
                     <div className="link-hub-avatar">

@@ -1,4 +1,5 @@
 @use "../assets/scss/base/variables" as *;
+@use "../assets/scss/components/dynamic-background/index";
 
 $link-hub-accent: #1688ff;
 $link-hub-accent-bright: #58b6ff;
@@ -46,32 +47,56 @@ svg {
 }
 
 .link-hub-page {
+    --hero-stage-lift: 0px;
+
+    position: relative;
     display: grid;
     min-height: 100vh;
     padding: max(4.9rem, calc(env(safe-area-inset-top) + 4.25rem)) 0.75rem
         max(3rem, calc(env(safe-area-inset-bottom) + 2rem));
     place-items: start center;
-    background:
-        radial-gradient(
-            circle at 12% -5%,
-            rgba(22, 136, 255, 0.18),
-            transparent 26rem
-        ),
-        radial-gradient(
-            circle at 92% 94%,
-            rgba(0, 104, 255, 0.13),
-            transparent 31rem
-        ),
-        linear-gradient(
-            180deg,
-            #07101b 0%,
-            $link-hub-background 32%,
-            #070b11 100%
-        );
+    isolation: isolate;
+
+    .bg-effect {
+        z-index: 0;
+        background:
+            radial-gradient(
+                circle at 50% 0%,
+                rgba(22, 136, 255, 0.13),
+                transparent 34rem
+            ),
+            radial-gradient(
+                circle at 88% 72%,
+                rgba(0, 104, 255, 0.1),
+                transparent 28rem
+            ),
+            $link-hub-background;
+    }
+
+    .bg-ground {
+        display: none;
+    }
+
+    .bg-orb.orb-cyan {
+        background: rgba(22, 136, 255, 0.24);
+    }
+
+    .bg-orb.orb-yellow {
+        background: rgba(42, 92, 190, 0.15);
+    }
+
+    .bg-orb.orb-blue {
+        background: rgba(88, 182, 255, 0.18);
+    }
+
+    .bg-orb.orb-gold {
+        background: rgba(0, 74, 168, 0.14);
+    }
 }
 
 .link-hub-card {
     position: relative;
+    z-index: 1;
     width: min(90%, 26.25rem);
     padding: 0.75rem;
     overflow: visible;
