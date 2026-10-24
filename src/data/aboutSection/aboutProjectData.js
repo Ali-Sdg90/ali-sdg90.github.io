@@ -52,7 +52,7 @@ export const aboutProjectData = {
             "Custom shelf navigation with drag momentum, friction, and infinite scrolling",
             "Reusable data system for projects, skills, career history, and impact metrics",
             "Project panels with image galleries, lightboxes, external links, and bilingual stories",
-            "A 26-chapter build journal with keyboard and reduced-motion support",
+            "A 34-slide build journal with keyboard and reduced-motion support",
         ],
         galleryImages: projectGalleryImages["alis-portfolio"],
         storyEN: "placeholder: see the bottom-right corner of the page",

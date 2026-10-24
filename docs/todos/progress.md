@@ -206,6 +206,22 @@
     - [x] Remove the temporary docs after the pipeline is set up and working
     - [x] Fix images in hmpwb
 
+- [x] Research my rules in mlk in my freelance era, and what should i add to my portfolio and resume.pdf and linkedin for it
+
+- [x] Finalize my linkedin career journey and related sections
+
+- [x] Remove unnecessary slides in history class
+
+- [x] Learn about CSR and SSG methods
+
+- [x] Add impacts.txt in llms folder!
+
+- [x] Add how-it-was-built.txt in llms folder
+
+- [x] Update and finalize the llms.txt and llms folder content
+
+- [x] Update number of slides in hmpwb in llms.txt, readme and project about card
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -219,20 +235,15 @@
 
 - [ ] Make all labels and link description use impacts template (especially for the featured projects section)
 
-- [ ] Research my rules in mlk in my freelance era, and what should i add to my portfolio and resume.pdf and linkedin for it
-
-- [ ] Finalize my linkedin career journey and related sections
-
 - [ ] Research what about how can i improve my github profile for better seo and maybe adding .github to it?
 
 - [ ] Research my seo and how my socials are structured and how can i improve them
     - [ ] YouTube
+    - [x] Linkedin
     - [ ] X
     - [ ] Spotify?
     - [ ] instagram?
     - [ ] Stackoverflow?
-
-- [ ] Remove unnecessary slides in history class
 
 - [ ] Fix text overflow in stories in about section
 
@@ -256,14 +267,6 @@
 
 - [ ] Maybe lower the resolution of the cards in shelf to fix the flashing lines?
 
-- [ ] Add impacts.txt in llms folder!
-
-- [ ] Add how-it-was-built.txt in llms folder
-
-- [ ] Update and finalize the llms.txt and llms folder content
-
-- [ ] Learn about CSR and SSG methods
-
 - [ ] Research [CSR and crawler accessibility](../misc/csr-crawler-accessibility.md)
 
 - [ ] Research indexing the URLs into Google Search Console
@@ -271,5 +274,3 @@
 - [ ] Add MLK Report Generator desc in melkradar career card and story
 
 - [ ] Make hmpwb mobile view
-
-- [ ] Update number of slides in hmpwb in llms.txt, readme and project about card

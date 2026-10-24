@@ -307,7 +307,7 @@ export const shelfSections = [
                 title: "SettleitGPT",
                 company: "SettleitGPT",
                 meta: "React Native Developer",
-                year: "2025 - 2026",
+                year: "Apr - Sep 2025",
                 image: settleitLogo,
             },
         ],

@@ -8,7 +8,7 @@ It's an internal Android application installed on the phones used by members of 
 
 I designed and implemented the entire system myself: the Android app, backend, and Telegram bot.
 
-The result was automating one of the most manual and frustrating workflows in the sales team. In the first month with the system running, the team was able to complete more than 5x the amount of work compared to the previous month.
+The result was automating one of the most manual and frustrating workflows in the sales team. In its first month, the system processed 3.5 times as many requests as the previous manual process did in a typical month.
 
 MLK DVR Receiver is an internal company application, so its source code, downloads, and technical details aren't publicly available.
 

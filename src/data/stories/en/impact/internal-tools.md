@@ -2,7 +2,7 @@ I like automating things that can be automated.
 
 At both CS Internship and MelkRadar, I built internal tools and systems to make everyday work easier, more scalable, and more reliable. Some of them were part of my responsibilities, but for most of them I noticed a problem myself, discussed it with the people responsible, got approval, built a solution, and eventually saw it become part of the actual workflow.
 
-At MelkRadar, I built MLK DVR Receiver. I was personally one of the people dealing with the old process, so I knew how slow and frustrating it was. After coordinating with management, I built an internal system consisting of an Android app, a backend, and a Telegram bot that all worked together. It removed almost all of the manual effort from the process and increased the team's output by more than 5x within a month.
+At MelkRadar, I built MLK DVR Receiver. I was personally one of the people dealing with the old process, so I knew how slow and frustrating it was. After coordinating with management, I built an internal system consisting of an Android app, a backend, and a Telegram bot that all worked together. It removed almost all of the manual effort from the process. In its first month, the system processed 3.5 times as many requests as the previous manual process did in a typical month.
 
 Most of the other tools were built for CS Internship. Scalability was always an important need for the program, and a lot of that depended on having good internal systems.
 

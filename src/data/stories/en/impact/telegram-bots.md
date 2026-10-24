@@ -10,7 +10,7 @@ CS Club Bot ran for around a year and a half. It used LLMs to analyze interns' T
 
 CS Automation Bot is another active bot in the program. It monitors services and bots running on the program's servers. If something goes down or a server needs attention, it sends an alert to the mentors' group so someone can take the required action and bring the service back up.
 
-For MelkRadar, I built a bot that became an important part of the sales team's workflow. It replaced a very repetitive manual process with an automated system, reduced most of the manual effort, and increased the amount of work the team could complete by more than five times. The bot is still actively used today.
+For MelkRadar, I built a bot that became an important part of the sales team's workflow. It replaced a very repetitive manual process with an automated system and reduced most of the manual effort. In its first month, the system processed 3.5 times as many requests as the previous manual process did in a typical month. The bot is still actively used today.
 
 For myself, I built Fabrexa AI Bot and Askly90 Bot.
 

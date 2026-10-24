@@ -4,15 +4,17 @@ Periods and outcomes below follow the portfolio's current Career Journey data.
 
 ## CS Internship
 
-**Technical Mentor & System Designer | 2023-2026**
+**Web Development Intern → Technical Mentor & Systems Designer | 2023-2026**
 
-Progressed from web intern to technical mentor and program contributor. Worked on mentorship, onboarding, program processes, internal systems, workflow automation, React tools, Telegram bots, and Azure Boards; built five internal automation tools.
+Progressed from web intern to technical mentor and program contributor. Mentored 25+ web development interns, personally onboarded eight participants, helped redesign the program's entry process, and built five internal automation tools for operations, feedback, scheduling, and queue management.
 
 ## MelkRadar
 
-**Front-End Technical Lead | 2023-2025**
+**Front-End Developer | August 2023 – May 2024**
 
-Contributed across six products and projects, built reusable frontend systems, reviewed production code, onboarded engineers, delivered more than 50 Chart.js visualizations, introduced Mapbox GL JS, and built internal automation spanning Android, Node.js, and Telegram.
+**Front-End Technical Lead | May 2024 – January 2026**
+
+Contributed across six products and projects, built reusable frontend systems, served as a main code reviewer for 1.5 years, onboarded four frontend engineers, delivered more than 50 Chart.js visualizations, introduced Mapbox GL JS, and built an internal automation system spanning Android, Node.js, and Telegram.
 
 ## Dadeh Pardazi Azmoudeh Karan
 
@@ -22,6 +24,6 @@ Built a large administrative platform's frontend from scratch with React and Ant
 
 ## SettleitGPT
 
-**React Native Developer | 2025-2026**
+**React Native Developer | April 2025 – September 2025**
 
 Co-developed an AI-powered iOS application with React Native and Expo, worked across the app and Firebase backend, integrated native device features and generated voices, and helped take the product from an early MVP to an App Store release.

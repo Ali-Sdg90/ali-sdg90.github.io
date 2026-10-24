@@ -7,7 +7,7 @@ const HOME_METADATA = {
 const BUILD_STORY_METADATA = {
     title: "How My Portfolio Was Built | Ali Sadeghi",
     description:
-        "A 26-chapter visual story about the design and engineering process behind Ali Sadeghi's interactive portfolio.",
+        "A 34-slide visual story about the design and engineering process behind Ali Sadeghi's interactive portfolio.",
     canonicalUrl: "https://ali-sdg.is-a.dev/how-i-built-my-portfolio/",
 };
 

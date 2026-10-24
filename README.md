@@ -67,7 +67,7 @@ I tried different layouts, experimented with perspective and movement, changed h
 
 I wanted to remember that process, including the ideas I didn't keep.
 
-So I made **How My Portfolio Was Built**, a 26-chapter visual journal available in **English and Persian**. It brings together early sketches, experiments, rejected approaches, design decisions, technical challenges, and the thinking behind the final experience.
+So I made **How My Portfolio Was Built**, a 34-slide visual journal available in **English and Persian**. It brings together early sketches, experiments, rejected approaches, design decisions, technical challenges, and the thinking behind the final experience.
 
 The journal is part of the site itself, with its own page-turn interaction, chapter navigation, and images from the journey.
 

@@ -252,7 +252,7 @@ export const aboutCareerData = {
         ],
         featuresTitle: "Focus Areas",
         features: [
-            "Mentored 30+ web development interns through technical coaching and progress reviews",
+            "Mentored 25+ web development interns through technical coaching and progress reviews",
             "Personally onboarded 8 interns into the program and supported their early journey",
             "Led the redesign of the program entry process over a 6-month period with the governance team",
             "Designed and improved internal systems, workflows, roles, and operating processes",
@@ -323,7 +323,7 @@ export const aboutCareerData = {
         title: "MelkRadar",
         lightboxImage: melkRadarLogoLarge,
         summary:
-            "Front-End Technical Lead across the MelkRadar ecosystem, contributing to 6 products and projects, reviewing production code, onboarding team members, and developing internal tools and automation systems to improve team workflows.",
+            "Front-End Developer from August 2023 to May 2024, then Front-End Technical Lead through January 2026 across the MelkRadar ecosystem, contributing to 6 products and projects, reviewing production code, onboarding team members, and developing internal tools and automation systems.",
         featuresTitle: "Focus Areas",
         features: [
             "Contributed across 6 MelkRadar products and projects, including the main platform, browser extension, KhodroRadar, TonReach, and client-facing projects.",
