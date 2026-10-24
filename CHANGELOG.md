@@ -1,3 +1,10 @@
+## [1.39.9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.8...v1.39.9) (2026-10-24)
+
+
+### Bug Fixes
+
+* finalize llms.txt and its references, update todos ([d07892e](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d07892e9498fc0675ccc550b8d6301104dcaa2e1))
+
 ## [1.39.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.7...v1.39.8) (2026-10-18)
 
 
