@@ -1,6 +1,6 @@
 # About Ali Sadeghi
 
-Ali Sadeghi is a software developer working primarily with React and JavaScript. He approaches software with a builder mindset: when an idea or problem is worth pursuing, he learns the tools needed to turn it into a working product.
+Ali Sadeghi is a software engineer based in Tehran, Iran, working primarily with React and JavaScript. He is interested in building software, automation systems, and internal tools. He approaches software with a builder mindset: when an idea or problem is worth pursuing, he learns the tools needed to turn it into a working product.
 
 He values careful implementation, strong quality standards, and attention to detail. Beyond hands-on development, his work includes technical mentoring, code review, process design, developer onboarding, and helping lead teams.
 
