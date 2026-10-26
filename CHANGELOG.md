@@ -1,3 +1,10 @@
+## [1.39.10](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.9...v1.39.10) (2026-10-26)
+
+
+### Bug Fixes
+
+* update wrong gallery image base light-boxes sizes, add cs-steps to sitemap ([1e8bb32](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/1e8bb32cadaee25a4e215cbb256056421a91bc07))
+
 ## [1.39.9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.8...v1.39.9) (2026-10-24)
 
 
