@@ -2,11 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 const MobileReveal = ({ children, className = "" }) => {
     const elementRef = useRef(null);
-    const [isVisible, setIsVisible] = useState(
-        () =>
-            typeof window !== "undefined" &&
-            window.matchMedia("(prefers-reduced-motion: reduce)").matches,
-    );
+    const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
         const element = elementRef.current;

@@ -1,6 +1,6 @@
 @use "../../base/variables" as *;
 
-@media (max-width: 899px) {
+@media screen {
     .mobile-build-entry {
         margin: 6.5rem var(--mobile-gutter) 0;
         padding: 1.35rem;

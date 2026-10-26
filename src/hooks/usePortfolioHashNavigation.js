@@ -36,6 +36,10 @@ const readHash = () => {
 const withCurrentSearch = (path) => `${path}${window.location.search}`;
 
 const resolveNavigation = () => {
+    if (typeof window === "undefined") {
+        return { ...shelfNavigation, replacementUrl: null };
+    }
+
     const hash = readHash();
 
     if (isBuildStoryPath(window.location.pathname)) {

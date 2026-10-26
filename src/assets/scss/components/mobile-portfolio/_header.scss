@@ -1,6 +1,6 @@
 @use "../../base/variables" as *;
 
-@media (max-width: 899px) {
+@media screen {
     .mobile-nav {
         position: fixed;
         z-index: 150;
