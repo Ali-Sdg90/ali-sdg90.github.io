@@ -71,6 +71,18 @@
             content="Desktop preview of Ali Sadeghi's interactive portfolio"
         />
 
+        <noscript>
+            <style>
+                @media (max-width: 899px) {
+                    #root .mobile-reveal {
+                        opacity: 1;
+                        transform: none;
+                        transition: none;
+                    }
+                }
+            </style>
+        </noscript>
+
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -131,10 +143,7 @@
             (function () {
                 const WEBSITE_ID = "3d04af0b-cd6f-4e05-91aa-0bf401a2c02a";
                 const PRODUCTION_HOSTNAME = "ali-sdg.is-a.dev";
-
-                // Change me for test, then hard reload the page/project
                 const TRACK_LOCALHOST = false;
-
                 const hostname = window.location.hostname;
                 const isProduction = hostname === PRODUCTION_HOSTNAME;
                 const isLocalhost =
