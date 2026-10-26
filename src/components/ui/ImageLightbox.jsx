@@ -43,6 +43,8 @@ const getFallbackText = (image) => {
 };
 
 const ImageLightbox = ({ image, onClose }) => {
+    const initialImageWidth = image.lightboxWidth ?? image.width;
+    const initialImageHeight = image.lightboxHeight ?? image.height;
     const [isClosing, setIsClosing] = useState(false);
     const [hasImageError, setHasImageError] = useState(false);
     const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -50,7 +52,9 @@ const ImageLightbox = ({ image, onClose }) => {
     const [offset, setOffset] = useState({ x: 0, y: 0 });
     const [isPanning, setIsPanning] = useState(false);
     const [imageAspectRatio, setImageAspectRatio] = useState(
-        image.width && image.height ? image.width / image.height : 16 / 9,
+        initialImageWidth && initialImageHeight
+            ? initialImageWidth / initialImageHeight
+            : 16 / 9,
     );
     const viewportRef = useRef(null);
     const lastPointerPositionRef = useRef(null);

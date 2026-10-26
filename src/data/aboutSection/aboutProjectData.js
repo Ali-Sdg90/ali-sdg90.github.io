@@ -214,8 +214,8 @@ export const aboutProjectData = {
         lightboxImage: spotTasteLarge,
         imageWidth: 1254,
         imageHeight: 1254,
-        lightboxWidth: 1254,
-        lightboxHeight: 1254,
+        lightboxWidth: 1017,
+        lightboxHeight: 1017,
         summary:
             "A browser-based dashboard for exploring how a Spotify collection changes across listening order, mood, genres, artists, and audio features.",
         links: [
