@@ -31,13 +31,18 @@
     }
 
     .mobile-portfolio {
+        display: block;
+    }
+}
+
+@media screen {
+    .mobile-portfolio {
         --mobile-gutter: clamp(1rem, 5vw, 1.5rem);
         --mobile-accent: #1688ff;
         --mobile-accent-bright: #58b6ff;
 
         position: relative;
         isolation: isolate;
-        display: block;
         overflow: visible;
         color: $color-text;
         background:

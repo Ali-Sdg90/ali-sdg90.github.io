@@ -1,6 +1,6 @@
 @use "../../base/variables" as *;
 
-@media (max-width: 899px) {
+@media screen {
     .mobile-desktop-preview-wrap {
         padding: 1.65rem var(--mobile-gutter) 0;
     }
