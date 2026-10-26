@@ -222,6 +222,10 @@
 
 - [x] Update number of slides in hmpwb in llms.txt, readme and project about card
 
+- [x] Research [CSR and crawler accessibility](../misc/csr-crawler-accessibility.md)
+
+- [x] Research indexing the URLs into Google Search Console
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -266,10 +270,6 @@
 - [ ] Add general test cases
 
 - [ ] Maybe lower the resolution of the cards in shelf to fix the flashing lines?
-
-- [ ] Research [CSR and crawler accessibility](../misc/csr-crawler-accessibility.md)
-
-- [ ] Research indexing the URLs into Google Search Console
 
 - [ ] Add MLK Report Generator desc in melkradar career card and story
 
