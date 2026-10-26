@@ -29,7 +29,7 @@
     "mobile": "vite --host 0.0.0.0 --port 5173",
     "image:opt": "node scripts/optimize-images.mjs",
     "prebuild": "npm run image:opt",
-    "build": "vite build",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "lint": "eslint .",

@@ -23,7 +23,7 @@ const subscribe = (onViewportChange) => {
 };
 
 const getSnapshot = () => getMobileViewportQueryList()?.matches ?? false;
-const getServerSnapshot = () => false;
+const getServerSnapshot = () => true;
 
 const useMobileViewport = () =>
     useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);

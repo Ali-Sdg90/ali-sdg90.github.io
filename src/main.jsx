@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import App from "./App.jsx";
+import { MOBILE_VIEWPORT_QUERY } from "./hooks/useMobileViewport";
 import { isBuildStoryPath, isPortfolioHomePath } from "./utils/portfolioRoutes";
 
 import "./assets/scss/index.scss";
@@ -8,7 +9,7 @@ import "./assets/scss/index.scss";
 const isPortfolioPath =
     isPortfolioHomePath(window.location.pathname) ||
     isBuildStoryPath(window.location.pathname);
-const root = createRoot(document.getElementById("root"));
+const rootElement = document.getElementById("root");
 
 const renderNotFoundPage = async () => {
     const [{ default: NotFoundPage }] = await Promise.all([
@@ -29,7 +30,7 @@ const renderNotFoundPage = async () => {
 
     robotsMeta.content = "noindex,follow";
 
-    root.render(
+    createRoot(rootElement).render(
         <StrictMode>
             <NotFoundPage />
         </StrictMode>,
@@ -37,11 +38,21 @@ const renderNotFoundPage = async () => {
 };
 
 if (isPortfolioPath) {
-    root.render(
+    const app = (
         <StrictMode>
             <App />
-        </StrictMode>,
+        </StrictMode>
     );
+
+    if (
+        rootElement.hasChildNodes() &&
+        window.matchMedia(MOBILE_VIEWPORT_QUERY).matches
+    ) {
+        hydrateRoot(rootElement, app);
+    } else {
+        rootElement.replaceChildren();
+        createRoot(rootElement).render(app);
+    }
 } else {
     renderNotFoundPage();
 }
