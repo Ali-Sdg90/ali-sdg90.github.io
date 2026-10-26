@@ -1,3 +1,16 @@
+# [1.40.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.10...v1.40.0) (2026-10-26)
+
+
+### Bug Fixes
+
+* make ui elements force visible in desktop view on disabled js, ([72596be](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/72596be6551dae1878499d7bd7eea0ada3183124))
+* make ui elements force visible in mobile view on disabled js, update todos ([504020b](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/504020bbaaf1641df1e4f9fec26f9b76459d1233))
+
+
+### Features
+
+* add SSG method for mobile view and update build command ([0b4d074](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/0b4d0740ac86535d37cc2e7addf4e8352fbd71bf))
+
 ## [1.39.10](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.9...v1.39.10) (2026-10-26)
 
 
