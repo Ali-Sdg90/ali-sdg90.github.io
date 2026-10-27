@@ -11,13 +11,15 @@
 
 ## A little world of my own
 
-I wanted my portfolio to be more than a list of projects, skills, and places I've worked.
+For a long time, I wanted a portfolio of my own, but I never quite had the time, the reason, or the right idea to build one. When the moment finally came, I knew I didn't want it to be just another ordinary portfolio.
 
-Some things I've built began with curiosity. Others grew from problems I wanted to solve, people I worked with, and things I learned or shared along the way. Each has a story, and I wanted those stories to share a home.
+The things I build reflect a part of who I am. They're things I create and share with the world, and I wanted this portfolio to be something I could genuinely love and feel proud of.
 
-Because of how I've structured GitHub Pages across my account, each project's live site can automatically sit under the same domain. That makes this portfolio a hub for everything I've built over the years and whatever comes next. I had wanted a place like this for a long time, but never had the time or the right idea for it.
+Then came the idea of a shelf. A beautiful, carefully crafted space where my projects could sit like books in a library. Each book would have its own story, personality, and reason for existing.
 
-I kept refining how the shelf moves, how the light and perspective feel, how cards open, and how the experience works across screens.
+Over roughly five months, that idea grew from the first line of code into a 3D shelf, a mobile experience, and countless little details and features along the way. Building it was such a lovely journey that I decided to share the story of how it all came together here, too.
+
+I hope you enjoy exploring my little world of creations :)
 
 ## What's inside
 
@@ -73,18 +75,23 @@ The journal is part of the site itself, with its own page-turn interaction, chap
 
 **[Read the full build story ↗](https://ali-sdg.is-a.dev/how-i-built-my-portfolio)**
 
-## The engineering behind it
+## Technical highlights
 
-The shelf may be the first thing you notice, but a lot of this project is about what happens behind the visuals.
+Beyond the visual experience, this portfolio includes a few engineering details I'm particularly happy with.
 
-- **A configurable shelf system.** Each row defines its own geometry, perspective, dimensions, and movement behavior, while reusable React components handle the shared interactions.
-- **Motion that belongs to the interface.** Dragging, momentum, friction, card selection, panel transitions, and the page-turn interaction are designed to feel connected.
-- **Content separated from components.** Projects, career entries, tools, impact figures, and build-story chapters live in structured data, so content can evolve without rebuilding the UI around it.
-- **Two deliberate layouts.** Desktop and mobile share their content and identity, but use different compositions and interaction patterns.
-- **An image pipeline.** Original images are processed with Sharp into optimized WebP assets, including thumbnails and high-resolution versions where needed. Caching avoids unnecessary work when files haven't changed.
-- **Accessibility considerations.** The interface uses semantic controls, visible focus states, reduced-motion handling, and keyboard support for selected interactions such as shelf cards, galleries, and dialogs.
-- **Shareable navigation.** Important states can be opened with direct URL hashes, making it easier to share a particular part of the portfolio.
-- **Lightweight analytics.** Production-only Umami events help me understand meaningful interactions without turning the experience into a tracking-heavy website.
+- **Hybrid SSG & CSR:** Build-time prerendering with React 19, hydration for the mobile experience, and client-side rendering for the interactive desktop interface.
+- **No-JavaScript Fallback:** Prerendered portfolio content remains readable, styled, and scrollable when JavaScript is unavailable.
+- **Perspective-Based 3D Shelf:** A configurable shelf system built with CSS perspective, 3D transforms, container query units, and aspect-ratio-aware layout adjustments.
+- **Custom Shelf Scrolling Physics:** Drag interactions, momentum, friction, automatic scrolling, and seamlessly looping card rows.
+- **Purpose-Built Mobile Experience:** A separate mobile interface with scroll-aware navigation, swipeable project cards, animated avatar transitions, and detail bottom sheets.
+- **Custom Page-Peel Animation:** A page-turn transition built with geometry calculations, Bézier curves, and dynamic CSS clip paths instead of a page-flip library.
+- **Interactive Image Lightbox:** High-resolution image previews with zoom, panning, keyboard controls, and touch-based pinch gestures.
+- **Automated Image Pipeline:** Sharp-based WebP generation with configurable presets, thumbnail and high-resolution variants, and SHA-256 processing caches.
+- **Bilingual, Data-Driven Content:** Shared structured data and separate English and Persian Markdown stories across projects, tech stack, impact, and career entries.
+- **Shareable Deep Links:** URL-based navigation for opening specific portfolio cards, sections, and the build story directly.
+- **Accessible Interaction Patterns:** Semantic controls, keyboard interaction, focus management, accessible dialogs, inert background states, and reduced-motion support.
+- **Machine-Readable Content:** Semantic HTML, structured metadata, robots directives, a sitemap, and supplementary `llms.txt` and Markdown resources.
+- **Automated Delivery & Analytics:** GitHub Actions CI/CD, isolated pull-request previews, semantic releases, GitHub Pages deployment, and production-only Umami tracking.
 
 ## Beyond the main page
 
@@ -111,17 +118,17 @@ They're simpler parts of the site, but I wanted them to have the same attention 
 
 The tools matter, but I see them as choices that help bring the idea to life.
 
-| Area               | Technology                          | What it does here                                                    |
-| ------------------ | ----------------------------------- | -------------------------------------------------------------------- |
-| Interface          | React 19                            | Components, state, and the interactive experience                    |
-| Build tooling      | Vite 8                              | Local development, production builds, and multiple HTML entry points |
-| Styling            | SCSS                                | Perspective, layouts, responsive behavior, and visual details        |
-| Motion             | Framer Motion + CSS                 | Transitions, gestures, and custom interactions                       |
-| Image processing   | Sharp                               | Optimized WebP generation and cached image processing                |
-| Code quality       | ESLint, Prettier, Husky, Commitlint | Code consistency and commit checks                                   |
-| Release automation | semantic-release                    | Versions, changelogs, tags, and releases                             |
-| Delivery           | GitHub Actions + GitHub Pages       | Automated builds, pull-request previews, and deployment              |
-| Analytics          | Umami                               | Measuring useful interactions in production                          |
+| Area               | Technology                          | What it does here                                                                      |
+| ------------------ | ----------------------------------- | -------------------------------------------------------------------------------------- |
+| Interface          | React 19                            | Components, state, and the interactive experience                                      |
+| Build tooling      | Vite 8                              | Local development, client and SSR builds, prerendering, and multiple HTML entry points |
+| Styling            | SCSS                                | Perspective, layouts, responsive behavior, and visual details                          |
+| Motion             | Framer Motion + CSS                 | Transitions, gestures, and custom interactions                                         |
+| Image processing   | Sharp                               | Optimized WebP generation and cached image processing                                  |
+| Code quality       | ESLint, Prettier, Husky, Commitlint | Code consistency and commit checks                                                     |
+| Release automation | semantic-release                    | Versions, changelogs, tags, and releases                                               |
+| Delivery           | GitHub Actions + GitHub Pages       | Automated builds, pull-request previews, and deployment                                |
+| Analytics          | Umami                               | Measuring useful interactions in production                                            |
 
 ## Quality and delivery
 
@@ -129,7 +136,7 @@ I wanted this to be something I could keep improving, not just something that lo
 
 That has meant revisiting performance, deferring heavier content when appropriate, keeping image sizes under control, checking interactions across screen sizes, and paying attention to accessibility and motion preferences.
 
-The repository uses automated tooling for formatting, linting, builds, and releases. Pull requests from branches in this repository can receive isolated GitHub Pages previews. Changes merged into `main` go through the release and deployment workflow, with semantic-release creating a new version when the commits call for one.
+The repository uses automated tooling for formatting, linting, image processing, client and SSR builds, prerendering, and releases. Pull requests from branches in this repository can receive isolated GitHub Pages previews. Changes merged into `main` go through the release and deployment workflow, with semantic-release creating a new version when the commits call for one.
 
 ## Run it locally
 
@@ -149,15 +156,15 @@ npm run dev
 
 ### Available commands
 
-| Command             | Purpose                                                     |
-| ------------------- | ----------------------------------------------------------- |
-| `npm run dev`       | Start the development server                                |
-| `npm run dev:debug` | Start a fixed-port local server for debugging               |
-| `npm run mobile`    | Make the development server available on your local network |
-| `npm run image:opt` | Generate optimized images from `image-sources/`             |
-| `npm run check`     | Check formatting, lint, and create a production build       |
-| `npm run build`     | Build the site for production                               |
-| `npm run preview`   | Preview the production build locally                        |
+| Command             | Purpose                                                                             |
+| ------------------- | ----------------------------------------------------------------------------------- |
+| `npm run dev`       | Start the development server                                                        |
+| `npm run dev:debug` | Start a fixed-port local server for debugging                                       |
+| `npm run mobile`    | Make the development server available on your local network                         |
+| `npm run image:opt` | Generate optimized images from `image-sources/`                                     |
+| `npm run check`     | Check formatting and linting, then run the full production build                    |
+| `npm run build`     | Optimize images, build client and SSR bundles, and prerender the portfolio homepage |
+| `npm run preview`   | Preview the generated production output locally                                     |
 
 ## Still growing
 

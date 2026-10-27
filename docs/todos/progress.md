@@ -214,6 +214,8 @@
 
 - [x] Learn about CSR and SSG methods
 
+- [x] Implement build-time SSG, mobile hydration, and a no-JavaScript fallback
+
 - [x] Add impacts.txt in llms folder!
 
 - [x] Add how-it-was-built.txt in llms folder

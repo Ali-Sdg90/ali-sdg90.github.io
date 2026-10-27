@@ -15,6 +15,7 @@
 - [x] Write repo readme.md file
     - [x] Part 1
     - [x] Part 2
+    - [x] Part 3
 
 - [ ] Check and finalize lighthouse for improvements in performance and accessibility
 
