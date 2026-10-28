@@ -1,0 +1,1 @@
+var e=(e,t)=>{if(typeof window>`u`||typeof window.umami?.track!=`function`)return!1;try{window.umami.track(e,t)}catch{return!1}return!0};export{e as t};
