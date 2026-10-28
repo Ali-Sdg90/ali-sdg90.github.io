@@ -1,1 +1,0 @@
-import{B as e,G as t,t as n}from"./jsx-runtime-C__xMY3x.js";import{t as r}from"./client-CjqYdzyA.js";/* empty css              */import{t as i}from"./NotFoundPage-O861NJqb.js";import"./notFound-Cxfh7CkV.js";var a=t(e(),1),o=r(),s=n();(0,o.createRoot)(document.getElementById(`root`)).render((0,s.jsx)(a.StrictMode,{children:(0,s.jsx)(i,{})}));
