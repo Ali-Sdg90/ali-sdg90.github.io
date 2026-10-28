@@ -1,5 +1,6 @@
 import { readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { generateDetailPages } from "./generate-detail-pages.mjs";
 import { pathToFileURL } from "node:url";
 
 const projectRoot = process.cwd();
@@ -16,7 +17,7 @@ const requiredContent = [
 ];
 
 try {
-    const [{ render }, clientHtml] = await Promise.all([
+    const [{ render, renderDetailPages }, clientHtml] = await Promise.all([
         import(pathToFileURL(serverEntryPath).href),
         readFile(clientOutputPath, "utf8"),
     ]);
@@ -45,6 +46,7 @@ try {
 
     await writeFile(clientOutputPath, prerenderedHtml);
     console.log("Prerendered the mobile portfolio into dist/index.html.");
+    await generateDetailPages(renderDetailPages, path.join(projectRoot, "dist"));
 } finally {
     await rm(serverOutputDirectory, { force: true, recursive: true });
 }
