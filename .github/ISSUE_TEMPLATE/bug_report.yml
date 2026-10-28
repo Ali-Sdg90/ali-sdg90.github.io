@@ -1,0 +1,58 @@
+name: Bug report
+description: Report a reproducible problem with the portfolio
+title: "[Bug]: "
+labels:
+    - bug
+body:
+    - type: markdown
+      attributes:
+          value: Thanks for helping improve the portfolio.
+
+    - type: dropdown
+      id: area
+      attributes:
+          label: Affected area
+          options:
+              - Desktop portfolio
+              - Mobile portfolio
+              - Build story
+              - Links page
+              - 404 page
+              - Other
+      validations:
+          required: true
+
+    - type: textarea
+      id: description
+      attributes:
+          label: What happened?
+          description: Describe the problem and what you expected instead.
+          placeholder: Tell us what you saw and what should have happened.
+      validations:
+          required: true
+
+    - type: textarea
+      id: steps
+      attributes:
+          label: Steps to reproduce
+          placeholder: |
+              1. Open ...
+              2. Select ...
+              3. See ...
+      validations:
+          required: true
+
+    - type: input
+      id: environment
+      attributes:
+          label: Browser and device
+          description: Include the browser, operating system, and device or viewport.
+          placeholder: Chrome 130, Windows 11, 1440x900
+      validations:
+          required: true
+
+    - type: textarea
+      id: evidence
+      attributes:
+          label: Screenshots or additional context
+          description: Add screenshots, recordings, console errors, or related links if available.

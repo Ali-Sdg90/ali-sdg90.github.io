@@ -228,6 +228,20 @@
 
 - [x] Research indexing the URLs into Google Search Console
 
+- [x] Research my seo and how my socials are structured and how can i improve them
+    - [x] YouTube
+    - [x] Linkedin
+    - [x] X
+    - [x] Spotify?
+    - [x] instagram?
+    - [x] Stackoverflow?
+
+- [x] Check if can change z-index of portfolio-hero for dev-viewing in desktop view
+
+- [x] Add general test cases
+
+- [x] Maybe add contributing, pull req and etc files?
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -243,14 +257,6 @@
 
 - [ ] Research what about how can i improve my github profile for better seo and maybe adding .github to it?
 
-- [ ] Research my seo and how my socials are structured and how can i improve them
-    - [ ] YouTube
-    - [x] Linkedin
-    - [ ] X
-    - [ ] Spotify?
-    - [ ] instagram?
-    - [ ] Stackoverflow?
-
 - [ ] Fix text overflow in stories in about section
 
 - [ ] Add "more about ali" section :)
@@ -261,15 +267,9 @@
 
 - [ ] Update the first and third section texts in the hmpwb
 
-- [ ] Check if can change z-index of portfolio-hero for dev-viewing in desktop view
-
 - [ ] Check if can use another route for static.cloudflareinsights.com/beacon.min.js/ ERR_CONNECTION_CLOSED
 
 - [ ] Re-write career stories with the new format of writing the stories
-
-- [ ] Maybe add contributing, pull req and etc files?
-
-- [ ] Add general test cases
 
 - [ ] Maybe lower the resolution of the cards in shelf to fix the flashing lines?
 
