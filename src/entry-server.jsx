@@ -37,3 +37,5 @@ export const render = async () => {
         clearTimeout(timeout);
     }
 };
+
+export { renderDetailPages } from "./staticDetailPages.jsx";
