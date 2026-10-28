@@ -14,6 +14,7 @@ out/
 
 # Coverage and test output
 coverage/
+playwright-report/
 test-results/
 
 # Alternate package manager lock files

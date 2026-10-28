@@ -162,7 +162,9 @@ npm run dev
 | `npm run dev:debug` | Start a fixed-port local server for debugging                                       |
 | `npm run mobile`    | Make the development server available on your local network                         |
 | `npm run image:opt` | Generate optimized images from `image-sources/`                                     |
-| `npm run check`     | Check formatting and linting, then run the full production build                    |
+| `npm run test`      | Run the unit and component test suite once                                          |
+| `npm run test:e2e`  | Run the Playwright browser tests against the production preview                     |
+| `npm run check`     | Check formatting and linting, run tests, then run the full production build         |
 | `npm run build`     | Optimize images, build client and SSR bundles, and prerender the portfolio homepage |
 | `npm run preview`   | Preview the generated production output locally                                     |
 
