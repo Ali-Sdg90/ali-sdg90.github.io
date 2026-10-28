@@ -276,3 +276,13 @@
 - [ ] Add MLK Report Generator desc in melkradar career card and story
 
 - [ ] Make hmpwb mobile view
+
+- [ ] Finalize MLK about card
+
+- [ ] Check how to show dates in career cards
+
+- [ ] Maybe add SSG for link-tree page
+
+- [ ] Generate lightweight static HTML pages for each portfolio card during SSG,using existing content and linking them for crawler discovery, while keeping theinteractive React experience and hash-route unchanged.
+
+- [ ] Fix start of SSG that generate that don't have Aloha
