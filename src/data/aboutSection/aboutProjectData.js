@@ -21,10 +21,28 @@ import spotTasteThumbnail from "../../assets/images/projects/spot-taste-tracker/
 import ticTacToeThumbnail from "../../assets/images/projects/tic-tac-toe/cover.thumb.webp";
 import csCalendarThumbnail from "../../assets/images/projects/cs-queue-calendar/cover.thumb.webp";
 import { projectGalleryImages } from "./projectGalleryData";
+import projectAlisPortfolioStoryEN from "../stories/en/projects/alis-portfolio.md?raw";
+import projectAlisPortfolioStoryFA from "../stories/fa/projects/alis-portfolio.md?raw";
 import projectCsQueueCalendarStoryEN from "../stories/en/projects/cs-queue-calendar.md?raw";
 import projectCsQueueCalendarStoryFA from "../stories/fa/projects/cs-queue-calendar.md?raw";
+import projectSpotTasteTrackerStoryEN from "../stories/en/projects/spot-taste-tracker.md?raw";
+import projectSpotTasteTrackerStoryFA from "../stories/fa/projects/spot-taste-tracker.md?raw";
+import projectFabrexaAiOllamaStoryEN from "../stories/en/projects/fabrexa-ai-ollama.md?raw";
+import projectFabrexaAiOllamaStoryFA from "../stories/fa/projects/fabrexa-ai-ollama.md?raw";
+import projectCsClubBotStoryEN from "../stories/en/projects/cs-club-bot.md?raw";
+import projectCsClubBotStoryFA from "../stories/fa/projects/cs-club-bot.md?raw";
+import projectCsQueueBotStoryEN from "../stories/en/projects/cs-queue-bot.md?raw";
+import projectCsQueueBotStoryFA from "../stories/fa/projects/cs-queue-bot.md?raw";
+import projectGradientPaintStoryEN from "../stories/en/projects/gradient-paint.md?raw";
+import projectGradientPaintStoryFA from "../stories/fa/projects/gradient-paint.md?raw";
 import projectHealthDataRelayStoryEN from "../stories/en/projects/health-data-relay.md?raw";
 import projectHealthDataRelayStoryFA from "../stories/fa/projects/health-data-relay.md?raw";
+import projectQuickMathStoryEN from "../stories/en/projects/quick-math.md?raw";
+import projectQuickMathStoryFA from "../stories/fa/projects/quick-math.md?raw";
+import projectTicTacToeStoryEN from "../stories/en/projects/tic-tac-toe.md?raw";
+import projectTicTacToeStoryFA from "../stories/fa/projects/tic-tac-toe.md?raw";
+import projectPathFinderStoryEN from "../stories/en/projects/path-finder.md?raw";
+import projectPathFinderStoryFA from "../stories/fa/projects/path-finder.md?raw";
 
 export const aboutProjectData = {
     "alis-portfolio": {
@@ -55,8 +73,12 @@ export const aboutProjectData = {
             "A 34-slide build journal with keyboard and reduced-motion support",
         ],
         galleryImages: projectGalleryImages["alis-portfolio"],
-        storyEN: "placeholder: see the bottom-right corner of the page",
-        storyFA: "Placeholder",
+        storyEN: projectAlisPortfolioStoryEN.trim(),
+        storyFA: projectAlisPortfolioStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "alis-portfolio",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -243,8 +265,12 @@ export const aboutProjectData = {
             "Creates an AI-ready report from summary data instead of the full listening history",
         ],
         galleryImages: projectGalleryImages["spot-taste-tracker"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: projectSpotTasteTrackerStoryEN.trim(),
+        storyFA: projectSpotTasteTrackerStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "spot-taste-tracker",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -298,8 +324,12 @@ export const aboutProjectData = {
             "Ships with owner-only access by default, automated setup checks, and a responsive project website",
         ],
         galleryImages: projectGalleryImages["fabrexa-ai-ollama"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: projectFabrexaAiOllamaStoryEN.trim(),
+        storyFA: projectFabrexaAiOllamaStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "fabrexa-ai-ollama",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -359,8 +389,12 @@ export const aboutProjectData = {
             "Runs linting and Jest coverage before automatic releases and Render deployment",
         ],
         galleryImages: projectGalleryImages["cs-club-bot"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: projectCsClubBotStoryEN.trim(),
+        storyFA: projectCsClubBotStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "cs-club-bot",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -419,8 +453,12 @@ export const aboutProjectData = {
             "Supports scheduled messages, health checks, tests, releases, and automatic Render deployment",
         ],
         galleryImages: projectGalleryImages["cs-queue-bot"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: projectCsQueueBotStoryEN.trim(),
+        storyFA: projectCsQueueBotStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "cs-queue-bot",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -470,8 +508,12 @@ export const aboutProjectData = {
             "Supports both click painting and continuous drag painting",
         ],
         galleryImages: projectGalleryImages["gradient-paint"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: projectGradientPaintStoryEN.trim(),
+        storyFA: projectGradientPaintStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "gradient-paint",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -511,8 +553,12 @@ export const aboutProjectData = {
             "Saves answer hints, color themes, and ready-screen settings in local storage",
         ],
         galleryImages: projectGalleryImages["quick-math"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: projectQuickMathStoryEN.trim(),
+        storyFA: projectQuickMathStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "quick-math",
+        },
         hasRelatedLinks: false,
         relatedLinks: [],
     },
@@ -546,8 +592,12 @@ export const aboutProjectData = {
             "Saves game settings and changes the background after every move",
         ],
         galleryImages: projectGalleryImages["tic-tac-toe"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: projectTicTacToeStoryEN.trim(),
+        storyFA: projectTicTacToeStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "tic-tac-toe",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {
@@ -593,8 +643,12 @@ export const aboutProjectData = {
             "Works on both desktop and mobile screens",
         ],
         galleryImages: projectGalleryImages["path-finder"],
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: projectPathFinderStoryEN.trim(),
+        storyFA: projectPathFinderStoryFA.trim(),
+        storySource: {
+            collection: "projects",
+            slug: "path-finder",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             {

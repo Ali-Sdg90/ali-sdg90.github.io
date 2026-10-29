@@ -18,6 +18,10 @@ import viteLogoLarge from "../../assets/images/tech-stack/vite_logo.full.webp";
 
 import techStackReactStoryEN from "../stories/en/tech-stack/react.md?raw";
 import techStackReactStoryFA from "../stories/fa/tech-stack/react.md?raw";
+import techStackJavaScriptStoryEN from "../stories/en/tech-stack/javascript.md?raw";
+import techStackJavaScriptStoryFA from "../stories/fa/tech-stack/javascript.md?raw";
+import techStackScssStoryEN from "../stories/en/tech-stack/scss.md?raw";
+import techStackScssStoryFA from "../stories/fa/tech-stack/scss.md?raw";
 import techStackAntDesignStoryEN from "../stories/en/tech-stack/ant-design.md?raw";
 import techStackAntDesignStoryFA from "../stories/fa/tech-stack/ant-design.md?raw";
 import techStackTanStackQueryStoryEN from "../stories/en/tech-stack/tan-stack-query.md?raw";
@@ -116,8 +120,12 @@ export const aboutTechStackData = {
         featuresTitle: "Where It Helps",
         features: ["Placeholder"],
         storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: techStackJavaScriptStoryEN.trim(),
+        storyFA: techStackJavaScriptStoryFA.trim(),
+        storySource: {
+            collection: "tech-stack",
+            slug: "javascript",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             { label: "Placeholder", text: "Placeholder", url: "" },
@@ -135,8 +143,12 @@ export const aboutTechStackData = {
         featuresTitle: "Where It Helps",
         features: ["Placeholder"],
         storyTitle: "Story",
-        storyEN: "Placeholder",
-        storyFA: "Placeholder",
+        storyEN: techStackScssStoryEN.trim(),
+        storyFA: techStackScssStoryFA.trim(),
+        storySource: {
+            collection: "tech-stack",
+            slug: "scss",
+        },
         hasRelatedLinks: true,
         relatedLinks: [
             { label: "Placeholder", text: "Placeholder", url: "" },
