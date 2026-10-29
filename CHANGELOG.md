@@ -1,3 +1,10 @@
+# [1.41.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.40.0...v1.41.0) (2026-10-29)
+
+
+### Features
+
+* create static detail generator pages for portfolio cards, update card tags, add / path, add ssg for cards details ([755a5af](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/755a5af41fe138b12e7ecae14504936100d65d15))
+
 # [1.40.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.39.10...v1.40.0) (2026-10-26)
 
 
