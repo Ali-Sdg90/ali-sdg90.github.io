@@ -1,3 +1,10 @@
+## [1.41.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.0...v1.41.1) (2026-10-29)
+
+
+### Bug Fixes
+
+* add remaining empty story files, start to write tech-stack 2 remaining stories ([3787175](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/3787175955261dc086e7fb20115e9a8f9c1f5900))
+
 # [1.41.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.40.0...v1.41.0) (2026-10-29)
 
 
