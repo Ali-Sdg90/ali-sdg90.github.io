@@ -4,25 +4,36 @@ This repository and its contents are publicly available for viewing,
 personal study, and educational reference only.
 
 You may browse the source code, study the implementation, and use
-general knowledge, concepts, and techniques learned from it.
+general knowledge, ideas, concepts, and techniques learned from it.
 
-You may make local or private changes only for personal study and
-experimentation.
+You may make local or private copies and modifications only as
+necessary for personal study, testing, and experimentation.
 
-You may not copy, reproduce, distribute, publish, sublicense, sell,
-deploy, or create derivative works or portfolio projects based
-substantially on this repository without prior written permission from
-the copyright holder.
+Except as expressly permitted above, under GitHub's Terms of Service,
+or by applicable law, you may not copy, reproduce, distribute, publish,
+sublicense, sell, commercially exploit, publicly deploy, or create
+derivative works substantially based on this repository without prior
+written permission from the copyright holder.
 
-You may not copy or closely reproduce the project’s source code, design,
-structure, written content, branding, project descriptions, resume,
-photographs, or other assets.
+You may not copy or closely reproduce the project's source code,
+original visual design, creative arrangement, written content,
+branding, project descriptions, resume, photographs, or other
+protected assets.
+
+Independent implementations of general ideas, concepts, methods, and
+techniques are permitted, provided they do not copy or substantially
+reproduce protected elements of this repository.
 
 Rights required for viewing or forking this public repository through
-GitHub remain subject to GitHub’s Terms of Service. No additional rights
-are granted.
+GitHub remain subject to GitHub's Terms of Service. No additional
+rights are granted except as expressly stated in this notice or
+required by applicable law.
+
+Third-party materials remain subject to their respective licenses
+and rights. This notice does not grant rights to materials owned
+by third parties.
 
 THE REPOSITORY AND ITS CONTENTS ARE PROVIDED "AS IS", WITHOUT WARRANTY
-OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY LAW,
-THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR
-OTHER LIABILITY ARISING FROM THE REPOSITORY OR ITS USE.
+OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY
+APPLICABLE LAW, THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM THE REPOSITORY OR ITS USE.
