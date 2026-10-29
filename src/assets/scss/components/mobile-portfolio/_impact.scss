@@ -8,7 +8,7 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 0.7rem;
 
-        button {
+        a {
             min-height: 10.5rem;
             padding: 1rem;
             display: flex;
@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 699px) {
-    .mobile-impact-grid button:last-child:nth-child(odd) {
+    .mobile-impact-grid a:last-child:nth-child(odd) {
         grid-column: 1 / -1;
     }
 }

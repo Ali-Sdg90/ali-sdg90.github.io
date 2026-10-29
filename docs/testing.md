@@ -5,10 +5,10 @@ protect the portfolio's important behavior without coupling tests to visual
 implementation details, animation timing, or CSS class structure that may
 change during normal design work.
 
-The initial suite contains **39 core test cases**:
+The suite contains **50 core test cases**:
 
-- **33 unit and component tests** run by Vitest in JSDOM.
-- **6 end-to-end tests** run by Playwright in Chromium.
+- **41 unit and component tests** run by Vitest in JSDOM and Node.
+- **9 end-to-end tests** run by Playwright in Chromium.
 
 All test code is kept outside the application source tree:
 
@@ -57,6 +57,12 @@ essential shelf content, detail-module resolution, the connection between
 featured cards and project details, and valid thumbnail/full-size gallery pairs
 with dimensions and alt text.
 
+### Static detail pages (8 tests)
+
+`tests/unit/staticDetails/` protects the 41-card route inventory, retained source
+placeholders, base-path-safe URLs for PR previews, progressive card links,
+static HTML structure, omitted technology-tag sections, and indexable metadata.
+
 ### Story Reader behavior (4 tests)
 
 `tests/unit/components/AboutPanel/FeaturedProjectAbout/StoryReaderModal.test.jsx`
@@ -64,7 +70,7 @@ verifies English content and source links, Persian language switching, Escape
 close behavior and focus restoration, body scroll locking, and keyboard focus
 containment.
 
-### Browser journeys (6 tests)
+### Browser journeys (9 tests)
 
 `tests/e2e/portfolio.spec.js` exercises the production build through these user
 journeys:
@@ -74,7 +80,13 @@ journeys:
 3. The desktop Story Reader closes with Escape and restores focus.
 4. A mobile visitor opens and dismisses a project bottom sheet.
 5. The build-story route loads directly and supports chapter navigation.
-6. The prerendered mobile portfolio remains readable with JavaScript disabled.
+6. The prerendered mobile portfolio and its detail links remain useful with
+   JavaScript disabled.
+7. All 41 sitemap detail routes return complete, indexable HTML.
+8. The mobile prerender hydrates and keeps its card interactions without runtime
+   errors.
+9. A static detail story switches between English and Persian without changing
+   its section title.
 
 ## Local commands
 

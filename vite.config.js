@@ -12,6 +12,7 @@ export default defineConfig(({ isSsrBuild }) => ({
                   rollupOptions: {
                       input: {
                           portfolio: "index.html",
+                          staticDetailTemplate: "static-detail-template.html",
                           buildStory: "how-i-built-my-portfolio/index.html",
                           links: "links/index.html",
                           notFound: "404.html",

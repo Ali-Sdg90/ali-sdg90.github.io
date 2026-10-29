@@ -80,6 +80,7 @@ The journal is part of the site itself, with its own page-turn interaction, chap
 Beyond the visual experience, this portfolio includes a few engineering details I'm particularly happy with.
 
 - **Hybrid SSG & CSR:** Build-time prerendering with React 19, hydration for the mobile experience, and client-side rendering for the interactive desktop interface.
+- **Standalone Card Pages:** Build-generated, indexable HTML detail pages for every visible shelf card, with card-specific metadata and URLs maintained in the public sitemap.
 - **No-JavaScript Fallback:** Prerendered portfolio content remains readable, styled, and scrollable when JavaScript is unavailable.
 - **Perspective-Based 3D Shelf:** A configurable shelf system built with CSS perspective, 3D transforms, container query units, and aspect-ratio-aware layout adjustments.
 - **Custom Shelf Scrolling Physics:** Drag interactions, momentum, friction, automatic scrolling, and seamlessly looping card rows.
@@ -156,17 +157,18 @@ npm run dev
 
 ### Available commands
 
-| Command             | Purpose                                                                             |
-| ------------------- | ----------------------------------------------------------------------------------- |
-| `npm run dev`       | Start the development server                                                        |
-| `npm run dev:debug` | Start a fixed-port local server for debugging                                       |
-| `npm run mobile`    | Make the development server available on your local network                         |
-| `npm run image:opt` | Generate optimized images from `image-sources/`                                     |
-| `npm run test`      | Run the unit and component test suite once                                          |
-| `npm run test:e2e`  | Run the Playwright browser tests against the production preview                     |
-| `npm run check`     | Check formatting and linting, run tests, then run the full production build         |
-| `npm run build`     | Optimize images, build client and SSR bundles, and prerender the portfolio homepage |
-| `npm run preview`   | Preview the generated production output locally                                     |
+| Command                | Purpose                                                                                                   |
+| ---------------------- | --------------------------------------------------------------------------------------------------------- |
+| `npm run dev`          | Start the development server                                                                              |
+| `npm run dev:debug`    | Start a fixed-port local server for debugging                                                             |
+| `npm run mobile`       | Make the development server available on your local network                                               |
+| `npm run image:opt`    | Generate optimized images from `image-sources/`                                                           |
+| `npm run test`         | Run the unit and component test suite once                                                                |
+| `npm run test:e2e`     | Run the Playwright browser tests against the production preview                                           |
+| `npm run check`        | Check formatting and linting, run tests, then run the full production build                               |
+| `npm run build`        | Optimize images, build client and SSR bundles, prerender the homepage, and generate standalone card pages |
+| `npm run generate:ssg` | Generate the production HTML and standalone card pages without rerunning image optimization               |
+| `npm run preview`      | Preview the generated production output locally                                                           |
 
 ## Still growing
 

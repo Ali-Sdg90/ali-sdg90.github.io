@@ -1,10 +1,10 @@
 @media (max-width: 370px) {
-    .mobile-impact-grid button {
+    .mobile-impact-grid a {
         min-height: 9.6rem;
         padding: 0.85rem;
     }
 
-    .mobile-career-timeline button {
+    .mobile-career-timeline a {
         grid-template-columns: 3.2rem minmax(0, 1fr) 0.9rem;
 
         > img {

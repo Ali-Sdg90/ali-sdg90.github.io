@@ -1,3 +1,7 @@
+import {
+    getStaticDetailPagePath,
+    handleStaticDetailLinkClick,
+} from "../../../staticDetails/staticDetailRoutes";
 import { getShelfItemId } from "../../../utils/getShelfItemId";
 import MobileReveal from "../components/MobileReveal";
 import MobileSectionHeading from "../components/MobileSectionHeading";
@@ -13,16 +17,22 @@ const MobileImpactSection = ({ items, onItemOpen, section }) => (
             <div className="mobile-impact-grid">
                 {items.map((item) => {
                     const Icon = item.icon;
+                    const itemId = getShelfItemId(item);
+
                     return (
-                        <button
-                            key={getShelfItemId(item)}
-                            type="button"
-                            onClick={() => onItemOpen(section, item)}
+                        <a
+                            href={getStaticDetailPagePath(section.id, itemId)}
+                            key={itemId}
+                            onClick={(event) =>
+                                handleStaticDetailLinkClick(event, () =>
+                                    onItemOpen(section, item),
+                                )
+                            }
                         >
                             <Icon aria-hidden="true" />
                             <strong>{item.title}</strong>
                             <span>{item.meta}</span>
-                        </button>
+                        </a>
                     );
                 })}
             </div>

@@ -1,5 +1,9 @@
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
 
+import {
+    getStaticDetailPagePath,
+    handleStaticDetailLinkClick,
+} from "../../../staticDetails/staticDetailRoutes";
 import { getShelfItemId } from "../../../utils/getShelfItemId";
 import MobileReveal from "../components/MobileReveal";
 import MobileSectionHeading from "../components/MobileSectionHeading";
@@ -22,37 +26,48 @@ const MobileProjectsSection = ({ items, onItemOpen, section }) => {
                 />
 
                 <div className="mobile-project-rail" ref={projectRailRef}>
-                    {items.map((item, index) => (
-                        <button
-                            className={`mobile-project-card${index === 0 ? " is-featured" : ""}`}
-                            key={getShelfItemId(item)}
-                            type="button"
-                            ref={(element) => {
-                                projectCardRefs.current[index] = element;
-                            }}
-                            onClick={() => onItemOpen(section, item)}
-                        >
-                            <img
-                                src={item.image}
-                                alt=""
-                                width={item.imageWidth}
-                                height={item.imageHeight}
-                                loading={index < 2 ? "eager" : "lazy"}
-                                decoding="async"
-                            />
-                            <span className="mobile-project-card-copy">
-                                <small>
-                                    {String(index + 1).padStart(2, "0")}
-                                </small>
-                                <strong>{item.title}</strong>
-                                <span>{item.meta}</span>
-                                <i>
-                                    Explore project{" "}
-                                    <HiOutlineArrowUpRight aria-hidden="true" />
-                                </i>
-                            </span>
-                        </button>
-                    ))}
+                    {items.map((item, index) => {
+                        const itemId = getShelfItemId(item);
+
+                        return (
+                            <a
+                                className={`mobile-project-card${index === 0 ? " is-featured" : ""}`}
+                                href={getStaticDetailPagePath(
+                                    section.id,
+                                    itemId,
+                                )}
+                                key={itemId}
+                                ref={(element) => {
+                                    projectCardRefs.current[index] = element;
+                                }}
+                                onClick={(event) =>
+                                    handleStaticDetailLinkClick(event, () =>
+                                        onItemOpen(section, item),
+                                    )
+                                }
+                            >
+                                <img
+                                    src={item.image}
+                                    alt=""
+                                    width={item.imageWidth}
+                                    height={item.imageHeight}
+                                    loading={index < 2 ? "eager" : "lazy"}
+                                    decoding="async"
+                                />
+                                <span className="mobile-project-card-copy">
+                                    <small>
+                                        {String(index + 1).padStart(2, "0")}
+                                    </small>
+                                    <strong>{item.title}</strong>
+                                    <span>{item.meta}</span>
+                                    <i>
+                                        Explore project{" "}
+                                        <HiOutlineArrowUpRight aria-hidden="true" />
+                                    </i>
+                                </span>
+                            </a>
+                        );
+                    })}
                 </div>
 
                 <div

@@ -286,3 +286,7 @@
 - [ ] Generate lightweight static HTML pages for each portfolio card during SSG,using existing content and linking them for crawler discovery, while keeping theinteractive React experience and hash-route unchanged.
 
 - [ ] Fix start of SSG that generate that don't have Aloha
+
+- [ ] Write project documents
+
+- [ ] Write how to add new cards, and the ssg protocols document
