@@ -247,7 +247,7 @@
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
-    - [ ] Tech Stack
+    - [x] Tech Stack
     - [x] Career
     - [ ] FINALIZE ALL DESCRIPTIONS
 
