@@ -1,3 +1,10 @@
+## [1.41.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.2...v1.41.3) (2026-10-30)
+
+
+### Bug Fixes
+
+* finalize tech-stack stories in both languages ([9612dbb](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/9612dbb64ab6bddbb27f7d0b36d5449e0cead0c4))
+
 ## [1.41.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.1...v1.41.2) (2026-10-30)
 
 
