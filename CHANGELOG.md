@@ -1,3 +1,10 @@
+## [1.41.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.3...v1.41.4) (2026-10-30)
+
+
+### Bug Fixes
+
+* slightly improved impacts stories, they need more attention and work still ([161cc55](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/161cc55d715898ec2361924bae5b9a5296ede918))
+
 ## [1.41.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.2...v1.41.3) (2026-10-30)
 
 
