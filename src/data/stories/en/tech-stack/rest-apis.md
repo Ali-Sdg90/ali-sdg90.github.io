@@ -1,4 +1,6 @@
-I first came across REST APIs through the CS Internship program, although I didn't really understand them at the time.
+I first came across REST APIs in 2023 through the CS Internship program.
+
+At the time, I understood that a request was sent and a response came back, but the mental model behind it, the asynchronous flow, and the purpose of the different HTTP methods hadn't fully clicked for me yet.
 
 My first real experience came while building a Rick and Morty Characters project for a practice challenge.
 
@@ -24,7 +26,7 @@ Later, I also started working with React Query and useQuery, and I really liked 
 
 I think you need to build this stuff manually with fetch at least once to really appreciate tools like Axios and especially React Query.
 
-When you've had to manage loading states, data, errors, retries, request timing, and all the state changes around a request yourself, you understand exactly how much work those tools are taking off your hands.
+When you've had to manage loading states, data, errors, retries, request timing, and all the state changes around a request yourself, you understand exactly how much work those tools handle for you.
 
 REST APIs are one of those things I don't think you fully learn just by reading about them.
 

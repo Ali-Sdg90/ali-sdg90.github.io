@@ -20,7 +20,7 @@ I was really proud when I finished the project. I didn't end up being selected f
 
 Around the same period I started experimenting with tools like ApexCharts and Ant Design and built small projects just to understand how they worked.
 
-Later I built CS Step0 Message Maker with React for the CS Internship program. By that point, working with React had become much more comfortable for me. The application connected to Firebase, handled CRUD operations, and included things like encryption, read-only states, notifications, and other small systems around the main workflow. I really liked that project.
+Later, I built CS Step0 Message Maker with React for the CS Internship program. By that point, working with React had become much more comfortable for me. The application connected to Firebase, handled CRUD operations, and included features like encryption, read-only states, Toastify notifications, and several other supporting systems around the main workflow. I really liked that project.
 
 Then I joined Dadeh Pardazi Azmoudeh Karan.
 
@@ -30,7 +30,7 @@ And that project was huge compared to anything I had built before.
 
 I had to build an admin panel from scratch with React. It had more than 70 APIs, a lot of features, and a level of complexity that was way beyond anything I had worked on until then.
 
-I was learning while building it almost every day.
+I was learning as I built it, almost every day.
 
 AI was starting to become useful around that time, but it still couldn't really build the project for me. It was more like having a university friend next to me who could explain something or give me an idea when I got stuck.
 
@@ -46,7 +46,7 @@ That became CS Queue Calendar.
 
 I knew I could build it, but I also knew I didn't want to build something that was just functional. I wanted it to feel like something that belonged to me and to the program.
 
-I randomly found out that Ant Design already had a calendar component, but it was very different from what I had in mind for a Persian experience. I added a lot of custom CSS, changed the way information was presented, and eventually shipped the first version for the launch of the new entry system.
+By chance, I discovered that Ant Design already had a calendar component, but it was very different from what I had in mind for a Persian experience. I added a lot of custom CSS, changed the way information was presented, and eventually shipped the first version for the launch of the new entry system.
 
 The feedback was really good, and during the next year and a half I don't remember applicants having trouble understanding how to use it.
 
@@ -72,7 +72,7 @@ My role started changing. I wasn't always the person manually writing every line
 
 That became especially clear when I started building internal tools for MelkRadar.
 
-One example was MLK Monthly Report Generator, a fairly large and complicated React application that took two spreadsheet files and turned them into a complete HTML/CSS report that could be printed as a PDF.
+One example was MLK Monthly Report Generator, a fairly large and complicated React application that took two Excel files and turned their data into a complete HTML/CSS report that could be exported as a PDF.
 
 With AI helping with implementation and me managing the architecture, requirements, iterations, testing, and details, I was able to build and deliver the whole project in less than 45 hours.
 
@@ -80,7 +80,7 @@ React is still one of the most important technical foundations I have.
 
 I understand how much I can build with it, how I like to structure things, and how to use it to turn real problems into working products. If I have the choice, React is still one of the first tools I want to reach for when I'm solving a problem for a team or a company.
 
-I'm really happy that I introduced myself to React and kept following this path.
+I'm really glad I found React and kept following this path.
 
 I'm happy that even when I knew I didn't yet have the knowledge to build something, I still accepted the challenge, went into it, learned what I needed, and tried to deliver the best version I could.
 

@@ -8,7 +8,7 @@ Then I found GitHub Desktop, and that changed my relationship with Git a lot. So
 
 For around a year and a half, I mostly used Git through my own projects and CS Internship. I created branches, made commits, managed changes, and gradually became comfortable with the way Git works.
 
-Then I joined MelkRadar, my first real company, and that was where I learned what using Git inside a professional development workflow actually looked like.
+Then I joined MelkRadar in my first professional role, and that was where I learned what using Git in a real team workflow actually looked like.
 
 I started working with branch naming conventions, pull requests, feature branches, hotfixes, development and production branches, and the normal flow of multiple developers working across several company projects.
 
@@ -20,7 +20,7 @@ Later, I worked more on open-source projects and repositories inside the CS Inte
 
 At some point, something I originally struggled to understand had become something I was teaching other people.
 
-By then, I felt extremely comfortable with Git and GitHub.
+By then, I jokingly considered myself a Git and GitHub master. :)
 
 After that, I gradually got into GitHub Actions and CI/CD, and that became one of my favorite parts of GitHub.
 

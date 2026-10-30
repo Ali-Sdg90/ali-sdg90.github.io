@@ -2,7 +2,7 @@ I've worked with Chart.js a lot. Unfortunately. :)
 
 Most of that experience came from MelkRadar.
 
-Close to Nowruz 1403, the company needed more than 50 charts prepared and delivered in a very short amount of time. I was the person on the team who was more comfortable taking on the challenge of learning the library deeply and building them.
+Around Nowruz 2024, at the start of the Persian year 1403, the company needed more than 50 charts prepared and delivered under a very tight deadline. I was the person on the team most comfortable taking on that challenge, learning the library in depth, and building them.
 
 At the same time, part of the work was going to be handled by the design team, so I also needed to teach them how to work with Chart.js and how to build the simpler charts themselves.
 

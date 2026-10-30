@@ -1,8 +1,8 @@
-I started learning JavaScript in 2022, as I continued through the CS Internship program.
+I started learning JavaScript in 2022 as part of the CS Internship program.
 
 At that point, I was still getting comfortable with HTML and CSS when suddenly a completely different language showed up. A language that worked nothing like the HTML and CSS I had been learning.
 
-I learned it on my way to university, through YouTube videos, the You Don't Know JS books, and most importantly, W3Schools. I think around 90% of what I learned back then came from W3Schools!
+I studied it during my commute to university, using YouTube videos, the You Don't Know JS books, and, most importantly, W3Schools. I think around 90% of what I learned back then came from W3Schools!
 
 Learning it was both hard and easy. I already had experience with C++ and understood programming logic, but JavaScript was still different. I remember writing "JS" on my thumb whenever I went to university, just to remind myself that learning this language was my main goal at the time. I wanted to keep it on my mind and regularly review whatever I had learned.
 
@@ -28,6 +28,6 @@ JavaScript is one of the main foundations of my technical world. I like its logi
 
 And to think it all goes back to those days when I was writing "JS" on my thumb at university, carrying around my little notebook, and trying to get to know this language better.
 
-Now JavaScript isn't really a friend to me. It's a language I speak. It's become a part of me and the way I express myself.
+JavaScript is more than a friend to me now. It's a language I speak. It's become a part of me and the way I express myself.
 
 I love it. :)

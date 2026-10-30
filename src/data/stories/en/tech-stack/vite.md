@@ -1,15 +1,17 @@
-I started working with Vite near the end of 2024.
+I started working with Vite in late 2024.
 
-Before that, I had spent a long time creating my React projects with Create React App and was pretty used to that setup.
+Before that, I had spent a long time building my React projects with Create React App and had gotten pretty used to its structure.
 
-Once I tried Vite and saw how much faster, simpler, and lighter the development experience was, switching away from CRA felt pretty natural.
+When I discovered Vite, I quickly noticed how much easier it was to set up a project, how much faster and lighter the development experience felt, and how much better its build process was for my needs. So I pretty much switched completely from CRA to Vite.
 
-There wasn't a huge learning curve for me. I mostly needed to get familiar with the project structure, vite.config, the build process, and some of the features Vite gives you around configuration and development.
+Learning it wasn't particularly complicated compared to what I already knew. I mostly needed to get familiar with the project structure, the vite.config file, the build process, and some of Vite's own features.
 
-After that, I started using Vite for almost every new React project I built.
+After that, I started almost all my new React projects with Vite, from larger projects I built for MelkRadar to this portfolio and many others.
 
-Larger projects I worked on for MelkRadar, this portfolio, and many of the projects I've built since then have all used Vite.
+While working on MelkRadar projects and this portfolio, I also got familiar with writing tests in Vite-based projects. It wasn't very different from what I had previously done with Jest, so getting comfortable with it was pretty easy.
 
-At this point, working with it feels completely natural to me.
+In this portfolio, when I decided to add SSG and prerendering, I got more involved with Vite's build process and capabilities. It was an interesting experience that took me a bit beyond just using Vite to set up and develop projects.
 
-If I'm starting a new React project today, Vite is my first choice.
+Recently, I opened one of my old CRA projects again. I couldn't believe how loooong it took to start up for the first time! Obviously not as long as some .NET projects, but compared to Vite, where the development server can be ready in about a second, the difference was really noticeable. :)
+
+Working with Vite feels completely natural to me now, and I usually reach for it without even thinking about it. When starting a new React project, it's pretty much my first choice.

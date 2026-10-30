@@ -1,4 +1,4 @@
-I came across TanStack Query relatively late, after I had already spent a lot of time working with REST APIs, fetch, and Axios.
+I came across TanStack Query relatively late, in 2026, after I had already spent a lot of time working with REST APIs, fetch, and Axios.
 
 By that point, I had already experienced what it was like to manage asynchronous data manually, so when I started using TanStack Query and useQuery, its value made sense to me almost immediately.
 
@@ -10,7 +10,7 @@ I practiced it more seriously while building React Mastery Loop AI, one of the p
 
 I think you need to work without something like TanStack Query for a while to really appreciate it.
 
-You need to manually handle loading, errors, data, retries, request timing, and the state changes around fetch calls at least once to understand how much work tools like Axios and especially TanStack Query can remove from your application.
+You need to manually handle loading, errors, data, retries, request timing, and the state changes around fetch calls at least once to understand how much work tools like Axios and especially TanStack Query can handle for you.
 
 My experience with it still isn't as deep as something like React or Axios, but I really like the way it approaches server state.
 

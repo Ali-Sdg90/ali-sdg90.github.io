@@ -2,7 +2,7 @@ My main experience with React Native came from one specific project in 2025: Set
 
 I built the project with a friend, and the entire application was developed with React Native and Expo.
 
-SettleItGPT was a fairly complex iOS application. Users could create accounts, their data was stored in Firebase, and the app used native device capabilities like the camera, microphone, and photo library.
+SettleItGPT was a fairly complex iOS application. Users could create accounts and store their data in Firebase, while the app also used native device capabilities like the camera, microphone, and photo library.
 
 Information collected from the user was sent to an LLM, the model generated a response, and in parts of the application another model converted the generated text into speech so the result could be delivered directly inside the app.
 

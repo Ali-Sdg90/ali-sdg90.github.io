@@ -12,9 +12,9 @@ Whenever new code was pushed, it would first run the tests I had defined for the
 
 Once I got the whole flow working, I fell in love with how automated it was.
 
-It felt like building a well-oiled machine. I would push my code on one side, and on the other side the system would test it, create the version, publish the release, build the project, and deploy it automatically.
+It felt like building a well-oiled machine. I would push my code on one side, and on the other side the system would test it, determine the next version, publish the release, build the project, and deploy it automatically.
 
-Later, I even added Telegram notifications. After each workflow run, it would send a message to the program's mentors group and report whether the CI/CD process had succeeded or failed.
+Later, I even added Telegram notifications. After each workflow run, it would send a message to the Telegram group for the program's mentors and report whether the CI/CD process had succeeded or failed.
 
 I later built similar workflows for two other major CS Internship projects, CS Queue Bot and CS Club Bot.
 

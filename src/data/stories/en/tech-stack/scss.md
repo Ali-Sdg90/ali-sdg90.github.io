@@ -2,7 +2,7 @@ Styling is one of the most important things that helped me get to where I am tod
 
 I started learning CSS in 2022. Almost everything I learned came from W3Schools and a few really long YouTube videos.
 
-Whenever I learned something new from those videos or W3Schools, I would go to a page I had created for practicing and try to build something with it. Sometimes a tiny project, sometimes combining it with things I had learned before, and sometimes just challenging it to see exactly how it worked and what else I could do with it.
+Whenever I learned something new from those videos or W3Schools, I would go to a page I had created for practice and try to build something with it. Sometimes I made a tiny project, sometimes I combined it with things I had learned before, and sometimes I simply pushed it further to see exactly how it worked and what else I could do with it.
 
 Curiosity was really the main thing driving my learning. I wanted to discover new things, play around with them, and see what cool stuff I could build.
 
@@ -12,7 +12,7 @@ I really love that page. I've even shown it to my family, friends, and later to 
 
 I think styling was actually one of the main reasons I started enjoying programming. I could take my logic, express it through visuals, and actually build and see what I had in mind.
 
-I remember how much I loved discovering transition and especially transform. Until then, I had mostly been changing how elements looked, but now I could give them behavior too. With a hover or the passage of time, an element could move, change shape, and kind of come alive. I thought that was incredibly cool.
+I remember how much I loved discovering CSS transitions and especially transforms. Until then, I had mostly been changing how elements looked, but now I could give them behavior too. On hover or over time, an element could move, change shape, and almost come alive. I thought that was incredibly cool.
 
 Later, I used what I had learned to build other nice-looking projects like Tic Tac Toe, Quick Math, and my Todo App. With each project, I tried to do something new with the styling.
 
@@ -22,7 +22,7 @@ I even recorded an almost two-hour tutorial for it and uploaded it to the progra
 
 When I discovered SCSS and Sass, I was really surprised by how much easier and more logical writing styles could become. I wasn't particularly excited about mixins, functions, and those features. What I really loved was being able to nest styles inside each other and organize them in a way that matched the component structure. That alone made a huge difference for me.
 
-Later, I joined MelkRadar, where I worked on styling across around five or six company projects. From the main website to the Android app, Chrome extension, and other projects. Each one had its own environment and requirements, but they all shared a language I was very comfortable working with.
+Later, I joined MelkRadar, where I worked on styling across around five or six company projects, from the main website and Android app to the Chrome extension and other products. Each one had its own environment and requirements, but they all shared a language I was very comfortable working with.
 
 After some time at MelkRadar, my responsibilities went beyond writing frontend code and styling. I took on the role of Front-End Technical Lead. Developers came to me with technical questions, I held meetings with team members to discuss how to implement different features, and pull requests came to me for review. I reviewed their code, left comments, and sometimes met with developers to discuss changes in more detail.
 
@@ -32,4 +32,4 @@ Styling remained one of the parts I really enjoyed in my other projects too, fro
 
 Styling is something I've loved since the very first day, and something I've always been good at. I think one of the reasons I became so good at it is exactly because I loved it. I enjoyed learning it, experimenting with it, and building things with it. And I still do.
 
-I don't just like SCSS. It's a kind of language for how I think, work, and even how I am. It's something I see as a part of myself. :)
+I don't just like SCSS. It has become part of how I think, how I work, and how I express myself. I see it as a part of who I am. :)

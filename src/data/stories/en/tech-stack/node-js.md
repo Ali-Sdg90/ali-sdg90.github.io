@@ -1,6 +1,6 @@
 I started working with Node.js in 2023.
 
-I've always liked building things that can work automatically on their own. At the time, I was already comfortable with JavaScript and React, but I wanted to build tools for my own computer that weren't limited to running inside a browser.
+I've always liked building things that can run on their own. At the time, I was already comfortable with JavaScript and React, but I wanted to build tools for my own computer that weren't limited to running inside a browser.
 
 That's what led me to Node.js.
 
@@ -24,7 +24,7 @@ It ran on Windows and started automatically when the system booted. At different
 
 That was exactly the kind of tool that made me enjoy Node.js in the first place: a small application quietly running in the background and doing its job without someone constantly having to watch it.
 
-For a while, I also explored building APIs and documenting them with Swagger. It was useful and taught me a lot, although compared to building bots and automation, that part felt a little more dry to me.
+For a while, I also explored building APIs and documenting them with Swagger. It was useful and taught me a lot, although compared to building bots and automation, that part felt a little drier to me.
 
 Later, I started using Node.js for more practical backend projects.
 

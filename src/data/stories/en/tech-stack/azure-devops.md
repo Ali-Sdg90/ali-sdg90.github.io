@@ -1,16 +1,16 @@
-I first started working with Azure DevOps through the CS Internship program.
+I started working with Azure DevOps in 2024 through the CS Internship program.
 
-I was immediately interested in how much structure it could bring to a team. We created routine tasks and backlogs, assigned them to people, reviewed the board during sprint meetings, closed the sprint, and then started the next one with a new set of work.
+I was immediately interested in how much structure it could bring to a team. We created recurring tasks and backlog items, assigned them to people, reviewed the board during sprint meetings, closed each sprint, and then started the next one with a new set of work.
 
 For a long time, I was mostly just a user of the board.
 
-After around a year of seeing how CS worked, I noticed that one part of the sprint process was extremely repetitive. Every week, around 70 tasks and backlogs had to be created from the same templates and assigned manually. It took the sprint manager around half an hour every single time.
+After around a year in the program, I noticed that one part of the sprint process was extremely repetitive. Every week, around 70 tasks and backlog items had to be created from the same templates and assigned manually. It took the sprint manager around half an hour every single time.
 
 Then I found out Azure DevOps had an API.
 
 By that point I was confident enough with React that I trusted myself to start the project and actually finish it.
 
-I built CS Azure Board Automation, a web app that could take those templates, copy all of the required tasks and backlogs into a selected sprint, set the correct sprint information, and assign everything automatically.
+I built CS Azure Board Automation, a web app that could use those templates to create all the required tasks and backlog items in a selected sprint, set the correct sprint number, and assign everything automatically.
 
 A process that used to take around 30 minutes could now finish in less than 5 seconds.
 
@@ -28,7 +28,7 @@ I also built CS Queue Bot with access to the Azure DevOps API. When someone ente
 
 At MelkRadar, Azure DevOps was also part of everyday work across different projects.
 
-I worked with test cases, builds, deployments to different environments, project wikis, analytical boards, queries, and the normal sprint and task workflows.
+I worked with test cases, builds, deployments to different environments, project wikis, analytics dashboards, queries, and the usual sprint and task workflows.
 
 The part I probably spent the most time in was pull requests. For around a year and a half I was responsible for reviewing the frontend team's PRs, so I was constantly reviewing and checking work directly inside Azure DevOps.
 

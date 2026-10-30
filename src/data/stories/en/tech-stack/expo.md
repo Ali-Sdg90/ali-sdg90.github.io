@@ -2,7 +2,7 @@ My main experience with Expo came from building SettleItGPT in 2025.
 
 The project was an iOS application I built with a friend using React Native and Expo.
 
-Expo was a major part of how we worked with the mobile side of the project. The app needed access to native capabilities like the camera, microphone, and photo library, while also handling user accounts, Firebase data, AI integrations, and subscriptions through Stripe.
+Expo was central to the mobile side of the project. The app needed access to native capabilities like the camera, microphone, and photo library, while also handling user accounts, Firebase data, AI integrations, and subscriptions through Stripe.
 
 SettleItGPT was a fairly complicated project, and this was also my first time working this deeply with Expo.
 
@@ -22,4 +22,4 @@ I didn't learn it through the gradual process I usually prefer. I learned it bec
 
 But by the end of that project, I knew I could use Expo to take a real mobile application from development all the way to release.
 
-It's not one of the tools I feel especially attached to, but I'm comfortable enough with it to know that if another project needs it, I can work with it and figure out what I need.
+It's not one of the tools I feel especially attached to, but I'm comfortable enough with it to know that if another project needs it, I can pick it up again and get the job done.

@@ -1,6 +1,6 @@
-I've been pulled toward Ant Design again and again throughout my work.
+Ant Design has kept showing up throughout my career.
 
-My first experience with it was at MelkRadar.
+My first experience with it was in 2024 at MelkRadar.
 
 The company had taken on a very large existing project that was already built with Ant Design, and we needed to add new features to it. That was my first real exposure to the library.
 
