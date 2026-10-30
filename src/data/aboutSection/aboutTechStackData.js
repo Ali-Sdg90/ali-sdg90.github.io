@@ -115,10 +115,15 @@ export const aboutTechStackData = {
         id: "javascript",
         title: "JavaScript",
         lightboxImage: javascriptLogoLarge,
-        subtitle: "Placeholder",
-        summary: "Placeholder",
+        subtitle: "Programming, Logic & Interactive Experiences",
+        summary:
+            "My main programming language since 2022. From interactive games, simulations, and creative experiments to web applications, backend systems, and mobile development.",
         featuresTitle: "Where It Helps",
-        features: ["Placeholder"],
+        features: [
+            "Building interactive web applications, games, simulations, and creative experiments",
+            "Implementing application logic, DOM interactions, and dynamic user interfaces",
+            "Developing frontend, backend, and mobile applications through the JavaScript ecosystem",
+        ],
         storyTitle: "Story",
         storyEN: techStackJavaScriptStoryEN.trim(),
         storyFA: techStackJavaScriptStoryFA.trim(),
@@ -128,20 +133,56 @@ export const aboutTechStackData = {
         },
         hasRelatedLinks: true,
         relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
+            {
+                label: "Learning Repository",
+                text: "Learning JS",
+                url: "https://github.com/Ali-Sdg90/Learning-JS-",
+            },
+            {
+                label: "GitHub Repository",
+                text: "Todo App",
+                url: "https://github.com/Ali-Sdg90/Todo-App",
+            },
+            {
+                label: "GitHub Repository",
+                text: "Calculator",
+                url: "https://github.com/Ali-Sdg90/Calculator",
+            },
+            {
+                label: "GitHub Repository",
+                text: "Spread Color",
+                url: "https://github.com/Ali-Sdg90/Spread-Color",
+            },
+            {
+                label: "GitHub Repository",
+                text: "Sticky Scroll",
+                url: "https://github.com/Ali-Sdg90/Sticky-Scroll",
+            },
+            {
+                label: "GitHub Repository",
+                text: "Quick Math",
+                url: "https://github.com/Ali-Sdg90/Quick-Math",
+            },
+            {
+                label: "GitHub Repository",
+                text: "Aim Lab JS",
+                url: "https://github.com/Ali-Sdg90/Aim-Lab-JS",
+            },
         ],
     },
     scss: {
         id: "scss",
         title: "SCSS",
         lightboxImage: scssLogoLarge,
-        subtitle: "Placeholder",
-        summary: "Placeholder",
+        subtitle: "Styling, Responsive Design & Visual Creativity",
+        summary:
+            "One of my strongest and most enjoyable skills since 2022. From experimenting with CSS to building polished, responsive interfaces, customizing complex designs, and guiding other developers through frontend styling.",
         featuresTitle: "Where It Helps",
-        features: ["Placeholder"],
+        features: [
+            "Building responsive layouts, interactive interfaces, animations, and polished visual experiences",
+            "Organizing complex styles with SCSS nesting, reusable structures, and maintainable styling patterns",
+            "Customizing UI components, maintaining styling standards, and reviewing frontend implementations",
+        ],
         storyTitle: "Story",
         storyEN: techStackScssStoryEN.trim(),
         storyFA: techStackScssStoryFA.trim(),
@@ -151,10 +192,41 @@ export const aboutTechStackData = {
         },
         hasRelatedLinks: true,
         relatedLinks: [
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
-            { label: "Placeholder", text: "Placeholder", url: "" },
+            {
+                label: "Learning Repository",
+                text: "Learning CSS",
+                url: "https://github.com/Ali-Sdg90/Learning-CSS-",
+            },
+            {
+                label: "GitHub Repository",
+                text: "Todo App",
+                url: "https://github.com/Ali-Sdg90/Todo-App",
+            },
+            {
+                label: "GitHub Repository",
+                text: "Tic Tac Toe",
+                url: "https://github.com/Ali-Sdg90/Tic-Tac-Toe",
+            },
+            {
+                label: "GitHub Repository",
+                text: "Quick Math",
+                url: "https://github.com/Ali-Sdg90/Quick-Math",
+            },
+            {
+                label: "GitHub Repository",
+                text: "Calculator",
+                url: "https://github.com/Ali-Sdg90/Calculator",
+            },
+            {
+                label: "Tutorial Repository",
+                text: "Calculator YouTube Tutorial",
+                url: "https://github.com/Ali-Sdg90/Calculator-YouTube-Tutorial",
+            },
+            {
+                label: "YouTube Tutorial",
+                text: "Calculator Tutorial (Around 2 Hours)",
+                url: "https://youtu.be/fVQPxYKab68?si=nlXfi1rV8fJLgke4",
+            },
         ],
     },
     "ant-design": {

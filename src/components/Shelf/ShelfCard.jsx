@@ -25,6 +25,10 @@ const ShelfCard = ({
         handleStaticDetailLinkClick(event, handleSelect);
     };
 
+    const handleDragStart = (event) => {
+        event.preventDefault();
+    };
+
     const handleKeyDown = (event) => {
         if (event.key !== " ") return;
 
@@ -43,8 +47,10 @@ const ShelfCard = ({
                     .filter(Boolean)
                     .join(" ")}
                 href={isAccessible ? staticDetailPath : undefined}
+                draggable={isAccessible ? false : undefined}
                 aria-current={isAccessible && isSelected ? "true" : undefined}
-                onClick={isAccessible ? handleClick : undefined}
+                onClick={isAccessible ? handleClick : handleSelect}
+                onDragStart={isAccessible ? handleDragStart : undefined}
                 onKeyDown={isAccessible ? handleKeyDown : undefined}
                 style={{ flexBasis: cardWidth, height: cardHeight }}
             >
@@ -77,8 +83,10 @@ const ShelfCard = ({
         <CardElement
             className={cardClassName}
             href={isAccessible ? staticDetailPath : undefined}
+            draggable={isAccessible ? false : undefined}
             aria-current={isAccessible && isSelected ? "true" : undefined}
-            onClick={isAccessible ? handleClick : undefined}
+            onClick={isAccessible ? handleClick : handleSelect}
+            onDragStart={isAccessible ? handleDragStart : undefined}
             onKeyDown={isAccessible ? handleKeyDown : undefined}
             style={{ flexBasis: cardWidth, height: cardHeight }}
         >
