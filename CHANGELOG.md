@@ -1,3 +1,10 @@
+## [1.41.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.1...v1.41.2) (2026-10-30)
+
+
+### Bug Fixes
+
+* fix draggable problem for card items, add scss and js stories ([c3fc64f](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/c3fc64f5a6949db434d1fb4bc94c917e5597949b))
+
 ## [1.41.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.0...v1.41.1) (2026-10-29)
 
 
