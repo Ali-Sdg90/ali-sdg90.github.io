@@ -1,3 +1,10 @@
+## [1.41.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.4...v1.41.5) (2026-11-01)
+
+
+### Bug Fixes
+
+* finalize the impact stories, remove special style for the first line in the story modal ([ca10c6b](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/ca10c6b04f505a145e8ade84946dc98ceb3640ee))
+
 ## [1.41.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.3...v1.41.4) (2026-10-30)
 
 
