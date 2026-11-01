@@ -1,3 +1,10 @@
+## [1.41.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.6...v1.41.7) (2026-11-01)
+
+
+### Bug Fixes
+
+* update package.json, update version of nodejs, update related files ([9e90aa9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/9e90aa953c6c8e7bcff576a0b4f342eae782c204))
+
 ## [1.41.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.5...v1.41.6) (2026-11-01)
 
 
