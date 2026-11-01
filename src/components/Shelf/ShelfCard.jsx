@@ -15,7 +15,6 @@ const ShelfCard = ({
     onSelect,
 }) => {
     const staticDetailPath = getStaticDetailPagePath(sectionId, itemId);
-    const CardElement = isAccessible ? "a" : "article";
 
     const handleSelect = () => {
         onSelect?.({ sectionId, itemId });
@@ -38,7 +37,7 @@ const ShelfCard = ({
 
     if (sectionId === "career-journey") {
         return (
-            <CardElement
+            <a
                 className={[
                     "shelf-card",
                     "shelf-card-career-journey",
@@ -46,13 +45,14 @@ const ShelfCard = ({
                 ]
                     .filter(Boolean)
                     .join(" ")}
-                href={isAccessible ? staticDetailPath : undefined}
-                draggable={isAccessible ? false : undefined}
+                href={staticDetailPath}
+                draggable={false}
                 aria-current={isAccessible && isSelected ? "true" : undefined}
-                onClick={isAccessible ? handleClick : handleSelect}
-                onDragStart={isAccessible ? handleDragStart : undefined}
+                onClick={handleClick}
+                onDragStart={handleDragStart}
                 onKeyDown={isAccessible ? handleKeyDown : undefined}
                 style={{ flexBasis: cardWidth, height: cardHeight }}
+                tabIndex={isAccessible ? undefined : -1}
             >
                 <div className="shelf-card-career-year">{item.year}</div>
 
@@ -64,7 +64,7 @@ const ShelfCard = ({
 
                     <p>{item.meta}</p>
                 </div>
-            </CardElement>
+            </a>
         );
     }
 
@@ -80,15 +80,16 @@ const ShelfCard = ({
     const Icon = item.icon;
 
     return (
-        <CardElement
+        <a
             className={cardClassName}
-            href={isAccessible ? staticDetailPath : undefined}
-            draggable={isAccessible ? false : undefined}
+            href={staticDetailPath}
+            draggable={false}
             aria-current={isAccessible && isSelected ? "true" : undefined}
-            onClick={isAccessible ? handleClick : handleSelect}
-            onDragStart={isAccessible ? handleDragStart : undefined}
+            onClick={handleClick}
+            onDragStart={handleDragStart}
             onKeyDown={isAccessible ? handleKeyDown : undefined}
             style={{ flexBasis: cardWidth, height: cardHeight }}
+            tabIndex={isAccessible ? undefined : -1}
         >
             {shouldShowImage && <ShelfCardImage item={item} />}
             {sectionId === "achievements" && Icon && (
@@ -101,7 +102,7 @@ const ShelfCard = ({
                 <strong>{item.title}</strong>
                 <span>{item.meta}</span>
             </div>
-        </CardElement>
+        </a>
     );
 };
 

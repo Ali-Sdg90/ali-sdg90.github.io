@@ -11,12 +11,17 @@ const Shelf = ({ selectedShelfItem, onShelfItemSelect }) => {
         handlePointerMove,
         handleSectionPointerEnter,
         handleSectionPointerLeave,
+        handleClickCapture,
         stopDragging,
         scheduleScrollStateUpdate,
     } = useShelfScroll(shelfSections, selectedShelfItem?.sectionId);
 
     return (
-        <section className="shelf-wrapper" aria-label="Portfolio shelf">
+        <section
+            className="shelf-wrapper"
+            aria-label="Portfolio shelf"
+            onClickCapture={handleClickCapture}
+        >
             <div
                 className="shelf-container"
                 style={{

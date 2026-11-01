@@ -40,20 +40,23 @@ describe("ShelfCard", () => {
         });
     });
 
-    test("selects visible repeated cards without turning them into links", () => {
+    test("keeps repeated cards out of the tab order while preserving their links", () => {
         const onSelect = vi.fn();
-        const { container } = render(
+        render(
             <ShelfCard
                 {...baseProps}
                 isAccessible={false}
                 onSelect={onSelect}
             />,
         );
-        const card = container.querySelector(".shelf-card");
+        const card = screen.getByRole("link", {
+            hidden: true,
+            name: /project title/i,
+        });
 
-        expect(card).toBeInstanceOf(HTMLElement);
-        expect(card.tagName).toBe("ARTICLE");
-        expect(card).not.toHaveAttribute("href");
+        expect(card).toHaveAttribute("href", "/projects/project-title/");
+        expect(card).toHaveAttribute("tabindex", "-1");
+        expect(card).toHaveAttribute("draggable", "false");
 
         fireEvent.click(card);
 
@@ -61,5 +64,34 @@ describe("ShelfCard", () => {
             itemId: "project-title",
             sectionId: "projects",
         });
+    });
+
+    test("leaves control-click navigation to the browser for repeated cards", () => {
+        const onSelect = vi.fn();
+
+        render(
+            <ShelfCard
+                {...baseProps}
+                isAccessible={false}
+                onSelect={onSelect}
+            />,
+        );
+
+        const card = screen.getByRole("link", {
+            hidden: true,
+            name: /project title/i,
+        });
+        const clickEvent = new MouseEvent("click", {
+            bubbles: true,
+            cancelable: true,
+            ctrlKey: true,
+        });
+
+        card.addEventListener("click", (event) => event.preventDefault(), {
+            once: true,
+        });
+        card.dispatchEvent(clickEvent);
+
+        expect(onSelect).not.toHaveBeenCalled();
     });
 });

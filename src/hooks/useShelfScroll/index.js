@@ -15,6 +15,8 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
     const hoveredSectionIndexRef = useRef(null);
     const selectedSectionIdRef = useRef(selectedSectionId);
     const scrollStateRef = useRef({});
+    const suppressClickRef = useRef(false);
+    const suppressClickResetTimerRef = useRef(null);
     const [activeDragIndex, setActiveDragIndex] = useState(null);
     const [scrollState, setScrollState] = useState({});
 
@@ -80,6 +82,15 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
     useEffect(() => {
         selectedSectionIdRef.current = selectedSectionId;
     }, [selectedSectionId]);
+
+    useEffect(
+        () => () => {
+            if (suppressClickResetTimerRef.current) {
+                clearTimeout(suppressClickResetTimerRef.current);
+            }
+        },
+        [],
+    );
 
     useEffect(() => {
         const updateAllScrollStates = () => {
@@ -249,6 +260,12 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
                 );
 
             if (currentDragState.hasDragged) {
+                suppressClickRef.current = true;
+                clearTimeout(suppressClickResetTimerRef.current);
+                suppressClickResetTimerRef.current = setTimeout(() => {
+                    suppressClickRef.current = false;
+                    suppressClickResetTimerRef.current = null;
+                }, 0);
                 startMomentum(event.currentTarget, currentDragState);
             }
 
@@ -259,6 +276,18 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
         [startMomentum, updateScrollState],
     );
 
+    const handleClickCapture = useCallback((event) => {
+        if (!suppressClickRef.current) {
+            return;
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+        suppressClickRef.current = false;
+        clearTimeout(suppressClickResetTimerRef.current);
+        suppressClickResetTimerRef.current = null;
+    }, []);
+
     return {
         scrollState,
         activeDragIndex,
@@ -267,6 +296,7 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
         handlePointerMove,
         handleSectionPointerEnter,
         handleSectionPointerLeave,
+        handleClickCapture,
         stopDragging,
         scheduleScrollStateUpdate,
     };
