@@ -1,3 +1,10 @@
+## [1.41.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.5...v1.41.6) (2026-11-01)
+
+
+### Bug Fixes
+
+* improve card-link relation, fix ctrl click behavior on each card ([7c760a5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/7c760a581574843f88e5fed1a07f563c16e21980))
+
 ## [1.41.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.4...v1.41.5) (2026-11-01)
 
 
