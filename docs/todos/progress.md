@@ -248,7 +248,7 @@
     - [ ] Projects
     - [x] Impacts
     - [x] Tech Stack
-    - [x] Career
+    - [ ] Career
     - [ ] FINALIZE ALL DESCRIPTIONS
 
 - [ ] finalize the resume.pdf file
@@ -289,6 +289,6 @@
 
 - [ ] Write how to add new cards, and the ssg protocols document
 
-- [ ] Check https://www.bing.com/webmasters/?utm_source=chatgpt.com
+- [ ] Check https://www.bing.com/webmasters
 
 - [ ] Add SSG for /links and /hmpwb
