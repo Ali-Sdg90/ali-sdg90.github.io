@@ -1,3 +1,10 @@
+## [1.41.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.7...v1.41.8) (2026-11-01)
+
+
+### Bug Fixes
+
+* update cs story, uncheck career tick in progress/todos. they all need to be re-write again ([ab13541](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/ab135415053b7fefa6885b86f1c2aa51263df1bc))
+
 ## [1.41.7](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.6...v1.41.7) (2026-11-01)
 
 
