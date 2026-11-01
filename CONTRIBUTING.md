@@ -14,7 +14,7 @@ on before implementation.
 
 ## Local setup
 
-Use Node.js 20.19 or newer.
+Use Node.js 22.14+ or Node.js 24.10+.
 
 ```bash
 npm ci

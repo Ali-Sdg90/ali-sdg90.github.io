@@ -143,7 +143,7 @@ The repository uses automated tooling for formatting, linting, image processing,
 
 ### Requirements
 
-- Node.js 20.19+ or a newer supported version
+- Node.js 22.14+ or Node.js 24.10+
 - npm
 
 ### Setup

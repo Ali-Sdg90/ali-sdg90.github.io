@@ -10,7 +10,7 @@
 
 ## Setup and commands
 
-- Use Node.js 20.19+ or a newer supported version and install dependencies with `npm ci`.
+- Use Node.js 22.14+ or Node.js 24.10+ and install dependencies with `npm ci`.
 - Start local development with `npm run dev`.
 - Use `npm run dev:debug` for the fixed localhost port expected by the VS Code debugger.
 - Run `npm run check` after code or configuration changes. It checks formatting, linting, and the production build.
