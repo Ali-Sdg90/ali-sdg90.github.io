@@ -254,12 +254,6 @@
         letter-spacing: 0.004em;
     }
 
-    p:first-of-type {
-        color: rgba(244, 250, 255, 0.96);
-        font-size: 18px;
-        font-weight: 470;
-    }
-
     p:last-of-type {
         margin-bottom: 0;
     }
@@ -273,10 +267,6 @@
         font-size: 17px;
         line-height: 2.05;
         letter-spacing: 0;
-    }
-
-    .story-reader-modal__content p:first-of-type {
-        font-size: 18px;
     }
 }
 

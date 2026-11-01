@@ -128,11 +128,7 @@
     }
 
     .story-reader-modal__content p,
-    .story-reader-modal__content p:first-of-type,
-    .story-reader-modal__scroll[dir="rtl"] .story-reader-modal__content p,
-    .story-reader-modal__scroll[dir="rtl"]
-        .story-reader-modal__content
-        p:first-of-type {
+    .story-reader-modal__scroll[dir="rtl"] .story-reader-modal__content p {
         font-size: 0.9rem;
     }
 
