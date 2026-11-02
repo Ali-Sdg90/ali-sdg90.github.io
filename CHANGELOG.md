@@ -1,3 +1,10 @@
+# [1.42.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.11...v1.42.0) (2026-11-02)
+
+
+### Features
+
+* add ssg implementation for links and hmpwb pages ([7fb8560](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/7fb8560329158c860786d3884f29998015eff74c))
+
 ## [1.41.11](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.10...v1.41.11) (2026-11-02)
 
 
