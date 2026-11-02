@@ -1,0 +1,3 @@
+With ChatGPT image generation, I built the shelf. It took a lot of back and forth and changes to create something that matched the design and what I wanted, but in the end it gave me something that felt perfect to me.
+
+I brought the image into Photoshop and removed its background. I wanted the shadow and glowing reflection of the shelf to be visible on the floor, so I created a gradient over part of the ground that made the floor background color become transparent inside the gradient. That way, it looked like the shadow was actually on the floor, and it felt natural that the shelf was really placed there with its reflection on the ground.
