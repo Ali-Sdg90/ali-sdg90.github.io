@@ -1,3 +1,10 @@
+## [1.41.11](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.10...v1.41.11) (2026-11-02)
+
+
+### Bug Fixes
+
+* move hmpwb stories in there separated md files, finalize there texts ([b7e76c4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/b7e76c4631ed09ff90ced1eb3fd25c82a651ba6b))
+
 ## [1.41.10](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.9...v1.41.10) (2026-11-02)
 
 
