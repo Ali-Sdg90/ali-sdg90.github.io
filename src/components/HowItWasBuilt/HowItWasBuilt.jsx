@@ -49,7 +49,6 @@ const HowItWasBuilt = forwardRef(function HowItWasBuilt(
 
             <StoryHero
                 prefersReducedMotion={prefersReducedMotion}
-                subtitle={page.subtitle}
                 title={page.title}
             />
 

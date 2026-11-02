@@ -106,8 +106,6 @@ import historyImage34Original from "../../../image-sources/build-story/img34.png
 export const howItWasBuiltData = {
     page: {
         title: "How My Portfolio Was Built",
-        subtitle:
-            "Enjoy the journey of creating this portfolio, from the first sketches to the final polishes.",
         portfolioLabel: "Portfolio",
         returnLabel: "Return to portfolio",
     },

@@ -266,6 +266,10 @@ specification.
 
 - [x] Write how to add new cards, and the SSG protocols document
 
+- [x] Update the first and third section texts in the hmpwb
+
+- [x] Make hmpwb mobile view
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -285,13 +289,9 @@ specification.
     - [x] part 1
     - [ ] part 2
 
-- [ ] Update the first and third section texts in the hmpwb
-
 - [ ] Re-write career stories with the new format of writing the stories
 
 - [ ] Add MLK Report Generator desc in melkradar career card and story
-
-- [ ] Make hmpwb mobile view
 
 - [ ] Finalize MLK about card
 

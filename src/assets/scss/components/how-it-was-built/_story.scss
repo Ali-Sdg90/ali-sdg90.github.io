@@ -229,15 +229,6 @@
         }
     }
 
-    &__subtitle {
-        max-width: 42rem;
-        margin-top: 1.5rem;
-        color: rgba(245, 247, 251, 0.52);
-        font-size: clamp(0.95rem, 1.2vw, 1.08rem);
-        line-height: 1.7;
-        text-wrap: balance;
-    }
-
     &__closing {
         position: relative;
         isolation: isolate;
@@ -280,6 +271,10 @@
         color: rgba(245, 247, 251, 0.9);
         text-shadow: 0 3px 24px rgba(0, 0, 0, 0.42);
         pointer-events: none;
+    }
+
+    &__closing-signoff {
+        display: block;
     }
 
     &__footer {

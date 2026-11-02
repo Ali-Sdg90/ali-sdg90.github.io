@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { REVEAL_TRANSITION } from "./motionConfig";
 
-const StoryHero = ({ prefersReducedMotion, subtitle, title }) => (
+const StoryHero = ({ prefersReducedMotion, title }) => (
     <motion.div
         className="build-story__hero"
         initial="hidden"
@@ -26,16 +26,6 @@ const StoryHero = ({ prefersReducedMotion, subtitle, title }) => (
         >
             {title}
         </motion.h1>
-        <motion.p
-            className="build-story__subtitle"
-            variants={{
-                hidden: prefersReducedMotion ? {} : { opacity: 0, y: 22 },
-                visible: { opacity: 1, y: 0 },
-            }}
-            transition={REVEAL_TRANSITION}
-        >
-            {subtitle}
-        </motion.p>
     </motion.div>
 );
 

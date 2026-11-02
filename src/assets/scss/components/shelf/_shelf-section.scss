@@ -113,6 +113,7 @@ $shelf-card-row-shadow-fallback: shelf-cqw(-3) shelf-cqw(0) 0 shelf-cqw(1)
     flex: 0 0 auto;
     align-items: center;
     gap: inherit;
+    // filter: blur(0.45px);
 }
 
 .shelf-section-career-journey {

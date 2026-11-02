@@ -40,8 +40,10 @@ const StoryClosing = ({
                     viewport={{ once: true, amount: 0.7 }}
                     transition={{ ...REVEAL_TRANSITION, delay: 0.1 }}
                 >
-                    That’s how it came together. Thanks for joining me on this
-                    journey and checking out my work.
+                    Thanks for joining me on this journey :)
+                    <span className="build-story__closing-signoff">
+                        Take care ❤️
+                    </span>
                 </motion.p>
 
                 <motion.div

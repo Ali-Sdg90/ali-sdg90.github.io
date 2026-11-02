@@ -1,9 +1,12 @@
+import { useState } from "react";
 import HeroContactInfo from "./HeroContactInfo";
 import { trackUmamiEvent } from "../../utils/analytics";
 
 const RESUME_URL = "/resume/ali-sadeghi-resume-en.pdf";
 
 const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
+    const [isGreetingHovered, setIsGreetingHovered] = useState(false);
+
     const handleAboutMeClick = () => {
         onAboutMeSelect();
     };
@@ -11,19 +14,29 @@ const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
     return (
         <>
             <div className="intro-top-section">
-                <p className="hero-greeting" aria-label="Hey there!">
+                <p
+                    className="hero-greeting"
+                    aria-label="Hey there!"
+                    onMouseEnter={() => setIsGreetingHovered(true)}
+                    onMouseLeave={() => setIsGreetingHovered(false)}
+                >
                     <span className="hero-greeting-label hero-greeting-default">
                         <span className="hero-greeting-text">Hey there!</span>
                         <span className="hero-greeting-hand" aria-hidden="true">
                             {"\u{1F44B}"}
                         </span>
                     </span>
-                    <span className="hero-greeting-label hero-greeting-hover">
-                        <span className="hero-greeting-text">Aloha!</span>
-                        <span className="hero-greeting-hand" aria-hidden="true">
-                            {"\u{1F44B}"}
+                    {isGreetingHovered && (
+                        <span className="hero-greeting-label hero-greeting-hover">
+                            <span className="hero-greeting-text">Aloha!</span>
+                            <span
+                                className="hero-greeting-hand"
+                                aria-hidden="true"
+                            >
+                                {"\u{1F44B}"}
+                            </span>
                         </span>
-                    </span>
+                    )}
                 </p>
 
                 <h1 id="hero-title">
