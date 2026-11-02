@@ -1,3 +1,10 @@
+## [1.41.9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.8...v1.41.9) (2026-11-02)
+
+
+### Bug Fixes
+
+* fix story preview height and behavior, make all labels in about cards be like each other in text and meta format, fix wrong settleItGPT writings ([472e1a6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/472e1a6c65f6896a2b7039e711caa8cb12332111))
+
 ## [1.41.8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.7...v1.41.8) (2026-11-01)
 
 
