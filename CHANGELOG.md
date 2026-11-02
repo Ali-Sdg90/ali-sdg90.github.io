@@ -1,3 +1,10 @@
+## [1.41.10](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.9...v1.41.10) (2026-11-02)
+
+
+### Bug Fixes
+
+* improve hmpwb style for mobile view and finalize page structure texts ([938cf34](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/938cf34d3c11bfe763427afa3f7524394df22fd0))
+
 ## [1.41.9](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.8...v1.41.9) (2026-11-02)
 
 
