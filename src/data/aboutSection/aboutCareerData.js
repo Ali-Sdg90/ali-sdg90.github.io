@@ -277,43 +277,43 @@ export const aboutCareerData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "CS Queue Calendar",
-                text: "React calendar for displaying CS Internship queue meetings with Persian/Gregorian support.",
+                label: "GitHub Repository",
+                text: "CS Queue Calendar",
                 url: "https://github.com/cs-internship/CS-Queue-Calendar",
             },
             {
-                label: "CS Club Bot",
-                text: "Automated Telegram bot for CS internship clubs, with feedback system and AI-driven analysis.",
+                label: "GitHub Repository",
+                text: "CS Club Bot",
                 url: "https://github.com/cs-internship/CS-Club-Bot",
             },
             {
-                label: "CS Queue Bot",
-                text: "Automated Telegram bot for managing the CS Internship queue group, with Azure DevOps integration.",
+                label: "GitHub Repository",
+                text: "CS Queue Bot",
                 url: "https://github.com/cs-internship/CS-Queue-Bot",
             },
             {
-                label: "CS Feedback Webhook",
-                text: "Automated Telegram bot for CS Internship feedback, integrated with Notion and Tally.",
+                label: "GitHub Repository",
+                text: "CS Feedback Webhook",
                 url: "https://github.com/cs-internship/CS-Feedback-Webhook",
             },
             {
-                label: "CS Queue Message Maker",
-                text: "Simplifies queue updates for CS Internship admins.",
+                label: "GitHub Repository",
+                text: "CS Queue Message Maker",
                 url: "https://github.com/cs-internship/CS-Queue-Message-Maker",
             },
             {
-                label: "My CS Steps",
-                text: "My CS Internship Journey Documentation",
+                label: "Learning Repository",
+                text: "My CS Steps",
                 url: "https://github.com/Ali-Sdg90/CS-Steps",
             },
             {
-                label: "CS Azure Board Automation",
-                text: "Automate Azure Board updates for CS Internship program",
+                label: "GitHub Repository",
+                text: "CS Azure Board Automation",
                 url: "https://github.com/Ali-Sdg90/CS-Azure-Board-Automation",
             },
             {
-                label: "CS Internship Specifications",
-                text: "Specifications for the CS Internship program.",
+                label: "Program Repo",
+                text: "CS Internship Specification",
                 url: "https://github.com/cs-internship/cs-internship-spec",
             },
         ],
@@ -354,13 +354,13 @@ export const aboutCareerData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "Company",
-                text: "MelkRadar Official Website",
+                label: "Company Website",
+                text: "MelkRadar",
                 url: "https://melkradar.com/p/search",
             },
             {
-                label: "Chart.js Work",
-                text: "Chart.js templates from my chart-building work at MelkRadar.",
+                label: "Learning Repository",
+                text: "Learning Chart.js",
                 url: "https://github.com/Ali-Sdg90/Learning-Chart.js-",
             },
         ],
@@ -404,7 +404,7 @@ export const aboutCareerData = {
     },
     "settleit-gpt": {
         id: "settleit-gpt",
-        title: "SettleitGPT",
+        title: "SettleItGPT",
         lightboxImage: settleitGptLogoLarge,
         summary:
             "Co-developed and launched an AI-powered iOS application with React Native and Expo, taking the product from an early MVP to a complete App Store release.",
@@ -446,8 +446,8 @@ export const aboutCareerData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "Launch Post",
-                text: "SettleitGPT Introduction on LinkedIn",
+                label: "LinkedIn Post",
+                text: "SettleItGPT Launch Post",
                 url: "https://www.linkedin.com/posts/ali-sdg90_settleitgpt-share-7374421474943700993-_H3R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiHtIwB6ffMAWL0iNc5fSdSRqvEYI6Q2IA",
             },
         ],

@@ -1,4 +1,4 @@
-Settle It GPT was the first mobile app I ever seriously worked on.
+SettleItGPT was the first mobile app I ever seriously worked on.
 
 My friend came to me with the main idea for the project and had already built a very basic version of it. This was before I had ever built an Android app or even used Expo for any serious application.
 

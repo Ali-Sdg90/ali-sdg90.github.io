@@ -572,7 +572,7 @@ export const aboutTechStackData = {
             },
             {
                 label: "LinkedIn Post",
-                text: "Settle It GPT Launch Post",
+                text: "SettleItGPT Launch Post",
                 url: "https://www.linkedin.com/posts/ali-sdg90_settleitgpt-share-7374421474943700993-_H3R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiHtIwB6ffMAWL0iNc5fSdSRqvEYI6Q2IA",
             },
         ],

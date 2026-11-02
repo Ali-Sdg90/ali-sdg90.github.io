@@ -22,7 +22,7 @@ Contributed across six products and projects, built reusable frontend systems, s
 
 Built a large administrative platform's frontend from scratch with React and Ant Design, created reusable components, translated Figma designs into production UI, and integrated more than 60 REST APIs through Swagger.
 
-## SettleitGPT
+## SettleItGPT
 
 **React Native Developer | April 2025 – September 2025**
 

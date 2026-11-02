@@ -205,6 +205,7 @@ const ProjectStory = ({
         ?.split("\n\n")
         .map((paragraph) => paragraph.trim())
         .filter(Boolean);
+    const previewText = paragraphs?.join("\n");
 
     if (!paragraphs?.length) return null;
 
@@ -235,9 +236,7 @@ const ProjectStory = ({
                 lang={isFarsi ? "fa" : undefined}
             >
                 <div className="featured-project-story-content is-clamped">
-                    {paragraphs.map((paragraph) => (
-                        <p key={paragraph}>{paragraph}</p>
-                    ))}
+                    <p>{previewText}</p>
                 </div>
             </div>
             <button

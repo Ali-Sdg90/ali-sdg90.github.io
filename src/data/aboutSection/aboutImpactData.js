@@ -271,7 +271,7 @@ export const aboutImpactData = {
 
         featuresTitle: "What I Shipped",
         features: [
-            "Co-developed Settle It GPT from a basic prototype into a working iOS app",
+            "Co-developed SettleItGPT from a basic prototype into a working iOS app",
             "Connected accounts, camera and microphone input, and AI responses through Firebase",
             "Added spoken answers and a subscription flow with Stripe",
             "Worked with my co-developer to publish it on the Apple App Store",
@@ -287,7 +287,7 @@ export const aboutImpactData = {
         relatedLinks: [
             {
                 label: "LinkedIn Post",
-                text: "Settle It GPT Launch Post",
+                text: "SettleItGPT Launch Post",
                 url: "https://www.linkedin.com/posts/ali-sdg90_settleitgpt-share-7374421474943700993-_H3R/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiHtIwB6ffMAWL0iNc5fSdSRqvEYI6Q2IA",
             },
         ],

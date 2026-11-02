@@ -304,8 +304,8 @@ export const shelfSections = [
             },
             {
                 id: "settleit-gpt",
-                title: "SettleitGPT",
-                company: "SettleitGPT",
+                title: "SettleItGPT",
+                company: "SettleItGPT",
                 meta: "React Native Developer",
                 year: "Apr - Sep 2025",
                 image: settleitLogo,

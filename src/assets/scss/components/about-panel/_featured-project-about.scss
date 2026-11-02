@@ -298,29 +298,19 @@
 }
 
 .featured-project-story-content.is-clamped {
-    p:first-child {
+    p {
         display: -webkit-box;
         overflow: hidden;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-    }
-
-    p:not(:first-child) {
-        display: none;
+        -webkit-line-clamp: 6;
+        text-overflow: ellipsis;
+        white-space: pre-line;
     }
 }
 
 .has-tall-story-preview .featured-project-story-content.is-clamped {
-    max-height: about-panel-cqw(155);
-    overflow: hidden;
-
-    p:first-child {
-        display: block;
-        overflow: visible;
-    }
-
-    p:not(:first-child) {
-        display: block;
+    p {
+        -webkit-line-clamp: 7;
     }
 }
 

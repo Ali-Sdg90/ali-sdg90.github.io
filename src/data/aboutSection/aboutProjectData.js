@@ -82,13 +82,13 @@ export const aboutProjectData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "Engineering",
-                text: "CI/CD, PR previews, semantic releases, and GitHub Pages deployment",
+                label: "GitHub Workflow",
+                text: "Portfolio CI/CD Pipeline",
                 url: "https://github.com/Ali-Sdg90/ali-sdg90.github.io/blob/main/.github/workflows/ci.yml",
             },
             {
-                label: "Release History",
-                text: "Versioned changelog generated from the release workflow",
+                label: "Changelog",
+                text: "Portfolio Release History",
                 url: "https://github.com/Ali-Sdg90/ali-sdg90.github.io/blob/main/CHANGELOG.md",
             },
         ],
@@ -143,32 +143,32 @@ export const aboutProjectData = {
         relatedLinks: [
             {
                 label: "LinkedIn Post",
-                text: "Read the launch story behind Health Data Relay",
+                text: "Health Data Relay Launch Post",
                 url: "https://www.linkedin.com/feed/update/urn:li:activity:7513531566740918272/",
             },
             {
                 label: "Cafe Bazaar",
-                text: "Download the latest Health Data Relay release",
+                text: "Health Data Relay",
                 url: "https://cafebazaar.ir/app/com.alisadeghi.autohealthsync",
             },
             {
                 label: "APKPure",
-                text: "Download the latest Health Data Relay release",
+                text: "Health Data Relay",
                 url: "https://apkpure.com/p/com.alisadeghi.autohealthsync",
             },
             {
                 label: "GitHub Releases",
-                text: "Download versioned APK releases from GitHub",
+                text: "Health Data Relay",
                 url: "https://github.com/Ali-Sdg90/health-data-relay/releases",
             },
             {
                 label: "Privacy Policy",
-                text: "How health data and permissions are handled",
+                text: "Health Data Relay",
                 url: "https://ali-sdg.is-a.dev/health-data-relay/privacy/",
             },
             {
                 label: "Changelog",
-                text: "Version history, fixes, and improvements",
+                text: "Health Data Relay",
                 url: "https://github.com/Ali-Sdg90/health-data-relay/blob/main/CHANGELOG.md",
             },
         ],
@@ -216,13 +216,13 @@ export const aboutProjectData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "CI/CD Pipeline",
-                text: "Tests, releases, deployment, and Telegram alerts",
+                label: "GitHub Workflow",
+                text: "CS Queue Calendar CI/CD Pipeline",
                 url: "https://github.com/cs-internship/CS-Queue-Calendar/blob/main/.github/workflows/ci.yml",
             },
             {
-                label: "Release History",
-                text: "Versioned project changelog",
+                label: "Changelog",
+                text: "CS Queue Calendar Release History",
                 url: "https://github.com/cs-internship/CS-Queue-Calendar/blob/main/CHANGELOG.md",
             },
         ],
@@ -274,13 +274,13 @@ export const aboutProjectData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "CSV Tool",
+                label: "External Tool",
                 text: "Chosic Spotify Playlist Analyzer",
                 url: "https://www.chosic.com/spotify-playlist-analyzer/",
             },
             {
-                label: "Deployment",
-                text: "Automated GitHub Pages build and deployment workflow",
+                label: "GitHub Workflow",
+                text: "Spot Taste Tracker Deployment",
                 url: "https://github.com/Ali-Sdg90/Spotify-Taste-Timeline/blob/main/.github/workflows/deploy-pages.yml",
             },
         ],
@@ -334,22 +334,22 @@ export const aboutProjectData = {
         relatedLinks: [
             {
                 label: "Project Guide",
-                text: "Runtime flow, configuration, personalities, memory behavior, and module reference",
+                text: "Fabrexa AI Ollama",
                 url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama/blob/main/docs/PROJECT_GUIDE.md",
             },
             {
-                label: "Troubleshooting",
-                text: "Setup, Ollama, Telegram, streaming, personality, and memory troubleshooting",
+                label: "Troubleshooting Guide",
+                text: "Fabrexa AI Ollama",
                 url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama/blob/main/docs/TROUBLESHOOTING.md",
             },
             {
-                label: "Contributing",
-                text: "Development workflow, checks, and contribution guidelines",
+                label: "Contributing Guide",
+                text: "Fabrexa AI Ollama",
                 url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama/blob/main/CONTRIBUTING.md",
             },
             {
                 label: "Telegram Bot",
-                text: "placeholder text",
+                text: "Fabrexa AI Bot",
                 url: "https://t.me/FabrexaAIBot",
             },
         ],
@@ -398,23 +398,23 @@ export const aboutProjectData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "Engineering",
-                text: "CI/CD pipeline for tests, coverage, releases, Render deployment, and Telegram alerts",
+                label: "GitHub Workflow",
+                text: "CS Club Bot CI/CD Pipeline",
                 url: "https://github.com/cs-internship/CS-Club-Bot/blob/main/.github/workflows/ci.yml",
             },
             {
-                label: "Operations",
-                text: "Scheduled Render service health and uptime workflow",
+                label: "GitHub Workflow",
+                text: "CS Club Bot Uptime Monitor",
                 url: "https://github.com/cs-internship/CS-Club-Bot/blob/main/.github/workflows/ping-render.yml",
             },
             {
-                label: "Quality",
-                text: "Extensive Jest suite covering handlers, integrations, validation, and utilities",
+                label: "Test Suite",
+                text: "CS Club Bot",
                 url: "https://github.com/cs-internship/CS-Club-Bot/tree/main/__tests__",
             },
             {
-                label: "Release History",
-                text: "Versioned project changelog",
+                label: "Changelog",
+                text: "CS Club Bot",
                 url: "https://github.com/cs-internship/CS-Club-Bot/blob/main/CHANGELOG.md",
             },
         ],
@@ -462,18 +462,18 @@ export const aboutProjectData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "Engineering",
-                text: "Test, coverage, semantic release, Render deployment, and Telegram alert pipeline",
+                label: "GitHub Workflow",
+                text: "CS Queue Bot CI/CD Pipeline",
                 url: "https://github.com/cs-internship/CS-Queue-Bot/blob/main/.github/workflows/ci.yml",
             },
             {
-                label: "Quality",
-                text: "Jest suite covering onboarding, moderation, scheduling, Azure integration, and server health",
+                label: "Test Suite",
+                text: "CS Queue Bot",
                 url: "https://github.com/cs-internship/CS-Queue-Bot/tree/main/__tests__",
             },
             {
-                label: "Release History",
-                text: "Versioned project changelog",
+                label: "Changelog",
+                text: "CS Queue Bot",
                 url: "https://github.com/cs-internship/CS-Queue-Bot/blob/main/CHANGELOG.md",
             },
         ],
@@ -517,8 +517,8 @@ export const aboutProjectData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "Process",
-                text: "Development time-lapse",
+                label: "YouTube Video",
+                text: "Gradient Paint Development Time-lapse",
                 url: "https://youtu.be/jG_HB7bDDH0",
             },
         ],
@@ -601,13 +601,13 @@ export const aboutProjectData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "??",
-                text: "Project interdiction post",
+                label: "X Post",
+                text: "Tic Tac Toe Introduction Post",
                 url: "https://x.com/Ali_Sdg90/status/1663115176504344576?s=20",
             },
             {
-                label: "Process",
-                text: "Development time-lapse",
+                label: "YouTube Video",
+                text: "Tic Tac Toe Development Time-lapse",
                 url: "https://youtu.be/s278dOASbqg",
             },
         ],
@@ -652,13 +652,13 @@ export const aboutProjectData = {
         hasRelatedLinks: true,
         relatedLinks: [
             {
-                label: "??",
-                text: "Project interdiction post",
+                label: "X Post",
+                text: "Path Finder Introduction Post",
                 url: "https://x.com/Ali_Sdg90/status/1963653671083790650?s=20",
             },
             {
-                label: "Predecessor",
-                text: "Spread Color, the related grid-propagation project",
+                label: "GitHub Repository",
+                text: "Spread Color",
                 url: "https://github.com/Ali-Sdg90/Spread-Color",
             },
         ],

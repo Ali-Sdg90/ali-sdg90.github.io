@@ -244,6 +244,10 @@
 
 - [x] Generate lightweight static HTML pages for each portfolio card during SSG,using existing content and linking them for crawler discovery, while keeping theinteractive React experience and hash-route unchanged.
 
+- [x] Fix text overflow in stories in about section
+
+- [x] Make all labels and link description use impacts template (especially for the featured projects section)
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -255,11 +259,7 @@
     - [ ] Add CSI YouTube video link in the resume
     - [ ] Add hash link to my career and projects in my resume.pdf file
 
-- [ ] Make all labels and link description use impacts template (especially for the featured projects section)
-
 - [ ] Research what about how can i improve my github profile for better seo and maybe adding .github to it?
-
-- [ ] Fix text overflow in stories in about section
 
 - [ ] Add "more about ali" section :)
 
