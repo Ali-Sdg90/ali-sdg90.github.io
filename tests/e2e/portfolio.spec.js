@@ -116,6 +116,55 @@ test("the build story route supports chapter navigation", async ({ page }) => {
     ).toHaveAttribute("aria-pressed", "true");
 });
 
+test("the prerendered links and build story remain complete without JavaScript", async ({
+    browser,
+}) => {
+    const context = await browser.newContext({
+        javaScriptEnabled: false,
+        viewport: mobileViewport,
+    });
+    const page = await context.newPage();
+
+    await page.goto("/links/");
+
+    await expect(
+        page.getByRole("heading", { level: 1, name: "Ali Sadeghi" }),
+    ).toBeVisible();
+    await expect(
+        page.getByRole("link", { name: "Open Ali Sadeghi's GitHub" }),
+    ).toHaveAttribute("href", "https://github.com/ali-sdg90");
+    await expect(
+        page.getByRole("link", { name: "Explore Ali Sadeghi's portfolio" }),
+    ).toBeVisible();
+
+    await page.goto("/how-i-built-my-portfolio/");
+
+    await expect(
+        page.getByRole("heading", {
+            level: 1,
+            name: "How My Portfolio Was Built",
+        }),
+    ).toBeVisible();
+    await expect(page.locator(".build-story-static__chapter")).toHaveCount(34);
+    await expect(
+        page.getByRole("heading", { level: 2, name: "First Vision" }),
+    ).toBeVisible();
+    await expect(
+        page.getByRole("heading", {
+            level: 2,
+            name: "The Project's Most Important File",
+        }),
+    ).toBeVisible();
+    await expect(
+        page.locator(".build-story-static__language[lang='en']"),
+    ).toHaveCount(34);
+    await expect(
+        page.locator(".build-story-static__language[lang='fa']"),
+    ).toHaveCount(34);
+
+    await context.close();
+});
+
 test("the prerendered mobile portfolio remains readable without JavaScript", async ({
     browser,
 }) => {

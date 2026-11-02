@@ -1,12 +1,19 @@
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 
 import "../assets/fonts/Geist/fonts.css";
 import LinkHub from "./LinkHub";
 import "./linkHub.scss";
 
-createRoot(document.getElementById("root")).render(
+const rootElement = document.getElementById("root");
+const app = (
     <StrictMode>
         <LinkHub />
-    </StrictMode>,
+    </StrictMode>
 );
+
+if (rootElement.hasChildNodes()) {
+    hydrateRoot(rootElement, app);
+} else {
+    createRoot(rootElement).render(app);
+}

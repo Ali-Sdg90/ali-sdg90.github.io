@@ -4,29 +4,27 @@ import { prerenderToNodeStream } from "react-dom/static";
 import { renderToStaticMarkup } from "react-dom/server";
 
 import App from "./App.jsx";
+import LinkHub from "./links/LinkHub.jsx";
+import BuildStoryStaticPage from "./staticPages/BuildStoryStaticPage.jsx";
 import StaticDetailPage from "./staticDetails/StaticDetailPage.jsx";
 import { getStaticDetailPages } from "./staticDetails/staticDetailPages.js";
+import howItWasBuiltData from "./data/howItWasBuilt/howItWasBuiltData.js";
 
-export const render = async () => {
+const prerenderReactTree = async (tree, label) => {
     const controller = new AbortController();
     const timeout = setTimeout(
-        () => controller.abort(new Error("Portfolio prerender timed out.")),
+        () => controller.abort(new Error(`${label} prerender timed out.`)),
         10_000,
     );
     let renderError = null;
 
     try {
-        const { prelude } = await prerenderToNodeStream(
-            <StrictMode>
-                <App />
-            </StrictMode>,
-            {
-                onError(error) {
-                    renderError ??= error;
-                },
-                signal: controller.signal,
+        const { prelude } = await prerenderToNodeStream(tree, {
+            onError(error) {
+                renderError ??= error;
             },
-        );
+            signal: controller.signal,
+        });
         const chunks = [];
 
         for await (const chunk of prelude) {
@@ -40,6 +38,27 @@ export const render = async () => {
         clearTimeout(timeout);
     }
 };
+
+export const render = () =>
+    prerenderReactTree(
+        <StrictMode>
+            <App />
+        </StrictMode>,
+        "Portfolio",
+    );
+
+export const renderLinkHub = () =>
+    prerenderReactTree(
+        <StrictMode>
+            <LinkHub />
+        </StrictMode>,
+        "Link Hub",
+    );
+
+export const renderBuildStoryFallback = () => ({
+    chapterIds: howItWasBuiltData.chapters.map(({ id }) => id),
+    html: renderToStaticMarkup(<BuildStoryStaticPage />),
+});
 
 export const renderStaticDetailPages = () => {
     const pages = getStaticDetailPages();

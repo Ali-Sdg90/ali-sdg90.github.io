@@ -270,6 +270,8 @@ specification.
 
 - [x] Make hmpwb mobile view
 
+- [x] Add SSG for /links and /hmpwb
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -296,5 +298,3 @@ specification.
 - [ ] Finalize MLK about card
 
 - [ ] Check https://www.bing.com/webmasters
-
-- [ ] Add SSG for /links and /hmpwb

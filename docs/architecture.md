@@ -25,6 +25,8 @@ flowchart LR
     Server[React server build]
     Prerender[Prerender script]
     Home[Prerendered mobile homepage]
+    Links[Prerendered Link Hub]
+    Story[34-chapter bilingual build story]
     Details[41 static detail pages]
     Desktop[Desktop client experience]
     Mobile[Mobile hydrated experience]
@@ -36,6 +38,8 @@ flowchart LR
     Client --> Prerender
     Server --> Prerender
     Prerender --> Home
+    Prerender --> Links
+    Prerender --> Story
     Prerender --> Details
     Home --> Mobile
     Client --> Desktop
@@ -65,13 +69,13 @@ desktop, mobile, or static-detail components.
 
 Vite builds five HTML entry points from `vite.config.js`.
 
-| Route                        | Entry                                                    | Runtime behavior                                                           |
-| ---------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `/`                          | `index.html` and `src/main.jsx`                          | Prerendered mobile HTML, then mobile hydration or desktop client rendering |
-| `/how-i-built-my-portfolio/` | `how-i-built-my-portfolio/index.html` and `src/main.jsx` | Client-rendered build story using the shared application router            |
-| `/links`                     | `links/index.html` and `src/links/main.jsx`              | Independent client-rendered links page                                     |
-| `/404.html`                  | `404.html` and `src/notFound/main.jsx`                   | Independent noindex 404 experience                                         |
-| `/{section}/{id}/`           | `static-detail-template.html`                            | Build-generated static HTML for each shelf card                            |
+| Route                        | Entry                                                    | Runtime behavior                                                                    |
+| ---------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `/`                          | `index.html` and `src/main.jsx`                          | Prerendered mobile HTML, then mobile hydration or desktop client rendering          |
+| `/how-i-built-my-portfolio/` | `how-i-built-my-portfolio/index.html` and `src/main.jsx` | All 34 bilingual chapters are prerendered, then replaced by the interactive gallery |
+| `/links`                     | `links/index.html` and `src/links/main.jsx`              | Prerendered Link Hub hydrated by its independent client entry                       |
+| `/404.html`                  | `404.html` and `src/notFound/main.jsx`                   | Independent noindex 404 experience                                                  |
+| `/{section}/{id}/`           | `static-detail-template.html`                            | Build-generated static HTML for each shelf card                                     |
 
 Static detail sections use the `projects`, `impact`, `stack`, and `career`
 route segments.
@@ -89,10 +93,10 @@ mobile portfolio.
 
 `scripts/prerender.mjs` then:
 
-1. Reads the client-built `dist/index.html`.
+1. Reads the client-built homepage, Link Hub, build-story, and detail-template documents.
 2. Imports the temporary server bundle from `dist-ssr/entry-server.js`.
-3. Validates that the four portfolio sections and their static links exist.
-4. Replaces the empty root with the rendered mobile React tree.
+3. Validates the homepage sections, Link Hub content, and all 34 bilingual story chapters.
+4. Replaces each empty root with its build-time content.
 5. Generates the static detail documents.
 6. Removes the temporary template and `dist-ssr` directory.
 
@@ -106,6 +110,11 @@ This is progressive enhancement, not crawler-only content. A browser without
 JavaScript receives useful mobile portfolio content and normal links to the
 static detail pages. JavaScript adds the viewport-specific interactive
 experience.
+
+The Link Hub hydrates its matching prerendered component. The build-story route
+starts as a visible linear document with every English and Persian chapter,
+then JavaScript replaces it with the existing focused gallery. This makes the
+complete story crawlable without maintaining a duplicate text source.
 
 ## Static detail pages
 
@@ -197,6 +206,8 @@ in the relevant entry. The 404 entry does not load analytics.
 Search engines and non-JavaScript readers are supported through:
 
 - Prerendered homepage content
+- Prerendered Link Hub content
+- All 34 English and Persian build-story chapters
 - Static card detail routes
 - Canonical, robots, social, and structured metadata
 - `public/sitemap.xml` and `public/robots.txt`
@@ -213,11 +224,12 @@ Changes should preserve these contracts:
 2. Server rendering stays deterministic and browser-safe.
 3. The mobile homepage can hydrate without a markup mismatch.
 4. Desktop replaces, rather than hydrates, the prerendered mobile tree.
-5. Every visible shelf item resolves to complete detail data and a static page.
-6. IDs remain stable because they are used in hashes, routes, stories, tests,
+5. The complete build-story fallback and interactive gallery use the same chapter data.
+6. Every visible shelf item resolves to complete detail data and a static page.
+7. IDs remain stable because they are used in hashes, routes, stories, tests,
    and sitemap entries.
-7. Generated files in `dist` and `dist-ssr` are never edited directly.
-8. Static content remains useful without JavaScript and is not crawler-only.
+8. Generated files in `dist` and `dist-ssr` are never edited directly.
+9. Static content remains useful without JavaScript and is not crawler-only.
 
 ## Verification
 

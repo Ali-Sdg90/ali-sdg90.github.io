@@ -16,16 +16,16 @@ then served directly by GitHub Pages.
 
 The project combines three rendering models:
 
-| Model     | Where it runs                               | Purpose                                                                          |
-| --------- | ------------------------------------------- | -------------------------------------------------------------------------------- |
-| SSG       | During `npm run build`                      | Produces the homepage HTML and 41 standalone card pages                          |
-| Hydration | In mobile browsers                          | Attaches React behavior to the prerendered mobile homepage                       |
-| CSR       | In desktop browsers and client-only entries | Renders the interactive desktop portfolio, links page, build story, and 404 view |
+| Model     | Where it runs                       | Purpose                                                                                                      |
+| --------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| SSG       | During `npm run build`              | Produces the homepage, Link Hub, complete bilingual build story, and 41 standalone card pages                |
+| Hydration | In mobile and Link Hub browsers     | Attaches React behavior to matching prerendered markup                                                       |
+| CSR       | In desktop and build-story browsers | Renders the desktop shelf and replaces the complete build-story fallback with the chapter-by-chapter gallery |
 
 The temporary SSR bundle is a build tool for SSG. It is not deployed as a
 server application.
 
-## Generated and client-rendered routes
+## Generated routes and browser behavior
 
 | Route                        | Build output                                                | Browser behavior                                                   |
 | ---------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -34,13 +34,13 @@ server application.
 | `/impact/<id>/`              | Standalone static detail page                               | Works without React hydration                                      |
 | `/stack/<id>/`               | Standalone static detail page                               | Works without React hydration                                      |
 | `/career/<id>/`              | Standalone static detail page                               | Works without React hydration                                      |
-| `/how-i-built-my-portfolio/` | Client entry with metadata and an empty React root          | React renders the build story in the browser                       |
-| `/links`                     | Independent client entry                                    | React renders the links page in the browser                        |
+| `/how-i-built-my-portfolio/` | All 34 chapters, images, and English and Persian stories    | React replaces the linear fallback with the interactive gallery    |
+| `/links`                     | Complete Link Hub content                                   | React hydrates the matching Link Hub                               |
 | `/404.html`                  | Independent client entry                                    | React renders the noindex 404 experience                           |
 
-The homepage and card detail routes are the current SSG surface. The links page
-and build story are built as static HTML shells but their main content is still
-client-rendered.
+The main content of every indexable portfolio route is present in its generated
+HTML. The 404 remains a client entry because it is intentionally excluded from
+search indexing.
 
 ## Source-of-truth model
 
@@ -59,6 +59,12 @@ src/data/aboutSection/aboutCareerData.js
 
 src/data/stories/{en,fa}/
     -> bilingual story text imported by the detail modules
+
+src/data/howItWasBuilt/howItWasBuiltData.js
+    -> build-story chapter order, images, and bilingual copy
+
+src/data/portfolio/profileLinks.js
+    -> Link Hub destinations and labels
 ```
 
 `src/staticDetails/staticDetailPages.js` joins every visible shelf item with
@@ -104,7 +110,8 @@ creates the browser-ready files under `dist`:
 - Imported image and font assets
 - Files copied from `public`
 
-At this stage, the homepage still contains the marker:
+At this stage, the homepage, Link Hub, and build-story documents still contain
+the marker:
 
 ```html
 <div id="root"></div>
@@ -124,9 +131,11 @@ vite build --ssr src/entry-server.jsx --outDir dist-ssr
 ```
 
 This produces `dist-ssr/entry-server.js` and its server-side chunks. The bundle
-exports two build-time functions:
+exports four build-time functions:
 
 - `render()` for the homepage
+- `renderLinkHub()` for the Link Hub
+- `renderBuildStoryFallback()` for the complete linear build story
 - `renderStaticDetailPages()` for all card detail pages
 
 The server bundle exists only long enough for the next build step.
@@ -144,7 +153,26 @@ The streamed React result is collected into one HTML string. It contains the
 mobile hero, Projects, Impact, Tech Stack, Career, and real links to the static
 card routes.
 
-### 5. Static detail generation
+### 5. Link Hub prerender
+
+`renderLinkHub()` uses the normal `LinkHub` component and
+`prerenderToNodeStream`. Its output contains the heading, profile information,
+social links, and portfolio link that the browser later hydrates. The static
+and interactive versions therefore use the same component and data.
+
+### 6. Complete build-story fallback
+
+`renderBuildStoryFallback()` renders `BuildStoryStaticPage` from the same
+`howItWasBuiltData` module used by the interactive gallery. It produces a
+semantic ordered list containing all 34 chapters. Every chapter contains its
+image plus both English and Persian titles and story text.
+
+This linear page is visible and usable without JavaScript. It is not hidden or
+served only to crawlers. When JavaScript runs, `src/main.jsx` replaces it with
+the existing chapter-by-chapter gallery because that interface has a different
+DOM structure and cannot hydrate the complete linear document.
+
+### 7. Static detail generation
 
 `renderStaticDetailPages()` obtains the route inventory from
 `getStaticDetailPages()` and renders every card through
@@ -175,13 +203,16 @@ matching `dist/<section>/<id>/index.html` path.
 These pages do not hydrate a React application. Their English and Persian story
 toggle uses a small inline script included in the static markup.
 
-### 6. Final document writing
+### 8. Final document writing
 
-`scripts/prerender.mjs` imports the temporary server bundle and reads both
-client-build templates. Before writing output, it verifies that:
+`scripts/prerender.mjs` imports the temporary server bundle and reads the
+client-built documents and detail template. Before writing output, it verifies
+that:
 
 - The empty homepage root marker exists.
 - All four portfolio sections are present in the server-rendered HTML.
+- The Link Hub contains its required profile and navigation content.
+- The build story contains both languages and every one of the 34 chapter IDs.
 - Static detail generation covers all four collections.
 - Every generated detail page is linked from the prerendered cards.
 
@@ -197,9 +228,13 @@ with:
 <div id="root">...prerendered mobile portfolio...</div>
 ```
 
-It writes all static detail documents, removes the temporary detail template,
-and deletes `dist-ssr` in a `finally` block. The server build therefore never
-becomes part of the deployed site.
+The same root injection is applied to the Link Hub. The build-story root also
+receives `data-prerender-mode="replace"`, which tells the browser entry to swap
+the complete linear page for the interactive gallery after JavaScript loads.
+
+The script writes all static detail documents, removes the temporary detail
+template, and deletes `dist-ssr` in a `finally` block. The server build
+therefore never becomes part of the deployed site.
 
 ## Resulting output model
 
@@ -261,11 +296,25 @@ Desktop visitors briefly receive meaningful static HTML from the network, but
 the browser replaces it with the dedicated interactive shelf as soon as the
 client application starts.
 
+### Link Hub
+
+`src/links/main.jsx` hydrates the prerendered `LinkHub` tree. If an unprocessed
+development document has an empty root, it falls back to `createRoot`.
+
+### Build story
+
+The generated build-story document starts with all 34 bilingual chapters.
+`src/main.jsx` detects `data-prerender-mode="replace"`, clears that fallback,
+and mounts the normal interactive build-story route. This keeps the full story
+crawlable while preserving the existing focused one-chapter interface for
+JavaScript users.
+
 ### JavaScript disabled
 
-Without JavaScript, the prerendered mobile homepage remains readable and its
-card links navigate to the standalone detail pages. This is the progressive
-enhancement and crawler-accessibility fallback.
+Without JavaScript, the prerendered mobile homepage and Link Hub remain usable,
+and the complete bilingual build story remains readable. Homepage card links
+navigate to the standalone detail pages. This is the progressive-enhancement
+and crawler-accessibility fallback.
 
 ## Pull request preview support
 
@@ -321,6 +370,13 @@ Confirm that static card links are present:
 rg -n 'href="/(projects|impact|stack|career)/' dist/index.html
 ```
 
+Confirm that the Link Hub and all build-story chapters are present:
+
+```bash
+rg -n "link-hub-page|Explore My Portfolio" dist/links/index.html
+rg -n 'build-story-static__chapter|lang="en"|lang="fa"' dist/how-i-built-my-portfolio/index.html
+```
+
 Run browser-level contracts after routing, hydration, or generated-page
 changes:
 
@@ -336,6 +392,8 @@ The automated suite protects:
 - Static metadata and semantic page structure
 - Sitemap coverage for all 41 generated routes
 - No-JavaScript homepage navigation
+- No-JavaScript Link Hub content
+- All 34 English and Persian build-story chapters in generated HTML
 - Mobile hydration without runtime errors
 - Base-path behavior in pull request previews
 
@@ -345,7 +403,6 @@ The automated suite protects:
 - A successful build does not prove that the deployed site has been recrawled.
 - The desktop shelf is intentionally CSR because it does not match the mobile
   prerendered tree.
-- The links page and build story are not currently content-prerendered.
 - Static detail pages contain shared content but not the complete interactive
   shelf behavior.
 - Visual correctness still requires rendered review when a change affects

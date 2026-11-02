@@ -10,6 +10,8 @@ const isPortfolioPath =
     isPortfolioHomePath(window.location.pathname) ||
     isBuildStoryPath(window.location.pathname);
 const rootElement = document.getElementById("root");
+const shouldReplacePrerenderedRoot =
+    rootElement.dataset.prerenderMode === "replace";
 
 const renderNotFoundPage = async () => {
     const [{ default: NotFoundPage }] = await Promise.all([
@@ -46,11 +48,13 @@ if (isPortfolioPath) {
 
     if (
         rootElement.hasChildNodes() &&
+        !shouldReplacePrerenderedRoot &&
         window.matchMedia(MOBILE_VIEWPORT_QUERY).matches
     ) {
         hydrateRoot(rootElement, app);
     } else {
         rootElement.replaceChildren();
+        delete rootElement.dataset.prerenderMode;
         createRoot(rootElement).render(app);
     }
 } else {

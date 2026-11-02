@@ -3,6 +3,7 @@ import { describe, expect, test } from "vitest";
 import { getShelfItemDetailModule } from "../../../src/components/AboutPanel/ShelfItemDetails";
 import { getAboutProjectById } from "../../../src/data/aboutSection/aboutProjectData";
 import { projectGalleryImages } from "../../../src/data/aboutSection/projectGalleryData";
+import howItWasBuiltData from "../../../src/data/howItWasBuilt/howItWasBuiltData";
 import { shelfSections } from "../../../src/data/portfolio/shelfSections";
 import { getShelfItemId } from "../../../src/utils/getShelfItemId";
 
@@ -73,6 +74,20 @@ describe("portfolio data contracts", () => {
                 expect(image.lightboxWidth).toBeGreaterThan(0);
                 expect(image.lightboxHeight).toBeGreaterThan(0);
             }
+        }
+    });
+
+    test("keeps every build-story chapter complete in both languages", () => {
+        expect(howItWasBuiltData.chapters).toHaveLength(34);
+
+        for (const chapter of howItWasBuiltData.chapters) {
+            expect(chapter.id).toBeTruthy();
+            expect(chapter.image.src).toBeTruthy();
+            expect(chapter.image.alt).toBeTruthy();
+            expect(chapter.translations.en.title).toBeTruthy();
+            expect(chapter.translations.en.description).toBeTruthy();
+            expect(chapter.translations.fa.title).toBeTruthy();
+            expect(chapter.translations.fa.description).toBeTruthy();
         }
     });
 });

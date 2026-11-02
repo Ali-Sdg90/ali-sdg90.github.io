@@ -5,10 +5,10 @@ protect the portfolio's important behavior without coupling tests to visual
 implementation details, animation timing, or CSS class structure that may
 change during normal design work.
 
-The suite contains **55 core test cases**:
+The suite contains **57 core test cases**:
 
-- **46 unit and component tests** run by Vitest in JSDOM and Node.
-- **9 end-to-end tests** run by Playwright in Chromium.
+- **47 unit and component tests** run by Vitest in JSDOM and Node.
+- **10 end-to-end tests** run by Playwright in Chromium.
 
 All test code is kept outside the application source tree:
 
@@ -62,12 +62,13 @@ and finite transforms at rest.
 project deep links, legacy URL normalization, the canonical build-story route,
 invalid hash recovery, and navigation between cards, the story, and the shelf.
 
-### Portfolio data contracts (5 tests)
+### Portfolio data contracts (6 tests)
 
 `tests/unit/data/portfolioDataContracts.test.js` checks unique identifiers,
 essential shelf content, detail-module resolution, the connection between
-featured cards and project details, and valid thumbnail/full-size gallery pairs
-with dimensions and alt text.
+featured cards and project details, valid thumbnail/full-size gallery pairs
+with dimensions and alt text, and all 34 complete bilingual build-story
+chapters.
 
 ### Static detail pages (8 tests)
 
@@ -82,7 +83,7 @@ verifies English content and source links, Persian language switching, Escape
 close behavior and focus restoration, body scroll locking, and keyboard focus
 containment.
 
-### Browser journeys (9 tests)
+### Browser journeys (10 tests)
 
 `tests/e2e/portfolio.spec.js` exercises the production build through these user
 journeys:
@@ -92,13 +93,15 @@ journeys:
 3. The desktop Story Reader closes with Escape and restores focus.
 4. A mobile visitor opens and dismisses a project bottom sheet.
 5. The build-story route loads directly and supports chapter navigation.
-6. The prerendered mobile portfolio and its detail links remain useful with
+6. The Link Hub and all 34 English and Persian build-story chapters remain
+   available with JavaScript disabled.
+7. The prerendered mobile portfolio and its detail links remain useful with
    JavaScript disabled.
-7. All 41 sitemap detail routes return complete, indexable HTML.
-8. The mobile prerender hydrates and keeps its card interactions without runtime
+8. All 41 sitemap detail routes return complete, indexable HTML.
+9. The mobile prerender hydrates and keeps its card interactions without runtime
    errors.
-9. A static detail story switches between English and Persian without changing
-   its section title.
+10. A static detail story switches between English and Persian without changing
+    its section title.
 
 ## Local commands
 
