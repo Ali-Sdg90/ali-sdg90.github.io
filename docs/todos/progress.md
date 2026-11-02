@@ -1,3 +1,9 @@
+# Project Progress
+
+This file preserves the project's working history, including completed tasks,
+rejected ideas, and possible future improvements. It is not a product
+specification.
+
 - [x] ~~open in online vs code codebase btn in about sections~~
 
 - [x] add "How this site created" btn and its own page
@@ -224,7 +230,7 @@
 
 - [x] Update number of slides in hmpwb in llms.txt, readme and project about card
 
-- [x] Research [CSR and crawler accessibility](../misc/csr-crawler-accessibility.md)
+- [x] Research and document the [SSG architecture](../ssg-architecture.md)
 
 - [x] Research indexing the URLs into Google Search Console
 
@@ -248,6 +254,18 @@
 
 - [x] Make all labels and link description use impacts template (especially for the featured projects section)
 
+- [x] ~~Maybe lower the resolution of the cards in shelf to fix the flashing lines?~~
+
+- [x] Check if can use another route for static.cloudflareinsights.com/beacon.min.js/ ERR_CONNECTION_CLOSED
+
+- [x] Fix start of SSG that generate that don't have Aloha
+
+- [x] Check how to show dates in career cards
+
+- [x] Write project documents
+
+- [x] Write how to add new cards, and the SSG protocols document
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -269,25 +287,13 @@
 
 - [ ] Update the first and third section texts in the hmpwb
 
-- [ ] Check if can use another route for static.cloudflareinsights.com/beacon.min.js/ ERR_CONNECTION_CLOSED
-
 - [ ] Re-write career stories with the new format of writing the stories
-
-- [ ] Maybe lower the resolution of the cards in shelf to fix the flashing lines?
 
 - [ ] Add MLK Report Generator desc in melkradar career card and story
 
 - [ ] Make hmpwb mobile view
 
 - [ ] Finalize MLK about card
-
-- [ ] Check how to show dates in career cards
-
-- [ ] Fix start of SSG that generate that don't have Aloha
-
-- [ ] Write project documents
-
-- [ ] Write how to add new cards, and the ssg protocols document
 
 - [ ] Check https://www.bing.com/webmasters
 

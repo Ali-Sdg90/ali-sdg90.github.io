@@ -139,6 +139,14 @@ That has meant revisiting performance, deferring heavier content when appropriat
 
 The repository uses automated tooling for formatting, linting, image processing, client and SSR builds, prerendering, and releases. Pull requests from branches in this repository can receive isolated GitHub Pages previews. Changes merged into `main` go through the release and deployment workflow, with semantic-release creating a new version when the commits call for one.
 
+## Project documentation
+
+- [Architecture](./docs/architecture.md): rendering boundaries, routing, static pages, and delivery.
+- [Content Authoring](./docs/content-authoring.md): projects, impact, technology, career, stories, and metadata.
+- [Media Pipeline](./docs/media-pipeline.md): source images, generated variants, dimensions, and optimization.
+- [Testing Strategy](./docs/testing.md): protected contracts, local commands, and CI gates.
+- [SSG Architecture](./docs/ssg-architecture.md): build-time rendering, generated pages, hydration, and CSR boundaries.
+
 ## Run it locally
 
 ### Requirements
@@ -186,6 +194,7 @@ This repository is publicly available for viewing, personal study, and education
 
 The code, design, structure, written content, branding, résumé, photographs, and other assets may not be copied, redistributed, deployed, or used to create a substantially similar portfolio without prior written permission.
 
-See [LICENSE](./LICENSE) for the complete terms.
+See [LICENSE](./LICENSE) for the complete terms and [NOTICE](./NOTICE) for
+third-party attribution.
 
 _Made with love ❤️_

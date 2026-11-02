@@ -1,4 +1,11 @@
-Featured Projects
+# Mobile Measurement Snapshot
+
+These values were captured during a rendered layout review. They are reference
+measurements, not CSS contracts, and may need to be measured again after visual
+or responsive changes.
+
+## Featured Projects
+
 Ali's Portfolio: 209.26 x 209.26 px
 Health Data Relay: 209.26 x 209.26 px
 CS Queue Calendar: 209.26 x 209.26 px
@@ -11,7 +18,8 @@ Gradient Paint: 209.26 x 209.26 px
 Quick Math: 209.26 x 209.26 px
 Tic Tac Toe: 209.26 x 209.26 px
 
-Tech Stack
+## Tech Stack
+
 React: 32.00 x 32.00 px
 JavaScript: 32.00 x 32.00 px
 SCSS: 32.00 x 32.00 px
@@ -30,14 +38,17 @@ ApexCharts: 32.00 x 32.00 px
 Ollama: 32.00 x 32.00 px
 Azure DevOps: 32.00 x 32.00 px
 
-Career Journey
+## Career Journey
+
 CS Internship: 60.00 x 60.00 px
 MelkRadar: 60.00 x 60.00 px
 Dadeh Pardazi Azmoudeh Karan: 60.00 x 60.00 px
-SettleitGPT: 60.00 x 60.00 px
+SettleItGPT: 60.00 x 60.00 px
 
-Gallery
+## Gallery
+
 Gallery image box: 103.31 x 84.68 px
 
-About Me
+## About Me
+
 Ali Sadeghi image box: 97.50 x 97.50 px

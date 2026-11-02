@@ -1,4 +1,11 @@
-## Mobile Portfolio Direction
+# Mobile Portfolio Direction
+
+Status: historical design concept.
+
+This note captures the direction considered before the current mobile
+experience was implemented. It is preserved as part of the project's design
+history, not as current implementation documentation. See
+[Architecture](../../architecture.md) for the production structure.
 
 The mobile version should **not be a compressed copy of the desktop shelf experience**.
 
@@ -15,7 +22,9 @@ Instead, it should reinterpret the same visual language into a layout designed s
     - Career Journey
 - Each row should support natural horizontal swipe, momentum, and `scroll-snap`.
 - Show part of the next card so users immediately understand that the row is swipeable.
-- Preserve the visual identity of the desktop shelf through shelf edges, shadows, glow, depth, and subtle perspective — without recreating the full desktop scene.
+- Preserve the visual identity of the desktop shelf through shelf edges,
+  shadows, glow, depth, and subtle perspective without recreating the full
+  desktop scene.
 - The shelf should become a **design language**, rather than one large object.
 
 ### Card details

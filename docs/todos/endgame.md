@@ -1,3 +1,8 @@
+# Project Roadmap
+
+This is an informal working checklist of completed, planned, and exploratory
+ideas. Open items are not release commitments.
+
 - [x] use the link of the portfolio in the resume.pdf file and my social medias
     - [x] X
     - [x] LinkedIn

@@ -5,9 +5,9 @@ protect the portfolio's important behavior without coupling tests to visual
 implementation details, animation timing, or CSS class structure that may
 change during normal design work.
 
-The suite contains **50 core test cases**:
+The suite contains **55 core test cases**:
 
-- **41 unit and component tests** run by Vitest in JSDOM and Node.
+- **46 unit and component tests** run by Vitest in JSDOM and Node.
 - **9 end-to-end tests** run by Playwright in Chromium.
 
 All test code is kept outside the application source tree:
@@ -37,6 +37,18 @@ remembered dismissal, persistence, and browsers where local storage is blocked.
 `tests/unit/hooks/useShelfScroll/scrollUtils.test.js` verifies loop-width
 calculation, non-repeating behavior, and normalization on both sides of the safe
 repeated range.
+
+### Shelf drag behavior (2 tests)
+
+`tests/unit/hooks/useShelfScroll/useShelfScroll.test.js` verifies that a real
+drag suppresses its synthetic follow-up click while an ordinary pointer click
+continues to work.
+
+### Shelf card links (3 tests)
+
+`tests/unit/components/Shelf/ShelfCard.test.jsx` protects non-draggable card
+links, repeated-card tab-order behavior, interactive selection, and modified
+click navigation.
 
 ### Page-turn geometry (5 tests)
 

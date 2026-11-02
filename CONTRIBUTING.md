@@ -29,6 +29,13 @@ npm run dev
 - Preserve copyright, license, attribution, and personal-content boundaries.
 - Add or update tests when changing important logic or interactions.
 
+Use the focused project guides when a change touches a documented boundary:
+
+- [Architecture](./docs/architecture.md)
+- [Content Authoring](./docs/content-authoring.md)
+- [Media Pipeline](./docs/media-pipeline.md)
+- [Testing Strategy](./docs/testing.md)
+
 ## Checks
 
 Run the main project checks before opening a pull request:

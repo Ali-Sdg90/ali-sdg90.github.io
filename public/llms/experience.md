@@ -4,7 +4,7 @@ Periods and outcomes below follow the portfolio's current Career Journey data.
 
 ## CS Internship
 
-**Web Development Intern → Technical Mentor & Systems Designer | 2023-2026**
+**Web Development Intern → Technical Mentor & System Designer | 2023-2026**
 
 Progressed from web intern to technical mentor and program contributor. Mentored 25+ web development interns, personally onboarded eight participants, helped redesign the program's entry process, and built five internal automation tools for operations, feedback, scheduling, and queue management.
 
