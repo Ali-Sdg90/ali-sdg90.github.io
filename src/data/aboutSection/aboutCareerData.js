@@ -240,7 +240,7 @@ export const aboutCareerData = {
         title: "CS Internship",
         lightboxImage: csiLogoLarge,
         summary:
-            "From web intern to technical mentor and program contributor, mentoring 30+ interns, redesigning core processes, and building automation tools to make CS Internship more scalable and effective.",
+            "From web intern to technical mentor and program contributor, mentoring 25+ interns, redesigning core processes, and building automation tools to make CS Internship more scalable and effective.",
         tech: [
             "Technical Mentorship",
             "Process Design",

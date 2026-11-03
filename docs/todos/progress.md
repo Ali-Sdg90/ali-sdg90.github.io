@@ -298,3 +298,7 @@ specification.
 - [ ] Finalize MLK about card
 
 - [ ] Check https://www.bing.com/webmasters
+
+- [ ] Add ssg page screenshot to readme
+
+- [ ] Add collapse feature for long stories in the ssg generated pages
