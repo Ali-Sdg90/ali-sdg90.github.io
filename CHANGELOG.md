@@ -1,3 +1,10 @@
+## [1.42.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.42.1...v1.42.2) (2026-11-03)
+
+
+### Bug Fixes
+
+* update mlk card and make it semi finalized, add 4 todos ([b5e3249](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/b5e3249d25da6f6a9edcf97923189ac7a673fc9d))
+
 ## [1.42.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.42.0...v1.42.1) (2026-11-03)
 
 
