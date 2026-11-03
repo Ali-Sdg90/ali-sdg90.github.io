@@ -1,3 +1,10 @@
+## [1.42.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.42.0...v1.42.1) (2026-11-03)
+
+
+### Bug Fixes
+
+* re-write the melkRadar story, fix numbering issue in cs card and add two new todos, mlk inner card need attention ([0cdaa32](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/0cdaa320fc78a34d006534c2a7f21b036de75dce))
+
 # [1.42.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.41.11...v1.42.0) (2026-11-02)
 
 
