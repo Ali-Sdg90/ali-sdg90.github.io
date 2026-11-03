@@ -290,8 +290,8 @@ export const shelfSections = [
                 id: "melk-radar",
                 title: "MelkRadar",
                 company: "MelkRadar",
-                meta: "Front-End Technical Lead",
-                year: "2023 - 2025",
+                meta: "Front-End Technical Lead & Internal Tools Developer",
+                year: "2023 - 2026",
                 image: melkRadarLogo,
             },
             {
