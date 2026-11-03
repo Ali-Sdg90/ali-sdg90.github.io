@@ -10,11 +10,9 @@ Progressed from web intern to technical mentor and program contributor. Mentored
 
 ## MelkRadar
 
-**Front-End Developer | August 2023 – May 2024**
+**Front-End Technical Lead & Internal Tools Developer | 2023-2026**
 
-**Front-End Technical Lead | May 2024 – January 2026**
-
-Contributed across six products and projects, built reusable frontend systems, served as a main code reviewer for 1.5 years, onboarded four frontend engineers, delivered more than 50 Chart.js visualizations, introduced Mapbox GL JS, and built an internal automation system spanning Android, Node.js, and Telegram.
+Joined as an intern and grew into a Front-End Technical Lead, building frontend experiences across MelkRadar products and client projects. Led frontend code quality for one year and nine months, onboarded 11 developers, delivered Mapbox and Chart.js work, and built internal automation systems for daily operations and monthly reporting.
 
 ## Dadeh Pardazi Azmoudeh Karan
 
