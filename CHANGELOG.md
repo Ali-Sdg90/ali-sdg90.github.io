@@ -1,3 +1,10 @@
+## [1.42.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.42.3...v1.42.4) (2026-11-05)
+
+
+### Bug Fixes
+
+* add collapse/expand to long stories in generated ssg pages ([4ebe219](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/4ebe2196acc209a2d8c5d4696b8d3437a6f2c31b))
+
 ## [1.42.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.42.2...v1.42.3) (2026-11-05)
 
 
