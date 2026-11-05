@@ -65,7 +65,6 @@ export const aboutProjectData = {
                 url: "https://github.com/Ali-Sdg90/ali-sdg90.github.io",
             },
         ],
-        tech: ["React 19", "Vite 8", "SCSS", "Framer Motion", "GitHub Pages"],
         features: [
             "Custom shelf navigation with drag momentum, friction, and infinite scrolling",
             "Reusable data system for projects, skills, career history, and impact metrics",
@@ -115,15 +114,6 @@ export const aboutProjectData = {
                 label: "GitHub Repo",
                 url: "https://github.com/Ali-Sdg90/health-data-relay",
             },
-        ],
-        tech: [
-            "Kotlin",
-            "Jetpack Compose",
-            "Material 3",
-            "Health Connect",
-            "WorkManager",
-            "DataStore",
-            "Google Drive API",
         ],
         features: [
             "Creates compact daily JSON summaries from selected Health Connect data",
@@ -196,7 +186,6 @@ export const aboutProjectData = {
                 url: "https://github.com/cs-internship/CS-Queue-Calendar",
             },
         ],
-        tech: ["React", "Ant Design", "Sass", "Day.js", "Jalali Moment"],
         features: [
             "Displays both Jalali and Gregorian dates for scheduled sessions",
             "Creates ready-to-share weekly announcements for queue admins",
@@ -250,14 +239,6 @@ export const aboutProjectData = {
                 url: "https://github.com/Ali-Sdg90/Spotify-Taste-Timeline",
             },
         ],
-        tech: [
-            "React",
-            "Vite",
-            "JavaScript",
-            "SCSS",
-            "ApexCharts",
-            "PapaParse",
-        ],
         features: [
             "Analyzes playlist CSV files inside the browser without uploading personal data",
             "Shows music changes over time with two timelines and moving averages for 11 audio features",
@@ -307,15 +288,6 @@ export const aboutProjectData = {
                 label: "GitHub Repo",
                 url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama",
             },
-        ],
-        tech: [
-            "Node.js",
-            "Telegraf",
-            "Ollama",
-            "node-cron",
-            "HTML",
-            "CSS",
-            "JavaScript",
         ],
         features: [
             "Connects Telegram to local Ollama models and streams replies as they are generated",
@@ -374,14 +346,6 @@ export const aboutProjectData = {
                 url: "https://github.com/cs-internship/CS-Club-Bot",
             },
         ],
-        tech: [
-            "Node.js",
-            "Telegraf",
-            "Express",
-            "Notion API",
-            "Perplexity AI",
-            "CryptoJS",
-        ],
         features: [
             "Uses Notion for registration, roles, and ban checks",
             "Creates encrypted feedback links for technical and mentorship sessions",
@@ -439,13 +403,6 @@ export const aboutProjectData = {
                 url: "https://github.com/cs-internship/CS-Queue-Bot",
             },
         ],
-        tech: [
-            "Node.js",
-            "Telegraf",
-            "Express",
-            "Axios",
-            "Azure DevOps REST API",
-        ],
         features: [
             "Checks Telegram usernames and guides new members through onboarding",
             "Detects message spam and applies moderation rules automatically",
@@ -501,7 +458,6 @@ export const aboutProjectData = {
                 url: "https://github.com/Ali-Sdg90/Custom-Gradient-Paint",
             },
         ],
-        tech: ["HTML", "JavaScript", "SCSS", "CSS"],
         features: [
             "Spreads fading colors across nearby grid cells from each selected point",
             "Lets users change grid size, colors, spread distance, borders, and cell numbers",
@@ -546,7 +502,6 @@ export const aboutProjectData = {
                 url: "https://github.com/Ali-Sdg90/Quick-Math",
             },
         ],
-        tech: ["HTML", "JavaScript", "SCSS", "CSS"],
         features: [
             "Uses three-question rounds with lives, question timers, and total time tracking",
             "Shows each question on a different side of a rotating cube",
@@ -585,7 +540,6 @@ export const aboutProjectData = {
                 url: "https://github.com/Ali-Sdg90/Tic-Tac-Toe",
             },
         ],
-        tech: ["HTML", "JavaScript", "CSS"],
         features: [
             "Includes classic, computer, local two-player, and rule-breaking unbeatable modes",
             "Adds challenges that keep progress between game sessions",
@@ -635,7 +589,6 @@ export const aboutProjectData = {
                 url: "https://github.com/Ali-Sdg90/Path-Finder",
             },
         ],
-        tech: ["React", "Ant Design", "Sass", "CryptoJS"],
         features: [
             "Uses weighted random movement to favor directions selected by the user",
             "Shows the grid filling step by step instead of only displaying the final result",

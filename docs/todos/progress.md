@@ -272,6 +272,8 @@ specification.
 
 - [x] Add SSG for /links and /hmpwb
 
+- [x] Remove un-used tags in about the card sections
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -308,5 +310,3 @@ specification.
 - [ ] Add open card detail in there ssg page in main shelf page
 
 - [ ] Maybe add welcome to my little world, lets have a quick tour text in the intro page
-
-- [ ] Remove un-used tags in about the card sections

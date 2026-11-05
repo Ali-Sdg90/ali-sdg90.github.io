@@ -168,21 +168,6 @@ describe("static portfolio detail pages", () => {
         expect(html).not.toContain("Technologies and tools");
     });
 
-    test("does not render technology tag data on career pages", () => {
-        const page = getPage(
-            getStaticDetailPages({ basePath: "/" }),
-            "cs-internship",
-        );
-        const html = renderToStaticMarkup(<StaticDetailPage page={page} />);
-
-        expect(page.detail.tech.length).toBeGreaterThan(0);
-        expect(html).not.toContain("Technologies and tools");
-        expect(html).not.toContain("Built with");
-        expect(html).not.toContain("Back to the interactive portfolio");
-        expect(html.match(/Go to Ali&#x27;s portfolio/g)).toHaveLength(2);
-        expect(html).not.toContain("Return to CS Internship");
-    });
-
     test("writes indexable page-specific metadata for every card", () => {
         const pages = getStaticDetailPages({ basePath: "/" });
         const template = [

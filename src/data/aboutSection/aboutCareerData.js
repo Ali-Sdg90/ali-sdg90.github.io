@@ -241,15 +241,6 @@ export const aboutCareerData = {
         lightboxImage: csiLogoLarge,
         summary:
             "From web intern to technical mentor and program contributor, mentoring 25+ interns, redesigning core processes, and building automation tools to make CS Internship more scalable and effective.",
-        tech: [
-            "Technical Mentorship",
-            "Process Design",
-            "Program Operations",
-            "Workflow Automation",
-            "React",
-            "Telegram Bots",
-            "Azure Boards",
-        ],
         featuresTitle: "Focus Areas",
         features: [
             "Mentored 25+ web development interns through technical coaching and progress reviews",
@@ -324,19 +315,6 @@ export const aboutCareerData = {
         lightboxImage: melkRadarLogoLarge,
         summary:
             "Joined MelkRadar as an intern and grew into a Front-End Technical Lead, helping build products across its ecosystem, guiding the frontend team, and creating internal automation systems used in daily operations.",
-        tech: [
-            "Front-End Leadership",
-            "React",
-            "JavaScript",
-            "SCSS",
-            "Blazor",
-            "Azure DevOps",
-            "Mapbox GL JS",
-            "Chart.js",
-            "Android Development",
-            "Node.js",
-            "Workflow Automation",
-        ],
         featuresTitle: "Focus Areas",
         features: [
             "Built frontend experiences across MelkRadar products, KhodroRadar, and client projects.",
@@ -384,16 +362,6 @@ export const aboutCareerData = {
         lightboxImage: dpaLogoLarge,
         summary:
             "Built the front end of a large administrative platform from scratch, translating Figma designs into a production-ready React application with Ant Design and 60+ API integrations.",
-        tech: [
-            "React",
-            "JavaScript",
-            "Ant Design",
-            "REST APIs",
-            "Swagger",
-            "Figma",
-            "Large-scale Front-End",
-            "Component Architecture",
-        ],
         featuresTitle: "Focus Areas",
         features: [
             "Built the entire front end of the platform from scratch.",
@@ -421,18 +389,6 @@ export const aboutCareerData = {
         lightboxImage: settleitGptLogoLarge,
         summary:
             "Co-developed and launched an AI-powered iOS application with React Native and Expo, taking the product from an early MVP to a complete App Store release.",
-        tech: [
-            "React Native",
-            "Expo",
-            "JavaScript",
-            "iOS Development",
-            "Firebase",
-            "REST APIs",
-            "AI Integration",
-            "Prompt Engineering",
-            "Voice Generation",
-            "Native Device APIs",
-        ],
         featuresTitle: "Focus Areas",
         features: [
             "Built AI-powered character personas for judging user discussions.",
