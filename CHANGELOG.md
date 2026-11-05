@@ -1,3 +1,10 @@
+## [1.42.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.42.2...v1.42.3) (2026-11-05)
+
+
+### Bug Fixes
+
+* remove un-used tags in career and projects ([0e89ba2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/0e89ba21c0f1bf47efc0d19332eb6422d1f545d9))
+
 ## [1.42.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.42.1...v1.42.2) (2026-11-03)
 
 
