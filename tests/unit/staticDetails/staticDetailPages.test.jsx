@@ -168,6 +168,42 @@ describe("static portfolio detail pages", () => {
         expect(html).not.toContain("Technologies and tools");
     });
 
+    test("collapses stories at the paragraph threshold without removing their crawlable content", () => {
+        const pages = getStaticDetailPages({ basePath: "/" });
+        const csInternshipPage = getPage(pages, "cs-internship");
+        const csInternshipHtml = renderToStaticMarkup(
+            <StaticDetailPage page={csInternshipPage} />,
+        );
+        const reactHtml = renderToStaticMarkup(
+            <StaticDetailPage page={getPage(pages, "react")} />,
+        );
+        const healthDataRelayHtml = renderToStaticMarkup(
+            <StaticDetailPage page={getPage(pages, "health-data-relay")} />,
+        );
+        const azureDevOpsHtml = renderToStaticMarkup(
+            <StaticDetailPage page={getPage(pages, "azure-devops")} />,
+        );
+        const restApisHtml = renderToStaticMarkup(
+            <StaticDetailPage page={getPage(pages, "rest-apis")} />,
+        );
+
+        expect(csInternshipHtml).toContain(
+            '<details class="static-detail-story-disclosure">',
+        );
+        expect(csInternshipHtml).toContain("Continue reading");
+        expect(csInternshipHtml).toContain("Collapse the story");
+        expect(csInternshipHtml).toContain(
+            "little pieces of Ali are still there in the program",
+        );
+        expect(csInternshipHtml).toContain('data-story-language="EN"');
+        expect(csInternshipHtml).toContain('data-story-language="FA"');
+        expect(csInternshipHtml).toContain("<noscript>");
+        expect(reactHtml).toContain("static-detail-story-disclosure");
+        expect(healthDataRelayHtml).toContain("static-detail-story-disclosure");
+        expect(azureDevOpsHtml).toContain("static-detail-story-disclosure");
+        expect(restApisHtml).not.toContain("static-detail-story-disclosure");
+    });
+
     test("writes indexable page-specific metadata for every card", () => {
         const pages = getStaticDetailPages({ basePath: "/" });
         const template = [

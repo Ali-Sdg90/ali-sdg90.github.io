@@ -1,4 +1,4 @@
-import { FaCheck } from "react-icons/fa6";
+import { FaCheck, FaChevronDown } from "react-icons/fa6";
 
 import AboutPanelLanguageToggle from "../components/AboutPanel/AboutPanelLanguageToggle.jsx";
 import { aboutData } from "../data/portfolio/aboutData.js";
@@ -40,6 +40,8 @@ const splitStory = (story = "") =>
         .split(/\r?\n\s*\r?\n/)
         .map((paragraph) => paragraph.trim())
         .filter(Boolean);
+
+const LONG_STORY_PARAGRAPH_THRESHOLD = 20;
 
 const StoryParagraphs = ({ paragraphs }) =>
     paragraphs.map((paragraph, index) => (
@@ -102,22 +104,11 @@ const Story = ({ storyEN, storyFA, title }) => {
 
     const hasLanguageToggle =
         englishParagraphs.length > 0 && farsiParagraphs.length > 0;
-
-    return (
-        <section className="static-detail-story" data-static-story>
-            <header className="static-detail-story-header">
-                <div>
-                    <h2>{title}</h2>
-                </div>
-
-                {hasLanguageToggle && (
-                    <AboutPanelLanguageToggle
-                        activeLanguage="EN"
-                        onLanguageChange={() => {}}
-                    />
-                )}
-            </header>
-
+    const isLongStory =
+        Math.max(englishParagraphs.length, farsiParagraphs.length) >=
+        LONG_STORY_PARAGRAPH_THRESHOLD;
+    const storyContent = (
+        <>
             {englishParagraphs.length > 0 && (
                 <div
                     className="static-detail-story-content"
@@ -152,6 +143,49 @@ const Story = ({ storyEN, storyFA, title }) => {
                         <StoryParagraphs paragraphs={farsiParagraphs} />
                     </div>
                 </noscript>
+            )}
+        </>
+    );
+
+    return (
+        <section className="static-detail-story" data-static-story>
+            <header className="static-detail-story-header">
+                <div>
+                    <h2>{title}</h2>
+                </div>
+
+                {hasLanguageToggle && (
+                    <AboutPanelLanguageToggle
+                        activeLanguage="EN"
+                        onLanguageChange={() => {}}
+                    />
+                )}
+            </header>
+
+            {isLongStory ? (
+                <details className="static-detail-story-disclosure">
+                    <summary className="static-detail-story-toggle">
+                        <span className="static-detail-story-toggle-copy">
+                            <span className="static-detail-story-toggle-collapsed">
+                                Continue reading
+                            </span>
+                            <span className="static-detail-story-toggle-expanded">
+                                Collapse the story
+                            </span>
+                        </span>
+                        <span
+                            className="static-detail-story-toggle-icon"
+                            aria-hidden="true"
+                        >
+                            <FaChevronDown />
+                        </span>
+                    </summary>
+                    <div className="static-detail-story-body">
+                        {storyContent}
+                    </div>
+                </details>
+            ) : (
+                storyContent
             )}
         </section>
     );

@@ -443,6 +443,145 @@ button:focus-visible {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.static-detail-story-disclosure {
+    --story-preview-height: clamp(28rem, 62vh, 36rem);
+
+    display: flex;
+    overflow: clip;
+    flex-direction: column;
+    margin-top: 1.35rem;
+    interpolate-size: allow-keywords;
+
+    &::details-content {
+        display: block;
+        order: 1;
+        content-visibility: visible;
+    }
+
+    &:not([open]) > .static-detail-story-body {
+        display: block;
+    }
+}
+
+.static-detail-story-toggle {
+    display: flex;
+    order: 2;
+    min-height: 4.5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.85rem 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 0.75rem;
+    color: $color-text;
+    background: rgba(255, 255, 255, 0.025);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    transition:
+        border-color $motion-fast $ease-out,
+        background $motion-fast $ease-out,
+        transform $motion-fast $ease-out;
+
+    &::-webkit-details-marker {
+        display: none;
+    }
+
+    &:hover {
+        border-color: rgba(var(--detail-accent-rgb), 0.32);
+        background: rgba(var(--detail-accent-rgb), 0.06);
+        transform: translateY(-1px);
+    }
+
+    &:focus-visible {
+        outline: 2px solid rgba(var(--detail-accent-rgb), 0.88);
+        outline-offset: -3px;
+    }
+}
+
+.static-detail-story-toggle-copy {
+    display: grid;
+    font-size: 0.8rem;
+    font-weight: 620;
+}
+
+.static-detail-story-toggle-expanded {
+    display: none;
+}
+
+.static-detail-story-toggle-icon {
+    display: inline-flex;
+    width: 2.15rem;
+    height: 2.15rem;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(var(--detail-accent-rgb), 0.4);
+    border-radius: 0.68rem;
+    color: var(--detail-accent);
+    background: rgba(var(--detail-accent-rgb), 0.11);
+    transition: background-color $motion-fast $ease-out;
+
+    svg {
+        width: 0.8rem;
+        height: 0.8rem;
+        transition: transform 620ms $ease-out;
+    }
+}
+
+.static-detail-story-disclosure[open] {
+    .static-detail-story-body {
+        block-size: auto;
+
+        &::after {
+            opacity: 0;
+        }
+    }
+
+    .static-detail-story-toggle-collapsed {
+        display: none;
+    }
+
+    .static-detail-story-toggle-expanded {
+        display: inline;
+    }
+
+    .static-detail-story-toggle-icon {
+        background: rgba(var(--detail-accent-rgb), 0.18);
+
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.static-detail-story-body {
+    position: relative;
+    order: 1;
+    overflow: clip;
+    block-size: var(--story-preview-height);
+    padding: 0 clamp(1rem, 3vw, 1.5rem) clamp(1.35rem, 4vw, 2rem);
+    transition: block-size 880ms $ease-out;
+
+    &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: min(12rem, 38%);
+        background: linear-gradient(
+            180deg,
+            rgba(9, 16, 26, 0),
+            rgba(9, 16, 26, 0.84) 62%,
+            rgba(9, 16, 26, 0.98) 100%
+        );
+        content: "";
+        opacity: 1;
+        pointer-events: none;
+        transition: opacity 260ms $ease-out;
+    }
+}
+
 .static-detail-story-content,
 .static-detail-story-noscript {
     display: grid;
