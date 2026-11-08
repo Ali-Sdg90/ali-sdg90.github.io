@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa6";
 
 import LightboxImage from "../../ui/LightboxImage";
+import StaticDetailPageLink from "../../ui/StaticDetailPageLink";
 import { trackUmamiEvent } from "../../../utils/analytics";
 
 const StoryReaderModal = lazy(() => import("./StoryReaderModal"));
@@ -347,6 +348,7 @@ const FeaturedProjectAbout = ({
                     Project detail content is being prepared for this shelf
                     item.
                 </p>
+                <StaticDetailPageLink item={item} section={section} />
             </div>
         );
     }
@@ -408,6 +410,7 @@ const FeaturedProjectAbout = ({
             {detail.hasRelatedLinks && (
                 <RelatedLinks links={detail.relatedLinks} project={project} />
             )}
+            <StaticDetailPageLink item={item} section={section} />
         </div>
     );
 };
