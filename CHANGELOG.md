@@ -1,3 +1,10 @@
+## [1.43.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.0...v1.43.1) (2026-11-08)
+
+
+### Bug Fixes
+
+* cash loopWidth for cards in shelf for better performance, update wrong data in csi card, update todos ([6878176](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/6878176b1bb133be4557ca39f9a3937f7fe7c763))
+
 # [1.43.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.42.4...v1.43.0) (2026-11-08)
 
 
