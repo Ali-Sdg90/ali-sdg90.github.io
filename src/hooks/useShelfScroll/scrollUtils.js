@@ -14,6 +14,7 @@ export const normalizeScrollPosition = (
     scroller,
     scrollLeft = scroller.scrollLeft,
     doRepeat = true,
+    cachedLoopWidth,
 ) => {
     if (!doRepeat) {
         if (scrollLeft !== scroller.scrollLeft) {
@@ -23,7 +24,7 @@ export const normalizeScrollPosition = (
         return scroller.scrollLeft;
     }
 
-    const loopWidth = getLoopWidth(scroller);
+    const loopWidth = cachedLoopWidth ?? getLoopWidth(scroller);
 
     if (loopWidth <= 0) {
         return scrollLeft;

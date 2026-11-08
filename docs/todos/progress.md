@@ -276,6 +276,18 @@ specification.
 
 - [x] Add open card detail in there ssg page in main shelf page
 
+- [x] Add collapse feature for long stories in the ssg generated pages
+
+- [x] Add MLK Report Generator desc in melkradar career card and story
+
+- [x] Finalize MLK about card
+
+- [x] Maybe add let gpt read the site?
+
+- [x] Do a ai-check for overcooking the box-shadows
+    - [x] part 1
+    - [x] part 2
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -291,22 +303,12 @@ specification.
 
 - [ ] Add "more about ali" section :)
 
-- [ ] Do a ai-check for overcooking the box-shadows
-    - [x] part 1
-    - [ ] part 2
+- [ ] Add "Explore my Portfolio with AI" in "more about ali" section
 
 - [ ] Re-write career stories with the new format of writing the stories
-
-- [ ] Add MLK Report Generator desc in melkradar career card and story
-
-- [ ] Finalize MLK about card
 
 - [ ] Check https://www.bing.com/webmasters
 
 - [ ] Add ssg page screenshot to readme
-
-- [ ] Add collapse feature for long stories in the ssg generated pages
-
-- [ ] Maybe add let gpt read the site?
 
 - [ ] Maybe add welcome to my little world, lets have a quick tour text in the intro page

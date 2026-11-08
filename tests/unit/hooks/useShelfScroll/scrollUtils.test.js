@@ -51,4 +51,11 @@ describe("infinite shelf scroll utilities", () => {
         expect(normalizeScrollPosition(scroller, 925)).toBe(625);
         expect(scroller.scrollLeft).toBe(625);
     });
+
+    test("uses a cached loop width without measuring the card set again", () => {
+        const scroller = document.createElement("div");
+
+        expect(normalizeScrollPosition(scroller, -25, true, 300)).toBe(575);
+        expect(scroller.scrollLeft).toBe(575);
+    });
 });

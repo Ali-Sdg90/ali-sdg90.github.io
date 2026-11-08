@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useCallback } from "react";
 
 import { getShelfItemId } from "../../utils/getShelfItemId";
 import ShelfCard from "./ShelfCard";
@@ -16,13 +16,15 @@ const ShelfCardTrack = ({
 }) => {
     const setCount = section.doRepeat ? 5 : 1;
     const centerSetIndex = Math.floor(setCount / 2);
+    const scrollerRef = useCallback(
+        (element) => setScrollerRef(sectionIndex, element),
+        [sectionIndex, setScrollerRef],
+    );
 
     return (
         <div
             className="shelf-card-track"
-            ref={(element) => {
-                setScrollerRef(sectionIndex, element);
-            }}
+            ref={scrollerRef}
             onPointerDown={(event) => handlePointerDown(event, sectionIndex)}
             onPointerMove={handlePointerMove}
             onPointerUp={stopDragging}

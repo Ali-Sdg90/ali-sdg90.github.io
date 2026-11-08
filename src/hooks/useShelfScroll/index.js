@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { DRAG, VELOCITY_SMOOTHING } from "./constants";
-import { normalizeScrollPosition } from "./scrollUtils";
+import { getLoopWidth, normalizeScrollPosition } from "./scrollUtils";
 import useShelfAutoScroll from "./useShelfAutoScroll";
 import useShelfMomentum from "./useShelfMomentum";
 
@@ -11,6 +11,7 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
     const autoScrollFrame = useRef(null);
     const momentumFrames = useRef({});
     const autoScrollPositions = useRef([]);
+    const loopWidths = useRef([]);
     const activeDragIndexRef = useRef(null);
     const hoveredSectionIndexRef = useRef(null);
     const selectedSectionIdRef = useRef(selectedSectionId);
@@ -22,6 +23,7 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
 
     const setScrollerRef = useCallback((index, element) => {
         scrollerRefs.current[index] = element;
+        loopWidths.current[index] = getLoopWidth(element);
     }, []);
 
     const updateScrollState = useCallback((index) => {
@@ -75,6 +77,7 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
     const { startMomentum, stopMomentum } = useShelfMomentum({
         momentumFrames,
         autoScrollPositions,
+        loopWidths,
         normalizeScrollPosition,
         updateScrollState,
     });
@@ -97,11 +100,20 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
             shelfSections.forEach((_, index) => updateScrollState(index));
         };
 
+        const handleResize = () => {
+            shelfSections.forEach((_, index) => {
+                loopWidths.current[index] = getLoopWidth(
+                    scrollerRefs.current[index],
+                );
+                updateScrollState(index);
+            });
+        };
+
         updateAllScrollStates();
-        window.addEventListener("resize", updateAllScrollStates);
+        window.addEventListener("resize", handleResize);
 
         return () => {
-            window.removeEventListener("resize", updateAllScrollStates);
+            window.removeEventListener("resize", handleResize);
 
             if (scrollFrame.current) {
                 cancelAnimationFrame(scrollFrame.current);
@@ -112,6 +124,7 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
     useShelfAutoScroll({
         shelfSections,
         scrollerRefs,
+        loopWidths,
         autoScrollFrame,
         autoScrollPositions,
         activeDragIndexRef,
@@ -150,6 +163,7 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
                     scroller,
                     scroller.scrollLeft,
                     section?.doRepeat ?? false,
+                    loopWidths.current[index],
                 ),
                 startX: event.clientX,
                 velocity: 0,
@@ -200,6 +214,7 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
             scroller,
             currentDragState.scrollLeft - dragDistance,
             currentDragState.doRepeat,
+            loopWidths.current[currentDragState.index],
         );
 
         currentDragState.scrollLeft = nextScrollLeft;
@@ -230,6 +245,7 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
                     scroller,
                     scroller.scrollLeft,
                     shelfSections[index]?.doRepeat ?? false,
+                    loopWidths.current[index],
                 );
             }
         },
@@ -257,6 +273,7 @@ const useShelfScroll = (shelfSections, selectedSectionId) => {
                     event.currentTarget,
                     event.currentTarget.scrollLeft,
                     currentDragState.doRepeat,
+                    loopWidths.current[currentDragState.index],
                 );
 
             if (currentDragState.hasDragged) {

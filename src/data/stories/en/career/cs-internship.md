@@ -52,9 +52,9 @@ I had a coordinator myself when I first joined, but now I'd reached a point wher
 
 That was a change I was really excited about.
 
-I think I worked with around 15 different interns during that period, and the highest number I was responsible for at the same time was six.
+I think I was responsible for coordinating and following up on the work of around 15 different interns during that period, and I personally onboarded eight of them. The highest number I was responsible for at the same time was six.
 
-I was their main point of contact with the program. I onboarded them, assigned new Snaps, updated their profiles, answered their questions, and coordinated or managed some of their meetings.
+I was their main point of contact with the program. I assigned new Snaps, updated their profiles, answered their questions, and coordinated or managed some of their meetings.
 
 I really enjoyed that work. I liked being in a position where I could guide new interns and keep an eye on their progress. In general, I like looking after the people and things that matter to me, and this role fit that part of my personality pretty well.
 

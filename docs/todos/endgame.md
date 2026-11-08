@@ -43,6 +43,8 @@ ideas. Open items are not release commitments.
 
 - [ ] Maybe add a Telegram bot to send me message with status data?
 
+- [ ] Do a final check for the project structure and code quality with agents
+
 - [ ] Get feedback from trusted friends
     - [x] S.K.
 

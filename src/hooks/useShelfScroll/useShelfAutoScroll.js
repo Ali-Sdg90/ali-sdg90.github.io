@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { getLoopWidth } from "./scrollUtils";
 
 const useShelfAutoScroll = ({
     shelfSections,
     scrollerRefs: scrollerRefsRef,
+    loopWidths: loopWidthsRef,
     autoScrollFrame: autoScrollFrameRef,
     autoScrollPositions: autoScrollPositionsRef,
     activeDragIndexRef,
@@ -16,7 +16,7 @@ const useShelfAutoScroll = ({
     useEffect(() => {
         shelfSections.forEach((section, index) => {
             const scroller = scrollerRefsRef.current[index];
-            const loopWidth = getLoopWidth(scroller);
+            const loopWidth = loopWidthsRef.current[index] ?? 0;
 
             if (!scroller || !section.doRepeat || loopWidth <= 0) {
                 autoScrollPositionsRef.current[index] =
@@ -54,7 +54,7 @@ const useShelfAutoScroll = ({
                     return;
                 }
 
-                const loopWidth = getLoopWidth(scroller);
+                const loopWidth = loopWidthsRef.current[index] ?? 0;
 
                 if (loopWidth <= 0) {
                     return;
@@ -69,6 +69,7 @@ const useShelfAutoScroll = ({
                     scroller,
                     autoScrollPositionsRef.current[index],
                     section.doRepeat,
+                    loopWidth,
                 );
             });
 
@@ -87,6 +88,7 @@ const useShelfAutoScroll = ({
         autoScrollFrameRef,
         autoScrollPositionsRef,
         hoveredSectionIndexRef,
+        loopWidthsRef,
         momentumFramesRef,
         normalizeScrollPosition,
         scrollerRefsRef,

@@ -270,7 +270,7 @@ I introduced the finished system, and the company decided to host its backend on
 
 After that, the tool became one of the systems used regularly inside the company.
 
-A process that had previously been done manually and used fewer than 15 times a day was now being used more than 60 times a day, without anyone having to manually monitor and forward messages.
+A process that had previously been done manually and used fewer than 15 times a day was now being used more than 25 times a day, without anyone having to manually monitor and forward messages. The company's record was 68 uses in a single day.
 
 I also recorded a tutorial video, wrote the documentation, and explained how to install and use the app so everyone could get started with it.
 

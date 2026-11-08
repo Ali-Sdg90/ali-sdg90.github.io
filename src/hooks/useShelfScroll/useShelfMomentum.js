@@ -4,6 +4,7 @@ import { MOMENTUM } from "./constants";
 const useShelfMomentum = ({
     momentumFrames: momentumFramesRef,
     autoScrollPositions: autoScrollPositionsRef,
+    loopWidths: loopWidthsRef,
     normalizeScrollPosition,
     updateScrollState,
 }) => {
@@ -58,6 +59,7 @@ const useShelfMomentum = ({
                     scroller,
                     scrollLeft + velocity * deltaSeconds,
                     dragSnapshot.doRepeat,
+                    loopWidthsRef.current[index],
                 );
                 autoScrollPositionsRef.current[index] = scrollLeft;
 
@@ -74,6 +76,7 @@ const useShelfMomentum = ({
         },
         [
             autoScrollPositionsRef,
+            loopWidthsRef,
             momentumFramesRef,
             normalizeScrollPosition,
             stopMomentum,

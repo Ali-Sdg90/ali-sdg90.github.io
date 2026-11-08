@@ -322,7 +322,7 @@ export const aboutCareerData = {
             "Onboarded 11 frontend developers and created reusable training resources.",
             "Researched and integrated Mapbox GL JS through eight focused prototypes.",
             "Delivered 50+ charts with 20+ reusable templates and design documentation.",
-            "Built an Android, backend, and Telegram automation system used 60+ times daily.",
+            "Built an Android, backend, and Telegram automation system used more than 25 times daily.",
             "Built an automated Excel-to-PDF generator for the company's monthly reports.",
         ],
         galleryColumns: 3,
