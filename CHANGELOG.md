@@ -1,3 +1,15 @@
+# [1.43.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.42.4...v1.43.0) (2026-11-08)
+
+
+### Bug Fixes
+
+* small improvements in mobile view, improve wording in desktop notice and hmpwb section ([7183971](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/7183971cf75d2e5d019b506b0e538e207df39ab0))
+
+
+### Features
+
+* add button in about cards to reference to the static pages ([eece9ef](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/eece9ef4228a89a1861591d35c5801a6c9181338))
+
 ## [1.42.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.42.3...v1.42.4) (2026-11-05)
 
 
