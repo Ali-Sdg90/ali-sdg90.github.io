@@ -1,3 +1,10 @@
+## [1.43.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.1...v1.43.2) (2026-11-08)
+
+
+### Bug Fixes
+
+* finalize tech stack, impacts and first two cards in career contents ([4d8c66c](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/4d8c66c50f877c8709a531d632dbb0a7afbb6f6a))
+
 ## [1.43.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.0...v1.43.1) (2026-11-08)
 
 
