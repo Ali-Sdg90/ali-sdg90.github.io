@@ -30,7 +30,7 @@ At MelkRadar, Azure DevOps was also part of everyday work across different proje
 
 I worked with test cases, builds, deployments to different environments, project wikis, analytics dashboards, queries, and the usual sprint and task workflows.
 
-The part I probably spent the most time in was pull requests. For around a year and a half I was responsible for reviewing the frontend team's PRs, so I was constantly reviewing and checking work directly inside Azure DevOps.
+The part I probably spent the most time in was pull requests. For one year and nine months, I was responsible for reviewing the frontend team's PRs, so I was constantly reviewing and checking work directly inside Azure DevOps.
 
 I've spent a lot of time with Azure DevOps at this point. I have a strong understanding of Boards, workflows, queries, analysis, permissions, and its day-to-day collaboration features, along with a good understanding of project setup, builds, and releases.
 

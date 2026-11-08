@@ -288,6 +288,8 @@ specification.
     - [x] part 1
     - [x] part 2
 
+- [x] Check https://www.bing.com/webmasters
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -302,12 +304,9 @@ specification.
 - [ ] Research what about how can i improve my github profile for better seo and maybe adding .github to it?
 
 - [ ] Add "more about ali" section :)
-
-- [ ] Add "Explore my Portfolio with AI" in "more about ali" section
+    - [ ] Add "Explore my Portfolio with AI" in "more about ali" section
 
 - [ ] Re-write career stories with the new format of writing the stories
-
-- [ ] Check https://www.bing.com/webmasters
 
 - [ ] Add ssg page screenshot to readme
 
