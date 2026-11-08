@@ -13,13 +13,13 @@ describe("StaticDetailPageLink", () => {
         );
 
         const link = screen.getByRole("link", {
-            name: "View the full page for Azure DevOps",
+            name: "Open as a standalone page Azure DevOps",
         });
 
         expect(link).toHaveAttribute("href", "/stack/azure-devops/");
         expect(link).toHaveAttribute("target", "_blank");
         expect(link).toHaveAttribute("rel", "noreferrer");
-        expect(link).toHaveTextContent("View full page");
+        expect(link).toHaveTextContent("Open as a standalone page");
     });
 
     test("does not render without a standalone route", () => {

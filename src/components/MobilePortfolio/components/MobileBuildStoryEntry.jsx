@@ -13,10 +13,10 @@ const MobileBuildStoryEntry = ({ onOpen }) => (
             </h2>
             <span>
                 Walk through the sketches, experiments, rejected ideas, and
-                details behind the shelf.
+                details behind the project.
             </span>
             <button type="button" onClick={onOpen}>
-                How my portfolio was built <HiArrowRight aria-hidden="true" />
+                See how I built my portfolio <HiArrowRight aria-hidden="true" />
             </button>
         </section>
     </MobileReveal>

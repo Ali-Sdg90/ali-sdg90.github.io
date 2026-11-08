@@ -274,6 +274,8 @@ specification.
 
 - [x] Remove un-used tags in about the card sections
 
+- [x] Add open card detail in there ssg page in main shelf page
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -306,7 +308,5 @@ specification.
 - [ ] Add collapse feature for long stories in the ssg generated pages
 
 - [ ] Maybe add let gpt read the site?
-
-- [ ] Add open card detail in there ssg page in main shelf page
 
 - [ ] Maybe add welcome to my little world, lets have a quick tour text in the intro page

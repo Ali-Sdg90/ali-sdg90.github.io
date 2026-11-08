@@ -1,5 +1,3 @@
-import { HiOutlineSparkles } from "react-icons/hi2";
-
 import desktopPreview from "../../../assets/images/site/desktop-preview.webp";
 import MobileReveal from "./MobileReveal";
 
@@ -10,10 +8,6 @@ const MobileDesktopPreview = () => (
             aria-labelledby="desktop-preview-title"
         >
             <div className="mobile-desktop-preview-copy">
-                <p>
-                    <HiOutlineSparkles aria-hidden="true" /> Desktop-first
-                    portfolio
-                </p>
                 <h2 id="desktop-preview-title">Discover more on desktop</h2>
                 <span>
                     Explore the interactive shelf, richer motion, and the
