@@ -1,3 +1,10 @@
+## [1.43.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.2...v1.43.3) (2026-11-09)
+
+
+### Bug Fixes
+
+* re-write 2 remaining career stories ([1db90b8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/1db90b8c91835e130047f63632c3601b0af957b3))
+
 ## [1.43.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.1...v1.43.2) (2026-11-08)
 
 
