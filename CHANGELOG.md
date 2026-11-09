@@ -1,3 +1,10 @@
+## [1.43.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.3...v1.43.4) (2026-11-09)
+
+
+### Bug Fixes
+
+* finalized career cards ([4274765](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/427476578efdf7e841be42500f09e26ec0cf07a9))
+
 ## [1.43.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.2...v1.43.3) (2026-11-09)
 
 
