@@ -22,18 +22,18 @@ ideas. Open items are not release commitments.
     - [x] Part 2
     - [x] Part 3
 
-- [ ] Check and finalize lighthouse for improvements in performance and accessibility
+- [x] Check and finalize lighthouse for improvements in performance and accessibility
+
+- [x] ~~Maybe create makefile files?~~
+
+- [x] Delete unused files in the repo
+    - [x] remove un-used woff2 files
+    - [x] Remove MobileWipNotice
 
 - [ ] improve SEO of the site
     - [x] Part 1
     - [x] Part 2
     - [ ] Final Check
-
-- [ ] Delete unused files in the repo
-    - [ ] remove un-used woff2 files
-    - [ ] Remove MobileWipNotice
-
-- [ ] Maybe create makefile files?
 
 - [ ] do super dooper checking with agents for project structure and code quality at the end of the project
 
