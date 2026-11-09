@@ -290,11 +290,13 @@ specification.
 
 - [x] Check https://www.bing.com/webmasters
 
+- [x] Re-write career stories with the new format of writing the stories
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
     - [x] Tech Stack
-    - [ ] Career
+    - [x] Career
     - [ ] FINALIZE ALL DESCRIPTIONS
 
 - [ ] finalize the resume.pdf file
@@ -305,8 +307,6 @@ specification.
 
 - [ ] Add "more about ali" section :)
     - [ ] Add "Explore my Portfolio with AI" in "more about ali" section
-
-- [ ] Re-write career stories with the new format of writing the stories
 
 - [ ] Add ssg page screenshot to readme
 

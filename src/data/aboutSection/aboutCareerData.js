@@ -247,7 +247,7 @@ export const aboutCareerData = {
             "Personally onboarded 8 interns into the program and supported their early journey",
             "Led the redesign of the program entry process over a 6-month period with the governance team",
             "Designed and improved internal systems, workflows, roles, and operating processes",
-            "Built 5 internal automation tools for queue management, club feedback, scheduling, and admin operations",
+            "Built 5 internal tools for queue management, club feedback, scheduling, and admin operations",
         ],
         galleryColumns: 3,
         galleryImages: [
@@ -350,9 +350,9 @@ export const aboutCareerData = {
                 url: "https://melkradar.com/p/search",
             },
             {
-                label: "Learning Repository",
-                text: "Learning Chart.js",
-                url: "https://github.com/Ali-Sdg90/Learning-Chart.js-",
+                label: "Product Website",
+                text: "KhodroRadar",
+                url: "https://khodroradar.com/",
             },
         ],
     },
@@ -365,10 +365,10 @@ export const aboutCareerData = {
         featuresTitle: "Focus Areas",
         features: [
             "Built the entire front end of the platform from scratch.",
-            "Integrated 60+ REST APIs using Swagger.",
+            "Integrated 60+ REST APIs documented and tested through Swagger.",
             "Created reusable components and a maintainable project structure.",
             "Turned Figma designs into a production-ready React application.",
-            "Improved and refactored the codebase as the project evolved.",
+            "Customized Ant Design components extensively with CSS and SCSS.",
         ],
         galleryColumns: 3,
         galleryImages: [dpaPage1, dpaPage2, dpaPage3],
@@ -380,8 +380,14 @@ export const aboutCareerData = {
             collection: "career",
             slug: "dadeh-pardazi-azmoudeh-karan",
         },
-        hasRelatedLinks: false,
-        relatedLinks: [],
+        hasRelatedLinks: true,
+        relatedLinks: [
+            {
+                label: "GitHub Repository",
+                text: "Ant Design Practice & Hiring Task",
+                url: "https://github.com/Ali-Sdg90/Learning-Ant-Design-",
+            },
+        ],
     },
     "settleit-gpt": {
         id: "settleit-gpt",

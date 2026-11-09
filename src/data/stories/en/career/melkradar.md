@@ -238,7 +238,7 @@ That's where I noticed a manual workflow that was creating a lot of extra work f
 
 In simple terms, certain SMS codes had to be passed from the phone receiving them to the person who needed them. This was done manually, so the phone owner had to keep an eye on incoming messages and forward the necessary information to someone else.
 
-I suggested in the group that I could build an automation system to make the process more automatic and organized, so people wouldn't have to keep getting involved every time.
+I suggested building an automation system that would organize the process and remove the need for people to keep stepping in every time.
 
 I also mentioned the CEO and CTO in the conversation, and after getting the green light, I started building a prototype.
 
@@ -338,7 +338,7 @@ Finding a real problem inside a company, understanding the problem and the exist
 
 That kind of work is very close to what I enjoy doing.
 
-On one side, I had my experiences at CS Internship, from building bots and internal tools to designing processes and different systems. On the other, I had these final projects at MelkRadar. Together, they made me much more interested in building internal systems and automation.
+My experience at CS Internship—from building bots and internal tools to designing processes and systems—combined with these final projects at MelkRadar and made me much more interested in building internal systems and automation.
 
 I gradually realized that I didn't want my professional path to be limited to frontend development.
 

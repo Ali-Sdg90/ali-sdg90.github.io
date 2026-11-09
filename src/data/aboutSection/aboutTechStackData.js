@@ -317,8 +317,19 @@ export const aboutTechStackData = {
             collection: "tech-stack",
             slug: "rest-apis",
         },
-        hasRelatedLinks: false,
-        relatedLinks: [],
+        hasRelatedLinks: true,
+        relatedLinks: [
+            {
+                label: "GitHub Repository",
+                text: "React Rick and Morty Characters",
+                url: "https://github.com/Ali-Sdg90/React-Rick-and-Morty-Characters",
+            },
+            {
+                label: "GitHub Repository",
+                text: "HTTP Methods Demo",
+                url: "https://github.com/Ali-Sdg90/HTTP-Methods-Demo",
+            },
+        ],
     },
     vite: {
         id: "vite",
@@ -340,8 +351,14 @@ export const aboutTechStackData = {
             collection: "tech-stack",
             slug: "vite",
         },
-        hasRelatedLinks: false,
-        relatedLinks: [],
+        hasRelatedLinks: true,
+        relatedLinks: [
+            {
+                label: "GitHub Repository",
+                text: "Ali's Portfolio",
+                url: "https://github.com/Ali-Sdg90/ali-sdg90.github.io",
+            },
+        ],
     },
     expo: {
         id: "expo",

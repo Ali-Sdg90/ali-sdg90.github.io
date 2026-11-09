@@ -190,7 +190,7 @@ On one side, I was working with interns and helping them through their journeys.
 
 Altogether, I spent around three years of my life at CS Internship.
 
-I learned an incredible amount during those years. Technically, through teamwork, management, and system design, and also through understanding myself and learning how to communicate with different people.
+I learned an incredible amount during those years: about technology, teamwork, management, and system design, but also about myself and how to communicate with different people.
 
 I made a lot of friends, helped different people start and continue their technical journeys, built projects and tools for the program, and played a part in changing and improving many parts of its structure.
 
@@ -208,7 +208,7 @@ I don't regret that decision, just as I don't regret the time I spent on the pro
 
 From the laughter and friendships to the disagreements, the heavy workloads, the long discussions, the decisions I didn't agree with, and the problems that sometimes seemed to lead nowhere, all of it was part of the experience.
 
-I'm happy with how I was during my time there. With the things I built, the people I worked with, and the impact I was able to have on some interns' journeys and on the future of the program.
+I'm proud of the way I contributed during my time in the program—of the things I built, the people I worked with, and the impact I was able to have on some interns' journeys and on the program's future.
 
 It means a lot to me that I left things behind in CS that can still be useful even after I've gone. Tools, documentation, processes, and changes that people joining years later might use without even knowing who I am.
 
