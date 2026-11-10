@@ -311,3 +311,5 @@ specification.
 - [ ] Add ssg page screenshot to readme
 
 - [ ] Maybe add welcome to my little world, lets have a quick tour text in the intro page, or make it more general, welcome to my portfolio, lets have a quick tour...
+
+- [ ] Add feature to navigate to other images in custom light-box

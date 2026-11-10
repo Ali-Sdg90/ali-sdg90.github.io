@@ -383,30 +383,32 @@ const FeaturedProjectAbout = ({
                 features={detail.features}
                 title={detail.featuresTitle}
             />
-            <ProjectStory
-                activeLanguage={activeLanguage}
-                languageToggle={languageToggle}
-                onLanguageChange={onLanguageChange}
-                storySource={detail.storySource}
-                storyType={
-                    section?.id === "projects"
-                        ? "projects"
-                        : section?.id === "career-journey"
-                          ? "career"
-                          : "default"
-                }
-                storyEN={detail.storyEN}
-                storyFA={detail.storyFA}
-                subjectTitle={
-                    isImpactDetail
-                        ? `${item.title} ${item.meta}`
-                        : (detail.title ?? item.title)
-                }
-                title={detail.storyTitle}
-                titleFA={detail.storyTitleFA}
-                isImpactStory={isImpactDetail}
-                hasTallPreview={hasTallStoryPreview}
-            />
+            {!detail.is_story_wip && (
+                <ProjectStory
+                    activeLanguage={activeLanguage}
+                    languageToggle={languageToggle}
+                    onLanguageChange={onLanguageChange}
+                    storySource={detail.storySource}
+                    storyType={
+                        section?.id === "projects"
+                            ? "projects"
+                            : section?.id === "career-journey"
+                              ? "career"
+                              : "default"
+                    }
+                    storyEN={detail.storyEN}
+                    storyFA={detail.storyFA}
+                    subjectTitle={
+                        isImpactDetail
+                            ? `${item.title} ${item.meta}`
+                            : (detail.title ?? item.title)
+                    }
+                    title={detail.storyTitle}
+                    titleFA={detail.storyTitleFA}
+                    isImpactStory={isImpactDetail}
+                    hasTallPreview={hasTallStoryPreview}
+                />
+            )}
             {detail.hasRelatedLinks && (
                 <RelatedLinks links={detail.relatedLinks} project={project} />
             )}

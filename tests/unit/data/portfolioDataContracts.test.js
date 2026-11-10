@@ -53,8 +53,15 @@ describe("portfolio data contracts", () => {
             const detail = getAboutProjectById(getShelfItemId(project));
 
             expect(detail?.title).toBeTruthy();
+            expect(detail?.is_story_wip).toBeTypeOf("boolean");
             expect(detail?.storyEN).toBeTruthy();
             expect(detail?.storyFA).toBeTruthy();
+            expect(detail?.storySource).toBeTruthy();
+
+            if (!detail.is_story_wip) {
+                expect(detail.storyEN.toLowerCase()).not.toBe("placeholder");
+                expect(detail.storyFA.toLowerCase()).not.toBe("placeholder");
+            }
         }
     });
 

@@ -53,8 +53,8 @@ const PortfolioLink = ({ className = "", portfolioPath }) => (
         className={`static-detail-portfolio-button ${className}`.trim()}
         href={portfolioPath}
     >
-        <span>Go to Ali&apos;s portfolio</span>
         <span aria-hidden="true">←</span>
+        <span>Go to Ali&apos;s portfolio</span>
     </a>
 );
 
@@ -363,11 +363,13 @@ const StaticDetailPage = ({ page }) => {
                         </div>
                     )}
 
-                    <Story
-                        storyEN={detail.storyEN}
-                        storyFA={detail.storyFA}
-                        title={storyTitle}
-                    />
+                    {!detail.is_story_wip && (
+                        <Story
+                            storyEN={detail.storyEN}
+                            storyFA={detail.storyFA}
+                            title={storyTitle}
+                        />
+                    )}
 
                     <DetailLinks links={relatedLinks} />
                 </article>

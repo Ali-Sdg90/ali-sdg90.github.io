@@ -184,6 +184,7 @@ Common detail fields have distinct responsibilities:
 | `storyTitle`         | Display heading for the long-form story                                     |
 | `storyEN`, `storyFA` | Imported and trimmed raw story content                                      |
 | `storySource`        | Collection and slug used to link back to the source Markdown                |
+| `is_story_wip`       | Hides an unfinished project story everywhere until set to `false`           |
 | `relatedLinks`       | Secondary references with `label`, `text`, and `url`                        |
 
 Set `hasRelatedLinks` consistently with the actual array. Do not keep placeholder

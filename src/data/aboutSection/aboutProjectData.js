@@ -47,6 +47,7 @@ import projectPathFinderStoryFA from "../stories/fa/projects/path-finder.md?raw"
 export const aboutProjectData = {
     "alis-portfolio": {
         id: "alis-portfolio",
+        is_story_wip: true,
         title: "Ali's Portfolio",
         subtitle: "Interactive portfolio with a shelf-based experience",
         year: "2026",
@@ -94,6 +95,7 @@ export const aboutProjectData = {
     },
     "health-data-relay": {
         id: "health-data-relay",
+        is_story_wip: false,
         title: "Health Data Relay",
         subtitle: "Android app for backing up health data to Google Drive",
         year: "2026",
@@ -165,6 +167,7 @@ export const aboutProjectData = {
     },
     "cs-queue-calendar": {
         id: "cs-queue-calendar",
+        is_story_wip: true,
         title: "CS Queue Calendar",
         subtitle: "Interactive calendar to coordinate queue sessions",
         year: "2025",
@@ -218,6 +221,7 @@ export const aboutProjectData = {
     },
     "spot-taste-tracker": {
         id: "spot-taste-tracker",
+        is_story_wip: true,
         title: "Spot Taste Tracker",
         subtitle: "Dashboard for analyzing Spotify taste over time",
         year: "2026",
@@ -268,6 +272,7 @@ export const aboutProjectData = {
     },
     "fabrexa-ai-ollama": {
         id: "fabrexa-ai-ollama",
+        is_story_wip: true,
         title: "Fabrexa AI Ollama",
         subtitle: "Self-hosted Telegram bot powered by local models",
         year: "2026",
@@ -328,6 +333,7 @@ export const aboutProjectData = {
     },
     "cs-club-bot": {
         id: "cs-club-bot",
+        is_story_wip: true,
         title: "CS Club Bot",
         subtitle: "Live Telegram bot for AI-assisted workflows",
         year: "2025",
@@ -385,6 +391,7 @@ export const aboutProjectData = {
     },
     "cs-queue-bot": {
         id: "cs-queue-bot",
+        is_story_wip: true,
         title: "CS Queue Bot",
         subtitle: "Live Telegram bot for queue management",
         year: "2025",
@@ -437,6 +444,7 @@ export const aboutProjectData = {
     },
     "gradient-paint": {
         id: "gradient-paint",
+        is_story_wip: true,
         title: "Gradient Paint",
         subtitle: "Customizable interactive gradient painting canvas",
         year: "2023",
@@ -481,6 +489,7 @@ export const aboutProjectData = {
     },
     "quick-math": {
         id: "quick-math",
+        is_story_wip: true,
         title: "Quick Math",
         subtitle: "Timed math game with a rotating cube interface",
         year: "2023",
@@ -519,6 +528,7 @@ export const aboutProjectData = {
     },
     "tic-tac-toe": {
         id: "tic-tac-toe",
+        is_story_wip: true,
         title: "Tic Tac Toe",
         subtitle: "Customizable game with multiple play modes",
         year: "2022",
@@ -568,6 +578,7 @@ export const aboutProjectData = {
     },
     "path-finder": {
         id: "path-finder",
+        is_story_wip: true,
         title: "Path Finder",
         subtitle: "Customizable animated pathfinding sandbox",
         year: "2025",

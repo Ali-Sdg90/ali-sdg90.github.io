@@ -157,6 +157,11 @@ describe("static portfolio detail pages", () => {
             html.match(/class="static-detail-portfolio-button/g),
         ).toHaveLength(2);
         expect(html.match(/Go to Ali&#x27;s portfolio/g)).toHaveLength(2);
+        expect(
+            html.match(
+                /<span aria-hidden="true">←<\/span><span>Go to Ali&#x27;s portfolio<\/span>/g,
+            ),
+        ).toHaveLength(2);
         expect(html).toContain("about-panel-language-toggle is-en-active");
         expect(html).toContain('data-story-language="EN"');
         expect(html).toContain('data-story-language="FA"');
@@ -166,6 +171,18 @@ describe("static portfolio detail pages", () => {
         expect(html).toContain('setStoryLanguage(story, "EN")');
         expect(html).not.toContain("static-detail-more");
         expect(html).not.toContain("Technologies and tools");
+    });
+
+    test("hides project stories marked as work in progress", () => {
+        const page = getPage(
+            getStaticDetailPages({ basePath: "/" }),
+            "alis-portfolio",
+        );
+        const html = renderToStaticMarkup(<StaticDetailPage page={page} />);
+
+        expect(page.detail.is_story_wip).toBe(true);
+        expect(html).not.toContain("static-detail-story");
+        expect(html).not.toContain("Placeholder");
     });
 
     test("collapses stories at the paragraph threshold without removing their crawlable content", () => {
