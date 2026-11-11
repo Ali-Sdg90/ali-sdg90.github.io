@@ -377,8 +377,8 @@ rg -n "link-hub-page|Explore My Portfolio" dist/links/index.html
 rg -n 'build-story-static__chapter|lang="en"|lang="fa"' dist/how-i-built-my-portfolio/index.html
 ```
 
-Run browser-level contracts after routing, hydration, or generated-page
-changes:
+To rerun only the browser-level contracts, rebuild first so they exercise the
+latest routing, hydration, and generated-page output:
 
 ```bash
 npm run build

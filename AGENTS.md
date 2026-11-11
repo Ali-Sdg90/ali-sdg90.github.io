@@ -13,7 +13,7 @@
 - Use Node.js 22.14+ or Node.js 24.10+ and install dependencies with `npm ci`.
 - Start local development with `npm run dev`.
 - Use `npm run dev:debug` for the fixed localhost port expected by the VS Code debugger.
-- Run `npm run check` after code or configuration changes. It checks formatting, linting, and the production build.
+- Run `npm run check` after code or configuration changes. It checks formatting and linting, then runs unit tests, the production build, and Playwright E2E tests.
 - For a narrowly scoped content edit, also run Prettier against the affected files before the full check.
 
 ## Change rules

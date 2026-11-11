@@ -173,7 +173,7 @@ npm run dev
 | `npm run image:opt`    | Generate optimized images from `image-sources/`                                                             |
 | `npm run test`         | Run the unit and component test suite once                                                                  |
 | `npm run test:e2e`     | Run the Playwright browser tests against the production preview                                             |
-| `npm run check`        | Check formatting and linting, run tests, then run the full production build                                 |
+| `npm run check`        | Check formatting and linting, run unit tests, build for production, then run Playwright E2E tests           |
 | `npm run build`        | Optimize images, build client and SSR bundles, prerender public content, and generate standalone card pages |
 | `npm run generate:ssg` | Generate the production HTML and standalone card pages without rerunning image optimization                 |
 | `npm run preview`      | Preview the generated production output locally                                                             |

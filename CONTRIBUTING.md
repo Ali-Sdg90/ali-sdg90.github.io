@@ -44,13 +44,6 @@ Run the main project checks before opening a pull request:
 npm run check
 ```
 
-For changes affecting important browser interactions, also run:
-
-```bash
-npm run build
-npm run test:e2e
-```
-
 ## Commits and pull requests
 
 Use Conventional Commits, for example:

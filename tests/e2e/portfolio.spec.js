@@ -54,7 +54,7 @@ test("the desktop story reader closes with Escape and restores focus", async ({
 }) => {
     await page.setViewportSize(desktopViewport);
     await skipDesktopOnboarding(page);
-    await page.goto("/#alis-portfolio");
+    await page.goto("/#health-data-relay");
 
     const storyTrigger = page.getByRole("button", {
         name: "Read full story",
@@ -62,7 +62,7 @@ test("the desktop story reader closes with Escape and restores focus", async ({
     await storyTrigger.click();
 
     await expect(
-        page.getByRole("dialog", { name: "Ali's Portfolio" }),
+        page.getByRole("dialog", { name: "Health Data Relay" }),
     ).toBeVisible();
     await page.keyboard.press("Escape");
 

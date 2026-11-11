@@ -239,13 +239,6 @@ Run the complete local gate after architecture, routing, data, or build changes:
 npm run check
 ```
 
-For changes that affect critical browser journeys, also run:
-
-```bash
-npm run build
-npm run test:e2e
-```
-
 See [Testing Strategy](./testing.md) for the protected contracts and
 [Static Site Generation Architecture](./ssg-architecture.md) for the complete
 build-time rendering model and raw-HTML verification.

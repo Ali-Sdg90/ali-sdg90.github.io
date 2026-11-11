@@ -230,9 +230,6 @@ Before considering a content change complete:
     npm run check
     ```
 
-9. Run `npm run test:e2e` after rebuilding when routes, navigation, static
-   pages, or important interactions change.
-
 The data-contract and static-detail tests protect IDs, required detail data,
 gallery pairs, routes, metadata, and generated page structure. They do not
 verify editorial accuracy or visual quality, so those still require a manual

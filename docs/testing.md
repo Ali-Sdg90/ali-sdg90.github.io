@@ -124,14 +124,15 @@ Run Vitest in watch mode while developing:
 npm run test:watch
 ```
 
-Run formatting, linting, unit/component tests, and the production build:
+Run formatting, linting, unit/component tests, the production build, and the
+Playwright E2E suite:
 
 ```bash
 npm run check
 ```
 
-Playwright tests use the generated `dist` directory, so build before running
-them locally:
+To rerun only the Playwright tests, build first because they use the generated
+`dist` directory:
 
 ```bash
 npm run build
