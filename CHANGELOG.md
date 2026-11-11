@@ -1,3 +1,11 @@
+## [1.43.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.4...v1.43.5) (2026-11-11)
+
+
+### Bug Fixes
+
+* fix e2e test case that cause build to fail, add e2e test to npm run check command, update related docs ([a853133](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/a853133ecd3f819188269b1e9b2145f9e0b8b8a0))
+* removed un-written story sections for projects and improved ssg-pages styles ([2af2c0d](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/2af2c0d3b7ea9c4cc0605993f2d158d3024b7ae7))
+
 ## [1.43.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.3...v1.43.4) (2026-11-09)
 
 
