@@ -294,6 +294,12 @@ specification.
 
 - [x] Research what about how can i improve my github profile for better seo and maybe adding .github to it?
 
+- [x] Add feature to navigate to other images in custom light-box
+
+- [x] finalize the resume.pdf file
+    - [x] Add CSI YouTube video link in the resume
+    - [x] Add hash link to my career and projects in my resume.pdf file
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -301,15 +307,9 @@ specification.
     - [x] Career
     - [ ] FINALIZE ALL DESCRIPTIONS
 
-- [ ] finalize the resume.pdf file
-    - [ ] Add CSI YouTube video link in the resume
-    - [ ] Add hash link to my career and projects in my resume.pdf file
-
 - [ ] Add "more about ali" section :)
     - [ ] Add "Explore my Portfolio with AI" in "more about ali" section
 
 - [ ] Add ssg page screenshot to readme
 
 - [ ] Maybe add welcome to my little world, lets have a quick tour text in the intro page, or make it more general, welcome to my portfolio, lets have a quick tour...
-
-- [ ] Add feature to navigate to other images in custom light-box
