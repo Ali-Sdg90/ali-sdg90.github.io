@@ -10,7 +10,7 @@ I built CS Queue Bot to manage the program's entry queue. It connects to Azure D
 
 I built CS Club Bot to give interns technical feedback on their posts. It used Perplexity AI with a carefully designed prompt to analyze posts from different program clubs and return detailed technical feedback within seconds. There's a more detailed explanation of this project in the Featured Projects section.
 
-I also built CS Azure Board Automation. Every week, around 70 tasks and backlogs had to be created from templates and assigned manually. The process used to take the sprint manager around half an hour. I built a React application that handled the entire process through the Azure DevOps API in less than 5 seconds. It was used for around five months, until the management team decided that manually working with the board was more useful for the interns' learning.
+I also built CS Azure Board Automation. Every week, around 70 tasks and backlogs had to be created from templates and assigned manually. The process used to take the sprint manager around half an hour. I built a React application that handled the entire process through the Azure DevOps API in about one minute. It was used for several months, until the management team decided that manually working with the board was more useful for the interns' learning.
 
 CS Automation Bot was a monitoring system for the program's servers. Every hour, it checked whether the required servers and services were still running. If something went down, it notified the mentors' Telegram group so someone could take action.
 

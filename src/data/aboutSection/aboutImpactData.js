@@ -169,7 +169,7 @@ export const aboutImpactData = {
         features: [
             "Built tools for sales, onboarding, feedback, scheduling, and monitoring",
             "Built an Android, backend, and Telegram automation system used more than 25 times daily",
-            "Cut weekly Azure Board setup from about 30 minutes to under five seconds",
+            "Cut weekly Azure Board setup from about 30 minutes to about one minute",
         ],
         storyTitle: "Story",
         storyEN: impactInternalToolsStoryEN.trim(),

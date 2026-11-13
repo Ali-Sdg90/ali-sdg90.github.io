@@ -12,9 +12,9 @@ By that point I was confident enough with React that I trusted myself to start t
 
 I built CS Azure Board Automation, a web app that could use those templates to create all the required tasks and backlog items in a selected sprint, set the correct sprint number, and assign everything automatically.
 
-A process that used to take around 30 minutes could now finish in less than 5 seconds.
+A process that used to take around 30 minutes could now finish in about one minute.
 
-I introduced the tool to CS Internship and it was used regularly for around five months. Later, the governance team decided to stop using it because manually working with the board was part of how members learned Azure DevOps. I shut the automation down when they asked.
+I introduced the tool to CS Internship and it was used regularly for several months. Later, the governance team decided to stop using it because manually working with the board was part of how members learned Azure DevOps. I shut the automation down when they asked.
 
 Around the same time, CS was also trying to become more scalable, and I was really eager to work on that side of the program.
 

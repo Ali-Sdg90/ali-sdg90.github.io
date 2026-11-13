@@ -148,7 +148,7 @@ Every week, the program needed new sprints, backlogs, tasks, and team members' c
 
 I built a web app that automated those tasks and reduced the time needed to prepare the board from around 30 minutes per week to approximately one minute.
 
-The tool was used in the program for about three months, but the Governance team later decided it would be better to stop using it.
+The tool was used in the program for several months, but the Governance team later decided it would be better to stop using it.
 
 Their reasoning was that automating the process might prevent team members from properly learning how to work with Azure Boards and manage sprints themselves. I personally disagreed with that decision, but it was a team decision, and we'd voted on it.
 

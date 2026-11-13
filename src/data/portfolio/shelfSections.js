@@ -283,7 +283,7 @@ export const shelfSections = [
                 title: "CS Internship",
                 company: "CS Internship",
                 meta: "Technical Mentor & System Designer",
-                year: "2022 - 2026",
+                year: "2023 - 2026",
                 image: csiLogo,
             },
             {
