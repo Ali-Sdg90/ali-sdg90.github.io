@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa6";
 
 import ImageLightboxNavigation from "./ImageLightboxNavigation";
+import useMobileViewport from "../../hooks/useMobileViewport";
 import "../../assets/scss/components/about-panel/_about-panel-lightbox.scss";
 
 const EXIT_ANIMATION_MS = 220;
@@ -36,6 +37,18 @@ const slideVariants = {
     exit: (direction) => ({
         opacity: 0,
         x: direction > 0 ? "-16%" : "16%",
+    }),
+};
+
+const mobileSlideVariants = {
+    enter: (direction) => ({
+        opacity: 0,
+        x: direction > 0 ? "7%" : "-7%",
+    }),
+    center: slideVariants.center,
+    exit: (direction) => ({
+        opacity: 0,
+        x: direction > 0 ? "-7%" : "7%",
     }),
 };
 
@@ -82,6 +95,7 @@ const ImageLightbox = ({
         Math.max(0, initialIndex),
     );
     const prefersReducedMotion = useReducedMotion();
+    const isMobileViewport = useMobileViewport();
     const [activeIndex, setActiveIndex] = useState(safeInitialIndex);
     const [navigationDirection, setNavigationDirection] = useState(1);
     const [isClosing, setIsClosing] = useState(false);
@@ -593,7 +607,11 @@ const ImageLightbox = ({
                             key={`${activeIndex}-${lightboxSrc}`}
                             custom={navigationDirection}
                             variants={
-                                prefersReducedMotion ? undefined : slideVariants
+                                prefersReducedMotion
+                                    ? undefined
+                                    : isMobileViewport
+                                      ? mobileSlideVariants
+                                      : slideVariants
                             }
                             initial={
                                 prefersReducedMotion
@@ -611,7 +629,11 @@ const ImageLightbox = ({
                                     : "exit"
                             }
                             transition={{
-                                duration: prefersReducedMotion ? 0.12 : 0.34,
+                                duration: prefersReducedMotion
+                                    ? 0.12
+                                    : isMobileViewport
+                                      ? 0.22
+                                      : 0.34,
                                 ease: [0.22, 1, 0.36, 1],
                             }}
                         >
