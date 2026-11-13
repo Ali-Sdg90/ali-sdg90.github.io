@@ -6,17 +6,23 @@ import { APPLE_EASE } from "./motionConfig";
 
 const GalleryMedia = ({
     chapter,
+    images,
+    imageIndex,
     isFirst,
     isLast,
     onNext,
     onPrevious,
+    onSelect,
     shouldAnimateContent,
     shouldLoadImages,
 }) => (
     <div className="build-gallery__media">
         <LightboxImage
             image={chapter.image}
+            images={images}
+            imageIndex={imageIndex}
             imageKey={chapter.id}
+            onImageChange={onSelect}
             buttonClassName="build-gallery__image-button"
         >
             {shouldLoadImages ? (

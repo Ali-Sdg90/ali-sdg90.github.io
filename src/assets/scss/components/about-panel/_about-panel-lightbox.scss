@@ -1,6 +1,8 @@
 @use "../../base/variables" as *;
 
 .about-panel-lightbox {
+    --lightbox-frame-inline-limit: 94vw;
+
     position: fixed;
     inset: 0;
     z-index: 9999;
@@ -17,6 +19,10 @@
     backdrop-filter: blur(14px);
     animation: about-panel-lightbox-fade 300ms $ease-out both;
 
+    &.has-navigation {
+        --lightbox-frame-inline-limit: calc(100vw - clamp(140px, 15vw, 224px));
+    }
+
     &.is-closing {
         animation: about-panel-lightbox-fade-out 600ms $ease-out both;
 
@@ -30,7 +36,7 @@
     --lightbox-frame-chrome: 32px;
     --lightbox-frame-max-height: 90vh;
     --lightbox-frame-width: min(
-        94vw,
+        var(--lightbox-frame-inline-limit),
         calc(
             (var(--lightbox-frame-max-height) - var(--lightbox-frame-chrome)) *
                 var(--lightbox-image-aspect-ratio, 1.777) +
@@ -65,6 +71,9 @@
         0 0 34px rgba(22, 136, 255, 0.38),
         0 32px 90px rgba(0, 0, 0, 0.64);
     animation: about-panel-lightbox-image-enter 360ms $ease-out both;
+    transition:
+        width $motion-medium $ease-out,
+        height $motion-medium $ease-out;
 }
 
 .about-panel-lightbox-viewport {
@@ -86,6 +95,13 @@
             transition: none;
         }
     }
+}
+
+.about-panel-lightbox-slide {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    will-change: opacity, transform;
 }
 
 .about-panel-lightbox-image-transform {
@@ -117,7 +133,7 @@
         transform 520ms $ease-out;
 }
 
-.about-panel-lightbox-frame.is-image-loaded {
+.about-panel-lightbox-slide.is-image-loaded {
     .about-panel-lightbox-image {
         opacity: 1;
         transform: scale(1);
@@ -127,7 +143,7 @@
 .about-panel-lightbox-loader {
     position: absolute;
     inset: 0;
-    z-index: 1;
+    z-index: 0;
     display: grid;
     place-content: center;
     justify-items: center;
@@ -141,11 +157,126 @@
         rgba(0, 6, 16, 0.96);
 }
 
+.about-panel-lightbox-navigation-layer {
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.about-panel-lightbox-navigation {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    width: clamp(40px, 3.5vw, 50px);
+    aspect-ratio: 1;
+    display: inline-grid;
+    place-items: center;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid rgba(117, 202, 255, 0.56);
+    border-radius: 50%;
+    color: rgba(244, 251, 255, 0.96);
+    background:
+        linear-gradient(135deg, rgba(23, 64, 106, 0.9), rgba(3, 13, 29, 0.92)),
+        rgba(3, 12, 28, 0.9);
+    box-shadow:
+        inset 0 1px 0 rgba(222, 241, 255, 0.14),
+        0 6px 18px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    pointer-events: auto;
+    touch-action: manipulation;
+    transform: translateY(-50%);
+    transition:
+        color $motion-fast $ease-out,
+        border-color $motion-fast $ease-out,
+        opacity $motion-fast $ease-out,
+        transform $motion-fast $ease-out;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            135deg,
+            rgba(80, 178, 255, 0.18),
+            rgba(22, 136, 255, 0.06)
+        );
+        opacity: 0;
+        transition: opacity $motion-fast $ease-out;
+    }
+
+    &.is-previous {
+        left: calc(clamp(16px, 3vw, 48px) + env(safe-area-inset-left, 0px));
+    }
+
+    &.is-next {
+        right: calc(clamp(16px, 3vw, 48px) + env(safe-area-inset-right, 0px));
+    }
+
+    &:not(:disabled):hover,
+    &:not(:disabled):focus-visible {
+        border-color: rgba(151, 220, 255, 0.86);
+        color: #ffffff;
+        outline: none;
+        // transform: translateY(-50%) scale(1.03);
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    &:focus-visible {
+        box-shadow:
+            inset 0 0 0 1px rgba(176, 227, 255, 0.68),
+            0 0 0 3px rgba(22, 136, 255, 0.25),
+            0 8px 22px rgba(0, 0, 0, 0.32);
+    }
+
+    &:not(:disabled):active {
+        transform: translateY(-50%) scale(0.98);
+        transition-duration: 80ms;
+
+        &::before {
+            opacity: 0.72;
+        }
+    }
+
+    &:disabled {
+        border-color: rgba(117, 202, 255, 0.16);
+        color: rgba(237, 248, 255, 0.28);
+        background: rgba(3, 12, 28, 0.5);
+        box-shadow: none;
+        cursor: default;
+        opacity: 0.58;
+        transform: translateY(-50%);
+    }
+
+    svg {
+        position: relative;
+        z-index: 1;
+        width: 38%;
+        height: 38%;
+    }
+}
+
+.about-panel-lightbox-announcement {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .about-panel-lightbox-toolbar {
     position: absolute;
     left: 50%;
     bottom: 0;
-    z-index: 2;
+    z-index: 4;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -329,6 +460,10 @@
         backdrop-filter: blur(7px);
         animation-duration: 330ms;
 
+        &.has-navigation {
+            --lightbox-frame-inline-limit: 94vw;
+        }
+
         &.is-closing {
             animation-duration: 220ms;
 
@@ -368,6 +503,21 @@
         line-height: 1.35;
         letter-spacing: 0.055em;
         text-align: center;
+    }
+
+    .about-panel-lightbox-navigation {
+        top: 50%;
+        bottom: auto;
+        width: 44px;
+        transform: translateY(-50%);
+
+        &.is-previous {
+            left: calc(10px + env(safe-area-inset-left, 0px));
+        }
+
+        &.is-next {
+            right: calc(10px + env(safe-area-inset-right, 0px));
+        }
     }
 
     .about-panel-lightbox-toolbar {
@@ -454,5 +604,25 @@
         opacity: 0;
         transform: translateY(10px) scale(0.97);
         filter: blur(4px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-panel-lightbox-frame,
+    .about-panel-lightbox-image-transform,
+    .about-panel-lightbox-navigation {
+        transition: none;
+    }
+
+    .about-panel-lightbox-navigation {
+        &::before {
+            transition: none;
+        }
+
+        &:not(:disabled):hover,
+        &:not(:disabled):focus-visible,
+        &:not(:disabled):active {
+            transform: translateY(-50%);
+        }
     }
 }

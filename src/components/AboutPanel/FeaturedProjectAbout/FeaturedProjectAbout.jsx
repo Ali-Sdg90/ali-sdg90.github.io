@@ -147,6 +147,14 @@ const DetailGallery = ({ columns = 3, images = [], title }) => {
     if (!images.length) return null;
 
     const galleryColumns = Math.min(3, Math.max(1, columns));
+    const galleryImages = images.map((image, imageIndex) => {
+        const galleryImage = typeof image === "string" ? { src: image } : image;
+
+        return {
+            ...galleryImage,
+            alt: galleryImage.alt ?? `${title} gallery ${imageIndex + 1}`,
+        };
+    });
 
     return (
         <section className="featured-project-section">
@@ -155,29 +163,21 @@ const DetailGallery = ({ columns = 3, images = [], title }) => {
                 className="featured-project-gallery"
                 style={{ "--gallery-columns": galleryColumns }}
             >
-                {images.map((image, imageIndex) => {
-                    const galleryImage =
-                        typeof image === "string" ? { src: image } : image;
-
-                    return (
-                        <LightboxImage
-                            image={{
-                                ...galleryImage,
-                                alt:
-                                    galleryImage.alt ??
-                                    `${title} gallery ${imageIndex + 1}`,
-                            }}
-                            key={galleryImage.src}
-                            buttonClassName="featured-project-gallery-button"
-                            fallbackClassName="featured-project-gallery-image featured-project-gallery-image-fallback"
-                            imageClassName="featured-project-gallery-image"
-                            imageProps={{
-                                loading: "lazy",
-                                decoding: "async",
-                            }}
-                        />
-                    );
-                })}
+                {galleryImages.map((galleryImage, imageIndex) => (
+                    <LightboxImage
+                        image={galleryImage}
+                        images={galleryImages}
+                        imageIndex={imageIndex}
+                        key={galleryImage.src}
+                        buttonClassName="featured-project-gallery-button"
+                        fallbackClassName="featured-project-gallery-image featured-project-gallery-image-fallback"
+                        imageClassName="featured-project-gallery-image"
+                        imageProps={{
+                            loading: "lazy",
+                            decoding: "async",
+                        }}
+                    />
+                ))}
             </div>
         </section>
     );

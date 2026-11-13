@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 
 import GalleryInformation from "./GalleryInformation";
@@ -18,6 +18,10 @@ const BuildGallery = ({
     const [hasInteracted, setHasInteracted] = useState(false);
     const shouldAnimateContent = hasInteracted && !prefersReducedMotion;
     const chapter = chapters[selectedIndex];
+    const lightboxImages = useMemo(
+        () => chapters.map(({ image }) => image),
+        [chapters],
+    );
     const isFirst = selectedIndex === 0;
     const isLast = selectedIndex === chapters.length - 1;
     const handleSelect = useCallback(
@@ -55,10 +59,13 @@ const BuildGallery = ({
                     <GalleryMedia
                         shouldAnimateContent={shouldAnimateContent}
                         chapter={chapter}
+                        images={lightboxImages}
+                        imageIndex={selectedIndex}
                         isFirst={isFirst}
                         isLast={isLast}
                         onNext={selectNext}
                         onPrevious={selectPrevious}
+                        onSelect={handleSelect}
                         shouldLoadImages={shouldLoadImages}
                     />
                     <div>

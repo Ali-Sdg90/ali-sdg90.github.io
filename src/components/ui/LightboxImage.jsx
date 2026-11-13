@@ -10,6 +10,9 @@ const getFallbackText = (image) => {
 
 const LightboxImage = ({
     image,
+    images,
+    imageIndex,
+    onImageChange,
     buttonClassName,
     fallbackClassName,
     imageClassName,
@@ -33,6 +36,16 @@ const LightboxImage = ({
                   width: measuredImageSize.width,
                   height: measuredImageSize.height,
               };
+    const lightboxImages = images?.length ? images : [lightboxImage];
+    const matchingImageIndex = lightboxImages.findIndex(
+        (candidate) =>
+            candidate === image ||
+            (candidate.src === image.src &&
+                candidate.lightboxSrc === image.lightboxSrc),
+    );
+    const initialImageIndex = Number.isInteger(imageIndex)
+        ? imageIndex
+        : Math.max(0, matchingImageIndex);
 
     const openLightbox = () => {
         if (!hasExplicitSize) {
@@ -109,7 +122,13 @@ const LightboxImage = ({
                 <Suspense fallback={null}>
                     <ImageLightbox
                         image={lightboxImage}
-                        onClose={() => setIsLightboxOpen(false)}
+                        images={lightboxImages}
+                        initialIndex={initialImageIndex}
+                        onImageChange={onImageChange}
+                        onClose={() => {
+                            setIsLightboxOpen(false);
+                            buttonRef.current?.focus();
+                        }}
                     />
                 </Suspense>
             )}

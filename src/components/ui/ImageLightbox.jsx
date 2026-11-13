@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
     FaDownload,
     FaMagnifyingGlassMinus,
@@ -8,12 +9,35 @@ import {
     FaXmark,
 } from "react-icons/fa6";
 
+import ImageLightboxNavigation from "./ImageLightboxNavigation";
 import "../../assets/scss/components/about-panel/_about-panel-lightbox.scss";
 
 const EXIT_ANIMATION_MS = 220;
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 4;
 const ZOOM_STEP = 0.25;
+
+const getImageAspectRatio = (image) => {
+    const width = image.lightboxWidth ?? image.width;
+    const height = image.lightboxHeight ?? image.height;
+
+    return width && height ? width / height : 16 / 9;
+};
+
+const slideVariants = {
+    enter: (direction) => ({
+        opacity: 0,
+        x: direction > 0 ? "16%" : "-16%",
+    }),
+    center: {
+        opacity: 1,
+        x: "0%",
+    },
+    exit: (direction) => ({
+        opacity: 0,
+        x: direction > 0 ? "-16%" : "16%",
+    }),
+};
 
 const getDistance = (firstPoint, secondPoint) =>
     Math.hypot(secondPoint.x - firstPoint.x, secondPoint.y - firstPoint.y);
@@ -42,19 +66,32 @@ const getFallbackText = (image) => {
     return sourceText.trim().slice(0, 2).toUpperCase();
 };
 
-const ImageLightbox = ({ image, onClose }) => {
-    const initialImageWidth = image.lightboxWidth ?? image.width;
-    const initialImageHeight = image.lightboxHeight ?? image.height;
+const ImageLightbox = ({
+    image,
+    images,
+    initialIndex = 0,
+    onClose,
+    onImageChange,
+}) => {
+    const galleryImages = useMemo(
+        () => (images?.length ? images : [image]),
+        [image, images],
+    );
+    const safeInitialIndex = Math.min(
+        galleryImages.length - 1,
+        Math.max(0, initialIndex),
+    );
+    const prefersReducedMotion = useReducedMotion();
+    const [activeIndex, setActiveIndex] = useState(safeInitialIndex);
+    const [navigationDirection, setNavigationDirection] = useState(1);
     const [isClosing, setIsClosing] = useState(false);
     const [hasImageError, setHasImageError] = useState(false);
     const [isImageLoaded, setIsImageLoaded] = useState(false);
     const [zoom, setZoom] = useState(MIN_ZOOM);
     const [offset, setOffset] = useState({ x: 0, y: 0 });
     const [isPanning, setIsPanning] = useState(false);
-    const [imageAspectRatio, setImageAspectRatio] = useState(
-        initialImageWidth && initialImageHeight
-            ? initialImageWidth / initialImageHeight
-            : 16 / 9,
+    const [imageAspectRatio, setImageAspectRatio] = useState(() =>
+        getImageAspectRatio(galleryImages[safeInitialIndex]),
     );
     const viewportRef = useRef(null);
     const lastPointerPositionRef = useRef(null);
@@ -62,10 +99,20 @@ const ImageLightbox = ({ image, onClose }) => {
     const pinchGestureRef = useRef(null);
     const zoomRef = useRef(MIN_ZOOM);
     const offsetRef = useRef({ x: 0, y: 0 });
-    const fallbackText = getFallbackText(image);
-    const lightboxSrc = image.lightboxSrc ?? image.src;
+    const activeIndexRef = useRef(safeInitialIndex);
+    const preloadedSourcesRef = useRef(
+        new Set([
+            galleryImages[safeInitialIndex].lightboxSrc ??
+                galleryImages[safeInitialIndex].src,
+        ]),
+    );
+    const activeImage = galleryImages[activeIndex];
+    const fallbackText = getFallbackText(activeImage);
+    const lightboxSrc = activeImage.lightboxSrc ?? activeImage.src;
     const canPan = zoom > MIN_ZOOM;
-    const downloadName = getDownloadName(image, lightboxSrc);
+    const downloadName = getDownloadName(activeImage, lightboxSrc);
+    const canNavigatePrevious = activeIndex > 0;
+    const canNavigateNext = activeIndex < galleryImages.length - 1;
 
     const requestClose = useCallback(() => {
         setIsClosing(true);
@@ -80,22 +127,6 @@ const ImageLightbox = ({ image, onClose }) => {
             window.clearTimeout(closeTimer);
         };
     }, [isClosing, onClose]);
-
-    useEffect(() => {
-        if (isClosing) return undefined;
-
-        const handleKeyDown = (event) => {
-            if (event.key === "Escape") {
-                requestClose();
-            }
-        };
-
-        window.addEventListener("keydown", handleKeyDown);
-
-        return () => {
-            window.removeEventListener("keydown", handleKeyDown);
-        };
-    }, [isClosing, requestClose]);
 
     useEffect(() => {
         const previousOverflow = document.body.style.overflow;
@@ -174,15 +205,102 @@ const ImageLightbox = ({ image, onClose }) => {
         updateView(clampedZoom, offsetRef.current);
     };
 
-    const resetView = () => {
+    const resetView = useCallback(() => {
         zoomRef.current = MIN_ZOOM;
         offsetRef.current = { x: 0, y: 0 };
         setZoom(MIN_ZOOM);
         setOffset({ x: 0, y: 0 });
         setIsPanning(false);
         lastPointerPositionRef.current = null;
+        activeTouchPointersRef.current.clear();
         pinchGestureRef.current = null;
-    };
+    }, []);
+
+    const navigateTo = useCallback(
+        (nextIndex) => {
+            if (
+                isClosing ||
+                nextIndex < 0 ||
+                nextIndex >= galleryImages.length ||
+                nextIndex === activeIndex
+            ) {
+                return;
+            }
+
+            const nextImage = galleryImages[nextIndex];
+
+            resetView();
+            setNavigationDirection(nextIndex > activeIndex ? 1 : -1);
+            setHasImageError(false);
+            setIsImageLoaded(false);
+            setImageAspectRatio(getImageAspectRatio(nextImage));
+            activeIndexRef.current = nextIndex;
+            setActiveIndex(nextIndex);
+            onImageChange?.(nextIndex, nextImage);
+        },
+        [activeIndex, galleryImages, isClosing, onImageChange, resetView],
+    );
+
+    const navigatePrevious = useCallback(() => {
+        navigateTo(activeIndex - 1);
+    }, [activeIndex, navigateTo]);
+
+    const navigateNext = useCallback(() => {
+        navigateTo(activeIndex + 1);
+    }, [activeIndex, navigateTo]);
+
+    useEffect(() => {
+        if (isClosing) return undefined;
+
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") {
+                requestClose();
+                return;
+            }
+
+            if (event.key === "ArrowLeft" && canNavigatePrevious) {
+                event.preventDefault();
+                navigatePrevious();
+            }
+
+            if (event.key === "ArrowRight" && canNavigateNext) {
+                event.preventDefault();
+                navigateNext();
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [
+        canNavigateNext,
+        canNavigatePrevious,
+        isClosing,
+        navigateNext,
+        navigatePrevious,
+        requestClose,
+    ]);
+
+    useEffect(() => {
+        const neighborImages = [
+            galleryImages[activeIndex - 1],
+            galleryImages[activeIndex + 1],
+        ].filter(Boolean);
+
+        for (const neighborImage of neighborImages) {
+            const source = neighborImage.lightboxSrc ?? neighborImage.src;
+
+            if (preloadedSourcesRef.current.has(source)) continue;
+
+            preloadedSourcesRef.current.add(source);
+            const preloadImage = new window.Image();
+            preloadImage.decoding = "async";
+            preloadImage.fetchPriority = "low";
+            preloadImage.src = source;
+        }
+    }, [activeIndex, galleryImages]);
 
     const startPinchGesture = () => {
         const viewport = viewportRef.current;
@@ -403,12 +521,16 @@ const ImageLightbox = ({ image, onClose }) => {
 
     return createPortal(
         <div
-            className={["about-panel-lightbox", isClosing ? "is-closing" : ""]
+            className={[
+                "about-panel-lightbox",
+                galleryImages.length > 1 ? "has-navigation" : "",
+                isClosing ? "is-closing" : "",
+            ]
                 .filter(Boolean)
                 .join(" ")}
             role="dialog"
             aria-modal="true"
-            aria-label={`${image.alt} image preview`}
+            aria-label={`${activeImage.alt} image preview`}
             onClick={requestClose}
         >
             <button
@@ -457,43 +579,104 @@ const ImageLightbox = ({ image, onClose }) => {
                             </span>
                         </div>
                     )}
-                    <div
-                        className="about-panel-lightbox-image-transform"
-                        style={{
-                            transform: `translate3d(${offset.x}px, ${offset.y}px, 0) scale(${zoom})`,
-                        }}
+                    <AnimatePresence
+                        initial={false}
+                        custom={navigationDirection}
                     >
-                        {hasImageError ? (
+                        <motion.div
+                            className={[
+                                "about-panel-lightbox-slide",
+                                isImageLoaded ? "is-image-loaded" : "",
+                            ]
+                                .filter(Boolean)
+                                .join(" ")}
+                            key={`${activeIndex}-${lightboxSrc}`}
+                            custom={navigationDirection}
+                            variants={
+                                prefersReducedMotion ? undefined : slideVariants
+                            }
+                            initial={
+                                prefersReducedMotion
+                                    ? { opacity: 0, x: "0%" }
+                                    : "enter"
+                            }
+                            animate={
+                                prefersReducedMotion
+                                    ? { opacity: 1, x: "0%" }
+                                    : "center"
+                            }
+                            exit={
+                                prefersReducedMotion
+                                    ? { opacity: 0, x: "0%" }
+                                    : "exit"
+                            }
+                            transition={{
+                                duration: prefersReducedMotion ? 0.12 : 0.34,
+                                ease: [0.22, 1, 0.36, 1],
+                            }}
+                        >
                             <div
-                                className="about-panel-lightbox-image about-panel-lightbox-image-fallback"
-                                aria-hidden="true"
-                            >
-                                {fallbackText}
-                            </div>
-                        ) : (
-                            <img
-                                className="about-panel-lightbox-image"
-                                src={lightboxSrc}
-                                alt={image.alt}
-                                width={image.lightboxWidth ?? image.width}
-                                height={image.lightboxHeight ?? image.height}
-                                draggable="false"
-                                onLoad={(event) => {
-                                    const { naturalWidth, naturalHeight } =
-                                        event.currentTarget;
-
-                                    if (naturalWidth && naturalHeight) {
-                                        setImageAspectRatio(
-                                            naturalWidth / naturalHeight,
-                                        );
-                                    }
-
-                                    setIsImageLoaded(true);
+                                className="about-panel-lightbox-image-transform"
+                                style={{
+                                    transform: `translate3d(${offset.x}px, ${offset.y}px, 0) scale(${zoom})`,
                                 }}
-                                onError={() => setHasImageError(true)}
-                            />
-                        )}
-                    </div>
+                            >
+                                {hasImageError ? (
+                                    <div
+                                        className="about-panel-lightbox-image about-panel-lightbox-image-fallback"
+                                        aria-hidden="true"
+                                    >
+                                        {fallbackText}
+                                    </div>
+                                ) : (
+                                    <img
+                                        className="about-panel-lightbox-image"
+                                        src={lightboxSrc}
+                                        alt={activeImage.alt}
+                                        width={
+                                            activeImage.lightboxWidth ??
+                                            activeImage.width
+                                        }
+                                        height={
+                                            activeImage.lightboxHeight ??
+                                            activeImage.height
+                                        }
+                                        draggable="false"
+                                        onLoad={(event) => {
+                                            if (
+                                                activeIndexRef.current !==
+                                                activeIndex
+                                            ) {
+                                                return;
+                                            }
+
+                                            const {
+                                                naturalWidth,
+                                                naturalHeight,
+                                            } = event.currentTarget;
+
+                                            if (naturalWidth && naturalHeight) {
+                                                setImageAspectRatio(
+                                                    naturalWidth /
+                                                        naturalHeight,
+                                                );
+                                            }
+
+                                            setIsImageLoaded(true);
+                                        }}
+                                        onError={() => {
+                                            if (
+                                                activeIndexRef.current ===
+                                                activeIndex
+                                            ) {
+                                                setHasImageError(true);
+                                            }
+                                        }}
+                                    />
+                                )}
+                            </div>
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
                 {isImageLoaded && !hasImageError && (
                     <div
@@ -553,6 +736,13 @@ const ImageLightbox = ({ image, onClose }) => {
                     </div>
                 )}
             </div>
+            <ImageLightboxNavigation
+                activeImageAlt={activeImage.alt}
+                currentIndex={activeIndex}
+                onNext={navigateNext}
+                onPrevious={navigatePrevious}
+                totalImages={galleryImages.length}
+            />
         </div>,
         document.body,
     );
