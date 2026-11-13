@@ -1,3 +1,10 @@
+## [1.44.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.1...v1.44.2) (2026-11-13)
+
+
+### Bug Fixes
+
+* use new resume file in portfolio, fix some mismatch data in cs, azure and internal tools cards ([996c088](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/996c088aaee86c9162b9576e52bdd8228cfacd71))
+
 ## [1.44.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.0...v1.44.1) (2026-11-13)
 
 
