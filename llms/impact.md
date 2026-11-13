@@ -11,7 +11,7 @@ These figures summarize outcomes from Ali's mentoring, product delivery, workflo
 ## Products and automation
 
 - **6 Telegram bots built:** Created bots for community management, monitoring, sales automation, and AI-assisted conversations.
-- **9 internal tools shipped:** Automated workflows across MelkRadar and CS Internship, including MLK DVR Receiver, which processed 3.5 times as many requests in its first month as the previous manual process did in a typical month, and an Azure Boards workflow reduced from about 30 minutes to under five seconds.
+- **9 internal tools shipped:** Automated workflows across MelkRadar and CS Internship, including MLK DVR Receiver, which processed 3.5 times as many requests in its first month as the previous manual process did in a typical month, and an Azure Boards workflow reduced from about 30 minutes to about one minute.
 - **2 Android apps shipped:** Built a native sales workflow app and Health Data Relay, a Kotlin app for backing up Health Connect data to the user's Google Drive.
 - **1 iOS app shipped:** Co-developed SettleItGPT from an early prototype into an AI-powered subscription app released on the Apple App Store.
 
