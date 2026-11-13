@@ -1,4 +1,4 @@
-I first heard about CS Internship in Shahrivar 1400 (August–September 2021), through someone I knew.
+I first heard about CS Internship in Shahrivar 1401 (August–September 2022), through someone I knew.
 
 At the time, I had just started learning C++ and had built a few simple projects with it. One of the most important ones was Sea Battle, which I think played a big role in getting me to where I am today.
 
@@ -6,7 +6,7 @@ I signed up for the program and joined the waiting list. But I didn't have much 
 
 I studied on my own, built projects, ran into all sorts of problems, and tried to solve them myself. Basically, I was already going through the program's learning path independently before officially joining it.
 
-About six months passed, and I finally got into the program!
+About six months passed, and on March 19, 2023, I finally got into the program!
 
 By the time I had my entry interview, I was already halfway through Step 5 of the Web Development track, which had 12 steps in total. So I'd already made quite a bit of progress before officially becoming part of the program.
 
@@ -26,7 +26,7 @@ That was incredibly difficult for Ali back then. I wasn't comfortable meeting ne
 
 But well, I had to do it.
 
-I ended up having meetings with 28 people and barely managed to finish that step! It was also right around Nowruz in 1401, so coordinating meetings with that many people during the holidays was a whole story of its own.
+I ended up having meetings with 28 people and barely managed to finish that step! It was also right around Nowruz 1402, so coordinating meetings with that many people during the holidays was a whole story of its own.
 
 Then I moved on to Step 1 and set the record for the fastest completion of that step in the program's history. I finished it in just 7 days! I went through the other steps relatively quickly too. I later documented how long I spent on each step in my CS Steps project.
 
