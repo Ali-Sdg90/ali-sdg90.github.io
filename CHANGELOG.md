@@ -1,3 +1,10 @@
+# [1.44.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.5...v1.44.0) (2026-11-13)
+
+
+### Features
+
+* add ability to move through gallery images in light box ([b16cb0e](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/b16cb0e0476c8fe6fa664fa3e1fd960fbdacb72e))
+
 ## [1.43.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.4...v1.43.5) (2026-11-11)
 
 
