@@ -1,3 +1,10 @@
+## [1.44.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.0...v1.44.1) (2026-11-13)
+
+
+### Performance Improvements
+
+* improve performance in moving images in light-box in mobile view ([e6a1501](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/e6a15017cef7d79e6787b682271fcf8e634d10a0))
+
 # [1.44.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.43.5...v1.44.0) (2026-11-13)
 
 
