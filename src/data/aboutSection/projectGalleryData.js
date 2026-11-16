@@ -34,9 +34,15 @@ import spotTasteImage3 from "../../assets/images/projects/spot-taste-tracker/gal
 import fabrexaThumbnail1 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img1.thumb.webp";
 import fabrexaThumbnail2 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img2.thumb.webp";
 import fabrexaThumbnail3 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img3.thumb.webp";
+import fabrexaThumbnail4 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img4.thumb.webp";
+import fabrexaThumbnail5 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img5.thumb.webp";
+import fabrexaThumbnail6 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img6.thumb.webp";
 import fabrexaImage1 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img1.full.webp";
 import fabrexaImage2 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img2.full.webp";
 import fabrexaImage3 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img3.full.webp";
+import fabrexaImage4 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img4.full.webp";
+import fabrexaImage5 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img5.full.webp";
+import fabrexaImage6 from "../../assets/images/projects/fabrexa-ai-ollama/gallery/img6.full.webp";
 
 import gradientPaintThumbnail1 from "../../assets/images/projects/gradient-paint/gallery/img1.thumb.webp";
 import gradientPaintThumbnail2 from "../../assets/images/projects/gradient-paint/gallery/img2.thumb.webp";
@@ -233,23 +239,56 @@ export const projectGalleryImages = {
     ],
     "fabrexa-ai-ollama": [
         galleryImage(
+            fabrexaThumbnail1,
+            fabrexaImage1,
+            "Fabrexa AI Ollama Telegram chat with an automatically generated image",
+            285,
+            232,
+            739,
+            1500,
+        ),
+        galleryImage(
             fabrexaThumbnail2,
             fabrexaImage2,
-            "Fabrexa AI Ollama Telegram conversation",
-            1046,
-            1481,
+            "Fabrexa AI end-to-end processing flow",
+            285,
+            232,
+            856,
+            1211,
         ),
         galleryImage(
             fabrexaThumbnail3,
             fabrexaImage3,
-            "Fabrexa AI Ollama mobile chat flow",
+            "Fabrexa AI ComfyUI image generation workflow",
+            285,
+            232,
+            1919,
+            909,
+        ),
+        galleryImage(
+            fabrexaThumbnail4,
+            fabrexaImage4,
+            "Fabrexa AI Ollama Sherlock Holmes personality conversation",
+            285,
+            232,
             1234,
             2215,
         ),
         galleryImage(
-            fabrexaThumbnail1,
-            fabrexaImage1,
-            "Fabrexa AI Ollama chat interface",
+            fabrexaThumbnail5,
+            fabrexaImage5,
+            "Fabrexa AI Ollama Telegram personality selection menu",
+            285,
+            232,
+            1046,
+            1479,
+        ),
+        galleryImage(
+            fabrexaThumbnail6,
+            fabrexaImage6,
+            "Fabrexa AI Ollama memory files and running bot in VS Code",
+            285,
+            232,
             1919,
             1079,
         ),
