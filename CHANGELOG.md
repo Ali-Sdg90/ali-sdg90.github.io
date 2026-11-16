@@ -1,3 +1,10 @@
+## [1.44.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.3...v1.44.4) (2026-11-16)
+
+
+### Bug Fixes
+
+* update fabrexa ai images ([a63e7e5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/a63e7e53164103255c87ea46e73d59fda4d76dd1))
+
 ## [1.44.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.2...v1.44.3) (2026-11-13)
 
 
