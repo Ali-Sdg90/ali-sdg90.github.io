@@ -1,3 +1,10 @@
+## [1.44.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.4...v1.44.5) (2026-11-16)
+
+
+### Bug Fixes
+
+* update first fabrexa gallery image ([b4dd991](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/b4dd99196a958c9db764845631c32f91df9f3e8b))
+
 ## [1.44.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.3...v1.44.4) (2026-11-16)
 
 
