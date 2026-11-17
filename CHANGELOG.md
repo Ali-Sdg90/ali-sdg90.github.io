@@ -1,3 +1,10 @@
+# [1.45.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.6...v1.45.0) (2026-11-17)
+
+
+### Features
+
+* add machine-readable resume and refine portfolio details and add csi youtube links ([d312277](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/d312277a13d8793f3020365f97385afa95a9eb3d))
+
 ## [1.44.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.5...v1.44.6) (2026-11-17)
 
 
