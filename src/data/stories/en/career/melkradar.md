@@ -152,7 +152,7 @@ After that, I went back to developing different parts of the application, from b
 
 Gradually, the .NET version reached a point where it included the main parts of the previous React application, and we could focus more on completing the product and adding new features.
 
-Then, around Nowruz 1403, a very urgent requirement came up.
+Then, around March 2024, a very urgent requirement came up.
 
 We needed to build a set of new reporting pages containing a huge number of charts. I think we needed more than 50 or 60 different charts.
 

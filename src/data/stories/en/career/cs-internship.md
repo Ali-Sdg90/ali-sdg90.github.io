@@ -1,4 +1,4 @@
-I first heard about CS Internship in Shahrivar 1401 (August–September 2022), through someone I knew.
+I first heard about CS Internship in August 2022 through someone I knew.
 
 At the time, I had just started learning C++ and had built a few simple projects with it. One of the most important ones was Sea Battle, which I think played a big role in getting me to where I am today.
 
@@ -26,7 +26,7 @@ That was incredibly difficult for Ali back then. I wasn't comfortable meeting ne
 
 But well, I had to do it.
 
-I ended up having meetings with 28 people and barely managed to finish that step! It was also right around Nowruz 1402, so coordinating meetings with that many people during the holidays was a whole story of its own.
+I ended up having meetings with 28 people and barely managed to finish that step! It was also right around the Persian New Year holidays in March 2023, so coordinating meetings with that many people during the holidays was a whole story of its own.
 
 Then I moved on to Step 1 and set the record for the fastest completion of that step in the program's history. I finished it in just 7 days! I went through the other steps relatively quickly too. I later documented how long I spent on each step in my CS Steps project.
 
