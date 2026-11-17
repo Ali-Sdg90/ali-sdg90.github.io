@@ -1,3 +1,10 @@
+## [1.45.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.45.0...v1.45.1) (2026-11-17)
+
+
+### Bug Fixes
+
+* use Gregorian dates in English stories ([1c47e53](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/1c47e5382feeb0d9f70d8c159fe8027dfb5c7abd))
+
 # [1.45.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.6...v1.45.0) (2026-11-17)
 
 
