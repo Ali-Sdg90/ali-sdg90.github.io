@@ -300,6 +300,8 @@ specification.
     - [x] Add CSI YouTube video link in the resume
     - [x] Add hash link to my career and projects in my resume.pdf file
 
+- [x] Add ssg page screenshot to readme
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts
@@ -309,7 +311,5 @@ specification.
 
 - [ ] Add "more about ali" section :)
     - [ ] Add "Explore my Portfolio with AI" in "more about ali" section
-
-- [ ] Add ssg page screenshot to readme
 
 - [ ] Maybe add welcome to my little world, lets have a quick tour text in the intro page, or make it more general, welcome to my portfolio, lets have a quick tour...

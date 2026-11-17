@@ -30,18 +30,16 @@ ideas. Open items are not release commitments.
     - [x] remove un-used woff2 files
     - [x] Remove MobileWipNotice
 
+- [x] ~~Maybe create a new library for the new image creation pipeline and use it in project?~~
+
+- [x] pad your back, ali you created something really cool and useful for your future. proud of you me in past and future :D
+
+- [x] Maybe add a Telegram bot to send me message with status data?
+
 - [ ] improve SEO of the site
     - [x] Part 1
     - [x] Part 2
     - [ ] Final Check
-
-- [ ] do super dooper checking with agents for project structure and code quality at the end of the project
-
-- [ ] Maybe create a new library for the new image creation pipeline and use it in project?
-
-- [ ] pad your back, ali you created something really cool and useful for your future. proud of you me in past and future :D
-
-- [ ] Maybe add a Telegram bot to send me message with status data?
 
 - [ ] Do a final check for the project structure and code quality with agents
 

@@ -96,18 +96,23 @@ Beyond the visual experience, this portfolio includes a few engineering details 
 
 ## Beyond the main page
 
-I also built a small [Links page](https://ali-sdg.is-a.dev/links) and a custom [404 page](https://ali-sdg.is-a.dev/404.html).
+Beyond the interactive shelf, every visible card has its own standalone, indexable detail page, like [Health Data Relay](https://ali-sdg.is-a.dev/projects/health-data-relay/). The site also includes a personal [Links page](https://ali-sdg.is-a.dev/links) and a custom [404 page](https://ali-sdg.is-a.dev/404.html).
 
-They're simpler parts of the site, but I wanted them to have the same attention to detail and feel like they belong here.
+Each serves a different purpose, but I wanted all of them to share the same visual language and feel like they belong here.
 
 <table>
   <tr>
-    <td width="50%" align="center">
+    <td width="33%" align="center">
+      <a href="https://ali-sdg.is-a.dev/projects/health-data-relay/">
+        <img src="./src/assets/images/site/readme-ssg-preview.webp" width="100%" alt="Standalone Health Data Relay portfolio detail page" />
+      </a>
+    </td>
+    <td width="33%" align="center">
       <a href="https://ali-sdg.is-a.dev/links">
         <img src="./src/assets/images/site/readme-linktree-preview.webp" width="100%" alt="My personal Links page" />
       </a>
     </td>
-    <td width="50%" align="center">
+    <td width="33%" align="center">
       <a href="https://ali-sdg.is-a.dev/404.html">
         <img src="./src/assets/images/site/readme-404-preview.webp" width="100%" alt="My custom 404 page" />
       </a>
