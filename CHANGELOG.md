@@ -1,3 +1,10 @@
+## [1.44.6](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.5...v1.44.6) (2026-11-17)
+
+
+### Bug Fixes
+
+* update Fabrexa ai card info and cs club meta ([ce5c18c](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/ce5c18c8532045ad7fc047b64b1b77c5936156ea))
+
 ## [1.44.5](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.44.4...v1.44.5) (2026-11-16)
 
 
