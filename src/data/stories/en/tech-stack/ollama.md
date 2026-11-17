@@ -1,4 +1,4 @@
-I started working with Ollama in 2026 because of a specific need in my Fabrexa AI Ollama project.
+I started working with Ollama in 2026 because of a specific need in my Fabrexa AI project.
 
 I wanted to build a Telegram bot that could connect to AI models running locally on my own computer instead of depending on online AI services.
 

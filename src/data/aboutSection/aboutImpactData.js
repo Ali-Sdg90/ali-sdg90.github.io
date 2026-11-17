@@ -148,8 +148,8 @@ export const aboutImpactData = {
             },
             {
                 label: "GitHub Repository",
-                text: "Fabrexa AI Ollama",
-                url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama",
+                text: "Fabrexa AI",
+                url: "https://github.com/Ali-Sdg90/Fabrexa-AI",
             },
             {
                 label: "GitHub Repository",

@@ -273,8 +273,8 @@ export const aboutProjectData = {
     "fabrexa-ai-ollama": {
         id: "fabrexa-ai-ollama",
         is_story_wip: true,
-        title: "Fabrexa AI Ollama",
-        subtitle: "Self-hosted Telegram bot powered by local models",
+        title: "Fabrexa AI",
+        subtitle: "Self-hosted Telegram bot for chat and image gen",
         year: "2026",
         image: fabrexaThumbnail,
         lightboxImage: fabrexaLarge,
@@ -283,22 +283,23 @@ export const aboutProjectData = {
         lightboxWidth: 1254,
         lightboxHeight: 1254,
         summary:
-            "A self-hosted Telegram chatbot for local Ollama models, with streamed replies, custom personalities, editable memory, owner-only access, and a dedicated project website.",
+            "A self-hosted Telegram bot for chatting with local AI models, with streamed replies, custom personalities, session memory, and optional image generation.",
         links: [
             {
                 label: "Live Website",
-                url: "https://ali-sdg.is-a.dev/Fabrexa-AI-Ollama/",
+                url: "https://ali-sdg.is-a.dev/Fabrexa-AI/",
             },
             {
                 label: "GitHub Repo",
-                url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama",
+                url: "https://github.com/Ali-Sdg90/Fabrexa-AI",
             },
         ],
         features: [
-            "Connects Telegram to local Ollama models and streams replies as they are generated",
-            "Includes reusable plain-text personalities, four ready-to-use demos, and configurable model controls",
-            "Separates recent chats from optional short- and long-term memory that users can view, edit, or remove",
-            "Ships with owner-only access by default, automated setup checks, and a responsive project website",
+            "Streams replies from local Ollama models directly into Telegram as they are generated",
+            "Includes four ready-to-use personalities and lets users add custom prompts and appearance details",
+            "Keeps recent messages and important session details so replies and generated images stay consistent",
+            "Generates optional images through ComfyUI, with per-user controls and image regeneration",
+            "Automatically unloads and reloads text and image models to share GPU memory between Ollama and ComfyUI",
         ],
         galleryImages: projectGalleryImages["fabrexa-ai-ollama"],
         storyEN: projectFabrexaAiOllamaStoryEN.trim(),
@@ -311,18 +312,18 @@ export const aboutProjectData = {
         relatedLinks: [
             {
                 label: "Project Guide",
-                text: "Fabrexa AI Ollama",
-                url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama/blob/main/docs/PROJECT_GUIDE.md",
+                text: "Fabrexa AI",
+                url: "https://github.com/Ali-Sdg90/Fabrexa-AI/blob/main/docs/PROJECT_GUIDE.md",
             },
             {
                 label: "Troubleshooting Guide",
-                text: "Fabrexa AI Ollama",
-                url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama/blob/main/docs/TROUBLESHOOTING.md",
+                text: "Fabrexa AI",
+                url: "https://github.com/Ali-Sdg90/Fabrexa-AI/blob/main/docs/TROUBLESHOOTING.md",
             },
             {
                 label: "Contributing Guide",
-                text: "Fabrexa AI Ollama",
-                url: "https://github.com/Ali-Sdg90/Fabrexa-AI-Ollama/blob/main/CONTRIBUTING.md",
+                text: "Fabrexa AI",
+                url: "https://github.com/Ali-Sdg90/Fabrexa-AI/blob/main/CONTRIBUTING.md",
             },
             {
                 label: "Telegram Bot",
@@ -335,7 +336,7 @@ export const aboutProjectData = {
         id: "cs-club-bot",
         is_story_wip: true,
         title: "CS Club Bot",
-        subtitle: "Live Telegram bot for AI-assisted workflows",
+        subtitle: "Telegram bot for AI-assisted internship workflows",
         year: "2025",
         image: csClubThumbnail,
         lightboxImage: csClubLarge,

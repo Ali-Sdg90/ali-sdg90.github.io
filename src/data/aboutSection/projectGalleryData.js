@@ -241,7 +241,7 @@ export const projectGalleryImages = {
         galleryImage(
             fabrexaThumbnail1,
             fabrexaImage1,
-            "Fabrexa AI Ollama Telegram chat with an automatically generated image",
+            "Fabrexa AI Telegram chat with an automatically generated image",
             285,
             232,
             739,
@@ -268,7 +268,7 @@ export const projectGalleryImages = {
         galleryImage(
             fabrexaThumbnail4,
             fabrexaImage4,
-            "Fabrexa AI Ollama Sherlock Holmes personality conversation",
+            "Fabrexa AI Sherlock Holmes personality conversation",
             285,
             232,
             1234,
@@ -277,7 +277,7 @@ export const projectGalleryImages = {
         galleryImage(
             fabrexaThumbnail5,
             fabrexaImage5,
-            "Fabrexa AI Ollama Telegram personality selection menu",
+            "Fabrexa AI Telegram personality selection menu",
             285,
             232,
             1046,
@@ -286,7 +286,7 @@ export const projectGalleryImages = {
         galleryImage(
             fabrexaThumbnail6,
             fabrexaImage6,
-            "Fabrexa AI Ollama memory files and running bot in VS Code",
+            "Fabrexa AI memory files and running bot in VS Code",
             285,
             232,
             1919,
