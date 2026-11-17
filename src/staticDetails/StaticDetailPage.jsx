@@ -238,7 +238,7 @@ const Highlights = ({ features = [], title }) => {
     return (
         <section className="static-detail-section static-detail-highlights">
             <header className="static-detail-section-heading">
-                <h2>{title ?? "Key details"}</h2>
+                <h2>{title ?? "Features"}</h2>
             </header>
             <ul className="static-detail-feature-list">
                 {features.map((feature) => (

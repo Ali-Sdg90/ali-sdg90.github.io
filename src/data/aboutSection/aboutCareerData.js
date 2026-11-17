@@ -298,6 +298,16 @@ export const aboutCareerData = {
                 url: "https://github.com/Ali-Sdg90/CS-Steps",
             },
             {
+                label: "YouTube Workshop",
+                text: "Frontend Workshop",
+                url: "https://www.youtube.com/watch?v=fVQPxYKab68",
+            },
+            {
+                label: "YouTube Tutorial",
+                text: "Azure DevOps Tutorial",
+                url: "https://www.youtube.com/watch?v=pRCOpFa5XlI",
+            },
+            {
                 label: "GitHub Repository",
                 text: "CS Azure Board Automation",
                 url: "https://github.com/Ali-Sdg90/CS-Azure-Board-Automation",

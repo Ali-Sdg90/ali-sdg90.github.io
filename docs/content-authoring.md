@@ -213,6 +213,10 @@ build description changes.
 `public/llms.txt` is the index and should remain concise. Do not duplicate every
 story into it.
 
+`public/llms/resume.md` is the machine-readable version of the current English
+resume. Keep it aligned whenever the official PDF under `public/resume/`
+changes; the PDF remains the formatted, user-facing resume.
+
 ## Validation checklist
 
 Before considering a content change complete:

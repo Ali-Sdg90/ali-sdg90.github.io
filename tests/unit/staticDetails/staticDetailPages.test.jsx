@@ -173,6 +173,19 @@ describe("static portfolio detail pages", () => {
         expect(html).not.toContain("Technologies and tools");
     });
 
+    test("uses the same feature headings as the interactive shelf details", () => {
+        const pages = getStaticDetailPages({ basePath: "/" });
+
+        for (const page of pages) {
+            if (!page.detail.features?.length) continue;
+
+            const html = renderToStaticMarkup(<StaticDetailPage page={page} />);
+            const expectedTitle = page.detail.featuresTitle ?? "Features";
+
+            expect(html).toContain(`<h2>${expectedTitle}</h2>`);
+        }
+    });
+
     test("hides project stories marked as work in progress", () => {
         const page = getPage(
             getStaticDetailPages({ basePath: "/" }),

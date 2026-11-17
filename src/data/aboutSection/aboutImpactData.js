@@ -116,7 +116,7 @@ export const aboutImpactData = {
         subtitle: "Telegram Bots Built",
         summary:
             "Built Telegram bots for community management, monitoring, sales automation, and AI conversations.",
-        featuresTitle: "What I Built",
+        featuresTitle: "What I Did",
         features: [
             "Built three CS Internship bots for entry, feedback, and monitoring",
             "Built a MelkRadar sales bot to replace a repetitive manual process",
@@ -165,7 +165,7 @@ export const aboutImpactData = {
         summary:
             "Automated sales and program workflows with tools for MelkRadar and CS Internship.",
 
-        featuresTitle: "What I Built",
+        featuresTitle: "What I Did",
         features: [
             "Built tools for sales, onboarding, feedback, scheduling, and monitoring",
             "Built an Android, backend, and Telegram automation system used more than 25 times daily",
@@ -224,7 +224,7 @@ export const aboutImpactData = {
         summary:
             "Shipped a sales workflow app and a health backup app, both built natively in Kotlin.",
 
-        featuresTitle: "What I Shipped",
+        featuresTitle: "What I Did",
         features: [
             "Designed MLK DVR Receiver's Android app, backend, and Telegram bot",
             "Built Health Data Relay for automatic backups to each user's Google Drive",
@@ -269,7 +269,7 @@ export const aboutImpactData = {
         summary:
             "Co-developed an AI-powered subscription app published on the Apple App Store.",
 
-        featuresTitle: "What I Shipped",
+        featuresTitle: "What I Did",
         features: [
             "Co-developed SettleItGPT from a basic prototype into a working iOS app",
             "Connected accounts, camera and microphone input, and AI responses through Firebase",
@@ -326,7 +326,7 @@ export const aboutImpactData = {
         subtitle: "Open Source Commits",
         summary:
             "Contributed to CS Internship and other open-source projects, including fx-blox and TonRich.",
-        featuresTitle: "What I Contributed",
+        featuresTitle: "What I Did",
         features: [
             "Contributed to open-source tools used by the CS Internship program",
             "Worked with other contributors on fx-blox, TonRich, and smaller projects",
