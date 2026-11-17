@@ -13,6 +13,7 @@ This is a source-available project, not an open-source release. Copyright (c) 20
 ## Portfolio content
 
 - [About Ali](/llms/about.md)
+- [Resume](/llms/resume.md)
 - [Featured projects](/llms/projects.md)
 - [How the portfolio was built](/llms/build.md)
 - [Impact in Numbers](/llms/impact.md)
@@ -22,7 +23,7 @@ This is a source-available project, not an open-source release. Copyright (c) 20
 ## Primary links
 
 - [Live portfolio](https://ali-sdg.is-a.dev/)
-- [English resume](https://ali-sdg.is-a.dev/resume/ali-sadeghi-resume-en.pdf)
+- [English resume (PDF)](https://ali-sdg.is-a.dev/resume/ali-sadeghi-resume-en.pdf)
 - [Source repository](https://github.com/Ali-Sdg90/ali-sdg90.github.io)
 - [LICENSE](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/LICENSE)
 - [NOTICE](https://raw.githubusercontent.com/Ali-Sdg90/ali-sdg90.github.io/main/NOTICE)

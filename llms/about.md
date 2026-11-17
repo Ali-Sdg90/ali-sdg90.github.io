@@ -4,7 +4,7 @@ Ali Sadeghi is a software engineer based in Tehran, Iran, working primarily with
 
 He values careful implementation, strong quality standards, and attention to detail. Beyond hands-on development, his work includes technical mentoring, code review, process design, developer onboarding, and helping lead teams.
 
-[Portfolio](https://ali-sdg.is-a.dev/) | [English resume](/resume/ali-sadeghi-resume-en.pdf)
+[Portfolio](https://ali-sdg.is-a.dev/) | [Resume (Markdown)](/llms/resume.md) | [Resume (PDF)](/resume/ali-sadeghi-resume-en.pdf)
 
 ## Contact and profiles
 
