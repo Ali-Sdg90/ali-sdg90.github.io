@@ -1,3 +1,10 @@
+## [1.46.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.46.1...v1.46.2) (2026-11-18)
+
+
+### Bug Fixes
+
+* add spot taste tracker's story ([fcbe47e](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/fcbe47ee56b3c31f49def271b5d4ce0ae61eb9ef))
+
 ## [1.46.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.46.0...v1.46.1) (2026-11-18)
 
 
