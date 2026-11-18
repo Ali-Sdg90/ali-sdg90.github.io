@@ -1,3 +1,10 @@
+## [1.46.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.46.0...v1.46.1) (2026-11-18)
+
+
+### Bug Fixes
+
+* fix aloha transition appearing timings ([1cf7828](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/1cf78287a2ae35ac43c66b73832b690043094642))
+
 # [1.46.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.45.2...v1.46.0) (2026-11-18)
 
 
