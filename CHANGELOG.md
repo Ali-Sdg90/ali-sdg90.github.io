@@ -1,3 +1,10 @@
+# [1.46.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.45.2...v1.46.0) (2026-11-18)
+
+
+### Features
+
+* add ask gpt btn for all cards and removed greeting hello hand in into-section ([db3db5c](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/db3db5c686328c9f1ac370cb40a79558921b06c8))
+
 ## [1.45.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.45.1...v1.45.2) (2026-11-18)
 
 
