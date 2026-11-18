@@ -221,7 +221,7 @@ export const aboutProjectData = {
     },
     "spot-taste-tracker": {
         id: "spot-taste-tracker",
-        is_story_wip: true,
+        is_story_wip: false,
         title: "Spot Taste Tracker",
         subtitle: "Dashboard for analyzing Spotify taste over time",
         year: "2026",
