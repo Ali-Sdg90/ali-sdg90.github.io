@@ -302,6 +302,8 @@ specification.
 
 - [x] Add ssg page screenshot to readme
 
+- [x] Add "Summaries story with ChatGPT" feature in the stories section
+
 - [ ] Write all of the descriptions!
     - [ ] Projects
     - [x] Impacts

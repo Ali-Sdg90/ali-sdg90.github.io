@@ -7,9 +7,10 @@ import { getShelfItemId } from "../utils/getShelfItemId";
 import {
     getStaticDetailRoutePath,
     normalizeStaticDetailBasePath,
+    STATIC_DETAIL_ORIGIN,
 } from "./staticDetailRoutes";
 
-export const STATIC_DETAIL_ORIGIN = "https://ali-sdg.is-a.dev";
+export { STATIC_DETAIL_ORIGIN } from "./staticDetailRoutes";
 
 export const STATIC_DETAIL_SECTION_CONFIG = {
     projects: {

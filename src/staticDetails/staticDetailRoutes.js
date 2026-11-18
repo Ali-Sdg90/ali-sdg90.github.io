@@ -1,3 +1,5 @@
+export const STATIC_DETAIL_ORIGIN = "https://ali-sdg.is-a.dev";
+
 export const STATIC_DETAIL_ROUTE_SEGMENTS = Object.freeze({
     projects: "projects",
     achievements: "impact",

@@ -27,6 +27,7 @@ describe("FeaturedProjectAbout", () => {
 
         expect(html).not.toContain("featured-project-story");
         expect(html).not.toContain("Placeholder");
+        expect(html).toContain("featured-project-chatgpt");
     });
 
     test("shows stories after their work-in-progress flag is cleared", () => {
@@ -34,5 +35,8 @@ describe("FeaturedProjectAbout", () => {
 
         expect(html).toContain("featured-project-story");
         expect(html).toContain("Placeholder");
+        expect(html.indexOf("featured-project-story")).toBeLessThan(
+            html.indexOf("featured-project-chatgpt"),
+        );
     });
 });

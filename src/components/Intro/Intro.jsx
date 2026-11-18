@@ -22,19 +22,22 @@ const Intro = ({ isAboutMeActive, onAboutMeSelect }) => {
                 >
                     <span className="hero-greeting-label hero-greeting-default">
                         <span className="hero-greeting-text">Hey there!</span>
-                        <span className="hero-greeting-hand" aria-hidden="true">
+                        {/* <span
+                            className="hero-greeting-hand"
+                            aria-hidden="true"
+                        >
                             {"\u{1F44B}"}
-                        </span>
+                        </span> */}
                     </span>
                     {isGreetingHovered && (
                         <span className="hero-greeting-label hero-greeting-hover">
                             <span className="hero-greeting-text">Aloha!</span>
-                            <span
+                            {/* <span
                                 className="hero-greeting-hand"
                                 aria-hidden="true"
                             >
                                 {"\u{1F44B}"}
-                            </span>
+                            </span> */}
                         </span>
                     )}
                 </p>

@@ -16,12 +16,12 @@ const MobileHero = ({ avatarRef, onAboutOpen }) => (
             <div className="mobile-hero-heading">
                 <p className="mobile-hero-kicker" aria-label="Hey there!">
                     <span>Hey there!</span>
-                    <span
+                    {/* <span
                         className="mobile-hero-greeting-hand"
                         aria-hidden="true"
                     >
                         {"\u{1F44B}"}
-                    </span>
+                    </span> */}
                 </p>
                 <h1 id="mobile-hero-title">
                     I&apos;m <em>Ali</em>

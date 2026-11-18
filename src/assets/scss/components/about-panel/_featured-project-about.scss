@@ -314,7 +314,16 @@
     }
 }
 
-.featured-project-story-toggle {
+.featured-project-chatgpt-copy {
+    margin: 0;
+    color: rgba(222, 237, 248, 0.82);
+    font-size: about-panel-cqw(13);
+    line-height: 1.45;
+    font-weight: 400;
+}
+
+.featured-project-story-toggle,
+.featured-project-chatgpt-link {
     align-self: flex-start;
     display: inline-flex;
     align-items: center;
@@ -330,6 +339,7 @@
     font-size: about-panel-cqw(12);
     line-height: 1;
     font-weight: 700;
+    text-decoration: none;
     cursor: pointer;
     transition:
         color $motion-fast $ease-out,
@@ -508,8 +518,13 @@
     .featured-project-link,
     .featured-project-tech li,
     .featured-project-story-toggle,
+    .featured-project-chatgpt-link,
     .featured-project-page-link {
         font-size: about-panel-cqw(13);
+    }
+
+    .featured-project-chatgpt-copy {
+        font-size: about-panel-cqw(14);
     }
 
     .featured-project-features li {

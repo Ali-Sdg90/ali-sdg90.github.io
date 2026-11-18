@@ -15,6 +15,7 @@ import {
 import LightboxImage from "../../ui/LightboxImage";
 import StaticDetailPageLink from "../../ui/StaticDetailPageLink";
 import { trackUmamiEvent } from "../../../utils/analytics";
+import AskChatGPTSection from "./AskChatGPTSection";
 
 const StoryReaderModal = lazy(() => import("./StoryReaderModal"));
 
@@ -409,6 +410,7 @@ const FeaturedProjectAbout = ({
                     hasTallPreview={hasTallStoryPreview}
                 />
             )}
+            <AskChatGPTSection item={item} section={section} />
             {detail.hasRelatedLinks && (
                 <RelatedLinks links={detail.relatedLinks} project={project} />
             )}
