@@ -2,6 +2,8 @@
 @use "../layout/hero-stage" as *;
 @use "intro-units" as *;
 
+$hero-greeting-hover-delay: 0.25s;
+
 .hero-intro {
     position: fixed;
     left: max(1rem, hero-stage-size(85));
@@ -40,11 +42,14 @@
             .hero-greeting-default {
                 opacity: 0;
                 transform: translateY(intro-cqw(-4));
+                transition-delay: $hero-greeting-hover-delay;
             }
 
             .hero-greeting-hover {
                 opacity: 1;
                 transform: translateY(0);
+                animation: hero-greeting-reveal $motion-medium $ease-out
+                    $hero-greeting-hover-delay both;
             }
         }
     }
@@ -55,8 +60,8 @@
         align-items: center;
         gap: intro-cqw(5);
         transition:
-            opacity $motion-medium $ease-out 0.25s,
-            transform $motion-medium $ease-out 0.25s;
+            opacity $motion-medium $ease-out,
+            transform $motion-medium $ease-out;
     }
 
     .hero-greeting-hover {
@@ -270,6 +275,18 @@
     }
 }
 
+@keyframes hero-greeting-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(intro-cqw(4));
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes hero-greeting-wave {
     0%,
     30%,
@@ -307,7 +324,20 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .hero-intro .hero-greeting-hand {
-        animation: none;
+    .hero-intro {
+        .hero-greeting-label {
+            transition-duration: 1ms;
+        }
+
+        .hero-greeting:hover,
+        .hero-greeting:focus-visible {
+            .hero-greeting-hover {
+                animation-duration: 1ms;
+            }
+        }
+
+        .hero-greeting-hand {
+            animation: none;
+        }
     }
 }
