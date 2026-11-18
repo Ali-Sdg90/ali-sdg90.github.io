@@ -272,7 +272,7 @@ export const aboutProjectData = {
     },
     "fabrexa-ai-ollama": {
         id: "fabrexa-ai-ollama",
-        is_story_wip: true,
+        is_story_wip: false,
         title: "Fabrexa AI",
         subtitle: "Self-hosted Telegram bot for chat and image gen",
         year: "2026",
