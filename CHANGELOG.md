@@ -1,3 +1,10 @@
+## [1.45.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.45.1...v1.45.2) (2026-11-18)
+
+
+### Bug Fixes
+
+* add Fabrexa-AI story ([79cd218](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/79cd21861360b362d9a8962f52ecec281bcc2157))
+
 ## [1.45.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.45.0...v1.45.1) (2026-11-17)
 
 
