@@ -316,4 +316,8 @@ specification.
 
 - [ ] Maybe add welcome to my little world, lets have a quick tour text in the intro page, or make it more general, welcome to my portfolio, lets have a quick tour...
 
-- Maybe add a "Copy btn" for stories?
+- [ ] Maybe add a "Copy btn" for stories?
+
+- [ ] Add ComfyUI and Docker and TS to tools
+
+- [ ] Maybe add "my early creative projects" and add gradient path, quick math and tic tac toe in it? or remove it for good... but... idk

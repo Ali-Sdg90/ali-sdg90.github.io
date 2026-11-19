@@ -72,7 +72,7 @@ chapters.
 
 ### Static detail pages (8 tests)
 
-`tests/unit/staticDetails/` protects the 41-card route inventory, retained source
+`tests/unit/staticDetails/` protects the 38-card route inventory, retained source
 placeholders, base-path-safe URLs for PR previews, progressive card links,
 static HTML structure, omitted technology-tag sections, and indexable metadata.
 
@@ -97,7 +97,7 @@ journeys:
    available with JavaScript disabled.
 7. The prerendered mobile portfolio and its detail links remain useful with
    JavaScript disabled.
-8. All 41 sitemap detail routes return complete, indexable HTML.
+8. All 38 sitemap detail routes return complete, indexable HTML.
 9. The mobile prerender hydrates and keeps its card interactions without runtime
    errors.
 10. A static detail story switches between English and Persian without changing

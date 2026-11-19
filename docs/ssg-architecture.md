@@ -18,7 +18,7 @@ The project combines three rendering models:
 
 | Model     | Where it runs                       | Purpose                                                                                                      |
 | --------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| SSG       | During `npm run build`              | Produces the homepage, Link Hub, complete bilingual build story, and 41 standalone card pages                |
+| SSG       | During `npm run build`              | Produces the homepage, Link Hub, complete bilingual build story, and 38 standalone card pages                |
 | Hydration | In mobile and Link Hub browsers     | Attaches React behavior to matching prerendered markup                                                       |
 | CSR       | In desktop and build-story browsers | Renders the desktop shelf and replaces the complete build-story fallback with the chapter-by-chapter gallery |
 
@@ -184,7 +184,7 @@ The current inventory is:
 - 9 impact pages
 - 17 technology pages
 - 4 career pages
-- 41 pages in total
+- 38 pages in total
 
 Each result includes the information needed to build its final document:
 
@@ -390,7 +390,7 @@ The automated suite protects:
 - Route and ID contracts
 - Complete detail-data resolution
 - Static metadata and semantic page structure
-- Sitemap coverage for all 41 generated routes
+- Sitemap coverage for all 38 generated routes
 - No-JavaScript homepage navigation
 - No-JavaScript Link Hub content
 - All 34 English and Persian build-story chapters in generated HTML

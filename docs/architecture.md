@@ -27,7 +27,7 @@ flowchart LR
     Home[Prerendered mobile homepage]
     Links[Prerendered Link Hub]
     Story[34-chapter bilingual build story]
-    Details[41 static detail pages]
+    Details[38 static detail pages]
     Desktop[Desktop client experience]
     Mobile[Mobile hydrated experience]
 

@@ -79,7 +79,7 @@ The journal is part of the site itself, with its own page-turn interaction, chap
 
 Beyond the visual experience, this portfolio includes a few engineering details I'm particularly happy with.
 
-- **Hybrid SSG & CSR:** Build-time prerendering with React 19 for the homepage, Link Hub, complete bilingual build story, and 41 detail pages, with client rendering for the interactive desktop and story experiences.
+- **Hybrid SSG & CSR:** Build-time prerendering with React 19 for the homepage, Link Hub, complete bilingual build story, and 38 detail pages, with client rendering for the interactive desktop and story experiences.
 - **Standalone Card Pages:** Build-generated, indexable HTML detail pages for every visible shelf card, with card-specific metadata and URLs maintained in the public sitemap.
 - **No-JavaScript Fallback:** The mobile portfolio, Link Hub, all 34 English and Persian build-story chapters, and standalone card details remain readable without JavaScript.
 - **Perspective-Based 3D Shelf:** A configurable shelf system built with CSS perspective, 3D transforms, container query units, and aspect-ratio-aware layout adjustments.

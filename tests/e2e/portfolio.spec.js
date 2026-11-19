@@ -215,12 +215,15 @@ test("all generated detail routes return complete indexable HTML", async ({
     expect(sitemapResponse.status()).toBe(200);
 
     const sitemap = await sitemapResponse.text();
-    const detailPaths = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)]
+    const sitemapWithoutComments = sitemap.replace(/<!--[\s\S]*?-->/g, "");
+    const detailPaths = [
+        ...sitemapWithoutComments.matchAll(/<loc>([^<]+)<\/loc>/g),
+    ]
         .map(([, location]) => new URL(location).pathname)
         .filter((pathname) => detailRoutePattern.test(pathname));
 
-    expect(detailPaths).toHaveLength(41);
-    expect(new Set(detailPaths).size).toBe(41);
+    expect(detailPaths).toHaveLength(38);
+    expect(new Set(detailPaths).size).toBe(38);
 
     for (const pathname of detailPaths) {
         const response = await request.get(pathname);

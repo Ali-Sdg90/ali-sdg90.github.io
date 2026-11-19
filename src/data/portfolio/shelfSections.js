@@ -4,14 +4,14 @@ import dpaLogo from "../../assets/images/career/dadeh-pardazi-azmoudeh-karan/cov
 import settleitLogo from "../../assets/images/career/settleit-gpt/cover.thumb.webp";
 import csClubThumbnail from "../../assets/images/projects/cs-club-bot/cover.thumb.webp";
 import csQueueThumbnail from "../../assets/images/projects/cs-queue-bot/cover.thumb.webp";
-import gradientPaintThumbnail from "../../assets/images/projects/gradient-paint/cover.thumb.webp";
+// import gradientPaintThumbnail from "../../assets/images/projects/gradient-paint/cover.thumb.webp";
 import fabrexaThumbnail from "../../assets/images/projects/fabrexa-ai-ollama/cover.thumb.webp";
 import healthDataRelayThumbnail from "../../assets/images/projects/health-data-relay/cover.thumb.webp";
 import pathFinderThumbnail from "../../assets/images/projects/path-finder/cover.thumb.webp";
 import portfolioThumbnail from "../../assets/images/projects/alis-portfolio/cover.thumb.webp";
-import quickMathThumbnail from "../../assets/images/projects/quick-math/cover.thumb.webp";
+// import quickMathThumbnail from "../../assets/images/projects/quick-math/cover.thumb.webp";
 import spotTasteThumbnail from "../../assets/images/projects/spot-taste-tracker/cover.thumb.webp";
-import ticTacToeThumbnail from "../../assets/images/projects/tic-tac-toe/cover.thumb.webp";
+// import ticTacToeThumbnail from "../../assets/images/projects/tic-tac-toe/cover.thumb.webp";
 import csCalendarThumbnail from "../../assets/images/projects/cs-queue-calendar/cover.thumb.webp";
 import {
     FaAndroid,
@@ -122,30 +122,30 @@ export const shelfSections = [
                 imageWidth: 1254,
                 imageHeight: 1254,
             },
-            {
-                id: "gradient-paint",
-                title: "Gradient Paint",
-                meta: "Customizable interactive gradient painting canvas",
-                image: gradientPaintThumbnail,
-                imageWidth: 1254,
-                imageHeight: 1254,
-            },
-            {
-                id: "quick-math",
-                title: "Quick Math",
-                meta: "Timed math game with a rotating cube interface",
-                image: quickMathThumbnail,
-                imageWidth: 1254,
-                imageHeight: 1254,
-            },
-            {
-                id: "tic-tac-toe",
-                title: "Tic Tac Toe",
-                meta: "Customizable game with multiple play modes",
-                image: ticTacToeThumbnail,
-                imageWidth: 1254,
-                imageHeight: 1254,
-            },
+            // {
+            //     id: "gradient-paint",
+            //     title: "Gradient Paint",
+            //     meta: "Customizable interactive gradient painting canvas",
+            //     image: gradientPaintThumbnail,
+            //     imageWidth: 1254,
+            //     imageHeight: 1254,
+            // },
+            // {
+            //     id: "quick-math",
+            //     title: "Quick Math",
+            //     meta: "Timed math game with a rotating cube interface",
+            //     image: quickMathThumbnail,
+            //     imageWidth: 1254,
+            //     imageHeight: 1254,
+            // },
+            // {
+            //     id: "tic-tac-toe",
+            //     title: "Tic Tac Toe",
+            //     meta: "Customizable game with multiple play modes",
+            //     image: ticTacToeThumbnail,
+            //     imageWidth: 1254,
+            //     imageHeight: 1254,
+            // },
         ],
     },
     {
