@@ -167,7 +167,7 @@ export const aboutProjectData = {
     },
     "cs-queue-calendar": {
         id: "cs-queue-calendar",
-        is_story_wip: true,
+        is_story_wip: false,
         title: "CS Queue Calendar",
         subtitle: "Interactive calendar to coordinate queue sessions",
         year: "2025",
@@ -392,7 +392,7 @@ export const aboutProjectData = {
     },
     "cs-queue-bot": {
         id: "cs-queue-bot",
-        is_story_wip: true,
+        is_story_wip: false,
         title: "CS Queue Bot",
         subtitle: "Live Telegram bot for queue management",
         year: "2025",
@@ -440,6 +440,11 @@ export const aboutProjectData = {
                 label: "Changelog",
                 text: "CS Queue Bot",
                 url: "https://github.com/cs-internship/CS-Queue-Bot/blob/main/CHANGELOG.md",
+            },
+            {
+                label: "X Post",
+                text: "CS Queue Bot Creative Server Deployment Post",
+                url: "https://x.com/Ali_Sdg90/status/1880627162392506572?a=Sq2H0ShV-fuhvAprMLM&s=20",
             },
         ],
     },

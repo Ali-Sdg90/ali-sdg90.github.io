@@ -315,3 +315,5 @@ specification.
     - [ ] Add "Explore my Portfolio with AI" in "more about ali" section
 
 - [ ] Maybe add welcome to my little world, lets have a quick tour text in the intro page, or make it more general, welcome to my portfolio, lets have a quick tour...
+
+- Maybe add a "Copy btn" for stories?
