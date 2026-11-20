@@ -1,3 +1,10 @@
+## [1.48.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.48.0...v1.48.1) (2026-11-20)
+
+
+### Bug Fixes
+
+* improved onboarding section and finalize it ([c278458](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/c278458be9a009fda89f175a5a4eaa11e19fc4c8))
+
 # [1.48.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.47.1...v1.48.0) (2026-11-20)
 
 
