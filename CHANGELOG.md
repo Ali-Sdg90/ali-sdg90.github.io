@@ -1,3 +1,10 @@
+## [1.47.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.47.0...v1.47.1) (2026-11-20)
+
+
+### Bug Fixes
+
+* fix font sizes in hmpwb page, improved pageFlipper size and font in desktop view ([0ef6e3f](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/0ef6e3fd19c8b28af97e84a7b74f210e2ee05b1e))
+
 # [1.47.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.46.4...v1.47.0) (2026-11-20)
 
 
