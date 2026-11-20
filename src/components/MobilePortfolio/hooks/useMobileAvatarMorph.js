@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { MOBILE_VIEWPORT_QUERY } from "../../../hooks/useMobileViewport";
+
 const clamp = (value, minimum, maximum) =>
     Math.min(Math.max(value, minimum), maximum);
 
@@ -46,7 +48,7 @@ const useMobileAvatarMorph = ({
 
         if (!avatar || !source || !target) return undefined;
 
-        const mobileViewport = window.matchMedia("(max-width: 899px)");
+        const mobileViewport = window.matchMedia(MOBILE_VIEWPORT_QUERY);
         const reducedMotion = window.matchMedia(
             "(prefers-reduced-motion: reduce)",
         );

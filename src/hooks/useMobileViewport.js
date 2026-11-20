@@ -1,6 +1,10 @@
 import { useSyncExternalStore } from "react";
 
-export const MOBILE_VIEWPORT_QUERY = "(max-width: 899px)";
+const MOBILE_WIDTH_QUERY = "(max-width: 899px)";
+const COMPACT_VIEWPORT_QUERY = "(max-width: 1400px) and (max-height: 899px)";
+
+// Keep these values aligned with src/assets/scss/base/_breakpoints.scss.
+export const MOBILE_VIEWPORT_QUERY = `${MOBILE_WIDTH_QUERY}, ${COMPACT_VIEWPORT_QUERY}`;
 
 let mobileViewportQueryList;
 

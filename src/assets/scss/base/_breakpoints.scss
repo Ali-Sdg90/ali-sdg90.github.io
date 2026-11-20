@@ -1,0 +1,19 @@
+$mobile-portfolio-max-width: 900px;
+$mobile-viewport-max-width: 899px;
+$compact-viewport-max-width: 1400px;
+$compact-viewport-max-height: 899px;
+
+// Keep these values aligned with MOBILE_VIEWPORT_QUERY in
+// src/hooks/useMobileViewport.js.
+@mixin mobile-portfolio-viewport {
+    @media (max-width: $mobile-viewport-max-width),
+        (max-width: $compact-viewport-max-width) and (max-height: $compact-viewport-max-height) {
+        @content;
+    }
+}
+
+@mixin framed-mobile-portfolio-viewport {
+    @media (min-width: $mobile-portfolio-max-width) and (max-width: $compact-viewport-max-width) and (max-height: $compact-viewport-max-height) {
+        @content;
+    }
+}

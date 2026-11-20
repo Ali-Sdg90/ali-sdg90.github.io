@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 const desktopViewport = { width: 1440, height: 900 };
+const tabletViewport = { width: 1300, height: 802 };
 const mobileViewport = { width: 390, height: 844 };
 
 const detailRoutePattern = /^\/(projects|impact|stack|career)\/[^/]+\/$/;
@@ -92,6 +93,33 @@ test("mobile visitors can open and dismiss a project bottom sheet", async ({
 
     await expect(page.getByRole("dialog")).toBeHidden();
     await expect(page).toHaveURL(/\/$/);
+});
+
+test("short desktop viewports use the centered mobile experience", async ({
+    page,
+}) => {
+    await page.setViewportSize(tabletViewport);
+    await page.goto("/");
+
+    const mobilePortfolio = page.locator(".mobile-portfolio");
+    const mobileNavigation = page.locator(".mobile-nav");
+
+    await expect(
+        page.getByRole("heading", { level: 2, name: "Featured projects" }),
+    ).toBeVisible();
+    await expect(
+        page.getByRole("region", { name: "Portfolio shelf" }),
+    ).toHaveCount(0);
+
+    const portfolioBounds = await mobilePortfolio.boundingBox();
+    const navigationBounds = await mobileNavigation.boundingBox();
+
+    expect(portfolioBounds).not.toBeNull();
+    expect(portfolioBounds.width).toBe(900);
+    expect(portfolioBounds.x).toBe(200);
+    expect(navigationBounds).not.toBeNull();
+    expect(navigationBounds.width).toBe(900);
+    expect(navigationBounds.x).toBe(200);
 });
 
 test("the build story route supports chapter navigation", async ({ page }) => {

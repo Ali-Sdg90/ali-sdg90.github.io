@@ -1,3 +1,5 @@
+@use "../../base/breakpoints" as *;
+
 @media (max-width: 370px) {
     .mobile-impact-grid a {
         min-height: 9.6rem;
@@ -11,6 +13,32 @@
             width: 3.2rem;
             height: 3.2rem;
         }
+    }
+}
+
+@include framed-mobile-portfolio-viewport {
+    body,
+    #root {
+        background: #050a11;
+    }
+
+    .mobile-portfolio {
+        width: min(100%, $mobile-portfolio-max-width);
+        min-height: 100vh;
+        margin-inline: auto;
+    }
+
+    .mobile-nav {
+        left: 50%;
+        width: min(100%, $mobile-portfolio-max-width);
+        transform: translateX(-50%);
+    }
+
+    .mobile-build-story {
+        right: auto;
+        left: 50%;
+        width: min(100%, $mobile-portfolio-max-width);
+        transform: translateX(-50%);
     }
 }
 

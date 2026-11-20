@@ -1,4 +1,5 @@
 @use "../../base/variables" as *;
+@use "../../base/breakpoints" as *;
 
 .about-panel-lightbox {
     --lightbox-frame-inline-limit: 94vw;
@@ -455,7 +456,7 @@
     }
 }
 
-@media (max-width: 899px) {
+@include mobile-portfolio-viewport {
     .about-panel-lightbox {
         backdrop-filter: none;
         animation-duration: 330ms;

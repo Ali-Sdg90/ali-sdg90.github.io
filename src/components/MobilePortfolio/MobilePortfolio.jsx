@@ -17,6 +17,7 @@ import MobileCareerSection from "./sections/MobileCareerSection";
 import MobileImpactSection from "./sections/MobileImpactSection";
 import MobileProjectsSection from "./sections/MobileProjectsSection";
 import MobileStackSection from "./sections/MobileStackSection";
+import { MOBILE_VIEWPORT_QUERY } from "../../hooks/useMobileViewport";
 import { trackUmamiEvent } from "../../utils/analytics";
 import { getShelfItemId } from "../../utils/getShelfItemId";
 
@@ -36,7 +37,7 @@ const MobilePortfolio = ({
     const [initialMobileDeepLink] = useState(() => {
         if (
             typeof window === "undefined" ||
-            !window.matchMedia("(max-width: 899px)").matches ||
+            !window.matchMedia(MOBILE_VIEWPORT_QUERY).matches ||
             view !== "shelf" ||
             !selectedShelfItem
         ) {

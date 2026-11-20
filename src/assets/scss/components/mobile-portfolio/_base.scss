@@ -1,11 +1,12 @@
 @use "../../base/variables" as *;
+@use "../../base/breakpoints" as *;
 
 .mobile-portfolio,
 .mobile-build-story {
     display: none;
 }
 
-@media (max-width: 899px) {
+@include mobile-portfolio-viewport {
     html {
         width: 100%;
         height: auto;

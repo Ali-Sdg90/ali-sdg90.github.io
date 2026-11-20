@@ -1,6 +1,7 @@
 @use "../../base/variables" as *;
+@use "../../base/breakpoints" as *;
 
-@media (max-width: 899px) {
+@include mobile-portfolio-viewport {
     .about-panel-lightbox.story-reader-modal {
         box-sizing: border-box;
         align-items: stretch;
