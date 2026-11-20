@@ -15,7 +15,8 @@ const loadHowItWasBuilt = () => import("../HowItWasBuilt");
 const HowItWasBuilt = lazy(loadHowItWasBuilt);
 
 const DEFAULT_FOLD = 28;
-const HOVER_FOLD = 60;
+const HOVER_FOLD = 54;
+const REMINDER_FOLD = 60;
 const HOVER_DURATION_MS = 340;
 const PEEL_DURATION_MS = 1380;
 const RETURN_DURATION_MS = 1380;
@@ -409,7 +410,7 @@ const PortfolioReveal = ({
                 }
 
                 setIsOnboarding(true);
-                animateFoldTo(HOVER_FOLD);
+                animateFoldTo(REMINDER_FOLD);
                 onboardingEndRef.current = window.setTimeout(() => {
                     if (
                         isDisposed ||

@@ -165,6 +165,8 @@
         position: fixed;
         z-index: 1200;
         inset: 0;
+        container-name: mobile-build-story;
+        container-type: inline-size;
         display: block;
         overflow: hidden;
         background: #080a0f;

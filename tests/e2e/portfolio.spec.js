@@ -20,6 +20,10 @@ test("desktop visitors can open a shelf project", async ({ page }) => {
     await expect(
         page.getByRole("region", { name: "Portfolio shelf" }),
     ).toBeVisible();
+    await expect(page.locator(".page-turn-trigger__hint")).toHaveCSS(
+        "font-size",
+        "11.52px",
+    );
 
     const projectCard = page
         .getByRole("link")
@@ -142,6 +146,61 @@ test("the build story route supports chapter navigation", async ({ page }) => {
     await expect(
         page.getByRole("button", { name: "Show item 2", exact: true }),
     ).toHaveAttribute("aria-pressed", "true");
+});
+
+test("the build story typography follows desktop, tablet, and mobile scales", async ({
+    page,
+}) => {
+    const readTypeScale = () =>
+        page.evaluate(() => {
+            const readFontSize = (selector) =>
+                Number.parseFloat(
+                    window.getComputedStyle(document.querySelector(selector))
+                        .fontSize,
+                );
+
+            return {
+                hero: readFontSize(".build-story__hero h1"),
+                title: readFontSize(".build-gallery__information h2"),
+                description: readFontSize(".build-gallery__description"),
+                returnButton: readFontSize(".build-story__return"),
+            };
+        });
+
+    await page.setViewportSize(desktopViewport);
+    await skipDesktopOnboarding(page);
+    await page.goto("/how-i-built-my-portfolio/");
+    await expect(page.locator(".build-story__hero h1")).toBeVisible();
+    const desktopScale = await readTypeScale();
+
+    await page.setViewportSize(tabletViewport);
+    await page.goto("/how-i-built-my-portfolio/");
+    await expect(page.locator(".build-story__hero h1")).toBeVisible();
+    const tabletScale = await readTypeScale();
+
+    await page.setViewportSize(mobileViewport);
+    await page.goto("/how-i-built-my-portfolio/");
+    await expect(page.locator(".build-story__hero h1")).toBeVisible();
+    const mobileScale = await readTypeScale();
+
+    expect(desktopScale).toEqual({
+        hero: 108,
+        title: 36,
+        description: 16.032,
+        returnButton: 16,
+    });
+    expect(tabletScale).toEqual({
+        hero: 67.5,
+        title: 26.4,
+        description: 14.9,
+        returnButton: 14.4,
+    });
+    expect(mobileScale).toEqual({
+        hero: 50.7,
+        title: 31.2,
+        description: 15.2,
+        returnButton: 14.4,
+    });
 });
 
 test("the prerendered links and build story remain complete without JavaScript", async ({

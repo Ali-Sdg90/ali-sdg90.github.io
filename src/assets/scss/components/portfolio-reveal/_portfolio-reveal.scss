@@ -111,10 +111,11 @@
         bottom: 2.55rem;
         width: max-content;
         max-width: min(15rem, calc(100vw - 5rem));
-        padding: 0.55rem 0.75rem;
+        padding: 0.48rem 0.65rem;
         color: rgba(247, 251, 255, 0.9);
-        font-size: 0.78rem;
+        font-size: 0.72rem;
         font-weight: 500;
+        line-height: 1.35;
         letter-spacing: 0.01em;
         border: 1px solid rgba(255, 255, 255, 0.13);
         border-radius: $radius-sm;
