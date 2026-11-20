@@ -72,7 +72,10 @@ const DesktopPortfolio = ({
                         className={`portfolio-hero${isOnboardingOpen ? " is-onboarding-open" : ""}`}
                         aria-labelledby="hero-title"
                     >
-                        <section className="hero-intro">
+                        <section
+                            className="hero-intro"
+                            inert={isOnboardingOpen}
+                        >
                             <Intro
                                 isAboutMeActive={!selectedShelfItem}
                                 onAboutMeSelect={handleAboutMeSelect}

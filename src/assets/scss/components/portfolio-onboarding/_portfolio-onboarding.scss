@@ -1,8 +1,18 @@
 @use "../../base/variables" as *;
 @use "../layout/hero-stage" as *;
 
+.portfolio-hero .hero-intro {
+    transition:
+        opacity 720ms $ease-out,
+        filter 720ms $ease-out;
+}
+
 .portfolio-hero.is-onboarding-open .hero-intro {
     z-index: 31;
+    opacity: 0.62;
+    filter: blur(clamp(1.5px, #{hero-stage-size(2.5)}, 3px)) brightness(0.72)
+        saturate(0.72);
+    pointer-events: none;
 }
 
 .portfolio-onboarding {
@@ -39,52 +49,60 @@
 
     &__header {
         position: absolute;
-        top: hero-stage-size(25);
+        top: hero-stage-size(30);
         left: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: hero-stage-size(13);
-        width: min(44%, #{hero-stage-size(430)});
+        display: grid;
+        justify-items: center;
+        width: min(72%, #{hero-stage-size(760)});
         z-index: 3;
         color: rgba(244, 249, 255, 0.96);
+        text-align: center;
         transform: translateX(-50%);
 
         h2 {
-            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: hero-stage-size(10);
             margin: 0;
-            font-size: hero-stage-size(19);
-            font-weight: 680;
+            font-size: hero-stage-size(36);
+            font-weight: 740;
+            letter-spacing: -0.01em;
+            line-height: 1.08;
+            text-shadow: 0 0 hero-stage-size(18) rgba(71, 172, 255, 0.18);
+            text-wrap: balance;
+
+            svg {
+                width: hero-stage-size(26);
+                height: hero-stage-size(26);
+                flex: 0 0 auto;
+                color: #2196ff;
+                filter: drop-shadow(
+                    0 0 hero-stage-size(8) rgba(22, 136, 255, 0.58)
+                );
+                transform: scaleX(-1);
+            }
+        }
+
+        p {
+            margin: 0;
+            color: rgba(218, 232, 247, 0.82);
+            font-size: hero-stage-size(16);
+            font-weight: 500;
             letter-spacing: 0.01em;
-            line-height: 1;
+            line-height: 1.2;
         }
     }
 
-    &__header-line {
-        width: hero-stage-size(82);
-        height: 1px;
-        background: linear-gradient(
-            90deg,
-            transparent,
-            rgba(45, 163, 255, 0.82)
-        );
-
-        &:last-child {
-            transform: scaleX(-1);
-        }
-    }
-
-    &__header-icon {
-        width: hero-stage-size(25);
-        height: hero-stage-size(25);
-        flex: 0 0 auto;
-        color: #2196ff;
-        filter: drop-shadow(0 0 hero-stage-size(8) rgba(22, 136, 255, 0.64));
+    &__header-copy {
+        display: grid;
+        justify-items: center;
+        gap: hero-stage-size(14);
     }
 
     &__target {
         position: absolute;
-        top: 10%;
+        top: 15%;
         bottom: 16%;
         z-index: 1;
         border: 1px solid rgba(255, 255, 255, 0.62);
@@ -190,6 +208,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+    .portfolio-hero .hero-intro,
     .portfolio-onboarding {
         transition-duration: 1ms;
     }

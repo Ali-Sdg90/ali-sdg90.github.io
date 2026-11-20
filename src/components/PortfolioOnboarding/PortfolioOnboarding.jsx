@@ -30,22 +30,19 @@ const PortfolioOnboarding = ({ isOpen, onDismiss }) => {
             role="dialog"
             aria-modal="true"
             aria-labelledby="portfolio-onboarding-title"
+            aria-describedby="portfolio-onboarding-subtitle"
             inert={!isOpen}
         >
             <header className="portfolio-onboarding__header">
-                <span
-                    className="portfolio-onboarding__header-line"
-                    aria-hidden="true"
-                />
-                <HiSparkles
-                    className="portfolio-onboarding__header-icon"
-                    aria-hidden="true"
-                />
-                <h2 id="portfolio-onboarding-title">Quick tour</h2>
-                <span
-                    className="portfolio-onboarding__header-line"
-                    aria-hidden="true"
-                />
+                <div className="portfolio-onboarding__header-copy">
+                    <h2 id="portfolio-onboarding-title">
+                        <span>Welcome to my portfolio</span>
+                        <HiSparkles aria-hidden="true" />
+                    </h2>
+                    <p id="portfolio-onboarding-subtitle">
+                        Let&apos;s take a quick tour.
+                    </p>
+                </div>
             </header>
 
             <div className="portfolio-onboarding__target portfolio-onboarding__target--shelf">
@@ -67,9 +64,8 @@ const PortfolioOnboarding = ({ isOpen, onDismiss }) => {
                     <div className="portfolio-onboarding__tip-copy">
                         <h3>See details here</h3>
                         <p>
-                            The selected card or a short introduction about me
-                            appears in this panel. Use the side handle to expand
-                            it.
+                            Selected details appear here. Use the side handle to
+                            expand the panel.
                         </p>
                     </div>
                 </article>
