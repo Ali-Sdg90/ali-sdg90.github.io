@@ -1,3 +1,10 @@
+# [1.47.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.46.4...v1.47.0) (2026-11-20)
+
+
+### Features
+
+* add tablet view to project ([ef0a076](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/ef0a0763c2793c22eaab72d3fee046bc22f5468b))
+
 ## [1.46.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.46.3...v1.46.4) (2026-11-19)
 
 
