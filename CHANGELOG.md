@@ -1,3 +1,10 @@
+# [1.48.0](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.47.1...v1.48.0) (2026-11-20)
+
+
+### Features
+
+* add ask chatgpt section in all SSG pages ([ed5f65b](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/ed5f65b1063ac741c3a432a46be762362f4ce4b7))
+
 ## [1.47.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.47.0...v1.47.1) (2026-11-20)
 
 
