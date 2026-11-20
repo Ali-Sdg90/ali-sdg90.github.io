@@ -153,6 +153,11 @@ describe("static portfolio detail pages", () => {
         expect(html).not.toContain("In my own words");
         expect(html).not.toContain("Explore further");
         expect(html).toContain("static-detail-feature-icon");
+        expect(html).toContain("static-detail-chatgpt");
+        expect(html).toContain("<h2>Ask ChatGPT</h2>");
+        expect(html).toContain(
+            "Get a summary or ask questions about this page.",
+        );
         expect(
             html.match(/class="static-detail-portfolio-button/g),
         ).toHaveLength(2);
@@ -171,6 +176,40 @@ describe("static portfolio detail pages", () => {
         expect(html).toContain('setStoryLanguage(story, "EN")');
         expect(html).not.toContain("static-detail-more");
         expect(html).not.toContain("Technologies and tools");
+
+        const storyIndex = html.indexOf("static-detail-story");
+        const chatGPTIndex = html.indexOf("static-detail-chatgpt");
+        const relatedLinksIndex = html.indexOf("static-detail-links");
+
+        expect(storyIndex).toBeLessThan(chatGPTIndex);
+        expect(chatGPTIndex).toBeLessThan(relatedLinksIndex);
+    });
+
+    test("adds a contextual ChatGPT handoff to every generated detail page", () => {
+        const pages = getStaticDetailPages({ basePath: "/" });
+
+        for (const page of pages) {
+            const html = renderToStaticMarkup(<StaticDetailPage page={page} />);
+            const linkMatch = html.match(
+                /<a class="static-detail-chatgpt-link" href="([^"]+)"/,
+            );
+
+            expect(linkMatch, page.pagePath).not.toBeNull();
+
+            const chatGPTUrl = new URL(linkMatch[1].replaceAll("&amp;", "&"));
+            const prompt = chatGPTUrl.searchParams.get("q");
+
+            expect(chatGPTUrl.origin, page.pagePath).toBe(
+                "https://chatgpt.com",
+            );
+            expect(prompt, page.pagePath).toContain(page.canonicalUrl);
+            expect(prompt, page.pagePath).toContain(
+                "Use only information from the page",
+            );
+            expect(html, page.pagePath).toContain(
+                'data-umami-event="chatgpt_portfolio_page_open"',
+            );
+        }
     });
 
     test("uses the same feature headings as the interactive shelf details", () => {
@@ -196,6 +235,7 @@ describe("static portfolio detail pages", () => {
         expect(page.detail.is_story_wip).toBe(true);
         expect(html).not.toContain("static-detail-story");
         expect(html).not.toContain("Placeholder");
+        expect(html).toContain("static-detail-chatgpt");
     });
 
     test("collapses stories at the paragraph threshold without removing their crawlable content", () => {

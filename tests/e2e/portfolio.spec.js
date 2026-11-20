@@ -329,6 +329,12 @@ test("all generated detail routes return complete indexable HTML", async ({
             `<meta property="og:url" content="https://ali-sdg.is-a.dev${pathname}" />`,
         );
         expect(html, pathname).toContain('<script type="application/ld+json">');
+        expect(html, pathname).toContain(
+            'class="static-detail-section static-detail-chatgpt"',
+        );
+        expect(html, pathname).toContain(
+            'class="static-detail-chatgpt-link" href="https://chatgpt.com/?q=',
+        );
     }
 });
 

@@ -1,6 +1,15 @@
-import { FaCheck, FaChevronDown } from "react-icons/fa6";
+import {
+    FaArrowUpRightFromSquare,
+    FaCheck,
+    FaChevronDown,
+} from "react-icons/fa6";
+import { SiOpenai } from "react-icons/si";
 
 import AboutPanelLanguageToggle from "../components/AboutPanel/AboutPanelLanguageToggle.jsx";
+import {
+    buildChatGPTPrompt,
+    buildChatGPTUrl,
+} from "../components/AboutPanel/FeaturedProjectAbout/askChatGPT.js";
 import { aboutData } from "../data/portfolio/aboutData.js";
 
 const LANGUAGE_TOGGLE_SCRIPT = `(() => {
@@ -92,6 +101,47 @@ const DetailLinks = ({ links = [] }) => {
                     </li>
                 ))}
             </ul>
+        </section>
+    );
+};
+
+const AskChatGPTSection = ({ page }) => {
+    const prompt = buildChatGPTPrompt({
+        pageUrl: page.canonicalUrl,
+        sectionId: page.sectionId,
+    });
+    const chatGPTUrl = buildChatGPTUrl(prompt);
+
+    if (!chatGPTUrl) return null;
+
+    return (
+        <section className="static-detail-section static-detail-chatgpt">
+            <div className="static-detail-chatgpt-copy">
+                <header className="static-detail-chatgpt-heading">
+                    <span
+                        className="static-detail-chatgpt-icon"
+                        aria-hidden="true"
+                    >
+                        <SiOpenai />
+                    </span>
+                    <h2>Ask ChatGPT</h2>
+                </header>
+                <p>Get a summary or ask questions about this page.</p>
+            </div>
+            <a
+                className="static-detail-chatgpt-link"
+                href={chatGPTUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Ask ChatGPT about ${page.title} (opens in a new tab)`}
+                data-umami-event="chatgpt_portfolio_page_open"
+                data-umami-event-item-id={page.id}
+                data-umami-event-item-name={page.title}
+                data-umami-event-section-id={page.sectionId}
+            >
+                <span>Open in ChatGPT</span>
+                <FaArrowUpRightFromSquare aria-hidden="true" />
+            </a>
         </section>
     );
 };
@@ -370,6 +420,8 @@ const StaticDetailPage = ({ page }) => {
                             title={storyTitle}
                         />
                     )}
+
+                    <AskChatGPTSection page={page} />
 
                     <DetailLinks links={relatedLinks} />
                 </article>
