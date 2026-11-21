@@ -8,7 +8,7 @@ We spent around three months building the app.
 
 The backend was built on Firebase. Users could create accounts and use native iOS capabilities like the camera and microphone. The collected information was sent to the backend, an online AI model generated the response, and another model generated text-to-speech audio for it.
 
-The app also had a subscription system. Users could make three requests for free and after that they needed an active subscription. Payments and subscriptions were handled through Stripe.
+The app also had a subscription system. Users could have up to five debates for free, and after that they needed an active subscription. Payments and subscriptions were handled through Stripe.
 
 Setting up all of these pieces and getting them to work together was a really complicated challenge, especially because most of it was completely new to me at the time.
 

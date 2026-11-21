@@ -14,6 +14,6 @@ For MelkRadar, I built a bot that became an important part of the sales team's w
 
 For myself, I built Fabrexa AI Bot and Askly90 Bot.
 
-Fabrexa AI Bot lets users connect to local LLMs through Ollama directly from Telegram. It supports short-term and long-term memory, different personalities, and switching between different local models. There's a more detailed explanation of this bot in the Featured Projects section.
+Fabrexa AI Bot lets users connect to local LLMs through Ollama directly from Telegram. It supports session-based memory, different personalities, and switching between different local models. There's a more detailed explanation of this bot in the Featured Projects section.
 
 Askly90 was a small experimental bot I built for myself and a friend. Whenever a question came up in a Telegram chat, we could mention the bot with the question. It would send it to Perplexity's LLM and reply directly inside the conversation. It was really useful while it was running, but because it had an ongoing cost, I shut it down after around two months.

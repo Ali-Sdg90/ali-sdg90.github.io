@@ -34,7 +34,7 @@ I also used Node.js for my personal Fabrexa AI project.
 
 Fabrexa is a locally running Telegram bot connected to Ollama. It lets me interact with local LLMs directly through Telegram using my own prompts and configuration.
 
-The bot also supports short-term and long-term memory, keeps conversation context, and can switch between different models and personalities.
+The bot also uses session-based memory to keep conversation context and can switch between different models and personalities.
 
 Node.js is now one of those technologies I'm very comfortable working with.
 
