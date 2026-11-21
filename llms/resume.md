@@ -28,7 +28,7 @@ Real-estate technology platform; frontend development across its product ecosyst
 - Reviewed 376+ pull requests across three frontend projects over 1 year and 9 months, focusing on implementation quality, component structure, and UI consistency.
 - Onboarded 11 frontend developers through code walkthroughs, technical sessions, and training resources; transferred the review workflow to a trained teammate.
 - Created 20+ reusable Chart.js templates and plugins for over 50 reporting charts, reducing repeated development work for visual variations.
-- Built an Android-backend-Telegram system that automated SMS verification-code forwarding, handling 3.5x the previous manual workflow's monthly request volume in its first month.
+- Built an Android-backend-Telegram system that automatically retrieved information from phones at specific times and transferred it through the backend to Telegram, handling 3.5x the previous manual workflow's monthly request volume in its first month.
 - Built a React-based Excel-to-PDF report generator with automated calculations and repeatable monthly reports.
 
 ### [CS Internship](https://ali-sdg.is-a.dev/career/cs-internship/)
