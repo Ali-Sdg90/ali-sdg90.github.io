@@ -19,7 +19,7 @@ Frontend-focused software engineer with 3+ years of production React experience,
 
 ### [MelkRadar](https://ali-sdg.is-a.dev/career/melk-radar/)
 
-**Front-End Technical Lead & Internal Tools Developer | Jul 2023 - Jan 2026**  
+**Front-End Technical Lead & Internal Tools Developer | Aug 2026 - Oct 2026 · Aug 2023 - Jan 2026**
 Part-Time, Freelance | Remote | Tehran
 
 Real-estate technology platform; frontend development across its product ecosystem and internal automation.
@@ -28,12 +28,12 @@ Real-estate technology platform; frontend development across its product ecosyst
 - Reviewed 376+ pull requests across three frontend projects over 1 year and 9 months, focusing on implementation quality, component structure, and UI consistency.
 - Onboarded 11 frontend developers through code walkthroughs, technical sessions, and training resources; transferred the review workflow to a trained teammate.
 - Created 20+ reusable Chart.js templates and plugins for over 50 reporting charts, reducing repeated development work for visual variations.
-- Built an Android-backend-Telegram system that automatically retrieved information from phones at specific times and transferred it through the backend to Telegram, handling 3.5x the previous manual workflow's monthly request volume in its first month.
+- Designed and developed an internal automation system using Android, Node.js, and Telegram to automate data collection and delivery workflows across mobile devices and backend services, processing 3.5× the typical monthly request volume in its first month.
 - Built a React-based Excel-to-PDF report generator with automated calculations and repeatable monthly reports.
 
 ### [CS Internship](https://ali-sdg.is-a.dev/career/cs-internship/)
 
-**Technical Mentor & System Designer | Mar 2023 - Feb 2026**  
+**Technical Mentor & System Designer | Mar 2023 - Feb 2026**
 Volunteer | Remote | Tehran
 
 Software engineering education program; technical mentorship, process design, and internal tooling.
@@ -46,7 +46,7 @@ Software engineering education program; technical mentorship, process design, an
 
 ### [SettleItGPT](https://ali-sdg.is-a.dev/career/settleit-gpt/)
 
-**React Native Developer | Apr 2025 - Sep 2025**  
+**React Native Developer | Apr 2025 - Sep 2025**
 Independent Collaboration | Remote | Los Angeles, CA
 
 AI-powered iOS application; product development and App Store release with its creator.
@@ -56,7 +56,7 @@ AI-powered iOS application; product development and App Store release with its c
 
 ### [Dadeh Pardazi Azmoudeh Karan](https://ali-sdg.is-a.dev/career/dadeh-pardazi-azmoudeh-karan/)
 
-**React Developer | Jul 2024 - Jun 2025**  
+**React Developer | Jul 2024 - Mar 2025**
 Project-based | Remote | Tehran
 
 Restaurant recruitment and administration platform; sole frontend developer on a two-person project team.
@@ -85,20 +85,20 @@ Interactive React portfolio with custom shelf navigation and content-driven proj
 - Developed responsive galleries, interactive navigation, and bilingual stories around reusable content structures.
 - Implemented build-time SSG, crawlable detail pages, a no-JavaScript fallback, and automated image optimization.
 
-### [Fabrexa AI Ollama](https://ali-sdg.is-a.dev/projects/fabrexa-ai-ollama/)
+### [Fabrexa AI](https://ali-sdg.is-a.dev/projects/fabrexa-ai/)
 
 **May 2026**
 
-Self-hosted Telegram assistant powered by local Ollama language models.
+Self-hosted Telegram AI assistant powered by Ollama and ComfyUI for local text and image generation.
 
-- Built streaming replies, selectable personalities, configurable models, and editable conversation memory.
-- Added owner-only access, setup checks, technical documentation, and a dedicated project website.
+- Built personality-driven conversations with real-time streaming, configurable LLMs, and session-based memory that preserves conversation continuity.
+- Integrated ComfyUI for context-aware image generation, with automated GPU model switching, owner-only access, and automated tests.
 
 ## Technical skills
 
 - **Frontend:** JavaScript, React, TypeScript (working knowledge), HTML, CSS/SCSS, Ant Design, TanStack Query, Vite
 - **Backend & Automation:** Node.js, Express, REST APIs, Firebase, Telegram bots, workflow automation
-- **Mobile & AI:** React Native, Expo, Ollama, LLM integration
+- **Mobile & AI:** React Native, Expo, Ollama, ComfyUI, LLM integration
 - **Tools & Delivery:** Git/GitHub, Azure DevOps, GitHub Actions, CI/CD, Figma
 - **Visualization:** Chart.js, Mapbox GL JS, ApexCharts
 
@@ -106,10 +106,10 @@ Self-hosted Telegram assistant powered by local Ollama language models.
 
 ### Master of Science in Computer Engineering (Software)
 
-**Oct 2026 - Present**  
+**Oct 2026 - Present**
 Islamic Azad University, Electronic Branch | Tehran
 
 ### Bachelor of Science in Software Engineering
 
-**Sep 2021 - Jan 2026**  
+**Sep 2021 - Jan 2026**
 Islamic Azad University, Tehran East Branch | Tehran

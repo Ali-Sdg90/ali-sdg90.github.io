@@ -6,13 +6,13 @@ import AskChatGPTSection from "../../../../../src/components/AboutPanel/Featured
 import { buildChatGPTPrompt } from "../../../../../src/components/AboutPanel/FeaturedProjectAbout/askChatGPT";
 import { shelfSections } from "../../../../../src/data/portfolio/shelfSections";
 
-const pageUrl = "https://ali-sdg.is-a.dev/projects/fabrexa-ai-ollama/";
+const pageUrl = "https://ali-sdg.is-a.dev/projects/fabrexa-ai/";
 
 describe("AskChatGPTSection", () => {
     test("opens ChatGPT with the approved project-page prompt", () => {
         render(
             <AskChatGPTSection
-                item={{ id: "fabrexa-ai-ollama", title: "Fabrexa AI" }}
+                item={{ id: "fabrexa-ai", title: "Fabrexa AI" }}
                 section={{ id: "projects", label: "Featured Projects" }}
             />,
         );
@@ -32,7 +32,7 @@ describe("AskChatGPTSection", () => {
         expect(chatGPTUrl.origin).toBe("https://chatgpt.com");
         expect(chatGPTUrl.searchParams.get("q")).toBe(
             [
-                "Explore this project from Ali Sadeghi's portfolio: https://ali-sdg.is-a.dev/projects/fabrexa-ai-ollama/",
+                "Explore this project from Ali Sadeghi's portfolio: https://ali-sdg.is-a.dev/projects/fabrexa-ai/",
                 "Summarize its background, technical decisions, challenges, and Ali's engineering experience. Use only information from the page, suggest 2–3 relevant follow-up questions, and say so if you cannot access it.",
             ].join("\n\n"),
         );

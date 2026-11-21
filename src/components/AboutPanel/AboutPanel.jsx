@@ -96,7 +96,7 @@ const AboutPanel = ({ aboutMePulse, className, inert, selectedShelfItem }) => {
         <>
             {selectedShelfItem.item.meta}
             <br />
-            {selectedShelfItem.item.year}
+            {selectedModule.detail?.year ?? selectedShelfItem.item.year}
         </>
     ) : shouldStackProjectSubtitle ? (
         <>

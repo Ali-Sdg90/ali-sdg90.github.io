@@ -238,16 +238,19 @@ export const aboutCareerData = {
     "cs-internship": {
         id: "cs-internship",
         title: "CS Internship",
+        year: "Mar 2023 - Feb 2026",
         lightboxImage: csiLogoLarge,
         summary:
             "From web intern to technical mentor and program contributor, mentoring 25+ interns, redesigning core processes, and building automation tools to make CS Internship more scalable and effective.",
         featuresTitle: "Focus Areas",
         features: [
             "Mentored 25+ web development interns through technical coaching and progress reviews",
+            "Led 30+ technical mentoring sessions and created frontend and Azure DevOps learning resources",
             "Personally onboarded 8 interns into the program and supported their early journey",
-            "Led the redesign of the program entry process over a 6-month period with the governance team",
+            "Co-designed a multi-stage entry process over 6 months that brought 256 people into its entry group",
             "Designed and improved internal systems, workflows, roles, and operating processes",
             "Built 5 internal tools for queue management, club feedback, scheduling, and admin operations",
+            "Automated around 70 weekly Azure DevOps tasks, cutting preparation from about 30 minutes to one minute",
         ],
         galleryColumns: 3,
         galleryImages: [
@@ -322,17 +325,18 @@ export const aboutCareerData = {
     "melk-radar": {
         id: "melk-radar",
         title: "MelkRadar",
+        year: "Aug 2026 - Oct 2026 · Aug 2023 - Jan 2026",
         lightboxImage: melkRadarLogoLarge,
         summary:
             "Joined MelkRadar as an intern and grew into a Front-End Technical Lead, helping build products across its ecosystem, guiding the frontend team, and creating internal automation systems used in daily operations.",
         featuresTitle: "Focus Areas",
         features: [
-            "Built frontend experiences across MelkRadar products, KhodroRadar, and client projects.",
-            "Led frontend code quality for 1 year and 9 months.",
-            "Onboarded 11 frontend developers and created reusable training resources.",
+            "Built production frontend features across 6 products and initiatives in the MelkRadar ecosystem.",
+            "Reviewed 376+ pull requests across 3 frontend projects over 1 year and 9 months.",
+            "Onboarded 11 frontend developers and transferred the review workflow to a trained teammate.",
             "Researched and integrated Mapbox GL JS through eight focused prototypes.",
             "Delivered 50+ charts with 20+ reusable templates and design documentation.",
-            "Built an Android, backend, and Telegram automation system used more than 25 times daily.",
+            "Built an Android, Node.js, and Telegram automation system that processed 3.5 times the typical monthly request volume in its first month.",
             "Built an automated Excel-to-PDF generator for the company's monthly reports.",
         ],
         galleryColumns: 3,
@@ -369,6 +373,7 @@ export const aboutCareerData = {
     "dadeh-pardazi-azmoudeh-karan": {
         id: "dadeh-pardazi-azmoudeh-karan",
         title: "Dadeh Pardazi Azmoudeh Karan",
+        year: "Jul 2024 - Mar 2025",
         lightboxImage: dpaLogoLarge,
         summary:
             "Built the front end of a large administrative platform from scratch, translating Figma designs into a production-ready React application with Ant Design and 60+ API integrations.",
@@ -402,6 +407,7 @@ export const aboutCareerData = {
     "settleit-gpt": {
         id: "settleit-gpt",
         title: "SettleItGPT",
+        year: "Apr 2025 - Sep 2025",
         lightboxImage: settleitGptLogoLarge,
         summary:
             "Co-developed and launched an AI-powered iOS application with React Native and Expo, taking the product from an early MVP to a complete App Store release.",

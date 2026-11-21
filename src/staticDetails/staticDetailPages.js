@@ -48,7 +48,9 @@ const getPageSubtitle = ({ detail, item, section }) => {
     }
 
     if (section.id === "career-journey") {
-        return [item.meta, item.year].filter(Boolean).join(" · ");
+        return [item.meta, detail.year ?? item.year]
+            .filter(Boolean)
+            .join(" · ");
     }
 
     return detail.subtitle ?? "";

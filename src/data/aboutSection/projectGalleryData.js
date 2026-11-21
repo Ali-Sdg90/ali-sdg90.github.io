@@ -237,7 +237,7 @@ export const projectGalleryImages = {
             1079,
         ),
     ],
-    "fabrexa-ai-ollama": [
+    "fabrexa-ai": [
         galleryImage(
             fabrexaThumbnail1,
             fabrexaImage1,

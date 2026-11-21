@@ -75,7 +75,7 @@ export const shelfSections = [
                 imageHeight: 1254,
             },
             {
-                id: "fabrexa-ai-ollama",
+                id: "fabrexa-ai",
                 title: "Fabrexa AI",
                 meta: "Self-hosted Telegram bot for chat and image gen",
                 image: fabrexaThumbnail,

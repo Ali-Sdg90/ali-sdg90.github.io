@@ -24,7 +24,7 @@ For example, I didn't want people to be able to add other bots to the group. So 
 
 I also added a spam detection system. If someone sent more than a certain number of messages within a very short period, like a single second, they'd be identified as a spammer and automatically removed from the group.
 
-I even added a feature for situations where someone tried to add my bot to another group. The bot would explain that it was built specifically for CS Internship and send a custom-generated link that the person could use to join the program's official Waiting Queue. Information about the person who tried to add the bot, along with details about that group, would also be recorded in the server logs.
+I even added a feature for situations where someone tried to add my bot to another group. The bot would explain that it was built specifically for CS Internship and send a custom-generated link that the person could use to join the program's official Waiting Queue. Information about the person who tried to add the bot, along with details about that group, would also be recorded in the system logs.
 
 But one of the most important features I added was integrating the bot with the program's Azure DevOps.
 
@@ -76,14 +76,6 @@ From welcoming and guiding applicants to preventing spam, controlling other bots
 
 All of this was meant to keep the group organized and make the admission and interview process easier for applicants.
 
-Another interesting part of this project was how I hosted the bot.
-
-This was the first Telegram bot I was building for the program, and to run it on a server and keep it online all the time, I used a pretty clever trick!
-
-I managed to run the entire bot on a free server, one that wasn't supposed to stay awake for more than five minutes. But thanks to the trick I used, it's now been running for over two years without any problems, and the program hasn't had to pay anything for server hosting. :)
-
-I also wrote a Twitter post about this trick, and I'll include the link in the project's Links section. If you're interested, you can read about it there. :)
-
 Just like the other two projects I'd built for CS, I also set up a complete testing and CI/CD system for this bot.
 
 From the beginning, I knew this wasn't going to be a bot I'd simply build and hand over to the program. It might still be in use years after I left, and it could need changes and updates along the way.
@@ -96,7 +88,7 @@ Then all the test cases would run through Jest, and the commit would only be all
 
 After the commit was made, the CI/CD pipeline would build and test the project again. If every step succeeded, it would create a new version and release it.
 
-The new version would then be automatically deployed to the server. Finally, a Telegram bot would announce in the program's mentors group who had made the commit and which project it was made to.
+The new version would then be updated automatically. Finally, a Telegram bot would announce in the program's mentors group who had made the commit and which project it was made to.
 
 I'd put a lot of work into this part because it mattered to me that maintaining and developing the bot would remain easy and reliable even after I left.
 

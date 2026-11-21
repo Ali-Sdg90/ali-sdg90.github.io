@@ -4,15 +4,15 @@ These projects follow the portfolio's current Featured Projects collection and o
 
 ## Ali's Portfolio
 
-Interactive, shelf-inspired portfolio for projects, skills, career milestones, impact, and a bilingual 34-slide build journal. Built with React 19, Vite 8, SCSS, Framer Motion, and GitHub Pages. 2026. [Live Portfolio](https://ali-sdg.is-a.dev/) | [Repository](https://github.com/Ali-Sdg90/ali-sdg90.github.io) | [Build summary](/llms/build.md)
+Interactive, shelf-inspired portfolio for projects, skills, career milestones, impact, and a bilingual 34-slide build journal. Built with React 19, Vite 8, SCSS, Framer Motion, and GitHub Pages. Jun 2026. [Live Portfolio](https://ali-sdg.is-a.dev/) | [Repository](https://github.com/Ali-Sdg90/ali-sdg90.github.io) | [Build summary](/llms/build.md)
 
 ## Health Data Relay
 
-Privacy-focused Android app that turns selected Health Connect records into compact daily JSON summaries stored in the user's Google Drive. Built with Kotlin, Jetpack Compose, Material 3, Health Connect, WorkManager, DataStore, and the Google Drive API. 2026. [Project Page](https://ali-sdg.is-a.dev/health-data-relay/) | [Repository](https://github.com/Ali-Sdg90/health-data-relay)
+Privacy-focused Android app that turns selected Health Connect records into compact daily JSON summaries stored in the user's Google Drive. Built with Kotlin, Jetpack Compose, Material 3, Health Connect, WorkManager, DataStore, and the Google Drive API. Aug 2026. [Project Page](https://ali-sdg.is-a.dev/health-data-relay/) | [Repository](https://github.com/Ali-Sdg90/health-data-relay)
 
 ## Fabrexa AI
 
-Self-hosted Telegram bot for chatting with local AI models, with streamed replies, custom personalities, session memory, and optional image generation through ComfyUI. Built with Node.js, Telegraf, Ollama, ComfyUI, HTML, CSS, and JavaScript. 2026. [Project Website](https://ali-sdg.is-a.dev/Fabrexa-AI/) | [Repository](https://github.com/Ali-Sdg90/Fabrexa-AI)
+Self-hosted Telegram bot for chatting with local AI models, with streamed replies, custom personalities, session memory, and optional image generation through ComfyUI. Built with Node.js, Telegraf, Ollama, ComfyUI, HTML, CSS, and JavaScript. May 2026. [Portfolio Page](https://ali-sdg.is-a.dev/projects/fabrexa-ai/) | [Project Website](https://ali-sdg.is-a.dev/Fabrexa-AI/) | [Repository](https://github.com/Ali-Sdg90/Fabrexa-AI)
 
 ## CS Queue Calendar
 

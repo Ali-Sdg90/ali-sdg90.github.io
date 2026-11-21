@@ -168,7 +168,7 @@ export const aboutImpactData = {
         featuresTitle: "What I Did",
         features: [
             "Built tools for sales, onboarding, feedback, scheduling, and monitoring",
-            "Built an Android, backend, and Telegram automation system used more than 25 times daily",
+            "Built an Android, Node.js, and Telegram automation system that processed 3.5 times the typical monthly request volume in its first month",
             "Cut weekly Azure Board setup from about 30 minutes to about one minute",
         ],
         storyTitle: "Story",
