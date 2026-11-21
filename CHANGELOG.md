@@ -1,3 +1,10 @@
+## [1.48.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.48.2...v1.48.3) (2026-11-21)
+
+
+### Bug Fixes
+
+* fixed some descriptions in cs queue bot, mlk, cs and my resume ([fbaf1d8](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/fbaf1d866cbdda5e0437935bb31f3890aeeb7464))
+
 ## [1.48.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.48.1...v1.48.2) (2026-11-21)
 
 
