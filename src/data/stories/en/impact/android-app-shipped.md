@@ -4,7 +4,7 @@ But both the company I worked with and I had problems that needed an Android app
 
 The first app I built was MLK DVR Receiver for MelkRadar.
 
-It's an internal Android application installed on the phones used by members of the team. The app receives the required information and sends it to the system's backend. The backend stores and processes it and, when needed, sends the result to the team's Telegram group through a bot.
+It's an internal Android application installed on the phones used by members of the team. At specific times, the app retrieves the required information from a phone and sends it to the system's backend. The backend stores and processes it and, when needed, sends the result to the team's Telegram group through a bot.
 
 I designed and implemented the entire system myself: the Android app, backend, and Telegram bot.
 

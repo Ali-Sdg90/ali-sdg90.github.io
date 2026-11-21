@@ -236,13 +236,13 @@ At one point, I joined one of the company's internal groups that was used to coo
 
 That's where I noticed a manual workflow that was creating a lot of extra work for several people.
 
-In simple terms, certain SMS codes had to be passed from the phone receiving them to the person who needed them. This was done manually, so the phone owner had to keep an eye on incoming messages and forward the necessary information to someone else.
+In simple terms, certain information had to be retrieved from phones at specific times and passed to the people who needed it. This was done manually, so people had to send the required information to someone else at the right time.
 
 I suggested building an automation system that would organize the process and remove the need for people to keep stepping in every time.
 
 I also mentioned the CEO and CTO in the conversation, and after getting the green light, I started building a prototype.
 
-At first, I built a small Android app just for my own phone. It could detect specific incoming SMS messages and transfer the required information through a Telegram bot.
+At first, I built a small Android app just for my own phone. It could retrieve the required information at a specific time and transfer it through a Telegram bot.
 
 This first version was pretty simple and didn't have a separate backend.
 
@@ -252,7 +252,7 @@ Even that simple version showed that the idea worked and could eliminate a lot o
 
 But there was an important problem.
 
-The initial version wasn't good enough in terms of security and access control. For example, the phone owner might not know who had requested a particular code, or whether they even wanted that SMS information to be shared.
+The initial version wasn't good enough in terms of security and access control. For example, the phone owner might not know who had requested the information, or whether they even wanted it to be shared.
 
 So once I saw that the MVP worked, I decided to turn it into a more complete and professional system.
 
@@ -328,7 +328,7 @@ I delivered this project too, and the company paid me for building it.
 
 I was really happy with the result.
 
-I think these last two projects, the SMS automation system and the monthly report generator, had an important influence on how I started thinking about my career.
+I think these last two projects, the information transfer system and the monthly report generator, had an important influence on how I started thinking about my career.
 
 Before that, a large part of my professional experience had been focused on frontend development, building user interfaces, styling, reviewing code, and managing the team.
 
