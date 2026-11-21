@@ -1,3 +1,10 @@
+## [1.48.2](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.48.1...v1.48.2) (2026-11-21)
+
+
+### Bug Fixes
+
+* clarify some mlk details and update resume ([aab1bed](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/aab1bed877264c5012fb67703aad5c040f8c5f96))
+
 ## [1.48.1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.48.0...v1.48.1) (2026-11-20)
 
 
