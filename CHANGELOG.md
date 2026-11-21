@@ -1,3 +1,10 @@
+## [1.48.4](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.48.3...v1.48.4) (2026-11-21)
+
+
+### Bug Fixes
+
+* fix description of fabrexa and settleItGpt ([c5b9dc1](https://github.com/Ali-Sdg90/ali-sdg90.github.io/commit/c5b9dc1db77e9dace41b3ac758a2d7f8e781b687))
+
 ## [1.48.3](https://github.com/Ali-Sdg90/ali-sdg90.github.io/compare/v1.48.2...v1.48.3) (2026-11-21)
 
 
